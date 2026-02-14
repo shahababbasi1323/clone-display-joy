@@ -6,9 +6,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", phone: "", website: "", service: "", message: "" });
+  const { toast } = useToast();
 
   useSeoMeta({
     title: "Contact Shahab Abbasi - Free SEO Consultation",
@@ -16,9 +21,23 @@ const Contact = () => {
     canonical: "https://shahababbasi.com/contact",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    const { error } = await supabase.from("leads").insert({
+      name: form.name,
+      email: form.email,
+      phone: form.phone || null,
+      company: form.website || null,
+      message: [form.service && `Service: ${form.service}`, form.message].filter(Boolean).join("\n"),
+      source: "contact_form",
+    });
+    if (error) {
+      toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
+    } else {
+      setSubmitted(true);
+    }
+    setLoading(false);
   };
 
   return (
@@ -101,26 +120,26 @@ const Contact = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Name *</label>
-                      <Input placeholder="Your name" required />
+                     <Input placeholder="Your name" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} required />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Email *</label>
-                      <Input type="email" placeholder="your@email.com" required />
+                      <Input type="email" placeholder="your@email.com" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} required />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Phone</label>
-                      <Input placeholder="+1 234 567 890" />
+                      <Input placeholder="+1 234 567 890" value={form.phone} onChange={e => setForm({ ...form, phone: e.target.value })} />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Website</label>
-                      <Input placeholder="https://yourwebsite.com" />
+                      <Input placeholder="https://yourwebsite.com" value={form.website} onChange={e => setForm({ ...form, website: e.target.value })} />
                     </div>
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Service Interested In</label>
-                    <select className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm">
+                    <select className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm" value={form.service} onChange={e => setForm({ ...form, service: e.target.value })}>
                       <option value="">Select a service</option>
                       <option>Technical SEO</option>
                       <option>On-Page SEO</option>
@@ -135,10 +154,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Message *</label>
-                    <Textarea placeholder="Tell me about your project and goals..." rows={4} required />
+                    <Textarea placeholder="Tell me about your project and goals..." rows={4} value={form.message} onChange={e => setForm({ ...form, message: e.target.value })} required />
                   </div>
-                  <Button type="submit" size="lg" className="w-full glow-primary">
-                    Send Message <Send className="ml-2 h-4 w-4" />
+                  <Button type="submit" size="lg" className="w-full glow-primary" disabled={loading}>
+                    {loading ? "Sending..." : "Send Message"} <Send className="ml-2 h-4 w-4" />
                   </Button>
                 </form>
               )}
