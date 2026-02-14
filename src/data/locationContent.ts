@@ -510,4 +510,760 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Gangnam & Teheran-ro", desc: "강남 테헤란로 IT 기업 및 스타트업을 위한 SEO 서비스." },
     { name: "Myeongdong & Jung-gu", desc: "명동 및 중구 상업지구 비즈니스를 위한 검색 최적화." },
   ],
+  // Pakistan — remaining
+  peshawar: [
+    { name: "Saddar & University Road", desc: "SEO services for businesses along University Road, Saddar Bazaar, and the historic walled city area." },
+    { name: "Hayatabad", desc: "Helping businesses in Hayatabad's commercial phases and the nearby industrial estate." },
+    { name: "GT Road & Ring Road", desc: "Supporting retail and wholesale businesses along Grand Trunk Road and Peshawar Ring Road corridor." },
+  ],
+  faisalabad: [
+    { name: "D Ground & Jaranwala Road", desc: "SEO for businesses around D Ground, Jaranwala Road, and the Susan Road commercial strip." },
+    { name: "Ghulam Muhammad Abad", desc: "Supporting textile and manufacturing businesses in Faisalabad's industrial hub." },
+    { name: "Clock Tower & Eight Bazaars", desc: "Helping traditional retailers in the historic eight bazaars radiating from the iconic Clock Tower." },
+  ],
+  multan: [
+    { name: "Hussain Agahi & Bosan Road", desc: "SEO services for retailers and businesses along Hussain Agahi Bazaar and Bosan Road." },
+    { name: "Shah Rukn-e-Alam Shrine Area", desc: "Helping hospitality and tourism businesses near the historic Sufi shrines of Multan." },
+    { name: "Multan Industrial Estate", desc: "Digital marketing for export, manufacturing, and B2B businesses in Multan's industrial zone." },
+  ],
+  sialkot: [
+    { name: "Paris Road & Cantt Area", desc: "SEO for export and sports goods businesses along Paris Road and the Cantonment commercial area." },
+    { name: "Sialkot Industrial Estate", desc: "Supporting sporting goods manufacturers and leather exporters in the Sialkot Industrial Estate." },
+    { name: "Iqbal Shaheed Road", desc: "Helping retail and service businesses along the main Iqbal Shaheed Road corridor." },
+  ],
+  // UAE — remaining
+  sharjah: [
+    { name: "Al Majaz & Buhaira Corniche", desc: "SEO for businesses along the Buhaira Corniche waterfront and Al Majaz commercial district." },
+    { name: "Sharjah Industrial Area (SAIF Zone)", desc: "Helping manufacturing, logistics, and trade businesses in SAIF Zone and Sharjah Airport Free Zone." },
+    { name: "Al Nahda & Al Qasimia", desc: "SEO services for retail and service businesses in the densely populated Al Nahda and Al Qasimia areas." },
+  ],
+  ajman: [
+    { name: "Ajman Corniche & Al Rashidiya", desc: "SEO for hospitality and retail businesses along Ajman Corniche and Al Rashidiya area." },
+    { name: "Ajman Free Zone", desc: "Helping trade and e-commerce businesses in Ajman Free Zone improve their online visibility." },
+    { name: "Al Jurf Industrial Area", desc: "Digital marketing for industrial and manufacturing businesses in Al Jurf." },
+  ],
+  "ras-al-khaimah": [
+    { name: "Al Nakheel & Corniche", desc: "SEO for businesses in the Al Nakheel commercial district and RAK Corniche waterfront." },
+    { name: "RAK Free Trade Zone", desc: "Helping international trade and manufacturing businesses in RAK FTZ." },
+    { name: "Al Hamra Village", desc: "SEO for hospitality, tourism, and real estate businesses in Al Hamra Village resort area." },
+  ],
+  fujairah: [
+    { name: "Fujairah City Centre", desc: "SEO services for retail and service businesses in central Fujairah and Al Faseel area." },
+    { name: "Fujairah Free Zone", desc: "Helping trade, oil storage, and logistics businesses in Fujairah Free Zone." },
+  ],
+  "al-ain": [
+    { name: "Al Ain Oasis & City Centre", desc: "SEO for tourism, hospitality, and retail businesses near Al Ain Oasis UNESCO Heritage Site." },
+    { name: "Jebel Hafeet & Al Ain Zoo", desc: "Helping hospitality and tourism businesses near Jebel Hafeet and the Al Ain Zoo area." },
+    { name: "Al Ain Industrial Area", desc: "Digital optimization for manufacturing and B2B businesses in Al Ain's industrial zone." },
+  ],
+  // Saudi Arabia — remaining
+  dammam: [
+    { name: "Corniche & King Fahd Causeway", desc: "SEO for businesses along Dammam Corniche and near the Saudi-Bahrain causeway corridor." },
+    { name: "Al Shatea & Al Faisaliyah", desc: "Helping retail and service businesses in the Al Shatea and Al Faisaliyah commercial districts." },
+    { name: "Dammam Industrial City", desc: "Digital marketing for petrochemical, manufacturing, and logistics businesses in the industrial city." },
+  ],
+  makkah: [
+    { name: "Haram Area & Ajyad", desc: "SEO for hospitality, hotels, and service businesses near Masjid al-Haram and Ajyad district." },
+    { name: "Al Aziziyah & Third Ring Road", desc: "Helping retail and hospitality businesses along the Third Ring Road and Al Aziziyah area." },
+  ],
+  madinah: [
+    { name: "Central Area & Masjid An-Nabawi", desc: "SEO for hotels, hospitality, and service businesses near the Prophet's Mosque area." },
+    { name: "Knowledge Economic City", desc: "Helping technology and education businesses in Madinah's Knowledge Economic City development." },
+  ],
+  khobar: [
+    { name: "Corniche & Prince Turkey Street", desc: "SEO for dining, retail, and hospitality businesses along Khobar Corniche and Prince Turkey Street." },
+    { name: "Dhahran Techno Valley", desc: "Helping tech startups and companies in Dhahran Techno Valley and KFUPM area." },
+  ],
+  tabuk: [
+    { name: "King Khalid Road & City Centre", desc: "SEO for businesses along King Khalid Road and the central commercial district of Tabuk." },
+    { name: "NEOM Proximity", desc: "Helping businesses position for the growing NEOM mega-project development near Tabuk." },
+  ],
+  abha: [
+    { name: "Al Saad & City Centre", desc: "SEO for hospitality and tourism businesses in Abha city centre and Al Saad district." },
+    { name: "Asir National Park Area", desc: "Helping eco-tourism and hospitality businesses near Asir National Park and Green Mountain." },
+  ],
+  // Qatar — remaining
+  "al-wakrah": [
+    { name: "Al Wakrah Souq & Corniche", desc: "SEO for businesses near the renovated Al Wakrah Souq and waterfront corniche area." },
+    { name: "Al Wakrah Main Road", desc: "Helping retail and service businesses along the main commercial road in Al Wakrah." },
+  ],
+  lusail: [
+    { name: "Lusail Boulevard", desc: "SEO for luxury retail, dining, and entertainment businesses along Lusail Boulevard." },
+    { name: "Lusail Marina & Waterfront", desc: "Helping hospitality and real estate businesses in the Lusail Marina district." },
+  ],
+  // Bahrain
+  manama: [
+    { name: "Bahrain Financial Harbour", desc: "SEO for financial services and corporate businesses in Bahrain Financial Harbour." },
+    { name: "Seef District & City Centre", desc: "Helping retail, hospitality, and service businesses in the Seef Mall and City Centre area." },
+    { name: "Adliya & Exhibition Road", desc: "SEO for restaurants, creative agencies, and lifestyle businesses in Adliya." },
+  ],
+  riffa: [
+    { name: "Riffa Views & East Riffa", desc: "SEO for businesses in the premium Riffa Views development and East Riffa commercial area." },
+    { name: "Bahrain International Circuit", desc: "Helping hospitality and entertainment businesses near the F1 circuit." },
+  ],
+  // Kuwait
+  "kuwait-city": [
+    { name: "Kuwait Towers & Sharq", desc: "SEO for businesses near Kuwait Towers, Sharq Market, and the central waterfront district." },
+    { name: "Kuwait Free Trade Zone", desc: "Helping trade and logistics businesses in the Kuwait Free Trade Zone and Shuwaikh area." },
+    { name: "Al Hamra Tower & Downtown", desc: "SEO for corporate and professional services businesses in Kuwait City's downtown towers." },
+  ],
+  hawalli: [
+    { name: "Hawalli Commercial District", desc: "SEO for retail and service businesses in Hawalli's dense commercial center." },
+    { name: "Salmiya Junction", desc: "Helping businesses near the Hawalli-Salmiya corridor and major shopping areas." },
+  ],
+  salmiya: [
+    { name: "Marina Mall & Gulf Road", desc: "SEO for retail and entertainment businesses near Marina Mall and the Gulf Road strip." },
+    { name: "Salem Al-Mubarak Street", desc: "Helping restaurants, cafes, and retail shops along Salmiya's main commercial street." },
+  ],
+  // Oman
+  muscat: [
+    { name: "Muttrah Souq & Corniche", desc: "SEO for tourism, hospitality, and retail businesses near the historic Muttrah Souq and Corniche." },
+    { name: "Al Qurum & Shatti Al Qurum", desc: "Helping businesses in the upscale Al Qurum and Shatti Al Qurum residential-commercial areas." },
+    { name: "Muscat Hills & Al Khuwair", desc: "SEO for corporate offices and businesses in Al Khuwair CBD and Muscat Hills." },
+  ],
+  salalah: [
+    { name: "Al Haffa & City Centre", desc: "SEO for tourism and retail businesses in Salalah's historic Al Haffa area." },
+    { name: "Salalah Free Zone", desc: "Helping logistics and trade businesses in Salalah Free Zone near the port." },
+  ],
+  sohar: [
+    { name: "Sohar Industrial Port", desc: "SEO for industrial, logistics, and trade businesses in the Sohar Port and Free Zone." },
+    { name: "Sohar City Centre", desc: "Helping local retail and service businesses in central Sohar." },
+  ],
+  // Jordan
+  amman: [
+    { name: "Abdali & Downtown", desc: "SEO for corporate and commercial businesses in the Abdali Boulevard and downtown Amman area." },
+    { name: "Sweifieh & Mecca Street", desc: "Helping retail, dining, and service businesses along Mecca Street and in Sweifieh." },
+    { name: "King Abdullah Business District", desc: "SEO for tech companies and startups in the King Abdullah II Design and Development Bureau area." },
+  ],
+  irbid: [
+    { name: "University Street & City Centre", desc: "SEO for businesses near Yarmouk University and Irbid's central commercial district." },
+    { name: "Al Husn Area", desc: "Helping local businesses in the historic Al Husn area and surrounding neighborhoods." },
+  ],
+  // Lebanon
+  beirut: [
+    { name: "Downtown Beirut & Solidere", desc: "SEO for corporate, hospitality, and luxury businesses in the rebuilt Downtown Beirut district." },
+    { name: "Hamra & Verdun", desc: "Helping retail, education, and service businesses along Hamra Street and Verdun area." },
+    { name: "Achrafieh & Gemmayzeh", desc: "SEO for creative agencies, restaurants, and nightlife businesses in East Beirut." },
+  ],
+  "tripoli-lebanon": [
+    { name: "El Mina & Al Tal", desc: "SEO for businesses in Tripoli's historic centre, El Mina port area, and Al Tal commercial district." },
+    { name: "Rachid Karami Fairground", desc: "Helping businesses near the iconic Rachid Karami International Fair complex." },
+  ],
+  // Egypt — remaining
+  alexandria: [
+    { name: "Corniche & Stanley Bridge", desc: "SEO for hospitality and tourism businesses along Alexandria's famous Corniche waterfront." },
+    { name: "Smouha & Sidi Gaber", desc: "Helping retail and service businesses in the Smouha and Sidi Gaber commercial areas." },
+  ],
+  giza: [
+    { name: "Pyramids Area & Haram Street", desc: "SEO for tourism, hospitality, and retail businesses near the Giza Pyramids and along Haram Street." },
+    { name: "6th of October City", desc: "Helping tech and education businesses in 6th of October City and Mall of Egypt area." },
+  ],
+  // Morocco
+  casablanca: [
+    { name: "Hassan II Mosque & Corniche", desc: "SEO for tourism and hospitality businesses near the Hassan II Mosque and Ain Diab Corniche." },
+    { name: "Casa Finance City", desc: "Helping financial and corporate businesses in Casablanca Finance City and Anfa Place." },
+    { name: "Derb Sultan & Maarif", desc: "SEO for retail and service businesses in the Derb Sultan and Maarif shopping districts." },
+  ],
+  marrakech: [
+    { name: "Jemaa el-Fnaa & Medina", desc: "SEO for tourism, hospitality, and artisan businesses in the Jemaa el-Fnaa and Medina area." },
+    { name: "Gueliz & Hivernage", desc: "Helping modern retail and hospitality businesses in the Gueliz and Hivernage districts." },
+  ],
+  rabat: [
+    { name: "Hassan Tower & Kasbah", desc: "SEO for tourism businesses near the Hassan Tower, Kasbah of the Udayas, and Rabat Medina." },
+    { name: "Agdal & Souissi", desc: "Helping corporate and professional services businesses in the Agdal and Souissi districts." },
+  ],
+  // Tunisia
+  tunis: [
+    { name: "Medina & Avenue Habib Bourguiba", desc: "SEO for businesses along Avenue Habib Bourguiba and the historic Tunis Medina." },
+    { name: "Les Berges du Lac", desc: "Helping corporate and tech businesses in the modern Les Berges du Lac business district." },
+  ],
+  // UK — remaining
+  birmingham: [
+    { name: "Bullring & City Centre", desc: "SEO for retail and hospitality businesses in Birmingham's Bullring and city centre area." },
+    { name: "Jewellery Quarter", desc: "Helping creative, artisan, and professional businesses in the historic Jewellery Quarter." },
+    { name: "Digbeth & Eastside", desc: "SEO for tech startups and creative agencies in Birmingham's emerging Digbeth and Eastside district." },
+  ],
+  leeds: [
+    { name: "City Centre & Victoria Quarter", desc: "SEO for retail and professional businesses in Leeds city centre and the Victoria Quarter." },
+    { name: "Leeds Dock & South Bank", desc: "Helping tech and creative businesses in the Leeds Dock and South Bank regeneration area." },
+  ],
+  liverpool: [
+    { name: "Liverpool ONE & City Centre", desc: "SEO for retail, hospitality, and entertainment businesses in Liverpool ONE and the city centre." },
+    { name: "Baltic Triangle", desc: "Helping creative, tech, and startup businesses in Liverpool's Baltic Triangle district." },
+  ],
+  bristol: [
+    { name: "Harbourside & City Centre", desc: "SEO for hospitality and creative businesses around Bristol Harbourside and the city centre." },
+    { name: "Temple Quarter", desc: "Helping tech and enterprise businesses in the Temple Quarter Enterprise Zone." },
+  ],
+  edinburgh: [
+    { name: "Royal Mile & Old Town", desc: "SEO for tourism, hospitality, and retail businesses along the Royal Mile and Edinburgh Old Town." },
+    { name: "Edinburgh Park & West End", desc: "Helping corporate and tech businesses in Edinburgh Park business district." },
+  ],
+  glasgow: [
+    { name: "Buchanan Street & City Centre", desc: "SEO for retail and hospitality businesses on Buchanan Street and Glasgow city centre." },
+    { name: "Finnieston & West End", desc: "Helping creative, dining, and tech businesses in Glasgow's trendy Finnieston and West End." },
+  ],
+  cardiff: [
+    { name: "Cardiff Bay & City Centre", desc: "SEO for businesses in Cardiff Bay waterfront and the central shopping district." },
+    { name: "Capitol Quarter", desc: "Helping professional services and tech businesses in Cardiff's Capitol Quarter." },
+  ],
+  newcastle: [
+    { name: "Quayside & City Centre", desc: "SEO for hospitality and retail businesses along the Quayside and Grainger Town area." },
+    { name: "Ouseburn Valley", desc: "Helping creative and tech businesses in Newcastle's cultural Ouseburn Valley." },
+  ],
+  sheffield: [
+    { name: "City Centre & Devonshire Quarter", desc: "SEO for retail and creative businesses in Sheffield city centre and the Devonshire Quarter." },
+    { name: "Sheffield Digital Campus", desc: "Helping tech and digital businesses on the Sheffield Digital Campus." },
+  ],
+  nottingham: [
+    { name: "Old Market Square & Lace Market", desc: "SEO for retail and hospitality businesses around Old Market Square and the Lace Market." },
+    { name: "Creative Quarter", desc: "Helping creative and tech startups in Nottingham's Creative Quarter." },
+  ],
+  // USA — remaining
+  chicago: [
+    { name: "The Loop & Magnificent Mile", desc: "SEO for businesses in Chicago's Loop financial district and the Magnificent Mile shopping strip." },
+    { name: "River North & West Loop", desc: "Helping creative agencies, restaurants, and tech companies in River North and the West Loop." },
+    { name: "Wicker Park & Logan Square", desc: "SEO for boutique and lifestyle businesses in Wicker Park and Logan Square." },
+  ],
+  houston: [
+    { name: "Downtown & Galleria", desc: "SEO for corporate and retail businesses in downtown Houston and the Galleria/Uptown area." },
+    { name: "Energy Corridor", desc: "Helping energy, oil & gas, and engineering businesses in Houston's Energy Corridor." },
+    { name: "Texas Medical Center", desc: "SEO for healthcare providers and medical businesses in the world's largest medical complex." },
+  ],
+  phoenix: [
+    { name: "Downtown & Roosevelt Row", desc: "SEO for businesses in downtown Phoenix and the arts-focused Roosevelt Row district." },
+    { name: "Scottsdale & Tempe", desc: "Helping tech, hospitality, and retail businesses in nearby Scottsdale and Tempe." },
+  ],
+  "san-antonio": [
+    { name: "River Walk & Downtown", desc: "SEO for hospitality and tourism businesses along the famous San Antonio River Walk." },
+    { name: "The Pearl & Southtown", desc: "Helping restaurants, retail, and creative businesses in The Pearl and Southtown districts." },
+  ],
+  "san-diego": [
+    { name: "Gaslamp Quarter & Downtown", desc: "SEO for hospitality, dining, and entertainment businesses in the Gaslamp Quarter." },
+    { name: "La Jolla & UTC", desc: "Helping biotech, tech, and professional businesses in La Jolla and University City." },
+  ],
+  dallas: [
+    { name: "Uptown & Downtown", desc: "SEO for corporate and hospitality businesses in Dallas Uptown and downtown districts." },
+    { name: "Deep Ellum & Design District", desc: "Helping creative, entertainment, and design businesses in Deep Ellum and the Design District." },
+  ],
+  austin: [
+    { name: "Downtown & South Congress", desc: "SEO for tech, hospitality, and creative businesses in downtown Austin and SoCo." },
+    { name: "Domain & North Austin", desc: "Helping tech companies and retail businesses in The Domain and North Austin." },
+  ],
+  miami: [
+    { name: "Brickell & Downtown", desc: "SEO for financial services, real estate, and corporate businesses in Brickell and downtown Miami." },
+    { name: "Wynwood & Design District", desc: "Helping creative, art, and fashion businesses in Wynwood and the Miami Design District." },
+    { name: "South Beach & Miami Beach", desc: "SEO for hospitality, tourism, and lifestyle businesses on South Beach." },
+  ],
+  atlanta: [
+    { name: "Midtown & Buckhead", desc: "SEO for corporate, tech, and hospitality businesses in Midtown and Buckhead." },
+    { name: "Old Fourth Ward & Ponce City", desc: "Helping creative and lifestyle businesses near Ponce City Market and the BeltLine." },
+  ],
+  denver: [
+    { name: "LoDo & Union Station", desc: "SEO for businesses in Lower Downtown (LoDo) and the Union Station neighborhood." },
+    { name: "RiNo Arts District", desc: "Helping creative, tech, and food businesses in the River North Art District." },
+  ],
+  seattle: [
+    { name: "South Lake Union & Capitol Hill", desc: "SEO for tech companies in South Lake Union and creative businesses on Capitol Hill." },
+    { name: "Pike Place & Downtown", desc: "Helping retail, tourism, and hospitality businesses near Pike Place Market." },
+  ],
+  "san-francisco": [
+    { name: "SOMA & Financial District", desc: "SEO for tech startups and financial businesses in SOMA and the Financial District." },
+    { name: "Mission District & Castro", desc: "Helping creative, dining, and lifestyle businesses in the Mission and Castro neighborhoods." },
+  ],
+  boston: [
+    { name: "Back Bay & Copley Square", desc: "SEO for professional services and retail businesses in Back Bay and Copley Square." },
+    { name: "Seaport District", desc: "Helping tech startups and innovative businesses in Boston's Seaport Innovation District." },
+  ],
+  "las-vegas": [
+    { name: "The Strip & Convention Center", desc: "SEO for hospitality, entertainment, and tourism businesses on the Las Vegas Strip." },
+    { name: "Downtown & Fremont Street", desc: "Helping emerging businesses in Downtown Las Vegas and the Fremont East district." },
+  ],
+  portland: [
+    { name: "Pearl District & Downtown", desc: "SEO for creative, retail, and hospitality businesses in the Pearl District and downtown Portland." },
+    { name: "Alberta Arts & NE Portland", desc: "Helping independent businesses on Alberta Street and in NE Portland neighborhoods." },
+  ],
+  charlotte: [
+    { name: "Uptown & South End", desc: "SEO for financial, corporate, and hospitality businesses in Uptown Charlotte and South End." },
+    { name: "NoDa Arts District", desc: "Helping creative and lifestyle businesses in Charlotte's NoDa (North Davidson) arts district." },
+  ],
+  detroit: [
+    { name: "Downtown & Campus Martius", desc: "SEO for businesses in the revitalized downtown Detroit and Campus Martius area." },
+    { name: "Corktown & Midtown", desc: "Helping tech startups and creative businesses in Detroit's Corktown and Midtown neighborhoods." },
+  ],
+  minneapolis: [
+    { name: "Downtown & North Loop", desc: "SEO for corporate and tech businesses in downtown Minneapolis and the North Loop neighborhood." },
+    { name: "Uptown & Lake Street", desc: "Helping retail and lifestyle businesses in Uptown Minneapolis and along Lake Street." },
+  ],
+  // Canada — remaining
+  vancouver: [
+    { name: "Gastown & Downtown", desc: "SEO for tech, creative, and hospitality businesses in Gastown and downtown Vancouver." },
+    { name: "Mount Pleasant & Main Street", desc: "Helping independent businesses and startups on Main Street and in Mount Pleasant." },
+  ],
+  montreal: [
+    { name: "Old Montreal & Downtown", desc: "SEO for tourism, hospitality, and corporate businesses in Old Montreal and downtown." },
+    { name: "Mile End & Plateau", desc: "Helping creative, tech, and independent businesses in the Mile End and Plateau-Mont-Royal." },
+  ],
+  calgary: [
+    { name: "Downtown & Beltline", desc: "SEO for energy, corporate, and hospitality businesses in downtown Calgary and the Beltline." },
+    { name: "Kensington & Inglewood", desc: "Helping boutique and lifestyle businesses in Kensington and Inglewood neighborhoods." },
+  ],
+  ottawa: [
+    { name: "Parliament Hill & ByWard Market", desc: "SEO for government services, tourism, and businesses near Parliament and ByWard Market." },
+    { name: "Kanata North Tech Park", desc: "Helping tech companies in Kanata North, Ottawa's Silicon Valley." },
+  ],
+  edmonton: [
+    { name: "Downtown & Ice District", desc: "SEO for businesses in downtown Edmonton and the new Ice District development." },
+    { name: "Whyte Avenue & Old Strathcona", desc: "Helping retail and hospitality businesses along Whyte Avenue and Old Strathcona." },
+  ],
+  winnipeg: [
+    { name: "Exchange District & Downtown", desc: "SEO for creative and corporate businesses in the Exchange District and downtown Winnipeg." },
+    { name: "Osborne Village", desc: "Helping independent retailers and restaurants in Winnipeg's Osborne Village." },
+  ],
+  halifax: [
+    { name: "Downtown & Waterfront", desc: "SEO for tourism, hospitality, and maritime businesses on Halifax's downtown waterfront." },
+    { name: "Spring Garden Road", desc: "Helping retail and service businesses along Spring Garden Road." },
+  ],
+  // Germany — remaining
+  munich: [
+    { name: "Marienplatz & Altstadt", desc: "SEO für Unternehmen in der Altstadt, Marienplatz und dem Viktualienmarkt." },
+    { name: "Schwabing & Maxvorstadt", desc: "SEO für Startups und kreative Unternehmen in Schwabing und Maxvorstadt." },
+  ],
+  hamburg: [
+    { name: "HafenCity & Speicherstadt", desc: "SEO für Unternehmen in der HafenCity und historischen Speicherstadt." },
+    { name: "Altona & St. Pauli", desc: "SEO für kreative und gastronomische Betriebe in Altona und St. Pauli." },
+  ],
+  frankfurt: [
+    { name: "Bankenviertel & Innenstadt", desc: "SEO für Finanzdienstleister und Unternehmen im Bankenviertel und der Innenstadt." },
+    { name: "Sachsenhausen", desc: "SEO für Gastronomie und Einzelhandel in Sachsenhausen." },
+  ],
+  cologne: [
+    { name: "Dom & Altstadt", desc: "SEO für Tourismus und Gastgewerbe rund um den Kölner Dom und die Altstadt." },
+    { name: "Ehrenfeld & Belgisches Viertel", desc: "SEO für kreative und gastronomische Betriebe in Ehrenfeld und dem Belgischen Viertel." },
+  ],
+  dusseldorf: [
+    { name: "Königsallee & Altstadt", desc: "SEO für Luxusmarken und Einzelhandel an der Königsallee und in der Altstadt." },
+    { name: "MedienHafen", desc: "SEO für Medien, Architektur und kreative Unternehmen im MedienHafen." },
+  ],
+  stuttgart: [
+    { name: "Königstraße & City Centre", desc: "SEO für Einzelhandel und Dienstleistungen entlang der Königstraße und im Stadtzentrum." },
+    { name: "Bad Cannstatt", desc: "SEO für Unternehmen in Bad Cannstatt und dem Mercedes-Benz Museum Areal." },
+  ],
+  dortmund: [
+    { name: "City Centre & Westenhellweg", desc: "SEO für Einzelhandel entlang der Westenhellweg Einkaufsstraße." },
+    { name: "Phoenix See", desc: "SEO für moderne Unternehmen am Phoenix See Entwicklungsgebiet." },
+  ],
+  leipzig: [
+    { name: "City Centre & Augustusplatz", desc: "SEO für Unternehmen rund um den Augustusplatz und die Innenstadt Leipzig." },
+    { name: "Plagwitz & Karl-Heine-Kanal", desc: "SEO für kreative und Startup-Unternehmen in Plagwitz." },
+  ],
+  hanover: [
+    { name: "City Centre & Kröpcke", desc: "SEO für Unternehmen im Stadtzentrum rund um den Kröpcke Platz." },
+    { name: "Expo Plaza & Messe", desc: "SEO für Messe- und Veranstaltungsunternehmen am Expo Plaza." },
+  ],
+  // Austria
+  vienna: [
+    { name: "Innere Stadt & Stephansplatz", desc: "SEO für Unternehmen in der Inneren Stadt und rund um den Stephansplatz." },
+    { name: "Donau City & UNO City", desc: "SEO für internationale Organisationen und Unternehmen in der Donau City." },
+  ],
+  graz: [
+    { name: "Altstadt & Herrengasse", desc: "SEO für Einzelhandel und Gastronomie in der Grazer Altstadt und entlang der Herrengasse." },
+  ],
+  salzburg: [
+    { name: "Altstadt & Getreidegasse", desc: "SEO für Tourismus und Einzelhandel in der Salzburger Altstadt und der Getreidegasse." },
+  ],
+  // Switzerland
+  zurich: [
+    { name: "Bahnhofstrasse & City Centre", desc: "SEO für Finanz- und Luxusunternehmen an der Bahnhofstrasse und im Stadtzentrum." },
+    { name: "Zürich West & Technopark", desc: "SEO für Startups und Tech-Unternehmen in Zürich West und am Technopark." },
+  ],
+  bern: [
+    { name: "Altstadt & Bundeshaus", desc: "SEO für Unternehmen in der Berner Altstadt und rund um das Bundeshaus." },
+  ],
+  geneva: [
+    { name: "Genève Centre & Jet d'Eau", desc: "SEO pour les entreprises du centre de Genève et du quartier des Nations." },
+    { name: "CERN & Meyrin", desc: "SEO pour les entreprises technologiques et scientifiques à Meyrin et près du CERN." },
+  ],
+  lausanne: [
+    { name: "Flon & Centre-Ville", desc: "SEO pour les entreprises du quartier du Flon et du centre-ville de Lausanne." },
+    { name: "EPFL & Innovation Park", desc: "SEO pour les startups et entreprises tech à l'EPFL Innovation Park." },
+  ],
+  // France — remaining
+  lyon: [
+    { name: "Presqu'île & Part-Dieu", desc: "SEO pour les entreprises de la Presqu'île et du quartier d'affaires de la Part-Dieu." },
+    { name: "Vieux Lyon & Confluence", desc: "SEO pour les commerces du Vieux Lyon et le quartier de la Confluence." },
+  ],
+  marseille: [
+    { name: "Vieux-Port & La Canebière", desc: "SEO pour les entreprises autour du Vieux-Port et de La Canebière." },
+    { name: "Euroméditerranée", desc: "SEO pour les entreprises du quartier d'affaires Euroméditerranée." },
+  ],
+  toulouse: [
+    { name: "Capitole & Centre-Ville", desc: "SEO pour les entreprises autour de la Place du Capitole et du centre historique." },
+    { name: "Aerospace Valley", desc: "SEO pour les entreprises aérospatiales et tech dans l'Aerospace Valley." },
+  ],
+  nice: [
+    { name: "Promenade des Anglais & Centre", desc: "SEO pour le tourisme et l'hôtellerie sur la Promenade des Anglais et le centre de Nice." },
+    { name: "Sophia Antipolis", desc: "SEO pour les entreprises technologiques de la technopole Sophia Antipolis." },
+  ],
+  nantes: [
+    { name: "Île de Nantes & Centre", desc: "SEO pour les entreprises de l'Île de Nantes et du centre-ville." },
+  ],
+  strasbourg: [
+    { name: "Grande Île & Petite France", desc: "SEO pour les commerces de la Grande Île et du quartier de la Petite France." },
+    { name: "Quartier Européen", desc: "SEO pour les institutions et entreprises du Quartier Européen." },
+  ],
+  bordeaux: [
+    { name: "Quais & Chartrons", desc: "SEO pour les entreprises des quais de la Garonne et du quartier des Chartrons." },
+    { name: "Mériadeck & Centre", desc: "SEO pour les entreprises du centre d'affaires de Mériadeck." },
+  ],
+  lille: [
+    { name: "Vieux-Lille & Grand Place", desc: "SEO pour les commerces du Vieux-Lille et autour de la Grand Place." },
+    { name: "EuraTechnologies", desc: "SEO pour les startups et entreprises tech d'EuraTechnologies." },
+  ],
+  montpellier: [
+    { name: "Place de la Comédie & Écusson", desc: "SEO pour les commerces de la Place de la Comédie et de l'Écusson." },
+  ],
+  // Belgium
+  brussels: [
+    { name: "Grand Place & City Centre", desc: "SEO pour les entreprises autour de la Grand Place et du centre-ville de Bruxelles." },
+    { name: "European Quarter", desc: "SEO for EU institutions, lobbying firms, and international organizations in the European Quarter." },
+  ],
+  antwerp: [
+    { name: "Meir & Groenplaats", desc: "SEO voor winkels en bedrijven op de Meir en rond de Groenplaats." },
+    { name: "Diamond District & Centraal Station", desc: "SEO voor diamanthandelaren en bedrijven bij het Centraal Station." },
+  ],
+  // Netherlands — remaining
+  rotterdam: [
+    { name: "Kop van Zuid & Erasmusbrug", desc: "SEO voor bedrijven op de Kop van Zuid en rond de Erasmusbrug." },
+    { name: "Rotterdam Centraal & Markthal", desc: "SEO voor horeca en winkels bij Rotterdam Centraal en de Markthal." },
+  ],
+  "the-hague": [
+    { name: "Binnenhof & City Centre", desc: "SEO voor overheids- en juridische bedrijven rond het Binnenhof en het stadscentrum." },
+    { name: "Scheveningen", desc: "SEO voor horeca en toerisme in Scheveningen." },
+  ],
+  utrecht: [
+    { name: "Oudegracht & Centrum", desc: "SEO voor horeca en winkels langs de Oudegracht en in het centrum van Utrecht." },
+    { name: "Utrecht Science Park", desc: "SEO voor tech- en wetenschapsbedrijven op het Utrecht Science Park." },
+  ],
+  eindhoven: [
+    { name: "Strijp-S & Centrum", desc: "SEO voor creatieve en technologische bedrijven op Strijp-S en in het centrum." },
+    { name: "High Tech Campus", desc: "SEO voor tech-bedrijven op de High Tech Campus Eindhoven." },
+  ],
+  groningen: [
+    { name: "Grote Markt & Centrum", desc: "SEO voor horeca en winkels rond de Grote Markt en het centrum van Groningen." },
+    { name: "Zernike Campus", desc: "SEO voor innovatieve en technologische bedrijven op het Zernike Campus." },
+  ],
+  // Italy
+  milan: [
+    { name: "Duomo & Centro Storico", desc: "SEO per aziende nel centro storico di Milano e zona Duomo." },
+    { name: "Porta Nuova & CityLife", desc: "SEO per imprese nei quartieri innovativi di Porta Nuova e CityLife." },
+  ],
+  rome: [
+    { name: "Centro Storico & Trastevere", desc: "SEO per attività nel centro storico di Roma e a Trastevere." },
+    { name: "EUR & Tiburtina", desc: "SEO per imprese nei quartieri business EUR e Tiburtina." },
+  ],
+  turin: [
+    { name: "Via Roma & Piazza Castello", desc: "SEO per aziende nel centro di Torino lungo Via Roma e Piazza Castello." },
+  ],
+  naples: [
+    { name: "Centro Direzionale & Spaccanapoli", desc: "SEO per imprese nel Centro Direzionale e lungo Spaccanapoli." },
+  ],
+  florence: [
+    { name: "Centro Storico & Santa Croce", desc: "SEO per attività turistiche e artigianali nel centro storico di Firenze." },
+  ],
+  bologna: [
+    { name: "Piazza Maggiore & Due Torri", desc: "SEO per aziende nel centro di Bologna intorno a Piazza Maggiore." },
+  ],
+  palermo: [
+    { name: "Quattro Canti & Via Maqueda", desc: "SEO per attività commerciali ai Quattro Canti e lungo Via Maqueda." },
+  ],
+  genoa: [
+    { name: "Porto Antico & Centro Storico", desc: "SEO per imprese al Porto Antico e nel centro storico di Genova." },
+  ],
+  // Spain
+  madrid: [
+    { name: "Gran Vía & Sol", desc: "SEO para negocios en la Gran Vía y la Puerta del Sol." },
+    { name: "Salamanca & Chamberí", desc: "SEO para empresas de lujo y servicios profesionales en Salamanca y Chamberí." },
+  ],
+  barcelona: [
+    { name: "Passeig de Gràcia & Eixample", desc: "SEO para comercios y empresas en el Passeig de Gràcia y el Eixample." },
+    { name: "22@ & Poblenou", desc: "SEO para startups y empresas tech en el distrito 22@ de Poblenou." },
+  ],
+  valencia: [
+    { name: "Ciudad de las Artes y las Ciencias", desc: "SEO para turismo y negocios cerca de la Ciudad de las Artes y las Ciencias." },
+    { name: "Centro Histórico & El Carmen", desc: "SEO para comercios en el centro histórico y el barrio del Carmen." },
+  ],
+  seville: [
+    { name: "Centro & Triana", desc: "SEO para negocios en el centro histórico de Sevilla y el barrio de Triana." },
+  ],
+  bilbao: [
+    { name: "Guggenheim & Abandoibarra", desc: "SEO para empresas de turismo y negocios cerca del Museo Guggenheim y Abandoibarra." },
+  ],
+  malaga: [
+    { name: "Centro & Soho", desc: "SEO para negocios en el centro de Málaga y el distrito creativo Soho." },
+    { name: "Málaga TechPark", desc: "SEO para empresas tecnológicas en el Parque Tecnológico de Andalucía." },
+  ],
+  zaragoza: [
+    { name: "Plaza del Pilar & Centro", desc: "SEO para comercios y servicios en la Plaza del Pilar y el centro de Zaragoza." },
+  ],
+  alicante: [
+    { name: "Explanada de España & Centro", desc: "SEO para negocios turísticos y comerciales en la Explanada y el centro de Alicante." },
+  ],
+  // Portugal
+  lisbon: [
+    { name: "Baixa & Chiado", desc: "SEO para empresas na Baixa, Chiado e Terreiro do Paço." },
+    { name: "Parque das Nações", desc: "SEO para empresas de tecnologia e corporativas no Parque das Nações." },
+  ],
+  porto: [
+    { name: "Ribeira & Centro Histórico", desc: "SEO para turismo e comércio na Ribeira e no centro histórico do Porto." },
+    { name: "Boavista & Matosinhos", desc: "SEO para empresas modernas na Boavista e em Matosinhos." },
+  ],
+  braga: [
+    { name: "Centro Histórico & Bom Jesus", desc: "SEO para empresas no centro histórico de Braga e junto ao Bom Jesus do Monte." },
+  ],
+  // Brazil
+  "sao-paulo": [
+    { name: "Avenida Paulista & Jardins", desc: "SEO para empresas na Avenida Paulista e nos Jardins." },
+    { name: "Faria Lima & Vila Olímpia", desc: "SEO para startups e empresas de tecnologia na Faria Lima e Vila Olímpia." },
+  ],
+  "rio-de-janeiro": [
+    { name: "Centro & Zona Sul", desc: "SEO para empresas no centro do Rio e na Zona Sul (Copacabana, Ipanema)." },
+    { name: "Barra da Tijuca", desc: "SEO para empresas e comércio na Barra da Tijuca." },
+  ],
+  "belo-horizonte": [
+    { name: "Savassi & Funcionários", desc: "SEO para empresas nos bairros Savassi e Funcionários." },
+  ],
+  brasilia: [
+    { name: "Esplanada & Asa Sul", desc: "SEO para empresas na Esplanada dos Ministérios e Asa Sul." },
+  ],
+  curitiba: [
+    { name: "Centro & Batel", desc: "SEO para empresas no centro de Curitiba e no bairro Batel." },
+  ],
+  fortaleza: [
+    { name: "Beira Mar & Aldeota", desc: "SEO para empresas na Avenida Beira Mar e no bairro Aldeota." },
+  ],
+  // Scandinavia
+  copenhagen: [
+    { name: "Strøget & Nyhavn", desc: "SEO for businesses along Strøget shopping street and the Nyhavn waterfront." },
+    { name: "Ørestad & Amager", desc: "SEO for modern businesses in the Ørestad development and Amager area." },
+  ],
+  aarhus: [
+    { name: "Latinerkvarteret & City Centre", desc: "SEO for businesses in the Latin Quarter and Aarhus city centre." },
+  ],
+  stockholm: [
+    { name: "Gamla Stan & Norrmalm", desc: "SEO for businesses in Gamla Stan (Old Town) and the Norrmalm commercial district." },
+    { name: "Kista Science City", desc: "SEO for tech and IT companies in Kista Science City." },
+  ],
+  gothenburg: [
+    { name: "Nordstan & Avenyn", desc: "SEO for retail and hospitality businesses along Avenyn and in the Nordstan area." },
+  ],
+  oslo: [
+    { name: "Karl Johans gate & Sentrum", desc: "SEO for businesses along Karl Johans gate and Oslo city centre." },
+    { name: "Bjørvika & Barcode", desc: "SEO for modern businesses in the Bjørvika waterfront and Barcode development." },
+  ],
+  helsinki: [
+    { name: "Kamppi & Kluuvi", desc: "SEO for retail and corporate businesses in Kamppi and Kluuvi districts." },
+    { name: "Otaniemi & Espoo", desc: "SEO for tech startups and companies at Aalto University campus in Otaniemi." },
+  ],
+  // Poland
+  warsaw: [
+    { name: "Śródmieście & Złote Tarasy", desc: "SEO for businesses in Warsaw's city centre and Złote Tarasy commercial area." },
+    { name: "Mokotów & Wilanów", desc: "SEO for corporate and tech businesses in Mokotów business district." },
+  ],
+  krakow: [
+    { name: "Rynek Główny & Stare Miasto", desc: "SEO for tourism and hospitality businesses around the Main Market Square." },
+    { name: "Zabłocie & Kazimierz", desc: "SEO for creative and tech businesses in Zabłocie and the Kazimierz district." },
+  ],
+  wroclaw: [
+    { name: "Rynek & Ostrów Tumski", desc: "SEO for businesses around Wrocław's Market Square and Cathedral Island." },
+  ],
+  // Czech Republic
+  prague: [
+    { name: "Staré Město & Nové Město", desc: "SEO for tourism, hospitality, and retail businesses in Prague's Old and New Town." },
+    { name: "Karlín & Smíchov", desc: "SEO for tech startups and modern businesses in Karlín and Smíchov." },
+  ],
+  // Hungary
+  budapest: [
+    { name: "Belváros & Andrássy Avenue", desc: "SEO for businesses in Budapest's city centre and along Andrássy Avenue." },
+    { name: "District XIII & Váci Corridor", desc: "SEO for corporate and tech businesses in the Váci Corridor office district." },
+  ],
+  // Romania
+  bucharest: [
+    { name: "Centru Vechi & Piața Universității", desc: "SEO for businesses in Bucharest's Old Centre and University Square area." },
+    { name: "Pipera & Floreasca", desc: "SEO for corporate and tech businesses in the Pipera and Floreasca business districts." },
+  ],
+  cluj: [
+    { name: "Centru & Piața Unirii", desc: "SEO for businesses in Cluj-Napoca's city centre and Union Square area." },
+  ],
+  // Greece
+  athens: [
+    { name: "Syntagma & Plaka", desc: "SEO for tourism and retail businesses near Syntagma Square and the Plaka neighbourhood." },
+    { name: "Kifissia & Marousi", desc: "SEO for corporate businesses in the northern Athenian suburbs of Kifissia and Marousi." },
+  ],
+  // Turkey
+  istanbul: [
+    { name: "Levent & Maslak", desc: "SEO for corporate and financial businesses in the Levent-Maslak business corridor." },
+    { name: "Sultanahmet & Beyoğlu", desc: "SEO for tourism, hospitality, and cultural businesses in Sultanahmet and Beyoğlu." },
+    { name: "Kadıköy & Ataşehir", desc: "SEO for tech and startup businesses on the Asian side in Kadıköy and Ataşehir." },
+  ],
+  ankara: [
+    { name: "Kızılay & Çankaya", desc: "SEO for businesses in the Kızılay commercial centre and Çankaya government district." },
+  ],
+  izmir: [
+    { name: "Alsancak & Konak", desc: "SEO for retail, hospitality, and service businesses in Alsancak and Konak." },
+  ],
+  antalya: [
+    { name: "Kaleiçi & Lara Beach", desc: "SEO for tourism and hospitality businesses in Kaleiçi Old Town and Lara Beach." },
+  ],
+  // Australia — remaining
+  brisbane: [
+    { name: "CBD & South Bank", desc: "SEO for businesses in Brisbane CBD and the South Bank cultural precinct." },
+    { name: "Fortitude Valley", desc: "Helping creative, entertainment, and tech businesses in Fortitude Valley." },
+  ],
+  perth: [
+    { name: "CBD & Elizabeth Quay", desc: "SEO for businesses in Perth CBD and the Elizabeth Quay waterfront development." },
+    { name: "Northbridge & Leederville", desc: "Helping hospitality and creative businesses in Northbridge and Leederville." },
+  ],
+  adelaide: [
+    { name: "CBD & Rundle Mall", desc: "SEO for retail and service businesses in Adelaide CBD and along Rundle Mall." },
+    { name: "Lot Fourteen & Tonsley", desc: "Helping tech and innovation businesses at Lot Fourteen and Tonsley Innovation District." },
+  ],
+  "gold-coast": [
+    { name: "Surfers Paradise & Broadbeach", desc: "SEO for tourism and hospitality businesses in Surfers Paradise and Broadbeach." },
+    { name: "Robina & Varsity Lakes", desc: "Helping professional services and retail businesses in Robina and Varsity Lakes." },
+  ],
+  // New Zealand
+  auckland: [
+    { name: "CBD & Britomart", desc: "SEO for corporate and hospitality businesses in Auckland CBD and Britomart precinct." },
+    { name: "Ponsonby & Parnell", desc: "Helping boutique and lifestyle businesses in Ponsonby and Parnell." },
+  ],
+  wellington: [
+    { name: "CBD & Lambton Quay", desc: "SEO for government services and corporate businesses on Lambton Quay and in the CBD." },
+    { name: "Cuba Street", desc: "Helping creative and independent businesses on Wellington's Cuba Street." },
+  ],
+  christchurch: [
+    { name: "CBD & Cathedral Square", desc: "SEO for businesses in the rebuilt Christchurch CBD and Cathedral Square area." },
+  ],
+  // Southeast Asia
+  singapore: [
+    { name: "Marina Bay & CBD", desc: "SEO for financial and corporate businesses in Marina Bay and the Central Business District." },
+    { name: "One-North & Ayer Rajah", desc: "Helping tech startups and biotech companies in the one-north business park." },
+    { name: "Orchard Road", desc: "SEO for luxury retail and hospitality businesses along Orchard Road." },
+  ],
+  "kuala-lumpur": [
+    { name: "KLCC & Bukit Bintang", desc: "SEO for businesses near the Petronas Towers, KLCC, and the Bukit Bintang shopping district." },
+    { name: "Bangsar & Mont Kiara", desc: "Helping expat-focused and lifestyle businesses in Bangsar and Mont Kiara." },
+  ],
+  penang: [
+    { name: "George Town Heritage Zone", desc: "SEO for tourism and hospitality businesses in George Town's UNESCO Heritage Zone." },
+    { name: "Bayan Lepas FTZ", desc: "Helping electronics and manufacturing businesses in the Bayan Lepas Free Trade Zone." },
+  ],
+  "johor-bahru": [
+    { name: "JB City Centre & CIQ", desc: "SEO for businesses in Johor Bahru city centre and near the Customs, Immigration and Quarantine complex." },
+    { name: "Iskandar Puteri", desc: "Helping businesses in the Iskandar Malaysia special economic zone." },
+  ],
+  bangkok: [
+    { name: "Sukhumvit & Silom", desc: "SEO for hospitality and corporate businesses along Sukhumvit Road and Silom." },
+    { name: "Siam & Ratchaprasong", desc: "Helping retail and luxury businesses in the Siam and Ratchaprasong shopping area." },
+  ],
+  "chiang-mai": [
+    { name: "Old City & Nimmanhaemin", desc: "SEO for tourism, hospitality, and digital nomad businesses in the Old City and Nimman area." },
+  ],
+  manila: [
+    { name: "Makati CBD & BGC", desc: "SEO for corporate and financial businesses in Makati CBD and Bonifacio Global City." },
+    { name: "Ortigas Center", desc: "Helping corporate and BPO businesses in Ortigas Center." },
+  ],
+  cebu: [
+    { name: "Cebu IT Park & Lahug", desc: "SEO for BPO and tech businesses in Cebu IT Park and Lahug area." },
+    { name: "Mactan & Mandaue", desc: "Helping export and manufacturing businesses in Mactan Economic Zone and Mandaue." },
+  ],
+  // Japan — remaining
+  osaka: [
+    { name: "Umeda & Kita", desc: "大阪梅田・北区エリアのビジネス向けSEOサービス。" },
+    { name: "Namba & Shinsaibashi", desc: "難波・心斎橋の商業施設・飲食店向けSEO対策。" },
+  ],
+  // Korea — remaining
+  busan: [
+    { name: "Haeundae & Centum City", desc: "해운대 센텀시티 지역 비즈니스를 위한 SEO 서비스." },
+    { name: "Nampo-dong & Gwangalli", desc: "남포동 및 광안리 상업지구 비즈니스를 위한 검색 최적화." },
+  ],
+  // South Africa
+  johannesburg: [
+    { name: "Sandton & Rosebank", desc: "SEO for corporate, financial, and retail businesses in Sandton CBD and Rosebank." },
+    { name: "Braamfontein & Maboneng", desc: "Helping creative and startup businesses in Braamfontein and the Maboneng Precinct." },
+  ],
+  "cape-town": [
+    { name: "V&A Waterfront & CBD", desc: "SEO for tourism, hospitality, and corporate businesses at the V&A Waterfront and in the CBD." },
+    { name: "Woodstock & Observatory", desc: "Helping creative and tech businesses in Cape Town's Woodstock and Observatory." },
+  ],
+  durban: [
+    { name: "Golden Mile & Beachfront", desc: "SEO for hospitality and tourism businesses along Durban's Golden Mile beachfront." },
+    { name: "Umhlanga Ridge", desc: "Helping corporate and professional businesses in Umhlanga Ridge Town Centre." },
+  ],
+  // Nigeria
+  lagos: [
+    { name: "Victoria Island & Lekki", desc: "SEO for corporate, tech, and hospitality businesses on Victoria Island and in Lekki." },
+    { name: "Yaba & Surulere", desc: "Helping tech startups in Yaba (Yabacon Valley) and local businesses in Surulere." },
+  ],
+  abuja: [
+    { name: "Central Area & Wuse", desc: "SEO for government services and corporate businesses in Abuja's Central Area and Wuse district." },
+    { name: "Garki & Maitama", desc: "Helping professional and diplomatic businesses in Garki and Maitama." },
+  ],
+  // Kenya
+  nairobi: [
+    { name: "CBD & Upper Hill", desc: "SEO for corporate and financial businesses in Nairobi CBD and Upper Hill." },
+    { name: "Westlands & iHub", desc: "Helping tech startups and creative businesses in Westlands and near iHub." },
+  ],
+  // Mexico
+  "mexico-city": [
+    { name: "Polanco & Reforma", desc: "SEO para empresas de lujo y corporativas en Polanco y Paseo de la Reforma." },
+    { name: "Roma & Condesa", desc: "SEO para negocios creativos y gastronómicos en la Roma y la Condesa." },
+  ],
+  guadalajara: [
+    { name: "Centro Histórico & Chapultepec", desc: "SEO para negocios en el centro histórico y la zona de Chapultepec." },
+  ],
+  monterrey: [
+    { name: "San Pedro & Valle Oriente", desc: "SEO para empresas corporativas y de lujo en San Pedro Garza García y Valle Oriente." },
+  ],
+  // Colombia
+  bogota: [
+    { name: "Zona T & Usaquén", desc: "SEO para empresas de entretenimiento y gastronómicas en la Zona T y Usaquén." },
+    { name: "Chapinero & Calle 72", desc: "SEO para empresas tech y startups en Chapinero." },
+  ],
+  medellin: [
+    { name: "El Poblado & Laureles", desc: "SEO para negocios de turismo y gastronomía en El Poblado y Laureles." },
+    { name: "Ruta N & Centro", desc: "SEO para empresas tech e innovación en Ruta N y el centro de Medellín." },
+  ],
+  // Argentina
+  "buenos-aires": [
+    { name: "Puerto Madero & Microcentro", desc: "SEO para empresas corporativas en Puerto Madero y el Microcentro." },
+    { name: "Palermo & Recoleta", desc: "SEO para negocios de gastronomía y moda en Palermo y Recoleta." },
+  ],
+  "cordoba-argentina": [
+    { name: "Centro & Nueva Córdoba", desc: "SEO para negocios en el centro de Córdoba y Nueva Córdoba." },
+  ],
+  // Chile
+  santiago: [
+    { name: "Las Condes & Providencia", desc: "SEO para empresas corporativas y de servicios en Las Condes y Providencia." },
+    { name: "Santiago Centro & Barrio Italia", desc: "SEO para negocios en el centro de Santiago y el Barrio Italia." },
+  ],
+  // Peru
+  lima: [
+    { name: "Miraflores & San Isidro", desc: "SEO para empresas en Miraflores y el distrito financiero de San Isidro." },
+    { name: "Barranco", desc: "SEO para negocios creativos y turísticos en el bohemio barrio de Barranco." },
+  ],
+  // Israel
+  "tel-aviv": [
+    { name: "Rothschild Boulevard & White City", desc: "SEO for startups and tech companies along Rothschild Boulevard in the White City." },
+    { name: "Herzliya Pituach", desc: "Helping high-tech businesses in the Herzliya Pituach tech hub." },
+  ],
+  // Ireland
+  dublin: [
+    { name: "Silicon Docks & Grand Canal", desc: "SEO for tech companies in the Silicon Docks and Grand Canal innovation district." },
+    { name: "Grafton Street & Temple Bar", desc: "Helping retail, hospitality, and tourism businesses on Grafton Street and in Temple Bar." },
+  ],
+  cork: [
+    { name: "Patrick Street & City Centre", desc: "SEO for retail and hospitality businesses on Patrick Street and in Cork city centre." },
+    { name: "Mahon & Little Island", desc: "Helping pharma and tech businesses in Mahon and Little Island business parks." },
+  ],
 };
