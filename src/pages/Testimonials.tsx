@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, Play, Quote } from "lucide-react";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const testimonials = [
   { name: "Ahmed Rashid", company: "TechVenture Dubai", role: "CEO", text: "Shahab helped us increase organic traffic by 400% in just 6 months. His understanding of both traditional SEO and GEO optimization is truly unmatched. He provided clear reports and was always available to discuss strategy.", rating: 5 },
@@ -20,6 +21,12 @@ const videoTestimonials = [
 ];
 
 const Testimonials = () => {
+  useSeoMeta({
+    title: "Client Testimonials - SEO Success Stories & Reviews",
+    description: "Read real client testimonials and success stories. See how Shahab Abbasi has helped businesses achieve 400%+ traffic growth through SEO.",
+    canonical: "https://shahababbasi.com/testimonials",
+  });
+
   return (
     <Layout>
       <section className="section-padding">

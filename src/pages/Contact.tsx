@@ -5,9 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+
+  useSeoMeta({
+    title: "Contact Shahab Abbasi - Free SEO Consultation",
+    description: "Get in touch with Shahab Abbasi for a free SEO consultation. Based in Islamabad, serving clients in UAE, UK, USA, Canada and worldwide.",
+    canonical: "https://shahababbasi.com/contact",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

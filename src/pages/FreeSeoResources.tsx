@@ -4,6 +4,7 @@ import { Download, Mail, ArrowRight, FileText, BarChart3, BookOpen, CheckSquare,
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const resources = [
   { title: "Complete SEO Checklist 2026", desc: "100+ point checklist covering technical, on-page, and off-page SEO essentials.", icon: CheckSquare, category: "Checklist" },
@@ -26,6 +27,12 @@ const resources = [
 const FreeSeoResources = () => {
   const [email, setEmail] = useState("");
   const [unlocked, setUnlocked] = useState(false);
+
+  useSeoMeta({
+    title: "Free SEO Resources - Guides, Templates & Checklists",
+    description: "Download 15+ free SEO resources including checklists, templates, and guides for technical SEO, keyword research, link building, and more.",
+    canonical: "https://shahababbasi.com/free-seo-resources",
+  });
 
   const handleUnlock = (e: React.FormEvent) => {
     e.preventDefault();

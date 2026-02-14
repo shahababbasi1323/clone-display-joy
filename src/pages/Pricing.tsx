@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const plans = [
   {
@@ -64,6 +65,12 @@ const plans = [
 const Pricing = () => {
   const [showQuoteForm, setShowQuoteForm] = useState(false);
   const [quoteSubmitted, setQuoteSubmitted] = useState(false);
+
+  useSeoMeta({
+    title: "SEO Pricing & Packages - Affordable Plans from $500/mo",
+    description: "Transparent SEO pricing starting at $500/month. Compare Starter, Growth, and Enterprise packages. No hidden fees. Custom quotes available.",
+    canonical: "https://shahababbasi.com/pricing",
+  });
 
   return (
     <Layout>
