@@ -24,6 +24,13 @@ import BlogPostPage from "./pages/BlogPost";
 import Industries from "./pages/Industries";
 import IndustryPage from "./pages/IndustryPage";
 import Locations from "./pages/Locations";
+import AdminLogin from "./pages/admin/AdminLogin";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminBlog from "./pages/admin/AdminBlog";
+import AdminCaseStudies from "./pages/admin/AdminCaseStudies";
+import AdminTestimonials from "./pages/admin/AdminTestimonials";
+import AdminLeads from "./pages/admin/AdminLeads";
+import AdminSettings from "./pages/admin/AdminSettings";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +60,15 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+
+          {/* Admin */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/blog" element={<AdminBlog />} />
+          <Route path="/admin/case-studies" element={<AdminCaseStudies />} />
+          <Route path="/admin/testimonials" element={<AdminTestimonials />} />
+          <Route path="/admin/leads" element={<AdminLeads />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
 
           {/* Location pages - English (no prefix) */}
           <Route path="/:slug" element={<LocationPage />} />
