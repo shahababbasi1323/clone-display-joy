@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, ChevronDown, MessageCircle } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -93,22 +93,10 @@ const Navbar = () => {
           )}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-2">
-          <a href="https://wa.me/923041316771" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="sm" className="gap-1.5">
-              <MessageCircle className="h-4 w-4" />
-              WhatsApp
-            </Button>
-          </a>
-          <a href="tel:+923041316771">
-            <Button variant="outline" size="sm" className="gap-1.5">
-              <Phone className="h-4 w-4" />
-              Call
-            </Button>
-          </a>
+        <div className="hidden lg:flex items-center">
           <Link to="/free-seo-audit">
             <Button variant="default" size="sm" className="glow-primary">
-              Free SEO Audit
+              Book a Call
             </Button>
           </Link>
         </div>
