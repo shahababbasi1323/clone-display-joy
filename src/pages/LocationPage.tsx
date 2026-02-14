@@ -6,15 +6,20 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getLocationBySlugAndLang, locationsData, LANG_PREFIXES } from "@/data/locationsData";
 import { getLocationContent } from "@/data/locationContent";
-import { servicesData } from "@/data/servicesData";
-import { getLocationRelatedIndustries, getLocationRelatedBlogs, getLocationRelatedTools } from "@/data/internalLinks";
+import { getLocationRelatedBlogs, getLocationRelatedTools } from "@/data/internalLinks";
+import LocationLsiContent from "@/components/location/LocationLsiContent";
+import LocationLandmarks from "@/components/location/LocationLandmarks";
+import LocationWhyChoose from "@/components/location/LocationWhyChoose";
+import LocationAeo from "@/components/location/LocationAeo";
+import LocationServicesInterlink from "@/components/location/LocationServicesInterlink";
+import LocationIndustriesInterlink from "@/components/location/LocationIndustriesInterlink";
+import LocationSchema from "@/components/location/LocationSchema";
 
 const LocationPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const location = useLocation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  // Determine language prefix from URL
   const pathParts = location.pathname.split("/").filter(Boolean);
   let langPrefix = "";
   if (pathParts.length >= 2 && LANG_PREFIXES.includes(pathParts[0])) {
@@ -28,7 +33,9 @@ const LocationPage = () => {
   const displayCountry = loc.localCountry || loc.country;
   const content = getLocationContent(loc.lang, displayCity, displayCountry);
 
-  // Get nearby city data
+  // Extract city slug for landmarks (e.g., "seo-services-dubai" → "dubai")
+  const citySlug = loc.slug.replace("seo-services-", "");
+
   const nearbyCities = loc.nearbyCities
     .map(ns => locationsData.find(l => l.slug === ns && l.langPrefix === loc.langPrefix))
     .filter(Boolean);
@@ -45,7 +52,7 @@ const LocationPage = () => {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
                 <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
                 <span>/</span>
-                <Link to="/services" className="hover:text-foreground transition-colors">Services</Link>
+                <Link to="/locations" className="hover:text-foreground transition-colors">Locations</Link>
                 <span>/</span>
                 <span className="text-foreground">{displayCity}</span>
               </div>
@@ -84,20 +91,16 @@ const LocationPage = () => {
           </div>
         </section>
 
+        {/* LSI Content */}
+        <LocationLsiContent content={content} />
+
         {/* Challenges */}
         <section className="section-padding bg-card/20 border-y border-border">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold mb-10">{content.challengesTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {content.challenges.map((challenge, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 15 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
-                  className="glass rounded-xl p-6"
-                >
+                <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="glass rounded-xl p-6">
                   <h3 className="font-semibold text-lg mb-2">{challenge.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{challenge.desc}</p>
                 </motion.div>
@@ -106,27 +109,19 @@ const LocationPage = () => {
           </div>
         </section>
 
+        {/* Why Choose Us */}
+        <LocationWhyChoose content={content} />
+
         {/* Process */}
-        <section className="section-padding">
+        <section className="section-padding bg-card/20 border-y border-border">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold mb-10">{content.processTitle}</h2>
             <div className="space-y-6">
               {content.processSteps.map((step, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex gap-6"
-                >
+                <motion.div key={i} initial={{ opacity: 0, x: isRTL ? 20 : -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-sm font-bold text-primary shrink-0">
-                      {i + 1}
-                    </div>
-                    {i < content.processSteps.length - 1 && (
-                      <div className="w-px flex-1 bg-border mt-3" />
-                    )}
+                    <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-sm font-bold text-primary shrink-0">{i + 1}</div>
+                    {i < content.processSteps.length - 1 && <div className="w-px flex-1 bg-border mt-3" />}
                   </div>
                   <div className="pb-6">
                     <h3 className="font-semibold text-lg mb-1">{step.title}</h3>
@@ -138,63 +133,23 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* All Services Sidebar */}
-        <section className="section-padding bg-card/20 border-y border-border">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold mb-8">
-              {loc.lang === "ar" ? "خدمات السيو المتاحة" : loc.lang === "fr" ? "Nos Services SEO" : loc.lang === "de" ? "Unsere SEO-Dienste" : `Our SEO Services in ${displayCity}`}
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {servicesData.slice(0, 12).map((svc) => {
-                const SvcIcon = svc.icon;
-                return (
-                  <Link key={svc.slug} to={`/services/${svc.slug}`} className="glass rounded-lg p-4 flex items-center gap-3 hover:border-primary/30 transition-all group">
-                    <SvcIcon className="h-4 w-4 text-primary shrink-0" />
-                    <span className="text-sm font-medium group-hover:text-primary transition-colors">{svc.title}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        {/* AEO Section */}
+        <LocationAeo content={content} />
 
-        {/* Related Industries */}
-        {(() => {
-          const relIndustries = getLocationRelatedIndustries(loc.countryCode);
-          return relIndustries.length > 0 ? (
-            <section className="section-padding">
-              <div className="container mx-auto max-w-4xl">
-                <div className="flex items-center gap-3 mb-8">
-                  <Building2 className="h-6 w-6 text-primary" />
-                  <h2 className="text-3xl font-bold">{content.industriesTitle}</h2>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {relIndustries.map(ind => {
-                    if (!ind) return null;
-                    const IndIcon = ind.icon;
-                    return (
-                      <Link key={ind.slug} to={`/industries/${ind.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                            <IndIcon className="h-5 w-5 text-primary" />
-                          </div>
-                          <h3 className="font-semibold text-sm">{ind.shortTitle} SEO</h3>
-                        </div>
-                        <span className="text-xs text-primary flex items-center gap-1">Learn more <ArrowRight className="h-3 w-3" /></span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-          ) : null;
-        })()}
+        {/* Landmarks */}
+        <LocationLandmarks content={content} citySlug={citySlug} />
+
+        {/* Services Interlinking */}
+        <LocationServicesInterlink content={content} />
+
+        {/* Industries Interlinking */}
+        <LocationIndustriesInterlink content={content} countryCode={loc.countryCode} />
 
         {/* Related Blog Posts */}
         {(() => {
           const relBlogs = getLocationRelatedBlogs();
           return relBlogs.length > 0 ? (
-            <section className="section-padding bg-card/20 border-y border-border">
+            <section className="section-padding">
               <div className="container mx-auto max-w-4xl">
                 <div className="flex items-center gap-3 mb-6">
                   <BookOpen className="h-5 w-5 text-accent" />
@@ -220,7 +175,7 @@ const LocationPage = () => {
         {(() => {
           const relTools = getLocationRelatedTools();
           return relTools.length > 0 ? (
-            <section className="section-padding">
+            <section className="section-padding bg-card/20 border-y border-border">
               <div className="container mx-auto max-w-4xl">
                 <div className="flex items-center gap-3 mb-6">
                   <Wrench className="h-5 w-5 text-accent" />
@@ -249,14 +204,7 @@ const LocationPage = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {content.results.map((result, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="glass rounded-xl p-6 text-center"
-                >
+                <motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glass rounded-xl p-6 text-center">
                   <div className="text-3xl font-bold text-gradient mb-1">{result.stat}</div>
                   <div className="text-sm text-muted-foreground">{result.label}</div>
                 </motion.div>
@@ -272,10 +220,7 @@ const LocationPage = () => {
             <div className="space-y-3">
               {content.faqs.map((faq, i) => (
                 <div key={i} className="glass rounded-xl overflow-hidden">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full flex items-center justify-between p-5 text-left"
-                  >
+                  <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full flex items-center justify-between p-5 text-left">
                     <span className="font-medium text-sm md:text-base pr-4">{faq.q}</span>
                     <ChevronDown className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
                   </button>
@@ -304,11 +249,7 @@ const LocationPage = () => {
                   const ncCity = nc.localCity || nc.city;
                   const href = nc.langPrefix ? `/${nc.langPrefix}/${nc.slug}` : `/${nc.slug}`;
                   return (
-                    <Link
-                      key={nc.slug + nc.langPrefix}
-                      to={href}
-                      className="glass rounded-xl p-5 hover:border-primary/30 transition-all group"
-                    >
+                    <Link key={nc.slug + nc.langPrefix} to={href} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
                       <div className="flex items-center gap-3 mb-2">
                         <MapPin className="h-4 w-4 text-primary" />
                         <h3 className="font-semibold text-sm">{ncCity}</h3>
@@ -337,11 +278,7 @@ const LocationPage = () => {
               </div>
               <div className="flex flex-wrap gap-3">
                 {loc.hreflangAlternates.map((alt) => (
-                  <Link
-                    key={alt.lang + alt.href}
-                    to={alt.href}
-                    className="glass rounded-lg px-4 py-2 hover:border-accent/30 transition-all text-sm font-medium"
-                  >
+                  <Link key={alt.lang + alt.href} to={alt.href} className="glass rounded-lg px-4 py-2 hover:border-accent/30 transition-all text-sm font-medium">
                     {alt.lang === "en" ? "English" : alt.lang === "ar" ? "العربية" : alt.lang === "fr" ? "Français" : alt.lang === "de" ? "Deutsch" : alt.lang === "nl" ? "Nederlands" : alt.lang === "he" ? "עברית" : alt.lang.toUpperCase()}
                   </Link>
                 ))}
@@ -365,67 +302,8 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                name: "Shahab Abbasi - SEO Expert",
-                description: loc.metaDescription,
-                url: `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`,
-                areaServed: {
-                  "@type": "City",
-                  name: loc.city,
-                  containedInPlace: { "@type": "Country", name: loc.country },
-                },
-                provider: {
-                  "@type": "Person",
-                  name: "Shahab Abbasi",
-                  url: "https://shahababbasi.com",
-                },
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                name: `SEO Services in ${loc.city}`,
-                description: loc.metaDescription,
-                provider: {
-                  "@type": "Person",
-                  name: "Shahab Abbasi",
-                  url: "https://shahababbasi.com",
-                },
-                areaServed: { "@type": "City", name: loc.city },
-                url: `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`,
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                mainEntity: content.faqs.map((f) => ({
-                  "@type": "Question",
-                  name: f.q,
-                  acceptedAnswer: { "@type": "Answer", text: f.a },
-                })),
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
-                  { "@type": "ListItem", position: 2, name: "Services", item: "https://shahababbasi.com/services" },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: `SEO Services in ${loc.city}`,
-                    item: `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`,
-                  },
-                ],
-              },
-            ]),
-          }}
-        />
+        {/* Enhanced Schema */}
+        <LocationSchema loc={loc} content={content} displayCity={displayCity} />
       </div>
     </Layout>
   );
