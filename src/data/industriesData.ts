@@ -1,6 +1,8 @@
 import {
   Heart, Scale, Home, Building2, UtensilsCrossed, Code, GraduationCap,
-  ShoppingBag, Car, Sparkles, Camera, Plane, type LucideIcon
+  ShoppingBag, Car, Sparkles, Camera, Plane, Landmark, Music, Tractor,
+  Truck, Dumbbell, Stethoscope, Megaphone, Wifi, Hammer, Globe, Zap,
+  type LucideIcon
 } from "lucide-react";
 
 export interface IndustryFaq {
@@ -342,6 +344,51 @@ export const industriesData: IndustryData[] = [
   // OTHER INDUSTRIES (8 Industries)
   // ============================================================
   ...createOtherIndustries(),
+
+  // ============================================================
+  // FINANCE & BANKING (5 Industries)
+  // ============================================================
+  ...createFinanceBanking(),
+
+  // ============================================================
+  // MEDIA & ENTERTAINMENT (5 Industries)
+  // ============================================================
+  ...createMediaEntertainment(),
+
+  // ============================================================
+  // AGRICULTURE & FARMING (4 Industries)
+  // ============================================================
+  ...createAgriculture(),
+
+  // ============================================================
+  // LOGISTICS & SUPPLY CHAIN (4 Industries)
+  // ============================================================
+  ...createLogistics(),
+
+  // ============================================================
+  // FITNESS & SPORTS (4 Industries)
+  // ============================================================
+  ...createFitnessSports(),
+
+  // ============================================================
+  // GOVERNMENT & PUBLIC SECTOR (3 Industries)
+  // ============================================================
+  ...createGovernment(),
+
+  // ============================================================
+  // ENERGY & UTILITIES (3 Industries)
+  // ============================================================
+  ...createEnergy(),
+
+  // ============================================================
+  // MARKETING & ADVERTISING (4 Industries)
+  // ============================================================
+  ...createMarketingAgencies(),
+
+  // ============================================================
+  // TELECOM & INTERNET (3 Industries)
+  // ============================================================
+  ...createTelecom(),
 ];
 
 // ============ HOME SERVICES FACTORY ============
@@ -769,6 +816,365 @@ function createOtherIndustries(): IndustryData[] {
   );
 }
 
+// ============ FINANCE & BANKING FACTORY ============
+function createFinanceBanking(): IndustryData[] {
+  const icon = Landmark;
+  const cat = "Finance & Banking";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["bank-seo", "Bank SEO", "Banks", "SEO for Banks - Banking Digital Marketing", ["bank near me", "best savings account", "personal loan", "mortgage rates", "business banking", "checking account", "online banking"]],
+    ["fintech-seo", "Fintech SEO", "Fintech Companies", "SEO for Fintech - Financial Technology Marketing", ["fintech app", "payment processing", "digital wallet", "neobank", "peer-to-peer lending", "cryptocurrency exchange", "robo-advisor"]],
+    ["mortgage-seo", "Mortgage SEO", "Mortgage Lenders", "SEO for Mortgage Lenders - Home Loan Marketing", ["mortgage lender near me", "home loan rates", "refinance mortgage", "FHA loan", "VA loan", "first-time homebuyer loan", "mortgage calculator"]],
+    ["credit-union-seo", "Credit Union SEO", "Credit Unions", "SEO for Credit Unions - Member Acquisition Marketing", ["credit union near me", "join credit union", "credit union savings", "auto loan credit union", "credit union mortgage", "share certificate"]],
+    ["crypto-seo", "Cryptocurrency SEO", "Crypto Companies", "SEO for Cryptocurrency - Blockchain & Crypto Marketing", ["cryptocurrency exchange", "buy bitcoin", "crypto wallet", "DeFi platform", "NFT marketplace", "blockchain development", "crypto trading"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Build trust, attract customers, and increase market share with compliant financial marketing.`,
+      icon, cat, shortTitle,
+      `Grow your ${shortTitle.toLowerCase()} business with SEO strategies that build trust, ensure compliance, and drive qualified leads in the competitive financial sector.`,
+      [
+        { title: "Regulatory Compliance", desc: `Financial SEO must comply with strict advertising regulations. All content needs legal review and disclaimers.` },
+        { title: "Trust & Security", desc: `Customers need to trust ${shortTitle.toLowerCase()} with their money. YMYL standards require exceptional E-E-A-T signals.` },
+        { title: "High Competition", desc: `The financial sector is intensely competitive online, with major institutions spending heavily on digital marketing.` },
+        { title: "Complex Products", desc: `Financial products are complex. SEO content must educate while persuading, without misleading claims.` },
+      ],
+      [
+        { title: "Compliant Content Marketing", desc: `Create educational financial content that meets regulatory requirements while driving organic traffic.` },
+        { title: "Local Branch SEO", desc: `Optimize each branch or location for local searches to capture nearby customers.` },
+        { title: "Product Page Optimization", desc: `Create dedicated, optimized pages for each financial product and service offering.` },
+        { title: "Trust Signal Optimization", desc: `Highlight certifications, memberships, FDIC insurance, and security credentials across all pages.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How does financial SEO ensure compliance?`, a: `We work with your compliance team to ensure all content meets regulatory requirements including proper disclaimers, accurate rate disclosures, and approved marketing language.` },
+        { q: `How competitive is ${shortTitle.toLowerCase()} SEO?`, a: `Very competitive. Financial keywords are among the most expensive in paid search, making organic rankings extremely valuable for reducing acquisition costs.` },
+        { q: `What content works best for ${shortTitle.toLowerCase()}?`, a: `Educational calculators, guides, comparison tools, and financial literacy content that builds trust and captures search traffic at every stage of the customer journey.` },
+        { q: `How do you build trust for financial brands online?`, a: `Through E-E-A-T optimization, security badge prominence, regulatory credential highlighting, expert-authored content, and comprehensive review management.` },
+        { q: `What's the ROI of SEO for ${shortTitle.toLowerCase()}?`, a: `Financial customer lifetime values are substantial. Even modest improvements in organic traffic typically deliver 5-10x ROI within the first year.` },
+      ],
+      ["content-strategy", "local-seo", "technical-seo"], defaultLocs
+    )
+  );
+}
+
+// ============ MEDIA & ENTERTAINMENT FACTORY ============
+function createMediaEntertainment(): IndustryData[] {
+  const icon = Music;
+  const cat = "Media & Entertainment";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["music-seo", "Music Industry SEO", "Musicians & Labels", "SEO for Musicians - Music Promotion & Discovery", ["music artist", "new album release", "concert tickets", "music streaming", "band website", "indie musician", "music producer"]],
+    ["podcast-seo", "Podcast SEO", "Podcasters", "SEO for Podcasts - Podcast Growth & Discovery Marketing", ["best podcast", "podcast about [topic]", "podcast directory", "listen to podcast", "podcast hosting", "podcast promotion"]],
+    ["gaming-seo", "Gaming SEO", "Gaming Companies", "SEO for Gaming - Video Game Marketing & Community Growth", ["video game", "gaming platform", "esports team", "game review", "mobile game", "gaming community", "game developer"]],
+    ["streaming-seo", "Streaming Service SEO", "Streaming Platforms", "SEO for Streaming - OTT & Content Platform Marketing", ["streaming service", "watch movies online", "live streaming", "video on demand", "OTT platform", "content creator"]],
+    ["news-media-seo", "News & Media SEO", "News Publishers", "SEO for News & Media - Publisher Growth Strategy", ["breaking news", "news website", "online magazine", "digital publisher", "journalism", "media company", "news aggregator"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Increase discoverability, grow audiences, and monetize content with strategic search optimization.`,
+      icon, cat, shortTitle,
+      `Amplify your ${shortTitle.toLowerCase()} reach with SEO strategies designed to grow audiences, boost discoverability, and maximize content engagement.`,
+      [
+        { title: "Content Volume", desc: `Media businesses produce massive content volumes. SEO must scale across thousands of pages efficiently.` },
+        { title: "Discoverability", desc: `Standing out in a saturated entertainment market requires exceptional SEO and content optimization.` },
+        { title: "Platform Competition", desc: `Major platforms dominate search results. Independent ${shortTitle.toLowerCase()} need creative strategies to compete.` },
+        { title: "Audience Retention", desc: `Attracting visitors is step one; keeping them engaged requires optimized content architecture and UX.` },
+      ],
+      [
+        { title: "Content Discovery SEO", desc: `Optimize all content for maximum search discoverability across Google, YouTube, and niche platforms.` },
+        { title: "Audience Growth Strategy", desc: `Build organic audience funnels that convert searchers into subscribers and fans.` },
+        { title: "Schema & Rich Results", desc: `Implement media-specific schema for enhanced search appearances — reviews, events, episodes, videos.` },
+        { title: "Cross-Platform SEO", desc: `Coordinate SEO across website, YouTube, podcast directories, and social platforms for maximum reach.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How can SEO help ${shortTitle.toLowerCase()} grow?`, a: `SEO drives organic discovery — people searching for content like yours. By optimizing for relevant search terms, you attract new audiences who are actively looking for entertainment in your niche.` },
+        { q: `Should I focus on Google or platform-specific SEO?`, a: `Both. Google drives website traffic, while platform SEO (YouTube, Spotify, Apple Podcasts) maximizes discovery within each ecosystem. A coordinated strategy works best.` },
+        { q: `How do I compete with major entertainment brands?`, a: `Niche targeting. Major brands can't cover every topic deeply. By dominating specific niches and long-tail keywords, you build a loyal audience that big players miss.` },
+        { q: `What schema markup helps media SEO?`, a: `VideoObject, MusicRecording, PodcastEpisode, Event, and Review schema all create rich results that dramatically improve click-through rates in search.` },
+        { q: `How long until SEO grows my audience?`, a: `Content-driven media SEO can show results within 1-2 months for new content, with compounding growth as your content library and authority build over time.` },
+      ],
+      ["content-strategy", "technical-seo", "on-page-seo"], defaultLocs
+    )
+  );
+}
+
+// ============ AGRICULTURE FACTORY ============
+function createAgriculture(): IndustryData[] {
+  const icon = Tractor;
+  const cat = "Agriculture & Farming";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["farm-seo", "Farm SEO", "Farms & Ranches", "SEO for Farms - Agricultural Business Marketing", ["farm near me", "organic farm", "farm produce", "CSA subscription", "farmers market", "farm-to-table", "u-pick farm"]],
+    ["agribusiness-seo", "Agribusiness SEO", "Agribusinesses", "SEO for Agribusiness - Agricultural Supply & Equipment Marketing", ["agricultural equipment", "farm supplies", "seed supplier", "fertilizer company", "irrigation systems", "tractor dealer"]],
+    ["winery-seo", "Winery SEO", "Wineries & Breweries", "SEO for Wineries - Wine & Brewery Marketing", ["winery near me", "wine tasting", "craft brewery", "vineyard tours", "buy wine online", "beer brewing", "winery events"]],
+    ["cannabis-seo", "Cannabis SEO", "Cannabis Companies", "SEO for Cannabis - Dispensary & CBD Marketing", ["dispensary near me", "CBD products", "cannabis delivery", "marijuana dispensary", "hemp products", "edibles near me", "cannabis brand"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Connect with buyers, increase visibility, and grow your agricultural business through search.`,
+      icon, cat, shortTitle,
+      `Grow your ${shortTitle.toLowerCase()} business with SEO strategies that connect you with buyers, consumers, and partners searching online.`,
+      [
+        { title: "Niche Audience", desc: `${shortTitle} serve specialized markets. SEO must precisely target the right audience segments.` },
+        { title: "Seasonal Cycles", desc: `Agricultural businesses have seasonal patterns. SEO timing and content must align with growing and harvest seasons.` },
+        { title: "Local + E-commerce", desc: `Many ${shortTitle.toLowerCase()} sell both locally and online. SEO must support both channels effectively.` },
+        { title: "Regulatory Awareness", desc: `Agriculture and related industries face specific advertising and labeling regulations that impact content strategy.` },
+      ],
+      [
+        { title: "Seasonal SEO Planning", desc: `Align content and optimization with agricultural seasons for maximum relevance and traffic.` },
+        { title: "Local Farm SEO", desc: `Optimize for local searches, farm directories, and farmers market listings.` },
+        { title: "E-commerce Optimization", desc: `For online sales, optimize product pages, implement schema, and build product authority.` },
+        { title: "Community Content", desc: `Create farm-to-table content, sustainability stories, and educational resources that build brand loyalty.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `Can SEO help small farms compete?`, a: `Absolutely. Local SEO and niche content marketing allow small farms to outrank larger operations for specific products, regions, and experiences.` },
+        { q: `How do seasonal products affect SEO?`, a: `We plan content calendars around growing seasons, creating optimized content 2-3 months before peak demand so you rank when customers start searching.` },
+        { q: `Should my farm sell online?`, a: `E-commerce can significantly expand your reach. We optimize both local presence (farm visits, CSA) and online sales for maximum revenue.` },
+        { q: `What content works for agricultural SEO?`, a: `Farm stories, product guides, recipe content, sustainability practices, and educational resources all drive traffic and build lasting customer relationships.` },
+        { q: `How fast can my farm rank on Google?`, a: `Local farm searches are often less competitive. Many farms see significant improvements in 2-3 months, especially for product and location-specific keywords.` },
+      ],
+      ["local-seo", "ecommerce-seo", "content-strategy"], defaultLocs
+    )
+  );
+}
+
+// ============ LOGISTICS FACTORY ============
+function createLogistics(): IndustryData[] {
+  const icon = Truck;
+  const cat = "Logistics & Supply Chain";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["freight-seo", "Freight Company SEO", "Freight Companies", "SEO for Freight - Shipping & Trucking Marketing", ["freight shipping", "trucking company", "LTL freight", "freight broker", "shipping rates", "cargo transport", "commercial trucking"]],
+    ["warehouse-seo", "Warehouse SEO", "Warehousing Companies", "SEO for Warehousing - Storage & Fulfillment Marketing", ["warehouse space", "3PL fulfillment", "warehouse for rent", "distribution center", "order fulfillment", "cold storage", "inventory management"]],
+    ["courier-seo", "Courier Service SEO", "Courier Services", "SEO for Courier & Delivery - Last-Mile Delivery Marketing", ["courier service near me", "same-day delivery", "package delivery", "express courier", "parcel delivery", "medical courier", "legal courier"]],
+    ["shipping-seo", "Shipping Company SEO", "Shipping Companies", "SEO for Shipping - International & Domestic Shipping Marketing", ["shipping company", "international shipping", "ocean freight", "air freight", "container shipping", "customs broker", "import export"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Attract shippers, carriers, and partners with B2B search optimization strategies.`,
+      icon, cat, shortTitle,
+      `Drive more leads for your ${shortTitle.toLowerCase()} business with SEO strategies that capture B2B searches and build industry authority.`,
+      [
+        { title: "B2B Complexity", desc: `Logistics buyers have complex needs. SEO content must address specific shipping, storage, and fulfillment requirements.` },
+        { title: "Long Decision Cycles", desc: `Logistics contracts are long-term. Content must nurture prospects through extended decision-making processes.` },
+        { title: "Geographic Coverage", desc: `${shortTitle} often serve specific regions or routes. SEO must target relevant geographic keywords precisely.` },
+        { title: "Industry Credibility", desc: `Logistics clients need to trust you with their supply chain. Online credibility and case studies are essential.` },
+      ],
+      [
+        { title: "B2B Lead Generation SEO", desc: `Target decision-makers searching for logistics solutions with commercial-intent keyword optimization.` },
+        { title: "Service Route Optimization", desc: `Create optimized pages for each service area, route, and logistics capability you offer.` },
+        { title: "Industry Content Hub", desc: `Build comprehensive logistics guides, industry reports, and thought leadership content.` },
+        { title: "Technical SEO & Speed", desc: `Ensure fast-loading, mobile-optimized pages with proper schema for logistics services.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How can SEO help my ${shortTitle.toLowerCase()} business?`, a: `SEO attracts companies actively searching for logistics services. Ranking for specific service and route keywords generates qualified B2B leads at lower cost than trade shows or cold outreach.` },
+        { q: `What content should logistics companies create?`, a: `Industry guides, shipping calculators, route information, compliance resources, and case studies demonstrating reliability and cost savings for clients.` },
+        { q: `How competitive is logistics SEO?`, a: `Moderately competitive. Many logistics companies underinvest in SEO, creating opportunities for early movers to dominate their niches.` },
+        { q: `Should I target specific routes or general logistics keywords?`, a: `Both. Route-specific pages capture highly qualified leads, while broader content builds authority and attracts early-stage researchers.` },
+        { q: `What's the value of a single logistics lead?`, a: `Logistics contracts can be worth $10,000-$1,000,000+ annually, making even modest SEO-generated lead improvements extremely valuable.` },
+      ],
+      ["content-strategy", "technical-seo", "link-building"], defaultLocs
+    )
+  );
+}
+
+// ============ FITNESS & SPORTS FACTORY ============
+function createFitnessSports(): IndustryData[] {
+  const icon = Dumbbell;
+  const cat = "Fitness & Sports";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["gym-seo", "Gym SEO", "Gyms & Fitness Centers", "SEO for Gyms - Fitness Center Membership Marketing", ["gym near me", "fitness center", "personal trainer", "group fitness classes", "CrossFit gym", "yoga studio", "24 hour gym"]],
+    ["sports-club-seo", "Sports Club SEO", "Sports Clubs", "SEO for Sports Clubs - Athletic Organization Marketing", ["sports club near me", "tennis club", "golf club", "swimming club", "martial arts school", "boxing gym", "basketball league"]],
+    ["personal-trainer-seo", "Personal Trainer SEO", "Personal Trainers", "SEO for Personal Trainers - Fitness Coach Marketing", ["personal trainer near me", "online fitness coach", "weight loss trainer", "strength training coach", "nutrition coaching", "virtual personal training"]],
+    ["sports-equipment-seo", "Sports Equipment SEO", "Sports Equipment", "SEO for Sports Equipment - Athletic Gear E-commerce Marketing", ["sports equipment", "workout equipment", "running shoes", "yoga mat", "fitness tracker", "home gym equipment", "sports apparel"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Attract members, clients, and customers with fitness-focused search optimization.`,
+      icon, cat, shortTitle,
+      `Grow your ${shortTitle.toLowerCase()} business with SEO strategies that attract fitness enthusiasts, new members, and dedicated athletes.`,
+      [
+        { title: "Local Competition", desc: `Fitness businesses compete intensely for local searches. Multiple options exist in every neighborhood.` },
+        { title: "Seasonal Demand", desc: `New Year's resolutions, summer prep, and seasonal trends create predictable demand spikes to capitalize on.` },
+        { title: "Review Sensitivity", desc: `Fitness consumers rely heavily on reviews and social proof when choosing where to train.` },
+        { title: "Retention vs Acquisition", desc: `While SEO drives new members, content also builds community that improves retention and referrals.` },
+      ],
+      [
+        { title: "Local Fitness SEO", desc: `Dominate "gym near me" and related searches with GBP optimization and local citation building.` },
+        { title: "Program-Specific Pages", desc: `Create optimized pages for each program, class type, and training specialty you offer.` },
+        { title: "Seasonal Campaign SEO", desc: `Pre-optimize content for predictable fitness demand spikes like New Year and summer.` },
+        { title: "Community Content", desc: `Build transformation stories, workout guides, and fitness content that attracts and retains members.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How can SEO help my ${shortTitle.toLowerCase()} business?`, a: `SEO puts your business in front of people actively searching for fitness options. Ranking for local fitness searches drives walk-ins, trial memberships, and class signups.` },
+        { q: `When should I ramp up SEO for seasonal demand?`, a: `Start optimizing 2-3 months before peak seasons (November for New Year's, March for summer). Early preparation ensures you rank when demand surges.` },
+        { q: `How important are Google reviews for fitness businesses?`, a: `Critical. Reviews are a top local ranking factor and the #1 trust signal for fitness consumers. We implement review strategies to build social proof.` },
+        { q: `Should I create content about workouts and nutrition?`, a: `Yes! Fitness content attracts organic traffic, establishes expertise, and builds community. Blog posts, workout guides, and nutrition tips drive significant search volume.` },
+        { q: `What's the ROI of fitness SEO?`, a: `A new gym member is worth $500-$2,000+ in annual revenue. Even a few extra memberships per month from SEO delivers strong ROI.` },
+      ],
+      ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+    )
+  );
+}
+
+// ============ GOVERNMENT FACTORY ============
+function createGovernment(): IndustryData[] {
+  const icon = Globe;
+  const cat = "Government & Public Sector";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["government-seo", "Government Website SEO", "Government Agencies", "SEO for Government Websites - Public Sector Accessibility", ["government services", "city hall", "public records", "government permits", "voter registration", "tax filing", "public hearing"]],
+    ["ngo-seo", "NGO SEO", "NGOs & Charities", "SEO for NGOs - Nonprofit Digital Visibility & Fundraising", ["donate to charity", "volunteer opportunities", "nonprofit cause", "humanitarian aid", "charity near me", "social impact", "community service"]],
+    ["public-health-seo", "Public Health SEO", "Public Health Organizations", "SEO for Public Health - Health Department & Awareness Marketing", ["health department", "vaccination clinic", "public health advisory", "disease prevention", "mental health resources", "community health center"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Improve public access to services, increase awareness, and enhance citizen engagement through search.`,
+      icon, cat, shortTitle,
+      `Help your ${shortTitle.toLowerCase()} reach more citizens and stakeholders with SEO strategies that improve access to public services and information.`,
+      [
+        { title: "Accessibility Requirements", desc: `Public sector websites must meet WCAG accessibility standards, which directly impacts SEO technical implementation.` },
+        { title: "Trust & Authority", desc: `Government and public entities must maintain highest trust levels. E-E-A-T is critical for YMYL topics.` },
+        { title: "Complex Information", desc: `Public sector content is often complex and bureaucratic. SEO must make information findable and understandable.` },
+        { title: "Multi-Audience Targeting", desc: `${shortTitle} serve diverse populations with varying needs. Content must be accessible to all demographics.` },
+      ],
+      [
+        { title: "Accessibility-First SEO", desc: `Implement SEO improvements that simultaneously enhance WCAG compliance and search visibility.` },
+        { title: "Service Discovery", desc: `Optimize service pages so citizens can easily find government services through search.` },
+        { title: "Plain Language Content", desc: `Simplify complex public information with plain language that both citizens and search engines understand.` },
+        { title: "Local Government SEO", desc: `Optimize for local searches related to government offices, services, and public resources.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `Why do government websites need SEO?`, a: `Citizens search for government services online. SEO ensures they find accurate, official information rather than third-party sites that may be outdated or misleading.` },
+        { q: `How does accessibility affect SEO?`, a: `Accessibility and SEO overlap significantly. Alt text, heading structure, semantic HTML, and mobile responsiveness improve both accessibility compliance and search rankings.` },
+        { q: `Can SEO help with public awareness campaigns?`, a: `Yes! SEO ensures public health advisories, emergency information, and awareness campaigns reach citizens when they search for relevant topics.` },
+        { q: `How do you measure success for public sector SEO?`, a: `We track service page visits, form completions, information accessibility metrics, and citizen engagement rather than commercial conversion metrics.` },
+        { q: `Is government SEO different from commercial SEO?`, a: `Yes. The focus shifts from revenue to citizen access and engagement. Content prioritizes clarity and completeness over persuasion.` },
+      ],
+      ["technical-seo", "on-page-seo", "content-strategy"], defaultLocs
+    )
+  );
+}
+
+// ============ ENERGY & UTILITIES FACTORY ============
+function createEnergy(): IndustryData[] {
+  const icon = Zap;
+  const cat = "Energy & Utilities";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["renewable-energy-seo", "Renewable Energy SEO", "Renewable Energy Companies", "SEO for Renewable Energy - Clean Energy Marketing", ["solar energy company", "wind energy", "renewable energy solutions", "green energy provider", "clean energy", "sustainable energy", "EV charging stations"]],
+    ["utility-seo", "Utility Company SEO", "Utility Providers", "SEO for Utility Companies - Energy Provider Marketing", ["energy provider", "electricity company", "gas company", "water utility", "energy plans", "utility rates", "power company"]],
+    ["energy-efficiency-seo", "Energy Efficiency SEO", "Energy Auditors", "SEO for Energy Efficiency - Home & Commercial Energy Services", ["energy audit", "home insulation", "energy efficient", "HVAC efficiency", "LED lighting", "smart thermostat", "energy savings"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Attract customers, build awareness, and drive adoption of energy solutions through search.`,
+      icon, cat, shortTitle,
+      `Power your ${shortTitle.toLowerCase()} growth with SEO strategies that educate consumers, build trust, and drive service adoption.`,
+      [
+        { title: "Complex Products", desc: `Energy products and services require significant explanation. SEO content must educate while driving action.` },
+        { title: "Regulatory Landscape", desc: `Energy regulations vary by region. Content must be accurate and compliant with local and federal requirements.` },
+        { title: "Growing Market", desc: `Clean energy and efficiency markets are rapidly growing. Early SEO investment captures emerging demand.` },
+        { title: "Local Service Areas", desc: `Energy services are geographically limited. SEO must precisely target service areas without wasting effort.` },
+      ],
+      [
+        { title: "Educational Content SEO", desc: `Create comprehensive guides about energy options, savings, and technology that capture informational searches.` },
+        { title: "Service Area Optimization", desc: `Build location-specific pages for each service area with localized content and keywords.` },
+        { title: "Incentive & Rebate Content", desc: `Optimize for searches about energy rebates, tax credits, and incentive programs that drive high-intent traffic.` },
+        { title: "Comparison Content", desc: `Help consumers compare energy options with objective, optimized comparison content.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How can SEO help energy companies?`, a: `Consumers increasingly research energy options online. SEO ensures your company appears when they search for providers, solutions, and comparisons in your service area.` },
+        { q: `What content drives energy sector SEO?`, a: `Educational guides, cost calculators, rebate information, technology comparisons, and sustainability content all drive significant search traffic in the energy sector.` },
+        { q: `How important is local SEO for energy services?`, a: `Critical. Energy services are location-dependent. Local SEO ensures you appear for searches in your exact service areas.` },
+        { q: `Can SEO help capture the growing clean energy market?`, a: `Yes! Searches for solar, EV charging, and energy efficiency are growing rapidly. Early SEO investment captures this expanding demand.` },
+        { q: `What's the timeline for energy SEO results?`, a: `Most energy companies see initial improvements in 2-3 months, with significant lead generation growth in 4-6 months as content authority builds.` },
+      ],
+      ["local-seo", "content-strategy", "technical-seo"], defaultLocs
+    )
+  );
+}
+
+// ============ MARKETING & ADVERTISING FACTORY ============
+function createMarketingAgencies(): IndustryData[] {
+  const icon = Megaphone;
+  const cat = "Marketing & Advertising";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["digital-agency-seo", "Digital Agency SEO", "Digital Agencies", "SEO for Digital Agencies - Agency Growth Marketing", ["digital marketing agency", "web design agency", "SEO agency near me", "social media agency", "PPC agency", "branding agency"]],
+    ["pr-seo", "PR Firm SEO", "PR Firms", "SEO for PR Firms - Public Relations Digital Marketing", ["PR agency", "public relations firm", "media relations", "crisis communications", "press release distribution", "reputation management"]],
+    ["advertising-seo", "Advertising Agency SEO", "Ad Agencies", "SEO for Advertising Agencies - Creative Agency Marketing", ["advertising agency", "creative agency", "ad campaign", "media buying agency", "brand strategy", "video production agency"]],
+    ["influencer-seo", "Influencer Marketing SEO", "Influencer Platforms", "SEO for Influencer Marketing - Creator Economy Marketing", ["influencer marketing", "brand ambassador", "content creator", "micro-influencer", "influencer platform", "creator economy"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Practice what you preach — grow your agency with the same SEO strategies you recommend to clients.`,
+      icon, cat, shortTitle,
+      `Grow your ${shortTitle.toLowerCase()} business with SEO strategies that attract ideal clients and establish you as a marketing authority.`,
+      [
+        { title: "Practicing What You Preach", desc: `Marketing agencies must demonstrate SEO excellence on their own site to credibly sell services.` },
+        { title: "Niche Positioning", desc: `The agency market is saturated. SEO must reflect clear specialization and unique positioning.` },
+        { title: "Portfolio & Case Studies", desc: `Prospective clients search for agency results. Optimized case studies are essential for conversions.` },
+        { title: "B2B Long Cycles", desc: `Agency-client relationships involve long evaluation. Content must nurture prospects through extended research.` },
+      ],
+      [
+        { title: "Authority Positioning", desc: `Position your agency as the definitive expert in your niche through thought leadership content and rankings.` },
+        { title: "Case Study SEO", desc: `Optimize case studies and portfolio projects for search to demonstrate results and attract similar clients.` },
+        { title: "Service Area Targeting", desc: `Target location-specific agency searches alongside industry-specific niche keywords.` },
+        { title: "Thought Leadership", desc: `Publish original research, industry analysis, and expert perspectives that earn backlinks and establish authority.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `Why do marketing agencies need SEO?`, a: `Your own rankings are the best proof of competence. Clients Google potential agencies — ranking #1 for your niche demonstrates the expertise you're selling.` },
+        { q: `How should agencies position themselves for SEO?`, a: `Specialize. "Marketing agency" is too broad. "B2B SaaS marketing agency" or "healthcare digital marketing" are targetable niches with qualified traffic.` },
+        { q: `What content should agencies create?`, a: `Original research, case studies with results, industry benchmark reports, and strategic frameworks that prospects reference and share.` },
+        { q: `How do agencies balance client work and own SEO?`, a: `Treat your agency as your #1 client. Allocate dedicated time for content creation, link building, and technical optimization. It's the best lead generation you can do.` },
+        { q: `What's the ROI for agency SEO?`, a: `Agency retainers range from $3,000-$50,000+/month. A single inbound client from SEO can represent $36,000-$600,000+ in annual revenue, making SEO incredibly profitable.` },
+      ],
+      ["content-strategy", "link-building", "technical-seo"], defaultLocs
+    )
+  );
+}
+
+// ============ TELECOM & INTERNET FACTORY ============
+function createTelecom(): IndustryData[] {
+  const icon = Wifi;
+  const cat = "Telecom & Internet";
+  const svcs: [string, string, string, string, string[]][] = [
+    ["isp-seo", "ISP SEO", "Internet Providers", "SEO for Internet Service Providers - ISP Marketing", ["internet provider near me", "fiber internet", "broadband service", "best ISP", "internet plans", "WiFi service", "business internet"]],
+    ["telecom-company-seo", "Telecom SEO", "Telecom Companies", "SEO for Telecom Companies - Telecommunications Marketing", ["phone plan", "mobile carrier", "business phone system", "VoIP provider", "5G network", "cell phone service", "unified communications"]],
+    ["web-hosting-seo", "Web Hosting SEO", "Web Hosting Companies", "SEO for Web Hosting - Hosting Provider Marketing", ["web hosting", "cloud hosting", "VPS hosting", "dedicated server", "WordPress hosting", "domain registration", "website builder"]],
+  ];
+  return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
+    ind(slug, title, shortTitle, metaTitle,
+      `SEO for ${shortTitle.toLowerCase()}. Acquire subscribers, reduce churn, and grow market share with targeted search optimization.`,
+      icon, cat, shortTitle,
+      `Grow your ${shortTitle.toLowerCase()} subscriber base with SEO strategies that capture comparison shoppers and drive signups.`,
+      [
+        { title: "Comparison Shopping", desc: `Telecom consumers actively compare providers. SEO must capture them during the research and comparison phase.` },
+        { title: "Local Availability", desc: `Service availability varies by location. SEO must target areas where you actually provide service.` },
+        { title: "Price Sensitivity", desc: `Consumers are highly price-conscious. Content must address pricing clearly while emphasizing value.` },
+        { title: "Churn Prevention", desc: `Existing customers search for alternatives. Content and SEO can help retain customers researching competitors.` },
+      ],
+      [
+        { title: "Comparison Content SEO", desc: `Create honest comparison content that captures shoppers evaluating providers — and positions you favorably.` },
+        { title: "Service Area Pages", desc: `Build optimized pages for each city, zip code, and neighborhood where you provide service.` },
+        { title: "Plan & Pricing SEO", desc: `Optimize plan pages with clear pricing, features, and speed information that matches searcher intent.` },
+        { title: "Support Content Hub", desc: `Create self-service support content that reduces costs while capturing search traffic.` },
+      ],
+      keywords, defaultCase,
+      [
+        { q: `How competitive is telecom SEO?`, a: `Very competitive, especially for general terms. We focus on local availability keywords and long-tail comparisons where smaller providers can realistically rank.` },
+        { q: `Should I create pages for every service area?`, a: `Yes! Location-specific pages capture "internet provider near me" and city-specific searches. Each page should include local availability, speeds, and pricing.` },
+        { q: `How do I compete with major telecom companies?`, a: `Focus on local market dominance, superior customer service content, honest comparison pages, and community engagement that big telecoms can't replicate.` },
+        { q: `What content drives telecom signups?`, a: `Speed comparisons, plan breakdowns, coverage maps, installation guides, and customer testimonials all drive high-intent traffic that converts.` },
+        { q: `Can SEO reduce customer acquisition costs?`, a: `Yes. Organic leads from SEO typically cost 60-80% less than paid advertising and often convert better because they come from active comparison shoppers.` },
+      ],
+      ["local-seo", "content-strategy", "technical-seo"], defaultLocs
+    )
+  );
+}
+
 // Lookup helpers
 export function getIndustryBySlug(slug: string): IndustryData | undefined {
   return industriesData.find(i => i.slug === slug);
@@ -790,5 +1196,14 @@ export const INDUSTRY_CATEGORIES = [
   "Automotive & Transportation",
   "Beauty & Wellness",
   "Events & Creative",
+  "Finance & Banking",
+  "Media & Entertainment",
+  "Agriculture & Farming",
+  "Logistics & Supply Chain",
+  "Fitness & Sports",
+  "Government & Public Sector",
+  "Energy & Utilities",
+  "Marketing & Advertising",
+  "Telecom & Internet",
   "Other Industries",
 ];
