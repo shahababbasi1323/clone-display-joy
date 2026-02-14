@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown, Check, BarChart3, Wrench, ArrowLeft, Target, BookOpen, MapPin } from "lucide-react";
+import { ArrowRight, ChevronDown, BarChart3, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
-import { getIndustryBySlug, industriesData, INDUSTRY_CATEGORIES } from "@/data/industriesData";
-import { servicesData } from "@/data/servicesData";
-import { getIndustryRelatedTools, getIndustryRelatedBlogs, getIndustryRelatedLocations } from "@/data/internalLinks";
+import { getIndustryBySlug } from "@/data/industriesData";
+import IndustryHero from "@/components/industry/IndustryHero";
+import IndustryWhySeo from "@/components/industry/IndustryWhySeo";
+import IndustryServices from "@/components/industry/IndustryServices";
+import IndustryContent from "@/components/industry/IndustryContent";
+import IndustryInterlinking from "@/components/industry/IndustryInterlinking";
+import IndustrySchema from "@/components/industry/IndustrySchema";
 
 const IndustryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -15,61 +19,23 @@ const IndustryPage = () => {
 
   if (!industry) return <Navigate to="/industries" replace />;
 
-  const relatedServices = industry.relatedServices
-    .map(rs => servicesData.find(s => s.slug === rs))
-    .filter(Boolean);
-
-  const Icon = industry.icon;
-
   return (
     <Layout>
-      {/* Hero */}
-      <section className="section-padding pb-12">
-        <div className="container mx-auto max-w-4xl">
-          <Link to="/industries" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> All Industries
-          </Link>
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-3 rounded-lg bg-primary/10">
-                <Icon className="h-8 w-8 text-primary" />
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">{industry.category}</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              {industry.heroTitle} <span className="text-gradient">{industry.heroHighlight}</span>
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8">
-              {industry.heroDescription}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/free-seo-audit">
-                <Button size="lg" className="glow-primary">
-                  Get Free {industry.shortTitle} SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="/pricing">
-                <Button variant="outline" size="lg">View Pricing</Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {/* Hero with trust signals */}
+      <IndustryHero industry={industry} />
+
+      {/* Why SEO Matters — LSI keyword rich */}
+      <IndustryWhySeo industry={industry} />
 
       {/* Challenges */}
       <section className="section-padding bg-card/20 border-y border-border">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold mb-10">Industry Challenges</h2>
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold mb-10">
+            {industry.shortTitle} Industry <span className="text-gradient">Challenges</span>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {industry.challenges.map((challenge, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className="glass rounded-xl p-6"
-              >
+              <motion.div key={i} initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }} className="glass rounded-xl p-6">
                 <h3 className="font-semibold text-lg mb-2">{challenge.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{challenge.desc}</p>
               </motion.div>
@@ -80,22 +46,13 @@ const IndustryPage = () => {
 
       {/* Our Approach */}
       <section className="section-padding">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold mb-10">Our {industry.shortTitle} SEO Approach</h2>
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold mb-10">Our {industry.shortTitle} SEO <span className="text-gradient">Approach</span></h2>
           <div className="space-y-6">
             {industry.approach.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="flex gap-6"
-              >
+              <motion.div key={i} initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex gap-6">
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-sm font-bold text-primary shrink-0">
-                    {i + 1}
-                  </div>
+                  <div className="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center text-sm font-bold text-primary shrink-0">{i + 1}</div>
                   {i < industry.approach.length - 1 && <div className="w-px flex-1 bg-border mt-3" />}
                 </div>
                 <div className="pb-6">
@@ -108,18 +65,25 @@ const IndustryPage = () => {
         </div>
       </section>
 
+      {/* Full Services Section */}
+      <IndustryServices industry={industry} />
+
+      {/* Rich SEO Content — anchor text variations, LSI keywords */}
+      <IndustryContent industry={industry} />
+
       {/* Keywords We Target */}
       <section className="section-padding bg-card/20 border-y border-border">
-        <div className="container mx-auto max-w-4xl">
-          <div className="flex items-center gap-3 mb-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex items-center gap-3 mb-4">
             <Target className="h-6 w-6 text-accent" />
-            <h2 className="text-2xl font-bold">Keywords We Target</h2>
+            <h2 className="text-2xl font-bold">Keywords We Target for {industry.shortTitle}</h2>
           </div>
+          <p className="text-sm text-muted-foreground mb-6 max-w-2xl">
+            We perform extensive <Link to="/services/keyword-research" className="text-primary hover:underline">keyword research</Link> to identify the highest-value search terms for your {industry.shortTitle.toLowerCase()} business.
+          </p>
           <div className="flex flex-wrap gap-2">
             {industry.keywords.map(kw => (
-              <span key={kw} className="px-3 py-1.5 rounded-full text-xs font-medium bg-secondary border border-border">
-                {kw}
-              </span>
+              <span key={kw} className="px-3 py-1.5 rounded-full text-xs font-medium bg-secondary border border-border">{kw}</span>
             ))}
           </div>
         </div>
@@ -127,21 +91,14 @@ const IndustryPage = () => {
 
       {/* Results */}
       <section className="section-padding">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-3 mb-10">
             <BarChart3 className="h-6 w-6 text-accent" />
-            <h2 className="text-3xl font-bold">Results We Deliver</h2>
+            <h2 className="text-3xl font-bold">Results We Deliver for {industry.shortTitle}</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {industry.caseStudy.map((result, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="glass rounded-xl p-6 text-center"
-              >
+              <motion.div key={i} initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="glass rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-gradient mb-1">{result.metric}</div>
                 <div className="text-sm text-muted-foreground">{result.label}</div>
               </motion.div>
@@ -150,19 +107,41 @@ const IndustryPage = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Mid-page CTA */}
       <section className="section-padding bg-card/20 border-y border-border">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-3xl font-bold text-center mb-10">
-            Frequently Asked <span className="text-gradient">Questions</span>
+        <div className="container mx-auto max-w-3xl text-center">
+          <h2 className="text-2xl font-bold mb-3">
+            Ready to Dominate {industry.shortTitle} Search Results?
           </h2>
+          <p className="text-muted-foreground mb-6 text-sm">
+            Join 500+ businesses that trust us with their SEO. Get a free audit and discover untapped growth opportunities.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link to="/free-seo-audit">
+              <Button size="lg" className="glow-primary">
+                Get Free SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link to="/pricing">
+              <Button variant="outline" size="lg">View SEO Packages</Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            {industry.shortTitle} SEO <span className="text-gradient">FAQ</span>
+          </h2>
+          <p className="text-center text-sm text-muted-foreground mb-10 max-w-xl mx-auto">
+            Common questions about SEO for {industry.shortTitle.toLowerCase()} businesses, answered by our experts.
+          </p>
           <div className="space-y-3">
             {industry.faqs.map((faq, i) => (
               <div key={i} className="glass rounded-xl overflow-hidden">
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full flex items-center justify-between p-5 text-left"
-                >
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="w-full flex items-center justify-between p-5 text-left">
                   <span className="font-medium text-sm md:text-base pr-4">{faq.q}</span>
                   <ChevronDown className={`h-5 w-5 shrink-0 text-muted-foreground transition-transform ${openFaq === i ? "rotate-180" : ""}`} />
                 </button>
@@ -177,110 +156,10 @@ const IndustryPage = () => {
         </div>
       </section>
 
-      {/* Related Services */}
-      {relatedServices.length > 0 && (
-        <section className="section-padding">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl font-bold mb-8">Related SEO Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {relatedServices.map(rs => {
-                if (!rs) return null;
-                const RSIcon = rs.icon;
-                return (
-                  <Link
-                    key={rs.slug}
-                    to={`/services/${rs.slug}`}
-                    className="glass rounded-xl p-5 hover:border-primary/30 transition-all group"
-                  >
-                    <div className="p-2 rounded-lg bg-primary/10 w-fit mb-3 group-hover:bg-primary/20 transition-colors">
-                      <RSIcon className="h-5 w-5 text-primary" />
-                    </div>
-                    <h3 className="font-semibold text-sm mb-1">{rs.title}</h3>
-                    <span className="text-xs text-primary flex items-center gap-1">
-                      Learn more <ArrowRight className="h-3 w-3" />
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Internal Linking: Tools, Blog, Locations */}
+      <IndustryInterlinking industry={industry} />
 
-      {/* Related Tools */}
-      {(() => {
-        const relTools = getIndustryRelatedTools(industry.slug);
-        return relTools.length > 0 ? (
-          <section className="section-padding bg-card/30 border-t border-border">
-            <div className="container mx-auto max-w-4xl">
-              <div className="flex items-center gap-3 mb-6">
-                <Wrench className="h-5 w-5 text-accent" />
-                <h2 className="text-2xl font-bold">Free SEO Tools for {industry.shortTitle}</h2>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                {relTools.map(tool => tool && (
-                  <Link key={tool.slug} to={`/tools/${tool.slug}`} className="glass rounded-lg px-4 py-3 hover:border-accent/30 transition-all text-sm font-medium flex items-center gap-2 group">
-                    {tool.name} <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        ) : null;
-      })()}
-
-      {/* Related Blog Posts */}
-      {(() => {
-        const relBlogs = getIndustryRelatedBlogs(industry.slug);
-        return relBlogs.length > 0 ? (
-          <section className="section-padding">
-            <div className="container mx-auto max-w-4xl">
-              <div className="flex items-center gap-3 mb-6">
-                <BookOpen className="h-5 w-5 text-accent" />
-                <h2 className="text-2xl font-bold">Recommended Reading</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {relBlogs.map(blog => blog && (
-                  <Link key={blog.slug} to={`/blog/${blog.slug}`} className="glass rounded-xl p-5 hover:border-accent/30 transition-all group">
-                    <span className="text-xs text-accent font-medium">{blog.category}</span>
-                    <h3 className="font-semibold text-sm mt-1 line-clamp-2">{blog.title}</h3>
-                    <span className="text-xs text-muted-foreground mt-1">{blog.readTime}</span>
-                    <span className="text-xs text-accent mt-2 flex items-center gap-1">Read article <ArrowRight className="h-3 w-3" /></span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        ) : null;
-      })()}
-
-      {/* Related Locations */}
-      {(() => {
-        const relLocs = getIndustryRelatedLocations(industry.slug);
-        return relLocs.length > 0 ? (
-          <section className="section-padding bg-card/20 border-y border-border">
-            <div className="container mx-auto max-w-4xl">
-              <div className="flex items-center gap-3 mb-6">
-                <MapPin className="h-5 w-5 text-primary" />
-                <h2 className="text-2xl font-bold">{industry.shortTitle} SEO by Location</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {relLocs.map(loc => loc && (
-                  <Link key={loc.slug} to={`/${loc.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
-                    <div className="flex items-center gap-2 mb-1">
-                      <MapPin className="h-4 w-4 text-primary" />
-                      <h3 className="font-semibold text-sm">{loc.city}, {loc.country}</h3>
-                    </div>
-                    <span className="text-xs text-primary flex items-center gap-1">View services <ArrowRight className="h-3 w-3" /></span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        ) : null;
-      })()}
-
-      {/* CTA */}
+      {/* Final CTA */}
       <section className="section-padding">
         <div className="container mx-auto max-w-3xl text-center">
           <div className="glass rounded-2xl p-10 md:p-16 glow-primary">
@@ -288,51 +167,26 @@ const IndustryPage = () => {
               Ready to Grow Your <span className="text-gradient">{industry.shortTitle}</span> Business?
             </h2>
             <p className="text-muted-foreground mb-6">
-              Get a free SEO audit tailored to the {industry.shortTitle.toLowerCase()} industry and discover opportunities to outrank your competitors.
+              Get a free SEO audit tailored to the {industry.shortTitle.toLowerCase()} industry and discover opportunities to outrank your competitors on Google, Bing, and AI search engines.
             </p>
-            <Link to="/free-seo-audit">
-              <Button size="lg" className="glow-primary">
-                Get Free {industry.shortTitle} SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link to="/free-seo-audit">
+                <Button size="lg" className="glow-primary">
+                  Get Free {industry.shortTitle} SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="outline" size="lg">
+                  Schedule a Call <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: industry.title,
-              description: industry.metaDescription,
-              provider: { "@type": "Person", name: "Shahab Abbasi", url: "https://shahababbasi.com" },
-              url: `https://shahababbasi.com/industries/${industry.slug}`,
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: industry.faqs.map(f => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
-                { "@type": "ListItem", position: 2, name: "Industries", item: "https://shahababbasi.com/industries" },
-                { "@type": "ListItem", position: 3, name: industry.title, item: `https://shahababbasi.com/industries/${industry.slug}` },
-              ],
-            },
-          ]),
-        }}
-      />
+      {/* Enhanced Schema */}
+      <IndustrySchema industry={industry} />
     </Layout>
   );
 };
