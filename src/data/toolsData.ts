@@ -1,0 +1,103 @@
+export interface ToolData {
+  slug: string;
+  name: string;
+  metaTitle: string;
+  metaDescription: string;
+  category: string;
+}
+
+export const toolCategories = [
+  { name: "Content & Writing", slugs: ["word-counter","character-counter","keyword-density-checker","readability-checker","plagiarism-sentence-checker","lorem-ipsum-generator","text-case-converter","article-rewriter-helper","headline-analyzer","grammar-checker"] },
+  { name: "Meta & On-Page SEO", slugs: ["meta-tag-generator","google-serp-preview","bulk-title-checker","meta-description-checker","heading-analyzer","image-alt-text-generator","canonical-tag-generator","open-graph-preview","google-index-checker"] },
+  { name: "Technical SEO", slugs: ["robots-txt-generator","sitemap-generator","htaccess-redirect-generator","schema-generator","json-ld-validator","hreflang-tag-generator","slug-generator","url-encoder-decoder","http-status-checker","page-size-checker","core-web-vitals-guide"] },
+  { name: "Keyword & Research", slugs: ["keyword-suggestion-tool","lsi-keyword-generator","question-generator","competitor-keyword-gap-planner","search-intent-classifier","keyword-grouper"] },
+  { name: "Social Media & LinkedIn", slugs: ["linkedin-post-formatter","linkedin-headline-generator","linkedin-summary-generator","twitter-thread-formatter","social-media-image-size-guide","hashtag-generator","instagram-bio-generator","social-post-scheduler-planner"] },
+  { name: "Local SEO", slugs: ["google-business-profile-audit","local-citation-finder","nap-consistency-checker","review-response-generator","local-keyword-generator"] },
+  { name: "GEO & AI Search", slugs: ["ai-search-prompt-tester","ai-content-optimizer","brand-mention-tracker-guide"] },
+  { name: "Backlink & Off-Page", slugs: ["anchor-text-analyzer","guest-post-pitch-generator","broken-link-outreach-template","backlink-quality-checklist","disavow-file-generator"] },
+  { name: "Ecommerce SEO", slugs: ["product-description-optimizer","ecommerce-schema-generator","category-page-optimizer"] },
+  { name: "Reporting & Calculation", slugs: ["seo-roi-calculator","cpc-savings-calculator","domain-age-checker","website-cost-estimator"] },
+  { name: "Conversion & UX", slugs: ["cta-generator","ab-test-duration-calculator","color-contrast-checker","page-speed-checklist"] },
+  { name: "Email & Outreach", slugs: ["email-subject-line-tester","cold-email-generator"] },
+];
+
+const t = (slug: string, name: string, metaTitle: string, metaDescription: string, category: string): ToolData => ({
+  slug, name, metaTitle, metaDescription, category,
+});
+
+export const toolsData: ToolData[] = [
+  t("word-counter","Word Counter","Word Counter - Free Online Word Count Tool","Count words, characters, sentences, paragraphs, and estimate reading time instantly.","Content & Writing"),
+  t("character-counter","Character Counter","Character Counter - Free Online Tool","Count characters with/without spaces. Perfect for Twitter, Instagram, LinkedIn limits.","Content & Writing"),
+  t("keyword-density-checker","Keyword Density Checker","Keyword Density Checker - Free SEO Tool","Analyze keyword frequency, density percentage, and top keywords in your content.","Content & Writing"),
+  t("readability-checker","Readability Score Checker","Readability Checker - Flesch-Kincaid Score","Check Flesch-Kincaid score, grade level, and sentence complexity of your content.","Content & Writing"),
+  t("plagiarism-sentence-checker","Duplicate Sentence Finder","Duplicate Sentence Finder - Content Checker","Find repeated sentences and phrases in your content for originality.","Content & Writing"),
+  t("lorem-ipsum-generator","Lorem Ipsum Generator","Lorem Ipsum Generator - Placeholder Text","Generate placeholder text in paragraphs, sentences, or words for your designs.","Content & Writing"),
+  t("text-case-converter","Text Case Converter","Text Case Converter - Free Online Tool","Convert text to UPPERCASE, lowercase, Title Case, Sentence case, and more.","Content & Writing"),
+  t("article-rewriter-helper","Article Rewriting Helper","Article Rewriting Helper - Content Optimizer","Highlights overused words, shows word frequency, and suggests improvements.","Content & Writing"),
+  t("headline-analyzer","Headline Analyzer","Headline Analyzer - Score Your Headlines","Score headlines for emotional impact, power words, length, and readability.","Content & Writing"),
+  t("grammar-checker","Basic Grammar Checker","Grammar Checker - Free Writing Tool","Check for common grammar errors, passive voice, wordiness, and more.","Content & Writing"),
+  t("meta-tag-generator","Meta Tag Generator","Meta Tag Generator - SEO Meta Tags & OG Tags","Generate HTML meta tags, Open Graph tags, and Twitter cards with live preview.","Meta & On-Page SEO"),
+  t("google-serp-preview","Google SERP Preview","Google SERP Preview - Search Result Simulator","Preview how your page will appear in Google search results on desktop and mobile.","Meta & On-Page SEO"),
+  t("bulk-title-checker","Bulk Title Tag Checker","Bulk Title Checker - Check Multiple Titles","Check multiple title tags at once for character count, pixel width, and SEO compliance.","Meta & On-Page SEO"),
+  t("meta-description-checker","Meta Description Checker","Meta Description Checker - SEO Analysis","Check meta description length, keyword presence, CTA, and truncation preview.","Meta & On-Page SEO"),
+  t("heading-analyzer","Heading Structure Analyzer","Heading Analyzer - H1-H6 Hierarchy Check","Visualize your H1-H6 heading hierarchy and find structural issues.","Meta & On-Page SEO"),
+  t("image-alt-text-generator","Image Alt Text Suggestion","Alt Text Generator - SEO Image Optimization","Generate SEO-friendly alt text suggestions from image context descriptions.","Meta & On-Page SEO"),
+  t("canonical-tag-generator","Canonical Tag Generator","Canonical Tag Generator - Duplicate Content Fix","Generate canonical link tags to manage duplicate content across your site.","Meta & On-Page SEO"),
+  t("open-graph-preview","Open Graph Preview","Open Graph Preview - Social Share Simulator","Preview how your link appears when shared on Facebook, LinkedIn, and Twitter.","Meta & On-Page SEO"),
+  t("google-index-checker","Google Index Status Info","Google Index Checker - Is Your Page Indexed?","Learn how to check if your pages are indexed by Google using the site: operator.","Meta & On-Page SEO"),
+  t("robots-txt-generator","Robots.txt Generator","Robots.txt Generator - Free SEO Tool","Build a robots.txt file with allow/disallow rules, sitemaps, and user agents.","Technical SEO"),
+  t("sitemap-generator","XML Sitemap Generator","XML Sitemap Generator - Free SEO Tool","Generate XML sitemaps with URLs, priority, change frequency, and last modified dates.","Technical SEO"),
+  t("htaccess-redirect-generator",".htaccess Redirect Generator","Redirect Generator - 301/302 .htaccess Rules","Generate 301 and 302 redirect rules for your .htaccess file.","Technical SEO"),
+  t("schema-generator","Schema Markup Generator","Schema Generator - JSON-LD Structured Data","Generate JSON-LD schema for LocalBusiness, Article, Product, FAQ, and more.","Technical SEO"),
+  t("json-ld-validator","JSON-LD Validator","JSON-LD Validator - Structured Data Checker","Validate JSON-LD syntax, check for errors, and preview parsed output.","Technical SEO"),
+  t("hreflang-tag-generator","Hreflang Tag Generator","Hreflang Generator - International SEO Tags","Generate hreflang link tags for multi-language and multi-region pages.","Technical SEO"),
+  t("slug-generator","URL Slug Generator","URL Slug Generator - SEO-Friendly URLs","Convert any text to clean, SEO-friendly URL slugs instantly.","Technical SEO"),
+  t("url-encoder-decoder","URL Encoder/Decoder","URL Encoder Decoder - Free Online Tool","Encode or decode URLs for proper formatting and safe transmission.","Technical SEO"),
+  t("http-status-checker","HTTP Status Code Reference","HTTP Status Codes - Complete Reference Guide","Look up any HTTP status code and understand its meaning and SEO implications.","Technical SEO"),
+  t("page-size-checker","Page Size Calculator","Page Size Calculator - Performance Tool","Estimate page size from HTML, CSS, and JS inputs for speed optimization.","Technical SEO"),
+  t("core-web-vitals-guide","Core Web Vitals Guide Tool","Core Web Vitals Guide - LCP, FID, CLS Explained","Interactive guide to understanding and improving Core Web Vitals metrics.","Technical SEO"),
+  t("keyword-suggestion-tool","Keyword Suggestion Tool","Keyword Suggestion Tool - Long-Tail Keywords","Generate long-tail keyword variations from a seed keyword using proven patterns.","Keyword & Research"),
+  t("lsi-keyword-generator","LSI Keyword Generator","LSI Keyword Generator - Semantic Keywords","Generate related semantic keywords and phrases for better content relevance.","Keyword & Research"),
+  t("question-generator","People Also Ask Generator","Question Generator - PAA Keywords Tool","Generate question-based keywords: who, what, when, where, why, how, and more.","Keyword & Research"),
+  t("competitor-keyword-gap-planner","Keyword Gap Planner","Keyword Gap Planner - Competitive Analysis","Plan keyword targeting strategy by identifying gaps vs competitors.","Keyword & Research"),
+  t("search-intent-classifier","Search Intent Classifier","Search Intent Classifier - Keyword Analysis","Classify keywords by search intent: Informational, Navigational, Commercial, Transactional.","Keyword & Research"),
+  t("keyword-grouper","Keyword Grouper","Keyword Grouper - Content Planning Tool","Group keywords by common themes and words for organized content planning.","Keyword & Research"),
+  t("linkedin-post-formatter","LinkedIn Post Formatter","LinkedIn Post Formatter - Bold Text & Emojis","Format LinkedIn posts with bold/italic Unicode text, emojis, and hashtags.","Social Media & LinkedIn"),
+  t("linkedin-headline-generator","LinkedIn Headline Generator","LinkedIn Headline Generator - Professional Branding","Generate compelling LinkedIn headline options optimized for visibility.","Social Media & LinkedIn"),
+  t("linkedin-summary-generator","LinkedIn Summary Generator","LinkedIn Summary Generator - About Section","Generate a professional LinkedIn About section from your career details.","Social Media & LinkedIn"),
+  t("twitter-thread-formatter","X/Twitter Thread Formatter","Twitter Thread Formatter - Split Long Posts","Split long text into tweet-sized chunks with thread numbering.","Social Media & LinkedIn"),
+  t("social-media-image-size-guide","Social Media Image Size Guide","Social Media Image Sizes - Complete Guide 2025","Interactive reference for correct image sizes across all social platforms.","Social Media & LinkedIn"),
+  t("hashtag-generator","Hashtag Generator","Hashtag Generator - Social Media Tags","Generate relevant hashtags for your posts across all social platforms.","Social Media & LinkedIn"),
+  t("instagram-bio-generator","Instagram Bio Generator","Instagram Bio Generator - 150 Char Bio Maker","Generate engaging Instagram bios with emojis and call-to-action.","Social Media & LinkedIn"),
+  t("social-post-scheduler-planner","Social Post Calendar Template","Social Content Calendar - Posting Schedule","Weekly and monthly social media content calendar template.","Social Media & LinkedIn"),
+  t("google-business-profile-audit","GMB Audit Checklist Tool","Google Business Profile Audit - 30+ Point Checklist","Interactive checklist to optimize your Google Business Profile listing.","Local SEO"),
+  t("local-citation-finder","Citation Source Finder","Local Citation Finder - Business Directories","Find top citation directories to list your business by country and city.","Local SEO"),
+  t("nap-consistency-checker","NAP Consistency Checker","NAP Checker - Name Address Phone Consistency","Check business name, address, and phone variations for consistency.","Local SEO"),
+  t("review-response-generator","Review Response Generator","Review Response Generator - Reply Templates","Generate professional responses to positive and negative customer reviews.","Local SEO"),
+  t("local-keyword-generator","Local Keyword Generator","Local Keyword Generator - City-Based Keywords","Generate local keyword combinations from service and city inputs.","Local SEO"),
+  t("ai-search-prompt-tester","AI Search Prompt Generator","AI Search Visibility Tester - ChatGPT & Perplexity","Generate prompts to test your brand visibility in AI search engines.","GEO & AI Search"),
+  t("ai-content-optimizer","AI Content Structure Optimizer","AI Content Optimizer - Structure Analysis","Analyze content structure against AI search best practices.","GEO & AI Search"),
+  t("brand-mention-tracker-guide","Brand Mention Tracking Guide","Brand Mention Tracker Guide - AI Visibility","Step-by-step guide to track if AI search engines mention your brand.","GEO & AI Search"),
+  t("anchor-text-analyzer","Anchor Text Analyzer","Anchor Text Analyzer - Link Profile Check","Categorize and analyze anchor text distribution for healthy link profiles.","Backlink & Off-Page"),
+  t("guest-post-pitch-generator","Guest Post Pitch Generator","Guest Post Pitch Generator - Outreach Email","Generate customized guest post outreach email templates.","Backlink & Off-Page"),
+  t("broken-link-outreach-template","Broken Link Email Generator","Broken Link Outreach Template - Link Building","Generate outreach emails for broken link building campaigns.","Backlink & Off-Page"),
+  t("backlink-quality-checklist","Backlink Quality Checklist","Backlink Quality Checker - 15 Point Checklist","Interactive checklist to evaluate backlink quality and worth.","Backlink & Off-Page"),
+  t("disavow-file-generator","Disavow File Generator","Disavow File Generator - Google Disavow Tool","Generate properly formatted disavow.txt files for Google Search Console.","Backlink & Off-Page"),
+  t("product-description-optimizer","Product Description Optimizer","Product Description Checker - Ecommerce SEO","Check product descriptions for keyword presence, length, and SEO quality.","Ecommerce SEO"),
+  t("ecommerce-schema-generator","Ecommerce Schema Generator","Product Schema Generator - Rich Results","Generate Product, Offer, and AggregateRating schema for product pages.","Ecommerce SEO"),
+  t("category-page-optimizer","Category Page SEO Checklist","Category Page Optimizer - Ecommerce Checklist","Interactive checklist for optimizing ecommerce category pages.","Ecommerce SEO"),
+  t("seo-roi-calculator","SEO ROI Calculator","SEO ROI Calculator - Investment Returns","Calculate estimated SEO revenue, ROI percentage, and break-even point.","Reporting & Calculation"),
+  t("cpc-savings-calculator","SEO vs PPC Savings Calculator","CPC Savings Calculator - SEO vs Google Ads","Calculate how much you save with SEO vs paying for Google Ads clicks.","Reporting & Calculation"),
+  t("domain-age-checker","Domain Age Lookup","Domain Age Checker - WHOIS Lookup","Check domain registration date and estimated age for SEO insights.","Reporting & Calculation"),
+  t("website-cost-estimator","Website Cost Estimator","Website Cost Estimator - Budget Calculator","Estimate website development costs based on features and complexity.","Reporting & Calculation"),
+  t("cta-generator","CTA Button Text Generator","CTA Generator - Call-to-Action Ideas","Generate compelling call-to-action text options for any page or goal.","Conversion & UX"),
+  t("ab-test-duration-calculator","A/B Test Duration Calculator","A/B Test Calculator - Sample Size & Duration","Calculate required test duration based on traffic and conversion goals.","Conversion & UX"),
+  t("color-contrast-checker","Color Contrast Checker","Color Contrast Checker - WCAG Accessibility","Check color combinations for WCAG 2.1 accessibility compliance.","Conversion & UX"),
+  t("page-speed-checklist","Page Speed Optimization Checklist","Page Speed Checklist - 25 Performance Tips","Interactive 25-point checklist for optimizing page loading speed.","Conversion & UX"),
+  t("email-subject-line-tester","Email Subject Line Tester","Email Subject Line Tester - Score & Optimize","Score email subject lines for length, power words, and spam triggers.","Email & Outreach"),
+  t("cold-email-generator","Cold Outreach Email Generator","Cold Email Generator - Outreach Templates","Generate customized cold outreach email templates for link building and partnerships.","Email & Outreach"),
+];
+
+export const toolsDataMap: Record<string, ToolData> = Object.fromEntries(
+  toolsData.map(t => [t.slug, t])
+);

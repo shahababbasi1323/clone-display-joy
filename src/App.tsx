@@ -10,9 +10,7 @@ import ServicePage from "./pages/ServicePage";
 import Contact from "./pages/Contact";
 import Pricing from "./pages/Pricing";
 import ToolsHub from "./pages/ToolsHub";
-import MetaTagGenerator from "./pages/tools/MetaTagGenerator";
-import WordCounter from "./pages/tools/WordCounter";
-import SerpPreview from "./pages/tools/SerpPreview";
+import ToolPage from "./pages/ToolPage";
 import FreeSeoAudit from "./pages/FreeSeoAudit";
 import FreeSeoResources from "./pages/FreeSeoResources";
 import Testimonials from "./pages/Testimonials";
@@ -42,9 +40,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/tools" element={<ToolsHub />} />
-          <Route path="/tools/meta-tag-generator" element={<MetaTagGenerator />} />
-          <Route path="/tools/word-counter" element={<WordCounter />} />
-          <Route path="/tools/google-serp-preview" element={<SerpPreview />} />
+          <Route path="/tools/:slug" element={<ToolPage />} />
           <Route path="/free-seo-audit" element={<FreeSeoAudit />} />
           <Route path="/free-seo-resources" element={<FreeSeoResources />} />
           <Route path="/testimonials" element={<Testimonials />} />
