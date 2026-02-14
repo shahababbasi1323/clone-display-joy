@@ -60,6 +60,7 @@ const Footer = () => {
                 { label: "Pricing", href: "/pricing" },
                 { label: "Free Tools", href: "/tools" },
                 { label: "Resources", href: "/free-seo-resources" },
+                { label: "Locations", href: "/locations" },
                 { label: "Testimonials", href: "/testimonials" },
                 { label: "FAQ", href: "/faq" },
               ].map((link) => (
