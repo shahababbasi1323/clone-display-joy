@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { industriesData, INDUSTRY_CATEGORIES } from "@/data/industriesData";
+import { getIndustryCategoryImage } from "@/components/industry/industryImages";
 
 const Industries = () => {
   return (
@@ -26,35 +27,45 @@ const Industries = () => {
           {INDUSTRY_CATEGORIES.map((category) => {
             const categoryIndustries = industriesData.filter(i => i.category === category);
             if (categoryIndustries.length === 0) return null;
+            const bannerImg = getIndustryCategoryImage(category);
             return (
               <div key={category} className="mb-16">
-                <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                  {(() => { const Icon = categoryIndustries[0].icon; return <Icon className="h-6 w-6 text-primary" />; })()}
-                  {category}
-                </h2>
+                {/* Category banner */}
+                <div className="relative rounded-2xl overflow-hidden mb-6 h-36 md:h-44">
+                  <img
+                    src={bannerImg}
+                    alt={`${category} SEO services`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
+                  <div className="absolute inset-0 flex items-center px-6 md:px-10">
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold">{category}</h2>
+                      <p className="text-sm text-muted-foreground mt-1">{categoryIndustries.length} specialized SEO services</p>
+                    </div>
+                  </div>
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                  {categoryIndustries.map((industry, i) => {
-                    const Icon = industry.icon;
-                    return (
-                      <motion.div
-                        key={industry.slug}
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: (i % 8) * 0.03 }}
+                  {categoryIndustries.map((industry, i) => (
+                    <motion.div
+                      key={industry.slug}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: (i % 8) * 0.03 }}
+                    >
+                      <Link
+                        to={`/industries/${industry.slug}`}
+                        className="glass rounded-xl p-5 hover:border-primary/30 transition-all group block h-full"
                       >
-                        <Link
-                          to={`/industries/${industry.slug}`}
-                          className="glass rounded-xl p-5 hover:border-primary/30 transition-all group block h-full"
-                        >
-                          <h3 className="font-semibold text-sm mb-1">{industry.shortTitle}</h3>
-                          <span className="text-xs text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
-                            Learn more <ArrowRight className="h-3 w-3" />
-                          </span>
-                        </Link>
-                      </motion.div>
-                    );
-                  })}
+                        <h3 className="font-semibold text-sm mb-1">{industry.shortTitle}</h3>
+                        <span className="text-xs text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
+                          Learn more <ArrowRight className="h-3 w-3" />
+                        </span>
+                      </Link>
+                    </motion.div>
+                  ))}
                 </div>
               </div>
             );
