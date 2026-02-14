@@ -19,6 +19,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import LocationPage from "./pages/LocationPage";
+import Blog from "./pages/Blog";
+import BlogPostPage from "./pages/BlogPost";
 import Industries from "./pages/Industries";
 import IndustryPage from "./pages/IndustryPage";
 import Locations from "./pages/Locations";
@@ -43,6 +45,8 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/tools" element={<ToolsHub />} />
           <Route path="/tools/:slug" element={<ToolPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/free-seo-audit" element={<FreeSeoAudit />} />
           <Route path="/free-seo-resources" element={<FreeSeoResources />} />
           <Route path="/testimonials" element={<Testimonials />} />
