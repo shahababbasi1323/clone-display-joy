@@ -44,6 +44,9 @@ const FreeSeoAudit = () => {
       toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
     } else {
       setSubmitted(true);
+      supabase.functions.invoke("notify-lead", {
+        body: { name: form.name, email: form.email, phone: form.phone, website: form.website, message: form.message, source: "free_seo_audit" },
+      }).catch(console.error);
     }
     setLoading(false);
   };
