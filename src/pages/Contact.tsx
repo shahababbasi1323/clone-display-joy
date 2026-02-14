@@ -61,7 +61,7 @@ const Contact = () => {
             <div className="lg:col-span-2 space-y-4">
               {[
                 { icon: MapPin, label: "Location", value: "Islamabad, Pakistan" },
-                { icon: Phone, label: "Phone", value: "+92 304 1316771", href: "tel:+923041316771" },
+                { icon: Phone, label: "Call Us", value: "Tap to Call", href: "tel:+923041316771" },
                 { icon: Mail, label: "Email", value: "contact@shahababbasi.com", href: "mailto:contact@shahababbasi.com" },
               ].map((item) => (
                 <div key={item.label} className="glass rounded-xl p-5 flex items-start gap-4">
