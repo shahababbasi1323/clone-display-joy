@@ -3,9 +3,16 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { servicesData } from "@/data/servicesData";
 
 const Services = () => {
+  useSeoMeta({
+    title: "Professional SEO Services - Technical, Local & E-commerce SEO",
+    description: "Comprehensive SEO services including technical audits, on-page optimization, local SEO, e-commerce SEO, link building, and GEO optimization.",
+    canonical: "https://shahababbasi.com/services",
+  });
+
   return (
     <Layout>
       <section className="section-padding">

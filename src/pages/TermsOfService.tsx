@@ -1,6 +1,13 @@
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const TermsOfService = () => {
+  useSeoMeta({
+    title: "Terms of Service - Shahab Abbasi SEO Services",
+    description: "Read the terms of service for Shahab Abbasi SEO services. Understand our service terms, payment policies, and client responsibilities.",
+    canonical: "https://shahababbasi.com/terms-of-service",
+  });
+
   return (
     <Layout>
       <section className="section-padding">
@@ -59,6 +66,19 @@ const TermsOfService = () => {
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+              { "@type": "ListItem", position: 2, name: "Terms of Service", item: "https://shahababbasi.com/terms-of-service" },
+            ],
+          }),
+        }}
+      />
     </Layout>
   );
 };

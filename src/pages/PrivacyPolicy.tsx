@@ -1,6 +1,13 @@
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const PrivacyPolicy = () => {
+  useSeoMeta({
+    title: "Privacy Policy - Shahab Abbasi SEO Services",
+    description: "Read the privacy policy for shahababbasi.com. Learn how we collect, use, and protect your personal information.",
+    canonical: "https://shahababbasi.com/privacy-policy",
+  });
+
   return (
     <Layout>
       <section className="section-padding">
@@ -70,6 +77,19 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+              { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://shahababbasi.com/privacy-policy" },
+            ],
+          }),
+        }}
+      />
     </Layout>
   );
 };

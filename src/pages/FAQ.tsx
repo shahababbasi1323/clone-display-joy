@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const faqCategories = [
   {
@@ -69,6 +70,12 @@ const FAQ = () => {
   const [openFaq, setOpenFaq] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
+  useSeoMeta({
+    title: "SEO FAQ - Answers to Common SEO & GEO Questions",
+    description: "Find answers to frequently asked questions about SEO, GEO optimization, technical SEO, local SEO, pricing, and our process.",
+    canonical: "https://shahababbasi.com/faq",
+  });
 
   const filteredFaqs = searchQuery
     ? allFaqs.filter(

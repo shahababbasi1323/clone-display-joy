@@ -4,9 +4,16 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const FreeSeoAudit = () => {
   const [submitted, setSubmitted] = useState(false);
+
+  useSeoMeta({
+    title: "Free SEO Audit - Get Your Website Analyzed in 24 Hours",
+    description: "Request a free comprehensive SEO audit covering technical health, keyword opportunities, and competitor analysis. Delivered within 24 hours.",
+    canonical: "https://shahababbasi.com/free-seo-audit",
+  });
 
   return (
     <Layout>
@@ -63,6 +70,30 @@ const FreeSeoAudit = () => {
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: "Free SEO Audit",
+              description: "Comprehensive SEO audit covering technical health, keyword opportunities, and competitor analysis.",
+              provider: { "@type": "Person", name: "Shahab Abbasi", url: "https://shahababbasi.com" },
+              url: "https://shahababbasi.com/free-seo-audit",
+              offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+                { "@type": "ListItem", position: 2, name: "Free SEO Audit", item: "https://shahababbasi.com/free-seo-audit" },
+              ],
+            },
+          ]),
+        }}
+      />
     </Layout>
   );
 };

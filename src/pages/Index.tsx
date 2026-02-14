@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
@@ -132,6 +133,12 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
 const Index = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [activeTestimonial, setActiveTestimonial] = useState(0);
+
+  useSeoMeta({
+    title: "Shahab Abbasi - SEO Expert & GEO Specialist | Rank #1 on Google",
+    description: "Shahab Abbasi is a professional SEO strategist & GEO expert helping businesses rank #1 on Google and AI search engines. Get a free SEO audit today.",
+    canonical: "https://shahababbasi.com/",
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
