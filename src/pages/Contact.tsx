@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageCircle, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,13 +16,10 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="section-padding">
+      {/* Hero */}
+      <section className="section-padding pb-10">
         <div className="container mx-auto max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-16"
-          >
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Let's <span className="text-gradient">Talk SEO</span>
             </h1>
@@ -31,7 +28,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
             {/* Contact Info */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-2 space-y-4">
               {[
                 { icon: MapPin, label: "Location", value: "Islamabad, Pakistan" },
                 { icon: Phone, label: "Phone", value: "+92 304 1316771", href: "tel:+923041316771" },
@@ -56,7 +53,7 @@ const Contact = () => {
                 href="https://wa.me/923041316771"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass rounded-xl p-5 flex items-center gap-4 hover:border-accent/30 transition-colors group"
+                className="glass rounded-xl p-5 flex items-center gap-4 hover:border-accent/30 transition-colors group block"
               >
                 <div className="p-2 rounded-lg bg-accent/10 group-hover:bg-accent/20 transition-colors">
                   <MessageCircle className="h-5 w-5 text-accent" />
@@ -64,6 +61,22 @@ const Contact = () => {
                 <div>
                   <p className="font-medium">Chat on WhatsApp</p>
                   <p className="text-sm text-muted-foreground">Quick response guaranteed</p>
+                </div>
+              </a>
+
+              {/* Calendly CTA */}
+              <a
+                href="https://calendly.com/shahababbasi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass rounded-xl p-5 flex items-center gap-4 hover:border-primary/30 transition-colors group block"
+              >
+                <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <ExternalLink className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">Schedule a Call</p>
+                  <p className="text-sm text-muted-foreground">Book a free 30-min consultation</p>
                 </div>
               </a>
             </div>
@@ -80,11 +93,11 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="glass rounded-xl p-6 md:p-8 space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">Name</label>
+                      <label className="text-sm font-medium mb-1.5 block">Name *</label>
                       <Input placeholder="Your name" required />
                     </div>
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">Email</label>
+                      <label className="text-sm font-medium mb-1.5 block">Email *</label>
                       <Input type="email" placeholder="your@email.com" required />
                     </div>
                   </div>
@@ -114,7 +127,7 @@ const Contact = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-1.5 block">Message</label>
+                    <label className="text-sm font-medium mb-1.5 block">Message *</label>
                     <Textarea placeholder="Tell me about your project and goals..." rows={4} required />
                   </div>
                   <Button type="submit" size="lg" className="w-full glow-primary">
@@ -126,6 +139,54 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Google Map */}
+      <section className="section-padding pt-10">
+        <div className="container mx-auto max-w-5xl">
+          <div className="glass rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212645.32051984927!2d72.92887385!3d33.6162440!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3b26f9de!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Shahab Abbasi Location - Islamabad, Pakistan"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              name: "Contact Shahab Abbasi",
+              url: "https://shahababbasi.com/contact",
+              mainEntity: {
+                "@type": "LocalBusiness",
+                name: "Shahab Abbasi SEO Services",
+                telephone: "+923041316771",
+                email: "contact@shahababbasi.com",
+                address: { "@type": "PostalAddress", addressLocality: "Islamabad", addressRegion: "ICT", addressCountry: "PK" },
+              },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+                { "@type": "ListItem", position: 2, name: "Contact", item: "https://shahababbasi.com/contact" },
+              ],
+            },
+          ]),
+        }}
+      />
     </Layout>
   );
 };

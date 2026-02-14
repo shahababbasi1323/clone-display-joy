@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-card/30">
       <div className="container mx-auto section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="text-2xl font-bold">
               <span className="text-gradient">Shahab</span> Abbasi
             </Link>
@@ -42,10 +42,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {["Technical SEO", "On-Page SEO", "Local SEO", "E-commerce SEO", "GEO Optimization", "Link Building"].map((s) => (
                 <li key={s}>
-                  <Link
-                    to="/services"
-                    className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group"
-                  >
+                  <Link to="/services" className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {s}
                     <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
@@ -54,21 +51,21 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Free Tools */}
+          {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Free Tools</h3>
+            <h3 className="font-semibold text-foreground">Quick Links</h3>
             <ul className="space-y-2">
               {[
-                { label: "Meta Tag Generator", href: "/tools/meta-tag-generator" },
-                { label: "Word Counter", href: "/tools/word-counter" },
-                { label: "SERP Preview", href: "/tools/google-serp-preview" },
-              ].map((t) => (
-                <li key={t.href}>
-                  <Link
-                    to={t.href}
-                    className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group"
-                  >
-                    {t.label}
+                { label: "Free SEO Audit", href: "/free-seo-audit" },
+                { label: "Pricing", href: "/pricing" },
+                { label: "Free Tools", href: "/tools" },
+                { label: "Resources", href: "/free-seo-resources" },
+                { label: "Testimonials", href: "/testimonials" },
+                { label: "FAQ", href: "/faq" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
+                    {link.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>

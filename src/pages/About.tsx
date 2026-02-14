@@ -104,6 +104,40 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "AboutPage",
+              name: "About Shahab Abbasi",
+              url: "https://shahababbasi.com/about",
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Shahab Abbasi",
+              jobTitle: "SEO Strategist & GEO Expert",
+              url: "https://shahababbasi.com",
+              telephone: "+923041316771",
+              address: { "@type": "PostalAddress", addressLocality: "Islamabad", addressCountry: "PK" },
+              knowsAbout: skills,
+              sameAs: ["https://linkedin.com/in/shahab-abbasi-seo-specialist"],
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+                { "@type": "ListItem", position: 2, name: "About", item: "https://shahababbasi.com/about" },
+              ],
+            },
+          ]),
+        }}
+      />
     </Layout>
   );
 };
