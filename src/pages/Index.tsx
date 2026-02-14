@@ -5,12 +5,16 @@ import {
   Search, Globe, Zap, Link2, ShoppingCart, Bot,
   ArrowRight, ChevronDown, Star, Users, TrendingUp, Award,
   Wrench, Building2, Stethoscope, Scale, ShoppingBag, GraduationCap,
-  Utensils, Home as HomeIcon, Briefcase, FileText, Calendar, BookOpen
+  Utensils, Home as HomeIcon, Briefcase, FileText, Calendar, BookOpen,
+  MapPin
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import heroBg from "@/assets/hero-bg.jpg";
+import { servicesData } from "@/data/servicesData";
+import { industriesData } from "@/data/industriesData";
+import { locationsData } from "@/data/locationsData";
 
 const stats = [
   { value: 50, suffix: "+", label: "Businesses Scaled", icon: Users },
@@ -60,16 +64,13 @@ const testimonials = [
   { name: "James O.", company: "SaaS Company", text: "The AI search optimization strategy put us ahead of every competitor. Absolute game changer for our business.", rating: 5 },
 ];
 
-const industries = [
-  { icon: Stethoscope, name: "Healthcare" },
-  { icon: Scale, name: "Law Firms" },
-  { icon: ShoppingBag, name: "E-commerce" },
-  { icon: HomeIcon, name: "Real Estate" },
-  { icon: Building2, name: "Construction" },
-  { icon: GraduationCap, name: "Education" },
-  { icon: Utensils, name: "Restaurants" },
-  { icon: Briefcase, name: "SaaS & Tech" },
-];
+// Group locations by country for display
+const locationsByCountry = locationsData.reduce<Record<string, typeof locationsData>>((acc, loc) => {
+  const key = loc.country;
+  if (!acc[key]) acc[key] = [];
+  acc[key].push(loc);
+  return acc;
+}, {});
 
 const blogPosts = [
   {
@@ -353,29 +354,103 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Industries */}
+      {/* All Services */}
       <section className="section-padding">
         <div className="container mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Industries We <span className="text-gradient">Serve</span>
+              All SEO & Digital Marketing <span className="text-gradient">Services</span>
             </h2>
-            <p className="text-muted-foreground">No matter your niche, I craft SEO strategies that match your market's search behavior and growth potential.</p>
+            <p className="text-muted-foreground">From technical audits to AI search optimization — explore every service designed to grow your online presence.</p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {industries.map((ind, i) => (
-              <motion.div
-                key={ind.name}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
-                className="glass rounded-xl p-5 text-center hover:border-primary/30 transition-all group cursor-pointer"
-              >
-                <ind.icon className="h-8 w-8 mx-auto text-primary mb-3 group-hover:scale-110 transition-transform" />
-                <p className="text-sm font-medium">{ind.name}</p>
-              </motion.div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {servicesData.map((svc) => {
+              const SvcIcon = svc.icon;
+              return (
+                <Link
+                  key={svc.slug}
+                  to={`/services/${svc.slug}`}
+                  className="glass rounded-xl p-4 text-center hover:border-primary/30 transition-all group"
+                >
+                  <SvcIcon className="h-6 w-6 mx-auto text-primary mb-2 group-hover:scale-110 transition-transform" />
+                  <p className="text-xs font-medium leading-tight">{svc.title}</p>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/services">
+              <Button variant="outline" size="sm">View All Services <ArrowRight className="ml-2 h-4 w-4" /></Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* All Industries */}
+      <section className="section-padding bg-card/20 border-y border-border">
+        <div className="container mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Industries We <span className="text-gradient">Specialize In</span>
+            </h2>
+            <p className="text-muted-foreground">Tailored SEO strategies for every industry — because each niche has unique search behavior and competition.</p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {industriesData.map((ind) => {
+              const IndIcon = ind.icon;
+              return (
+                <Link
+                  key={ind.slug}
+                  to={`/industries/${ind.slug}`}
+                  className="glass rounded-xl p-4 text-center hover:border-primary/30 transition-all group"
+                >
+                  <IndIcon className="h-6 w-6 mx-auto text-primary mb-2 group-hover:scale-110 transition-transform" />
+                  <p className="text-xs font-medium leading-tight">{ind.shortTitle}</p>
+                </Link>
+              );
+            })}
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/industries">
+              <Button variant="outline" size="sm">View All Industries <ArrowRight className="ml-2 h-4 w-4" /></Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* All Locations */}
+      <section className="section-padding">
+        <div className="container mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              SEO Services <span className="text-gradient">Worldwide</span>
+            </h2>
+            <p className="text-muted-foreground">Serving businesses across the globe with localized SEO strategies tailored to each market.</p>
+          </div>
+          <div className="space-y-8">
+            {Object.entries(locationsByCountry).map(([country, locs]) => (
+              <div key={country}>
+                <h3 className="text-sm font-semibold text-primary mb-3 flex items-center gap-2">
+                  <MapPin className="h-4 w-4" /> {country}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {locs.map((loc) => (
+                    <Link
+                      key={loc.slug}
+                      to={loc.langPrefix ? `/${loc.langPrefix}/${loc.slug}` : `/${loc.slug}`}
+                      className="glass rounded-lg px-3 py-2 text-xs font-medium hover:border-primary/30 hover:text-primary transition-all"
+                    >
+                      {loc.localCity || loc.city}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/locations">
+              <Button variant="outline" size="sm">View All Locations <ArrowRight className="ml-2 h-4 w-4" /></Button>
+            </Link>
           </div>
         </div>
       </section>
