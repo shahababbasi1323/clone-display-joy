@@ -197,6 +197,22 @@ const Pricing = () => {
                 </form>
               )}
             </div>
+
+            {/* Internal Links */}
+            <div className="mt-8 flex flex-wrap justify-center gap-2">
+              {[
+                { label: "Free SEO Audit", href: "/free-seo-audit" },
+                { label: "Testimonials", href: "/testimonials" },
+                { label: "Services", href: "/services" },
+                { label: "FAQ", href: "/faq" },
+                { label: "Blog", href: "/blog" },
+                { label: "Contact", href: "/contact" },
+              ].map((l) => (
+                <Link key={l.href} to={l.href} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors">
+                  {l.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

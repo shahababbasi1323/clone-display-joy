@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Download, Mail, ArrowRight, FileText, BarChart3, BookOpen, CheckSquare, Lightbulb } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const resources = [
   { title: "Complete SEO Checklist 2026", desc: "100+ point checklist covering technical, on-page, and off-page SEO essentials.", icon: CheckSquare, category: "Checklist" },
@@ -27,6 +30,7 @@ const resources = [
 const FreeSeoResources = () => {
   const [email, setEmail] = useState("");
   const [unlocked, setUnlocked] = useState(false);
+  const { toast } = useToast();
 
   useSeoMeta({
     title: "Free SEO Resources - Guides, Templates & Checklists",
@@ -34,9 +38,16 @@ const FreeSeoResources = () => {
     canonical: "https://shahababbasi.com/free-seo-resources",
   });
 
-  const handleUnlock = (e: React.FormEvent) => {
+  const handleUnlock = async (e: React.FormEvent) => {
     e.preventDefault();
+    await supabase.from("leads").insert({
+      name: "Resource Download",
+      email,
+      source: "resources_download",
+      message: "Unlocked free SEO resources",
+    });
     setUnlocked(true);
+    toast({ title: "Resources unlocked!" });
   };
 
   return (
@@ -108,6 +119,18 @@ const FreeSeoResources = () => {
                 </div>
               </motion.div>
             ))}
+          </div>
+
+          {/* Internal Links */}
+          <div className="mt-16 text-center">
+            <h2 className="text-2xl font-bold mb-4">Want More <span className="text-gradient">SEO Help</span>?</h2>
+            <p className="text-muted-foreground mb-6">Explore our services or get a free personalized audit of your website.</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link to="/free-seo-audit"><Button className="glow-primary">Get Free SEO Audit <ArrowRight className="ml-2 h-4 w-4" /></Button></Link>
+              <Link to="/services"><Button variant="outline">View Services</Button></Link>
+              <Link to="/blog"><Button variant="outline">Read Blog</Button></Link>
+              <Link to="/tools"><Button variant="outline">Free SEO Tools</Button></Link>
+            </div>
           </div>
         </div>
       </section>

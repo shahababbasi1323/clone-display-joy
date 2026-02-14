@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Star, Play, Quote } from "lucide-react";
+import { Star, Play, Quote, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 
@@ -109,6 +111,30 @@ const Testimonials = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* CTA & Internal Links */}
+          <div className="mt-16 text-center max-w-2xl mx-auto">
+            <div className="glass rounded-2xl p-10 glow-primary">
+              <h2 className="text-2xl font-bold mb-3">Ready to Be Our Next Success Story?</h2>
+              <p className="text-muted-foreground mb-6">Book a free consultation and get a comprehensive SEO audit of your website.</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Link to="/free-seo-audit"><Button className="glow-primary">Get Free SEO Audit <ArrowRight className="ml-2 h-4 w-4" /></Button></Link>
+                <Link to="/pricing"><Button variant="outline">View Pricing</Button></Link>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2 mt-6">
+                {[
+                  { label: "Services", href: "/services" },
+                  { label: "Case Studies", href: "/industries" },
+                  { label: "Blog", href: "/blog" },
+                  { label: "FAQ", href: "/faq" },
+                ].map((l) => (
+                  <Link key={l.href} to={l.href} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors">
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
