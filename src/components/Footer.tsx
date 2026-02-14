@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Linkedin, ArrowUpRight } from "lucide-react";
+import { Phone, Mail, MapPin, Linkedin, ArrowUpRight, Facebook, Instagram, Twitter } from "lucide-react";
+
+const socialLinks = [
+  { href: "https://www.linkedin.com/in/shahab-abbasi-seo-specialist/", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://www.facebook.com/shahababbasi302/", icon: Facebook, label: "Facebook" },
+  { href: "https://www.instagram.com/shahababbasi302", icon: Instagram, label: "Instagram" },
+  { href: "https://x.com/ShahabAbbasi302", icon: Twitter, label: "X (Twitter)" },
+];
 
 const Footer = () => {
   return (
@@ -15,15 +22,18 @@ const Footer = () => {
               SEO Strategist & GEO Expert helping businesses rank #1 on Google and AI search engines worldwide.
             </p>
             <div className="flex gap-3">
-              <a
-                href="https://linkedin.com/in/shahab-abbasi-seo-specialist"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+              {socialLinks.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
+                  aria-label={s.label}
+                >
+                  <s.icon className="h-5 w-5" />
+                </a>
+              ))}
               <a
                 href="https://wa.me/923041316771"
                 target="_blank"
