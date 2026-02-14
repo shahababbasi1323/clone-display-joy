@@ -19,7 +19,7 @@ const IndustryWhySeo = ({ industry }: { industry: IndustryData }) => {
       <div className="container mx-auto max-w-5xl">
         <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="text-3xl font-bold mb-4">
-            Why <span className="text-gradient">{s}</span> Businesses Need SEO in 2025
+            Why <span className="text-gradient">{s}</span> Businesses Need SEO in 2026
           </h2>
           <p className="text-muted-foreground max-w-3xl leading-relaxed mb-10">
             The {sl} industry is increasingly competitive online. With 93% of online experiences beginning with a search engine, your {sl} business must rank prominently for relevant keywords to capture market share. Search engine optimization for {sl} isn't optional — it's the foundation of sustainable digital growth, improved online visibility, and measurable return on investment.

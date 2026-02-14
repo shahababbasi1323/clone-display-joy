@@ -66,7 +66,7 @@ export const toolsData: ToolData[] = [
   t("linkedin-headline-generator","LinkedIn Headline Generator","LinkedIn Headline Generator - Professional Branding","Generate compelling LinkedIn headline options optimized for visibility.","Social Media & LinkedIn"),
   t("linkedin-summary-generator","LinkedIn Summary Generator","LinkedIn Summary Generator - About Section","Generate a professional LinkedIn About section from your career details.","Social Media & LinkedIn"),
   t("twitter-thread-formatter","X/Twitter Thread Formatter","Twitter Thread Formatter - Split Long Posts","Split long text into tweet-sized chunks with thread numbering.","Social Media & LinkedIn"),
-  t("social-media-image-size-guide","Social Media Image Size Guide","Social Media Image Sizes - Complete Guide 2025","Interactive reference for correct image sizes across all social platforms.","Social Media & LinkedIn"),
+  t("social-media-image-size-guide","Social Media Image Size Guide","Social Media Image Sizes - Complete Guide 2026","Interactive reference for correct image sizes across all social platforms.","Social Media & LinkedIn"),
   t("hashtag-generator","Hashtag Generator","Hashtag Generator - Social Media Tags","Generate relevant hashtags for your posts across all social platforms.","Social Media & LinkedIn"),
   t("instagram-bio-generator","Instagram Bio Generator","Instagram Bio Generator - 150 Char Bio Maker","Generate engaging Instagram bios with emojis and call-to-action.","Social Media & LinkedIn"),
   t("social-post-scheduler-planner","Social Post Calendar Template","Social Content Calendar - Posting Schedule","Weekly and monthly social media content calendar template.","Social Media & LinkedIn"),
