@@ -36,6 +36,10 @@ const Contact = () => {
       toast({ title: "Error", description: "Something went wrong. Please try again.", variant: "destructive" });
     } else {
       setSubmitted(true);
+      // Fire-and-forget email notification
+      supabase.functions.invoke("notify-lead", {
+        body: { name: form.name, email: form.email, phone: form.phone, website: form.website, service: form.service, message: form.message, source: "contact_form" },
+      }).catch(console.error);
     }
     setLoading(false);
   };
