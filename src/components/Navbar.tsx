@@ -145,7 +145,7 @@ const Navbar = () => {
             )}
             <Link to="/free-seo-audit" className="mt-2 px-4">
               <Button variant="default" className="w-full glow-primary">
-                Free SEO Audit
+                Book a Call
               </Button>
             </Link>
           </nav>

@@ -56,7 +56,7 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <ul className="space-y-2">
               {[
-                { label: "Free SEO Audit", href: "/free-seo-audit" },
+                { label: "Book a Call", href: "/free-seo-audit" },
                 { label: "Pricing", href: "/pricing" },
                 { label: "Free Tools", href: "/tools" },
                 { label: "Resources", href: "/free-seo-resources" },
