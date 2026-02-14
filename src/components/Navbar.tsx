@@ -1,19 +1,30 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Tools", href: "/tools" },
+  {
+    label: "Resources",
+    href: "#",
+    children: [
+      { label: "Testimonials", href: "/testimonials" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Free Resources", href: "/free-seo-resources" },
+    ],
+  },
   { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -24,6 +35,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    setDropdownOpen(false);
   }, [location]);
 
   return (
@@ -38,23 +50,48 @@ const Navbar = () => {
           <span className="text-foreground"> Abbasi</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
-                location.pathname === link.href
-                  ? "text-accent"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden lg:flex items-center gap-1">
+          {navLinks.map((link) =>
+            link.children ? (
+              <div key={link.label} className="relative">
+                <button
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
+                >
+                  {link.label}
+                  <ChevronDown className={`h-3 w-3 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+                </button>
+                {dropdownOpen && (
+                  <div className="absolute top-full left-0 mt-1 glass rounded-lg py-2 min-w-[180px] shadow-xl">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        to={child.href}
+                        className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                  location.pathname === link.href
+                    ? "text-accent"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <a href="tel:+923041316771" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
             <Phone className="h-4 w-4" />
             +92 304 1316771
@@ -68,7 +105,7 @@ const Navbar = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           aria-label="Toggle menu"
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -76,22 +113,39 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden glass border-t border-border">
-          <nav className="container mx-auto py-4 flex flex-col gap-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                  location.pathname === link.href
-                    ? "text-accent bg-secondary"
-                    : "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link to="/free-seo-audit" className="mt-2">
+        <div className="lg:hidden glass border-t border-border">
+          <nav className="container mx-auto py-4 flex flex-col gap-1">
+            {navLinks.map((link) =>
+              link.children ? (
+                <div key={link.label}>
+                  <div className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                    {link.label}
+                  </div>
+                  {link.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      to={child.href}
+                      className="px-6 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
+                    location.pathname === link.href
+                      ? "text-accent bg-secondary"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+            <Link to="/free-seo-audit" className="mt-2 px-4">
               <Button variant="default" className="w-full glow-primary">
                 Free SEO Audit
               </Button>

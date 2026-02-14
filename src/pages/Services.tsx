@@ -81,6 +81,30 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            ...services.map((s) => ({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              name: s.title,
+              description: s.desc,
+              provider: { "@type": "Person", name: "Shahab Abbasi", url: "https://shahababbasi.com" },
+            })),
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+                { "@type": "ListItem", position: 2, name: "Services", item: "https://shahababbasi.com/services" },
+              ],
+            },
+          ]),
+        }}
+      />
     </Layout>
   );
 };
