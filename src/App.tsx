@@ -20,6 +20,7 @@ import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+import LocationPage from "./pages/LocationPage";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,32 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+
+          {/* Location pages - English (no prefix) */}
+          <Route path="/:slug" element={<LocationPage />} />
+
+          {/* Location pages - Language prefixed */}
+          <Route path="/ar/:slug" element={<LocationPage />} />
+          <Route path="/fr/:slug" element={<LocationPage />} />
+          <Route path="/de/:slug" element={<LocationPage />} />
+          <Route path="/nl/:slug" element={<LocationPage />} />
+          <Route path="/it/:slug" element={<LocationPage />} />
+          <Route path="/es/:slug" element={<LocationPage />} />
+          <Route path="/pt/:slug" element={<LocationPage />} />
+          <Route path="/da/:slug" element={<LocationPage />} />
+          <Route path="/sv/:slug" element={<LocationPage />} />
+          <Route path="/no/:slug" element={<LocationPage />} />
+          <Route path="/fi/:slug" element={<LocationPage />} />
+          <Route path="/pl/:slug" element={<LocationPage />} />
+          <Route path="/cs/:slug" element={<LocationPage />} />
+          <Route path="/hu/:slug" element={<LocationPage />} />
+          <Route path="/ro/:slug" element={<LocationPage />} />
+          <Route path="/el/:slug" element={<LocationPage />} />
+          <Route path="/tr/:slug" element={<LocationPage />} />
+          <Route path="/ja/:slug" element={<LocationPage />} />
+          <Route path="/ko/:slug" element={<LocationPage />} />
+          <Route path="/he/:slug" element={<LocationPage />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
