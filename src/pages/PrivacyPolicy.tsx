@@ -68,7 +68,6 @@ const PrivacyPolicy = () => {
             <p>If you have questions about this Privacy Policy, contact us at:</p>
             <p>
               <strong className="text-foreground">Email:</strong> contact@shahababbasi.com<br />
-              <strong className="text-foreground">Phone:</strong> +92 304 1316771<br />
               <strong className="text-foreground">Location:</strong> Islamabad, Pakistan
             </p>
 

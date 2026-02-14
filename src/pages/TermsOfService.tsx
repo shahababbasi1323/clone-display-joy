@@ -57,8 +57,7 @@ const TermsOfService = () => {
             <h2 className="text-xl font-semibold text-foreground mt-8">11. Contact</h2>
             <p>
               For questions about these Terms, contact us at:<br />
-              <strong className="text-foreground">Email:</strong> contact@shahababbasi.com<br />
-              <strong className="text-foreground">Phone:</strong> +92 304 1316771
+              <strong className="text-foreground">Email:</strong> contact@shahababbasi.com
             </p>
 
             <h2 className="text-xl font-semibold text-foreground mt-8">12. Changes</h2>
