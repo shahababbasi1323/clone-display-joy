@@ -347,30 +347,69 @@ export function getBlogRelatedTools(blogSlug: string) {
 export function getLocationRelatedIndustries(countryCode: string) {
   // Map country codes to relevant industries
   const countryIndustries: Record<string, string[]> = {
+    // Middle East & North Africa
     PK: ["healthcare-seo", "ecommerce-retail-seo", "education-seo"],
     AE: ["real-estate-seo", "ecommerce-retail-seo", "travel-seo"],
     SA: ["healthcare-seo", "real-estate-seo", "construction-seo"],
+    QA: ["real-estate-seo", "construction-seo", "travel-seo"],
+    BH: ["real-estate-seo", "healthcare-seo", "restaurant-seo"],
+    KW: ["real-estate-seo", "healthcare-seo", "ecommerce-retail-seo"],
+    OM: ["travel-seo", "real-estate-seo", "healthcare-seo"],
+    JO: ["healthcare-seo", "education-seo", "travel-seo"],
+    LB: ["restaurant-seo", "education-seo", "travel-seo"],
+    EG: ["healthcare-seo", "real-estate-seo", "education-seo"],
+    MA: ["travel-seo", "real-estate-seo", "restaurant-seo"],
+    TN: ["travel-seo", "healthcare-seo", "education-seo"],
+    IL: ["saas-seo", "startup-seo", "healthcare-seo"],
+    // Europe — Western
     GB: ["legal-seo", "saas-seo", "ecommerce-retail-seo"],
-    US: ["saas-seo", "healthcare-seo", "ecommerce-retail-seo"],
-    CA: ["real-estate-seo", "legal-seo", "healthcare-seo"],
-    AU: ["real-estate-seo", "healthcare-seo", "education-seo"],
-    DE: ["saas-seo", "auto-dealer-seo", "ecommerce-retail-seo"],
+    IE: ["saas-seo", "healthcare-seo", "ecommerce-retail-seo"],
     FR: ["fashion-seo", "travel-seo", "restaurant-seo"],
+    DE: ["saas-seo", "auto-dealer-seo", "ecommerce-retail-seo"],
+    AT: ["travel-seo", "healthcare-seo", "ecommerce-retail-seo"],
+    CH: ["saas-seo", "healthcare-seo", "real-estate-seo"],
     NL: ["saas-seo", "ecommerce-retail-seo", "travel-seo"],
+    BE: ["ecommerce-retail-seo", "healthcare-seo", "legal-seo"],
+    // Europe — Southern
     IT: ["fashion-seo", "travel-seo", "restaurant-seo"],
     ES: ["travel-seo", "real-estate-seo", "restaurant-seo"],
-    QA: ["real-estate-seo", "construction-seo", "travel-seo"],
-    BH: ["real-estate-seo", "healthcare-seo"],
-    KW: ["real-estate-seo", "healthcare-seo"],
-    OM: ["travel-seo", "real-estate-seo"],
-    JO: ["healthcare-seo", "education-seo"],
-    LB: ["restaurant-seo", "education-seo"],
-    EG: ["healthcare-seo", "real-estate-seo", "education-seo"],
-    MA: ["travel-seo", "real-estate-seo"],
+    PT: ["travel-seo", "real-estate-seo", "ecommerce-retail-seo"],
+    GR: ["travel-seo", "restaurant-seo", "real-estate-seo"],
+    // Europe — Northern
+    DK: ["saas-seo", "ecommerce-retail-seo", "healthcare-seo"],
+    SE: ["saas-seo", "ecommerce-retail-seo", "healthcare-seo"],
+    NO: ["saas-seo", "real-estate-seo", "healthcare-seo"],
+    FI: ["saas-seo", "education-seo", "healthcare-seo"],
+    // Europe — Eastern & Central
+    PL: ["ecommerce-retail-seo", "saas-seo", "healthcare-seo"],
+    CZ: ["saas-seo", "ecommerce-retail-seo", "travel-seo"],
+    HU: ["travel-seo", "ecommerce-retail-seo", "healthcare-seo"],
+    RO: ["saas-seo", "ecommerce-retail-seo", "real-estate-seo"],
+    // Turkey
     TR: ["travel-seo", "real-estate-seo", "healthcare-seo"],
-    IL: ["saas-seo", "startup-seo", "healthcare-seo"],
-    JP: ["saas-seo", "ecommerce-retail-seo"],
-    KR: ["saas-seo", "ecommerce-retail-seo"],
+    // Americas
+    US: ["saas-seo", "healthcare-seo", "ecommerce-retail-seo"],
+    CA: ["real-estate-seo", "legal-seo", "healthcare-seo"],
+    MX: ["ecommerce-retail-seo", "travel-seo", "real-estate-seo"],
+    CO: ["ecommerce-retail-seo", "travel-seo", "healthcare-seo"],
+    AR: ["ecommerce-retail-seo", "real-estate-seo", "restaurant-seo"],
+    CL: ["ecommerce-retail-seo", "real-estate-seo", "healthcare-seo"],
+    PE: ["travel-seo", "ecommerce-retail-seo", "restaurant-seo"],
+    BR: ["ecommerce-retail-seo", "saas-seo", "real-estate-seo"],
+    // Asia-Pacific
+    JP: ["saas-seo", "ecommerce-retail-seo", "auto-dealer-seo"],
+    KR: ["saas-seo", "ecommerce-retail-seo", "beauty-salon-seo"],
+    SG: ["saas-seo", "ecommerce-retail-seo", "real-estate-seo"],
+    MY: ["ecommerce-retail-seo", "travel-seo", "real-estate-seo"],
+    TH: ["travel-seo", "restaurant-seo", "real-estate-seo"],
+    PH: ["ecommerce-retail-seo", "education-seo", "real-estate-seo"],
+    // Oceania
+    AU: ["real-estate-seo", "healthcare-seo", "education-seo"],
+    NZ: ["real-estate-seo", "healthcare-seo", "travel-seo"],
+    // Africa
+    ZA: ["ecommerce-retail-seo", "real-estate-seo", "healthcare-seo"],
+    NG: ["ecommerce-retail-seo", "education-seo", "real-estate-seo"],
+    KE: ["ecommerce-retail-seo", "travel-seo", "healthcare-seo"],
   };
   const slugs = countryIndustries[countryCode] || ["healthcare-seo", "ecommerce-retail-seo"];
   return slugs
