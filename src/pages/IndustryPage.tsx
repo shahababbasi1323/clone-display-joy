@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown, Check, BarChart3, Wrench, ArrowLeft, Target } from "lucide-react";
+import { ArrowRight, ChevronDown, Check, BarChart3, Wrench, ArrowLeft, Target, BookOpen, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getIndustryBySlug, industriesData, INDUSTRY_CATEGORIES } from "@/data/industriesData";
 import { servicesData } from "@/data/servicesData";
+import { getIndustryRelatedTools, getIndustryRelatedBlogs, getIndustryRelatedLocations } from "@/data/internalLinks";
 
 const IndustryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -205,6 +206,79 @@ const IndustryPage = () => {
           </div>
         </section>
       )}
+
+      {/* Related Tools */}
+      {(() => {
+        const relTools = getIndustryRelatedTools(industry.slug);
+        return relTools.length > 0 ? (
+          <section className="section-padding bg-card/30 border-t border-border">
+            <div className="container mx-auto max-w-4xl">
+              <div className="flex items-center gap-3 mb-6">
+                <Wrench className="h-5 w-5 text-accent" />
+                <h2 className="text-2xl font-bold">Free SEO Tools for {industry.shortTitle}</h2>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {relTools.map(tool => tool && (
+                  <Link key={tool.slug} to={`/tools/${tool.slug}`} className="glass rounded-lg px-4 py-3 hover:border-accent/30 transition-all text-sm font-medium flex items-center gap-2 group">
+                    {tool.name} <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null;
+      })()}
+
+      {/* Related Blog Posts */}
+      {(() => {
+        const relBlogs = getIndustryRelatedBlogs(industry.slug);
+        return relBlogs.length > 0 ? (
+          <section className="section-padding">
+            <div className="container mx-auto max-w-4xl">
+              <div className="flex items-center gap-3 mb-6">
+                <BookOpen className="h-5 w-5 text-accent" />
+                <h2 className="text-2xl font-bold">Recommended Reading</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {relBlogs.map(blog => blog && (
+                  <Link key={blog.slug} to={`/blog/${blog.slug}`} className="glass rounded-xl p-5 hover:border-accent/30 transition-all group">
+                    <span className="text-xs text-accent font-medium">{blog.category}</span>
+                    <h3 className="font-semibold text-sm mt-1 line-clamp-2">{blog.title}</h3>
+                    <span className="text-xs text-muted-foreground mt-1">{blog.readTime}</span>
+                    <span className="text-xs text-accent mt-2 flex items-center gap-1">Read article <ArrowRight className="h-3 w-3" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null;
+      })()}
+
+      {/* Related Locations */}
+      {(() => {
+        const relLocs = getIndustryRelatedLocations(industry.slug);
+        return relLocs.length > 0 ? (
+          <section className="section-padding bg-card/20 border-y border-border">
+            <div className="container mx-auto max-w-4xl">
+              <div className="flex items-center gap-3 mb-6">
+                <MapPin className="h-5 w-5 text-primary" />
+                <h2 className="text-2xl font-bold">{industry.shortTitle} SEO by Location</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {relLocs.map(loc => loc && (
+                  <Link key={loc.slug} to={`/${loc.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
+                    <div className="flex items-center gap-2 mb-1">
+                      <MapPin className="h-4 w-4 text-primary" />
+                      <h3 className="font-semibold text-sm">{loc.city}, {loc.country}</h3>
+                    </div>
+                    <span className="text-xs text-primary flex items-center gap-1">View services <ArrowRight className="h-3 w-3" /></span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null;
+      })()}
 
       {/* CTA */}
       <section className="section-padding">
