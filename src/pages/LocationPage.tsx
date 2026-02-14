@@ -1,11 +1,13 @@
 import { useParams, useLocation, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, MapPin, BarChart3, Building2, ChevronDown, Globe } from "lucide-react";
+import { ArrowRight, Check, MapPin, BarChart3, Building2, ChevronDown, Globe, Wrench, BookOpen } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getLocationBySlugAndLang, locationsData, LANG_PREFIXES } from "@/data/locationsData";
 import { getLocationContent } from "@/data/locationContent";
+import { servicesData } from "@/data/servicesData";
+import { getLocationRelatedIndustries, getLocationRelatedBlogs, getLocationRelatedTools } from "@/data/internalLinks";
 
 const LocationPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -136,22 +138,107 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* Industries */}
+        {/* All Services Sidebar */}
         <section className="section-padding bg-card/20 border-y border-border">
           <div className="container mx-auto max-w-4xl">
-            <div className="flex items-center gap-3 mb-8">
-              <Building2 className="h-6 w-6 text-primary" />
-              <h2 className="text-3xl font-bold">{content.industriesTitle}</h2>
-            </div>
+            <h2 className="text-3xl font-bold mb-8">
+              {loc.lang === "ar" ? "خدمات السيو المتاحة" : loc.lang === "fr" ? "Nos Services SEO" : loc.lang === "de" ? "Unsere SEO-Dienste" : `Our SEO Services in ${displayCity}`}
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-              {content.industries.map((industry) => (
-                <div key={industry} className="glass rounded-lg p-4 text-center">
-                  <span className="text-sm font-medium">{industry}</span>
-                </div>
-              ))}
+              {servicesData.slice(0, 12).map((svc) => {
+                const SvcIcon = svc.icon;
+                return (
+                  <Link key={svc.slug} to={`/services/${svc.slug}`} className="glass rounded-lg p-4 flex items-center gap-3 hover:border-primary/30 transition-all group">
+                    <SvcIcon className="h-4 w-4 text-primary shrink-0" />
+                    <span className="text-sm font-medium group-hover:text-primary transition-colors">{svc.title}</span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </section>
+
+        {/* Related Industries */}
+        {(() => {
+          const relIndustries = getLocationRelatedIndustries(loc.countryCode);
+          return relIndustries.length > 0 ? (
+            <section className="section-padding">
+              <div className="container mx-auto max-w-4xl">
+                <div className="flex items-center gap-3 mb-8">
+                  <Building2 className="h-6 w-6 text-primary" />
+                  <h2 className="text-3xl font-bold">{content.industriesTitle}</h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {relIndustries.map(ind => {
+                    if (!ind) return null;
+                    const IndIcon = ind.icon;
+                    return (
+                      <Link key={ind.slug} to={`/industries/${ind.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                            <IndIcon className="h-5 w-5 text-primary" />
+                          </div>
+                          <h3 className="font-semibold text-sm">{ind.shortTitle} SEO</h3>
+                        </div>
+                        <span className="text-xs text-primary flex items-center gap-1">Learn more <ArrowRight className="h-3 w-3" /></span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+          ) : null;
+        })()}
+
+        {/* Related Blog Posts */}
+        {(() => {
+          const relBlogs = getLocationRelatedBlogs();
+          return relBlogs.length > 0 ? (
+            <section className="section-padding bg-card/20 border-y border-border">
+              <div className="container mx-auto max-w-4xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <BookOpen className="h-5 w-5 text-accent" />
+                  <h2 className="text-2xl font-bold">
+                    {loc.lang === "ar" ? "مقالات مفيدة" : loc.lang === "fr" ? "Articles Utiles" : loc.lang === "de" ? "Nützliche Artikel" : "Helpful SEO Resources"}
+                  </h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {relBlogs.map(blog => blog && (
+                    <Link key={blog.slug} to={`/blog/${blog.slug}`} className="glass rounded-xl p-5 hover:border-accent/30 transition-all group">
+                      <span className="text-xs text-accent font-medium">{blog.category}</span>
+                      <h3 className="font-semibold text-sm mt-1 line-clamp-2">{blog.title}</h3>
+                      <span className="text-xs text-accent mt-2 flex items-center gap-1">Read article <ArrowRight className="h-3 w-3" /></span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null;
+        })()}
+
+        {/* Related Tools */}
+        {(() => {
+          const relTools = getLocationRelatedTools();
+          return relTools.length > 0 ? (
+            <section className="section-padding">
+              <div className="container mx-auto max-w-4xl">
+                <div className="flex items-center gap-3 mb-6">
+                  <Wrench className="h-5 w-5 text-accent" />
+                  <h2 className="text-2xl font-bold">
+                    {loc.lang === "ar" ? "أدوات سيو مجانية" : loc.lang === "fr" ? "Outils SEO Gratuits" : loc.lang === "de" ? "Kostenlose SEO-Tools" : "Free SEO Tools"}
+                  </h2>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  {relTools.map(tool => tool && (
+                    <Link key={tool.slug} to={`/tools/${tool.slug}`} className="glass rounded-lg px-4 py-3 hover:border-accent/30 transition-all text-sm font-medium flex items-center gap-2 group">
+                      {tool.name} <ArrowRight className="h-4 w-4 text-accent group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          ) : null;
+        })()}
 
         {/* Results */}
         <section className="section-padding">

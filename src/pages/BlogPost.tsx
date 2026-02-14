@@ -2,6 +2,7 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { getBlogBySlug, getRelatedPosts } from "@/data/blogData";
+import { getBlogRelatedServices, getBlogRelatedTools } from "@/data/internalLinks";
 import { Calendar, Clock, User, ArrowLeft, ArrowRight, List } from "lucide-react";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -242,6 +243,36 @@ const BlogPostPage = () => {
                     </Link>
                   ))}
                 </div>
+
+                {/* Related Services */}
+                {(() => {
+                  const relServices = getBlogRelatedServices(post.slug);
+                  return relServices.length > 0 ? (
+                    <div className="mt-6 pt-6 border-t border-border">
+                      <h3 className="font-semibold text-sm mb-3">Related Services</h3>
+                      <div className="space-y-2">
+                        {relServices.map((svc: any) => svc && (
+                          <Link key={svc.slug} to={`/services/${svc.slug}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors">→ {svc.title}</Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null;
+                })()}
+
+                {/* Related Tools */}
+                {(() => {
+                  const relTools = getBlogRelatedTools(post.slug);
+                  return relTools.length > 0 ? (
+                    <div className="mt-6 pt-6 border-t border-border">
+                      <h3 className="font-semibold text-sm mb-3">Free SEO Tools</h3>
+                      <div className="space-y-2">
+                        {relTools.map((tool: any) => tool && (
+                          <Link key={tool.slug} to={`/tools/${tool.slug}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors">→ {tool.name}</Link>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null;
+                })()}
 
                 <div className="mt-6 pt-6 border-t border-border">
                   <h3 className="font-semibold text-sm mb-3">Explore More</h3>

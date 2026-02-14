@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageSquare } from "lucide-react";
+import { ArrowRight, MessageSquare, BookOpen, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { type ToolData, toolsDataMap } from "@/data/toolsData";
+import { getToolRelatedServices, getToolRelatedBlogs } from "@/data/internalLinks";
 
 interface Props {
   tool: ToolData;
@@ -138,14 +139,76 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
             </div>
           </motion.div>
 
+          {/* Related Services */}
+          {(() => {
+            const relServices = getToolRelatedServices(tool.slug);
+            return relServices.length > 0 ? (
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+                <div className="flex items-center gap-3 mb-6">
+                  <Wrench className="h-5 w-5 text-accent" />
+                  <h2 className="text-2xl font-bold">Related SEO Services</h2>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relServices.map(svc => {
+                    if (!svc) return null;
+                    const SvcIcon = svc.icon;
+                    return (
+                      <Link key={svc.slug} to={`/services/${svc.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                            <SvcIcon className="h-5 w-5 text-primary" />
+                          </div>
+                          <h3 className="font-semibold text-sm">{svc.title}</h3>
+                        </div>
+                        <p className="text-xs text-muted-foreground line-clamp-2">{svc.metaDescription}</p>
+                        <span className="text-xs text-primary mt-2 flex items-center gap-1">Learn more <ArrowRight className="h-3 w-3" /></span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ) : null;
+          })()}
+
+          {/* Related Blog Posts */}
+          {(() => {
+            const relBlogs = getToolRelatedBlogs(tool.slug);
+            return relBlogs.length > 0 ? (
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+                <div className="flex items-center gap-3 mb-6">
+                  <BookOpen className="h-5 w-5 text-accent" />
+                  <h2 className="text-2xl font-bold">Related Articles</h2>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relBlogs.map(blog => {
+                    if (!blog) return null;
+                    return (
+                      <Link key={blog.slug} to={`/blog/${blog.slug}`} className="glass rounded-xl p-5 hover:border-accent/30 transition-all group">
+                        <span className="text-xs text-accent font-medium">{blog.category}</span>
+                        <h3 className="font-semibold text-sm mt-1 line-clamp-2">{blog.title}</h3>
+                        <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{blog.excerpt}</p>
+                        <span className="text-xs text-accent mt-2 flex items-center gap-1">Read article <ArrowRight className="h-3 w-3" /></span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ) : null;
+          })()}
+
           {/* CTA */}
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16 glass rounded-2xl p-8 text-center">
             <MessageSquare className="h-10 w-10 text-accent mx-auto mb-4" />
             <h2 className="text-2xl font-bold mb-2">Need Professional SEO Help?</h2>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">Our tools are great for quick checks, but a comprehensive SEO strategy requires expert guidance.</p>
-            <Link to="/contact">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">Book Free Consultation</Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link to="/contact">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">Book Free Consultation</Button>
+              </Link>
+              <Link to="/free-seo-audit">
+                <Button variant="outline" size="lg">Get Free SEO Audit</Button>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
