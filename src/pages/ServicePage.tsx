@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import NotFound from "./NotFound";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
@@ -12,7 +13,7 @@ const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
 
-  if (!service) return <Navigate to="/services" replace />;
+  if (!service) return <NotFound />;
 
   return (
     <Layout>

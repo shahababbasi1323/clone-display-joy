@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import NotFound from "./NotFound";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown, BarChart3, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,7 +18,7 @@ const IndustryPage = () => {
   const industry = slug ? getIndustryBySlug(slug) : undefined;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  if (!industry) return <Navigate to="/industries" replace />;
+  if (!industry) return <NotFound />;
 
   return (
     <Layout>

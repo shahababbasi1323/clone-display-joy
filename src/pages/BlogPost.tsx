@@ -1,4 +1,5 @@
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+import NotFound from "./NotFound";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { getBlogBySlug, getRelatedPosts } from "@/data/blogData";
@@ -34,7 +35,6 @@ const imageMap: Record<string, string> = {
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
   const post = getBlogBySlug(slug || "");
   const [tocOpen, setTocOpen] = useState(false);
 
@@ -48,11 +48,7 @@ const BlogPostPage = () => {
     window.scrollTo(0, 0);
   }, [slug]);
 
-  useEffect(() => {
-    if (!post) navigate("/blog");
-  }, [post, navigate]);
-
-  if (!post) return null;
+  if (!post) return <NotFound />;
 
   const relatedPosts = getRelatedPosts(post.relatedSlugs);
 

@@ -1,4 +1,5 @@
-import { useParams, useLocation, Link, Navigate } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
+import NotFound from "./NotFound";
 import { motion } from "framer-motion";
 import { ArrowRight, Check, MapPin, BarChart3, Building2, ChevronDown, Globe, Wrench, BookOpen } from "lucide-react";
 import { useState } from "react";
@@ -27,7 +28,7 @@ const LocationPage = () => {
   }
 
   const loc = slug ? getLocationBySlugAndLang(slug, langPrefix) : undefined;
-  if (!loc) return <Navigate to="/" replace />;
+  if (!loc) return <NotFound />;
 
   const displayCity = loc.localCity || loc.city;
   const displayCountry = loc.localCountry || loc.country;
