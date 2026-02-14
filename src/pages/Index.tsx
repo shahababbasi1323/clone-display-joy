@@ -364,7 +364,7 @@ const Index = () => {
             <p className="text-muted-foreground">From technical audits to AI search optimization — explore every service designed to grow your online presence.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {servicesData.map((svc) => {
+            {servicesData.slice(0, 10).map((svc) => {
               const SvcIcon = svc.icon;
               return (
                 <Link
@@ -396,7 +396,7 @@ const Index = () => {
             <p className="text-muted-foreground">Tailored SEO strategies for every industry — because each niche has unique search behavior and competition.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {industriesData.map((ind) => {
+            {industriesData.slice(0, 15).map((ind) => {
               const IndIcon = ind.icon;
               return (
                 <Link
@@ -428,13 +428,13 @@ const Index = () => {
             <p className="text-muted-foreground">Serving businesses across the globe with localized SEO strategies tailored to each market.</p>
           </div>
           <div className="space-y-8">
-            {Object.entries(locationsByCountry).map(([country, locs]) => (
+            {Object.entries(locationsByCountry).slice(0, 6).map(([country, locs]) => (
               <div key={country}>
                 <h3 className="text-sm font-semibold text-primary mb-3 flex items-center gap-2">
                   <MapPin className="h-4 w-4" /> {country}
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {locs.map((loc) => (
+                  {locs.slice(0, 8).map((loc) => (
                     <Link
                       key={loc.slug}
                       to={loc.langPrefix ? `/${loc.langPrefix}/${loc.slug}` : `/${loc.slug}`}
@@ -443,10 +443,18 @@ const Index = () => {
                       {loc.localCity || loc.city}
                     </Link>
                   ))}
+                  {locs.length > 8 && (
+                    <span className="glass rounded-lg px-3 py-2 text-xs font-medium text-muted-foreground">+{locs.length - 8} more</span>
+                  )}
                 </div>
               </div>
             ))}
           </div>
+          {Object.keys(locationsByCountry).length > 6 && (
+            <p className="text-sm text-muted-foreground mt-4 text-center">
+              +{Object.keys(locationsByCountry).length - 6} more countries
+            </p>
+          )}
           <div className="text-center mt-10">
             <Link to="/locations">
               <Button variant="outline" size="sm">View All Locations <ArrowRight className="ml-2 h-4 w-4" /></Button>
