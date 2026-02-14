@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Industries", href: "/industries" },
   { label: "Pricing", href: "/pricing" },
   { label: "Tools", href: "/tools" },
   {
@@ -15,6 +16,7 @@ const navLinks = [
     children: [
       { label: "Testimonials", href: "/testimonials" },
       { label: "FAQ", href: "/faq" },
+      { label: "Free SEO Audit", href: "/free-seo-audit" },
       { label: "Free Resources", href: "/free-seo-resources" },
     ],
   },
