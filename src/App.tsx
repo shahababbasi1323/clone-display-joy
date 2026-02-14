@@ -21,6 +21,7 @@ import NotFound from "./pages/NotFound";
 import LocationPage from "./pages/LocationPage";
 import Industries from "./pages/Industries";
 import IndustryPage from "./pages/IndustryPage";
+import Locations from "./pages/Locations";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/services/:slug" element={<ServicePage />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:slug" element={<IndustryPage />} />
+          <Route path="/locations" element={<Locations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/tools" element={<ToolsHub />} />
