@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, Search } from "lucide-react";
+import { ChevronDown, Search, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 
@@ -60,6 +62,24 @@ const faqCategories = [
       { q: "Do you work with Shopify stores?", a: "Yes! We specialize in Shopify SEO including fixing duplicate content issues, optimizing collection and product pages, improving site speed, implementing schema markup, and building authority through content and links." },
       { q: "How is e-commerce SEO different?", a: "E-commerce SEO focuses on product pages, category optimization, faceted navigation, product schema, inventory management for SEO, and conversion optimization. It requires handling thousands of pages efficiently." },
       { q: "Can SEO help reduce my ad spend?", a: "Absolutely. As organic traffic grows, you can reduce reliance on paid ads while maintaining or increasing sales. Many clients reduce ad spend by 30-50% within 6-12 months of starting SEO." },
+      { q: "What platforms do you support for e-commerce SEO?", a: "We work with all major e-commerce platforms including Shopify, WooCommerce, Magento, BigCommerce, and custom-built stores. Each platform has unique SEO challenges that we're experienced in solving." },
+    ],
+  },
+  {
+    name: "Link Building",
+    faqs: [
+      { q: "What is link building and why is it important?", a: "Link building is the process of acquiring hyperlinks from other websites to yours. These backlinks are one of Google's top ranking factors. Quality backlinks signal authority and trust, helping your site rank higher for competitive keywords." },
+      { q: "What link building strategies do you use?", a: "We use white-hat strategies including guest posting on relevant blogs, digital PR, broken link building, resource page outreach, HARO (Help a Reporter Out), and creating link-worthy content like infographics and original research." },
+      { q: "How many backlinks do I need to rank?", a: "There's no magic number — it depends on your industry, competition, and target keywords. Quality matters far more than quantity. A few authoritative links from relevant sites can outperform hundreds of low-quality ones." },
+      { q: "Do you guarantee a certain number of backlinks per month?", a: "Yes, our Growth plan includes 10 quality backlinks per month and Enterprise includes 25. All links are from relevant, authoritative sites with real traffic — never from link farms or PBNs." },
+    ],
+  },
+  {
+    name: "Content & Strategy",
+    faqs: [
+      { q: "Do you provide content writing services?", a: "Yes, content strategy and creation are core parts of our Growth and Enterprise packages. We create SEO-optimized blog posts, landing pages, and pillar content based on keyword research and topic clustering." },
+      { q: "What is topical authority and why does it matter?", a: "Topical authority means being recognized by Google as an expert source on a specific topic. We build this through comprehensive content clusters that cover every aspect of your niche, which signals expertise to search engines." },
+      { q: "How do you choose topics for content?", a: "We use keyword research tools like Ahrefs and SEMrush combined with competitor gap analysis, search intent mapping, and your business goals. Every topic targets specific keywords with real search volume and reasonable competition." },
     ],
   },
 ];
@@ -160,11 +180,36 @@ const FAQ = () => {
                 </div>
               );
             })}
-            {filteredFaqs.length === 0 && (
+          {filteredFaqs.length === 0 && (
               <div className="text-center py-10 text-muted-foreground">
                 <p>No questions found matching "{searchQuery}". Try a different search term.</p>
               </div>
             )}
+          </div>
+
+          {/* CTA & Internal Links */}
+          <div className="mt-16 text-center">
+            <div className="glass rounded-2xl p-8 glow-primary">
+              <h2 className="text-xl font-bold mb-3">Still Have Questions?</h2>
+              <p className="text-muted-foreground mb-6 text-sm">Book a free call or request a complimentary SEO audit.</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Link to="/free-seo-audit"><Button className="glow-primary">Get Free SEO Audit <ArrowRight className="ml-2 h-4 w-4" /></Button></Link>
+                <Link to="/contact"><Button variant="outline">Contact Us</Button></Link>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2 mt-6">
+                {[
+                  { label: "Services", href: "/services" },
+                  { label: "Pricing", href: "/pricing" },
+                  { label: "Testimonials", href: "/testimonials" },
+                  { label: "Blog", href: "/blog" },
+                  { label: "Free Resources", href: "/free-seo-resources" },
+                ].map((l) => (
+                  <Link key={l.href} to={l.href} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors">
+                    {l.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
