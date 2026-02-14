@@ -19,7 +19,7 @@ const Industries = () => {
               SEO for <span className="text-gradient">Every Industry</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Specialized SEO strategies tailored to the unique challenges and opportunities of your industry. 100+ industries served worldwide.
+              Specialized SEO strategies tailored to the unique challenges and opportunities of your industry. 150+ industries served worldwide.
             </p>
           </motion.div>
 
