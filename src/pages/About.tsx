@@ -132,7 +132,13 @@ const About = () => {
               telephone: "+923041316771",
               address: { "@type": "PostalAddress", addressLocality: "Islamabad", addressCountry: "PK" },
               knowsAbout: skills,
-              sameAs: ["https://linkedin.com/in/shahab-abbasi-seo-specialist"],
+              sameAs: [
+                "https://www.linkedin.com/in/shahab-abbasi-seo-specialist/",
+                "https://www.facebook.com/shahababbasi302/",
+                "https://www.instagram.com/shahababbasi302",
+                "https://x.com/ShahabAbbasi302",
+                "https://www.reddit.com/user/shahab-abbasi/",
+              ],
             },
             {
               "@context": "https://schema.org",
