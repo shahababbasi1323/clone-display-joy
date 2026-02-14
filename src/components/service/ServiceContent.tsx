@@ -55,6 +55,110 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
       "Traditional SEO and GEO are complementary — strong search fundamentals support AI visibility. However, GEO requires additional focus on factual accuracy, citation-worthy content, and entity relationships that make your brand a trusted source in AI-generated responses.",
     ],
   },
+  "aeo-optimization": {
+    title: "Why Answer Engine Optimization Captures Zero-Click Searches",
+    paragraphs: [
+      "Answer Engine Optimization (AEO) is the strategy of structuring your content to appear as the direct answer in featured snippets, People Also Ask boxes, voice search results, and AI-generated answer panels. With zero-click searches exceeding 60% of all Google queries, AEO ensures your brand captures visibility even when users don't click through.",
+      "Our AEO methodology includes question-based content structuring, FAQ schema implementation, concise answer formatting, conversational keyword targeting for voice search, and People Also Ask (PAA) mining. We identify the exact queries your audience asks and position your content as the definitive answer.",
+      "AEO and GEO work hand-in-hand — content optimized for featured snippets and direct answers is also the content AI engines prefer to cite. By mastering both, your brand becomes the go-to authority across traditional search, voice assistants, and generative AI platforms.",
+    ],
+  },
+  "content-strategy": {
+    title: "Why a Data-Driven Content Strategy Builds Topical Authority",
+    paragraphs: [
+      "SEO content strategy goes beyond publishing blog posts — it's about building topical authority through strategic topic clustering, pillar page architecture, and content gap analysis. Search engines reward websites that demonstrate comprehensive expertise on a subject through interconnected, high-quality content.",
+      "Our content strategy process includes competitor content audits, keyword opportunity mapping, editorial calendar development, content brief creation with target keywords and LSI terms, and ongoing performance optimization. Every piece of content is designed to serve a specific purpose in your SEO funnel — from awareness to conversion.",
+      "Content freshness, E-E-A-T signals, semantic depth, and internal linking between related articles all contribute to how Google evaluates your topical authority. We help you build a content ecosystem where each piece strengthens every other, creating compounding organic traffic growth over time.",
+    ],
+  },
+  "shopify-seo": {
+    title: "Why Shopify Stores Need Specialized SEO Expertise",
+    paragraphs: [
+      "Shopify is a powerful e-commerce platform, but it comes with unique SEO limitations that require specialized knowledge to overcome. Duplicate content from collection pages, tag pages, and pagination; rigid URL structures; render-blocking Liquid templates; and app-induced page bloat are all common issues that hurt Shopify store rankings.",
+      "Our Shopify SEO services address platform-specific challenges including canonical tag management for /collections/ and /products/ URLs, theme.liquid optimization for faster rendering, app stack auditing to eliminate unnecessary JavaScript, product schema markup using JSON-LD, and Shopify blog optimization for content marketing.",
+      "Whether you're a new Shopify store or an established brand doing millions in revenue, our Shopify-specific technical expertise helps you outrank competitors on Google Shopping results, organic product searches, and category-level keywords that drive high-intent buyer traffic.",
+    ],
+  },
+  "wordpress-seo": {
+    title: "Why WordPress SEO Requires Expert Configuration",
+    paragraphs: [
+      "WordPress powers over 40% of all websites, making it the most popular CMS in the world. While WordPress is inherently SEO-friendly, improper configuration of themes, plugins, caching, and security settings can severely limit your search engine visibility and page performance.",
+      "Our WordPress SEO services include Yoast SEO or Rank Math configuration, permalink structure optimization, database cleanup, plugin conflict resolution, wp-cron optimization, image optimization with WebP conversion, caching layer setup (WP Rocket, LiteSpeed, Cloudflare), and security hardening against SEO spam attacks that can get your site deindexed.",
+      "From small business websites to large WordPress multisite installations, we optimize every layer of your WordPress stack — hosting environment, PHP version, theme code, plugin ecosystem, and content delivery — to achieve top Core Web Vitals scores and maximum search engine crawl efficiency.",
+    ],
+  },
+  "international-seo": {
+    title: "Why International SEO Opens Global Market Opportunities",
+    paragraphs: [
+      "International SEO is the practice of optimizing your website so search engines serve the right content to users based on their language and geographic location. Proper hreflang implementation, localized content creation, and market-specific keyword research are essential for businesses targeting multiple countries or languages.",
+      "Our international SEO services cover hreflang tag architecture (self-referencing, bidirectional, x-default), URL structure strategy (ccTLDs vs. subdirectories vs. subdomains), geo-targeting in Google Search Console, localized link building in target markets, and culturally adapted content that resonates with local search behavior and intent.",
+      "Common international SEO pitfalls include duplicate content across language versions, incorrect hreflang implementation causing indexing conflicts, machine-translated content that fails to rank, and neglecting local search engines like Yandex, Baidu, or Naver. We ensure your global expansion is built on a technically sound, linguistically accurate foundation.",
+    ],
+  },
+  "seo-audit": {
+    title: "Why a Professional SEO Audit Is Your First Step to Growth",
+    paragraphs: [
+      "An SEO audit is a comprehensive health check of your website's search engine optimization across technical infrastructure, on-page content, backlink profile, and competitive landscape. Unlike free online tools that only surface basic issues, our 100+ checkpoint audit provides expert analysis with prioritized, actionable recommendations.",
+      "Our audit methodology examines crawlability and indexation (robots.txt, XML sitemaps, canonical tags), site speed and Core Web Vitals, mobile usability, content quality and keyword targeting, internal linking structure, backlink profile health (toxic link identification), structured data validation, and competitor benchmarking.",
+      "Every audit concludes with a prioritized 90-day implementation roadmap that categorizes issues by impact and difficulty. We identify quick wins that deliver immediate ranking improvements alongside strategic initiatives for long-term organic growth and domain authority building.",
+    ],
+  },
+  "keyword-research": {
+    title: "Why Strategic Keyword Research Is the Foundation of Every SEO Campaign",
+    paragraphs: [
+      "Keyword research is the process of discovering, analyzing, and prioritizing the search terms your target audience uses to find products, services, and information. Without data-driven keyword research, SEO efforts are directionless — you risk targeting keywords that are too competitive, too low-volume, or misaligned with buyer intent.",
+      "Our keyword research methodology includes seed keyword expansion using multiple data sources (Ahrefs, SEMrush, Google Keyword Planner, AnswerThePublic), search intent classification (informational, navigational, commercial, transactional), keyword difficulty analysis, competitor keyword gap identification, and long-tail keyword mining for quick-win opportunities.",
+      "The output is a comprehensive keyword strategy document with 200-1000+ prioritized keywords mapped to existing and planned pages. We classify every keyword by intent, volume, difficulty, and business value — ensuring your content calendar, on-page optimization, and link building efforts are all aligned toward the highest-ROI opportunities.",
+    ],
+  },
+  "google-business-profile": {
+    title: "Why Google Business Profile Optimization Drives Local Leads",
+    paragraphs: [
+      "Google Business Profile (formerly Google My Business) is the single most impactful element of local SEO. A fully optimized GBP listing can dramatically increase your visibility in Google Maps, the local 3-pack, and location-based search results — driving phone calls, direction requests, and website visits from high-intent local customers.",
+      "Our GBP optimization covers every ranking factor: primary and secondary category selection, business description with local keywords, service and product listings, photo and video optimization (geotagged images, virtual tours), Google Posts for freshness signals, Q&A management, review generation strategies, and attribute optimization.",
+      "Beyond initial setup, ongoing GBP management is critical. Regular posting, review responses, photo updates, and performance monitoring all signal to Google that your business is active and engaged. We provide continuous GBP management that keeps your listing competitive in an increasingly crowded local search landscape.",
+    ],
+  },
+  "link-building": {
+    title: "Why Quality Link Building Remains Google's Top Ranking Factor",
+    paragraphs: [
+      "Backlinks remain one of Google's three most important ranking signals alongside content and RankBrain. Link building is the process of earning hyperlinks from external websites to yours — each quality backlink acts as a vote of confidence that tells search engines your content is valuable, credible, and authoritative.",
+      "Our link building approach is 100% white-hat and manual. We use editorial outreach to niche-relevant websites (DR 30-80+), guest post creation and placement on industry publications, digital PR for media coverage and brand mentions, broken link building, resource page acquisitions, and HARO journalist query responses. Every link is earned through genuine relationships and quality content.",
+      "Link velocity, anchor text diversity, referring domain variety, and topical relevance all factor into how Google evaluates your backlink profile. We build a natural, diversified link portfolio that avoids algorithmic penalties while steadily increasing your domain authority and keyword rankings across competitive SERPs.",
+    ],
+  },
+  "seo-consulting": {
+    title: "Why Expert SEO Consulting Accelerates In-House Team Performance",
+    paragraphs: [
+      "SEO consulting provides your business with expert strategic guidance without the full cost of outsourced execution. Whether you have an in-house marketing team that needs direction, a development team implementing technical changes, or leadership that needs an SEO roadmap, consulting bridges the gap between knowledge and action.",
+      "Our consulting engagements include comprehensive SEO strategy development, team training and mentoring, vendor evaluation, algorithm update impact assessments, competitive landscape analysis, and ongoing advisory support. We provide the expertise — your team handles the implementation with our guidance.",
+      "For organizations building internal SEO capabilities, consulting accelerates the learning curve dramatically. Instead of months of trial-and-error, your team gains proven frameworks, documented processes, and expert oversight that ensures every SEO initiative is aligned with best practices and business objectives.",
+    ],
+  },
+  "website-speed-optimization": {
+    title: "Why Website Speed Directly Impacts Rankings and Revenue",
+    paragraphs: [
+      "Page speed is a confirmed Google ranking factor, and Core Web Vitals (LCP, INP, CLS) directly influence your position in search results. Beyond SEO, every 100ms delay in page load time reduces conversion rates by up to 7%. Fast websites rank higher, convert better, and deliver superior user experiences across all devices.",
+      "Our speed optimization services cover image compression and next-gen format conversion (WebP, AVIF), CSS and JavaScript minification and bundling, critical rendering path optimization, lazy loading implementation, browser caching configuration, CDN setup (Cloudflare, AWS CloudFront), server response time improvements (TTFB), and render-blocking resource elimination.",
+      "We typically achieve 40-80% improvement in page load times without affecting your site's visual design. From WordPress and Shopify to custom-built applications, our performance engineering expertise ensures your website meets Google's Core Web Vitals thresholds and delivers lightning-fast experiences that keep visitors engaged.",
+    ],
+  },
+  "schema-markup": {
+    title: "Why Schema Markup Unlocks Rich Results and Enhanced SERP Visibility",
+    paragraphs: [
+      "Schema markup (structured data) is JSON-LD code that helps search engines understand the context and meaning of your content. When properly implemented, schema can trigger rich results in Google — star ratings, FAQ dropdowns, product prices, event details, how-to steps, and more — dramatically increasing your click-through rate from search results.",
+      "Our schema implementation covers all major types: LocalBusiness for local SEO, Product and Offer for e-commerce, FAQ and HowTo for informational content, Article and BlogPosting for publishers, Event for time-sensitive content, Person and Organization for brand entities, BreadcrumbList for navigation, and VideoObject for multimedia content.",
+      "Schema markup also plays a critical role in AI search optimization. Structured data helps AI engines like ChatGPT, Perplexity, and Google AI Overviews understand your content's relationships, facts, and context — making your pages more likely to be cited in AI-generated responses and knowledge panels.",
+    ],
+  },
+  "seo-training": {
+    title: "Why SEO Training Empowers Your Team for Long-Term Success",
+    paragraphs: [
+      "SEO training equips your marketing team, content writers, developers, and leadership with the knowledge and skills to execute search optimization effectively. Rather than relying entirely on external agencies, trained teams can handle day-to-day SEO tasks, make informed decisions, and recognize opportunities and threats in real time.",
+      "Our training programs cover keyword research methodology, on-page optimization techniques, technical SEO fundamentals, content strategy frameworks, link building best practices, Google Search Console and Analytics interpretation, and AI search optimization. Each session is customized to your team's skill level, industry, and specific challenges.",
+      "Post-training, your team receives comprehensive documentation, checklists, process templates, and 30 days of email support. We also offer ongoing mentoring through our SEO consulting retainer for teams that want continued expert guidance as they build internal SEO capabilities and scale their organic growth programs.",
+    ],
+  },
 };
 
 const ServiceContent = ({ service }: { service: ServiceData }) => {
