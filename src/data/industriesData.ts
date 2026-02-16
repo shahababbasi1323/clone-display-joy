@@ -726,6 +726,214 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
+  // ---- LANDSCAPING (detailed) ----
+  ind("landscaping-seo", "Landscaping SEO", "Landscapers", "SEO for Landscapers - Lawn Care & Garden Marketing", "Specialized SEO for landscaping companies. Rank for lawn care, landscape design, hardscaping, and garden maintenance searches to book more projects.", Home, "Home Services & Trades", "Landscapers", "Grow your landscaping business with SEO that captures homeowners searching for lawn care, landscape design, tree trimming, and hardscaping services.",
+    [
+      { title: "Seasonal Revenue Swings", desc: "Landscaping is heavily seasonal. Spring and summer drive 70% of searches. Your SEO strategy must build rankings before peak season to capture demand." },
+      { title: "Visual Portfolio Dependency", desc: "Homeowners want to see past work. Image SEO, gallery optimization, and before-and-after content are essential for conversions." },
+      { title: "Service Area Competition", desc: "Multiple landscapers serve the same neighborhoods. Hyper-local content and neighborhood-specific pages give you a competitive edge." },
+      { title: "Upsell Opportunities", desc: "Lawn care leads can become hardscaping, irrigation, and outdoor living clients. Content must guide prospects through your full service range." },
+    ],
+    [
+      { title: "Seasonal Content Calendar", desc: "Publish spring cleanup, summer maintenance, fall aeration, and winter prep content months ahead so pages rank when homeowners start searching." },
+      { title: "Service-Specific Pages", desc: "Dedicated pages for lawn care, landscape design, hardscaping, retaining walls, drainage, irrigation, tree trimming, and seasonal cleanup." },
+      { title: "Visual Portfolio SEO", desc: "Optimize project galleries with geo-tagged images, descriptive alt text, and structured data to capture image search traffic." },
+      { title: "Neighborhood Targeting", desc: "Create location pages for every neighborhood, HOA community, and suburb you serve with locally relevant landscaping content." },
+    ],
+    ["landscaper near me", "lawn care service", "landscape design", "hardscaping contractor", "tree trimming", "sprinkler installation", "garden maintenance", "sod installation", "retaining wall builder", "patio design", "outdoor living spaces", "landscape lighting", "drainage solutions", "lawn fertilization", "hedge trimming service"],
+    [{ metric: "380%", label: "Organic Leads" }, { metric: "#1", label: "Map Pack" }, { metric: "150+", label: "Monthly Inquiries" }, { metric: "5.5x", label: "ROI" }],
+    [
+      { q: "When should landscapers start SEO?", a: "Start in fall or winter. SEO takes 3-4 months to gain traction, so starting early ensures you're ranking when spring demand surges. The best landscaping companies invest year-round." },
+      { q: "What landscaping keywords should I target?", a: "Focus on 'landscaper near me', service-specific terms like 'hardscaping contractor' and 'lawn care service', plus seasonal terms like 'spring cleanup' and 'fall leaf removal'." },
+      { q: "How important are photos for landscaping SEO?", a: "Extremely. Before-and-after photos drive conversions. Optimized images also appear in Google Image search, driving additional traffic. We implement image SEO best practices." },
+      { q: "Should I create pages for each landscaping service?", a: "Yes. Lawn mowing, landscape design, hardscaping, irrigation, tree service, and seasonal services each target unique keyword clusters and deserve dedicated pages." },
+      { q: "How can I compete with larger landscaping companies?", a: "Hyper-local SEO, better reviews, neighborhood-specific content, and showcasing local projects. Small landscapers often outrank big companies for local searches." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"], defaultLocs
+  ),
+
+  // ---- PAINTING (detailed) ----
+  ind("painting-seo", "Painting Company SEO", "Painters", "SEO for Painters - Painting Company Lead Generation", "SEO for painting companies. Rank for house painting, interior painting, exterior painting, and commercial painting searches to generate more leads.", Home, "Home Services & Trades", "Painters", "Fill your painting schedule with SEO that captures homeowners and businesses searching for interior, exterior, and commercial painting services.",
+    [
+      { title: "Low Barrier to Entry", desc: "Many unlicensed painters compete on price alone. SEO helps differentiate professional, insured painting companies from budget competitors." },
+      { title: "Project-Based Business", desc: "Painting is project-based, not recurring. A constant flow of new leads is essential, making SEO critical for sustainable growth." },
+      { title: "Seasonal Demand Patterns", desc: "Exterior painting peaks in warm months. Interior work is year-round but spikes during holidays and home sales. Content must align with these cycles." },
+      { title: "Color & Trend Content", desc: "Homeowners search for color advice and trends. This educational content captures top-of-funnel traffic that converts into painting leads." },
+    ],
+    [
+      { title: "Service Segmentation", desc: "Separate pages for interior painting, exterior painting, cabinet painting, deck staining, wallpaper removal, commercial painting, and specialty finishes." },
+      { title: "Color & Inspiration Content", desc: "Create guides on trending paint colors, color combination advice, and room-specific painting tips that attract homeowners in the research phase." },
+      { title: "Portfolio Optimization", desc: "Showcase completed projects with before-and-after galleries, optimized images, and local project descriptions that build trust." },
+      { title: "Estimate-Focused SEO", desc: "Optimize for 'painting estimate', 'cost to paint house', and pricing-related searches that capture high-intent leads ready to get quotes." },
+    ],
+    ["painter near me", "house painting", "interior painting", "exterior painting", "commercial painting", "cabinet painting", "deck staining", "wallpaper removal", "house painter cost", "paint color consultation", "ceiling painting", "trim painting", "epoxy garage floor", "fence painting", "pressure washing and painting"],
+    [{ metric: "420%", label: "Estimate Requests" }, { metric: "#1", label: "Local Rankings" }, { metric: "90+", label: "Monthly Leads" }, { metric: "6x", label: "ROI" }],
+    [
+      { q: "How can SEO help my painting business?", a: "SEO puts your painting company in front of homeowners actively searching for painters. Ranking for 'painter near me' and service-specific terms drives a steady stream of estimate requests." },
+      { q: "What painting keywords have the highest intent?", a: "'Painter near me', 'house painting estimate', 'interior painter [city]', and 'cabinet painter near me' signal high intent. We prioritize keywords that lead directly to bookings." },
+      { q: "Should I create content about paint colors?", a: "Yes. Color advice content attracts homeowners in the research phase. 'Best paint colors for kitchens' and similar guides capture traffic that converts into painting leads." },
+      { q: "How do I compete with cheap painters on Google?", a: "Showcase professionalism — licensing, insurance, warranties, portfolio quality, and reviews. SEO content that emphasizes quality and reliability attracts better clients willing to pay fair prices." },
+      { q: "What's the ROI of painting company SEO?", a: "With average exterior jobs at $3,000-$6,000 and interiors at $1,500-$4,000, even 5-10 extra leads per month from SEO delivers massive returns — typically 5-8x ROI." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo", "content-strategy"], defaultLocs
+  ),
+
+  // ---- MOVING COMPANY (detailed) ----
+  ind("moving-company-seo", "Moving Company SEO", "Moving Companies", "SEO for Moving Companies - Mover Marketing Services", "SEO for moving companies. Rank for local movers, long distance moving, commercial moving, and packing services to generate more bookings.", Truck, "Home Services & Trades", "Moving Companies", "Book more moves with SEO that captures customers searching for local movers, long distance moving, commercial relocation, and packing services.",
+    [
+      { title: "Extreme Seasonality", desc: "Moving peaks May-September with 70% of annual moves. SEO must build rankings months ahead to capture summer demand." },
+      { title: "Trust Deficit", desc: "Moving scams are common. Customers are wary of movers they can't verify. Reviews, licensing, and trust signals are critical for conversion." },
+      { title: "Local + Long Distance", desc: "Local and long-distance moving require separate SEO strategies, content, and targeting approaches." },
+      { title: "Price-Sensitive Market", desc: "Customers compare quotes aggressively. Cost calculator content and transparent pricing pages capture comparison shoppers." },
+    ],
+    [
+      { title: "Move-Type Pages", desc: "Dedicated pages for local moving, long distance, interstate, commercial/office, apartment, piano, and specialty item moving." },
+      { title: "Moving Guide Content", desc: "Checklists, packing tips, timeline planners, and cost guides that capture top-of-funnel traffic and build trust." },
+      { title: "Route-Specific SEO", desc: "Optimize for specific moving routes — 'movers from [city A] to [city B]' — capturing long-distance moving searches." },
+      { title: "Trust & Credibility SEO", desc: "Showcase DOT numbers, insurance, BBB ratings, and verified reviews prominently to overcome trust barriers." },
+    ],
+    ["movers near me", "moving company", "local movers", "long distance movers", "commercial moving", "packing services", "piano moving", "apartment movers", "office relocation", "interstate moving", "moving cost calculator", "same day movers", "storage and moving", "senior moving services", "furniture movers"],
+    [{ metric: "350%", label: "Booking Increase" }, { metric: "#1", label: "Local Pack" }, { metric: "200+", label: "Monthly Quotes" }, { metric: "4.8x", label: "ROI" }],
+    [
+      { q: "How competitive is moving company SEO?", a: "Very competitive in most markets. However, many moving companies rely on lead-buying services. Direct SEO generates owned leads at 60-70% lower cost per acquisition." },
+      { q: "Should I focus on local or long-distance SEO?", a: "Both, but start with local — it's faster to rank and builds your foundation. Long-distance SEO takes longer but captures higher-value moves." },
+      { q: "How do I build trust online as a mover?", a: "Display DOT/MC numbers, insurance info, BBB rating, and genuine customer reviews. Create content about avoiding moving scams — positioning yourself as the trustworthy alternative." },
+      { q: "What moving content converts best?", a: "Moving cost calculators, packing checklists, and moving timeline guides generate leads. These tools provide value while capturing contact information." },
+      { q: "When should I ramp up moving SEO?", a: "Start building rankings in January-February for the summer peak season. Year-round SEO ensures you maintain rankings and capture off-season moves too." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"], defaultLocs
+  ),
+
+  // ---- TOWING (detailed) ----
+  ind("towing-seo", "Towing Company SEO", "Towing Companies", "SEO for Towing Companies - Tow Truck Marketing", "SEO for towing companies. Rank for emergency towing, roadside assistance, flatbed towing, and accident recovery searches to get more calls.", Car, "Home Services & Trades", "Towing Companies", "Get more towing calls with SEO that ensures your company appears first when stranded motorists search for emergency towing and roadside assistance.",
+    [
+      { title: "Extreme Urgency", desc: "Towing searches are immediate emergencies. The #1 result gets the call — there's no browsing. Speed and visibility are everything." },
+      { title: "Mobile-First Market", desc: "99% of towing searches happen on mobile from stranded motorists. Your site must load instantly and make calling effortless." },
+      { title: "24/7 Availability", desc: "Towing is a round-the-clock business. Your SEO must communicate 24/7 availability clearly to capture after-hours searches." },
+      { title: "Map Pack Dominance", desc: "Google Maps results dominate towing searches. Map pack position #1 can generate 80% of all organic towing calls." },
+    ],
+    [
+      { title: "Emergency SEO Dominance", desc: "Optimize for 'tow truck near me', 'emergency towing', '24/7 towing' with lightning-fast mobile pages and click-to-call functionality." },
+      { title: "Service-Specific Pages", desc: "Dedicated pages for flatbed towing, motorcycle towing, heavy-duty towing, accident towing, junk car removal, and roadside assistance." },
+      { title: "Hyper-Local Coverage", desc: "Service area pages for every highway, intersection, and neighborhood you cover — targeting 'towing on [highway]' searches." },
+      { title: "Mobile Speed Optimization", desc: "Sub-2-second load times on mobile, prominent phone number, click-to-call buttons, and instant location detection." },
+    ],
+    ["tow truck near me", "towing service", "emergency towing", "roadside assistance", "flatbed towing", "motorcycle towing", "junk car removal", "accident towing", "24 hour towing", "heavy duty towing", "lockout service", "tire change service", "jump start service", "long distance towing", "impound towing"],
+    [{ metric: "500%", label: "Call Volume" }, { metric: "#1", label: "Map Pack" }, { metric: "24/7", label: "Lead Flow" }, { metric: "7x", label: "ROI" }],
+    [
+      { q: "Why is SEO so important for towing companies?", a: "Towing is the ultimate emergency search. The #1 result gets the call — period. There's no comparison shopping when you're stranded. Ranking first means capturing nearly every lead." },
+      { q: "How fast does my towing website need to be?", a: "Under 2 seconds on mobile. Stranded motorists have no patience. Every second of delay costs calls. We optimize for blazing-fast mobile performance." },
+      { q: "Should I create pages for different towing services?", a: "Yes. Flatbed, motorcycle, heavy-duty, accident, and junk car removal each attract different searches. Dedicated pages capture more total traffic." },
+      { q: "How do I dominate the Google Map Pack for towing?", a: "GBP optimization, consistent citations, review generation, geo-tagged photos, and local content. Map pack position #1 captures the majority of towing calls." },
+      { q: "Can SEO replace paying for motor club referrals?", a: "Over time, yes. Direct SEO leads are free and yours to keep. Most successful towing companies transition from referral dependency to SEO-driven growth." },
+    ],
+    ["local-seo", "google-business-profile", "technical-seo", "speed-optimization"], defaultLocs
+  ),
+
+  // ---- HANDYMAN (detailed) ----
+  ind("handyman-seo", "Handyman SEO", "Handyman Services", "SEO for Handyman Services - General Home Repair Marketing", "SEO for handyman businesses. Rank for home repair, furniture assembly, drywall repair, and general maintenance searches to book more jobs.", Hammer, "Home Services & Trades", "Handyman Services", "Keep your schedule full with SEO that captures homeowners searching for reliable handyman services, home repairs, and general maintenance.",
+    [
+      { title: "Service Breadth Challenge", desc: "Handymen offer dozens of services. Each service is a keyword opportunity but creating optimized content for all services requires strategic prioritization." },
+      { title: "Trust & Reliability", desc: "Homeowners invite handymen into their homes. Background checks, insurance, and reviews matter more than in most industries." },
+      { title: "Competition from Specialists", desc: "Handymen compete with specialized contractors for individual services. SEO must position you as the convenient, trusted all-in-one solution." },
+      { title: "Task App Competition", desc: "TaskRabbit, Thumbtack, and similar platforms compete for handyman searches. Organic SEO reduces dependency on these platforms." },
+    ],
+    [
+      { title: "Service Directory Pages", desc: "Create optimized pages for your top 15-20 services — drywall repair, furniture assembly, TV mounting, door installation, shelving, painting touchups." },
+      { title: "Neighborhood SEO", desc: "Target every neighborhood and community you serve with location-specific handyman service pages." },
+      { title: "Problem-Based Content", desc: "Create 'how to fix' content that captures DIY searches and converts them into service calls when the project is too complex." },
+      { title: "Trust-Building Strategy", desc: "Showcase background checks, insurance, warranties, and reviews to differentiate from unverified competitors and task apps." },
+    ],
+    ["handyman near me", "home repair service", "furniture assembly", "drywall repair", "TV mounting service", "door installation", "odd jobs", "home maintenance", "picture hanging", "shelving installation", "caulking service", "light fixture installation", "faucet repair", "fence repair", "deck repair"],
+    [{ metric: "300%", label: "Service Calls" }, { metric: "#1", label: "Local Rankings" }, { metric: "120+", label: "Monthly Jobs" }, { metric: "4.5x", label: "ROI" }],
+    [
+      { q: "How can SEO help my handyman business?", a: "SEO generates a steady stream of homeowners searching for handyman services. Instead of paying per lead on platforms like Thumbtack, you own your leads and reduce acquisition costs by 60-80%." },
+      { q: "Should I create pages for every handyman service?", a: "Yes, for your top services. Drywall repair, furniture assembly, TV mounting, and other specific services each have search volume. Even low-volume pages collectively drive significant traffic." },
+      { q: "How do I compete with TaskRabbit and Thumbtack?", a: "Direct SEO captures the same customers before they reach platforms. Your own website means no platform fees, higher margins, and direct customer relationships." },
+      { q: "What handyman keywords convert best?", a: "'Handyman near me', specific service + 'near me' terms, and 'same day handyman' signal high intent. We prioritize keywords that lead directly to service calls." },
+      { q: "How important are reviews for handyman SEO?", a: "Critical. Handyman work is trust-based — you're entering someone's home. A strong review profile (4.7+) with recent reviews is often the deciding factor." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo", "content-strategy"], defaultLocs
+  ),
+
+  // ---- GARAGE DOOR (detailed) ----
+  ind("garage-door-seo", "Garage Door SEO", "Garage Door Companies", "SEO for Garage Door Companies - Repair & Install Marketing", "SEO for garage door companies. Rank for garage door repair, spring replacement, opener installation, and emergency service searches.", Home, "Home Services & Trades", "Garage Door Companies", "Open more revenue with SEO that captures homeowners searching for garage door repair, spring replacement, opener installation, and emergency service.",
+    [
+      { title: "Emergency-Driven Demand", desc: "A broken garage door is an emergency — cars get trapped, homes become insecure. Emergency search terms drive the highest-value calls." },
+      { title: "Scam Industry Reputation", desc: "Garage door scams are widespread. Customers are cautious. Trust signals, transparent pricing, and reviews are essential for conversions." },
+      { title: "High Ticket Services", desc: "Full door replacements can exceed $2,000-$5,000. SEO for installation keywords captures high-value projects." },
+      { title: "Brand & Model Searches", desc: "Homeowners search for specific brands — LiftMaster, Chamberlain, Clopay. Brand pages capture these qualified searches." },
+    ],
+    [
+      { title: "Emergency Landing Pages", desc: "Dedicated pages for 'garage door won't open', 'broken spring', 'garage door off track' — high-urgency, high-conversion searches." },
+      { title: "Service Segmentation", desc: "Separate pages for spring replacement, opener installation, panel replacement, new door installation, and commercial garage doors." },
+      { title: "Trust & Transparency", desc: "Pricing guides, warranty information, licensing details, and review showcasing to overcome industry trust issues." },
+      { title: "Brand-Specific Pages", desc: "Create pages for LiftMaster, Chamberlain, Clopay, Amarr, and Wayne Dalton to capture brand-loyal searches." },
+    ],
+    ["garage door repair near me", "garage door installation", "garage door opener", "spring replacement", "garage door maintenance", "commercial garage door", "emergency garage door", "garage door panel replacement", "LiftMaster repair", "garage door off track", "garage door cable repair", "smart garage door opener", "insulated garage door", "garage door cost"],
+    [{ metric: "450%", label: "Service Calls" }, { metric: "#1", label: "Emergency Rankings" }, { metric: "180+", label: "Monthly Leads" }, { metric: "6.5x", label: "ROI" }],
+    [
+      { q: "How urgent is SEO for garage door companies?", a: "Garage door searches are among the most urgent in home services. The #1 result captures the majority of calls. If you're not ranking, your competitors are getting those emergency calls." },
+      { q: "How do I overcome the garage door scam reputation?", a: "Transparent pricing, prominently displayed licensing and insurance, real customer reviews, and trust-building content about how to spot scams — positioning your company as the honest alternative." },
+      { q: "What garage door keywords convert best?", a: "'Garage door repair near me', 'broken garage door spring', and 'garage door won't open' are the highest-converting emergency terms. Installation keywords capture higher-value projects." },
+      { q: "Should I create content about garage door brands?", a: "Yes. Brand-specific pages capture homeowners searching for 'LiftMaster repair' or 'Clopay garage doors'. These users know what they want and convert quickly." },
+      { q: "What's the ROI of garage door SEO?", a: "With spring repairs at $200-$400 and full door replacements at $2,000-$5,000, even 10-15 extra calls per month delivers $5,000-$20,000+ in revenue — typically 5-7x ROI." },
+    ],
+    ["local-seo", "google-business-profile", "technical-seo", "on-page-seo"], defaultLocs
+  ),
+
+  // ---- FLOORING (detailed) ----
+  ind("flooring-seo", "Flooring Company SEO", "Flooring Companies", "SEO for Flooring Companies - Flooring Installation Marketing", "SEO for flooring companies. Rank for hardwood flooring, tile installation, carpet, vinyl plank, and floor refinishing searches to get more projects.", Home, "Home Services & Trades", "Flooring Companies", "Step up your leads with SEO that captures homeowners searching for hardwood, tile, carpet, vinyl, and flooring installation services.",
+    [
+      { title: "Material Diversity", desc: "Hardwood, tile, carpet, vinyl, laminate, epoxy — each flooring type has unique search patterns and customer demographics." },
+      { title: "Big Box Competition", desc: "Home Depot and Lowe's dominate national flooring searches. Local SEO and installation expertise are your competitive advantages." },
+      { title: "Visual Decision Making", desc: "Flooring is a visual purchase. Portfolio photos, showroom imagery, and before-and-after galleries heavily influence decisions." },
+      { title: "Commercial vs Residential", desc: "Commercial flooring projects are higher value. B2B SEO targeting property managers and contractors opens lucrative revenue streams." },
+    ],
+    [
+      { title: "Material-Specific Pages", desc: "Dedicated pages for hardwood, tile, carpet, luxury vinyl plank, laminate, epoxy, and natural stone with material-specific keywords." },
+      { title: "Showroom & Portfolio SEO", desc: "Optimize showroom photos, project galleries, and before-and-after content to capture image search traffic." },
+      { title: "Cost & Comparison Content", desc: "Flooring cost guides, material comparison articles, and 'best flooring for kitchens/bathrooms' content that captures research-phase traffic." },
+      { title: "Commercial Flooring SEO", desc: "Target property managers, general contractors, and businesses searching for commercial flooring installation." },
+    ],
+    ["flooring company near me", "hardwood flooring", "tile installation", "carpet installation", "luxury vinyl plank", "laminate flooring", "floor refinishing", "commercial flooring", "epoxy floor coating", "bamboo flooring", "engineered hardwood", "bathroom tile", "kitchen flooring", "staircase flooring"],
+    [{ metric: "370%", label: "Project Inquiries" }, { metric: "#1", label: "Local Rankings" }, { metric: "100+", label: "Monthly Leads" }, { metric: "5x", label: "ROI" }],
+    [
+      { q: "How do I compete with Home Depot and Lowe's for flooring SEO?", a: "Focus on local installation expertise, project portfolios, personalized service, and reviews. Big box stores can't match local companies for 'flooring installer near me' searches." },
+      { q: "Should I create pages for each flooring material?", a: "Yes. Hardwood, tile, carpet, LVP, laminate, and epoxy each have unique search volumes. Material-specific pages capture more targeted traffic." },
+      { q: "How important are portfolio photos for flooring SEO?", a: "Essential. Flooring is visual. Optimized project galleries drive image search traffic and dramatically improve conversion rates." },
+      { q: "Can SEO help with commercial flooring leads?", a: "Yes. Commercial flooring is high-value and less competitive online. Targeting property managers and contractors with B2B content opens lucrative opportunities." },
+      { q: "What flooring content converts best?", a: "Cost comparison guides, 'best flooring for [room]' articles, and material vs material comparisons capture homeowners in the decision phase and drive estimate requests." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"], defaultLocs
+  ),
+
+  // ---- TREE SERVICE (detailed) ----
+  ind("tree-service-seo", "Tree Service SEO", "Tree Services", "SEO for Tree Service Companies - Arborist Marketing", "SEO for tree service companies. Rank for tree removal, trimming, stump grinding, and emergency tree service searches to grow your business.", Home, "Home Services & Trades", "Tree Services", "Grow your tree service business with SEO that captures homeowners searching for tree removal, trimming, stump grinding, and emergency storm damage cleanup.",
+    [
+      { title: "Storm-Driven Demand Spikes", desc: "Severe weather creates massive search spikes for emergency tree removal. Your SEO must be ready to capture these sudden surges." },
+      { title: "Safety & Insurance Concerns", desc: "Tree work is dangerous. Customers prioritize licensed, insured companies. Trust signals directly impact which company gets the call." },
+      { title: "Seasonal Patterns", desc: "Tree trimming peaks in late winter/early spring. Removal is year-round but spikes after storms. Content must align with these patterns." },
+      { title: "High Service Value", desc: "Tree removal jobs range from $500-$5,000+. Even a few extra leads per month significantly impacts revenue." },
+    ],
+    [
+      { title: "Emergency Tree SEO", desc: "Rank for 'emergency tree removal', 'storm damage cleanup', and 'fallen tree removal' with fast-loading, mobile-optimized emergency pages." },
+      { title: "Service-Specific Pages", desc: "Dedicated pages for tree removal, trimming, pruning, stump grinding, land clearing, cabling, and disease treatment." },
+      { title: "Storm Preparedness Content", desc: "Pre-season content about storm preparation and tree health captures traffic before storms hit and builds authority." },
+      { title: "Arborist Authority Content", desc: "Tree health guides, species-specific care content, and ISA certification showcasing build topical authority." },
+    ],
+    ["tree service near me", "tree removal", "tree trimming", "stump grinding", "emergency tree removal", "arborist", "tree pruning", "land clearing", "tree cutting service", "dead tree removal", "storm damage tree removal", "palm tree trimming", "tree health assessment", "lot clearing", "branch removal"],
+    [{ metric: "400%", label: "Service Calls" }, { metric: "#1", label: "Emergency Rankings" }, { metric: "130+", label: "Monthly Leads" }, { metric: "5.8x", label: "ROI" }],
+    [
+      { q: "How can SEO help my tree service business?", a: "SEO puts your tree service at the top of Google when homeowners need tree removal, trimming, or emergency storm cleanup. These high-intent searches convert into booked jobs." },
+      { q: "How do I capture emergency tree removal searches?", a: "Dedicated emergency pages, fast mobile load times, click-to-call buttons, and 24/7 messaging. When storms hit, you need to already be ranking — it's too late to start SEO after the storm." },
+      { q: "Should I highlight ISA certification and insurance?", a: "Absolutely. Tree work is dangerous and expensive. Certification and insurance are major trust signals that differentiate professionals from unqualified operators." },
+      { q: "What tree service keywords convert best?", a: "'Tree removal near me', 'emergency tree service', and 'stump grinding near me' have the highest conversion rates. Species-specific and service-specific terms also perform well." },
+      { q: "What's the ROI of tree service SEO?", a: "With average removal jobs at $1,000-$3,000 and large removals exceeding $5,000, even 5-10 extra leads per month delivers $5,000-$30,000 in revenue — typically 5-8x ROI." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"], defaultLocs
+  ),
+
   // Remaining home services (factory for less common ones)
   ...createHomeServicesRemaining(),
 
@@ -825,21 +1033,12 @@ function createHomeServicesRemaining(): IndustryData[] {
   const icon = Home;
   const cat = "Home Services & Trades";
   const svcs: [string, string, string, string, string[]][] = [
-    ["landscaping-seo", "Landscaping SEO", "Landscapers", "SEO for Landscapers - Lawn Care & Garden Marketing", ["landscaper near me", "lawn care service", "landscape design", "tree trimming", "sprinkler installation", "garden maintenance", "hardscaping", "sod installation"]],
-    ["painting-seo", "Painting Company SEO", "Painters", "SEO for Painters - Painting Company Lead Generation", ["painter near me", "house painting", "interior painting", "exterior painting", "commercial painting", "cabinet painting", "deck staining", "wallpaper removal"]],
-    ["moving-company-seo", "Moving Company SEO", "Moving Companies", "SEO for Moving Companies - Mover Marketing Services", ["movers near me", "moving company", "local moving", "long distance movers", "commercial moving", "packing services", "storage solutions", "piano moving"]],
-    ["towing-seo", "Towing Company SEO", "Towing Companies", "SEO for Towing Companies - Tow Truck Marketing", ["tow truck near me", "towing service", "emergency towing", "roadside assistance", "flatbed towing", "motorcycle towing", "junk car removal", "accident towing"]],
-    ["garage-door-seo", "Garage Door SEO", "Garage Door Companies", "SEO for Garage Door Companies - Repair & Install Marketing", ["garage door repair near me", "garage door installation", "garage door opener", "spring replacement", "garage door maintenance", "commercial garage door", "emergency garage door"]],
-    ["flooring-seo", "Flooring Company SEO", "Flooring Companies", "SEO for Flooring Companies - Flooring Installation Marketing", ["flooring company near me", "hardwood flooring", "tile installation", "carpet installation", "laminate flooring", "vinyl plank flooring", "floor refinishing", "commercial flooring"]],
     ["solar-seo", "Solar Company SEO", "Solar Companies", "SEO for Solar Companies - Solar Panel Installation Marketing", ["solar panel installation", "solar company near me", "solar energy", "residential solar", "commercial solar", "solar battery", "solar financing", "solar panel cost"]],
     ["fencing-seo", "Fencing Company SEO", "Fencing Companies", "SEO for Fencing Companies - Fence Installation Marketing", ["fence company near me", "fence installation", "wood fence", "vinyl fence", "chain link fence", "fence repair", "privacy fence", "commercial fencing"]],
-    ["tree-service-seo", "Tree Service SEO", "Tree Services", "SEO for Tree Service Companies - Arborist Marketing", ["tree service near me", "tree removal", "tree trimming", "stump grinding", "emergency tree removal", "arborist", "tree pruning", "land clearing"]],
     ["pool-service-seo", "Pool Service SEO", "Pool Companies", "SEO for Pool Companies - Pool Building & Maintenance Marketing", ["pool company near me", "pool installation", "pool cleaning service", "pool repair", "hot tub installation", "pool resurfacing", "pool maintenance"]],
     ["foundation-repair-seo", "Foundation Repair SEO", "Foundation Companies", "SEO for Foundation Repair - Structural Repair Marketing", ["foundation repair near me", "basement waterproofing", "crawl space repair", "slab repair", "foundation crack repair", "structural engineer"]],
     ["window-door-seo", "Window & Door SEO", "Window Companies", "SEO for Window & Door Companies - Replacement Window Marketing", ["window replacement near me", "new windows", "patio doors", "storm windows", "energy efficient windows", "window installation"]],
     ["concrete-seo", "Concrete Company SEO", "Concrete Contractors", "SEO for Concrete Contractors - Driveway & Patio Marketing", ["concrete contractor near me", "driveway installation", "concrete patio", "stamped concrete", "concrete repair", "retaining wall", "sidewalk repair"]],
-    ["appliance-repair-seo", "Appliance Repair SEO", "Appliance Repair", "SEO for Appliance Repair - Home Appliance Service Marketing", ["appliance repair near me", "washer repair", "refrigerator repair", "dryer repair", "dishwasher repair", "oven repair", "HVAC repair"]],
-    ["handyman-seo", "Handyman SEO", "Handyman Services", "SEO for Handyman Services - General Home Repair Marketing", ["handyman near me", "home repair service", "furniture assembly", "drywall repair", "odd jobs", "honey-do list", "home maintenance"]],
   ];
 
   return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
