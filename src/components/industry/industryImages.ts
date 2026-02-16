@@ -48,6 +48,7 @@ const categoryImages: Record<string, string> = {
   "Automotive & Transportation": automotiveImg,
   "Beauty & Wellness": beautyImg,
   "Events & Creative": creativeImg,
+  "Pet Care & Veterinary": healthcareImg,
   "Other Industries": techImg,
 };
 

@@ -3,6 +3,7 @@ import {
   ShoppingBag, Car, Sparkles, Camera, Plane, Landmark, Music, Tractor,
   Truck, Dumbbell, Stethoscope, Megaphone, Wifi, Hammer, Globe, Zap,
   Smartphone, Monitor, Wrench, Tv, Printer, Gamepad2, Watch, Cpu, WashingMachine,
+  Dog, PawPrint, Scissors, Store,
   type LucideIcon
 } from "lucide-react";
 
@@ -1606,6 +1607,136 @@ function createTelecom(): IndustryData[] {
   );
 }
 
+{
+  // ============================================================
+  // PET CARE & VETERINARY
+  // ============================================================
+  industriesData.push(ind("dog-grooming-seo", "Dog Grooming SEO", "Dog Grooming", "SEO for Dog Groomers - Pet Grooming Marketing Services", "Specialized SEO for dog grooming businesses. Rank higher for grooming searches, attract pet owners, and grow your grooming salon with proven digital marketing.", Scissors, "Pet Care & Veterinary", "Dog Grooming", "Attract more pet owners with SEO built for dog grooming businesses. From breed-specific grooming to mobile grooming services, we help you rank for the searches that fill your appointment book.",
+    [
+      { title: "Hyper-Local Competition", desc: "Pet owners search for groomers near them. You need to dominate 'dog grooming near me' and 'pet groomer [city]' results to capture nearby customers." },
+      { title: "Breed-Specific Searches", desc: "Owners search for groomers experienced with specific breeds — poodle grooming, doodle grooming, husky deshedding. Each breed query is a ranking opportunity." },
+      { title: "Visual-Driven Decisions", desc: "Pet owners want to see before-and-after photos and a clean, trustworthy facility. Image SEO and Google Business Profile photos are essential." },
+      { title: "Review Sensitivity", desc: "Pet owners treat groomers like family. A single bad review can devastate bookings. Review management and generation are critical." },
+    ],
+    [
+      { title: "Local Grooming SEO", desc: "Dominate Google Maps and local search for grooming queries in every neighborhood you serve with optimized Google Business Profile and local citations." },
+      { title: "Breed & Service Pages", desc: "Create dedicated pages for every breed and service — puppy's first groom, senior dog grooming, deshedding, nail trimming, teeth cleaning, creative grooming." },
+      { title: "Visual Content Strategy", desc: "Optimize before-and-after galleries, Instagram integration, and image alt text to capture image search traffic and build trust." },
+      { title: "Booking Optimization", desc: "Streamline the path from search to booked appointment with click-to-call, online booking integration, and conversion-optimized landing pages." },
+    ],
+    ["dog grooming near me", "pet groomer", "dog haircut", "puppy grooming", "mobile dog grooming", "cat grooming", "doodle grooming", "deshedding service", "dog nail trimming"],
+    [{ metric: "400%", label: "Booking Increase" }, { metric: "#1", label: "Local Pack" }, { metric: "200+", label: "Monthly Bookings" }, { metric: "5.2x", label: "ROI" }],
+    [
+      { q: "How can SEO help my dog grooming business?", a: "SEO puts your grooming salon at the top of Google when pet owners search 'dog grooming near me.' This drives a steady stream of new clients without paying for ads." },
+      { q: "What keywords should a dog groomer target?", a: "Focus on local intent keywords like 'dog grooming [city]', breed-specific terms like 'poodle grooming,' and service terms like 'mobile dog grooming' and 'puppy's first haircut.'" },
+      { q: "How important are Google reviews for groomers?", a: "Extremely important. Pet owners trust reviews like personal recommendations. A strong review profile (4.8+) with recent reviews is often the deciding factor." },
+      { q: "Should I create separate pages for each grooming service?", a: "Yes. Dedicated pages for deshedding, nail trimming, teeth cleaning, breed-specific grooming, and mobile grooming each target unique search queries." },
+      { q: "How long before I see results from grooming SEO?", a: "Most grooming businesses see ranking improvements in 2-3 months and significant booking increases in 4-6 months as local authority builds." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+  ));
+
+  industriesData.push(ind("pet-boarding-seo", "Pet Boarding SEO", "Pet Boarding", "SEO for Pet Boarding & Kennels - Pet Care Marketing", "Specialized SEO for pet boarding facilities, kennels, and doggy daycares. Rank higher, build trust with pet owners, and fill your facility year-round.", Dog, "Pet Care & Veterinary", "Pet Boarding", "Fill your pet boarding facility year-round with SEO strategies designed for kennels, doggy daycares, and pet hotels. We help pet owners find and trust your facility.",
+    [
+      { title: "Trust & Safety Concerns", desc: "Pet owners are leaving their family members in your care. Your website must convey safety, cleanliness, and expertise to overcome hesitation." },
+      { title: "Seasonal Demand Spikes", desc: "Boarding demand surges during holidays, summer, and school breaks. SEO must be established before peak seasons to capture this traffic." },
+      { title: "Facility Differentiation", desc: "With many boarding options available, you need to clearly communicate what makes your facility special — cage-free, webcams, outdoor play areas, etc." },
+      { title: "Multi-Service Rankings", desc: "Boarding, daycare, overnight stays, long-term boarding, and specialized care each need dedicated ranking strategies." },
+    ],
+    [
+      { title: "Trust-Building SEO", desc: "Optimize facility tours, staff bios, safety certifications, and webcam pages to build the trust pet owners need before booking." },
+      { title: "Seasonal SEO Planning", desc: "Pre-optimize holiday boarding pages months in advance — Christmas pet boarding, summer dog daycare, Thanksgiving kennels — so you rank when demand peaks." },
+      { title: "Service & Facility Pages", desc: "Dedicated pages for boarding, daycare, luxury suites, grooming add-ons, training packages, and special needs pet care." },
+      { title: "Local Authority Building", desc: "Dominate local search with Google Business Profile, pet industry citations, partnerships with local vets, and community event content." },
+    ],
+    ["dog boarding near me", "pet hotel", "doggy daycare", "kennel near me", "overnight pet care", "cat boarding", "luxury pet boarding", "pet sitting service", "holiday pet boarding"],
+    [{ metric: "350%", label: "Occupancy Increase" }, { metric: "#1", label: "Map Pack" }, { metric: "180+", label: "Monthly Bookings" }, { metric: "4.8x", label: "ROI" }],
+    [
+      { q: "How does SEO help pet boarding facilities?", a: "SEO ensures your boarding facility appears at the top of Google when pet owners search 'dog boarding near me' or 'pet hotel [city].' This drives consistent bookings without ad spend." },
+      { q: "When should I start SEO for holiday boarding?", a: "Start at least 3-4 months before major holidays. SEO takes time to build rankings, and you want to be ranking #1 when pet owners start searching for holiday boarding." },
+      { q: "What content should a pet boarding website have?", a: "Virtual facility tours, staff introductions, safety protocols, webcam access info, service descriptions, pricing transparency, and plenty of happy pet photos and reviews." },
+      { q: "How can I compete with larger pet boarding chains?", a: "Focus on local SEO, personalized service messaging, community involvement, and authentic reviews. Local independent facilities can outrank chains in local search." },
+      { q: "Should I offer online booking for SEO?", a: "Yes. Online booking reduces friction, improves conversion rates, and Google favors businesses that offer easy booking options. It also enables booking schema markup." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+  ));
+
+  industriesData.push(ind("veterinary-clinic-seo", "Veterinary Clinic SEO", "Veterinary Clinics", "SEO for Veterinary Clinics - Vet Practice Marketing", "Specialized SEO for veterinary clinics and animal hospitals. Attract more pet owners, rank for emergency vet searches, and grow your practice.", Stethoscope, "Pet Care & Veterinary", "Veterinary Clinics", "Grow your veterinary practice with SEO strategies tailored for vet clinics and animal hospitals. From routine check-ups to emergency care, rank for the searches pet owners make.",
+    [
+      { title: "Emergency Search Intent", desc: "Emergency vet searches are high-urgency. Ranking for '24-hour vet' and 'emergency animal hospital' can be life-saving and practice-defining." },
+      { title: "YMYL Content Standards", desc: "Veterinary content falls under Google's Your Money or Your Life category. Content must demonstrate expertise, authority, and trustworthiness (E-E-A-T)." },
+      { title: "Service Complexity", desc: "Vet clinics offer dozens of services — vaccinations, surgery, dental, diagnostics, exotic pets. Each needs optimized content and proper schema markup." },
+      { title: "Multi-Species Targeting", desc: "Unlike human healthcare, vets serve dogs, cats, birds, reptiles, and exotic animals. Each species creates unique keyword opportunities." },
+    ],
+    [
+      { title: "Emergency Vet SEO", desc: "Dedicated emergency and after-hours pages optimized for urgent searches. Fast mobile loading, prominent phone numbers, and clear directions." },
+      { title: "E-E-A-T Veterinary Content", desc: "DVM-reviewed articles, pet health guides, and condition-specific content that meets Google's quality standards for medical information." },
+      { title: "Multi-Species Service Pages", desc: "Optimized pages for dog care, cat care, exotic pet services, avian medicine, and specialty services like orthopedic surgery or oncology." },
+      { title: "Local Vet Authority", desc: "Google Business Profile optimization, veterinary directory citations, partnerships with pet stores and shelters, and community health event content." },
+    ],
+    ["vet near me", "emergency vet", "animal hospital", "pet vaccination", "dog surgery", "cat vet", "24 hour vet", "exotic pet vet", "veterinary clinic"],
+    [{ metric: "300%", label: "New Patient Growth" }, { metric: "#1", label: "Emergency Searches" }, { metric: "150+", label: "Monthly Appointments" }, { metric: "5.0x", label: "ROI" }],
+    [
+      { q: "How is veterinary SEO different from regular SEO?", a: "Vet SEO requires E-E-A-T compliance for medical content, multi-species keyword targeting, emergency search optimization, and trust-building strategies specific to pet healthcare." },
+      { q: "Can SEO help with emergency vet searches?", a: "Absolutely. Ranking #1 for 'emergency vet near me' captures the highest-intent traffic. We optimize dedicated emergency pages with schema markup and mobile-first design." },
+      { q: "What content should a vet clinic blog about?", a: "Pet health guides, seasonal pet care tips, breed-specific health issues, vaccination schedules, nutrition advice, and common symptom explanations. This builds topical authority." },
+      { q: "How important is Google Business Profile for vets?", a: "Critical. Most pet owners find their vet through Google Maps. An optimized GBP with photos, services, hours, and strong reviews drives the majority of new patients." },
+      { q: "Should I create pages for each animal type?", a: "Yes. Pages for dog care, cat care, exotic pets, birds, and reptiles each target unique searches and demonstrate your clinic's range of expertise." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "schema-markup"], defaultLocs
+  ));
+
+  industriesData.push(ind("pet-store-seo", "Pet Store SEO", "Pet Stores", "SEO for Pet Stores - Pet Shop Marketing & Ecommerce SEO", "Specialized SEO for pet stores and pet supply shops. Rank higher for pet product searches, drive foot traffic and online sales with proven strategies.", Store, "Pet Care & Veterinary", "Pet Stores", "Drive more customers to your pet store — online and in-store — with SEO strategies built for pet retail. From premium pet food to specialty supplies, rank for what pet owners buy.",
+    [
+      { title: "Ecommerce vs Local Balance", desc: "Pet stores must balance local foot traffic SEO with ecommerce product SEO. Both channels need dedicated strategies to maximize revenue." },
+      { title: "Amazon & Chewy Competition", desc: "Competing with major online retailers requires niche differentiation, local advantage, and expert content that big-box stores can't match." },
+      { title: "Product Category Breadth", desc: "Pet stores carry thousands of products across multiple pet types. Organizing and optimizing this catalog for search is a major challenge." },
+      { title: "Brand & Product Searches", desc: "Pet owners search for specific brands (Royal Canin, Blue Buffalo) and products. Capturing these branded searches drives high-intent traffic." },
+    ],
+    [
+      { title: "Local Pet Store SEO", desc: "Dominate 'pet store near me' searches with Google Business Profile optimization, local inventory ads integration, and neighborhood-targeted content." },
+      { title: "Product Category Optimization", desc: "Organized, optimized category pages for dog food, cat supplies, fish tanks, bird cages, reptile supplies, and specialty items with proper schema markup." },
+      { title: "Expert Content Authority", desc: "Pet care guides, breed-specific nutrition advice, product reviews, and staff expertise content that positions your store as the local pet authority." },
+      { title: "Ecommerce SEO Integration", desc: "Product schema, optimized product descriptions, review integration, and local delivery/pickup SEO for pet owners who shop online." },
+    ],
+    ["pet store near me", "dog food shop", "pet supplies", "cat food store", "aquarium supplies", "pet shop", "best dog food", "pet accessories", "natural pet food"],
+    [{ metric: "380%", label: "Organic Revenue" }, { metric: "#1", label: "Local Pet Searches" }, { metric: "250+", label: "Monthly Customers" }, { metric: "4.6x", label: "ROI" }],
+    [
+      { q: "How can a local pet store compete with Amazon and Chewy?", a: "Focus on local SEO, expert staff content, in-store experiences, same-day delivery, and personalized pet nutrition advice. Big retailers can't match local expertise and service." },
+      { q: "Should my pet store have an online shop?", a: "Yes. An SEO-optimized online store with local delivery captures customers who shop online but prefer supporting local businesses. It also improves your overall search visibility." },
+      { q: "What content works best for pet store SEO?", a: "Pet nutrition guides, breed-specific care tips, product comparisons, seasonal pet care advice, and local pet event coverage. This builds authority and drives organic traffic." },
+      { q: "How important are reviews for pet stores?", a: "Very important. Pet owners trust other pet owners. A strong review profile with detailed reviews about product quality and staff knowledge drives new customers." },
+      { q: "How do I rank for pet food brand searches?", a: "Create dedicated brand pages with expert reviews, comparisons, and availability info. This captures pet owners searching for specific brands they want to buy locally." },
+    ],
+    ["local-seo", "google-business-profile", "ecommerce-seo", "content-strategy"], defaultLocs
+  ));
+
+  industriesData.push(ind("pet-training-seo", "Pet Training SEO", "Pet Training", "SEO for Dog Trainers - Pet Training Marketing Services", "Specialized SEO for dog trainers and pet training businesses. Rank for obedience, behavior, and puppy training searches to grow your client base.", PawPrint, "Pet Care & Veterinary", "Pet Training", "Fill your training classes and private sessions with SEO designed for dog trainers and pet behaviorists. Rank for the training searches pet owners make every day.",
+    [
+      { title: "Method Differentiation", desc: "Positive reinforcement, balanced training, clicker training — pet owners search for specific methods. Your content must clearly communicate your approach." },
+      { title: "Behavior-Specific Searches", desc: "Owners search for solutions to specific problems — leash pulling, aggression, separation anxiety. Each behavior issue is a high-intent keyword opportunity." },
+      { title: "Credential Trust", desc: "Pet owners want certified, experienced trainers. Your website must prominently display certifications (CPDT-KA, IACP) and demonstrate expertise." },
+      { title: "Service Format Variety", desc: "Group classes, private sessions, board-and-train, puppy socialization, virtual training — each format needs its own optimized content." },
+    ],
+    [
+      { title: "Behavior Problem Content", desc: "Create comprehensive guides for every common behavior issue — barking, biting, jumping, aggression, anxiety — targeting solution-seeking pet owners." },
+      { title: "Training Service Pages", desc: "Dedicated pages for puppy training, obedience classes, behavior modification, agility, therapy dog certification, and board-and-train programs." },
+      { title: "Trainer Authority Building", desc: "Showcase certifications, success stories, training methodology, and before-and-after case studies to build E-E-A-T credibility." },
+      { title: "Local Training SEO", desc: "Optimize for 'dog trainer near me', 'puppy classes [city]', and neighborhood-level searches with Google Business Profile and local content." },
+    ],
+    ["dog trainer near me", "puppy training", "obedience classes", "dog behavior training", "aggressive dog trainer", "puppy socialization", "board and train", "dog training classes", "service dog training"],
+    [{ metric: "320%", label: "Client Growth" }, { metric: "#1", label: "Training Searches" }, { metric: "120+", label: "Monthly Enrollments" }, { metric: "4.9x", label: "ROI" }],
+    [
+      { q: "How can SEO help my dog training business?", a: "SEO puts you at the top of Google when dog owners search for training help. This drives a consistent stream of new clients seeking exactly the services you offer." },
+      { q: "What keywords should dog trainers target?", a: "Target behavior-specific terms like 'dog aggression trainer,' service terms like 'puppy obedience classes,' and local terms like 'dog trainer in [city].'" },
+      { q: "Should I write about dog behavior problems?", a: "Absolutely. Comprehensive guides on barking, biting, leash reactivity, and separation anxiety attract pet owners actively seeking professional help — your ideal clients." },
+      { q: "How important are certifications for SEO?", a: "Very important for E-E-A-T. Prominently displaying CPDT-KA, IACP, or other certifications builds trust with both Google and potential clients." },
+      { q: "Can I rank for virtual dog training?", a: "Yes. Virtual and online dog training searches have grown significantly. Dedicated pages for remote training sessions can capture this growing market." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+  ));
+}
+
 
 export function getIndustryBySlug(slug: string): IndustryData | undefined {
   return industriesData.find(i => i.slug === slug);
@@ -1637,5 +1768,6 @@ export const INDUSTRY_CATEGORIES = [
   "Marketing & Advertising",
   "Telecom & Internet",
   "Repair & Maintenance",
+  "Pet Care & Veterinary",
   "Other Industries",
 ];
