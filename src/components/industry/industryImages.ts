@@ -40,7 +40,15 @@ const categoryImages: Record<string, string> = {
   // Fallbacks for other categories
   "Media & Entertainment": creativeImg,
   "Public Sector & Government": legalImg,
+  "Government & Public Sector": legalImg,
   "Telecom & Internet": techImg,
+  "Repair & Maintenance": techImg,
+  "Legal & Professional Services": legalImg,
+  "Home Services & Trades": homeServicesImg,
+  "Automotive & Transportation": automotiveImg,
+  "Beauty & Wellness": beautyImg,
+  "Events & Creative": creativeImg,
+  "Other Industries": techImg,
 };
 
 export function getIndustryCategoryImage(category: string): string {
