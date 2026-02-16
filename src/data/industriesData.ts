@@ -399,9 +399,242 @@ export const industriesData: IndustryData[] = [
   ),
 
   // ============================================================
-  // HOME SERVICES & TRADES (13 Industries)
+  // HOME SERVICES & TRADES — IN-DEPTH ENTRIES
   // ============================================================
-  ...createHomeServices(),
+
+  // PLUMBING — detailed
+  ind("plumbing-seo", "Plumbing SEO", "Plumbers", "SEO for Plumbers - Plumbing Company Lead Generation & Marketing", "Specialized SEO services for plumbing companies. Rank for emergency plumber searches, drain cleaning, water heater repair, and all residential & commercial plumbing keywords.", Home, "Home Services & Trades", "Plumbers",
+    "Get more plumbing leads with SEO strategies designed for local plumbing businesses. From emergency calls to scheduled installations, we put your plumbing company in front of homeowners actively searching for your services.",
+    [
+      { title: "Emergency Search Dominance", desc: "Over 40% of plumbing searches are emergencies — burst pipes, clogged drains, and water heater failures. If you're not ranking when panic strikes, you're losing high-value jobs to competitors." },
+      { title: "Hyper-Local Competition", desc: "Dozens of plumbers fight for the same zip codes. Google's Local Pack only shows 3 results, so your GBP and local signals must be stronger than every competitor in your service area." },
+      { title: "Seasonal Demand Swings", desc: "Frozen pipes in winter, AC drain issues in summer, and sewer backups in spring. Your content and ad strategy must align with seasonal plumbing demand patterns." },
+      { title: "Low Trust Barrier", desc: "Homeowners fear being overcharged by plumbers. Reviews, transparent pricing content, and licensing badges are essential trust signals that drive conversions." },
+    ],
+    [
+      { title: "Emergency Keyword Blitz", desc: "We target high-intent terms like 'emergency plumber near me', '24 hour plumber', and 'burst pipe repair' with fast-loading landing pages optimized for mobile." },
+      { title: "Service Area Pages", desc: "Dedicated geo-optimized pages for every city, neighborhood, and zip code you serve — each with unique content, schema markup, and local trust signals." },
+      { title: "Google Business Profile Mastery", desc: "Full GBP optimization with service menus, Q&A, weekly posts, photo uploads, and a systematic review generation strategy." },
+      { title: "Plumbing Content Hub", desc: "Educational content — 'how to fix a running toilet', 'signs you need a water heater replacement' — that builds topical authority and captures DIY-to-hire traffic." },
+    ],
+    ["plumber near me", "emergency plumber", "24 hour plumber", "drain cleaning service", "water heater repair", "sewer line repair", "toilet repair", "leak detection", "pipe repair near me", "clogged drain", "tankless water heater installation", "sump pump repair", "garbage disposal repair", "gas line repair", "backflow testing", "hydro jetting"],
+    [
+      { metric: "420%", label: "Organic Traffic Growth" },
+      { metric: "85+", label: "Emergency Keywords Page 1" },
+      { metric: "73%", label: "Increase in Service Calls" },
+      { metric: "5.2x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How quickly can I rank for 'plumber near me'?", a: "With aggressive local SEO — GBP optimization, citation building, and review generation — most plumbing companies see Local Pack improvements within 6-8 weeks. Organic rankings for competitive terms take 3-5 months." },
+      { q: "Should I create separate pages for each plumbing service?", a: "Absolutely. Dedicated pages for drain cleaning, water heater repair, sewer line services, and every specialty you offer help you rank for specific searches and improve conversion rates by matching user intent." },
+      { q: "How important are reviews for plumbing SEO?", a: "Reviews are the #1 local ranking factor and the #1 trust signal for homeowners choosing a plumber. We implement automated review requests via SMS and email to build your reputation systematically." },
+      { q: "What's the average cost-per-lead from plumbing SEO?", a: "SEO-generated plumbing leads typically cost $15-40 each, compared to $75-150+ from Google Ads or HomeAdvisor. Over 12 months, SEO delivers 3-5x lower cost per acquisition." },
+      { q: "Do I need a blog for my plumbing website?", a: "Yes. Educational content like 'signs your water heater is failing' or 'how to prevent frozen pipes' drives traffic, builds authority, and captures leads from homeowners researching before they call." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo", "technical-seo"],
+    defaultLocs
+  ),
+
+  // HVAC — detailed
+  ind("hvac-seo", "HVAC SEO", "HVAC Companies", "SEO for HVAC Companies - Heating & Cooling Lead Generation", "Expert SEO services for HVAC companies. Dominate local search for AC repair, furnace installation, heating services, and all HVAC keywords in your service area.", Home, "Home Services & Trades", "HVAC Companies",
+    "Attract more HVAC leads year-round with SEO built for heating and cooling businesses. We help you rank for AC repair in summer, furnace services in winter, and maintenance year-round.",
+    [
+      { title: "Extreme Seasonality", desc: "HVAC demand spikes dramatically in summer and winter. Your SEO must rank you before each season hits so you capture demand when it peaks." },
+      { title: "High Ticket Competition", desc: "HVAC installations average $5,000-$15,000. This high revenue per job means intense competition from well-funded competitors bidding on every keyword." },
+      { title: "Emergency vs. Planned", desc: "Emergency 'AC not working' searches convert differently than 'best HVAC company for installation'. Your funnel must handle both urgency levels." },
+      { title: "Brand & Equipment Queries", desc: "Homeowners search by brand — 'Carrier AC repair', 'Trane furnace installation'. Optimizing for manufacturer-specific terms captures brand-loyal customers." },
+    ],
+    [
+      { title: "Seasonal Content Strategy", desc: "Pre-position content for AC keywords before summer and heating keywords before winter so you're already ranking when demand surges." },
+      { title: "Equipment-Specific Pages", desc: "Dedicated pages for each brand and equipment type — heat pumps, mini-splits, central AC, gas furnaces — capturing specific buyer intent." },
+      { title: "Emergency HVAC Rankings", desc: "Mobile-first emergency pages for 'AC not cooling', 'furnace not heating', and 'no heat' searches with click-to-call and instant forms." },
+      { title: "Maintenance Plan SEO", desc: "Content marketing for HVAC maintenance plans that builds recurring revenue and keeps your business top-of-mind between seasons." },
+    ],
+    ["HVAC near me", "AC repair", "furnace repair", "heating installation", "air conditioning service", "duct cleaning", "HVAC maintenance", "heat pump installation", "mini split installation", "AC not cooling", "furnace not heating", "HVAC replacement cost", "central air installation", "thermostat installation", "indoor air quality"],
+    [
+      { metric: "380%", label: "Organic Traffic Growth" },
+      { metric: "120+", label: "HVAC Keywords Page 1" },
+      { metric: "68%", label: "Increase in Service Calls" },
+      { metric: "4.9x", label: "Return on Investment" },
+    ],
+    [
+      { q: "When should I start HVAC SEO for summer/winter?", a: "Start 3-4 months before peak season. SEO takes time to build rankings, so beginning AC-focused content in February and heating content in August ensures you're positioned when demand spikes." },
+      { q: "Should I create pages for each HVAC brand I service?", a: "Yes. Brand-specific pages like 'Carrier AC Repair' or 'Trane Furnace Installation' capture high-intent searches from homeowners loyal to specific manufacturers." },
+      { q: "How do I compete with large HVAC franchises in SEO?", a: "Local SEO is the equalizer. Independent HVAC companies can outrank franchises by dominating Google Business Profile, earning authentic local reviews, and creating hyper-local content." },
+      { q: "What keywords should HVAC companies target?", a: "Emergency terms ('AC not working'), service terms ('AC repair near me'), installation terms ('heat pump installation cost'), and maintenance terms ('HVAC tune-up') — segmented by season." },
+      { q: "How much should an HVAC company invest in SEO?", a: "Most HVAC companies invest $1,500-$4,000/month in SEO. With average installation revenue of $5,000-$15,000, just 1-2 extra jobs per month delivers strong ROI." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"],
+    defaultLocs
+  ),
+
+  // ELECTRICIAN — detailed
+  ind("electrician-seo", "Electrician SEO", "Electricians", "SEO for Electricians - Electrical Contractor Marketing & Leads", "Specialized SEO for electricians and electrical contractors. Rank for panel upgrades, EV charger installation, electrical repair, and all residential & commercial electrical keywords.", Zap, "Home Services & Trades", "Electricians",
+    "Generate more electrical service leads with SEO strategies tailored for electricians. From emergency repairs to EV charger installations, we help you dominate local search results.",
+    [
+      { title: "Safety & Licensing Trust", desc: "Electrical work is dangerous. Homeowners need confidence in licensing, insurance, and safety records before hiring — your website must communicate trust instantly." },
+      { title: "Emerging Service Demand", desc: "EV charger installation, solar panel wiring, smart home systems, and generator installation are booming. SEO must capture these growing search categories." },
+      { title: "Commercial vs. Residential", desc: "Commercial electrical contracts are high-value but require different content and keywords than residential. Your SEO strategy needs both funnels." },
+      { title: "Emergency Electrical Searches", desc: "'Electrical emergency', 'power outage repair', 'sparking outlet' — these urgent searches need immediate visibility with mobile-optimized pages." },
+    ],
+    [
+      { title: "Service Specialization Pages", desc: "Dedicated pages for panel upgrades, EV charger installation, whole-house rewiring, generator installation, and every specialty service." },
+      { title: "Emerging Tech SEO", desc: "Capture growing demand for EV chargers, smart home wiring, solar electrical, and home automation with forward-looking content." },
+      { title: "Dual-Funnel Strategy", desc: "Separate SEO tracks for residential customers (homeowners) and commercial clients (property managers, GCs) with tailored messaging." },
+      { title: "Safety & Authority Content", desc: "Educational content about electrical safety, code compliance, and when to call an electrician that builds trust and captures informational searches." },
+    ],
+    ["electrician near me", "electrical repair", "panel upgrade", "EV charger installation", "emergency electrician", "lighting installation", "electrical inspection", "whole house rewiring", "generator installation", "ceiling fan installation", "outlet repair", "circuit breaker repair", "knob and tube replacement", "smart home wiring", "commercial electrician", "240v outlet installation"],
+    [
+      { metric: "395%", label: "Organic Traffic Growth" },
+      { metric: "95+", label: "Electrical Keywords Page 1" },
+      { metric: "71%", label: "Increase in Service Calls" },
+      { metric: "5.1x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How can SEO help my electrical contracting business?", a: "SEO puts your business in front of homeowners and businesses actively searching for electrical services. Ranking for 'electrician near me' and specialty terms generates qualified leads at a fraction of the cost of paid advertising." },
+      { q: "Should I target EV charger installation keywords?", a: "Absolutely. EV charger installation searches are growing 200%+ year-over-year. Early SEO investment in these keywords positions you as the go-to provider in your area before competition intensifies." },
+      { q: "How important is licensing information on my website?", a: "Critical. Display your electrical license number, insurance, bonding information, and certifications prominently. These trust signals improve both conversions and E-E-A-T signals for Google." },
+      { q: "Can I rank for both residential and commercial electrical?", a: "Yes, with separate content strategies. Residential pages target homeowners, while commercial pages target facility managers and general contractors with different language and keywords." },
+      { q: "What's the average value of an SEO lead for electricians?", a: "Electrical service leads from SEO average $200-$2,000 per job, with panel upgrades and rewiring exceeding $5,000. SEO-generated leads cost 60-80% less than leads from HomeAdvisor or Angi." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo", "content-strategy"],
+    defaultLocs
+  ),
+
+  // CLEANING SERVICES — detailed
+  ind("cleaning-seo", "Cleaning Company SEO", "Cleaning Companies", "SEO for Cleaning Companies - Janitorial & Maid Service Marketing", "SEO services for cleaning companies, maid services, and janitorial businesses. Rank for house cleaning, office cleaning, deep cleaning, and commercial janitorial keywords.", Sparkles, "Home Services & Trades", "Cleaning Companies",
+    "Grow your cleaning business with SEO that attracts both residential and commercial cleaning clients. We help you rank for house cleaning, office janitorial, move-out cleaning, and specialty services.",
+    [
+      { title: "Low Barrier to Entry", desc: "The cleaning industry has low entry barriers, creating intense competition. Hundreds of cleaning companies compete for the same local searches, making SEO differentiation essential." },
+      { title: "Recurring Revenue Keywords", desc: "Cleaning is a recurring service. Ranking for 'weekly house cleaning' and 'office cleaning contracts' captures high-lifetime-value clients, not just one-time jobs." },
+      { title: "Trust & Background Checks", desc: "Customers invite cleaners into their homes. Trust signals — background checks, insurance, bonding, reviews — are critical conversion factors." },
+      { title: "Residential vs. Commercial Split", desc: "Residential clients search differently than commercial facility managers. Your SEO must serve both audiences with tailored content and landing pages." },
+    ],
+    [
+      { title: "Service-Specific Landing Pages", desc: "Dedicated pages for house cleaning, deep cleaning, move-out cleaning, office cleaning, post-construction cleaning, carpet cleaning, and every specialty." },
+      { title: "Commercial Cleaning SEO", desc: "Target facility managers and businesses with content about janitorial contracts, office cleaning schedules, and commercial cleaning standards." },
+      { title: "Trust Signal Optimization", desc: "Prominently feature background checks, insurance, bonding, eco-friendly products, and customer testimonials throughout your site." },
+      { title: "Recurring Client Acquisition", desc: "Content strategy focused on weekly/bi-weekly cleaning services that attracts high-LTV recurring clients rather than one-time bookings." },
+    ],
+    ["cleaning service near me", "house cleaning", "maid service", "office cleaning", "deep cleaning service", "move-out cleaning", "commercial cleaning", "carpet cleaning", "window cleaning", "post-construction cleaning", "janitorial service", "weekly house cleaning", "eco-friendly cleaning", "spring cleaning service", "airbnb cleaning service", "disinfection service"],
+    [
+      { metric: "360%", label: "Organic Traffic Growth" },
+      { metric: "110+", label: "Cleaning Keywords Page 1" },
+      { metric: "82%", label: "Increase in Bookings" },
+      { metric: "4.7x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How competitive is SEO for cleaning companies?", a: "Very competitive locally, but winnable. Most cleaning companies have weak websites and no SEO strategy. A well-optimized site with strong reviews can dominate local results within 3-4 months." },
+      { q: "Should I target residential or commercial cleaning keywords?", a: "Both, but with separate strategies. Residential pages target homeowners with emotional trust signals, while commercial pages target decision-makers with contract-focused content and case studies." },
+      { q: "How do I get more cleaning company reviews?", a: "We implement automated review requests sent via SMS after each completed job. Consistent 5-star reviews are the single most impactful factor for cleaning company SEO success." },
+      { q: "What content should a cleaning company blog about?", a: "Cleaning tips, seasonal guides (spring cleaning checklist), stain removal advice, organizing tips, and eco-friendly cleaning. This content drives traffic and positions you as the cleaning expert in your area." },
+      { q: "Can SEO help me get commercial cleaning contracts?", a: "Yes. Facility managers search for 'commercial cleaning service near me' and 'office janitorial service'. Optimized commercial pages with case studies and certifications attract these high-value contracts." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"],
+    defaultLocs
+  ),
+
+  // PEST CONTROL — detailed
+  ind("pest-control-seo", "Pest Control SEO", "Pest Control", "SEO for Pest Control Companies - Exterminator Marketing & Leads", "Specialized SEO for pest control companies and exterminators. Rank for termite treatment, bed bug removal, rodent control, and all pest-related keywords in your service area.", Home, "Home Services & Trades", "Pest Control",
+    "Attract more pest control leads with SEO strategies built for exterminators. From termite inspections to bed bug treatments, we help you rank when homeowners are desperate for help.",
+    [
+      { title: "Panic-Driven Searches", desc: "Most pest control searches happen during infestations — customers are panicked and ready to hire immediately. Ranking for these urgent queries means capturing high-conversion leads." },
+      { title: "Seasonal Pest Patterns", desc: "Ants in spring, mosquitoes in summer, rodents in fall, spiders year-round. Your content calendar must align with seasonal pest activity in your region." },
+      { title: "DIY Competition", desc: "Many homeowners try DIY pest control first. Your content must position professional treatment as superior to store-bought solutions while capturing DIY-failure traffic." },
+      { title: "Pest-Specific Rankings", desc: "Homeowners search for specific pests — 'termite treatment', 'bed bug exterminator', 'rat removal'. Each pest type needs its own optimized page." },
+    ],
+    [
+      { title: "Pest-Specific Landing Pages", desc: "Dedicated, in-depth pages for every pest you treat — termites, bed bugs, cockroaches, rodents, ants, mosquitoes, wasps, spiders, wildlife, and more." },
+      { title: "Seasonal Content Strategy", desc: "Pre-publish content aligned with seasonal pest patterns so you're already ranking when homeowners start searching for specific infestations." },
+      { title: "Emergency Pest Rankings", desc: "Mobile-optimized emergency pages for 'emergency exterminator', 'same day pest control', and panic searches with instant contact options." },
+      { title: "Recurring Treatment SEO", desc: "Content promoting monthly and quarterly pest prevention plans that convert one-time emergency calls into recurring revenue clients." },
+    ],
+    ["pest control near me", "exterminator near me", "termite treatment", "bed bug removal", "rodent control", "ant exterminator", "mosquito treatment", "cockroach exterminator", "wildlife removal", "wasp nest removal", "spider control", "flea treatment", "tick control", "commercial pest control", "organic pest control", "termite inspection"],
+    [
+      { metric: "410%", label: "Organic Traffic Growth" },
+      { metric: "130+", label: "Pest Keywords Page 1" },
+      { metric: "76%", label: "Increase in Service Calls" },
+      { metric: "5.4x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How fast can I rank for pest control keywords?", a: "Emergency and long-tail pest terms ('bed bug exterminator [city]') can rank within 4-6 weeks. Competitive head terms like 'pest control near me' typically take 3-5 months with consistent effort." },
+      { q: "Should I create a page for every pest type?", a: "Yes! Homeowners search by specific pest — 'termite treatment near me', 'bed bug removal cost'. Each pest page captures unique search intent and dramatically increases your keyword footprint." },
+      { q: "How do seasonal changes affect pest control SEO?", a: "We pre-publish seasonal content 2-3 months ahead. Ant and termite content goes live in January for spring demand; rodent content in August for fall. This ensures rankings before seasonal search spikes." },
+      { q: "Can SEO reduce my dependence on lead generation sites?", a: "Absolutely. Many pest control companies spend $5,000-$15,000/month on HomeAdvisor, Angi, or Thumbtack. SEO-generated leads cost 70-80% less and you own the relationship directly." },
+      { q: "What's the best content strategy for pest control?", a: "Pest identification guides, prevention tips, treatment comparisons (DIY vs professional), seasonal pest calendars, and health risk content. This builds topical authority and captures informational-to-transactional search journeys." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"],
+    defaultLocs
+  ),
+
+  // LOCKSMITH — detailed
+  ind("locksmith-seo", "Locksmith SEO", "Locksmiths", "SEO for Locksmiths - Emergency Lockout Marketing & Lead Generation", "SEO services for locksmith businesses. Rank for emergency lockout, lock change, key duplication, smart lock installation, and all locksmith keywords.", Home, "Home Services & Trades", "Locksmiths",
+    "Get more locksmith calls with SEO strategies built for emergency and scheduled locksmith services. We help you rank when customers are locked out and searching on their phones.",
+    [
+      { title: "Extreme Urgency Searches", desc: "Locked-out customers search on mobile and call the first result they see. If you're not in the top 3, you're invisible during the highest-converting moment possible." },
+      { title: "Scam Competitor Problem", desc: "The locksmith industry is plagued by scam operations with fake addresses and bait-and-switch pricing. Legitimate locksmiths must work harder to build trust online." },
+      { title: "Mobile-First Requirements", desc: "95%+ of emergency locksmith searches happen on mobile. Your site must load in under 2 seconds and have click-to-call front and center." },
+      { title: "Service Diversity", desc: "Automotive, residential, and commercial locksmith services each have different audiences and keywords requiring separate optimization strategies." },
+    ],
+    [
+      { title: "Emergency Lockout SEO", desc: "Ultra-fast mobile pages for 'locked out of car', 'locked out of house', and emergency lockout searches with prominent phone numbers and location signals." },
+      { title: "Scam-Proof Trust Building", desc: "Display physical address, license number, BBB rating, uniformed technician photos, and transparent pricing to differentiate from scam operators." },
+      { title: "Auto + Residential + Commercial", desc: "Separate optimized funnels for car lockout, home lock services, and commercial access control with tailored content for each audience." },
+      { title: "Smart Lock & Security SEO", desc: "Capture growing demand for smart lock installation, access control systems, and security upgrades with forward-looking content." },
+    ],
+    ["locksmith near me", "emergency locksmith", "car lockout", "locked out of house", "lock change", "key duplication", "smart lock installation", "commercial locksmith", "car key replacement", "lock rekey", "deadbolt installation", "master key system", "access control installation", "safe lockout", "transponder key programming", "24 hour locksmith"],
+    [
+      { metric: "340%", label: "Organic Traffic Growth" },
+      { metric: "75+", label: "Locksmith Keywords Page 1" },
+      { metric: "88%", label: "Increase in Emergency Calls" },
+      { metric: "6.1x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How critical is mobile optimization for locksmith SEO?", a: "It's everything. Over 95% of emergency locksmith searches happen on phones. Your site must load instantly, have a tappable phone number above the fold, and display your service area clearly." },
+      { q: "How do I compete with scam locksmith companies in search?", a: "Legitimate locksmiths win by displaying real business addresses, license numbers, BBB accreditation, and authentic reviews. Google increasingly penalizes fake listings, rewarding real businesses." },
+      { q: "Should I separate automotive and residential locksmith SEO?", a: "Yes. Car lockout customers have different needs than homeowners changing locks. Separate pages for automotive, residential, and commercial services capture more specific search intent." },
+      { q: "How fast can locksmith SEO generate calls?", a: "Emergency locksmith terms can see ranking improvements within 4-6 weeks with GBP optimization and citation building. This is one of the fastest-responding industries to local SEO." },
+      { q: "Is smart lock installation worth targeting in SEO?", a: "Definitely. Smart lock and access control searches are growing 150%+ annually. These are also higher-ticket jobs, making them extremely valuable SEO targets." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo"],
+    defaultLocs
+  ),
+
+  // ROOFING — detailed
+  ind("roofing-seo", "Roofing SEO", "Roofers", "SEO for Roofers - Roofing Company Marketing & Lead Generation", "Expert SEO for roofing companies. Rank for roof repair, roof replacement, storm damage, and all roofing keywords to generate qualified leads.", Home, "Home Services & Trades", "Roofers",
+    "Generate more roofing leads with SEO strategies built for roofing contractors. From storm damage repairs to full replacements, we help you rank for high-value roofing keywords.",
+    [
+      { title: "Storm-Driven Demand Spikes", desc: "Hail storms, hurricanes, and severe weather create massive search spikes. Ranking before storms hit means capturing thousands of leads when homeowners need you most." },
+      { title: "High Ticket Sales Cycle", desc: "Roof replacements average $8,000-$25,000. Homeowners research extensively before choosing, meaning your SEO must dominate informational and commercial search stages." },
+      { title: "Insurance Claim Complexity", desc: "Many roofing jobs involve insurance claims. Content about the insurance process, what's covered, and how to file claims captures a huge segment of motivated searchers." },
+      { title: "Seasonal + Regional Variation", desc: "Roofing demand varies by climate zone and season. Florida roofers need hurricane content; Midwest roofers need hail damage content." },
+    ],
+    [
+      { title: "Storm Damage Content", desc: "Pre-built storm damage landing pages ready to deploy when severe weather hits your area, capturing surging search demand immediately." },
+      { title: "Material-Specific Pages", desc: "Dedicated pages for asphalt shingles, metal roofing, tile roofing, flat roofing, and each material type you install." },
+      { title: "Insurance Process Content", desc: "Comprehensive guides on filing insurance claims, what's covered, and working with adjusters that capture high-intent homeowner traffic." },
+      { title: "Roofing Cost Calculators", desc: "Interactive tools and content around roofing costs, material comparisons, and financing options that attract and convert." },
+    ],
+    ["roofer near me", "roof repair", "roof replacement", "roof leak repair", "storm damage roof", "commercial roofing", "metal roofing", "roof inspection", "hail damage repair", "shingle repair", "flat roof repair", "roof replacement cost", "emergency roof repair", "gutter installation", "roof insurance claim", "new roof estimate"],
+    [
+      { metric: "450%", label: "Organic Traffic Growth" },
+      { metric: "140+", label: "Roofing Keywords Page 1" },
+      { metric: "67%", label: "Increase in Estimates" },
+      { metric: "5.8x", label: "Return on Investment" },
+    ],
+    [
+      { q: "How does storm damage affect roofing SEO?", a: "Storms create massive search spikes. We pre-build storm damage pages so when severe weather hits your area, your site is already optimized to capture the surge in roofing searches." },
+      { q: "Should I create pages for each roofing material?", a: "Yes. Homeowners search specifically for 'metal roof installation', 'asphalt shingle replacement', etc. Material-specific pages capture these searches and showcase your expertise." },
+      { q: "How can SEO help with insurance claim roofing jobs?", a: "Content about the insurance claim process — what's covered, how to document damage, working with adjusters — captures homeowners early in their decision process and positions you as the expert." },
+      { q: "What's the ROI of roofing SEO?", a: "With average roof replacements at $10,000-$20,000, even 2-3 extra jobs per month from SEO delivers $20,000-$60,000 in revenue — typically 5-8x ROI on your SEO investment." },
+      { q: "How long does roofing SEO take?", a: "Initial local ranking improvements in 6-8 weeks. Competitive terms like 'roofer near me' take 3-5 months. Storm-related content can rank quickly due to lower competition." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"],
+    defaultLocs
+  ),
+
+  // Remaining home services (factory for less common ones)
+  ...createHomeServicesRemaining(),
 
   // ============================================================
   // REAL ESTATE & PROPERTY (5 Industries)
@@ -494,17 +727,11 @@ export const industriesData: IndustryData[] = [
   ...createTelecom(),
 ];
 
-// ============ HOME SERVICES FACTORY ============
-function createHomeServices(): IndustryData[] {
+// ============ HOME SERVICES FACTORY (remaining non-detailed entries) ============
+function createHomeServicesRemaining(): IndustryData[] {
   const icon = Home;
   const cat = "Home Services & Trades";
   const svcs: [string, string, string, string, string[]][] = [
-    ["plumbing-seo", "Plumbing SEO", "Plumbers", "SEO for Plumbers - Plumbing Company Lead Generation", ["plumber near me", "emergency plumber", "drain cleaning", "water heater repair", "pipe repair", "sewer line", "toilet repair", "leak detection"]],
-    ["hvac-seo", "HVAC SEO", "HVAC Companies", "SEO for HVAC Companies - Heating Cooling Marketing", ["HVAC near me", "AC repair", "furnace repair", "heating installation", "air conditioning service", "duct cleaning", "HVAC maintenance", "heat pump"]],
-    ["roofing-seo", "Roofing SEO", "Roofers", "SEO for Roofers - Roofing Company Marketing", ["roofer near me", "roof repair", "roof replacement", "roof leak repair", "storm damage roof", "commercial roofing", "metal roofing", "roof inspection"]],
-    ["electrician-seo", "Electrician SEO", "Electricians", "SEO for Electricians - Electrical Contractor Marketing", ["electrician near me", "electrical repair", "panel upgrade", "wiring installation", "emergency electrician", "lighting installation", "electrical inspection", "EV charger installation"]],
-    ["cleaning-seo", "Cleaning Company SEO", "Cleaning Companies", "SEO for Cleaning Companies - Janitorial Service Marketing", ["cleaning service near me", "house cleaning", "office cleaning", "deep cleaning", "move-out cleaning", "commercial cleaning", "carpet cleaning", "window cleaning"]],
-    ["pest-control-seo", "Pest Control SEO", "Pest Control", "SEO for Pest Control - Exterminator Marketing Services", ["pest control near me", "exterminator", "termite treatment", "bed bug removal", "rodent control", "ant control", "mosquito treatment", "wildlife removal"]],
     ["landscaping-seo", "Landscaping SEO", "Landscapers", "SEO for Landscapers - Lawn Care & Garden Marketing", ["landscaper near me", "lawn care service", "landscape design", "tree trimming", "sprinkler installation", "garden maintenance", "hardscaping", "sod installation"]],
     ["painting-seo", "Painting Company SEO", "Painters", "SEO for Painters - Painting Company Lead Generation", ["painter near me", "house painting", "interior painting", "exterior painting", "commercial painting", "cabinet painting", "deck staining", "wallpaper removal"]],
     ["moving-company-seo", "Moving Company SEO", "Moving Companies", "SEO for Moving Companies - Mover Marketing Services", ["movers near me", "moving company", "local moving", "long distance movers", "commercial moving", "packing services", "storage solutions", "piano moving"]],
@@ -518,7 +745,6 @@ function createHomeServices(): IndustryData[] {
     ["foundation-repair-seo", "Foundation Repair SEO", "Foundation Companies", "SEO for Foundation Repair - Structural Repair Marketing", ["foundation repair near me", "basement waterproofing", "crawl space repair", "slab repair", "foundation crack repair", "structural engineer"]],
     ["window-door-seo", "Window & Door SEO", "Window Companies", "SEO for Window & Door Companies - Replacement Window Marketing", ["window replacement near me", "new windows", "patio doors", "storm windows", "energy efficient windows", "window installation"]],
     ["concrete-seo", "Concrete Company SEO", "Concrete Contractors", "SEO for Concrete Contractors - Driveway & Patio Marketing", ["concrete contractor near me", "driveway installation", "concrete patio", "stamped concrete", "concrete repair", "retaining wall", "sidewalk repair"]],
-    ["locksmith-seo", "Locksmith SEO", "Locksmiths", "SEO for Locksmiths - Emergency Lockout Services Marketing", ["locksmith near me", "emergency locksmith", "car lockout", "lock change", "key duplication", "smart lock installation", "commercial locksmith"]],
     ["appliance-repair-seo", "Appliance Repair SEO", "Appliance Repair", "SEO for Appliance Repair - Home Appliance Service Marketing", ["appliance repair near me", "washer repair", "refrigerator repair", "dryer repair", "dishwasher repair", "oven repair", "HVAC repair"]],
     ["handyman-seo", "Handyman SEO", "Handyman Services", "SEO for Handyman Services - General Home Repair Marketing", ["handyman near me", "home repair service", "furniture assembly", "drywall repair", "odd jobs", "honey-do list", "home maintenance"]],
   ];
