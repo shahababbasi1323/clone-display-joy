@@ -2,6 +2,7 @@ import {
   Heart, Scale, Home, Building2, UtensilsCrossed, Code, GraduationCap,
   ShoppingBag, Car, Sparkles, Camera, Plane, Landmark, Music, Tractor,
   Truck, Dumbbell, Stethoscope, Megaphone, Wifi, Hammer, Globe, Zap,
+  Smartphone, Monitor, Wrench, Tv, Printer, Gamepad2, Watch, Cpu, WashingMachine,
   type LucideIcon
 } from "lucide-react";
 
@@ -1318,7 +1319,294 @@ function createTelecom(): IndustryData[] {
   );
 }
 
-// Lookup helpers
+// ============================================================
+// REPAIR & MAINTENANCE
+// ============================================================
+{
+  const cat = "Repair & Maintenance";
+
+  // Phone / Mobile Repair
+  industriesData.push(
+    ind("phone-repair-seo", "Phone Repair SEO", "Phone Repair", "SEO for Phone Repair Shops - Mobile Repair Marketing", "SEO services for phone repair businesses. Rank for cracked screen repair, battery replacement, and mobile device repair searches in your area.", Smartphone, cat, "Phone Repair Shops", "Dominate local search for phone repair services. From cracked screens to water damage, we help your repair shop attract more walk-in customers.",
+      [
+        { title: "Urgency-Based Searches", desc: "Phone repair searches are urgent — customers need fixes now. Your SEO must capture 'phone repair near me' instantly with top local rankings." },
+        { title: "Brand-Specific Competition", desc: "Customers search by brand: iPhone repair, Samsung repair, Google Pixel repair. Each needs dedicated optimization." },
+        { title: "Price Sensitivity", desc: "Customers compare repair costs before visiting. Transparent pricing content and competitive positioning are essential." },
+        { title: "Trust & Warranty Concerns", desc: "Customers worry about repair quality and warranties. Building trust through reviews and guarantees is critical for conversion." },
+      ],
+      [
+        { title: "Brand-Specific Pages", desc: "Create optimized pages for iPhone repair, Samsung repair, Huawei repair, and every major brand you service." },
+        { title: "Service-Specific SEO", desc: "Optimize for screen repair, battery replacement, water damage, charging port repair, and other common fixes." },
+        { title: "Local Dominance", desc: "Google Business Profile optimization, local citations, and review generation to own the local repair market." },
+        { title: "Pricing Transparency", desc: "Structured pricing pages with schema markup that capture comparison shoppers and build trust." },
+      ],
+      ["phone repair near me", "cracked screen repair", "iPhone screen replacement", "Samsung repair", "cell phone battery replacement", "water damaged phone repair", "phone screen fix cost", "mobile repair shop", "broken phone fix"],
+      [{ metric: "500%", label: "Walk-in Traffic" }, { metric: "#1", label: "Map Pack Ranking" }, { metric: "200+", label: "Monthly Leads" }, { metric: "3.5x", label: "ROI" }],
+      [
+        { q: "How can SEO help my phone repair shop?", a: "Most phone repair customers search Google first. Ranking #1 for 'phone repair near me' and brand-specific terms drives a steady stream of walk-in customers without paid ads." },
+        { q: "Should I create pages for each phone brand?", a: "Absolutely. Customers search 'iPhone repair near me' or 'Samsung screen fix'. Dedicated pages for each brand dramatically increase your chances of ranking for these specific searches." },
+        { q: "How important are reviews for phone repair SEO?", a: "Critical. Reviews are the #1 factor for local repair shop rankings. We implement automated review request systems to consistently build your online reputation." },
+        { q: "How fast can I see results?", a: "Phone repair SEO is highly local, so results come faster — often within 6-8 weeks for map pack rankings. Full organic rankings typically improve within 3-4 months." },
+        { q: "Do you optimize for mail-in repair searches too?", a: "Yes. We optimize for both local walk-in and mail-in repair keywords, expanding your customer base beyond your immediate area." },
+      ],
+      ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
+    )
+  );
+
+  // Computer Repair
+  industriesData.push(
+    ind("computer-repair-seo", "Computer Repair SEO", "Computer Repair", "SEO for Computer Repair - PC & Laptop Repair Marketing", "SEO services for computer repair businesses. Rank higher for PC repair, laptop fix, virus removal, and IT support searches.", Monitor, cat, "Computer Repair Shops", "Get more computer repair customers with SEO strategies that capture PC repair, laptop fix, and IT support searches in your area.",
+      [
+        { title: "Wide Service Range", desc: "Computer repair covers hardware, software, virus removal, data recovery, upgrades, and more. Each service needs targeted content." },
+        { title: "Business vs Consumer", desc: "Serving both home users and businesses requires dual SEO strategies with different keyword sets and messaging." },
+        { title: "DIY Competition", desc: "Many users search for DIY fixes first. Creating helpful content that converts DIYers into customers is a unique challenge." },
+        { title: "Remote vs On-Site", desc: "Balancing remote support, in-shop repair, and on-site service requires clear service area and availability optimization." },
+      ],
+      [
+        { title: "Service Category Pages", desc: "Optimized pages for virus removal, data recovery, hardware repair, screen replacement, OS installation, and upgrades." },
+        { title: "Business IT SEO", desc: "Target commercial clients searching for IT support, network setup, server maintenance, and managed IT services." },
+        { title: "Helpful Content Strategy", desc: "Create troubleshooting guides that rank for DIY searches but convert readers into customers for complex repairs." },
+        { title: "Emergency Repair SEO", desc: "Optimize for urgent searches like 'computer repair today', 'emergency data recovery', and 'virus removal near me'." },
+      ],
+      ["computer repair near me", "laptop repair", "PC fix", "virus removal", "data recovery service", "slow computer fix", "laptop screen repair", "computer upgrade", "IT support near me", "hard drive recovery"],
+      [{ metric: "380%", label: "Service Calls" }, { metric: "150+", label: "Keywords Ranked" }, { metric: "70%", label: "More Leads" }, { metric: "4x", label: "ROI" }],
+      [
+        { q: "How does SEO help a computer repair business?", a: "SEO puts your repair shop in front of people actively searching for computer help. Whether it's virus removal, data recovery, or hardware repair, ranking high means more calls and walk-ins." },
+        { q: "Should I target both residential and business clients?", a: "Yes. We create separate content strategies for home users and business clients, as they search differently and have different needs and budgets." },
+        { q: "Can content marketing work for computer repair?", a: "Absolutely. Troubleshooting guides and tech tips attract massive search traffic. Smart CTAs convert readers who realize the fix is beyond their skill level." },
+        { q: "How do I compete with big chains like Geek Squad?", a: "Local SEO, better reviews, transparent pricing, and personalized service content help independent shops outrank chains for local searches." },
+        { q: "What about remote repair service SEO?", a: "We optimize for remote support keywords too, expanding your reach beyond your local area for software issues, virus removal, and IT consulting." },
+      ],
+      ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
+    )
+  );
+
+  // Tablet & iPad Repair
+  industriesData.push(
+    ind("tablet-repair-seo", "Tablet Repair SEO", "Tablet Repair", "SEO for Tablet & iPad Repair Shops", "SEO for tablet and iPad repair businesses. Rank for iPad screen repair, tablet battery replacement, and device restoration searches.", Smartphone, cat, "Tablet & iPad Repair", "Attract more tablet repair customers with SEO strategies optimized for iPad, Samsung Galaxy Tab, and other tablet repair searches.",
+      [
+        { title: "Niche Market", desc: "Tablet repair is a niche within device repair. Targeted SEO helps you stand out from general phone and computer repair shops." },
+        { title: "Brand Variations", desc: "iPad, Samsung Tab, Microsoft Surface, Amazon Fire — each brand's repair terms need dedicated optimization." },
+        { title: "Parts & Pricing", desc: "Customers compare repair vs replacement costs. Content must justify repair value and provide transparent pricing." },
+        { title: "Limited Awareness", desc: "Many consumers don't know tablet repair is available. Educational content expands the market." },
+      ],
+      [
+        { title: "Brand-Specific Pages", desc: "Create pages for iPad repair, Samsung Tab repair, Surface repair, and other popular tablet brands." },
+        { title: "Service Pages", desc: "Optimize for screen replacement, battery swap, charging port fix, and digitizer repair services." },
+        { title: "Local Targeting", desc: "GBP optimization and local content to capture 'tablet repair near me' searches." },
+        { title: "Cost Comparison Content", desc: "Repair vs replacement guides that help customers choose repair and position your shop as the smart choice." },
+      ],
+      ["iPad repair near me", "tablet screen replacement", "iPad battery replacement", "Samsung Tab repair", "Surface Pro repair", "tablet charging port fix", "cracked tablet screen", "iPad glass repair"],
+      defaultCase,
+      [
+        { q: "Is tablet repair SEO different from phone repair?", a: "Yes. Tablet repair has different keywords, lower search volume but higher ticket values. We target brand-specific and service-specific terms unique to tablets." },
+        { q: "How do I rank for iPad repair searches?", a: "Dedicated iPad repair pages with model-specific content, transparent pricing, and strong local SEO signals. Apple brand terms have high search volume." },
+        { q: "Should I show pricing on my website?", a: "Yes. Transparent pricing builds trust and captures comparison shoppers. We structure pricing with schema markup for enhanced search visibility." },
+        { q: "Can SEO bring in enough tablet repair customers?", a: "While volumes are lower than phone repair, tablet repairs have higher margins. SEO ensures you capture the available demand efficiently." },
+        { q: "Do you target business tablet repair too?", a: "Yes. Enterprise tablet fleets need maintenance. We create B2B content targeting companies needing bulk tablet repair and management." },
+      ],
+      ["local-seo", "on-page-seo", "google-business-profile"], defaultLocs
+    )
+  );
+
+  // Game Console Repair
+  industriesData.push(
+    ind("game-console-repair-seo", "Game Console Repair SEO", "Console Repair", "SEO for Game Console Repair - PS5, Xbox, Nintendo Repair", "SEO for game console repair shops. Rank for PS5 repair, Xbox fix, Nintendo Switch repair, and gaming device services.", Gamepad2, cat, "Game Console Repair", "Level up your game console repair business with SEO that captures PlayStation, Xbox, and Nintendo repair searches.",
+      [
+        { title: "Seasonal Demand", desc: "Console repair spikes after holidays and new game releases. SEO must maintain visibility year-round while capitalizing on peaks." },
+        { title: "Model-Specific Searches", desc: "Gamers search for specific models: PS5, Xbox Series X, Switch OLED. Each needs dedicated content." },
+        { title: "DIY Community", desc: "Gaming communities share DIY fixes. Content must demonstrate professional repair value over risky DIY attempts." },
+        { title: "Trust with Expensive Devices", desc: "Consoles are expensive. Customers need proof of expertise and warranty guarantees before trusting a repair shop." },
+      ],
+      [
+        { title: "Console-Specific Pages", desc: "Optimized pages for PS5 repair, Xbox repair, Nintendo Switch repair, and retro console restoration." },
+        { title: "Issue-Specific SEO", desc: "Target 'PS5 overheating fix', 'Xbox disc drive repair', 'Switch Joy-Con drift fix' and similar problem searches." },
+        { title: "Gaming Community Content", desc: "Create content that resonates with gamers — maintenance tips, mod guides, and repair tutorials." },
+        { title: "Local + Mail-In SEO", desc: "Optimize for both local walk-in and nationwide mail-in console repair services." },
+      ],
+      ["PS5 repair near me", "Xbox repair", "Nintendo Switch fix", "console repair shop", "Joy-Con drift fix", "PS5 HDMI repair", "Xbox disc drive repair", "retro console repair", "gaming console fix"],
+      [{ metric: "420%", label: "Repair Inquiries" }, { metric: "#1", label: "Local Rankings" }, { metric: "180+", label: "Monthly Leads" }, { metric: "5x", label: "ROI" }],
+      [
+        { q: "How do I rank for PS5 repair searches?", a: "Dedicated PS5 repair pages with specific issue content (HDMI, overheating, disc drive), model variations, and strong local signals. Same approach for Xbox and Nintendo." },
+        { q: "Should I target retro console repair?", a: "Yes! Retro console repair has a passionate niche audience willing to pay premium prices. It's also less competitive in SEO." },
+        { q: "How do I get mail-in repair customers?", a: "National SEO targeting 'mail-in console repair' and 'PS5 repair service online' plus trust-building content about your shipping and warranty process." },
+        { q: "Can content marketing work for game console repair?", a: "Absolutely. Gaming audiences consume lots of content. Repair guides, maintenance tips, and 'should you repair or replace' articles drive massive traffic." },
+        { q: "How competitive is console repair SEO?", a: "Less competitive than phone repair. Most console repair shops have poor SEO, creating a huge opportunity for early movers." },
+      ],
+      ["local-seo", "content-strategy", "on-page-seo"], defaultLocs
+    )
+  );
+
+  // Watch & Smartwatch Repair
+  industriesData.push(
+    ind("watch-repair-seo", "Watch Repair SEO", "Watch Repair", "SEO for Watch Repair - Smartwatch & Luxury Watch Services", "SEO for watch repair shops. Rank for Apple Watch repair, Rolex service, smartwatch fix, and luxury watch restoration.", Watch, cat, "Watch Repair", "Attract more watch repair customers with SEO targeting smartwatch fixes, luxury watch servicing, and timepiece restoration.",
+      [
+        { title: "Luxury vs Smart", desc: "Watch repair spans affordable smartwatches to luxury timepieces. Different audiences search differently and expect different messaging." },
+        { title: "Brand Trust", desc: "Luxury watch owners need confidence in your expertise. Certifications and brand-specific experience must be highlighted." },
+        { title: "Growing Smartwatch Market", desc: "Apple Watch, Samsung Galaxy Watch, and Fitbit repairs are growing rapidly. Capturing this demand early is key." },
+        { title: "Niche Expertise", desc: "Watch repair is a specialized trade. Content must demonstrate deep expertise to build trust with discerning customers." },
+      ],
+      [
+        { title: "Smartwatch Pages", desc: "Optimize for Apple Watch screen repair, battery replacement, and other smartwatch-specific services." },
+        { title: "Luxury Watch Content", desc: "Brand pages for Rolex, Omega, Tag Heuer servicing that demonstrate certified expertise." },
+        { title: "Service-Specific SEO", desc: "Battery replacement, crystal repair, water damage, band replacement — each gets a dedicated page." },
+        { title: "Local & Specialty SEO", desc: "Dominate local search while also targeting collectors and enthusiasts nationwide." },
+      ],
+      ["watch repair near me", "Apple Watch screen repair", "Rolex service", "watch battery replacement", "smartwatch repair", "luxury watch restoration", "watch crystal replacement", "watch band repair"],
+      defaultCase,
+      [
+        { q: "Can SEO help a watch repair business?", a: "Yes. 'Watch repair near me' gets thousands of searches monthly. Ranking for this plus brand-specific terms drives steady customer flow." },
+        { q: "Should I target smartwatch and luxury watch separately?", a: "Absolutely. These audiences search differently and have different expectations. Separate content strategies ensure you capture both markets." },
+        { q: "How do I build trust for luxury watch repair online?", a: "Showcase certifications, brand-specific training, before/after galleries, and detailed customer testimonials. Schema markup highlights your credentials in search." },
+        { q: "Is watch repair SEO competitive?", a: "Moderately. Most watch repair shops have minimal online presence, giving well-optimized shops a significant competitive advantage." },
+        { q: "Do you target mail-order watch repair?", a: "Yes. Many customers mail luxury watches for service. We optimize for national terms alongside local repair keywords." },
+      ],
+      ["local-seo", "on-page-seo", "content-strategy"], defaultLocs
+    )
+  );
+
+  // Appliance Repair
+  industriesData.push(
+    ind("appliance-repair-seo", "Appliance Repair SEO", "Appliance Repair", "SEO for Appliance Repair - Home Appliance Service Marketing", "SEO for appliance repair companies. Rank for refrigerator repair, washer fix, dryer repair, and home appliance service searches.", WashingMachine, cat, "Appliance Repair", "Get more service calls with SEO strategies targeting refrigerator repair, washer/dryer fix, dishwasher repair, and all home appliance services.",
+      [
+        { title: "Emergency Nature", desc: "Appliance breakdowns are emergencies. Customers need help today. Your SEO must capture these urgent, high-intent searches." },
+        { title: "Brand + Appliance Combinations", desc: "Customers search 'Samsung refrigerator repair' or 'LG washer fix'. Thousands of brand-appliance combinations need coverage." },
+        { title: "Seasonal Fluctuations", desc: "AC repair peaks in summer, furnace repair in winter. SEO strategy must account for seasonal demand shifts." },
+        { title: "National Franchise Competition", desc: "National brands spend heavily on SEO. Local appliance repair businesses need smart strategies to compete." },
+      ],
+      [
+        { title: "Appliance Category Pages", desc: "Dedicated pages for refrigerator, washer, dryer, dishwasher, oven, microwave, and HVAC repair services." },
+        { title: "Brand-Specific Content", desc: "Pages targeting Samsung, LG, Whirlpool, GE, Maytag, and other brand-specific repair searches." },
+        { title: "Emergency SEO", desc: "Optimize for 'same day appliance repair', 'emergency refrigerator fix', and other urgent search terms." },
+        { title: "Service Area Expansion", desc: "Build location pages for every city and neighborhood you serve to capture hyper-local searches." },
+      ],
+      ["appliance repair near me", "refrigerator repair", "washer repair", "dryer not working", "dishwasher repair", "oven repair service", "Samsung appliance repair", "same day appliance fix", "HVAC repair"],
+      [{ metric: "450%", label: "Service Calls" }, { metric: "#1", label: "Local Rankings" }, { metric: "85%", label: "More Leads" }, { metric: "5x", label: "ROI" }],
+      [
+        { q: "How fast can appliance repair SEO work?", a: "Appliance repair is highly local and urgent. Map pack improvements often happen in 4-6 weeks. Full organic rankings improve in 3-4 months." },
+        { q: "Should I create pages for every appliance brand?", a: "Yes. Brand-specific pages capture searches like 'LG washer repair near me'. These long-tail terms convert extremely well." },
+        { q: "How do I compete with franchise appliance repair companies?", a: "Local SEO, better reviews, faster response times, and community content. Franchises often have generic content that can't match locally optimized pages." },
+        { q: "Is seasonal SEO important for appliance repair?", a: "Yes. We prepare content and optimize ahead of seasonal peaks — AC repair before summer, furnace repair before winter — so you rank when demand surges." },
+        { q: "Can SEO replace paid ads for appliance repair?", a: "Over time, yes. Organic leads cost 70% less than paid leads and convert better. Most successful appliance repair companies use SEO as their primary lead source." },
+      ],
+      ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
+    )
+  );
+
+  // TV & Electronics Repair
+  industriesData.push(
+    ind("tv-repair-seo", "TV Repair SEO", "TV Repair", "SEO for TV & Electronics Repair Services", "SEO for TV and electronics repair shops. Rank for TV screen repair, electronics fix, and audio equipment service searches.", Tv, cat, "TV & Electronics Repair", "Boost your electronics repair business with SEO that captures TV repair, home theater service, and consumer electronics fix searches.",
+      [
+        { title: "Repair vs Replace", desc: "Many consumers consider replacing over repairing. Your content must make a compelling case for professional repair." },
+        { title: "Model Diversity", desc: "Hundreds of TV models and electronics brands exist. Content strategy must efficiently cover the most-searched devices." },
+        { title: "Declining Repair Perception", desc: "Some consumers think electronics repair is outdated. SEO content must educate about sustainability and cost savings." },
+        { title: "In-Home Service Demand", desc: "Large TVs can't be easily transported. Customers search for in-home TV repair services." },
+      ],
+      [
+        { title: "TV Repair Pages", desc: "Samsung, LG, Sony, TCL TV repair pages targeting brand-specific screen, backlight, and power issues." },
+        { title: "Electronics Service Pages", desc: "Audio systems, home theaters, streaming devices, and other consumer electronics repair content." },
+        { title: "In-Home vs Shop SEO", desc: "Optimize for both 'TV repair near me' and 'in-home TV repair service' searches." },
+        { title: "Cost Comparison Content", desc: "Repair vs replacement calculators and guides that justify professional repair over buying new." },
+      ],
+      ["TV repair near me", "Samsung TV screen fix", "LG TV repair", "TV not turning on", "cracked TV screen repair", "home theater repair", "in-home TV service", "electronics repair shop"],
+      defaultCase,
+      [
+        { q: "Is TV repair SEO worthwhile?", a: "Yes. Despite 'replace' culture, thousands search for TV repair monthly. High-ticket repairs mean strong ROI from even moderate search traffic." },
+        { q: "Should I target specific TV brands?", a: "Yes. Samsung, LG, and Sony repairs get the most searches. Brand-specific pages capture these high-intent queries." },
+        { q: "How do I convince customers to repair instead of replace?", a: "Cost comparison content, sustainability messaging, and same-day service positioning. We create content that makes repair the obvious choice." },
+        { q: "Can I rank for in-home TV repair?", a: "Absolutely. 'In-home TV repair' is a growing search term. We optimize for this service model with proper schema and local targeting." },
+        { q: "What about other electronics beyond TVs?", a: "We optimize for all electronics: audio systems, projectors, gaming monitors, and more. Each category gets targeted content." },
+      ],
+      ["local-seo", "content-strategy", "on-page-seo"], defaultLocs
+    )
+  );
+
+  // Printer Repair
+  industriesData.push(
+    ind("printer-repair-seo", "Printer Repair SEO", "Printer Repair", "SEO for Printer Repair & Copier Services", "SEO for printer and copier repair businesses. Rank for printer fix, copier maintenance, and office equipment repair searches.", Printer, cat, "Printer & Copier Repair", "Get more printer repair service calls with SEO targeting home and office printer fix, copier maintenance, and managed print services.",
+      [
+        { title: "B2B and B2C Markets", desc: "Printer repair serves both home users and businesses. Enterprise contracts and home repairs require different SEO approaches." },
+        { title: "Brand Complexity", desc: "HP, Canon, Brother, Epson, Xerox — each brand has loyal users searching for brand-specific repair help." },
+        { title: "Managed Print Services", desc: "B2B managed print services represent high-value recurring revenue. SEO for these terms is highly competitive." },
+        { title: "Declining Home Printing", desc: "While home printing declines, business printing remains strong. SEO must focus on the most profitable segments." },
+      ],
+      [
+        { title: "Brand Repair Pages", desc: "HP printer repair, Canon fix, Brother maintenance — dedicated pages for every major brand." },
+        { title: "Business IT SEO", desc: "Target 'managed print services', 'office copier repair', and 'commercial printer maintenance' searches." },
+        { title: "Problem-Based Content", desc: "Optimize for 'printer not printing', 'paper jam fix', 'printer offline' — common problem searches." },
+        { title: "Local Service SEO", desc: "Map pack optimization and service area pages for local printer repair dominance." },
+      ],
+      ["printer repair near me", "HP printer fix", "copier repair", "printer not printing", "office printer service", "managed print services", "laser printer repair", "Canon printer fix"],
+      defaultCase,
+      [
+        { q: "Is there demand for printer repair SEO?", a: "Yes, especially for business clients. 'Printer repair near me' gets significant monthly searches, and B2B managed print services are high-value contracts." },
+        { q: "Should I target home or business clients?", a: "Both, but with separate strategies. Business clients offer recurring revenue and higher margins. Home clients provide steady volume." },
+        { q: "How do I rank for managed print services?", a: "Enterprise content, case studies, cost calculators, and professional B2B SEO targeting IT decision-makers searching for print management solutions." },
+        { q: "Can SEO help sell printer supplies too?", a: "Yes. We can optimize for ink, toner, and paper searches, creating an additional revenue stream alongside repair services." },
+        { q: "What about 3D printer repair?", a: "3D printer repair is an emerging niche with growing demand. We can create early-mover content for this market." },
+      ],
+      ["local-seo", "ecommerce-seo", "content-strategy"], defaultLocs
+    )
+  );
+
+  // Data Recovery
+  industriesData.push(
+    ind("data-recovery-seo", "Data Recovery SEO", "Data Recovery", "SEO for Data Recovery Services - Hard Drive & SSD Recovery", "SEO for data recovery businesses. Rank for hard drive recovery, SSD data rescue, RAID recovery, and file restoration searches.", Cpu, cat, "Data Recovery", "Recover more clients with SEO strategies that capture urgent data recovery, hard drive rescue, and file restoration searches.",
+      [
+        { title: "Extreme Urgency", desc: "Data loss is an emergency. Customers search with high urgency and convert fast. Your SEO must ensure instant visibility." },
+        { title: "Trust Requirements", desc: "Customers trust you with irreplaceable data. Credentials, clean room facilities, and success rates must be prominently displayed." },
+        { title: "Technical Complexity", desc: "RAID recovery, SSD recovery, and encrypted data recovery require different content for different customer segments." },
+        { title: "National vs Local", desc: "Data recovery serves both local walk-ins and nationwide mail-in customers. SEO must target both." },
+      ],
+      [
+        { title: "Service-Specific Pages", desc: "Hard drive recovery, SSD recovery, RAID recovery, flash drive rescue — each gets optimized content." },
+        { title: "Emergency SEO", desc: "Rank for 'emergency data recovery', 'urgent hard drive repair', and '24/7 data recovery' searches." },
+        { title: "Trust-Building Content", desc: "Success rate statistics, clean room certification, case studies, and customer testimonials for credibility." },
+        { title: "National Mail-In SEO", desc: "Optimize for nationwide searches to capture mail-in data recovery customers beyond your local market." },
+      ],
+      ["data recovery near me", "hard drive recovery", "SSD data recovery", "RAID recovery service", "deleted file recovery", "water damaged hard drive", "encrypted data recovery", "emergency data recovery"],
+      [{ metric: "300%", label: "Recovery Requests" }, { metric: "#1", label: "Emergency Rankings" }, { metric: "95%", label: "Success Rate" }, { metric: "6x", label: "ROI" }],
+      [
+        { q: "How important is SEO for data recovery?", a: "Critical. Data recovery searches are urgent and high-value. A single recovered drive can generate $500-$2,000+. Ranking #1 ensures you capture these high-intent customers." },
+        { q: "Should I target national or local searches?", a: "Both. Local captures walk-ins, while national mail-in SEO expands your market dramatically. Many successful data recovery businesses earn 50%+ revenue from mail-in services." },
+        { q: "How do I build trust online?", a: "Showcase clean room certifications, success rates, detailed case studies, and genuine customer reviews. Schema markup ensures credentials appear in search results." },
+        { q: "Can I rank for RAID and enterprise recovery?", a: "Yes. Enterprise data recovery is less competitive and extremely high-value. Technical content targeting IT managers searching for RAID and server recovery is very effective." },
+        { q: "How fast do data recovery SEO results appear?", a: "Due to high urgency and local intent, map pack improvements can happen in 4-6 weeks. Full organic rankings for competitive terms take 3-5 months." },
+      ],
+      ["local-seo", "technical-seo", "content-strategy"], defaultLocs
+    )
+  );
+
+  // AC & HVAC Repair
+  industriesData.push(
+    ind("ac-repair-seo", "AC & HVAC Repair SEO", "AC & HVAC Repair", "SEO for AC Repair & HVAC Services", "SEO for AC repair and HVAC companies. Rank for air conditioning repair, furnace fix, HVAC maintenance, and heating/cooling service searches.", Wrench, cat, "AC & HVAC Repair", "Keep the calls coming year-round with SEO strategies for AC repair, furnace service, HVAC maintenance, and heating/cooling installation.",
+      [
+        { title: "Extreme Seasonality", desc: "AC repair peaks in summer, heating in winter. Year-round SEO strategy must prepare for seasonal surges months in advance." },
+        { title: "Emergency Searches", desc: "HVAC failures are emergencies. 'AC not working' and 'no heat' searches spike with extreme weather. Speed to rank is critical." },
+        { title: "High Competition", desc: "HVAC is one of the most competitive local SEO markets. Large companies spend heavily on both paid and organic search." },
+        { title: "Service Diversity", desc: "Installation, repair, maintenance, duct cleaning — each service line needs its own SEO strategy and content." },
+      ],
+      [
+        { title: "Seasonal Content Planning", desc: "Prepare AC content before summer and heating content before winter so pages are ranking when demand surges." },
+        { title: "Emergency Ranking Strategy", desc: "Optimize for 'emergency AC repair', 'no heat fix', '24/7 HVAC service' with dedicated emergency landing pages." },
+        { title: "Full Service Coverage", desc: "Installation, repair, maintenance, duct cleaning, indoor air quality — every service gets a dedicated, optimized page." },
+        { title: "Hyper-Local Targeting", desc: "Service area pages for every city and neighborhood, targeting 'AC repair in [area]' searches." },
+      ],
+      ["AC repair near me", "HVAC service", "furnace repair", "air conditioning fix", "heating repair", "emergency AC service", "HVAC installation", "duct cleaning", "AC not cooling"],
+      [{ metric: "500%", label: "Service Calls" }, { metric: "#1", label: "Map Pack" }, { metric: "250+", label: "Monthly Leads" }, { metric: "4.5x", label: "ROI" }],
+      [
+        { q: "When should I start HVAC SEO?", a: "Now. SEO takes months to build momentum. Starting in spring means you'll rank when summer AC demand hits. Year-round SEO ensures you're never scrambling." },
+        { q: "How competitive is HVAC SEO?", a: "Very competitive. But most HVAC companies rely on paid ads, not SEO. A solid organic strategy provides cheaper, more sustainable leads than competitors paying per click." },
+        { q: "Should I focus on repair or installation keywords?", a: "Both. Repair keywords have higher urgency and volume, while installation keywords have higher customer value. A balanced strategy maximizes revenue." },
+        { q: "How do I rank for emergency HVAC searches?", a: "Dedicated emergency pages, fast-loading mobile site, prominent phone numbers, 24/7 availability messaging, and strong review profile." },
+        { q: "Can SEO help with commercial HVAC leads?", a: "Yes. Commercial HVAC SEO targets property managers, facility directors, and business owners. These leads have much higher lifetime value." },
+      ],
+      ["local-seo", "google-business-profile", "technical-seo"], defaultLocs
+    )
+  );
+}
+
+
 export function getIndustryBySlug(slug: string): IndustryData | undefined {
   return industriesData.find(i => i.slug === slug);
 }
@@ -1348,5 +1636,6 @@ export const INDUSTRY_CATEGORIES = [
   "Energy & Utilities",
   "Marketing & Advertising",
   "Telecom & Internet",
+  "Repair & Maintenance",
   "Other Industries",
 ];
