@@ -75,16 +75,8 @@ const App = () => (
           <Route path="/admin/settings" element={<AdminSettings />} />
 
           {/* Multilingual industry pages */}
-          <Route path="/ar/industries" element={<IndustriesLang />} />
-          <Route path="/ar/industries/:slug" element={<IndustryPageLang />} />
-          <Route path="/fr/industries" element={<IndustriesLang />} />
-          <Route path="/fr/industries/:slug" element={<IndustryPageLang />} />
-          <Route path="/de/industries" element={<IndustriesLang />} />
-          <Route path="/de/industries/:slug" element={<IndustryPageLang />} />
-          <Route path="/es/industries" element={<IndustriesLang />} />
-          <Route path="/es/industries/:slug" element={<IndustryPageLang />} />
-          <Route path="/nl/industries" element={<IndustriesLang />} />
-          <Route path="/nl/industries/:slug" element={<IndustryPageLang />} />
+          <Route path="/:lang/industries" element={<IndustriesLang />} />
+          <Route path="/:lang/industries/:slug" element={<IndustryPageLang />} />
 
           {/* Location pages - English (no prefix) */}
           <Route path="/:slug" element={<LocationPage />} />
