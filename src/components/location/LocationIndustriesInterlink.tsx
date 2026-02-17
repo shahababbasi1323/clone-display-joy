@@ -69,12 +69,41 @@ const industryNames: Record<string, Record<string, string>> = {
     "healthcare-seo": "בריאות", "real-estate-seo": "נדל\"ן", "ecommerce-retail-seo": "מסחר אלקטרוני",
     "saas-seo": "SaaS וטכנולוגיה", "startup-seo": "סטארטאפים",
   },
+  da: {
+    "healthcare-seo": "Sundhed", "dental-seo": "Tandlæger", "legal-seo": "Juridisk",
+    "real-estate-seo": "Ejendomme", "restaurant-seo": "Restauranter", "ecommerce-retail-seo": "E-handel",
+    "saas-seo": "SaaS & Tech", "education-seo": "Uddannelse", "construction-seo": "Byggeri",
+    "travel-seo": "Turisme & Rejser", "auto-dealer-seo": "Bilforhandlere", "beauty-salon-seo": "Skønhed",
+    "fashion-seo": "Mode", "fitness-seo": "Fitness", "accounting-seo": "Regnskab",
+  },
+  sv: {
+    "healthcare-seo": "Hälsovård", "dental-seo": "Tandläkare", "legal-seo": "Juridik",
+    "real-estate-seo": "Fastigheter", "restaurant-seo": "Restauranger", "ecommerce-retail-seo": "E-handel",
+    "saas-seo": "SaaS & Tech", "education-seo": "Utbildning", "construction-seo": "Bygg",
+    "travel-seo": "Turism & Resor", "auto-dealer-seo": "Bilhandlare", "beauty-salon-seo": "Skönhet",
+    "fashion-seo": "Mode", "fitness-seo": "Fitness", "accounting-seo": "Redovisning",
+  },
+  no: {
+    "healthcare-seo": "Helsevesen", "dental-seo": "Tannleger", "legal-seo": "Juridisk",
+    "real-estate-seo": "Eiendom", "restaurant-seo": "Restauranter", "ecommerce-retail-seo": "E-handel",
+    "saas-seo": "SaaS & Tech", "education-seo": "Utdanning", "construction-seo": "Bygg & Anlegg",
+    "travel-seo": "Turisme & Reiser", "auto-dealer-seo": "Bilforhandlere", "beauty-salon-seo": "Skjønnhet",
+    "fashion-seo": "Mote", "fitness-seo": "Fitness", "accounting-seo": "Regnskap",
+  },
+  fi: {
+    "healthcare-seo": "Terveydenhuolto", "dental-seo": "Hammaslääkärit", "legal-seo": "Lakipalvelut",
+    "real-estate-seo": "Kiinteistöt", "restaurant-seo": "Ravintolat", "ecommerce-retail-seo": "Verkkokauppa",
+    "saas-seo": "SaaS & Tech", "education-seo": "Koulutus", "construction-seo": "Rakentaminen",
+    "travel-seo": "Matkailu", "auto-dealer-seo": "Autokaupat", "beauty-salon-seo": "Kauneus",
+    "fashion-seo": "Muoti", "fitness-seo": "Fitness", "accounting-seo": "Kirjanpito",
+  },
 };
 
 const learnMoreLabels: Record<string, string> = {
   ar: "اعرف المزيد", fr: "En savoir plus", de: "Mehr erfahren", es: "Saber más",
   nl: "Meer leren", it: "Scopri di più", pt: "Saiba mais", tr: "Daha fazla",
   ja: "詳しく見る", ko: "더 알아보기", he: "למידע נוסף",
+  da: "Læs mere", sv: "Läs mer", no: "Les mer", fi: "Lue lisää",
 };
 
 const i18nLangs: SupportedIndustryLang[] = ["ar", "fr", "de", "es", "nl"];
