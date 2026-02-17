@@ -33,7 +33,26 @@ const navLinks = [
       { label: "🇳🇱 Nederlands", href: "/nl/industries" },
     ],
   },
-  { label: "Locations", href: "/locations" },
+  {
+    label: "Locations",
+    href: "/locations",
+    children: [
+      { label: "🇵🇰 Pakistan", group: true },
+      { label: "Islamabad", href: "/islamabad" },
+      { label: "Karachi", href: "/karachi" },
+      { label: "Lahore", href: "/lahore" },
+      { label: "🇦🇪 UAE", group: true },
+      { label: "Dubai", href: "/dubai" },
+      { label: "Abu Dhabi", href: "/abu-dhabi" },
+      { label: "🇬🇧 United Kingdom", group: true },
+      { label: "London", href: "/london" },
+      { label: "Manchester", href: "/manchester" },
+      { label: "🇺🇸 United States", group: true },
+      { label: "New York", href: "/new-york" },
+      { label: "Los Angeles", href: "/los-angeles" },
+      { label: "All Locations →", href: "/locations" },
+    ],
+  },
   { label: "Pricing", href: "/pricing" },
   { label: "Tools", href: "/tools" },
   { label: "Blog", href: "/blog" },
@@ -90,16 +109,22 @@ const Navbar = () => {
                   <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
                 </button>
                 {openDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-1 glass rounded-lg py-2 min-w-[180px] shadow-xl">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        to={child.href}
-                        className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div className="absolute top-full left-0 mt-1 rounded-lg py-2 min-w-[200px] shadow-xl z-50 bg-card border border-border backdrop-blur-none max-h-[70vh] overflow-y-auto">
+                    {link.children.map((child, idx) =>
+                      'group' in child && child.group ? (
+                        <div key={idx} className="px-4 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 border-t border-border first:border-t-0 first:pt-2">
+                          {child.label}
+                        </div>
+                      ) : (
+                        <Link
+                          key={child.href}
+                          to={child.href!}
+                          className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 )}
               </div>
@@ -145,10 +170,10 @@ const Navbar = () => {
                   <div className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     {link.label}
                   </div>
-                  {link.children.map((child) => (
+                  {link.children.filter(c => !('group' in c && c.group)).map((child) => (
                     <Link
                       key={child.href}
-                      to={child.href}
+                      to={child.href!}
                       className="px-6 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
                     >
                       {child.label}
