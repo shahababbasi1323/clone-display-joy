@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-card/30">
       <div className="container mx-auto section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="text-2xl font-bold">
@@ -54,6 +54,28 @@ const Footer = () => {
                 <li key={s}>
                   <Link to="/services" className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {s}
+                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Industries */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">Industries</h3>
+            <ul className="space-y-2">
+              {[
+                { label: "🇬🇧 English", href: "/industries" },
+                { label: "🇸🇦 العربية", href: "/ar/industries" },
+                { label: "🇫🇷 Français", href: "/fr/industries" },
+                { label: "🇩🇪 Deutsch", href: "/de/industries" },
+                { label: "🇪🇸 Español", href: "/es/industries" },
+                { label: "🇳🇱 Nederlands", href: "/nl/industries" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
+                    {link.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
