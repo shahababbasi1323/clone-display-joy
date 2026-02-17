@@ -6,7 +6,21 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
+  {
+    label: "Services",
+    href: "/services",
+    children: [
+      { label: "Technical SEO", href: "/services/technical-seo" },
+      { label: "On-Page SEO", href: "/services/on-page-seo" },
+      { label: "Link Building", href: "/services/link-building" },
+      { label: "Local SEO", href: "/services/local-seo" },
+      { label: "E-commerce SEO", href: "/services/ecommerce-seo" },
+      { label: "GEO Optimization", href: "/services/geo-optimization" },
+      { label: "Content Strategy", href: "/services/content-strategy" },
+      { label: "SEO Consulting", href: "/services/seo-consulting" },
+      { label: "All Services →", href: "/services" },
+    ],
+  },
   {
     label: "Industries",
     href: "/industries",
