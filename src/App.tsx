@@ -32,6 +32,8 @@ import AdminCaseStudies from "./pages/admin/AdminCaseStudies";
 import AdminTestimonials from "./pages/admin/AdminTestimonials";
 import AdminLeads from "./pages/admin/AdminLeads";
 import AdminSettings from "./pages/admin/AdminSettings";
+import IndustriesLang from "./pages/IndustriesLang";
+import IndustryPageLang from "./pages/IndustryPageLang";
 
 const queryClient = new QueryClient();
 
@@ -71,6 +73,18 @@ const App = () => (
           <Route path="/admin/testimonials" element={<AdminTestimonials />} />
           <Route path="/admin/leads" element={<AdminLeads />} />
           <Route path="/admin/settings" element={<AdminSettings />} />
+
+          {/* Multilingual industry pages */}
+          <Route path="/ar/industries" element={<IndustriesLang />} />
+          <Route path="/ar/industries/:slug" element={<IndustryPageLang />} />
+          <Route path="/fr/industries" element={<IndustriesLang />} />
+          <Route path="/fr/industries/:slug" element={<IndustryPageLang />} />
+          <Route path="/de/industries" element={<IndustriesLang />} />
+          <Route path="/de/industries/:slug" element={<IndustryPageLang />} />
+          <Route path="/es/industries" element={<IndustriesLang />} />
+          <Route path="/es/industries/:slug" element={<IndustryPageLang />} />
+          <Route path="/nl/industries" element={<IndustriesLang />} />
+          <Route path="/nl/industries/:slug" element={<IndustryPageLang />} />
 
           {/* Location pages - English (no prefix) */}
           <Route path="/:slug" element={<LocationPage />} />
