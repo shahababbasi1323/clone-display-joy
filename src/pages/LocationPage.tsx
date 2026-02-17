@@ -62,16 +62,34 @@ const LocationPage = () => {
                 <span className="text-sm font-medium text-primary">{displayCountry}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                {loc.lang === "en"
-                  ? <>Professional SEO Services in <span className="text-gradient">{displayCity}</span></>
-                  : loc.lang === "ar"
-                    ? <>خدمات تحسين محركات البحث الاحترافية في <span className="text-gradient">{displayCity}</span></>
-                    : loc.lang === "fr"
-                      ? <>Services SEO Professionnels à <span className="text-gradient">{displayCity}</span></>
-                      : loc.lang === "de"
-                        ? <>Professionelle SEO-Dienste in <span className="text-gradient">{displayCity}</span></>
-                        : <>SEO Services in <span className="text-gradient">{displayCity}</span></>
-                }
+                {(() => {
+                  const h1Map: Record<string, string> = {
+                    en: "Professional SEO Services in",
+                    ar: "خدمات تحسين محركات البحث الاحترافية في",
+                    fr: "Services SEO Professionnels à",
+                    de: "Professionelle SEO-Dienste in",
+                    nl: "Professionele SEO-diensten in",
+                    es: "Servicios SEO Profesionales en",
+                    it: "Servizi SEO Professionali a",
+                    pt: "Serviços SEO Profissionais em",
+                    tr: "Profesyonel SEO Hizmetleri",
+                    ja: "プロフェッショナルSEOサービス",
+                    ko: "전문 SEO 서비스",
+                    he: "שירותי קידום אתרים מקצועיים ב",
+                    da: "Professionelle SEO-tjenester i",
+                    sv: "Professionella SEO-tjänster i",
+                    no: "Profesjonelle SEO-tjenester i",
+                    fi: "Ammattimaiset SEO-palvelut",
+                    pl: "Profesjonalne Usługi SEO w",
+                    cs: "Profesionální SEO Služby v",
+                    hu: "Professzionális SEO Szolgáltatások",
+                    ro: "Servicii SEO Profesionale în",
+                    el: "Επαγγελματικές Υπηρεσίες SEO στην",
+                    th: "บริการ SEO มืออาชีพใน",
+                  };
+                  const prefix = h1Map[loc.lang] || h1Map.en;
+                  return <>{prefix} <span className="text-gradient">{displayCity}</span></>;
+                })()}
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8">
                 {content.heroSubtitle}
