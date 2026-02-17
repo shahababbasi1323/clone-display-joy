@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
 import LocationPage from "./pages/LocationPage";
+import LocationsLang from "./pages/LocationsLang";
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPost";
 import Industries from "./pages/Industries";
@@ -77,6 +78,9 @@ const App = () => (
           {/* Multilingual industry pages */}
           <Route path="/:lang/industries" element={<IndustriesLang />} />
           <Route path="/:lang/industries/:slug" element={<IndustryPageLang />} />
+
+          {/* Multilingual location hub pages */}
+          <Route path="/:lang/locations" element={<LocationsLang />} />
 
           {/* Location pages - English (no prefix) */}
           <Route path="/:slug" element={<LocationPage />} />
