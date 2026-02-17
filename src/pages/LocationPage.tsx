@@ -1,13 +1,14 @@
 import { useParams, useLocation, Link } from "react-router-dom";
 import NotFound from "./NotFound";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, MapPin, BarChart3, Building2, ChevronDown, Globe, Wrench, BookOpen } from "lucide-react";
+import { ArrowRight, MapPin, BarChart3, ChevronDown, Globe, Wrench, BookOpen } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getLocationBySlugAndLang, locationsData, LANG_PREFIXES } from "@/data/locationsData";
 import { getLocationContent } from "@/data/locationContent";
 import { getLocationRelatedBlogs, getLocationRelatedTools } from "@/data/internalLinks";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 import LocationLsiContent from "@/components/location/LocationLsiContent";
 import LocationLandmarks from "@/components/location/LocationLandmarks";
 import LocationWhyChoose from "@/components/location/LocationWhyChoose";
@@ -33,15 +34,76 @@ const LocationPage = () => {
   const displayCity = loc.localCity || loc.city;
   const displayCountry = loc.localCountry || loc.country;
   const content = getLocationContent(loc.lang, displayCity, displayCountry);
-
-  // Extract city slug for landmarks (e.g., "seo-services-dubai" → "dubai")
   const citySlug = loc.slug.replace("seo-services-", "");
 
   const nearbyCities = loc.nearbyCities
     .map(ns => locationsData.find(l => l.slug === ns && l.langPrefix === loc.langPrefix))
     .filter(Boolean);
 
+  // Same-language cities (excluding nearby and self)
+  const selfSlug = loc.slug;
+  const nearbySet = new Set([selfSlug, ...loc.nearbyCities]);
+  const sameLangCities = locationsData
+    .filter(l => l.langPrefix === loc.langPrefix && !nearbySet.has(l.slug))
+    .slice(0, 12);
+
   const isRTL = loc.isRTL;
+
+  // Unique meta per page
+  const h1Map: Record<string, string> = {
+    en: "Professional SEO Services in",
+    ar: "خدمات تحسين محركات البحث الاحترافية في",
+    fr: "Services SEO Professionnels à",
+    de: "Professionelle SEO-Dienste in",
+    nl: "Professionele SEO-diensten in",
+    es: "Servicios SEO Profesionales en",
+    it: "Servizi SEO Professionali a",
+    pt: "Serviços SEO Profissionais em",
+    tr: "Profesyonel SEO Hizmetleri",
+    ja: "プロフェッショナルSEOサービス",
+    ko: "전문 SEO 서비스",
+    he: "שירותי קידום אתרים מקצועיים ב",
+    da: "Professionelle SEO-tjenester i",
+    sv: "Professionella SEO-tjänster i",
+    no: "Profesjonelle SEO-tjenester i",
+    fi: "Ammattimaiset SEO-palvelut",
+    pl: "Profesjonalne Usługi SEO w",
+    cs: "Profesionální SEO Služby v",
+    hu: "Professzionális SEO Szolgáltatások",
+    ro: "Servicii SEO Profesionale în",
+    el: "Επαγγελματικές Υπηρεσίες SEO στην",
+    th: "บริการ SEO มืออาชีพใน",
+  };
+  const h1Prefix = h1Map[loc.lang] || h1Map.en;
+
+  // Unique SEO meta for this page
+  useSeoMeta({
+    title: loc.metaTitle,
+    description: loc.metaDescription,
+    canonical: `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`,
+  });
+
+  // Localized labels
+  const moreCitiesLabel: Record<string, string> = {
+    en: "More Cities We Serve",
+    ar: "المزيد من المدن التي نخدمها",
+    fr: "Autres Villes que Nous Desservons",
+    de: "Weitere Städte, die Wir Bedienen",
+    es: "Más Ciudades que Servimos",
+    nl: "Meer Steden die We Bedienen",
+    it: "Altre Città che Serviamo",
+    pt: "Mais Cidades que Atendemos",
+    tr: "Hizmet Verdiğimiz Diğer Şehirler",
+    ja: "サービス対象の他の都市",
+    ko: "서비스하는 다른 도시",
+    he: "ערים נוספות שאנו משרתים",
+  };
+
+  const viewPricingLabel: Record<string, string> = {
+    en: "View Pricing", ar: "عرض الأسعار", fr: "Voir les Tarifs", de: "Preise Ansehen",
+    es: "Ver Precios", nl: "Prijzen Bekijken", it: "Vedi Prezzi", pt: "Ver Preços",
+    tr: "Fiyatları Gör", ja: "料金を見る", ko: "가격 보기", he: "צפה במחירים",
+  };
 
   return (
     <Layout>
@@ -53,7 +115,9 @@ const LocationPage = () => {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
                 <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
                 <span>/</span>
-                <Link to="/locations" className="hover:text-foreground transition-colors">Locations</Link>
+                <Link to={loc.langPrefix ? `/${loc.langPrefix}/locations` : "/locations"} className="hover:text-foreground transition-colors">
+                  {loc.lang === "ar" ? "المواقع" : loc.lang === "fr" ? "Emplacements" : loc.lang === "de" ? "Standorte" : loc.lang === "es" ? "Ubicaciones" : "Locations"}
+                </Link>
                 <span>/</span>
                 <span className="text-foreground">{displayCity}</span>
               </div>
@@ -62,34 +126,7 @@ const LocationPage = () => {
                 <span className="text-sm font-medium text-primary">{displayCountry}</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                {(() => {
-                  const h1Map: Record<string, string> = {
-                    en: "Professional SEO Services in",
-                    ar: "خدمات تحسين محركات البحث الاحترافية في",
-                    fr: "Services SEO Professionnels à",
-                    de: "Professionelle SEO-Dienste in",
-                    nl: "Professionele SEO-diensten in",
-                    es: "Servicios SEO Profesionales en",
-                    it: "Servizi SEO Professionali a",
-                    pt: "Serviços SEO Profissionais em",
-                    tr: "Profesyonel SEO Hizmetleri",
-                    ja: "プロフェッショナルSEOサービス",
-                    ko: "전문 SEO 서비스",
-                    he: "שירותי קידום אתרים מקצועיים ב",
-                    da: "Professionelle SEO-tjenester i",
-                    sv: "Professionella SEO-tjänster i",
-                    no: "Profesjonelle SEO-tjenester i",
-                    fi: "Ammattimaiset SEO-palvelut",
-                    pl: "Profesjonalne Usługi SEO w",
-                    cs: "Profesionální SEO Služby v",
-                    hu: "Professzionális SEO Szolgáltatások",
-                    ro: "Servicii SEO Profesionale în",
-                    el: "Επαγγελματικές Υπηρεσίες SEO στην",
-                    th: "บริการ SEO มืออาชีพใน",
-                  };
-                  const prefix = h1Map[loc.lang] || h1Map.en;
-                  return <>{prefix} <span className="text-gradient">{displayCity}</span></>;
-                })()}
+                {h1Prefix} <span className="text-gradient">{displayCity}</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed mb-8">
                 {content.heroSubtitle}
@@ -102,7 +139,7 @@ const LocationPage = () => {
                 </Link>
                 <Link to="/pricing">
                   <Button variant="outline" size="lg">
-                    {loc.lang === "ar" ? "عرض الأسعار" : loc.lang === "fr" ? "Voir les Tarifs" : loc.lang === "de" ? "Preise Ansehen" : "View Pricing"}
+                    {viewPricingLabel[loc.lang] || viewPricingLabel.en}
                   </Button>
                 </Link>
               </div>
@@ -110,7 +147,6 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* LSI Content */}
         <LocationLsiContent content={content} />
 
         {/* Challenges */}
@@ -128,7 +164,6 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* Why Choose Us */}
         <LocationWhyChoose content={content} />
 
         {/* Process */}
@@ -152,19 +187,12 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* AEO Section */}
         <LocationAeo content={content} />
-
-        {/* Landmarks */}
         <LocationLandmarks content={content} citySlug={citySlug} />
+        <LocationServicesInterlink content={content} lang={loc.lang} />
+        <LocationIndustriesInterlink content={content} countryCode={loc.countryCode} lang={loc.lang} />
 
-        {/* Services Interlinking */}
-        <LocationServicesInterlink content={content} />
-
-        {/* Industries Interlinking */}
-        <LocationIndustriesInterlink content={content} countryCode={loc.countryCode} />
-
-        {/* Related Blog Posts */}
+        {/* Related Blogs */}
         {(() => {
           const relBlogs = getLocationRelatedBlogs();
           return relBlogs.length > 0 ? (
@@ -173,7 +201,7 @@ const LocationPage = () => {
                 <div className="flex items-center gap-3 mb-6">
                   <BookOpen className="h-5 w-5 text-accent" />
                   <h2 className="text-2xl font-bold">
-                    {loc.lang === "ar" ? "مقالات مفيدة" : loc.lang === "fr" ? "Articles Utiles" : loc.lang === "de" ? "Nützliche Artikel" : "Helpful SEO Resources"}
+                    {loc.lang === "ar" ? "مقالات مفيدة" : loc.lang === "fr" ? "Articles Utiles" : loc.lang === "de" ? "Nützliche Artikel" : loc.lang === "es" ? "Artículos Útiles" : "Helpful SEO Resources"}
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -199,7 +227,7 @@ const LocationPage = () => {
                 <div className="flex items-center gap-3 mb-6">
                   <Wrench className="h-5 w-5 text-accent" />
                   <h2 className="text-2xl font-bold">
-                    {loc.lang === "ar" ? "أدوات سيو مجانية" : loc.lang === "fr" ? "Outils SEO Gratuits" : loc.lang === "de" ? "Kostenlose SEO-Tools" : "Free SEO Tools"}
+                    {loc.lang === "ar" ? "أدوات سيو مجانية" : loc.lang === "fr" ? "Outils SEO Gratuits" : loc.lang === "de" ? "Kostenlose SEO-Tools" : loc.lang === "es" ? "Herramientas SEO Gratuitas" : "Free SEO Tools"}
                   </h2>
                 </div>
                 <div className="flex flex-wrap gap-3">
@@ -274,9 +302,34 @@ const LocationPage = () => {
                         <h3 className="font-semibold text-sm">{ncCity}</h3>
                       </div>
                       <span className="text-xs text-primary flex items-center gap-1">
-                        {loc.lang === "ar" ? "اعرف المزيد" : loc.lang === "fr" ? "En savoir plus" : loc.lang === "de" ? "Mehr erfahren" : "Learn more"}{" "}
+                        {loc.lang === "ar" ? "اعرف المزيد" : loc.lang === "fr" ? "En savoir plus" : loc.lang === "de" ? "Mehr erfahren" : loc.lang === "es" ? "Saber más" : "Learn more"}{" "}
                         <ArrowRight className={`h-3 w-3 ${isRTL ? "rotate-180" : ""}`} />
                       </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Same-Language Cities */}
+        {sameLangCities.length > 0 && (
+          <section className="section-padding bg-card/20 border-y border-border">
+            <div className="container mx-auto max-w-4xl">
+              <div className="flex items-center gap-3 mb-8">
+                <Globe className="h-5 w-5 text-accent" />
+                <h2 className="text-2xl font-bold">{moreCitiesLabel[loc.lang] || moreCitiesLabel.en}</h2>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                {sameLangCities.map((sc) => {
+                  const scCity = sc.localCity || sc.city;
+                  const scCountry = sc.localCountry || sc.country;
+                  const href = sc.langPrefix ? `/${sc.langPrefix}/${sc.slug}` : `/${sc.slug}`;
+                  return (
+                    <Link key={sc.slug + sc.langPrefix} to={href} className="glass rounded-lg p-4 hover:border-accent/30 transition-all group">
+                      <h4 className="font-semibold text-sm">{scCity}</h4>
+                      <span className="text-xs text-muted-foreground">{scCountry}</span>
                     </Link>
                   );
                 })}
@@ -292,13 +345,13 @@ const LocationPage = () => {
               <div className="flex items-center gap-3 mb-6">
                 <Globe className="h-5 w-5 text-accent" />
                 <h2 className="text-xl font-bold">
-                  {loc.lang === "ar" ? "هذه الصفحة متوفرة أيضًا بلغات أخرى" : loc.lang === "fr" ? "Cette page est aussi disponible en" : loc.lang === "de" ? "Diese Seite ist auch verfügbar in" : "This page is also available in"}
+                  {loc.lang === "ar" ? "هذه الصفحة متوفرة أيضًا بلغات أخرى" : loc.lang === "fr" ? "Cette page est aussi disponible en" : loc.lang === "de" ? "Diese Seite ist auch verfügbar in" : loc.lang === "es" ? "Esta página también está disponible en" : "This page is also available in"}
                 </h2>
               </div>
               <div className="flex flex-wrap gap-3">
                 {loc.hreflangAlternates.map((alt) => (
                   <Link key={alt.lang + alt.href} to={alt.href} className="glass rounded-lg px-4 py-2 hover:border-accent/30 transition-all text-sm font-medium">
-                    {alt.lang === "en" ? "English" : alt.lang === "ar" ? "العربية" : alt.lang === "fr" ? "Français" : alt.lang === "de" ? "Deutsch" : alt.lang === "nl" ? "Nederlands" : alt.lang === "he" ? "עברית" : alt.lang.toUpperCase()}
+                    {alt.lang === "en" ? "English" : alt.lang === "ar" ? "العربية" : alt.lang === "fr" ? "Français" : alt.lang === "de" ? "Deutsch" : alt.lang === "nl" ? "Nederlands" : alt.lang === "he" ? "עברית" : alt.lang === "es" ? "Español" : alt.lang.toUpperCase()}
                   </Link>
                 ))}
               </div>
@@ -321,7 +374,6 @@ const LocationPage = () => {
           </div>
         </section>
 
-        {/* Enhanced Schema */}
         <LocationSchema loc={loc} content={content} displayCity={displayCity} />
       </div>
     </Layout>
