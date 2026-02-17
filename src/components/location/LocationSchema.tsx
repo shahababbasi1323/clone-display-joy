@@ -10,12 +10,33 @@ interface Props {
 const LocationSchema = ({ loc, content, displayCity }: Props) => {
   const baseUrl = "https://shahababbasi.com";
   const pageUrl = `${baseUrl}${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`;
+  const displayCountry = loc.localCountry || loc.country;
+
+  // Digital marketing services in the page's language
+  const serviceNames: Record<string, string[]> = {
+    en: ["Search Engine Optimization (SEO)", "PPC Advertising", "Web Design", "Web Development", "Content Writing", "Social Media Management", "Local SEO", "Technical SEO", "Link Building", "GEO Optimization"],
+    ar: ["تحسين محركات البحث (SEO)", "إعلانات الدفع بالنقرة (PPC)", "تصميم المواقع", "تطوير المواقع", "كتابة المحتوى", "إدارة وسائل التواصل الاجتماعي", "السيو المحلي", "السيو التقني", "بناء الروابط", "تحسين GEO"],
+    fr: ["Référencement SEO", "Publicité PPC", "Web Design", "Développement Web", "Rédaction de Contenu", "Gestion des Réseaux Sociaux", "SEO Local", "SEO Technique", "Netlinking", "Optimisation GEO"],
+    de: ["Suchmaschinenoptimierung (SEO)", "PPC-Werbung", "Webdesign", "Webentwicklung", "Content-Erstellung", "Social-Media-Management", "Lokales SEO", "Technisches SEO", "Linkaufbau", "GEO-Optimierung"],
+    es: ["Posicionamiento SEO", "Publicidad PPC", "Diseño Web", "Desarrollo Web", "Redacción de Contenidos", "Gestión de Redes Sociales", "SEO Local", "SEO Técnico", "Link Building", "Optimización GEO"],
+    nl: ["Zoekmachineoptimalisatie (SEO)", "PPC-Advertenties", "Webdesign", "Webontwikkeling", "Contentcreatie", "Social Media Management", "Lokale SEO", "Technische SEO", "Linkbuilding", "GEO-Optimalisatie"],
+    it: ["Ottimizzazione SEO", "Pubblicità PPC", "Web Design", "Sviluppo Web", "Scrittura Contenuti", "Gestione Social Media", "SEO Locale", "SEO Tecnico", "Link Building", "Ottimizzazione GEO"],
+    pt: ["Otimização SEO", "Publicidade PPC", "Web Design", "Desenvolvimento Web", "Redação de Conteúdo", "Gestão de Redes Sociais", "SEO Local", "SEO Técnico", "Link Building", "Otimização GEO"],
+    tr: ["Arama Motoru Optimizasyonu (SEO)", "PPC Reklamcılığı", "Web Tasarım", "Web Geliştirme", "İçerik Yazarlığı", "Sosyal Medya Yönetimi", "Yerel SEO", "Teknik SEO", "Link İnşası", "GEO Optimizasyonu"],
+    ja: ["検索エンジン最適化 (SEO)", "PPC広告", "Webデザイン", "Web開発", "コンテンツ制作", "SNS管理", "ローカルSEO", "テクニカルSEO", "リンクビルディング", "GEO最適化"],
+    ko: ["검색 엔진 최적화 (SEO)", "PPC 광고", "웹 디자인", "웹 개발", "콘텐츠 작성", "소셜 미디어 관리", "로컬 SEO", "기술 SEO", "링크 빌딩", "GEO 최적화"],
+    he: ["קידום אתרים (SEO)", "פרסום PPC", "עיצוב אתרים", "פיתוח אתרים", "כתיבת תוכן", "ניהול מדיה חברתית", "SEO מקומי", "SEO טכני", "בניית קישורים", "אופטימיזציית GEO"],
+  };
+
+  const services = serviceNames[loc.lang] || serviceNames.en;
+  const businessName = `Shahab Abbasi - Digital Marketing Agency ${displayCity}`;
 
   const schema = [
+    // Organization / Local Business
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: `Shahab Abbasi - SEO Expert ${displayCity}`,
+      "@type": "ProfessionalService",
+      name: businessName,
       description: loc.metaDescription,
       url: pageUrl,
       areaServed: {
@@ -27,6 +48,7 @@ const LocationSchema = ({ loc, content, displayCity }: Props) => {
         "@type": "Person",
         name: "Shahab Abbasi",
         url: baseUrl,
+        jobTitle: "Digital Marketing Expert",
         sameAs: [
           "https://www.linkedin.com/in/shahababbasi/",
           "https://twitter.com/shahababbasi",
@@ -39,33 +61,22 @@ const LocationSchema = ({ loc, content, displayCity }: Props) => {
         opens: "09:00",
         closes: "18:00",
       },
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      name: `SEO Services in ${loc.city}`,
-      description: loc.metaDescription,
-      provider: {
-        "@type": "Person",
-        name: "Shahab Abbasi",
-        url: baseUrl,
-      },
-      areaServed: { "@type": "City", name: loc.city },
-      url: pageUrl,
-      serviceType: "Search Engine Optimization",
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: `SEO Services in ${loc.city}`,
-        itemListElement: [
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Technical SEO", url: `${baseUrl}/services/technical-seo` } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Local SEO", url: `${baseUrl}/services/local-seo` } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "On-Page SEO", url: `${baseUrl}/services/on-page-seo` } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Link Building", url: `${baseUrl}/services/link-building` } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "Content Strategy", url: `${baseUrl}/services/content-strategy` } },
-          { "@type": "Offer", itemOffered: { "@type": "Service", name: "GEO Optimization", url: `${baseUrl}/services/geo-optimization` } },
-        ],
+        name: `Digital Marketing Services in ${displayCity}`,
+        itemListElement: services.map((svc, i) => ({
+          "@type": "Offer",
+          position: i + 1,
+          itemOffered: {
+            "@type": "Service",
+            name: svc,
+            provider: { "@type": "Person", name: "Shahab Abbasi" },
+            areaServed: { "@type": "City", name: loc.city },
+          },
+        })),
       },
     },
+    // FAQ
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
@@ -75,20 +86,27 @@ const LocationSchema = ({ loc, content, displayCity }: Props) => {
         acceptedAnswer: { "@type": "Answer", text: f.a },
       })),
     },
+    // Breadcrumbs
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: `${baseUrl}/` },
-        { "@type": "ListItem", position: 2, name: "Locations", item: `${baseUrl}/locations` },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Locations",
+          item: loc.langPrefix ? `${baseUrl}/${loc.langPrefix}/locations` : `${baseUrl}/locations`,
+        },
         {
           "@type": "ListItem",
           position: 3,
-          name: `SEO Services in ${loc.city}`,
+          name: `Digital Marketing in ${displayCity}`,
           item: pageUrl,
         },
       ],
     },
+    // WebPage with language
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
@@ -96,18 +114,19 @@ const LocationSchema = ({ loc, content, displayCity }: Props) => {
       description: loc.metaDescription,
       url: pageUrl,
       inLanguage: loc.lang,
-      isPartOf: { "@type": "WebSite", name: "Shahab Abbasi SEO", url: baseUrl },
+      isPartOf: { "@type": "WebSite", name: "Shahab Abbasi Digital Marketing", url: baseUrl },
       about: {
         "@type": "Thing",
-        name: `SEO Services in ${loc.city}`,
-        description: loc.metaDescription,
+        name: `Digital Marketing Services in ${displayCity}`,
+        description: `Professional SEO, PPC, web design, web development, content writing, and social media management services in ${displayCity}, ${displayCountry}.`,
       },
     },
+    // HowTo process
     {
       "@context": "https://schema.org",
       "@type": "HowTo",
-      name: `How We Deliver SEO Results in ${loc.city}`,
-      description: `Our step-by-step SEO process for businesses in ${loc.city}, ${loc.country}.`,
+      name: `How We Deliver Digital Marketing Results in ${displayCity}`,
+      description: `Our step-by-step digital marketing process for businesses in ${displayCity}, ${displayCountry}.`,
       step: content.processSteps.map((step, i) => ({
         "@type": "HowToStep",
         position: i + 1,
@@ -117,11 +136,24 @@ const LocationSchema = ({ loc, content, displayCity }: Props) => {
     },
   ];
 
+  // Add hreflang link elements
+  const hreflangLinks = loc.hreflangAlternates.length > 0 ? (
+    <>
+      {loc.hreflangAlternates.map((alt) => (
+        <link key={alt.lang + alt.href} rel="alternate" hrefLang={alt.lang} href={`${baseUrl}${alt.href}`} />
+      ))}
+      <link rel="alternate" hrefLang={loc.lang} href={pageUrl} />
+    </>
+  ) : null;
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      {hreflangLinks}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+    </>
   );
 };
 
