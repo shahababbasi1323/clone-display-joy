@@ -953,8 +953,134 @@ export const industriesData: IndustryData[] = [
   ...createTechSaas(),
 
   // ============================================================
-  // EDUCATION & TRAINING (3 Industries)
+  // EDUCATION & TRAINING — DETAILED SUB-INDUSTRIES
   // ============================================================
+  ind("tutoring-seo", "Tutoring SEO", "Tutoring Services", "SEO for Tutoring Services - Academic Tutoring Marketing", "Specialized SEO for tutoring centers and private tutors. Rank for math tutor, reading help, SAT prep, and academic support searches to fill your schedule year-round.", GraduationCap, "Education & Training", "Tutoring Services", "Fill your tutoring calendar with SEO strategies that connect you with students and parents searching for academic support, test prep, and subject-specific tutoring.",
+    [
+      { title: "Seasonal Enrollment Cycles", desc: "Tutoring demand surges before exams and back-to-school. SEO must peak during these critical enrollment windows while maintaining year-round visibility." },
+      { title: "Subject-Specific Searches", desc: "Parents search for 'math tutor', 'reading help', 'chemistry tutor'. Each subject needs its own optimized landing page to capture intent." },
+      { title: "Online vs In-Person Competition", desc: "Online tutoring platforms like Wyzant and Varsity Tutors dominate generic searches. Local tutors must use hyper-local and specialty SEO to compete." },
+      { title: "Trust & Credentials", desc: "Parents are entrusting their child's education. Highlighting qualifications, background checks, teaching experience, and results is essential for conversion." },
+    ],
+    [
+      { title: "Subject Landing Pages", desc: "Dedicated pages for math tutoring, reading tutoring, science tutoring, SAT/ACT prep, and every subject you teach — each optimized for local + subject keywords." },
+      { title: "Test Prep SEO Blitz", desc: "Seasonal campaigns targeting SAT prep, ACT tutoring, AP exam help, and state test preparation timed to peak demand periods." },
+      { title: "Parent-Focused Content", desc: "Blog content answering parent questions — 'how to help my child with math', 'signs my child needs a tutor', 'online vs in-person tutoring' — that builds trust and captures top-funnel traffic." },
+      { title: "Local & Virtual SEO", desc: "Optimize for 'tutor near me' with GBP while also targeting 'online tutor' for broader reach. Dual strategy maximizes student acquisition." },
+    ],
+    ["tutor near me", "math tutor", "reading tutor", "SAT prep tutoring", "online tutoring", "chemistry tutor", "English tutor", "homework help", "ACT prep", "AP exam tutor", "algebra tutor", "physics tutor", "elementary tutor", "high school tutor", "test preparation"],
+    [{ metric: "380%", label: "Student Inquiries" }, { metric: "#1", label: "Local Rankings" }, { metric: "90%", label: "Schedule Utilization" }, { metric: "5x", label: "ROI" }],
+    [
+      { q: "How can SEO help my tutoring business get more students?", a: "SEO puts you in front of parents actively searching for tutoring help. Ranking for 'math tutor near me' or 'SAT prep in [city]' drives qualified inquiries from families ready to enroll." },
+      { q: "Should I create separate pages for each subject?", a: "Absolutely. Each subject should have its own page optimized for that specific search. 'Math tutor near me' and 'reading tutor near me' are completely different searches with different intent." },
+      { q: "How do I compete with large tutoring platforms?", a: "Focus on local SEO, personal connection, and specialty expertise. Large platforms can't match your local presence, individualized approach, and community reputation." },
+      { q: "When should I start SEO for back-to-school season?", a: "Start 3-4 months before. SEO takes time to build momentum. Beginning in May/June ensures strong rankings when parents start searching in August/September." },
+      { q: "Can SEO help fill my summer tutoring programs?", a: "Yes. We create targeted content for summer reading programs, math catch-up, enrichment tutoring, and camp alternatives that captures parents planning summer activities." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+  ),
+
+  ind("online-course-seo", "Online Course SEO", "Online Courses", "SEO for Online Courses & E-Learning Platforms", "SEO for online course creators and e-learning platforms. Rank for course searches, attract students worldwide, and increase enrollment with content-driven optimization.", GraduationCap, "Education & Training", "Online Courses", "Reach students globally with SEO strategies that make your online courses discoverable on Google, YouTube, and AI search engines.",
+    [
+      { title: "Massive Platform Competition", desc: "Udemy, Coursera, Skillshare, and LinkedIn Learning dominate search results. Independent course creators need niche and long-tail strategies to compete." },
+      { title: "Content Cannibalization", desc: "Free content (YouTube, blogs) competes with paid courses. SEO strategy must differentiate free lead magnets from premium course offerings." },
+      { title: "Global Audience Targeting", desc: "Online courses serve worldwide audiences. Multi-language SEO and international targeting add complexity." },
+      { title: "Review & Social Proof", desc: "Course buyers read reviews extensively. Building and showcasing student testimonials and success stories is critical for conversion." },
+    ],
+    [
+      { title: "Course Landing Page SEO", desc: "Optimize each course page with compelling descriptions, curriculum details, instructor credentials, student reviews, and course schema markup for rich results." },
+      { title: "Educational Content Funnel", desc: "Free blog posts and YouTube videos targeting related searches that funnel visitors to paid courses — 'how to learn Python' leads to your Python course." },
+      { title: "Course Schema & Rich Results", desc: "Implement Course, Review, and HowTo schema markup for enhanced search appearances with ratings, pricing, and enrollment information." },
+      { title: "YouTube & Video SEO", desc: "Optimize course preview videos, free tutorials, and promotional content on YouTube to capture video search traffic." },
+    ],
+    ["online course", "learn [skill] online", "certification program", "e-learning platform", "professional development course", "online training", "best online course for [topic]", "learn coding online", "digital marketing course", "online MBA", "photography course", "graphic design course", "data science course", "project management certification", "online certificate program"],
+    [{ metric: "450%", label: "Enrollment Growth" }, { metric: "200+", label: "Keywords Ranked" }, { metric: "60%", label: "Organic Revenue" }, { metric: "6x", label: "ROI" }],
+    [
+      { q: "How do I compete with Udemy and Coursera?", a: "Niche expertise and long-tail keywords. Instead of 'Python course', target 'Python for data analysts' or 'Python for financial modeling'. Specificity beats platforms." },
+      { q: "Should I give away free content for SEO?", a: "Yes — strategically. Free content attracts traffic and builds trust. The key is creating a clear funnel from free resources to paid courses with compelling CTAs." },
+      { q: "How important is YouTube for course SEO?", a: "Very. YouTube is the #2 search engine. Free tutorial videos drive massive traffic and build authority that converts viewers into paid students." },
+      { q: "Can SEO help sell courses without paid ads?", a: "Absolutely. Many successful course creators generate 50-80% of sales from organic search. SEO provides sustainable enrollment without ongoing ad spend." },
+      { q: "What schema markup helps course pages?", a: "Course schema shows course name, provider, and description in search results. Combined with Review and FAQ schema, it dramatically improves click-through rates." },
+    ],
+    ["content-strategy", "on-page-seo", "schema-markup"], defaultLocs
+  ),
+
+  ind("daycare-seo", "Daycare SEO", "Daycare Centers", "SEO for Daycare Centers - Child Care Marketing", "SEO for daycare centers, preschools, and child care facilities. Rank for daycare searches, attract parents, and maintain full enrollment year-round.", GraduationCap, "Education & Training", "Daycare Centers", "Keep your daycare at full enrollment with SEO strategies that help parents find and choose your child care center over competitors.",
+    [
+      { title: "Extreme Local Competition", desc: "Parents search within a small radius — 'daycare near me' or 'daycare in [neighborhood]'. Standing out among dozens of local competitors requires dominant local SEO." },
+      { title: "Trust & Safety Concerns", desc: "Parents prioritize safety above all. Your online presence must prominently display licensing, certifications, staff qualifications, and safety protocols." },
+      { title: "Waitlist vs Enrollment", desc: "Many daycares have waitlists while others struggle to fill spots. SEO can either build waitlists or fill gaps depending on your situation." },
+      { title: "Age-Specific Programs", desc: "Infant care, toddler programs, preschool, after-school — each age group has different keywords and parent concerns." },
+    ],
+    [
+      { title: "Age Group Landing Pages", desc: "Dedicated pages for infant care, toddler programs, preschool, pre-K, and after-school programs — each targeting age-specific search queries." },
+      { title: "Trust-First Local SEO", desc: "GBP optimization with photos, virtual tours, licensing info, and parent reviews to build trust before the first visit." },
+      { title: "Parent Resource Content", desc: "Blog content on child development milestones, school readiness tips, and parenting advice that positions your daycare as an educational authority." },
+      { title: "Tour Conversion Optimization", desc: "Optimize tour booking pages, implement scheduling schema, and create compelling virtual tour content to convert website visitors into scheduled tours." },
+    ],
+    ["daycare near me", "child care center", "preschool near me", "infant care", "after school program", "Montessori school", "toddler program", "pre-K near me", "best daycare in [city]", "affordable daycare", "daycare with cameras", "bilingual daycare", "summer camp daycare", "part-time daycare", "drop-in daycare"],
+    [{ metric: "300%", label: "Tour Bookings" }, { metric: "#1", label: "Map Pack" }, { metric: "95%", label: "Enrollment Rate" }, { metric: "4x", label: "ROI" }],
+    [
+      { q: "How can SEO help fill my daycare?", a: "Most parents start their daycare search on Google. Ranking #1 for 'daycare near me' means you're the first center parents see, call, and tour. SEO fills spots faster than any other marketing." },
+      { q: "How important are reviews for daycare SEO?", a: "Critically important. Parents read every review before trusting a daycare with their child. A strong review profile improves rankings AND conversion rates dramatically." },
+      { q: "Should I show pricing on my website?", a: "Yes. Parents want to know affordability before calling. Transparent pricing reduces unqualified inquiries and attracts families who match your price point." },
+      { q: "Can SEO help build a waitlist?", a: "Yes. Strong SEO creates consistent demand. When enrollment is full, we optimize for waitlist signups and future enrollment periods." },
+      { q: "What content should a daycare website have?", a: "Program descriptions, staff bios, safety certifications, daily schedules, meal information, parent testimonials, and educational philosophy — all optimized for parent searches." },
+    ],
+    ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
+  ),
+
+  ind("driving-school-seo", "Driving School SEO", "Driving Schools", "SEO for Driving Schools - Driver Education Marketing", "SEO for driving schools and driver education providers. Rank for driving lessons, learner's permit, and CDL training searches in your area.", GraduationCap, "Education & Training", "Driving Schools", "Fill your driving school schedule with SEO strategies that capture teens, new drivers, and CDL students searching for driving lessons.",
+    [
+      { title: "Seasonal Teen Demand", desc: "Driving school demand peaks when teens turn 16. Summer months are busiest. SEO must rank before peak season to capture this annual surge." },
+      { title: "Multiple Student Types", desc: "Teens, adult learners, international license holders, CDL students — each audience searches differently and needs tailored content." },
+      { title: "Price Comparison Shopping", desc: "Students and parents compare driving school prices extensively. Transparent pricing and value proposition are essential for conversion." },
+      { title: "Online Course Competition", desc: "Online driver's ed courses compete with in-person instruction. Content must emphasize the value of behind-the-wheel training." },
+    ],
+    [
+      { title: "Program-Specific Pages", desc: "Dedicated pages for teen driving lessons, adult driver education, defensive driving, CDL training, and motorcycle licensing." },
+      { title: "Location-Based SEO", desc: "Target 'driving school near me', 'driving lessons in [city]', and neighborhood-specific searches with local landing pages." },
+      { title: "DMV Resource Content", desc: "Create DMV test prep guides, practice test resources, and permit requirement pages that attract high-intent search traffic." },
+      { title: "Review & Pass Rate Marketing", desc: "Showcase student pass rates, reviews, and success stories. Pass rate is the #1 factor parents consider when choosing." },
+    ],
+    ["driving school near me", "driving lessons", "learner's permit class", "driving test prep", "defensive driving course", "CDL training", "teen driving school", "adult driving lessons", "behind the wheel training", "online drivers ed", "parallel parking lessons", "highway driving course", "manual transmission lessons", "motorcycle license course", "road test preparation"],
+    [{ metric: "350%", label: "Enrollment Growth" }, { metric: "#1", label: "Local Rankings" }, { metric: "85%", label: "Schedule Fill Rate" }, { metric: "4.5x", label: "ROI" }],
+    [
+      { q: "How does SEO help driving schools get more students?", a: "Parents and teens Google 'driving school near me' when ready to enroll. Ranking #1 means you're the first school they call. SEO fills seats without expensive advertising." },
+      { q: "Should I target both teen and adult driving searches?", a: "Yes. These are completely different audiences with different keywords. Teen searches come from parents, adult searches are self-directed. Separate pages for each maximize enrollment." },
+      { q: "Can SEO help my CDL training program?", a: "Absolutely. CDL training searches have high intent and high customer value. SEO targeting 'CDL training near me' and 'truck driving school' drives very profitable enrollments." },
+      { q: "How do I compete with online driving courses?", a: "Emphasize behind-the-wheel training value, pass rates, personalized instruction, and the fact that most states require in-person driving hours. SEO content should highlight these advantages." },
+      { q: "When should I start SEO for summer driving season?", a: "Start in March/April. It takes 2-3 months to build rankings. Being in position when summer enrollment demand hits means a full schedule all season." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
+  ),
+
+  ind("coding-bootcamp-seo", "Coding Bootcamp SEO", "Coding Bootcamps", "SEO for Coding Bootcamps - Tech Education Marketing", "SEO for coding bootcamps and tech training programs. Rank for web development courses, data science bootcamps, and career-change programming education.", GraduationCap, "Education & Training", "Coding Bootcamps", "Attract career changers and aspiring developers with SEO strategies that position your coding bootcamp as the top choice for tech education.",
+    [
+      { title: "Intense Market Saturation", desc: "Hundreds of coding bootcamps compete online. Differentiating through outcomes, specializations, and unique value propositions is essential." },
+      { title: "High Consideration Purchase", desc: "Bootcamps cost $5,000-$20,000+. Prospects research for weeks or months. SEO must capture them at every stage of the decision journey." },
+      { title: "Outcome Skepticism", desc: "Prospects question whether bootcamps actually lead to jobs. Content must prove ROI with transparent employment data and alumni success stories." },
+      { title: "Free Resource Competition", desc: "Free coding resources (freeCodeCamp, YouTube, Codecademy) compete for attention. Content must justify the paid bootcamp value proposition." },
+    ],
+    [
+      { title: "Program Track Pages", desc: "Dedicated pages for full-stack development, data science, UX/UI design, cybersecurity, and each program track — optimized for career-changer keywords." },
+      { title: "Outcomes-Driven Content", desc: "Alumni success stories, salary reports, hiring partner lists, and employment statistics that prove ROI and build trust with prospects." },
+      { title: "Career Change Content Hub", desc: "Blog content targeting 'how to become a developer', 'career change to tech', 'is coding bootcamp worth it' — capturing top-funnel career changers." },
+      { title: "Comparison & Review SEO", desc: "Optimize for 'best coding bootcamp', '[your bootcamp] reviews', and comparison queries that prospects search during evaluation." },
+    ],
+    ["coding bootcamp", "learn to code", "web development course", "data science bootcamp", "software engineering program", "full stack training", "UX design bootcamp", "cybersecurity bootcamp", "coding bootcamp near me", "online coding bootcamp", "best coding bootcamp", "coding bootcamp cost", "career change to tech", "learn Python bootcamp", "JavaScript course"],
+    [{ metric: "400%", label: "Application Growth" }, { metric: "85%", label: "Job Placement Rate" }, { metric: "250+", label: "Keywords Ranked" }, { metric: "7x", label: "ROI" }],
+    [
+      { q: "How competitive is coding bootcamp SEO?", a: "Very competitive for generic terms. We focus on specialization ('data science bootcamp in [city]'), outcome keywords ('bootcamp with job guarantee'), and comparison content to win in this space." },
+      { q: "What content converts bootcamp prospects?", a: "Alumni success stories, salary outcome data, day-in-the-life content, curriculum deep-dives, and honest 'is it worth it' articles. Transparency builds trust in a skeptical market." },
+      { q: "Should we target 'free coding resources' searches?", a: "Yes — strategically. Free intro courses and tutorials attract top-funnel traffic. Smart CTAs convert serious learners from free resources to paid bootcamp enrollment." },
+      { q: "How do we rank for 'best coding bootcamp'?", a: "Earn genuine reviews, build comparison content, create transparent outcomes reporting, and build authority through alumni success content and industry partnerships." },
+      { q: "Can SEO reduce our cost per enrollment?", a: "Significantly. Organic leads from SEO cost 60-80% less than paid ads and often convert better because they've consumed your content and trust your brand." },
+    ],
+    ["content-strategy", "on-page-seo", "link-building"], defaultLocs
+  ),
+
+  // Remaining education entries from factory
   ...createEducation(),
 
   // ============================================================
@@ -963,8 +1089,109 @@ export const industriesData: IndustryData[] = [
   ...createEcommerce(),
 
   // ============================================================
-  // AUTOMOTIVE & TRANSPORTATION (3 Industries)
+  // AUTOMOTIVE & TRANSPORTATION — DETAILED SUB-INDUSTRIES
   // ============================================================
+  ind("automotive-seo", "Car Dealership SEO", "Car Dealerships", "SEO for Car Dealerships - Auto Dealer Digital Marketing", "Specialized SEO for new and used car dealerships. Rank for car searches, attract buyers, and sell more vehicles with automotive-focused digital marketing.", Car, "Automotive & Transportation", "Car Dealerships", "Sell more vehicles with SEO strategies that put your dealership in front of buyers searching for cars, trucks, and SUVs online.",
+    [
+      { title: "Massive Inventory Pages", desc: "Dealerships have hundreds of vehicle pages. Each needs unique content to avoid thin content penalties while ranking for specific make, model, and year searches." },
+      { title: "Third-Party Aggregator Dominance", desc: "AutoTrader, Cars.com, CarGurus dominate search results. Dealerships must use local SEO and branded strategies to compete with these massive platforms." },
+      { title: "High-Consideration Purchase", desc: "Car buying involves weeks of research. SEO must capture buyers at every stage — from 'best SUV 2026' to 'Toyota dealer near me'." },
+      { title: "Service Department Revenue", desc: "Service departments generate recurring revenue. SEO for 'oil change near me' and 'brake repair' captures ongoing service customers." },
+    ],
+    [
+      { title: "Vehicle Inventory SEO", desc: "Optimize VDP (Vehicle Detail Pages) with unique descriptions, quality photos, structured data, and make/model targeting for every vehicle in stock." },
+      { title: "Service Department Pages", desc: "Create and optimize pages for oil changes, brake service, tire rotation, transmission repair, and every service your shop offers." },
+      { title: "Local Market Domination", desc: "GBP optimization with inventory posts, review generation, and hyper-local content targeting your dealer market area (DMA)." },
+      { title: "Buyer Journey Content", desc: "Comparison guides, model reviews, financing explainers, and 'best cars for [use case]' content that captures top-funnel shoppers." },
+    ],
+    ["car dealership near me", "used cars for sale", "new cars", "Toyota dealer", "Honda dealership", "auto dealer", "car prices", "test drive near me", "car financing", "trade-in value", "certified pre-owned", "best SUV 2026", "truck dealership", "electric car dealer", "car lease deals"],
+    [{ metric: "320%", label: "Website Leads" }, { metric: "200+", label: "Vehicle Keywords Ranked" }, { metric: "45%", label: "Service Revenue Growth" }, { metric: "5x", label: "ROI" }],
+    [
+      { q: "How do I compete with AutoTrader and Cars.com?", a: "You can't outrank them for generic terms, but you can dominate local searches. 'Toyota dealer near me' and '[city] used cars' are where dealerships win with strong local SEO." },
+      { q: "Should I optimize every vehicle page?", a: "Yes, but strategically. High-value and long-lot vehicles get unique descriptions. We also implement dynamic schema markup for your entire inventory." },
+      { q: "How important is SEO for the service department?", a: "Extremely. Service drives recurring revenue and customer retention. Ranking for 'oil change near me' creates a pipeline of loyal customers who eventually buy their next car from you." },
+      { q: "Can SEO help sell electric vehicles?", a: "Yes. EV searches are growing rapidly. Creating EV-focused content, charging information, and comparison guides positions your dealership as an EV authority." },
+      { q: "What's the ROI of dealership SEO?", a: "With average vehicle profits of $2,000-$5,000+ and service ticket values of $200-$1,000, even modest traffic increases from SEO deliver significant returns." },
+    ],
+    ["local-seo", "google-business-profile", "technical-seo"], defaultLocs
+  ),
+
+  ind("auto-repair-seo", "Auto Repair SEO", "Auto Repair Shops", "SEO for Auto Repair Shops - Mechanic Marketing Services", "Specialized SEO for auto repair shops and mechanics. Rank for car repair searches, build trust with vehicle owners, and generate consistent service calls.", Car, "Automotive & Transportation", "Auto Repair Shops", "Fill your service bays with SEO strategies that capture car owners searching for oil changes, brake repair, engine diagnostics, and every auto service.",
+    [
+      { title: "Emergency Repair Urgency", desc: "Many auto repair searches are urgent — 'check engine light on', 'brakes grinding', 'car won't start'. Ranking for emergency keywords captures high-converting traffic." },
+      { title: "Trust Deficit", desc: "Consumers distrust auto mechanics. Your SEO and content strategy must overcome this perception with transparency, reviews, and educational content." },
+      { title: "Franchise & Chain Competition", desc: "Midas, Jiffy Lube, Pep Boys spend heavily on SEO. Independent shops need smarter local strategies to compete with national chains." },
+      { title: "Service Diversity", desc: "Oil changes, brakes, transmission, electrical, AC, tires — dozens of services need individual optimization to capture specific repair searches." },
+    ],
+    [
+      { title: "Service-Specific Pages", desc: "Dedicated landing pages for oil change, brake repair, transmission service, engine diagnostics, AC repair, tire service, and every specialty you offer." },
+      { title: "Emergency Search Capture", desc: "Optimize for 'mechanic near me open now', 'emergency car repair', 'check engine light' and other urgent searches with fast-loading mobile pages." },
+      { title: "Trust-Building Content", desc: "Transparent pricing guides, repair process explainers, maintenance schedules, and ASE certification highlighting to overcome consumer skepticism." },
+      { title: "Review Velocity Strategy", desc: "Systematic review generation to build a 4.8+ star profile that outshines chain competitors in local search results." },
+    ],
+    ["auto repair near me", "mechanic near me", "oil change", "brake repair", "engine repair", "transmission repair", "car service", "check engine light", "tire shop near me", "AC repair car", "car battery replacement", "wheel alignment", "car inspection", "exhaust repair", "car electrical repair"],
+    [{ metric: "400%", label: "Service Calls" }, { metric: "#1", label: "Map Pack Position" }, { metric: "150+", label: "Keywords Ranked" }, { metric: "4.5x", label: "ROI" }],
+    [
+      { q: "How can SEO help my auto repair shop?", a: "Most car owners Google 'mechanic near me' when they need service. Ranking #1 in the map pack means your phone rings first. SEO provides the steadiest, cheapest lead source for auto shops." },
+      { q: "How do I compete with Midas and Jiffy Lube?", a: "Local SEO is your advantage. Better reviews, local content, community involvement, and transparent pricing let independent shops outrank chains for local searches." },
+      { q: "Should I list my prices online?", a: "Yes. Price transparency builds trust and captures comparison shoppers. We optimize pricing pages with schema markup for enhanced search visibility." },
+      { q: "How important are reviews for auto repair SEO?", a: "Reviews are the #1 factor for local auto repair rankings. They also directly impact whether customers call you or your competitor. A 4.8+ star rating is the goal." },
+      { q: "What services should I create pages for?", a: "Every service you offer should have its own page — oil change, brakes, tires, transmission, AC, electrical, diagnostics. Each captures different search intent." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
+  ),
+
+  ind("car-wash-seo", "Car Wash SEO", "Car Washes", "SEO for Car Washes & Auto Detailing - Carwash Marketing", "SEO for car washes and auto detailing businesses. Rank for car wash near me, mobile detailing, ceramic coating, and paint protection searches.", Car, "Automotive & Transportation", "Car Washes & Detailing", "Drive more vehicles through your car wash with SEO strategies targeting car wash seekers, detailing enthusiasts, and ceramic coating customers.",
+    [
+      { title: "Hyper-Local Search Behavior", desc: "Car wash searches are extremely local — people want the nearest option. Your SEO must dominate the immediate 5-mile radius around your location." },
+      { title: "Low-Ticket High-Volume", desc: "Individual car washes are low-ticket. SEO strategy must focus on membership conversions and premium services like detailing and ceramic coating." },
+      { title: "Weather-Dependent Demand", desc: "Car wash demand fluctuates with weather and seasons. SEO content must address seasonal peaks and maintain visibility year-round." },
+      { title: "Membership Model Competition", desc: "Unlimited wash memberships require different SEO than single washes. Capturing membership comparison searches is key to recurring revenue." },
+    ],
+    [
+      { title: "Service Tier Pages", desc: "Optimized pages for express wash, full-service wash, detailing packages, ceramic coating, paint protection film, and membership plans." },
+      { title: "Map Pack Dominance", desc: "GBP optimization with photos, pricing, hours, and reviews to own the 'car wash near me' search in your area." },
+      { title: "Premium Service SEO", desc: "Target high-value searches like 'ceramic coating near me', 'paint correction', 'interior detailing' that drive premium revenue." },
+      { title: "Membership Conversion Content", desc: "Comparison pages showing membership value vs pay-per-wash, unlimited plan benefits, and pricing that converts single-wash customers to members." },
+    ],
+    ["car wash near me", "auto detailing", "hand car wash", "mobile detailing", "ceramic coating", "paint protection film", "interior detailing", "full service car wash", "unlimited car wash membership", "express car wash", "car wax", "paint correction", "headlight restoration", "engine detailing", "car wash prices"],
+    [{ metric: "250%", label: "Monthly Customers" }, { metric: "#1", label: "Map Pack" }, { metric: "60%", label: "Membership Growth" }, { metric: "3.5x", label: "ROI" }],
+    [
+      { q: "How does SEO help a car wash business?", a: "80% of car wash customers find their car wash through Google Maps. Ranking #1 for 'car wash near me' means a steady stream of vehicles without paying for ads." },
+      { q: "Should I focus on car wash or detailing SEO?", a: "Both, but separately. Car wash keywords drive volume while detailing keywords drive premium revenue. We optimize for both to maximize total revenue." },
+      { q: "How important is Google Business Profile for car washes?", a: "It's everything. Most car wash searches show map results first. A fully optimized GBP with great photos, accurate hours, and strong reviews is your most valuable SEO asset." },
+      { q: "Can SEO help sell car wash memberships?", a: "Yes. Creating comparison content, membership landing pages, and value calculators captures people searching for 'unlimited car wash plans' and converts them to recurring members." },
+      { q: "What about mobile detailing SEO?", a: "Mobile detailing has different search patterns — 'mobile detailing near me', 'detailing at my home'. We create specific strategies for mobile operators with service area targeting." },
+    ],
+    ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
+  ),
+
+  ind("motorcycle-seo", "Motorcycle Dealer SEO", "Motorcycle Dealers", "SEO for Motorcycle Dealers - Powersports Marketing Services", "SEO for motorcycle dealerships and powersports retailers. Rank for motorcycle sales, service, and parts searches to attract riders and enthusiasts.", Car, "Automotive & Transportation", "Motorcycle Dealers", "Rev up your motorcycle dealership with SEO that captures riders searching for new bikes, used motorcycles, service, and parts.",
+    [
+      { title: "Seasonal Riding Demand", desc: "Motorcycle interest peaks in spring and summer. SEO must build rankings before riding season to capture buyers when demand surges." },
+      { title: "Brand Loyalty", desc: "Riders are fiercely brand-loyal — Harley, Honda, Yamaha, Kawasaki. Brand-specific SEO is essential for capturing loyal riders searching for their preferred make." },
+      { title: "Enthusiast Community", desc: "Motorcycle buyers are passionate enthusiasts who research extensively. Content must speak their language and demonstrate genuine riding knowledge." },
+      { title: "Multi-Revenue Streams", desc: "Sales, service, parts, accessories, and apparel all need SEO. Each revenue stream has different keywords and customer intent." },
+    ],
+    [
+      { title: "Brand & Model Pages", desc: "Optimized pages for each motorcycle brand and popular models — Harley-Davidson, Honda, Yamaha, Indian, Ducati — with detailed specs and pricing." },
+      { title: "Service & Parts SEO", desc: "Target 'motorcycle service near me', 'Harley parts', and brand-specific maintenance searches to drive service department revenue." },
+      { title: "Riding Community Content", desc: "Route guides, gear reviews, riding tips, and event coverage that builds authority and attracts passionate riders to your dealership." },
+      { title: "Seasonal Campaign Planning", desc: "Content and optimization timed to riding season — pre-season buying guides, spring maintenance checklists, and new model year reveals." },
+    ],
+    ["motorcycle dealer near me", "used motorcycles", "Harley dealer", "Honda motorcycle", "motorcycle parts", "ATV dealer", "motorcycle service", "sport bike for sale", "cruiser motorcycle", "motorcycle gear", "dirt bike dealer", "motorcycle trade-in", "motorcycle financing", "Indian motorcycle dealer", "Yamaha dealer"],
+    [{ metric: "300%", label: "Showroom Traffic" }, { metric: "#1", label: "Brand Search Rankings" }, { metric: "55%", label: "Parts Revenue Growth" }, { metric: "4x", label: "ROI" }],
+    [
+      { q: "How does SEO help sell motorcycles?", a: "Riders research online extensively before visiting a dealership. Ranking for brand searches, model comparisons, and 'motorcycle dealer near me' drives showroom traffic from serious buyers." },
+      { q: "Should I optimize for each motorcycle brand separately?", a: "Absolutely. A Harley buyer searches differently than a Honda buyer. Brand-specific pages capture loyal riders searching for their preferred make." },
+      { q: "Can SEO help my motorcycle service department?", a: "Yes. 'Motorcycle service near me' and brand-specific maintenance searches drive steady service revenue. These customers often become bike buyers too." },
+      { q: "How do I compete with online motorcycle marketplaces?", a: "Focus on local expertise, test ride availability, financing options, and community involvement. Online marketplaces can't offer the hands-on experience riders want." },
+      { q: "When should I ramp up motorcycle SEO?", a: "Year-round, but intensify in February-March so rankings peak when spring buying season begins. Pre-season content captures early shoppers." },
+    ],
+    ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
+  ),
+
+  // Remaining automotive entries from factory
   ...createAutomotive(),
 
   // ============================================================
@@ -983,8 +1210,134 @@ export const industriesData: IndustryData[] = [
   ...createOtherIndustries(),
 
   // ============================================================
-  // FINANCE & BANKING (5 Industries)
+  // FINANCE & BANKING — DETAILED SUB-INDUSTRIES
   // ============================================================
+  ind("mortgage-seo", "Mortgage SEO", "Mortgage Lenders", "SEO for Mortgage Lenders - Home Loan Marketing Services", "Specialized SEO for mortgage brokers and lenders. Rank for home loan, refinance, and mortgage rate searches to generate qualified borrower leads.", Landmark, "Finance & Banking", "Mortgage Lenders", "Generate more qualified borrower leads with SEO strategies that capture home buyers and refinancers searching for mortgage rates, loan programs, and lender comparisons.",
+    [
+      { title: "Rate-Driven Search Behavior", desc: "Borrowers search for today's rates obsessively. Rate pages must be fresh, accurate, and optimized to capture this massive search volume." },
+      { title: "YMYL & E-E-A-T Scrutiny", desc: "Google applies the highest quality standards to financial content. Mortgage content needs demonstrable expertise, licensed originator credentials, and accurate disclosures." },
+      { title: "Aggregator Competition", desc: "LendingTree, Bankrate, NerdWallet dominate mortgage searches. Brokers must focus on local intent and niche loan programs to compete." },
+      { title: "Compliance Requirements", desc: "TILA, RESPA, and fair lending regulations restrict how mortgage products can be marketed online. All SEO content must maintain compliance." },
+    ],
+    [
+      { title: "Loan Program Pages", desc: "Dedicated pages for conventional, FHA, VA, USDA, jumbo, and specialized loan programs — each optimized for program-specific searches." },
+      { title: "Rate & Calculator Content", desc: "Regularly updated rate pages, mortgage calculators, and affordability tools that capture rate-shopping searches and keep visitors engaged." },
+      { title: "First-Time Buyer Content Hub", desc: "Comprehensive guides for first-time homebuyers covering down payments, pre-approval, closing costs, and the entire mortgage process." },
+      { title: "Local Market SEO", desc: "Target 'mortgage broker in [city]', local real estate market content, and community-specific lending information." },
+    ],
+    ["mortgage lender near me", "home loan rates", "refinance mortgage", "FHA loan", "VA loan", "first-time homebuyer loan", "mortgage calculator", "mortgage broker", "best mortgage rates", "home equity loan", "jumbo loan", "USDA loan", "mortgage pre-approval", "cash-out refinance", "15-year mortgage rates"],
+    [{ metric: "350%", label: "Loan Applications" }, { metric: "180+", label: "Keywords Ranked" }, { metric: "$2.5M", label: "Monthly Loan Volume" }, { metric: "6x", label: "ROI" }],
+    [
+      { q: "How competitive is mortgage SEO?", a: "Extremely competitive for generic terms. We focus on local intent ('mortgage broker in [city]'), niche loan programs (VA, USDA), and first-time buyer content where independent lenders can realistically rank." },
+      { q: "How do I compete with LendingTree and Bankrate?", a: "You can't outrank them nationally, but you can dominate locally. 'Mortgage lender in [city]' and personalized service content outperform aggregator listings for local borrowers." },
+      { q: "Should I update rates on my website?", a: "Yes. Rate pages get massive traffic. Even weekly rate updates with market commentary help you rank for 'today's mortgage rates' and similar high-volume queries." },
+      { q: "How does compliance affect mortgage SEO?", a: "All content must include required disclosures, avoid misleading rate advertising, and comply with fair lending laws. We create compliant content that still ranks and converts." },
+      { q: "What's the ROI of mortgage SEO?", a: "With average origination fees of $3,000-$10,000+ per loan, even a few extra organic leads per month deliver massive ROI. Most lenders see 5-8x returns from SEO." },
+    ],
+    ["local-seo", "content-strategy", "on-page-seo"], defaultLocs
+  ),
+
+  ind("accounting-seo", "Accounting SEO", "Accountants & CPAs", "SEO for Accountants & CPAs - Accounting Firm Marketing", "SEO for accounting firms, CPAs, and bookkeepers. Rank for tax preparation, bookkeeping, and financial services searches to grow your client base.", Landmark, "Finance & Banking", "Accountants & CPAs", "Attract more clients for your accounting firm with SEO strategies targeting tax preparation, bookkeeping, audit, and financial advisory searches.",
+    [
+      { title: "Extreme Tax Season Peaks", desc: "Accounting searches spike dramatically January–April. SEO must rank before tax season to capture the annual rush of taxpayer searches." },
+      { title: "Service Breadth", desc: "Tax prep, bookkeeping, payroll, audit, advisory, estate planning — each service has distinct keywords and audiences requiring separate optimization." },
+      { title: "Trust & Credentials", desc: "Clients trust CPAs with their finances. CPA certification, years of experience, and specializations must be prominently displayed and schema-marked." },
+      { title: "Business vs Individual Clients", desc: "B2B and B2C accounting require completely different keyword strategies, content, and value propositions." },
+    ],
+    [
+      { title: "Service-Specific Pages", desc: "Dedicated pages for tax preparation, bookkeeping, payroll services, audit & assurance, business advisory, and estate/trust accounting." },
+      { title: "Tax Season Content Blitz", desc: "Tax tips, deduction guides, deadline reminders, and tax law change content published before January to rank during peak season." },
+      { title: "Industry Niche Targeting", desc: "Specialize content for industries you serve — real estate accounting, medical practice bookkeeping, restaurant tax planning — to capture niche searches." },
+      { title: "Local CPA SEO", desc: "GBP optimization, local citations, and 'CPA near me' targeting to dominate your geographic market." },
+    ],
+    ["accountant near me", "CPA near me", "tax preparation", "bookkeeping services", "payroll service", "business tax accountant", "tax advisor", "small business CPA", "QuickBooks bookkeeper", "tax planning", "IRS audit help", "estate tax planning", "nonprofit accountant", "forensic accounting", "CFO services"],
+    [{ metric: "400%", label: "Client Inquiries" }, { metric: "#1", label: "Tax Season Rankings" }, { metric: "70%", label: "Revenue Growth" }, { metric: "5x", label: "ROI" }],
+    [
+      { q: "When should I start SEO for tax season?", a: "Start in October. It takes 2-3 months to build rankings. Being in position when January searches begin means a fully booked tax season." },
+      { q: "Should I target both personal and business tax clients?", a: "Yes, with separate strategies. Business clients have higher lifetime value while individual clients provide volume. Different pages and content for each." },
+      { q: "How do I differentiate from other CPAs online?", a: "Industry specialization is your edge. An accountant who specializes in 'restaurant bookkeeping' or 'real estate CPA' outranks generalists for those valuable niche searches." },
+      { q: "Can SEO help me get clients year-round?", a: "Yes. Beyond tax season, targeting bookkeeping, payroll, advisory, and planning keywords maintains steady client acquisition throughout the year." },
+      { q: "What content should an accounting firm create?", a: "Tax deduction guides, business structure comparisons, tax law updates, industry-specific financial tips, and deadline reminders that drive traffic and demonstrate expertise." },
+    ],
+    ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
+  ),
+
+  ind("insurance-seo", "Insurance SEO", "Insurance Agents", "SEO for Insurance Agents & Agencies - Insurance Marketing Services", "SEO for insurance agents and agencies. Rank for auto insurance, home insurance, life insurance, and Medicare searches to generate qualified policy leads.", Landmark, "Finance & Banking", "Insurance Agents", "Write more policies with SEO strategies that capture insurance shoppers comparing quotes, switching carriers, and searching for coverage options.",
+    [
+      { title: "Carrier & Aggregator Dominance", desc: "GEICO, Progressive, State Farm, and aggregators like Policygenius dominate insurance searches. Independent agents must focus on local and service-specific strategies." },
+      { title: "Product Complexity", desc: "Auto, home, life, health, business, Medicare — each insurance line has unique keywords, regulations, and customer intent requiring separate optimization." },
+      { title: "Quote-Driven Intent", desc: "Insurance shoppers want quotes. SEO must capture 'cheap auto insurance' and 'home insurance quotes' while directing traffic to your quoting process." },
+      { title: "Life Event Triggers", desc: "Insurance purchases are triggered by life events — buying a home, having a baby, turning 65. Content must align with these triggers." },
+    ],
+    [
+      { title: "Insurance Line Pages", desc: "Dedicated pages for auto, homeowners, life, health, business, umbrella, renters, and Medicare insurance — each with line-specific keywords and content." },
+      { title: "Local Agent Optimization", desc: "GBP optimization, local citations, and 'insurance agent near me' targeting to dominate your geographic market over national carriers." },
+      { title: "Quote Funnel Content", desc: "Comparison guides, coverage explainers, and 'how much does [insurance] cost' content that drives quote requests from informed shoppers." },
+      { title: "Life Event Content", desc: "Content targeting 'insurance for new homeowners', 'life insurance after baby', 'Medicare enrollment guide' — capturing people at the moment they need coverage." },
+    ],
+    ["insurance agent near me", "auto insurance quotes", "home insurance", "life insurance", "business insurance", "Medicare plans", "health insurance broker", "renters insurance", "umbrella insurance", "commercial insurance", "workers comp insurance", "cheap car insurance", "SR-22 insurance", "flood insurance", "insurance for small business"],
+    [{ metric: "350%", label: "Quote Requests" }, { metric: "#1", label: "Local Agent Rankings" }, { metric: "80%", label: "More Policies Written" }, { metric: "5x", label: "ROI" }],
+    [
+      { q: "How do I compete with GEICO and Progressive?", a: "You can't outrank them nationally, but you can dominate locally. 'Insurance agent in [city]' captures people who prefer face-to-face service over call centers." },
+      { q: "Should I target all insurance lines?", a: "Focus on your most profitable lines first. If auto and home are your bread and butter, optimize those before expanding to life, business, and specialty coverage." },
+      { q: "How do I get more quote requests from SEO?", a: "Create comparison content, coverage calculators, and clear quote request CTAs. 'How much does [type] insurance cost in [state]' captures high-intent shoppers." },
+      { q: "Can SEO help during Medicare open enrollment?", a: "Absolutely. Medicare searches surge during enrollment periods. Pre-optimized content for Medicare Advantage, Medigap, and Part D captures seniors actively comparing plans." },
+      { q: "What's the lifetime value that justifies SEO investment?", a: "Insurance clients have high lifetime value — a home+auto bundle averages $2,000-$4,000/year for 5-10+ years. SEO that generates even a few extra policies monthly delivers massive returns." },
+    ],
+    ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
+  ),
+
+  ind("fintech-seo", "Fintech SEO", "Fintech Companies", "SEO for Fintech - Financial Technology Marketing & Growth", "SEO for fintech companies, payment platforms, and digital banking. Rank for financial technology searches, attract users, and grow your platform with content-driven optimization.", Landmark, "Finance & Banking", "Fintech Companies", "Scale your fintech platform with SEO strategies that attract users searching for digital banking, payment solutions, investing apps, and financial tools.",
+    [
+      { title: "Regulatory Content Restrictions", desc: "Fintech marketing must comply with financial advertising regulations, SEC rules, and state-specific licensing requirements." },
+      { title: "Established Bank Competition", desc: "Traditional banks have massive domain authority. Fintech companies must compete with innovative content and product-focused SEO." },
+      { title: "Trust Building in New Category", desc: "Consumers are cautious about trusting new financial platforms. Content must emphasize security, regulation, FDIC insurance, and transparency." },
+      { title: "Rapid Product Evolution", desc: "Fintech products evolve quickly. SEO content must keep pace with feature launches, regulatory changes, and market shifts." },
+    ],
+    [
+      { title: "Product & Feature Pages", desc: "Optimized pages for each product feature — payments, lending, investing, savings, crypto — with clear value propositions and compliance disclosures." },
+      { title: "Financial Education Content", desc: "Educational content on personal finance, investing basics, budgeting tools, and financial literacy that drives massive organic traffic." },
+      { title: "Comparison & Alternative SEO", desc: "Rank for '[competitor] alternatives', 'best [product type] apps', and comparison queries that capture evaluating users." },
+      { title: "Technical & Security Content", desc: "Content demonstrating encryption, regulatory compliance, FDIC insurance partnerships, and security infrastructure to build trust." },
+    ],
+    ["fintech app", "payment processing", "digital wallet", "neobank", "investing app", "robo-advisor", "peer-to-peer lending", "mobile banking", "buy now pay later", "cryptocurrency exchange", "business payments", "expense management app", "financial planning tool", "digital payments", "open banking platform"],
+    [{ metric: "500%", label: "Organic User Growth" }, { metric: "300+", label: "Keywords Ranked" }, { metric: "40%", label: "CAC Reduction" }, { metric: "8x", label: "ROI" }],
+    [
+      { q: "How does SEO help fintech growth?", a: "SEO drives sustainable user acquisition at a fraction of paid advertising costs. Educational content builds trust while capturing users actively searching for financial solutions." },
+      { q: "How do we handle compliance in SEO content?", a: "We work with your legal team to ensure all content includes proper disclosures, avoids misleading claims, and complies with relevant financial regulations while still ranking well." },
+      { q: "Can SEO compete with bank domain authority?", a: "Yes. Banks have authority but often poor content. Fintech companies win with better user experience, more helpful content, and stronger product-focused SEO." },
+      { q: "What content drives fintech user acquisition?", a: "Financial education, product comparisons, calculators, and 'how-to' guides. Users searching for financial solutions discover your product through helpful content." },
+      { q: "How do you measure fintech SEO ROI?", a: "We track sign-ups from organic traffic, customer acquisition cost (CAC) from SEO vs paid channels, and lifetime value of organically acquired users." },
+    ],
+    ["content-strategy", "technical-seo", "link-building"], defaultLocs
+  ),
+
+  ind("credit-union-seo", "Credit Union SEO", "Credit Unions", "SEO for Credit Unions - Member Acquisition & Growth Marketing", "SEO for credit unions. Attract new members, promote loan products, and grow your credit union with community-focused digital marketing.", Landmark, "Finance & Banking", "Credit Unions", "Grow your credit union membership with SEO strategies that highlight your community focus, competitive rates, and member-first banking experience.",
+    [
+      { title: "Big Bank Brand Competition", desc: "Credit unions compete with Chase, Bank of America, and Wells Fargo for search visibility. Community-focused content and local SEO are your competitive advantages." },
+      { title: "Membership Eligibility Complexity", desc: "Credit union membership has eligibility requirements. Content must clearly communicate who can join while still attracting qualified prospects." },
+      { title: "Rate Competition", desc: "Credit unions often have better rates but lower visibility. SEO must surface your competitive rates to comparison shoppers." },
+      { title: "Digital Transformation", desc: "Members expect modern digital banking. SEO must showcase your digital capabilities while maintaining community brand identity." },
+    ],
+    [
+      { title: "Product & Rate Pages", desc: "Optimized pages for savings accounts, auto loans, mortgages, credit cards, and CDs — highlighting competitive rates with rate comparison content." },
+      { title: "Community & Local SEO", desc: "GBP optimization for each branch, community involvement content, and local event sponsorship promotion." },
+      { title: "Member Education Content", desc: "Financial literacy content, budgeting guides, and credit improvement resources that attract members while building community authority." },
+      { title: "Membership Conversion Pages", desc: "Clear eligibility information, simple join-online processes, and compelling reasons to switch from banks to your credit union." },
+    ],
+    ["credit union near me", "join credit union", "credit union savings rates", "auto loan credit union", "credit union mortgage", "share certificate rates", "credit union vs bank", "best credit union", "credit union checking account", "credit union CD rates", "student credit union", "business credit union", "credit union personal loan", "free checking credit union", "credit union membership"],
+    [{ metric: "280%", label: "New Membership Growth" }, { metric: "#1", label: "Local Rankings" }, { metric: "45%", label: "Loan Application Growth" }, { metric: "4x", label: "ROI" }],
+    [
+      { q: "How do credit unions compete with big banks in SEO?", a: "Focus on local dominance, community content, and rate comparison pages. Credit unions win local searches and 'credit union vs bank' comparison queries." },
+      { q: "Should we target 'credit union near me' searches?", a: "Absolutely. This is your highest-intent search. Each branch needs its own GBP listing optimized with member reviews, hours, and services." },
+      { q: "How do we promote better rates through SEO?", a: "Rate comparison content, calculator tools, and 'best savings rates in [city]' content captures rate shoppers and demonstrates your competitive advantage." },
+      { q: "Can SEO help attract younger members?", a: "Yes. Digital banking content, student financial literacy resources, and social media-integrated SEO attract millennials and Gen Z looking for alternatives to traditional banks." },
+      { q: "What's the member lifetime value for SEO ROI?", a: "Average credit union member relationships last 10+ years with multiple products. Even modest membership growth from SEO delivers substantial long-term revenue." },
+    ],
+    ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
+  ),
+
+  // Remaining finance entries from factory
   ...createFinanceBanking(),
 
   // ============================================================
@@ -1212,12 +1565,7 @@ function createEducation(): IndustryData[] {
   const cat = "Education & Training";
   const svcs: [string, string, string, string, string[]][] = [
     ["education-seo", "Education SEO", "Schools & Colleges", "SEO for Schools & Colleges - Education Marketing", ["school near me", "best college", "private school", "university programs", "online degree", "vocational training"]],
-    ["online-course-seo", "Online Course SEO", "Online Courses", "SEO for Online Courses - E-Learning Platform Marketing", ["online course", "learn [skill]", "certification program", "online training", "e-learning platform", "professional development"]],
-    ["tutoring-seo", "Tutoring SEO", "Tutoring Services", "SEO for Tutoring Services - Academic Tutoring Marketing", ["tutor near me", "math tutor", "online tutoring", "SAT prep", "reading tutor", "homework help", "test preparation"]],
-    ["driving-school-seo", "Driving School SEO", "Driving Schools", "SEO for Driving Schools - Driver Education Marketing", ["driving school near me", "driving lessons", "learner's permit", "driving test prep", "defensive driving course", "CDL training"]],
     ["language-school-seo", "Language School SEO", "Language Schools", "SEO for Language Schools - Language Learning Marketing", ["language school near me", "learn Spanish", "ESL classes", "French lessons", "language immersion", "TOEFL prep", "Mandarin classes"]],
-    ["coding-bootcamp-seo", "Coding Bootcamp SEO", "Coding Bootcamps", "SEO for Coding Bootcamps - Tech Education Marketing", ["coding bootcamp", "learn to code", "web development course", "data science bootcamp", "software engineering program", "full stack training"]],
-    ["daycare-seo", "Daycare SEO", "Daycare Centers", "SEO for Daycare Centers - Child Care Marketing", ["daycare near me", "child care center", "preschool near me", "infant care", "after school program", "Montessori school"]],
   ];
 
   return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
@@ -1301,11 +1649,7 @@ function createAutomotive(): IndustryData[] {
   const icon = Car;
   const cat = "Automotive & Transportation";
   const svcs: [string, string, string, string, string[]][] = [
-    ["automotive-seo", "Car Dealership SEO", "Car Dealerships", "SEO for Car Dealerships - Auto Dealer Marketing", ["car dealership near me", "used cars", "new cars for sale", "auto dealer", "car prices", "test drive"]],
-    ["auto-repair-seo", "Auto Repair SEO", "Auto Repair Shops", "SEO for Auto Repair Shops - Mechanic Marketing", ["auto repair near me", "mechanic", "oil change", "brake repair", "car service", "engine repair", "transmission repair"]],
     ["logistics-seo", "Logistics SEO", "Logistics Companies", "SEO for Logistics & Freight - Shipping Company Marketing", ["logistics company", "freight services", "shipping company", "supply chain", "warehousing", "trucking company", "courier service"]],
-    ["car-wash-seo", "Car Wash SEO", "Car Washes", "SEO for Car Washes - Auto Detailing Marketing", ["car wash near me", "auto detailing", "hand car wash", "mobile detailing", "ceramic coating", "paint protection"]],
-    ["motorcycle-seo", "Motorcycle Dealer SEO", "Motorcycle Dealers", "SEO for Motorcycle Dealers - Powersports Marketing", ["motorcycle dealer near me", "used motorcycles", "Harley dealer", "motorcycle parts", "ATV dealer", "motorcycle service"]],
     ["rv-seo", "RV Dealer SEO", "RV Dealers", "SEO for RV Dealers - Recreational Vehicle Marketing", ["RV dealer near me", "campers for sale", "motorhome", "travel trailer", "RV rental", "RV parts", "RV service"]],
     ["boat-seo", "Boat Dealer SEO", "Boat Dealers", "SEO for Boat Dealers - Marine Industry Marketing", ["boat dealer near me", "boats for sale", "yacht broker", "pontoon boat", "fishing boat", "boat service", "marine parts"]],
   ];
@@ -1485,9 +1829,6 @@ function createFinanceBanking(): IndustryData[] {
   const cat = "Finance & Banking";
   const svcs: [string, string, string, string, string[]][] = [
     ["bank-seo", "Bank SEO", "Banks", "SEO for Banks - Banking Digital Marketing", ["bank near me", "best savings account", "personal loan", "mortgage rates", "business banking", "checking account", "online banking"]],
-    ["fintech-seo", "Fintech SEO", "Fintech Companies", "SEO for Fintech - Financial Technology Marketing", ["fintech app", "payment processing", "digital wallet", "neobank", "peer-to-peer lending", "cryptocurrency exchange", "robo-advisor"]],
-    ["mortgage-seo", "Mortgage SEO", "Mortgage Lenders", "SEO for Mortgage Lenders - Home Loan Marketing", ["mortgage lender near me", "home loan rates", "refinance mortgage", "FHA loan", "VA loan", "first-time homebuyer loan", "mortgage calculator"]],
-    ["credit-union-seo", "Credit Union SEO", "Credit Unions", "SEO for Credit Unions - Member Acquisition Marketing", ["credit union near me", "join credit union", "credit union savings", "auto loan credit union", "credit union mortgage", "share certificate"]],
     ["crypto-seo", "Cryptocurrency SEO", "Crypto Companies", "SEO for Cryptocurrency - Blockchain & Crypto Marketing", ["cryptocurrency exchange", "buy bitcoin", "crypto wallet", "DeFi platform", "NFT marketplace", "blockchain development", "crypto trading"]],
   ];
   return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
