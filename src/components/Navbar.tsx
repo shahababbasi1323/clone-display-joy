@@ -73,6 +73,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -83,6 +85,7 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
     setOpenDropdown(null);
+    setMobileSubmenu(null);
   }, [location]);
 
   return (
@@ -167,18 +170,26 @@ const Navbar = () => {
             {navLinks.map((link) =>
               link.children ? (
                 <div key={link.label}>
-                  <div className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  <button
+                    onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
+                    className="w-full px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary flex items-center justify-between"
+                  >
                     {link.label}
-                  </div>
-                  {link.children.filter(c => !('group' in c && c.group)).map((child) => (
-                    <Link
-                      key={child.href}
-                      to={child.href!}
-                      className="px-6 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileSubmenu === link.label && (
+                    <div className="ml-2 border-l border-border">
+                      {link.children.filter(c => !('group' in c && c.group)).map((child) => (
+                        <Link
+                          key={child.href}
+                          to={child.href!}
+                          className="px-6 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ) : (
                 <Link
