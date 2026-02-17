@@ -7,7 +7,18 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Industries", href: "/industries" },
+  {
+    label: "Industries",
+    href: "/industries",
+    children: [
+      { label: "🇬🇧 English", href: "/industries" },
+      { label: "🇸🇦 العربية", href: "/ar/industries" },
+      { label: "🇫🇷 Français", href: "/fr/industries" },
+      { label: "🇩🇪 Deutsch", href: "/de/industries" },
+      { label: "🇪🇸 Español", href: "/es/industries" },
+      { label: "🇳🇱 Nederlands", href: "/nl/industries" },
+    ],
+  },
   { label: "Locations", href: "/locations" },
   { label: "Pricing", href: "/pricing" },
   { label: "Tools", href: "/tools" },
@@ -28,8 +39,7 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const location = useLocation();
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -39,7 +49,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
-    setDropdownOpen(false);
+    setOpenDropdown(null);
   }, [location]);
 
   return (
@@ -59,13 +69,13 @@ const Navbar = () => {
             link.children ? (
               <div key={link.label} className="relative">
                 <button
-                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                  onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
                   className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
                 >
                   {link.label}
-                  <ChevronDown className={`h-3 w-3 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
                 </button>
-                {dropdownOpen && (
+                {openDropdown === link.label && (
                   <div className="absolute top-full left-0 mt-1 glass rounded-lg py-2 min-w-[180px] shadow-xl">
                     {link.children.map((child) => (
                       <Link
