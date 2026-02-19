@@ -77,10 +77,22 @@ const LocationPage = () => {
   const h1Prefix = h1Map[loc.lang] || h1Map.en;
 
   // Unique SEO meta for this page
+  // Build full hreflang list: self + all alternates
+  const selfLang = loc.lang === "en" ? "en" : loc.lang;
+  const selfHref = `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`;
+  const hreflangList = [
+    { lang: selfLang, href: selfHref },
+    ...loc.hreflangAlternates.map(alt => ({
+      lang: alt.lang,
+      href: alt.href.startsWith("http") ? alt.href : `https://shahababbasi.com${alt.href}`,
+    })),
+  ];
+
   useSeoMeta({
     title: loc.metaTitle,
     description: loc.metaDescription,
-    canonical: `https://shahababbasi.com${loc.langPrefix ? `/${loc.langPrefix}` : ""}/${loc.slug}`,
+    canonical: selfHref,
+    hreflang: hreflangList,
   });
 
   // Localized labels

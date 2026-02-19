@@ -1,12 +1,18 @@
 import { useEffect } from "react";
 
+interface HreflangAlternate {
+  lang: string;
+  href: string;
+}
+
 interface SeoMetaOptions {
   title: string;
   description: string;
   canonical?: string;
+  hreflang?: HreflangAlternate[];
 }
 
-export function useSeoMeta({ title, description, canonical }: SeoMetaOptions) {
+export function useSeoMeta({ title, description, canonical, hreflang }: SeoMetaOptions) {
   useEffect(() => {
     document.title = title;
 
@@ -37,5 +43,34 @@ export function useSeoMeta({ title, description, canonical }: SeoMetaOptions) {
       }
       link.href = canonical;
     }
-  }, [title, description, canonical]);
+
+    // Inject hreflang alternate links
+    // Remove any previously injected hreflang links to avoid stale entries
+    document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+
+    if (hreflang && hreflang.length > 0) {
+      hreflang.forEach(({ lang, href }) => {
+        const link = document.createElement("link");
+        link.rel = "alternate";
+        link.setAttribute("hreflang", lang);
+        link.href = href.startsWith("http") ? href : `https://shahababbasi.com${href}`;
+        document.head.appendChild(link);
+      });
+
+      // Always add x-default pointing to the canonical (or first alternate)
+      const xDefault = document.createElement("link");
+      xDefault.rel = "alternate";
+      xDefault.setAttribute("hreflang", "x-default");
+      xDefault.href = canonical?.startsWith("http")
+        ? canonical
+        : `https://shahababbasi.com${canonical ?? ""}`;
+      document.head.appendChild(xDefault);
+    }
+
+    // Cleanup: remove hreflang links when component unmounts / page changes
+    return () => {
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+    };
+  }, [title, description, canonical, hreflang]);
 }
+
