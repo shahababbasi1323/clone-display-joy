@@ -654,6 +654,87 @@ export const locationsData: LocationData[] = [
   // ============================================================
   en("Dublin", "dublin", "Ireland", "IE", ["cork", "london"]),
   en("Cork", "cork", "Ireland", "IE", ["dublin"]),
+
+  // ============================================================
+  // 🇩🇰 DENMARK (Danish — 3 Cities)
+  // ============================================================
+  da("København", "copenhagen", "Danmark", "DK",
+    ["aarhus", "odense"],
+    [
+      h("en", "", "seo-services-copenhagen"),
+      h("sv", "sv", "seo-services-stockholm"),
+      h("no", "no", "seo-services-oslo"),
+    ]
+  ),
+  da("Aarhus", "aarhus", "Danmark", "DK",
+    ["copenhagen", "odense"],
+    [h("da", "da", "seo-services-copenhagen")]
+  ),
+  da("Odense", "odense", "Danmark", "DK",
+    ["copenhagen", "aarhus"],
+    [h("da", "da", "seo-services-copenhagen")]
+  ),
+
+  // ============================================================
+  // 🇸🇪 SWEDEN (Swedish — 3 Cities)
+  // ============================================================
+  sv("Stockholm", "stockholm", "Sverige", "SE",
+    ["gothenburg", "malmo"],
+    [
+      h("en", "", "seo-services-london"),
+      h("da", "da", "seo-services-copenhagen"),
+      h("no", "no", "seo-services-oslo"),
+      h("fi", "fi", "seo-services-helsinki"),
+    ]
+  ),
+  sv("Göteborg", "gothenburg", "Sverige", "SE",
+    ["stockholm", "malmo"],
+    [h("sv", "sv", "seo-services-stockholm")]
+  ),
+  sv("Malmö", "malmo", "Sverige", "SE",
+    ["stockholm", "gothenburg"],
+    [h("da", "da", "seo-services-copenhagen")]
+  ),
+
+  // ============================================================
+  // 🇳🇴 NORWAY (Norwegian — 3 Cities)
+  // ============================================================
+  no_("Oslo", "oslo", "Norge", "NO",
+    ["bergen", "trondheim"],
+    [
+      h("da", "da", "seo-services-copenhagen"),
+      h("sv", "sv", "seo-services-stockholm"),
+      h("fi", "fi", "seo-services-helsinki"),
+    ]
+  ),
+  no_("Bergen", "bergen", "Norge", "NO",
+    ["oslo", "trondheim"],
+    [h("no", "no", "seo-services-oslo")]
+  ),
+  no_("Trondheim", "trondheim", "Norge", "NO",
+    ["oslo", "bergen"],
+    [h("no", "no", "seo-services-oslo")]
+  ),
+
+  // ============================================================
+  // 🇫🇮 FINLAND (Finnish — 3 Cities)
+  // ============================================================
+  fi("Helsinki", "helsinki", "Suomi", "FI",
+    ["tampere", "turku"],
+    [
+      h("sv", "sv", "seo-services-stockholm"),
+      h("no", "no", "seo-services-oslo"),
+      h("da", "da", "seo-services-copenhagen"),
+    ]
+  ),
+  fi("Tampere", "tampere", "Suomi", "FI",
+    ["helsinki", "turku"],
+    [h("fi", "fi", "seo-services-helsinki")]
+  ),
+  fi("Turku", "turku", "Suomi", "FI",
+    ["helsinki", "tampere"],
+    [h("fi", "fi", "seo-services-helsinki")]
+  ),
 ];
 
 // Lookup helpers

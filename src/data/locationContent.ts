@@ -1703,29 +1703,6 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   fortaleza: [
     { name: "Beira Mar & Aldeota", desc: "SEO para empresas na Avenida Beira Mar e no bairro Aldeota." },
   ],
-  // Scandinavia
-  copenhagen: [
-    { name: "Strøget & Nyhavn", desc: "SEO for businesses along Strøget shopping street and the Nyhavn waterfront." },
-    { name: "Ørestad & Amager", desc: "SEO for modern businesses in the Ørestad development and Amager area." },
-  ],
-  aarhus: [
-    { name: "Latinerkvarteret & City Centre", desc: "SEO for businesses in the Latin Quarter and Aarhus city centre." },
-  ],
-  stockholm: [
-    { name: "Gamla Stan & Norrmalm", desc: "SEO for businesses in Gamla Stan (Old Town) and the Norrmalm commercial district." },
-    { name: "Kista Science City", desc: "SEO for tech and IT companies in Kista Science City." },
-  ],
-  gothenburg: [
-    { name: "Nordstan & Avenyn", desc: "SEO for retail and hospitality businesses along Avenyn and in the Nordstan area." },
-  ],
-  oslo: [
-    { name: "Karl Johans gate & Sentrum", desc: "SEO for businesses along Karl Johans gate and Oslo city centre." },
-    { name: "Bjørvika & Barcode", desc: "SEO for modern businesses in the Bjørvika waterfront and Barcode development." },
-  ],
-  helsinki: [
-    { name: "Kamppi & Kluuvi", desc: "SEO for retail and corporate businesses in Kamppi and Kluuvi districts." },
-    { name: "Otaniemi & Espoo", desc: "SEO for tech startups and companies at Aalto University campus in Otaniemi." },
-  ],
   // Poland
   warsaw: [
     { name: "Śródmieście & Złote Tarasy", desc: "SEO for businesses in Warsaw's city centre and Złote Tarasy commercial area." },
@@ -1926,5 +1903,71 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   cork: [
     { name: "Patrick Street & City Centre", desc: "SEO for retail and hospitality businesses on Patrick Street and in Cork city centre." },
     { name: "Mahon & Little Island", desc: "Helping pharma and tech businesses in Mahon and Little Island business parks." },
+  ],
+
+  // ── Scandinavia (Danish / Swedish / Norwegian / Finnish) ─────
+
+  // Denmark
+  copenhagen: [
+    { name: "Indre By & Strøget", desc: "SEO for detail- og restaurationsvirksomheder i Indre By og langs Danmarks berømte gågade Strøget." },
+    { name: "Ørestad & Copenhagen Business Park", desc: "Hjælper teknologi- og finansvirksomheder i det moderne Ørestad og Copenhagen Business Park." },
+    { name: "Frederiksberg & Nørrebro", desc: "SEO for kreative virksomheder og startups i de livlige bydele Frederiksberg og Nørrebro." },
+    { name: "Nordhavn & Islands Brygge", desc: "Hjælper virksomheder i de voksende havne- og innovationskvarterer Nordhavn og Islands Brygge." },
+  ],
+  aarhus: [
+    { name: "Aarhus City Centre & Latinerkvarteret", desc: "SEO for restauranter og detailbutikker i Aarhus bymidte og det charmerende Latinerkvarteret." },
+    { name: "Aarhus Ø & Dokk1", desc: "Hjælper innovative virksomheder i Aarhus Ø-området nær Danmarks største offentlige bibliotek, Dokk1." },
+  ],
+  odense: [
+    { name: "Odense City Centre & Brandts", desc: "SEO for kultur-, detail- og restaurationsvirksomheder i Odenses bymidte og Brandts-kvarteret." },
+    { name: "Odense Science Park & SDU", desc: "Hjælper videnbaserede virksomheder og startups nær Syddansk Universitet og Odense Science Park." },
+  ],
+
+  // Sweden
+  stockholm: [
+    { name: "Norrmalm & Östermalm", desc: "SEO för företag inom finans, mode och lyxvarumärken i Norrmalm CBD och det eleganta Östermalm." },
+    { name: "Kista Science City", desc: "Hjälper teknikföretag och startups i Kista Science City — Skandinaviens ledande tech-kluster." },
+    { name: "Södermalm & Gamla Stan", desc: "SEO för kreativa byråer, restauranger och turistföretag i Södermalm och det historiska Gamla Stan." },
+    { name: "Solna & Sundbyberg", desc: "Hjälper företag i Solna Strand, Friends Arena-området och Sundbybergs snabbväxande affärsdistrikt." },
+  ],
+  gothenburg: [
+    { name: "Göteborg City Centre & Avenyn", desc: "SEO för detaljhandels- och restaurangföretag längs Avenyn och i Göteborgs stadskärna." },
+    { name: "Lindholmen Science Park", desc: "Hjälper fordonsindustrins leverantörer och teknikföretag i Lindholmen Science Park." },
+  ],
+  malmo: [
+    { name: "Västra Hamnen & Hyllie", desc: "SEO för företag i det moderna Västra Hamnen och det snabbt växande Hyllie affärsområde nära Öresundsbron." },
+    { name: "Malmö City Centre & Möllevången", desc: "Hjälper detaljhandels- och matföretag i Malmös stadskärna och mångkulturella Möllevången." },
+  ],
+
+  // Norway
+  oslo: [
+    { name: "Sentrum & Aker Brygge", desc: "SEO for selskaper innen finans og teknologi i Oslo sentrum og det pulserende bryggekomplekset Aker Brygge." },
+    { name: "Lysaker & Fornebu", desc: "Hjelper olje- og gassselskaper, teknologibedrifter og profesjonelle tjenesteleverandører i Lysaker og Fornebu." },
+    { name: "Majorstuen & Grünerløkka", desc: "SEO for kreative byråer, butikker og restauranter i de livlige nabolagene Majorstuen og Grünerløkka." },
+    { name: "Nydalen", desc: "Hjelper medieselskaper, startups og high-tech-bedrifter i det moderne Nydalen-næringsparken." },
+  ],
+  bergen: [
+    { name: "Bryggen & City Centre", desc: "SEO for reiseliv- og restaurantbedrifter ved det UNESCO-listede Bryggen og Bergens bysentrum." },
+    { name: "Mindemyren & Kokstad", desc: "Hjelper logistikk- og næringslivsbedrifter i Mindemyren og Kokstad næringspark." },
+  ],
+  trondheim: [
+    { name: "Midtbyen & Nedre Elvehavn", desc: "SEO for handel- og kulturbedrifter i Trondheims bykjerne Midtbyen og Nedre Elvehavn." },
+    { name: "NTNU & Gløshaugen", desc: "Hjelper teknologibedrifter og spin-offs ved Norges teknisk-naturvitenskapelige universitet (NTNU)." },
+  ],
+
+  // Finland
+  helsinki: [
+    { name: "Kamppi & Töölö", desc: "SEO yrityksille Kampin kauppakeskuksen ja Töölön vilkkailla kaupallisilla alueilla." },
+    { name: "Keilaniemi & Espoo Tech Hub", desc: "Autamme teknologiayrityksiä ja startupeja Keilaniemessä — Pohjoismaiden johtavassa teknologiakeskuksessa, jossa toimivat Nokia, Kone ja monet muut suuryritykset." },
+    { name: "Kalasatama & Sörnäinen", desc: "SEO innovatiivisille yrityksille ja startup-ekosysteemille Helsingin uudessa Kalasatama-kehitysalueella." },
+    { name: "Pasila & Tripla", desc: "Autamme yrityksiä Pasilassa ja modernissa Tripla-kauppakeskus- ja toimistokompleksissa." },
+  ],
+  tampere: [
+    { name: "Keskustori & Hämeenkatu", desc: "SEO kauppa- ja ravintolayrityksille Tampereen torin ja pääkadun Hämeenkadun varrella." },
+    { name: "Hervanta & Tampere University", desc: "Autamme teknologiayrityksiä ja tutkimuslaitoksia Hervannassa ja Tampereen yliopiston läheisyydessä." },
+  ],
+  turku: [
+    { name: "Kauppatori & Aurajoki", desc: "SEO kauppa- ja matkailualanyrityksille Turun kauppatorin ja Aurajokirannan alueella." },
+    { name: "Turku Science Park & BioCity", desc: "Autamme bioteknologia- ja lääketiedeyrityksiä Turun Tiedepuistossa ja BioCity-kampuksella." },
   ],
 };
