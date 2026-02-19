@@ -1970,4 +1970,20 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Kauppatori & Aurajoki", desc: "SEO kauppa- ja matkailualanyrityksille Turun kauppatorin ja Aurajokirannan alueella." },
     { name: "Turku Science Park & BioCity", desc: "Autamme bioteknologia- ja lääketiedeyrityksiä Turun Tiedepuistossa ja BioCity-kampuksella." },
   ],
+
+  // ── Additional Scandinavian cities ───────────────────────────
+
+  // Denmark
+  aalborg: [
+    { name: "Aalborg Centrum & Nytorv", desc: "SEO for detail- og servicevirksomheder i Aalborg bymidte og omkring den historiske Nytorv-plads." },
+    { name: "Aalborg Havn & Waterfront", desc: "Hjælper restauranter, eventvirksomheder og kulturinstitutioner i det fornyede havneområde i Aalborg." },
+    { name: "Aalborg Universitet & Technopark", desc: "SEO for vidensvirksomheder, startups og tech-virksomheder nær Aalborg Universitets campus og Technopark." },
+  ],
+
+  // Sweden
+  uppsala: [
+    { name: "Uppsala Centrum & Stora Torget", desc: "SEO för handels- och restaurangföretag i Uppsala stadskärna och runt det historiska Stora Torget." },
+    { name: "Uppsala Universitet & Bioteknik", desc: "Hjälper life science-företag, startups och forskningsinstitut nära Uppsala Universitets campus — ett av Nordeuropas ledande." },
+    { name: "Fyrislund & Uppsala Logistikpark", desc: "SEO för logistik-, tillverknings- och distributionsföretag i Fyrislund och Uppsalas växande logistikpark." },
+  ],
 };
