@@ -212,96 +212,64 @@ export const locationsData: LocationData[] = [
   en("Al Ain", "al-ain", "UAE", "AE", ["abu-dhabi", "dubai", "sharjah"]),
 
   // ============================================================
-  // 🇸🇦 SAUDI ARABIA (English + Arabic — 8 Cities)
+  // 🇸🇦 SAUDI ARABIA (Arabic — 8 Cities)
   // ============================================================
-  // English
-  en("Riyadh", "riyadh", "Saudi Arabia", "SA", ["jeddah", "dammam", "makkah"], [h("ar", "ar", "seo-services-riyadh")]),
-  en("Jeddah", "jeddah", "Saudi Arabia", "SA", ["riyadh", "makkah", "madinah"], [h("ar", "ar", "seo-services-jeddah")]),
-  en("Dammam", "dammam", "Saudi Arabia", "SA", ["khobar", "riyadh", "jeddah"], [h("ar", "ar", "seo-services-dammam")]),
-  en("Makkah", "makkah", "Saudi Arabia", "SA", ["jeddah", "madinah", "riyadh"], [h("ar", "ar", "seo-services-makkah")]),
-  en("Madinah", "madinah", "Saudi Arabia", "SA", ["makkah", "jeddah", "tabuk"], [h("ar", "ar", "seo-services-madinah")]),
-  en("Khobar", "khobar", "Saudi Arabia", "SA", ["dammam", "riyadh", "jeddah"], [h("ar", "ar", "seo-services-khobar")]),
-  en("Tabuk", "tabuk", "Saudi Arabia", "SA", ["madinah", "riyadh", "jeddah"], [h("ar", "ar", "seo-services-tabuk")]),
-  en("Abha", "abha", "Saudi Arabia", "SA", ["riyadh", "jeddah", "makkah"], [h("ar", "ar", "seo-services-abha")]),
-  // Arabic
-  ar("Riyadh", "الرياض", "riyadh", "Saudi Arabia", "السعودية", "SA", ["jeddah", "dammam", "makkah"], [h("en", "", "seo-services-riyadh")]),
-  ar("Jeddah", "جدة", "jeddah", "Saudi Arabia", "السعودية", "SA", ["riyadh", "makkah", "madinah"], [h("en", "", "seo-services-jeddah")]),
-  ar("Dammam", "الدمام", "dammam", "Saudi Arabia", "السعودية", "SA", ["khobar", "riyadh", "jeddah"], [h("en", "", "seo-services-dammam")]),
-  ar("Makkah", "مكة المكرمة", "makkah", "Saudi Arabia", "السعودية", "SA", ["jeddah", "madinah", "riyadh"], [h("en", "", "seo-services-makkah")]),
-  ar("Madinah", "المدينة المنورة", "madinah", "Saudi Arabia", "السعودية", "SA", ["makkah", "jeddah", "tabuk"], [h("en", "", "seo-services-madinah")]),
-  ar("Khobar", "الخبر", "khobar", "Saudi Arabia", "السعودية", "SA", ["dammam", "riyadh", "jeddah"], [h("en", "", "seo-services-khobar")], "المنطقة الشرقية"),
-  ar("Tabuk", "تبوك", "tabuk", "Saudi Arabia", "السعودية", "SA", ["madinah", "riyadh", "jeddah"], [h("en", "", "seo-services-tabuk")], "شمال السعودية"),
-  ar("Abha", "أبها", "abha", "Saudi Arabia", "السعودية", "SA", ["riyadh", "jeddah", "makkah"], [h("en", "", "seo-services-abha")], "المنطقة الجنوبية"),
+  ar("Riyadh", "الرياض", "riyadh", "Saudi Arabia", "السعودية", "SA", ["jeddah", "dammam", "makkah"]),
+  ar("Jeddah", "جدة", "jeddah", "Saudi Arabia", "السعودية", "SA", ["riyadh", "makkah", "madinah"]),
+  ar("Dammam", "الدمام", "dammam", "Saudi Arabia", "السعودية", "SA", ["khobar", "riyadh", "jeddah"]),
+  ar("Makkah", "مكة المكرمة", "makkah", "Saudi Arabia", "السعودية", "SA", ["jeddah", "madinah", "riyadh"]),
+  ar("Madinah", "المدينة المنورة", "madinah", "Saudi Arabia", "السعودية", "SA", ["makkah", "jeddah", "tabuk"]),
+  ar("Khobar", "الخبر", "khobar", "Saudi Arabia", "السعودية", "SA", ["dammam", "riyadh", "jeddah"], [], "المنطقة الشرقية"),
+  ar("Tabuk", "تبوك", "tabuk", "Saudi Arabia", "السعودية", "SA", ["madinah", "riyadh", "jeddah"], [], "شمال السعودية"),
+  ar("Abha", "أبها", "abha", "Saudi Arabia", "السعودية", "SA", ["riyadh", "jeddah", "makkah"], [], "المنطقة الجنوبية"),
 
   // ============================================================
-  // 🇶🇦 QATAR (English + Arabic — 3 Cities)
+  // 🇶🇦 QATAR (Arabic — 2 Cities)
   // ============================================================
-  en("Doha", "doha", "Qatar", "QA", ["al-wakrah", "lusail"], [h("ar", "ar", "seo-services-doha")]),
-  en("Al Wakrah", "al-wakrah", "Qatar", "QA", ["doha", "lusail"]),
-  en("Lusail", "lusail", "Qatar", "QA", ["doha", "al-wakrah"], [h("ar", "ar", "seo-services-lusail")]),
-  ar("Doha", "الدوحة", "doha", "Qatar", "قطر", "QA", ["lusail"], [h("en", "", "seo-services-doha")]),
-  ar("Lusail", "لوسيل", "lusail", "Qatar", "قطر", "QA", ["doha"], [h("en", "", "seo-services-lusail")]),
+  ar("Doha", "الدوحة", "doha", "Qatar", "قطر", "QA", ["lusail"]),
+  ar("Lusail", "لوسيل", "lusail", "Qatar", "قطر", "QA", ["doha"]),
 
   // ============================================================
-  // 🇧🇭 BAHRAIN (English + Arabic — 2 Cities)
+  // 🇧🇭 BAHRAIN (Arabic — 1 City)
   // ============================================================
-  en("Manama", "manama", "Bahrain", "BH", ["riffa"], [h("ar", "ar", "seo-services-manama")]),
-  en("Riffa", "riffa", "Bahrain", "BH", ["manama"]),
-  ar("Manama", "المنامة", "manama", "Bahrain", "البحرين", "BH", ["riffa"], [h("en", "", "seo-services-manama")]),
+  ar("Manama", "المنامة", "manama", "Bahrain", "البحرين", "BH", ["riffa"]),
 
   // ============================================================
-  // 🇰🇼 KUWAIT (English + Arabic — 3 Cities)
+  // 🇰🇼 KUWAIT (Arabic — 1 City)
   // ============================================================
-  en("Kuwait City", "kuwait-city", "Kuwait", "KW", ["hawalli", "salmiya"], [h("ar", "ar", "seo-services-kuwait-city")]),
-  en("Hawalli", "hawalli", "Kuwait", "KW", ["kuwait-city", "salmiya"]),
-  en("Salmiya", "salmiya", "Kuwait", "KW", ["kuwait-city", "hawalli"]),
-  ar("Kuwait City", "الكويت", "kuwait-city", "Kuwait", "الكويت", "KW", ["hawalli", "salmiya"], [h("en", "", "seo-services-kuwait-city")]),
+  ar("Kuwait City", "الكويت", "kuwait-city", "Kuwait", "الكويت", "KW", ["hawalli", "salmiya"]),
 
   // ============================================================
-  // 🇴🇲 OMAN (English + Arabic — 3 Cities)
+  // 🇴🇲 OMAN (Arabic — 1 City)
   // ============================================================
-  en("Muscat", "muscat", "Oman", "OM", ["salalah", "sohar"], [h("ar", "ar", "seo-services-muscat")]),
-  en("Salalah", "salalah", "Oman", "OM", ["muscat", "sohar"]),
-  en("Sohar", "sohar", "Oman", "OM", ["muscat", "salalah"]),
-  ar("Muscat", "مسقط", "muscat", "Oman", "عُمان", "OM", ["salalah", "sohar"], [h("en", "", "seo-services-muscat")]),
+  ar("Muscat", "مسقط", "muscat", "Oman", "عُمان", "OM", ["salalah", "sohar"]),
 
   // ============================================================
-  // 🇯🇴 JORDAN (English + Arabic — 2 Cities)
+  // 🇯🇴 JORDAN (Arabic — 1 City)
   // ============================================================
-  en("Amman", "amman", "Jordan", "JO", ["irbid"], [h("ar", "ar", "seo-services-amman")]),
-  en("Irbid", "irbid", "Jordan", "JO", ["amman"]),
-  ar("Amman", "عمّان", "amman", "Jordan", "الأردن", "JO", ["irbid"], [h("en", "", "seo-services-amman")]),
+  ar("Amman", "عمّان", "amman", "Jordan", "الأردن", "JO", ["irbid"]),
 
   // ============================================================
-  // 🇱🇧 LEBANON (English + Arabic — 2 Cities)
+  // 🇱🇧 LEBANON (Arabic — 1 City)
   // ============================================================
-  en("Beirut", "beirut", "Lebanon", "LB", ["tripoli-lebanon"], [h("ar", "ar", "seo-services-beirut")]),
-  en("Tripoli", "tripoli-lebanon", "Lebanon", "LB", ["beirut"]),
-  ar("Beirut", "بيروت", "beirut", "Lebanon", "لبنان", "LB", ["tripoli-lebanon"], [h("en", "", "seo-services-beirut")]),
+  ar("Beirut", "بيروت", "beirut", "Lebanon", "لبنان", "LB", ["tripoli-lebanon"]),
 
   // ============================================================
-  // 🇪🇬 EGYPT (English + Arabic — 3 Cities)
+  // 🇪🇬 EGYPT (Arabic — 2 Cities)
   // ============================================================
-  en("Cairo", "cairo", "Egypt", "EG", ["alexandria", "giza"], [h("ar", "ar", "seo-services-cairo")]),
-  en("Alexandria", "alexandria", "Egypt", "EG", ["cairo", "giza"], [h("ar", "ar", "seo-services-alexandria")]),
-  en("Giza", "giza", "Egypt", "EG", ["cairo", "alexandria"]),
-  ar("Cairo", "القاهرة", "cairo", "Egypt", "مصر", "EG", ["alexandria", "giza"], [h("en", "", "seo-services-cairo")]),
-  ar("Alexandria", "الإسكندرية", "alexandria", "Egypt", "مصر", "EG", ["cairo", "giza"], [h("en", "", "seo-services-alexandria")]),
+  ar("Cairo", "القاهرة", "cairo", "Egypt", "مصر", "EG", ["alexandria", "giza"]),
+  ar("Alexandria", "الإسكندرية", "alexandria", "Egypt", "مصر", "EG", ["cairo", "giza"]),
 
   // ============================================================
-  // 🇲🇦 MOROCCO (English + French + Arabic — 3 Cities)
+  // 🇲🇦 MOROCCO (French + Arabic — 1 City each)
   // ============================================================
-  en("Casablanca", "casablanca", "Morocco", "MA", ["marrakech", "rabat"], [h("fr", "fr", "seo-services-casablanca"), h("ar", "ar", "seo-services-casablanca")]),
-  en("Marrakech", "marrakech", "Morocco", "MA", ["casablanca", "rabat"]),
-  en("Rabat", "rabat", "Morocco", "MA", ["casablanca", "marrakech"]),
-  fr("Casablanca", "casablanca", "Maroc", "MA", ["marrakech", "rabat"], [h("en", "", "seo-services-casablanca"), h("ar", "ar", "seo-services-casablanca")]),
-  ar("Casablanca", "الدار البيضاء", "casablanca", "Morocco", "المغرب", "MA", ["marrakech", "rabat"], [h("en", "", "seo-services-casablanca"), h("fr", "fr", "seo-services-casablanca")]),
+  fr("Casablanca", "casablanca", "Maroc", "MA", ["marrakech", "rabat"], [h("ar", "ar", "seo-services-casablanca")]),
+  ar("Casablanca", "الدار البيضاء", "casablanca", "Morocco", "المغرب", "MA", ["marrakech", "rabat"], [h("fr", "fr", "seo-services-casablanca")]),
 
   // ============================================================
-  // 🇹🇳 TUNISIA (English + French — 2 Cities)
+  // 🇹🇳 TUNISIA (French — 1 City)
   // ============================================================
-  en("Tunis", "tunis", "Tunisia", "TN", [], [h("fr", "fr", "seo-services-tunis")]),
-  fr("Tunis", "tunis", "Tunisie", "TN", [], [h("en", "", "seo-services-tunis")]),
+  fr("Tunis", "tunis", "Tunisie", "TN", []),
 
   // ============================================================
   // 🇬🇧 UNITED KINGDOM (English — 12 Cities)
