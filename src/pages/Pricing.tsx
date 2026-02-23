@@ -7,6 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const plans = [
   {
@@ -110,6 +112,47 @@ const guarantees = [
 const Pricing = () => {
   const [showQuoteForm, setShowQuoteForm] = useState(false);
   const [quoteSubmitted, setQuoteSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleQuoteSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const name = (formData.get("name") as string).trim();
+    const email = (formData.get("email") as string).trim();
+    const website = (formData.get("website") as string)?.trim() || "";
+    const budget = (formData.get("budget") as string)?.trim() || "";
+    const message = (formData.get("message") as string).trim();
+
+    const fullMessage = [
+      message,
+      website && `Website: ${website}`,
+      budget && `Budget: ${budget}`,
+    ].filter(Boolean).join("\n");
+
+    try {
+      const { error } = await supabase.from("leads").insert({
+        name,
+        email,
+        message: fullMessage,
+        source: "pricing_custom_quote",
+      });
+      if (error) throw error;
+
+      // Trigger email notification
+      await supabase.functions.invoke("notify-lead", {
+        body: { name, email, message: fullMessage, source: "pricing_custom_quote" },
+      });
+
+      setQuoteSubmitted(true);
+      toast.success("Proposal request submitted! We'll be in touch within 24 hours.");
+    } catch {
+      toast.error("Something went wrong. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useSeoMeta({
     title: "SEO Pricing & Packages — Affordable Plans from $500/mo | Custom Quotes",
@@ -308,18 +351,18 @@ const Pricing = () => {
                   <p className="font-semibold">Proposal request received! We'll get back to you within 24 hours with a custom plan.</p>
                 </div>
               ) : (
-                <form onSubmit={(e) => { e.preventDefault(); setQuoteSubmitted(true); }} className="space-y-4 text-left mt-6">
+                <form onSubmit={handleQuoteSubmit} className="space-y-4 text-left mt-6">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <Input placeholder="Your name" required />
-                    <Input type="email" placeholder="your@email.com" required />
+                    <Input name="name" placeholder="Your name" required />
+                    <Input name="email" type="email" placeholder="your@email.com" required />
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <Input placeholder="Website URL" />
-                    <Input placeholder="Monthly budget (e.g. $1,500)" />
+                    <Input name="website" placeholder="Website URL" />
+                    <Input name="budget" placeholder="Monthly budget (e.g. $1,500)" />
                   </div>
-                  <Textarea placeholder="What services are you interested in? (SEO, PPC, content, web design, etc.) Tell us about your goals..." rows={4} required />
-                  <Button type="submit" className="w-full glow-primary">
-                    Submit Proposal Request <ArrowRight className="ml-2 h-4 w-4" />
+                  <Textarea name="message" placeholder="What services are you interested in? (SEO, PPC, content, web design, etc.) Tell us about your goals..." rows={4} required />
+                  <Button type="submit" className="w-full glow-primary" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit Proposal Request"} {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4" />}
                   </Button>
                 </form>
               )}
