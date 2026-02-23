@@ -59,8 +59,19 @@ const Services = () => {
             })}
           </div>
 
+          {/* PPC Cross-link */}
+          <div className="mt-12 text-center">
+            <p className="text-muted-foreground mb-3">
+              Need immediate results? Explore our{" "}
+              <Link to="/ppc" className="text-primary hover:underline font-medium">
+                PPC & Paid Advertising Services
+              </Link>{" "}
+              for instant traffic and conversions.
+            </p>
+          </div>
+
           {/* CTA */}
-          <div className="mt-20 text-center">
+          <div className="mt-16 text-center">
             <div className="glass rounded-2xl p-10 md:p-16 glow-primary max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-4">Need a Custom Strategy?</h2>
               <p className="text-muted-foreground mb-6">Every business is unique. Let's discuss your specific goals and create a tailored SEO plan.</p>
