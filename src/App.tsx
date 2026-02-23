@@ -35,6 +35,8 @@ import AdminLeads from "./pages/admin/AdminLeads";
 import AdminSettings from "./pages/admin/AdminSettings";
 import IndustriesLang from "./pages/IndustriesLang";
 import IndustryPageLang from "./pages/IndustryPageLang";
+import PpcServices from "./pages/PpcServices";
+import PpcServicePage from "./pages/PpcServicePage";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +55,8 @@ const App = () => (
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:slug" element={<IndustryPage />} />
           <Route path="/locations" element={<Locations />} />
+          <Route path="/ppc" element={<PpcServices />} />
+          <Route path="/ppc/:slug" element={<PpcServicePage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/tools" element={<ToolsHub />} />

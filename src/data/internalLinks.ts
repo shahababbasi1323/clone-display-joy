@@ -5,6 +5,7 @@
 
 import { toolsData, type ToolData } from "./toolsData";
 import { servicesData } from "./servicesData";
+import { ppcServicesData } from "./ppcServicesData";
 import { industriesData } from "./industriesData";
 import { blogPosts } from "./blogData";
 import { locationsData } from "./locationsData";
@@ -437,4 +438,9 @@ export function getLocationRelatedTools() {
 /** Get all services for location sidebar */
 export function getAllServicesForSidebar() {
   return servicesData.map(s => ({ slug: s.slug, title: s.title, icon: s.icon }));
+}
+
+/** Get all PPC services for sidebar / interlinking */
+export function getAllPpcServicesForSidebar() {
+  return ppcServicesData.map(s => ({ slug: s.slug, title: s.title, icon: s.icon }));
 }
