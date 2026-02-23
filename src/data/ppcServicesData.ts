@@ -92,8 +92,11 @@ export const ppcServicesData: PpcServiceData[] = [
     relatedServices: ["social-media-ads", "remarketing-retargeting", "ppc-audit-strategy"],
     relatedSeoServices: ["keyword-research", "ecommerce-seo", "on-page-seo"],
     relatedTools: [
+      { label: "Google Ads Budget Calculator", href: "/tools/google-ads-budget-calculator" },
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Ad Copy Generator", href: "/tools/ad-copy-generator" },
+      { label: "Quality Score Estimator", href: "/tools/quality-score-estimator" },
       { label: "CPC Savings Calculator", href: "/tools/cpc-savings-calculator" },
-      { label: "SEO ROI Calculator", href: "/tools/seo-roi-calculator" },
     ],
   },
 
@@ -152,6 +155,9 @@ export const ppcServicesData: PpcServiceData[] = [
     relatedServices: ["google-ads-management", "remarketing-retargeting", "local-search-ads"],
     relatedSeoServices: ["content-strategy", "geo-optimization"],
     relatedTools: [
+      { label: "Ad Copy Generator", href: "/tools/ad-copy-generator" },
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Google Ads Budget Calculator", href: "/tools/google-ads-budget-calculator" },
       { label: "Hashtag Generator", href: "/tools/hashtag-generator" },
       { label: "Social Media Image Size Guide", href: "/tools/social-media-image-size-guide" },
     ],
@@ -212,6 +218,9 @@ export const ppcServicesData: PpcServiceData[] = [
     relatedServices: ["google-ads-management", "social-media-ads", "ppc-audit-strategy"],
     relatedSeoServices: ["ecommerce-seo", "on-page-seo"],
     relatedTools: [
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Ad Copy Generator", href: "/tools/ad-copy-generator" },
+      { label: "Google Ads Budget Calculator", href: "/tools/google-ads-budget-calculator" },
       { label: "CTA Generator", href: "/tools/cta-generator" },
       { label: "A/B Test Duration Calculator", href: "/tools/ab-test-duration-calculator" },
     ],
@@ -272,8 +281,11 @@ export const ppcServicesData: PpcServiceData[] = [
     relatedServices: ["google-ads-management", "remarketing-retargeting", "local-search-ads"],
     relatedSeoServices: ["seo-audit", "seo-consulting", "keyword-research"],
     relatedTools: [
+      { label: "PPC Campaign Audit Checklist", href: "/tools/ppc-campaign-audit-checklist" },
+      { label: "Quality Score Estimator", href: "/tools/quality-score-estimator" },
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Google Ads Budget Calculator", href: "/tools/google-ads-budget-calculator" },
       { label: "SEO ROI Calculator", href: "/tools/seo-roi-calculator" },
-      { label: "CPC Savings Calculator", href: "/tools/cpc-savings-calculator" },
     ],
   },
 
@@ -332,6 +344,9 @@ export const ppcServicesData: PpcServiceData[] = [
     relatedServices: ["google-ads-management", "social-media-ads", "ppc-audit-strategy"],
     relatedSeoServices: ["local-seo", "google-business-profile"],
     relatedTools: [
+      { label: "Google Ads Budget Calculator", href: "/tools/google-ads-budget-calculator" },
+      { label: "ROAS Calculator", href: "/tools/roas-calculator" },
+      { label: "Ad Copy Generator", href: "/tools/ad-copy-generator" },
       { label: "Google Business Profile Audit", href: "/tools/google-business-profile-audit" },
       { label: "Local Keyword Generator", href: "/tools/local-keyword-generator" },
     ],
