@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-border bg-card/30">
       <div className="container mx-auto section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2 space-y-4">
             <Link to="/" className="text-2xl font-bold">
@@ -46,14 +46,43 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Services */}
+          {/* SEO Services */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Services</h3>
+            <h3 className="font-semibold text-foreground">SEO Services</h3>
             <ul className="space-y-2">
-              {["Technical SEO", "On-Page SEO", "Local SEO", "E-commerce SEO", "GEO Optimization", "Link Building"].map((s) => (
-                <li key={s}>
-                  <Link to="/services" className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
-                    {s}
+              {[
+                { label: "Technical SEO", href: "/services/technical-seo" },
+                { label: "On-Page SEO", href: "/services/on-page-seo" },
+                { label: "Local SEO", href: "/services/local-seo" },
+                { label: "E-commerce SEO", href: "/services/ecommerce-seo" },
+                { label: "Link Building", href: "/services/link-building" },
+                { label: "All SEO Services", href: "/services" },
+              ].map((s) => (
+                <li key={s.href}>
+                  <Link to={s.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
+                    {s.label}
+                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* PPC Services */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground">PPC Services</h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Google Ads", href: "/ppc/google-ads-management" },
+                { label: "Social Media Ads", href: "/ppc/social-media-ads" },
+                { label: "Remarketing", href: "/ppc/remarketing-retargeting" },
+                { label: "Local Search Ads", href: "/ppc/local-search-ads" },
+                { label: "PPC Audit", href: "/ppc/ppc-audit-strategy" },
+                { label: "All PPC Services", href: "/ppc" },
+              ].map((s) => (
+                <li key={s.href}>
+                  <Link to={s.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
+                    {s.label}
                     <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
