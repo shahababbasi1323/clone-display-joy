@@ -19,6 +19,7 @@ import googleUpdatesImg from "@/assets/blog/google-updates.jpg";
 import keywordResearchImg from "@/assets/blog/keyword-research.jpg";
 import onPageSeoImg from "@/assets/blog/on-page-seo.jpg";
 import aiSeoImg from "@/assets/blog/ai-seo.jpg";
+import scandinavianSeoImg from "@/assets/blog/scandinavian-seo.jpg";
 
 const imageMap: Record<string, string> = {
   "seo-strategy": seoStrategyImg,
@@ -31,6 +32,7 @@ const imageMap: Record<string, string> = {
   "keyword-research": keywordResearchImg,
   "on-page-seo": onPageSeoImg,
   "ai-seo": aiSeoImg,
+  "scandinavian-seo": scandinavianSeoImg,
 };
 
 const BlogPostPage = () => {

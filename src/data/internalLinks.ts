@@ -235,6 +235,7 @@ const blogToServices: Record<string, string[]> = {
   "keyword-research-guide": ["keyword-research", "content-strategy", "seo-audit"],
   "on-page-seo-optimization": ["on-page-seo", "technical-seo", "content-strategy"],
   "ai-seo-future": ["geo-optimization", "aeo-optimization", "content-strategy"],
+  "scandinavian-seo-guide": ["international-seo", "local-seo", "geo-optimization"],
 };
 
 const blogToTools: Record<string, string[]> = {
@@ -248,6 +249,7 @@ const blogToTools: Record<string, string[]> = {
   "keyword-research-guide": ["keyword-suggestion-tool", "lsi-keyword-generator"],
   "on-page-seo-optimization": ["meta-tag-generator", "heading-analyzer"],
   "ai-seo-future": ["ai-search-prompt-tester", "ai-content-optimizer"],
+  "scandinavian-seo-guide": ["meta-tag-generator", "hreflang-tag-generator"],
 };
 
 // ── Public API ──────────────────────────────────────────────────────
