@@ -19,6 +19,7 @@ export const toolCategories = [
   { name: "Reporting & Calculation", slugs: ["seo-roi-calculator","cpc-savings-calculator","domain-age-checker","website-cost-estimator"] },
   { name: "Conversion & UX", slugs: ["cta-generator","ab-test-duration-calculator","color-contrast-checker","page-speed-checklist"] },
   { name: "Email & Outreach", slugs: ["email-subject-line-tester","cold-email-generator"] },
+  { name: "PPC & Paid Ads", slugs: ["google-ads-budget-calculator","roas-calculator","ad-copy-generator","quality-score-estimator","ppc-campaign-audit-checklist"] },
 ];
 
 const t = (slug: string, name: string, metaTitle: string, metaDescription: string, category: string): ToolData => ({
@@ -96,6 +97,11 @@ export const toolsData: ToolData[] = [
   t("page-speed-checklist","Page Speed Optimization Checklist","Page Speed Checklist - 25 Performance Tips","Interactive 25-point checklist for optimizing page loading speed.","Conversion & UX"),
   t("email-subject-line-tester","Email Subject Line Tester","Email Subject Line Tester - Score & Optimize","Score email subject lines for length, power words, and spam triggers.","Email & Outreach"),
   t("cold-email-generator","Cold Outreach Email Generator","Cold Email Generator - Outreach Templates","Generate customized cold outreach email templates for link building and partnerships.","Email & Outreach"),
+  t("google-ads-budget-calculator","Google Ads Budget Calculator","Google Ads Budget Calculator - PPC Budget Planner","Plan your Google Ads budget by estimating clicks, conversions, revenue, and ROAS from your campaign metrics.","PPC & Paid Ads"),
+  t("roas-calculator","ROAS Calculator","ROAS Calculator - Return on Ad Spend","Calculate Return on Ad Spend, ACoS, net profit, and break-even ROAS for your paid advertising campaigns.","PPC & Paid Ads"),
+  t("ad-copy-generator","Ad Copy Generator","Ad Copy Generator - Google Ads RSA Headlines","Generate Google Ads responsive search ad headlines (30 chars) and descriptions (90 chars) for your campaigns.","PPC & Paid Ads"),
+  t("quality-score-estimator","Quality Score Estimator","Quality Score Estimator - Google Ads Checker","Estimate your Google Ads Quality Score with a 12-factor checklist covering ad relevance, CTR, and landing pages.","PPC & Paid Ads"),
+  t("ppc-campaign-audit-checklist","PPC Campaign Audit Checklist","PPC Audit Checklist - 20 Point Campaign Review","20-point PPC campaign audit covering structure, keywords, ad copy, bidding, and conversion tracking.","PPC & Paid Ads"),
 ];
 
 export const toolsDataMap: Record<string, ToolData> = Object.fromEntries(

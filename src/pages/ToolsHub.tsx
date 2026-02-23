@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Wrench, FileText, Code, Eye, Search, Share2, MapPin, Bot, LinkIcon, ShoppingCart, BarChart3, MousePointerClick, Mail, ArrowRight } from "lucide-react";
+import { Wrench, FileText, Code, Eye, Search, Share2, MapPin, Bot, LinkIcon, ShoppingCart, BarChart3, MousePointerClick, Mail, ArrowRight, Megaphone } from "lucide-react";
 import Layout from "@/components/Layout";
 import { toolCategories, toolsDataMap } from "@/data/toolsData";
 
@@ -17,6 +17,7 @@ const categoryIcons: Record<string, any> = {
   "Reporting & Calculation": BarChart3,
   "Conversion & UX": MousePointerClick,
   "Email & Outreach": Mail,
+  "PPC & Paid Ads": Megaphone,
 };
 
 const ToolsHub = () => (
@@ -26,7 +27,7 @@ const ToolsHub = () => (
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
           <div className="p-3 rounded-lg bg-accent/10 w-fit mx-auto mb-4"><Wrench className="h-8 w-8 text-accent" /></div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Free <span className="text-gradient">SEO Tools</span></h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">70+ powerful tools to help you optimize your website's search performance — completely free.</p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">75+ powerful tools to help you optimize your website's search performance and ad campaigns — completely free.</p>
         </motion.div>
 
         <div className="space-y-12">
