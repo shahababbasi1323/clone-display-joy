@@ -17,6 +17,7 @@ import { ProductDescriptionOptimizer, EcommerceSchemaGenerator, CategoryPageOpti
 import { SeoRoiCalculator, CpcSavingsCalculator, DomainAgeChecker, WebsiteCostEstimator } from "./tools/ReportingTools";
 import { CtaGenerator, AbTestDurationCalculator, ColorContrastChecker, PageSpeedChecklist } from "./tools/ConversionTools";
 import { EmailSubjectLineTester, ColdEmailGenerator } from "./tools/EmailTools";
+import { GoogleAdsBudgetCalculator, RoasCalculator, AdCopyGenerator, QualityScoreEstimator, PpcCampaignAuditChecklist } from "./tools/PpcTools";
 
 const registry: Record<string, React.FC> = {
   "word-counter": WordCounter,
@@ -89,6 +90,11 @@ const registry: Record<string, React.FC> = {
   "page-speed-checklist": PageSpeedChecklist,
   "email-subject-line-tester": EmailSubjectLineTester,
   "cold-email-generator": ColdEmailGenerator,
+  "google-ads-budget-calculator": GoogleAdsBudgetCalculator,
+  "roas-calculator": RoasCalculator,
+  "ad-copy-generator": AdCopyGenerator,
+  "quality-score-estimator": QualityScoreEstimator,
+  "ppc-campaign-audit-checklist": PpcCampaignAuditChecklist,
 };
 
 const ToolPage = () => {

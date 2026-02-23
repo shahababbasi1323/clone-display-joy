@@ -94,6 +94,12 @@ const toolToServices: Record<string, string[]> = {
   // Email tools
   "email-subject-line-tester": ["content-strategy"],
   "cold-email-generator": ["link-building", "off-page-seo"],
+  // PPC tools → SEO services (cross-link)
+  "google-ads-budget-calculator": ["seo-consulting", "keyword-research"],
+  "roas-calculator": ["seo-consulting", "ecommerce-seo"],
+  "ad-copy-generator": ["on-page-seo", "content-strategy"],
+  "quality-score-estimator": ["on-page-seo", "technical-seo"],
+  "ppc-campaign-audit-checklist": ["seo-audit", "seo-consulting"],
 };
 
 const toolToBlogs: Record<string, string[]> = {
