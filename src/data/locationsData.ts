@@ -358,29 +358,18 @@ export const locationsData: LocationData[] = [
   fr("Québec", "quebec-city", "Canada", "CA", ["montreal", "ottawa"]),
 
   // ============================================================
-  // 🇩🇪 GERMANY (English + German — 10 Cities)
+  // 🇩🇪 GERMANY (German — 10 Cities)
   // ============================================================
-  en("Berlin", "berlin", "Germany", "DE", ["hamburg", "leipzig", "dortmund"], [h("de", "de", "seo-services-berlin")]),
-  en("Munich", "munich", "Germany", "DE", ["stuttgart", "frankfurt", "cologne"], [h("de", "de", "seo-services-munich")]),
-  en("Hamburg", "hamburg", "Germany", "DE", ["berlin", "hanover", "dortmund"], [h("de", "de", "seo-services-hamburg")]),
-  en("Frankfurt", "frankfurt", "Germany", "DE", ["cologne", "dusseldorf", "stuttgart"], [h("de", "de", "seo-services-frankfurt")]),
-  en("Cologne", "cologne", "Germany", "DE", ["dusseldorf", "dortmund", "frankfurt"], [h("de", "de", "seo-services-cologne")]),
-  en("Düsseldorf", "dusseldorf", "Germany", "DE", ["cologne", "dortmund", "frankfurt"], [h("de", "de", "seo-services-dusseldorf")]),
-  en("Stuttgart", "stuttgart", "Germany", "DE", ["munich", "frankfurt", "cologne"], [h("de", "de", "seo-services-stuttgart")]),
-  en("Dortmund", "dortmund", "Germany", "DE", ["cologne", "dusseldorf", "hamburg"], [h("de", "de", "seo-services-dortmund")]),
-  en("Leipzig", "leipzig", "Germany", "DE", ["berlin", "dortmund", "hamburg"], [h("de", "de", "seo-services-leipzig")]),
-  en("Hanover", "hanover", "Germany", "DE", ["hamburg", "berlin", "dortmund"], [h("de", "de", "seo-services-hanover")]),
-  // German
-  de("Berlin", "berlin", "Deutschland", "DE", ["hamburg", "leipzig", "dortmund"], [h("en", "", "seo-services-berlin")]),
-  de("München", "munich", "Deutschland", "DE", ["stuttgart", "frankfurt", "cologne"], [h("en", "", "seo-services-munich")]),
-  de("Hamburg", "hamburg", "Deutschland", "DE", ["berlin", "hanover", "dortmund"], [h("en", "", "seo-services-hamburg")]),
-  de("Frankfurt", "frankfurt", "Deutschland", "DE", ["cologne", "dusseldorf", "stuttgart"], [h("en", "", "seo-services-frankfurt")]),
-  de("Köln", "cologne", "Deutschland", "DE", ["dusseldorf", "dortmund", "frankfurt"], [h("en", "", "seo-services-cologne")]),
-  de("Düsseldorf", "dusseldorf", "Deutschland", "DE", ["cologne", "dortmund", "frankfurt"], [h("en", "", "seo-services-dusseldorf")]),
-  de("Stuttgart", "stuttgart", "Deutschland", "DE", ["munich", "frankfurt", "cologne"], [h("en", "", "seo-services-stuttgart")]),
-  de("Dortmund", "dortmund", "Deutschland", "DE", ["cologne", "dusseldorf", "hamburg"], [h("en", "", "seo-services-dortmund")]),
-  de("Leipzig", "leipzig", "Deutschland", "DE", ["berlin", "dortmund", "hamburg"], [h("en", "", "seo-services-leipzig")]),
-  de("Hannover", "hanover", "Deutschland", "DE", ["hamburg", "berlin", "dortmund"], [h("en", "", "seo-services-hanover")]),
+  de("Berlin", "berlin", "Deutschland", "DE", ["hamburg", "leipzig", "dortmund"]),
+  de("München", "munich", "Deutschland", "DE", ["stuttgart", "frankfurt", "cologne"]),
+  de("Hamburg", "hamburg", "Deutschland", "DE", ["berlin", "hanover", "dortmund"]),
+  de("Frankfurt", "frankfurt", "Deutschland", "DE", ["cologne", "dusseldorf", "stuttgart"]),
+  de("Köln", "cologne", "Deutschland", "DE", ["dusseldorf", "dortmund", "frankfurt"]),
+  de("Düsseldorf", "dusseldorf", "Deutschland", "DE", ["cologne", "dortmund", "frankfurt"]),
+  de("Stuttgart", "stuttgart", "Deutschland", "DE", ["munich", "frankfurt", "cologne"]),
+  de("Dortmund", "dortmund", "Deutschland", "DE", ["cologne", "dusseldorf", "hamburg"]),
+  de("Leipzig", "leipzig", "Deutschland", "DE", ["berlin", "dortmund", "hamburg"]),
+  de("Hannover", "hanover", "Deutschland", "DE", ["hamburg", "berlin", "dortmund"]),
 
   // ============================================================
   // 🇦🇹 AUSTRIA (German — 3 Cities)
