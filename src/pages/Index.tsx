@@ -182,7 +182,7 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              🚀 Trusted SEO Expert & Digital Growth Strategist — 50+ Businesses Scaled
+              🚀 Trusted by 50+ Businesses Worldwide — SEO & Digital Growth Expert
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Rank #1 on Google, <span className="text-gradient">5x Your Revenue</span> &{" "}
@@ -194,7 +194,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Claim Your Free SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  Get My Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/services">
@@ -355,7 +355,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">
-                Start With a Free Audit <ArrowRight className="ml-2 h-5 w-5" />
+                Book Your Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -687,7 +687,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Claim Your Free SEO Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  Request Your Free Business Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/pricing">
