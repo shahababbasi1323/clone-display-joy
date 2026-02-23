@@ -102,6 +102,15 @@ const toolToServices: Record<string, string[]> = {
   "ppc-campaign-audit-checklist": ["seo-audit", "seo-consulting"],
 };
 
+/** PPC tools → PPC services cross-link */
+const toolToPpcServices: Record<string, string[]> = {
+  "google-ads-budget-calculator": ["google-ads-management", "ppc-audit-strategy", "local-search-ads"],
+  "roas-calculator": ["google-ads-management", "social-media-ads", "remarketing-retargeting"],
+  "ad-copy-generator": ["google-ads-management", "social-media-ads", "local-search-ads"],
+  "quality-score-estimator": ["google-ads-management", "ppc-audit-strategy"],
+  "ppc-campaign-audit-checklist": ["ppc-audit-strategy", "google-ads-management", "remarketing-retargeting"],
+};
+
 const toolToBlogs: Record<string, string[]> = {
   "word-counter": ["content-marketing-seo"],
   "keyword-density-checker": ["keyword-research-guide", "on-page-seo-optimization"],
@@ -267,6 +276,15 @@ export function getToolRelatedServices(toolSlug: string) {
   return slugs
     .slice(0, 2)
     .map(s => servicesData.find(svc => svc.slug === s))
+    .filter(Boolean);
+}
+
+/** Get related PPC services for a tool (1-3) */
+export function getToolRelatedPpcServices(toolSlug: string) {
+  const slugs = toolToPpcServices[toolSlug] || [];
+  return slugs
+    .slice(0, 3)
+    .map(s => ppcServicesData.find(p => p.slug === s))
     .filter(Boolean);
 }
 

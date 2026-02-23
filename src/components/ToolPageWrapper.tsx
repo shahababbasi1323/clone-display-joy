@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageSquare, BookOpen, Wrench } from "lucide-react";
+import { ArrowRight, MessageSquare, BookOpen, Wrench, Megaphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { type ToolData, toolsDataMap } from "@/data/toolsData";
-import { getToolRelatedServices, getToolRelatedBlogs } from "@/data/internalLinks";
+import { getToolRelatedServices, getToolRelatedBlogs, getToolRelatedPpcServices } from "@/data/internalLinks";
 
 interface Props {
   tool: ToolData;
@@ -161,6 +161,37 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
                           <h3 className="font-semibold text-sm">{svc.title}</h3>
                         </div>
                         <p className="text-xs text-muted-foreground line-clamp-2">{svc.metaDescription}</p>
+                        <span className="text-xs text-primary mt-2 flex items-center gap-1">Learn more <ArrowRight className="h-3 w-3" /></span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ) : null;
+          })()}
+
+          {/* Related PPC Services */}
+          {(() => {
+            const relPpc = getToolRelatedPpcServices(tool.slug);
+            return relPpc.length > 0 ? (
+              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+                <div className="flex items-center gap-3 mb-6">
+                  <Megaphone className="h-5 w-5 text-primary" />
+                  <h2 className="text-2xl font-bold">Related PPC Services</h2>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {relPpc.map(ppc => {
+                    if (!ppc) return null;
+                    const PpcIcon = ppc.icon;
+                    return (
+                      <Link key={ppc.slug} to={`/ppc/${ppc.slug}`} className="glass rounded-xl p-5 hover:border-primary/30 transition-all group">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                            <PpcIcon className="h-5 w-5 text-primary" />
+                          </div>
+                          <h3 className="font-semibold text-sm">{ppc.title}</h3>
+                        </div>
+                        <p className="text-xs text-muted-foreground line-clamp-2">{ppc.metaDescription}</p>
                         <span className="text-xs text-primary mt-2 flex items-center gap-1">Learn more <ArrowRight className="h-3 w-3" /></span>
                       </Link>
                     );
