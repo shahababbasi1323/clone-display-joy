@@ -170,6 +170,7 @@ export const BulkKeywordChecker = () => {
   const [keywords, setKeywords] = useState("");
   const [location, setLocation] = useState("");
   const [langCode, setLangCode] = useState("");
+  const [delay, setDelay] = useState(3);
   const [results, setResults] = useState<{ keyword: string; searchUrl: string; siteUrl: string }[]>([]);
   const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
 
@@ -236,15 +237,24 @@ export const BulkKeywordChecker = () => {
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-bold">Search Links</h3>
           {results.length > 0 && (
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2 items-center">
+              <select
+                value={delay}
+                onChange={e => setDelay(Number(e.target.value))}
+                className="glass rounded-lg px-2 py-1.5 text-xs"
+              >
+                <option value={2}>2s delay</option>
+                <option value={3}>3s delay</option>
+                <option value={5}>5s delay</option>
+                <option value={10}>10s delay</option>
+              </select>
               <Button size="sm" variant="outline" onClick={() => {
-                results.forEach((r, i) => setTimeout(() => window.open(r.searchUrl, "_blank"), i * 3000));
+                results.forEach((r, i) => setTimeout(() => window.open(r.searchUrl, "_blank"), i * delay * 1000));
               }}>
-                Open All (3s delay)
+                Open All
               </Button>
               <Button size="sm" variant="outline" onClick={() => {
-                const text = results.map(r => r.searchUrl).join("\n");
-                navigator.clipboard.writeText(text);
+                navigator.clipboard.writeText(results.map(r => r.searchUrl).join("\n"));
               }}>
                 Copy All Links
               </Button>
