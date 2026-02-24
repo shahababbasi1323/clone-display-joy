@@ -1,52 +1,32 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Gift, Mail, Phone, MessageCircle, ArrowRight, Zap, Percent } from "lucide-react";
+import { X, Gift, Mail, Phone, MessageCircle, ArrowRight, Zap, Percent, Star, Sparkles, CheckCircle2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
-// Generate sparkle particles with random positions/delays
-const SPARKLE_COUNT = 18;
-const generateSparkles = () =>
-  Array.from({ length: SPARKLE_COUNT }, (_, i) => ({
+// Floating particles
+const PARTICLE_COUNT = 14;
+const generateParticles = () =>
+  Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
     id: i,
     x: Math.random() * 100,
     y: Math.random() * 100,
-    size: Math.random() * 4 + 2,
-    delay: Math.random() * 1.2,
-    duration: Math.random() * 1.5 + 1,
-  }));
-
-// Confetti piece config
-const CONFETTI_COUNT = 24;
-const CONFETTI_COLORS = [
-  "hsl(var(--accent))",
-  "hsl(var(--primary))",
-  "hsl(45, 100%, 60%)",
-  "hsl(330, 80%, 60%)",
-  "hsl(200, 90%, 55%)",
-];
-const generateConfetti = () =>
-  Array.from({ length: CONFETTI_COUNT }, (_, i) => ({
-    id: i,
-    x: Math.random() * 80 + 10,
-    color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
-    rotation: Math.random() * 360,
-    delay: Math.random() * 0.6,
-    width: Math.random() * 6 + 4,
-    height: Math.random() * 3 + 2,
+    size: Math.random() * 3 + 1.5,
+    delay: Math.random() * 2,
+    duration: Math.random() * 3 + 2,
+    type: i % 3, // 0=circle, 1=star, 2=diamond
   }));
 
 const WelcomePopup = () => {
   const [open, setOpen] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const sparkles = useMemo(() => generateSparkles(), []);
-  const confetti = useMemo(() => generateConfetti(), []);
+  const particles = useMemo(() => generateParticles(), []);
 
   useEffect(() => {
-
     const handleScroll = () => {
       const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       if (scrollPercent >= 30) {
@@ -54,13 +34,13 @@ const WelcomePopup = () => {
         window.removeEventListener("scroll", handleScroll);
       }
     };
-
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const dismiss = () => {
     setOpen(false);
+    setTimeout(() => setSubmitted(false), 300);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -85,7 +65,6 @@ const WelcomePopup = () => {
       });
       if (error) throw error;
 
-      // Send email notification
       await supabase.functions.invoke("notify-lead", {
         body: {
           name: trimmedEmail.split("@")[0],
@@ -96,8 +75,7 @@ const WelcomePopup = () => {
         },
       });
 
-      toast.success("🎉 Discount claimed! We'll reach out shortly.");
-      dismiss();
+      setSubmitted(true);
     } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
@@ -115,164 +93,250 @@ const WelcomePopup = () => {
           exit={{ opacity: 0 }}
         >
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={dismiss} />
+          <motion.div
+            className="absolute inset-0 bg-black/70 backdrop-blur-md"
+            onClick={dismiss}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          />
 
           {/* Modal */}
           <motion.div
-            className="relative w-full max-w-md rounded-2xl border border-accent/20 bg-card/95 backdrop-blur-xl p-6 pt-8 shadow-2xl shadow-accent/10 text-card-foreground overflow-hidden max-h-[90vh]"
-            initial={{ scale: 0.85, opacity: 0, y: 40 }}
+            className="relative w-full max-w-[420px] rounded-3xl border border-primary/15 bg-gradient-to-b from-card via-card to-card/90 backdrop-blur-2xl shadow-[0_25px_60px_-15px_hsl(var(--primary)/0.25)] text-card-foreground overflow-hidden"
+            initial={{ scale: 0.8, opacity: 0, y: 50 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.85, opacity: 0, y: 40 }}
-            transition={{ type: "spring", damping: 22, stiffness: 260 }}
+            exit={{ scale: 0.8, opacity: 0, y: 50 }}
+            transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
-            {/* Sparkle particles */}
-            {sparkles.map((s) => (
+            {/* Top accent gradient bar */}
+            <div className="h-1.5 w-full bg-gradient-to-r from-primary via-accent to-primary" />
+
+            {/* Floating particles */}
+            {particles.map((p) => (
               <motion.div
-                key={`sparkle-${s.id}`}
-                className="absolute rounded-full pointer-events-none"
+                key={`p-${p.id}`}
+                className="absolute pointer-events-none"
                 style={{
-                  left: `${s.x}%`,
-                  top: `${s.y}%`,
-                  width: s.size,
-                  height: s.size,
-                  background: "hsl(var(--accent))",
-                  boxShadow: `0 0 ${s.size * 2}px hsl(var(--accent) / 0.6)`,
+                  left: `${p.x}%`,
+                  top: `${p.y}%`,
+                  width: p.size,
+                  height: p.size,
+                  borderRadius: p.type === 2 ? "1px" : "50%",
+                  transform: p.type === 2 ? "rotate(45deg)" : undefined,
+                  background: p.type === 0
+                    ? "hsl(var(--accent) / 0.7)"
+                    : p.type === 1
+                    ? "hsl(var(--primary) / 0.6)"
+                    : "hsl(45, 100%, 65%)",
+                  boxShadow: `0 0 ${p.size * 3}px ${
+                    p.type === 0 ? "hsl(var(--accent) / 0.4)" : "hsl(var(--primary) / 0.3)"
+                  }`,
                 }}
-                initial={{ opacity: 0, scale: 0 }}
                 animate={{
-                  opacity: [0, 1, 0.6, 1, 0],
-                  scale: [0, 1.2, 0.8, 1, 0],
+                  y: [0, -15, 0, 10, 0],
+                  x: [0, 8, -5, 3, 0],
+                  opacity: [0.3, 0.9, 0.5, 0.8, 0.3],
+                  scale: [0.8, 1.3, 1, 1.2, 0.8],
                 }}
                 transition={{
-                  delay: s.delay,
-                  duration: s.duration,
+                  delay: p.delay,
+                  duration: p.duration,
                   repeat: Infinity,
-                  repeatDelay: s.duration * 0.5,
+                  ease: "easeInOut",
                 }}
               />
             ))}
 
-            {/* Confetti burst */}
-            {confetti.map((c) => (
-              <motion.div
-                key={`confetti-${c.id}`}
-                className="absolute pointer-events-none rounded-sm"
-                style={{
-                  left: `${c.x}%`,
-                  top: "50%",
-                  width: c.width,
-                  height: c.height,
-                  background: c.color,
-                  rotate: c.rotation,
-                }}
-                initial={{ opacity: 1, y: 0, x: 0, scale: 1 }}
-                animate={{
-                  y: [0, -(80 + Math.random() * 120), 200],
-                  x: [0, (Math.random() - 0.5) * 160],
-                  opacity: [1, 1, 0],
-                  rotate: [c.rotation, c.rotation + 360],
-                  scale: [1, 1, 0.5],
-                }}
-                transition={{
-                  delay: c.delay,
-                  duration: 2,
-                  ease: "easeOut",
-                }}
-              />
-            ))}
-
-            {/* Close */}
-            <button
-              onClick={dismiss}
-              className="absolute top-3 right-3 p-1.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-              aria-label="Close popup"
-            >
-              <X className="h-5 w-5" />
-            </button>
-
-            {/* Icon */}
-            <div className="flex justify-center mb-4">
-              <div className="w-14 h-14 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center">
-                <Gift className="h-7 w-7 text-accent" />
-              </div>
-            </div>
-
-            {/* Badge */}
-            <div className="flex justify-center mb-3">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/15 border border-accent/30 text-accent text-sm font-semibold">
-                <Percent className="h-3.5 w-3.5" /> 25% OFF
-              </span>
-            </div>
-
-            {/* Heading */}
-            <h2 className="text-center text-2xl font-bold mb-1">
-              🎉 Special Welcome Offer!
-            </h2>
-            <p className="text-center text-accent font-semibold mb-1">
-              Get 25% Off Your First Project
-            </p>
-            <p className="text-center text-muted-foreground text-sm mb-1">
-              New clients only – Limited time!
-            </p>
-            <p className="text-center text-sm mb-5 flex items-center justify-center gap-1 text-amber-500 dark:text-amber-400">
-              <Zap className="h-3.5 w-3.5" /> Offer expires soon!
-            </p>
-
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-3">
-              <div className="flex items-center gap-3 rounded-xl bg-muted/50 border border-border px-4 py-3">
-                <Mail className="h-4 w-4 text-muted-foreground shrink-0" />
-                <input
-                  type="email"
-                  required
-                  maxLength={255}
-                  placeholder="Your email *"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-transparent text-foreground placeholder:text-muted-foreground text-sm outline-none"
-                />
-              </div>
-              <div className="flex items-center gap-3 rounded-xl bg-muted/50 border border-border px-4 py-3">
-                <Phone className="h-4 w-4 text-muted-foreground shrink-0" />
-                <input
-                  type="tel"
-                  maxLength={20}
-                  placeholder="WhatsApp number (optional)"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="w-full bg-transparent text-foreground placeholder:text-muted-foreground text-sm outline-none"
-                />
-              </div>
-              <textarea
-                maxLength={500}
-                rows={3}
-                placeholder="Briefly describe your problem or goal..."
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                className="w-full rounded-xl bg-muted/50 border border-border px-4 py-3 text-foreground placeholder:text-muted-foreground text-sm outline-none resize-none"
-              />
-
+            {/* Content */}
+            <div className="relative z-10 p-6 pt-5">
+              {/* Close */}
               <button
-                type="submit"
-                disabled={loading}
-                className="w-full flex items-center justify-center gap-2 rounded-xl bg-accent text-accent-foreground hover:bg-accent/90 font-semibold py-3.5 transition-colors disabled:opacity-60"
+                onClick={dismiss}
+                className="absolute top-3 right-3 p-1.5 rounded-full text-muted-foreground/60 hover:text-foreground hover:bg-muted/80 transition-all z-20"
+                aria-label="Close popup"
               >
-                {loading ? "Submitting..." : "Claim Your Discount"}
-                {!loading && <ArrowRight className="h-4 w-4" />}
+                <X className="h-4 w-4" />
               </button>
-            </form>
 
-            {/* WhatsApp shortcut */}
-            <div className="mt-4 text-center">
-              <p className="text-muted-foreground text-xs mb-2">Or get instant response via</p>
-              <a
-                href="https://wa.me/923041316771?text=Hi%2C%20I%27m%20interested%20in%20the%2025%25%20off%20welcome%20offer!"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-muted/50 hover:bg-muted text-foreground text-sm font-medium transition-colors"
-              >
-                <MessageCircle className="h-4 w-4" /> WhatsApp
-              </a>
+              <AnimatePresence mode="wait">
+                {!submitted ? (
+                  <motion.div
+                    key="form"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {/* Icon with glow */}
+                    <div className="flex justify-center mb-4">
+                      <motion.div
+                        className="relative w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 border border-accent/25 flex items-center justify-center"
+                        animate={{ rotate: [0, 3, -3, 0] }}
+                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                      >
+                        <Gift className="h-8 w-8 text-accent" />
+                        <div className="absolute -top-1 -right-1">
+                          <Sparkles className="h-4 w-4 text-amber-400" />
+                        </div>
+                      </motion.div>
+                    </div>
+
+                    {/* Badge */}
+                    <div className="flex justify-center mb-3">
+                      <motion.span
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-accent/15 to-primary/15 border border-accent/20 text-accent text-xs font-bold tracking-wider uppercase"
+                        animate={{ scale: [1, 1.03, 1] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                      >
+                        <Percent className="h-3 w-3" /> 25% OFF
+                      </motion.span>
+                    </div>
+
+                    {/* Heading */}
+                    <h2 className="text-center text-xl font-extrabold mb-0.5 tracking-tight">
+                      Special Welcome Offer! 🎉
+                    </h2>
+                    <p className="text-center text-accent font-semibold text-sm mb-0.5">
+                      Get 25% Off Your First Project
+                    </p>
+                    <p className="text-center text-muted-foreground text-xs mb-0.5">
+                      New clients only – Limited time!
+                    </p>
+                    <p className="text-center text-xs mb-4 flex items-center justify-center gap-1 text-amber-500 dark:text-amber-400">
+                      <Zap className="h-3 w-3" /> Offer expires soon!
+                    </p>
+
+                    {/* Form */}
+                    <form onSubmit={handleSubmit} className="space-y-2.5">
+                      <div className="group flex items-center gap-2.5 rounded-xl bg-muted/40 border border-border/80 hover:border-primary/40 focus-within:border-primary/60 focus-within:bg-muted/60 px-3.5 py-2.5 transition-all">
+                        <Mail className="h-4 w-4 text-muted-foreground group-focus-within:text-primary shrink-0 transition-colors" />
+                        <input
+                          type="email"
+                          required
+                          maxLength={255}
+                          placeholder="Your email *"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/60 text-sm outline-none"
+                        />
+                      </div>
+                      <div className="group flex items-center gap-2.5 rounded-xl bg-muted/40 border border-border/80 hover:border-primary/40 focus-within:border-primary/60 focus-within:bg-muted/60 px-3.5 py-2.5 transition-all">
+                        <Phone className="h-4 w-4 text-muted-foreground group-focus-within:text-primary shrink-0 transition-colors" />
+                        <input
+                          type="tel"
+                          maxLength={20}
+                          placeholder="WhatsApp number (optional)"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/60 text-sm outline-none"
+                        />
+                      </div>
+                      <textarea
+                        maxLength={500}
+                        rows={2}
+                        placeholder="Briefly describe your problem or goal..."
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        className="w-full rounded-xl bg-muted/40 border border-border/80 hover:border-primary/40 focus:border-primary/60 focus:bg-muted/60 px-3.5 py-2.5 text-foreground placeholder:text-muted-foreground/60 text-sm outline-none resize-none transition-all"
+                      />
+
+                      <motion.button
+                        type="submit"
+                        disabled={loading}
+                        className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent/85 text-accent-foreground font-bold py-3 text-sm transition-all disabled:opacity-60 shadow-lg shadow-accent/20 hover:shadow-accent/30"
+                        whileHover={{ scale: 1.01 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        {loading ? (
+                          <motion.div
+                            className="h-4 w-4 border-2 border-accent-foreground/30 border-t-accent-foreground rounded-full"
+                            animate={{ rotate: 360 }}
+                            transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
+                          />
+                        ) : (
+                          <>
+                            Claim Your Discount
+                            <ArrowRight className="h-4 w-4" />
+                          </>
+                        )}
+                      </motion.button>
+                    </form>
+
+                    {/* Divider */}
+                    <div className="flex items-center gap-3 mt-4 mb-3">
+                      <div className="flex-1 h-px bg-border/60" />
+                      <span className="text-muted-foreground/50 text-[10px] uppercase tracking-widest">or</span>
+                      <div className="flex-1 h-px bg-border/60" />
+                    </div>
+
+                    {/* WhatsApp */}
+                    <a
+                      href="https://wa.me/923041316771?text=Hi%2C%20I%27m%20interested%20in%20the%2025%25%20off%20welcome%20offer!"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl border border-border/80 bg-muted/30 hover:bg-muted/60 text-foreground text-sm font-medium transition-all"
+                    >
+                      <MessageCircle className="h-4 w-4 text-green-500" /> Chat on WhatsApp
+                    </a>
+
+                    {/* Trust signals */}
+                    <div className="flex items-center justify-center gap-4 mt-4">
+                      <div className="flex items-center gap-1 text-[10px] text-muted-foreground/50">
+                        <Star className="h-3 w-3 text-amber-400 fill-amber-400" />
+                        <span>Trusted by 100+ clients</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-[10px] text-muted-foreground/50">
+                        <CheckCircle2 className="h-3 w-3 text-accent" />
+                        <span>No spam, ever</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                ) : (
+                  /* Success State */
+                  <motion.div
+                    key="success"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ type: "spring", damping: 20 }}
+                    className="text-center py-6"
+                  >
+                    <motion.div
+                      className="w-20 h-20 mx-auto mb-5 rounded-full bg-accent/15 border border-accent/25 flex items-center justify-center"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ type: "spring", delay: 0.15 }}
+                    >
+                      <CheckCircle2 className="h-10 w-10 text-accent" />
+                    </motion.div>
+                    <h3 className="text-xl font-bold mb-2">You're In! 🎉</h3>
+                    <p className="text-accent font-semibold text-lg mb-1">WELCOME25</p>
+                    <p className="text-muted-foreground text-sm mb-1">
+                      Your 25% discount code has been sent to
+                    </p>
+                    <p className="text-foreground font-medium text-sm mb-4">{email}</p>
+                    <p className="text-muted-foreground/60 text-xs mb-5">
+                      Check your inbox (and spam folder) for the code & next steps.
+                    </p>
+                    <div className="flex gap-2">
+                      <a
+                        href="https://wa.me/923041316771?text=Hi%20Shahab%2C%20I%20have%20the%20WELCOME25%20discount%20code!"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl border border-border/80 bg-muted/30 hover:bg-muted/60 text-foreground text-sm font-medium transition-all"
+                      >
+                        <MessageCircle className="h-4 w-4 text-green-500" /> WhatsApp
+                      </a>
+                      <button
+                        onClick={dismiss}
+                        className="flex-1 py-2.5 rounded-xl bg-accent text-accent-foreground text-sm font-semibold hover:bg-accent/90 transition-colors"
+                      >
+                        Continue Browsing
+                      </button>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </motion.div>
         </motion.div>
