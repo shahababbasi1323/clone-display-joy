@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { Search } from "lucide-react";
 import { CopyButton, StatCard } from "@/components/tools/ToolUiPrimitives";
 
 export const KeywordSuggestionTool = () => {
@@ -163,31 +164,96 @@ export const KeywordGrouper = () => {
 };
 
 export const BulkKeywordChecker = () => {
+  const [businessName, setBusinessName] = useState("");
+  const [websiteUrl, setWebsiteUrl] = useState("");
   const [domain, setDomain] = useState("");
   const [keywords, setKeywords] = useState("");
+  const [location, setLocation] = useState("");
+  const [langCode, setLangCode] = useState("");
+  const [results, setResults] = useState<{ keyword: string; searchUrl: string; siteUrl: string }[]>([]);
   const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
 
+  const generateLinks = () => {
+    if (kwList.length === 0) return;
+    const links = kwList.map(kw => {
+      const parts = [kw];
+      if (location) parts.push(location);
+      const query = parts.join(" ");
+      let searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      if (langCode) searchUrl += `&hl=${encodeURIComponent(langCode)}`;
+      const siteQuery = domain ? `site:${domain} ${query}` : query;
+      let siteUrl = `https://www.google.com/search?q=${encodeURIComponent(siteQuery)}`;
+      if (langCode) siteUrl += `&hl=${encodeURIComponent(langCode)}`;
+      return { keyword: kw, searchUrl, siteUrl };
+    });
+    setResults(links);
+  };
+
   return (
-    <div className="space-y-6">
-      <div><label className="text-sm font-medium mb-1.5 block">Your Domain</label><Input value={domain} onChange={e => setDomain(e.target.value)} placeholder="example.com" /></div>
-      <div><label className="text-sm font-medium mb-1.5 block">Keywords (one per line)</label><Textarea value={keywords} onChange={e => setKeywords(e.target.value)} placeholder={"seo services dubai\ndigital marketing agency\nlink building services"} rows={8} /></div>
-      {domain && kwList.length > 0 && (
-        <div className="space-y-2">
-          <p className="text-sm font-medium">{kwList.length} keywords to check</p>
-          <div className="space-y-2 max-h-[500px] overflow-auto">
-            {kwList.map((kw, i) => (
-              <div key={i} className="glass rounded-lg p-3 flex flex-wrap justify-between items-center gap-2">
-                <span className="text-sm flex-1">{kw}</span>
-                <div className="flex gap-2">
-                  <a href={`https://www.google.com/search?q=${encodeURIComponent(kw)}`} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Search →</a>
-                  <a href={`https://www.google.com/search?q=site:${encodeURIComponent(domain)}+${encodeURIComponent(kw)}`} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">site: Check →</a>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {/* Left Panel - Enter Keywords */}
+      <div className="glass rounded-xl p-6 space-y-5">
+        <h3 className="text-lg font-bold">Enter Keywords</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="text-sm font-medium mb-1.5 block">Business Name</label>
+            <Input value={businessName} onChange={e => setBusinessName(e.target.value)} placeholder="Your Brand Name" />
+            <p className="text-xs text-muted-foreground mt-1">Auto-highlight in search results</p>
+          </div>
+          <div>
+            <label className="text-sm font-medium mb-1.5 block">Website URL</label>
+            <Input value={websiteUrl} onChange={e => setWebsiteUrl(e.target.value)} placeholder="yourbrand.com" />
+            <p className="text-xs text-muted-foreground mt-1">For tracking reference</p>
+          </div>
+        </div>
+        <div>
+          <label className="text-sm font-medium mb-1.5 block">Domain to Check (optional)</label>
+          <Input value={domain} onChange={e => setDomain(e.target.value)} placeholder="example.com" />
+          <p className="text-xs text-muted-foreground mt-1">Add site: filter to search</p>
+        </div>
+        <div>
+          <label className="text-sm font-medium mb-1.5 block">Keywords (one per line)</label>
+          <Textarea value={keywords} onChange={e => setKeywords(e.target.value)} placeholder={"keyword 1\nkeyword 2\nkeyword 3\n..."} rows={8} />
+          <p className="text-xs text-muted-foreground mt-1">{kwList.length} keywords entered</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label className="text-sm font-medium mb-1.5 block">Location / City (optional)</label>
+            <Input value={location} onChange={e => setLocation(e.target.value)} placeholder="e.g. dallas, london" />
+          </div>
+          <div>
+            <label className="text-sm font-medium mb-1.5 block">Language Code (optional)</label>
+            <Input value={langCode} onChange={e => setLangCode(e.target.value)} placeholder="e.g. en, es, de" />
+          </div>
+        </div>
+        <Button onClick={generateLinks} className="w-full" size="lg" disabled={kwList.length === 0}>
+          Generate Links
+        </Button>
+      </div>
+
+      {/* Right Panel - Search Links */}
+      <div className="glass rounded-xl p-6">
+        <h3 className="text-lg font-bold mb-4">Search Links</h3>
+        {results.length === 0 ? (
+          <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
+            <Search className="h-12 w-12 mb-3 opacity-50" />
+            <p className="text-sm">Enter keywords and click "Generate Links" to start</p>
+          </div>
+        ) : (
+          <div className="space-y-2 max-h-[600px] overflow-auto">
+            {results.map((r, i) => (
+              <div key={i} className="glass rounded-lg p-3 space-y-1">
+                <p className="text-sm font-medium">{r.keyword}{location ? ` — ${location}` : ""}</p>
+                <div className="flex flex-wrap gap-3">
+                  <a href={r.searchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Google Search →</a>
+                  {domain && <a href={r.siteUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">site: Check →</a>}
                 </div>
               </div>
             ))}
+            <p className="text-xs text-muted-foreground mt-3">💡 Open each link to manually check your position. Use incognito mode for unbiased results.</p>
           </div>
-          <p className="text-xs text-muted-foreground">💡 Open each link to manually check your position. For automated tracking, use Google Search Console or rank tracking tools.</p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
