@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -55,6 +56,7 @@ const FreeSeoAudit = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Free SEO Audit" }]} className="mb-8" />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Left - Info */}
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>

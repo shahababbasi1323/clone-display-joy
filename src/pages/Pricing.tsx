@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
@@ -164,6 +165,7 @@ const Pricing = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Pricing" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
               Transparent Pricing — No Hidden Fees

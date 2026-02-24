@@ -5,12 +5,14 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { industriesData, INDUSTRY_CATEGORIES } from "@/data/industriesData";
 import { getIndustryCategoryImage } from "@/components/industry/industryImages";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const Industries = () => {
   return (
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Industries" }]} className="mb-8" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

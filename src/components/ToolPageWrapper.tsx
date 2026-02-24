@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { type ToolData, toolsDataMap } from "@/data/toolsData";
 import { getToolRelatedServices, getToolRelatedBlogs, getToolRelatedPpcServices } from "@/data/internalLinks";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 interface Props {
   tool: ToolData;
@@ -72,6 +73,7 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
       <section className="section-padding">
         <div className="container mx-auto max-w-5xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <PageBreadcrumbs items={[{ label: "Tools", href: "/tools" }, { label: tool.name }]} className="mb-6" />
             <p className="text-sm text-accent font-medium mb-2">{tool.category}</p>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">{tool.name.split(" ").slice(0, -1).join(" ")} <span className="text-gradient">{tool.name.split(" ").pop()}</span></h1>
             <p className="text-muted-foreground mb-8">{tool.metaDescription}</p>

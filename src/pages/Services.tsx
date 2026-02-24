@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { servicesData } from "@/data/servicesData";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const Services = () => {
   useSeoMeta({
@@ -17,6 +18,7 @@ const Services = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Services" }]} className="mb-8" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

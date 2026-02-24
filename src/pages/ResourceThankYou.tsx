@@ -4,6 +4,7 @@ import { CheckCircle, Download, ArrowRight, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const ResourceThankYou = () => {
   const [searchParams] = useSearchParams();
@@ -22,6 +23,7 @@ const ResourceThankYou = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-accent/5 blur-3xl" />
         <div className="container mx-auto relative z-10 max-w-2xl">
+          <PageBreadcrumbs items={[{ label: "Free Resources", href: "/free-seo-resources" }, { label: "Thank You" }]} className="mb-8" />
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}

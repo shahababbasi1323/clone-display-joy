@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { ppcServicesData } from "@/data/ppcServicesData";
 import { getPpcServiceImage, ppcHero } from "@/components/ppc/ppcImages";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const PpcServices = () => {
   useSeoMeta({
@@ -24,6 +25,7 @@ const PpcServices = () => {
           style={{ backgroundImage: `url(${ppcHero})` }}
         />
         <div className="container mx-auto relative z-10">
+          <PageBreadcrumbs items={[{ label: "PPC Services" }]} className="mb-6" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

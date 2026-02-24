@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const PrivacyPolicy = () => {
   useSeoMeta({
@@ -12,7 +13,7 @@ const PrivacyPolicy = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto max-w-3xl">
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+          <PageBreadcrumbs items={[{ label: "Privacy Policy" }]} className="mb-8" />
           <div className="prose prose-invert prose-sm max-w-none space-y-6 text-muted-foreground">
             <p><strong className="text-foreground">Effective Date:</strong> January 1, 2026</p>
             <p>

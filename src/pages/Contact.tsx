@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Layout from "@/components/Layout";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -46,9 +47,9 @@ const Contact = () => {
 
   return (
     <Layout>
-      {/* Hero */}
       <section className="section-padding pb-10">
         <div className="container mx-auto max-w-5xl">
+          <PageBreadcrumbs items={[{ label: "Contact" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Let's <span className="text-gradient">Talk SEO</span>

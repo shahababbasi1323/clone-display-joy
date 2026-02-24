@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const faqCategories = [
   {
@@ -111,6 +112,7 @@ const FAQ = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto max-w-3xl">
+          <PageBreadcrumbs items={[{ label: "FAQ" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Frequently Asked <span className="text-gradient">Questions</span>

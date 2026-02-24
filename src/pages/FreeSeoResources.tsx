@@ -4,6 +4,7 @@ import { ArrowRight, Check, Sparkles, Users, FileDown, DollarSign } from "lucide
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { resources, categories, faqs, type ResourceCategory } from "@/data/resourcesData";
@@ -44,6 +45,7 @@ const FreeSeoResources = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
         <div className="container mx-auto relative z-10">
+          <PageBreadcrumbs items={[{ label: "Free Resources" }]} className="mb-6" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-semibold mb-6">
               <Sparkles className="h-4 w-4" /> 500+ SEO Professionals Trust These Resources
