@@ -58,7 +58,7 @@ serve(async (req) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Shahab Abbasi Website <onboarding@resend.dev>",
+        from: "Shahab Abbasi Website <contact@shahababbasi.com>",
         to: ["shahababbasi987@gmail.com"],
         subject,
         html: htmlBody,
@@ -135,7 +135,7 @@ serve(async (req) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "Shahab Abbasi <onboarding@resend.dev>",
+          from: "Shahab Abbasi <contact@shahababbasi.com>",
           to: [email],
           subject: "🎉 Your 25% Discount Code: WELCOME25",
           html: discountHtml,
@@ -191,7 +191,7 @@ serve(async (req) => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "Shahab Abbasi <onboarding@resend.dev>",
+          from: "Shahab Abbasi <contact@shahababbasi.com>",
           to: [email],
           subject: `📥 Your download: ${resourceTitle}`,
           html: userHtml,
