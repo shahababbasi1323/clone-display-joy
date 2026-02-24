@@ -50,7 +50,7 @@ const IndustriesLang = () => {
                 <div key={category} className="mb-16">
                   <div className="relative rounded-2xl overflow-hidden mb-6 h-36 md:h-44">
                     <img src={bannerImg} alt={catName} className="w-full h-full object-cover" loading="lazy" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50 dark:from-background/90 dark:via-background/70 dark:to-background/40" />
                     <div className="absolute inset-0 flex items-center px-6 md:px-10">
                       <div>
                         <h2 className="text-2xl md:text-3xl font-bold">{catName}</h2>

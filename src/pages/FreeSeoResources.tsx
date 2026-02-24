@@ -41,7 +41,7 @@ const FreeSeoResources = () => {
     <Layout>
       {/* Hero */}
       <section className="relative overflow-hidden py-20 md:py-28 px-4">
-        <div className="absolute inset-0 bg-gradient-to-br from-[hsl(220,40%,6%)] via-[hsl(220,35%,10%)] to-[hsl(220,40%,6%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
         <div className="container mx-auto relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-3xl mx-auto">

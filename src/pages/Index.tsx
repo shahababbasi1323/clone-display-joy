@@ -171,8 +171,8 @@ const Index = () => {
       {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Digital marketing and SEO services worldwide" className="w-full h-full object-cover opacity-30" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+          <img src={heroBg} alt="Digital marketing and SEO services worldwide" className="w-full h-full object-cover opacity-20 dark:opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background dark:from-background/60 dark:via-background/80 dark:to-background" />
         </div>
         <div className="container mx-auto relative z-10 py-20">
           <motion.div

@@ -20,7 +20,7 @@ const PpcServices = () => {
       {/* Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-15"
+          className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-15"
           style={{ backgroundImage: `url(${ppcHero})` }}
         />
         <div className="container mx-auto relative z-10">
