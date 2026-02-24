@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#121832"/>
+    </linearGradient>
+    <filter id="shG" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1080" height="1350" fill="url(#bgG)"/>
+  
+  <!-- Header -->
+  <text x="540" y="50" text-anchor="middle" fill="#4CAF50" font-family="monospace" font-size="14" letter-spacing="3">SHAHAB ABBASI | SEO STRATEGIST</text>
+  
+  <text x="540" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="34" font-weight="bold">Google Search Operators</text>
+  <text x="540" y="135" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="20" font-weight="bold">Backlink &amp; Guest Post Cheat Sheet</text>
+  <text x="540" y="165" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="14">10 Operators I Use Every Day to Find Free Backlinks</text>
+  
+  <line x1="340" y1="185" x2="740" y2="185" stroke="#4CAF50" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Operator Cards -->
+  <!-- Op 1 -->
+  <rect x="40" y="205" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="40" y="205" width="5" height="85" rx="2" fill="#2196F3"/>
+  <circle cx="75" cy="235" r="16" fill="#2196F3" opacity="0.2"/>
+  <text x="75" y="241" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="14" font-weight="bold">1</text>
+  <text x="100" y="237" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Find "Write for Us" Pages</text>
+  <text x="60" y="262" fill="#4CAF50" font-family="monospace" font-size="11">[niche] intitle:"write for us"</text>
+  <text x="60" y="280" fill="#78909C" font-family="Arial" font-size="10">Find sites actively seeking guest contributors</text>
+  
+  <!-- Op 2 -->
+  <rect x="550" y="205" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="550" y="205" width="5" height="85" rx="2" fill="#2196F3"/>
+  <circle cx="585" cy="235" r="16" fill="#2196F3" opacity="0.2"/>
+  <text x="585" y="241" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="14" font-weight="bold">2</text>
+  <text x="610" y="237" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Guest Post Guidelines</text>
+  <text x="570" y="262" fill="#4CAF50" font-family="monospace" font-size="11">[niche] inurl:"guest-post-guidelines"</text>
+  <text x="570" y="280" fill="#78909C" font-family="Arial" font-size="10">Find detailed submission requirements</text>
+  
+  <!-- Op 3 -->
+  <rect x="40" y="305" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="40" y="305" width="5" height="85" rx="2" fill="#FF9800"/>
+  <circle cx="75" cy="335" r="16" fill="#FF9800" opacity="0.2"/>
+  <text x="75" y="341" text-anchor="middle" fill="#FF9800" font-family="Arial" font-size="14" font-weight="bold">3</text>
+  <text x="100" y="337" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Contributor Opportunities</text>
+  <text x="60" y="362" fill="#4CAF50" font-family="monospace" font-size="11">[niche] "become a contributor"</text>
+  <text x="60" y="380" fill="#78909C" font-family="Arial" font-size="10">Find sites with contributor programs</text>
+  
+  <!-- Op 4 -->
+  <rect x="550" y="305" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="550" y="305" width="5" height="85" rx="2" fill="#FF9800"/>
+  <circle cx="585" cy="335" r="16" fill="#FF9800" opacity="0.2"/>
+  <text x="585" y="341" text-anchor="middle" fill="#FF9800" font-family="Arial" font-size="14" font-weight="bold">4</text>
+  <text x="610" y="337" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">.EDU Backlinks</text>
+  <text x="570" y="362" fill="#4CAF50" font-family="monospace" font-size="11">[keyword] site:.edu</text>
+  <text x="570" y="380" fill="#78909C" font-family="Arial" font-size="10">Find high-authority educational opportunities</text>
+  
+  <!-- Op 5 -->
+  <rect x="40" y="405" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="40" y="405" width="5" height="85" rx="2" fill="#E91E63"/>
+  <circle cx="75" cy="435" r="16" fill="#E91E63" opacity="0.2"/>
+  <text x="75" y="441" text-anchor="middle" fill="#E91E63" font-family="Arial" font-size="14" font-weight="bold">5</text>
+  <text x="100" y="437" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Resource Pages</text>
+  <text x="60" y="462" fill="#4CAF50" font-family="monospace" font-size="11">[niche] inurl:resources intitle:"resources"</text>
+  <text x="60" y="480" fill="#78909C" font-family="Arial" font-size="10">Find curated resource pages for link placement</text>
+  
+  <!-- Op 6 -->
+  <rect x="550" y="405" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="550" y="405" width="5" height="85" rx="2" fill="#E91E63"/>
+  <circle cx="585" cy="435" r="16" fill="#E91E63" opacity="0.2"/>
+  <text x="585" y="441" text-anchor="middle" fill="#E91E63" font-family="Arial" font-size="14" font-weight="bold">6</text>
+  <text x="610" y="437" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Competitor Mentions</text>
+  <text x="570" y="462" fill="#4CAF50" font-family="monospace" font-size="11">"[competitor]" -site:competitor.com</text>
+  <text x="570" y="480" fill="#78909C" font-family="Arial" font-size="10">Find where competitors get mentioned/linked</text>
+  
+  <!-- Op 7 -->
+  <rect x="40" y="505" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="40" y="505" width="5" height="85" rx="2" fill="#9C27B0"/>
+  <circle cx="75" cy="535" r="16" fill="#9C27B0" opacity="0.2"/>
+  <text x="75" y="541" text-anchor="middle" fill="#9C27B0" font-family="Arial" font-size="14" font-weight="bold">7</text>
+  <text x="100" y="537" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Broken Link Opportunities</text>
+  <text x="60" y="562" fill="#4CAF50" font-family="monospace" font-size="11">[niche] intitle:"resources" inurl:links</text>
+  <text x="60" y="580" fill="#78909C" font-family="Arial" font-size="10">Find pages likely to have broken outbound links</text>
+  
+  <!-- Op 8 -->
+  <rect x="550" y="505" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="550" y="505" width="5" height="85" rx="2" fill="#9C27B0"/>
+  <circle cx="585" cy="535" r="16" fill="#9C27B0" opacity="0.2"/>
+  <text x="585" y="541" text-anchor="middle" fill="#9C27B0" font-family="Arial" font-size="14" font-weight="bold">8</text>
+  <text x="610" y="537" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Unlinked Brand Mentions</text>
+  <text x="570" y="562" fill="#4CAF50" font-family="monospace" font-size="11">"[your brand]" -site:yourdomain.com</text>
+  <text x="570" y="580" fill="#78909C" font-family="Arial" font-size="10">Find mentions without links (link reclamation)</text>
+  
+  <!-- Op 9 -->
+  <rect x="40" y="605" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="40" y="605" width="5" height="85" rx="2" fill="#00BCD4"/>
+  <circle cx="75" cy="635" r="16" fill="#00BCD4" opacity="0.2"/>
+  <text x="75" y="641" text-anchor="middle" fill="#00BCD4" font-family="Arial" font-size="14" font-weight="bold">9</text>
+  <text x="100" y="637" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Article Submission Sites</text>
+  <text x="60" y="662" fill="#4CAF50" font-family="monospace" font-size="11">[niche] "submit an article" site:.com</text>
+  <text x="60" y="680" fill="#78909C" font-family="Arial" font-size="10">Find high-DA sites accepting articles</text>
+  
+  <!-- Op 10 -->
+  <rect x="550" y="605" width="490" height="85" rx="10" fill="#141830" filter="url(#shG)"/>
+  <rect x="550" y="605" width="5" height="85" rx="2" fill="#00BCD4"/>
+  <circle cx="585" cy="635" r="16" fill="#00BCD4" opacity="0.2"/>
+  <text x="585" y="641" text-anchor="middle" fill="#00BCD4" font-family="Arial" font-size="14" font-weight="bold">10</text>
+  <text x="610" y="637" fill="#FFFFFF" font-family="Arial" font-size="13" font-weight="bold">Infographic Submissions</text>
+  <text x="570" y="662" fill="#4CAF50" font-family="monospace" font-size="11">[niche] intitle:infographic OR inurl:infographic</text>
+  <text x="570" y="680" fill="#78909C" font-family="Arial" font-size="10">Find sites that feature infographics</text>
+  
+  <!-- Bonus Section -->
+  <rect x="40" y="720" width="1000" height="200" rx="14" fill="#141830" stroke="#4CAF50" stroke-width="1" opacity="0.9"/>
+  <text x="540" y="755" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="18" font-weight="bold">BONUS: Advanced Combinations</text>
+  
+  <text x="80" y="790" fill="#FFFFFF" font-family="Arial" font-size="12" font-weight="bold">Competitor Content Analysis:</text>
+  <text x="80" y="812" fill="#4CAF50" font-family="monospace" font-size="11">site:competitor.com intitle:[keyword] inurl:blog</text>
+  
+  <text x="80" y="845" fill="#FFFFFF" font-family="Arial" font-size="12" font-weight="bold">Find PDFs for Link Opportunities:</text>
+  <text x="80" y="867" fill="#4CAF50" font-family="monospace" font-size="11">[niche] filetype:pdf site:.edu OR site:.gov</text>
+  
+  <text x="570" y="790" fill="#FFFFFF" font-family="Arial" font-size="12" font-weight="bold">Fresh Content Opportunities:</text>
+  <text x="570" y="812" fill="#4CAF50" font-family="monospace" font-size="11">[keyword] "2026" site:medium.com OR site:linkedin.com</text>
+  
+  <text x="570" y="845" fill="#FFFFFF" font-family="Arial" font-size="12" font-weight="bold">Stats and Data Pages:</text>
+  <text x="570" y="867" fill="#4CAF50" font-family="monospace" font-size="11">[keyword] intitle:statistics OR intitle:data</text>
+  
+  <!-- SEO Prompt Section -->
+  <rect x="40" y="945" width="1000" height="260" rx="14" fill="#141830" stroke="#2196F3" stroke-width="1"/>
+  <text x="540" y="980" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="18" font-weight="bold">ChatGPT Prompt: Auto-Analyze Backlink Opportunities</text>
+  
+  <text x="70" y="1015" fill="#90A4AE" font-family="monospace" font-size="10">"Here are 20 websites I found using Google search operators:</text>
+  <text x="70" y="1035" fill="#90A4AE" font-family="monospace" font-size="10">[paste URLs]</text>
+  <text x="70" y="1060" fill="#90A4AE" font-family="monospace" font-size="10">For each website, analyze:</text>
+  <text x="70" y="1080" fill="#90A4AE" font-family="monospace" font-size="10">1. Estimated domain authority (High/Medium/Low)</text>
+  <text x="70" y="1100" fill="#90A4AE" font-family="monospace" font-size="10">2. Relevance to my niche: [niche]</text>
+  <text x="70" y="1120" fill="#90A4AE" font-family="monospace" font-size="10">3. Type of opportunity (guest post/resource/broken link)</text>
+  <text x="70" y="1140" fill="#90A4AE" font-family="monospace" font-size="10">4. Priority: High/Medium/Low</text>
+  <text x="70" y="1160" fill="#90A4AE" font-family="monospace" font-size="10">5. Suggested outreach approach</text>
+  <text x="70" y="1185" fill="#90A4AE" font-family="monospace" font-size="10">Rank them from best to worst opportunity."</text>
+  
+  <!-- CTA -->
+  <rect x="40" y="1230" width="1000" height="80" rx="14" fill="#1a2040" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="540" y="1263" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="18" font-weight="bold">Want All 30 SEO Prompts + Operators?</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="13">Comment "OPERATORS" on my LinkedIn post | shahababbasi.com | @ShahabAbbasi302</text>
+  
+  <rect x="0" y="1335" width="1080" height="15" fill="#4CAF50" opacity="0.3"/>
+</svg>

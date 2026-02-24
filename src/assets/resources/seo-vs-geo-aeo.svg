@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B2A"/>
+      <stop offset="100%" style="stop-color:#1B2838"/>
+    </linearGradient>
+    <linearGradient id="seoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2196F3"/>
+      <stop offset="100%" style="stop-color:#1976D2"/>
+    </linearGradient>
+    <linearGradient id="geoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9C27B0"/>
+      <stop offset="100%" style="stop-color:#7B1FA2"/>
+    </linearGradient>
+    <linearGradient id="aeoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9800"/>
+      <stop offset="100%" style="stop-color:#F57C00"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#2196F3" opacity="0.05"/>
+  <circle cx="980" cy="1250" r="250" fill="#9C27B0" opacity="0.05"/>
+  
+  <!-- Header -->
+  <text x="540" y="70" text-anchor="middle" fill="#64B5F6" font-family="Arial" font-size="16" font-weight="bold" letter-spacing="4">SHAHAB ABBASI | SEO STRATEGIST</text>
+  
+  <text x="540" y="130" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="42" font-weight="bold">SEO vs GEO vs AEO</text>
+  <text x="540" y="175" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="20">Understanding the Future of Search in 2026</text>
+  
+  <!-- Divider -->
+  <line x1="340" y1="200" x2="740" y2="200" stroke="#2196F3" stroke-width="2" opacity="0.5"/>
+  
+  <!-- SEO Card -->
+  <rect x="60" y="240" width="960" height="280" rx="16" fill="#1A2332" filter="url(#shadow)"/>
+  <rect x="60" y="240" width="8" height="280" rx="4" fill="url(#seoGrad)"/>
+  
+  <circle cx="120" cy="290" r="28" fill="#2196F3" opacity="0.2"/>
+  <text x="120" y="298" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="24" font-weight="bold">S</text>
+  
+  <text x="165" y="298" fill="#2196F3" font-family="Arial" font-size="28" font-weight="bold">SEO</text>
+  <text x="250" y="298" fill="#78909C" font-family="Arial" font-size="16">Search Engine Optimization</text>
+  
+  <text x="90" y="340" fill="#B0BEC5" font-family="Arial" font-size="15">Goal: Rank your website on Google search results (blue links)</text>
+  
+  <text x="90" y="380" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">What It Focuses On:</text>
+  <text x="90" y="405" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Keywords, backlinks, and page speed</text>
+  <text x="90" y="428" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; On-page, off-page, and technical optimization</text>
+  <text x="90" y="451" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Google is the primary target</text>
+  
+  <text x="560" y="380" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">Key Metrics:</text>
+  <text x="560" y="405" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Rankings, Traffic, CTR</text>
+  <text x="560" y="428" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Backlinks, Domain Authority</text>
+  <text x="560" y="451" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Page Speed, Core Web Vitals</text>
+  
+  <rect x="90" y="475" width="140" height="30" rx="15" fill="#2196F3" opacity="0.15"/>
+  <text x="160" y="495" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="12" font-weight="bold">FOUNDATION</text>
+  
+  <!-- GEO Card -->
+  <rect x="60" y="550" width="960" height="280" rx="16" fill="#1A2332" filter="url(#shadow)"/>
+  <rect x="60" y="550" width="8" height="280" rx="4" fill="url(#geoGrad)"/>
+  
+  <circle cx="120" cy="600" r="28" fill="#9C27B0" opacity="0.2"/>
+  <text x="120" y="608" text-anchor="middle" fill="#9C27B0" font-family="Arial" font-size="24" font-weight="bold">G</text>
+  
+  <text x="165" y="608" fill="#CE93D8" font-family="Arial" font-size="28" font-weight="bold">GEO</text>
+  <text x="260" y="608" fill="#78909C" font-family="Arial" font-size="16">Generative Engine Optimization</text>
+  
+  <text x="90" y="650" fill="#B0BEC5" font-family="Arial" font-size="15">Goal: Get your brand cited in AI-generated answers (ChatGPT, Perplexity, Gemini)</text>
+  
+  <text x="90" y="690" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">What It Focuses On:</text>
+  <text x="90" y="715" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Content that AI systems can understand and cite</text>
+  <text x="90" y="738" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Third-party mentions and brand authority</text>
+  <text x="90" y="761" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Schema markup and structured data</text>
+  
+  <text x="560" y="690" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">Key Metrics:</text>
+  <text x="560" y="715" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; AI citations, Brand mentions</text>
+  <text x="560" y="738" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; LLM referral traffic</text>
+  <text x="560" y="761" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Conversion from AI traffic (4-6x higher!)</text>
+  
+  <rect x="90" y="785" width="180" height="30" rx="15" fill="#9C27B0" opacity="0.15"/>
+  <text x="180" y="805" text-anchor="middle" fill="#CE93D8" font-family="Arial" font-size="12" font-weight="bold">THE FUTURE (2026+)</text>
+  
+  <!-- AEO Card -->
+  <rect x="60" y="860" width="960" height="280" rx="16" fill="#1A2332" filter="url(#shadow)"/>
+  <rect x="60" y="860" width="8" height="280" rx="4" fill="url(#aeoGrad)"/>
+  
+  <circle cx="120" cy="910" r="28" fill="#FF9800" opacity="0.2"/>
+  <text x="120" y="918" text-anchor="middle" fill="#FF9800" font-family="Arial" font-size="24" font-weight="bold">A</text>
+  
+  <text x="165" y="918" fill="#FFB74D" font-family="Arial" font-size="28" font-weight="bold">AEO</text>
+  <text x="260" y="918" fill="#78909C" font-family="Arial" font-size="16">Answer Engine Optimization</text>
+  
+  <text x="90" y="960" fill="#B0BEC5" font-family="Arial" font-size="15">Goal: Get featured as the direct answer (Featured Snippets, Voice Search, AI Overviews)</text>
+  
+  <text x="90" y="1000" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">What It Focuses On:</text>
+  <text x="90" y="1025" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; FAQ content and concise answers</text>
+  <text x="90" y="1048" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Voice search optimization</text>
+  <text x="90" y="1071" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; People Also Ask (PAA) targeting</text>
+  
+  <text x="560" y="1000" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">Key Metrics:</text>
+  <text x="560" y="1025" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Featured snippet wins</text>
+  <text x="560" y="1048" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; PAA appearances</text>
+  <text x="560" y="1071" fill="#90A4AE" font-family="Arial" font-size="13">&#x2022; Voice search visibility</text>
+  
+  <rect x="90" y="1095" width="140" height="30" rx="15" fill="#FF9800" opacity="0.15"/>
+  <text x="160" y="1115" text-anchor="middle" fill="#FFB74D" font-family="Arial" font-size="12" font-weight="bold">POSITION ZERO</text>
+  
+  <!-- Bottom CTA -->
+  <rect x="60" y="1180" width="960" height="120" rx="16" fill="#2196F3" opacity="0.1"/>
+  <rect x="60" y="1180" width="960" height="120" rx="16" stroke="#2196F3" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <text x="540" y="1225" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="20" font-weight="bold">You need ALL THREE to win in 2026</text>
+  <text x="540" y="1255" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="15">SEO (Foundation) + GEO (AI Visibility) + AEO (Direct Answers) = Complete Search Dominance</text>
+  <text x="540" y="1282" text-anchor="middle" fill="#64B5F6" font-family="Arial" font-size="14">Follow @ShahabAbbasi302 | shahababbasi.com</text>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="1335" width="1080" height="15" fill="#2196F3" opacity="0.3"/>
+</svg>
