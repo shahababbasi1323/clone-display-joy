@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { locationsData } from "@/data/locationsData";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const getEnglishLocationsByCountry = () => {
   const englishLocations = locationsData.filter(l => l.lang === "en");
@@ -60,6 +61,7 @@ const Locations = () => {
       {/* Hero */}
       <section className="section-padding pb-0">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Locations" }]} className="mb-8" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

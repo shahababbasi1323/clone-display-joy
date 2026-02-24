@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import type { IndustryData } from "@/data/industriesData";
 import { getIndustryCategoryImage } from "./industryImages";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const IndustryHero = ({ industry }: { industry: IndustryData }) => {
   const Icon = industry.icon;
@@ -13,9 +14,7 @@ const IndustryHero = ({ industry }: { industry: IndustryData }) => {
   return (
     <section className="section-padding pb-12">
       <div className="container mx-auto max-w-5xl">
-        <Link to="/industries" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8 transition-colors">
-          <ArrowLeft className="h-4 w-4" /> All Industries
-        </Link>
+        <PageBreadcrumbs items={[{ label: "Industries", href: "/industries" }, { label: industry.shortTitle }]} className="mb-8" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <div className="flex items-center gap-3 mb-6">

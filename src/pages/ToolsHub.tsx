@@ -5,6 +5,7 @@ import { Wrench, FileText, Code, Eye, Search, Share2, MapPin, Bot, LinkIcon, Sho
 import Layout from "@/components/Layout";
 import { toolCategories, toolsDataMap } from "@/data/toolsData";
 import { Button } from "@/components/ui/button";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const categoryIcons: Record<string, any> = {
   "Content & Writing": FileText,
@@ -35,6 +36,7 @@ const ToolsHub = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto max-w-6xl">
+          <PageBreadcrumbs items={[{ label: "Tools" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-10">
             <div className="p-3 rounded-lg bg-accent/10 w-fit mx-auto mb-4"><Wrench className="h-8 w-8 text-accent" /></div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Free <span className="text-gradient">SEO Tools</span></h1>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Award, BookOpen, Globe, Target, TrendingUp, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const timeline = [
   { year: "2019", title: "Started SEO Journey", desc: "Began learning search engine optimization and digital marketing fundamentals." },
@@ -28,8 +29,9 @@ const About = () => {
 
   return (
     <Layout>
-      <section className="section-padding">
+       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "About" }]} className="mb-8" />
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

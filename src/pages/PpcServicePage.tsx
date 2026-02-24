@@ -8,6 +8,7 @@ import { getPpcServiceBySlug, ppcServicesData } from "@/data/ppcServicesData";
 import { servicesData } from "@/data/servicesData";
 import { getPpcServiceImage } from "@/components/ppc/ppcImages";
 import NotFound from "./NotFound";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import {
   Accordion,
   AccordionContent,
@@ -104,13 +105,7 @@ const PpcServicePage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <nav className="text-sm text-muted-foreground mb-6">
-              <Link to="/" className="hover:text-foreground">Home</Link>
-              {" / "}
-              <Link to="/ppc" className="hover:text-foreground">PPC Services</Link>
-              {" / "}
-              <span className="text-foreground">{service.title}</span>
-            </nav>
+            <PageBreadcrumbs items={[{ label: "PPC Services", href: "/ppc" }, { label: service.title }]} className="mb-6" />
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               {service.heroTitle}{" "}
               <span className="text-gradient">{service.heroHighlight}</span>

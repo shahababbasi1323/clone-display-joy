@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import type { ServiceData } from "@/data/servicesData";
 import { getServiceImage } from "./serviceImages";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const ServiceHero = ({ service }: { service: ServiceData }) => {
   const Icon = service.icon;
@@ -13,9 +14,7 @@ const ServiceHero = ({ service }: { service: ServiceData }) => {
   return (
     <section className="section-padding pb-12">
       <div className="container mx-auto max-w-5xl">
-        <Link to="/services" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8 transition-colors">
-          <ArrowLeft className="h-4 w-4" /> All Services
-        </Link>
+        <PageBreadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.title }]} className="mb-8" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>

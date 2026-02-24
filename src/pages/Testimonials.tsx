@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
 const testimonials = [
   { name: "Ahmed Rashid", company: "TechVenture Dubai", role: "CEO", text: "Shahab helped us increase organic traffic by 400% in just 6 months. His understanding of both traditional SEO and GEO optimization is truly unmatched. He provided clear reports and was always available to discuss strategy.", rating: 5 },
@@ -33,6 +34,7 @@ const Testimonials = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
+          <PageBreadcrumbs items={[{ label: "Testimonials" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-2xl mx-auto mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Client <span className="text-gradient">Testimonials</span>

@@ -5,6 +5,7 @@ import { Download, Mail, ArrowRight, Check, ArrowLeft, Sparkles, AlertTriangle, 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
+import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -69,9 +70,7 @@ const ResourceLandingPage = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
         <div className="container mx-auto relative z-10 max-w-4xl">
-          <Link to="/free-seo-resources" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8 transition-colors">
-            <ArrowLeft className="h-4 w-4" /> Back to All Resources
-          </Link>
+          <PageBreadcrumbs items={[{ label: "Free Resources", href: "/free-seo-resources" }, { label: resource.title }]} className="mb-8" />
 
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col lg:flex-row gap-10 items-start">
             <div className="flex-1">
