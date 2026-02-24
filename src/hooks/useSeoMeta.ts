@@ -30,6 +30,9 @@ export function useSeoMeta({ title, description, canonical, hreflang }: SeoMetaO
     setMeta("og:title", title, "property");
     setMeta("og:description", description, "property");
     setMeta("og:type", "website", "property");
+    if (canonical) {
+      setMeta("og:url", canonical, "property");
+    }
     setMeta("twitter:title", title, "name");
     setMeta("twitter:description", description, "name");
     setMeta("twitter:card", "summary_large_image", "name");
