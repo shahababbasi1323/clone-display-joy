@@ -65,8 +65,85 @@ serve(async (req) => {
       }),
     });
 
-    // --- 2. User resource delivery email (only for resource downloads) ---
+    // --- 2. Auto-reply emails based on source ---
     let userEmail: Promise<Response> | null = null;
+
+    // Welcome popup discount confirmation
+    if (source === "welcome-popup" && email) {
+      const discountHtml = `
+        <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;background:#ffffff;">
+          <div style="text-align:center;margin-bottom:30px;">
+            <h1 style="color:#1a1a2e;margin:0;">Shahab Abbasi</h1>
+            <p style="color:#6366f1;font-size:14px;margin-top:4px;">Digital Marketing Agency</p>
+          </div>
+          
+          <div style="background:linear-gradient(135deg,#00C853,#00E676);border-radius:12px;padding:30px;text-align:center;color:#ffffff;margin-bottom:24px;">
+            <h2 style="margin:0 0 8px 0;font-size:28px;">🎉 Your 25% Discount is Confirmed!</h2>
+            <p style="margin:0;opacity:0.9;font-size:16px;">Use it on your first project with us</p>
+          </div>
+          
+          <p style="color:#374151;font-size:16px;line-height:1.6;">
+            Hi there! Thank you for your interest. Here's your exclusive discount code:
+          </p>
+          
+          <div style="text-align:center;margin:30px 0;">
+            <div style="display:inline-block;background:#f0fdf4;border:2px dashed #00C853;border-radius:12px;padding:20px 40px;">
+              <p style="margin:0;color:#6b7280;font-size:12px;text-transform:uppercase;letter-spacing:1px;">Your Discount Code</p>
+              <p style="margin:8px 0 0;font-size:32px;font-weight:bold;color:#00C853;letter-spacing:3px;">WELCOME25</p>
+            </div>
+          </div>
+          
+          <p style="color:#374151;font-size:15px;line-height:1.6;">
+            Simply mention this code when you reach out, and we'll apply <strong>25% off</strong> your first project. This offer is valid for <strong>30 days</strong>.
+          </p>
+
+          <div style="text-align:center;margin:30px 0;">
+            <a href="https://shahababbasi.com/free-seo-audit" style="display:inline-block;background:#6366f1;color:#ffffff;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:16px;">
+              🚀 Get Your Free Growth Audit
+            </a>
+          </div>
+          
+          <div style="background:#f8f9fa;border-radius:8px;padding:20px;margin-top:24px;">
+            <h3 style="color:#1a1a2e;margin:0 0 12px 0;font-size:16px;">What we can help with:</h3>
+            <ul style="color:#6b7280;font-size:14px;line-height:2;margin:0;padding-left:20px;">
+              <li>SEO & Content Strategy</li>
+              <li>PPC & Google Ads Management</li>
+              <li>Web Design & Development</li>
+              <li>Social Media Management</li>
+            </ul>
+          </div>
+          
+          <div style="text-align:center;margin:24px 0;">
+            <p style="color:#374151;font-size:14px;margin:0 0 8px;">Prefer to chat directly?</p>
+            <a href="https://wa.me/923041316771?text=Hi%20Shahab%2C%20I%20have%20the%20WELCOME25%20discount%20code!" style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;padding:10px 24px;border-radius:24px;font-weight:bold;font-size:14px;">
+              💬 WhatsApp Us
+            </a>
+          </div>
+          
+          <div style="border-top:1px solid #e5e7eb;margin-top:30px;padding-top:20px;text-align:center;">
+            <p style="color:#9ca3af;font-size:12px;margin:0;">
+              © ${new Date().getFullYear()} Shahab Abbasi · <a href="https://shahababbasi.com" style="color:#9ca3af;">shahababbasi.com</a>
+            </p>
+          </div>
+        </div>
+      `;
+
+      userEmail = fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "Shahab Abbasi <onboarding@resend.dev>",
+          to: [email],
+          subject: "🎉 Your 25% Discount Code: WELCOME25",
+          html: discountHtml,
+        }),
+      });
+    }
+
+    // Resource delivery email
     if (source?.startsWith("resource_") && downloadUrl && resourceTitle) {
       const userHtml = `
         <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;background:#ffffff;">
