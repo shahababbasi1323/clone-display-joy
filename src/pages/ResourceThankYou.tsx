@@ -19,7 +19,7 @@ const ResourceThankYou = () => {
   return (
     <Layout>
       <section className="relative overflow-hidden py-20 md:py-32 px-4 min-h-[70vh] flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-[hsl(220,40%,6%)] via-[hsl(220,35%,10%)] to-[hsl(220,40%,6%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[500px] h-[500px] rounded-full bg-accent/5 blur-3xl" />
         <div className="container mx-auto relative z-10 max-w-2xl">
           <motion.div
