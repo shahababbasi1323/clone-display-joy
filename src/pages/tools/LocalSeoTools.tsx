@@ -180,3 +180,42 @@ export const LocalKeywordGenerator = () => {
     </div>
   );
 };
+
+export const GbpKeywordChecker = () => {
+  const [business, setBusiness] = useState("");
+  const [location, setLocation] = useState("");
+  const [keywords, setKeywords] = useState("");
+  const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label className="text-sm font-medium mb-1.5 block">Business Name</label><Input value={business} onChange={e => setBusiness(e.target.value)} placeholder="Your Business Name" /></div>
+        <div><label className="text-sm font-medium mb-1.5 block">Location</label><Input value={location} onChange={e => setLocation(e.target.value)} placeholder="City, Country" /></div>
+      </div>
+      <div><label className="text-sm font-medium mb-1.5 block">Keywords (one per line)</label><Textarea value={keywords} onChange={e => setKeywords(e.target.value)} placeholder={"plumber near me\nemergency plumber\nbest plumber"} rows={6} /></div>
+      {kwList.length > 0 && (
+        <div className="space-y-2">
+          <p className="text-sm font-medium">{kwList.length} local keywords to check</p>
+          <div className="space-y-2 max-h-[500px] overflow-auto">
+            {kwList.map((kw, i) => {
+              const query = location ? `${kw} ${location}` : kw;
+              const mapsUrl = `https://www.google.com/maps/search/${encodeURIComponent(query)}`;
+              const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+              return (
+                <div key={i} className="glass rounded-lg p-3 flex flex-wrap justify-between items-center gap-2">
+                  <span className="text-sm flex-1">{kw}</span>
+                  <div className="flex gap-2">
+                    <a href={searchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Google →</a>
+                    <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Maps →</a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-xs text-muted-foreground">💡 Search each keyword on Google Maps to see your GBP ranking. Use incognito mode for unbiased results.</p>
+        </div>
+      )}
+    </div>
+  );
+};

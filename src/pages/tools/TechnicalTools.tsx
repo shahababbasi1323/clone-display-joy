@@ -314,3 +314,96 @@ export const CoreWebVitalsGuide = () => {
     </div>
   );
 };
+
+export const PageSpeedAnalyzer = () => {
+  const [url, setUrl] = useState("");
+  const checks = [
+    { label: "Enable text compression (Gzip/Brotli)", impact: "High" },
+    { label: "Serve images in next-gen formats (WebP/AVIF)", impact: "High" },
+    { label: "Defer offscreen images (lazy loading)", impact: "High" },
+    { label: "Minify CSS, JS, and HTML", impact: "Medium" },
+    { label: "Eliminate render-blocking resources", impact: "High" },
+    { label: "Reduce server response time (TTFB < 200ms)", impact: "High" },
+    { label: "Use a CDN for static assets", impact: "Medium" },
+    { label: "Preconnect to required origins", impact: "Medium" },
+    { label: "Preload key requests (fonts, hero image)", impact: "Medium" },
+    { label: "Avoid excessive DOM size (< 1500 nodes)", impact: "Medium" },
+    { label: "Reduce JavaScript execution time", impact: "High" },
+    { label: "Avoid multiple page redirects", impact: "Low" },
+    { label: "Use efficient cache policy (long TTL)", impact: "Medium" },
+    { label: "Remove unused CSS/JS", impact: "High" },
+    { label: "Set explicit width/height on images", impact: "Low" },
+  ];
+  const [checked, setChecked] = useState<Set<number>>(new Set());
+  const toggle = (i: number) => { const n = new Set(checked); n.has(i) ? n.delete(i) : n.add(i); setChecked(n); };
+  const pct = Math.round((checked.size / checks.length) * 100);
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <label className="text-sm font-medium mb-1.5 block">Page URL (for reference)</label>
+        <Input value={url} onChange={e => setUrl(e.target.value)} placeholder="https://example.com" />
+      </div>
+      {url && (
+        <div className="glass rounded-xl p-4">
+          <a href={`https://pagespeed.web.dev/analysis?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer" className="text-sm text-accent hover:underline font-medium">→ Run Google PageSpeed Insights for this URL</a>
+        </div>
+      )}
+      <div className="glass rounded-xl p-4 flex items-center justify-between">
+        <span className="text-sm font-medium">{checked.size}/{checks.length} optimizations applied</span>
+        <span className={`text-lg font-bold ${pct >= 80 ? "text-accent" : pct >= 50 ? "text-yellow-500" : "text-destructive"}`}>{pct}%</span>
+      </div>
+      <div className="h-2 rounded-full bg-secondary overflow-hidden">
+        <div className="h-full bg-accent transition-all" style={{ width: `${pct}%` }} />
+      </div>
+      <div className="space-y-2 max-h-[500px] overflow-auto">
+        {checks.map((item, i) => (
+          <label key={i} className="flex items-start gap-3 p-3 glass rounded-lg cursor-pointer hover:bg-accent/5 transition-colors">
+            <input type="checkbox" checked={checked.has(i)} onChange={() => toggle(i)} className="mt-1 rounded border-border" />
+            <div className="flex-1">
+              <span className={checked.has(i) ? "line-through text-muted-foreground" : ""}>{item.label}</span>
+              <span className={`ml-2 text-xs px-2 py-0.5 rounded-full ${item.impact === "High" ? "bg-destructive/10 text-destructive" : item.impact === "Medium" ? "bg-yellow-500/10 text-yellow-600" : "bg-muted text-muted-foreground"}`}>{item.impact}</span>
+            </div>
+          </label>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export const XmlToUrlConverter = () => {
+  const [xml, setXml] = useState("");
+  const urlPattern = /<loc>\s*(.*?)\s*<\/loc>/gi;
+  const urls: string[] = [];
+  let match;
+  const xmlCopy = xml;
+  while ((match = urlPattern.exec(xmlCopy)) !== null) {
+    urls.push(match[1]);
+  }
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <label className="text-sm font-medium mb-1.5 block">Paste XML Sitemap Content</label>
+        <Textarea value={xml} onChange={e => setXml(e.target.value)} placeholder={'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://example.com/</loc></url>\n  <url><loc>https://example.com/about</loc></url>\n</urlset>'} rows={10} className="font-mono text-xs" />
+      </div>
+      {urls.length > 0 && (
+        <div>
+          <div className="flex justify-between mb-3">
+            <p className="text-sm font-medium">{urls.length} URLs extracted</p>
+            <CopyButton text={urls.join("\n")} />
+          </div>
+          <div className="space-y-1 max-h-[400px] overflow-auto">
+            {urls.map((u, i) => (
+              <div key={i} className="glass rounded-lg p-2 text-sm flex justify-between items-center">
+                <a href={u} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline truncate flex-1">{u}</a>
+                <CopyButton text={u} />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+      {xml && urls.length === 0 && <p className="text-sm text-muted-foreground">No {"<loc>"} tags found. Paste valid XML sitemap content.</p>}
+    </div>
+  );
+};

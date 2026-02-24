@@ -161,3 +161,33 @@ export const KeywordGrouper = () => {
     </div>
   );
 };
+
+export const BulkKeywordChecker = () => {
+  const [domain, setDomain] = useState("");
+  const [keywords, setKeywords] = useState("");
+  const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
+
+  return (
+    <div className="space-y-6">
+      <div><label className="text-sm font-medium mb-1.5 block">Your Domain</label><Input value={domain} onChange={e => setDomain(e.target.value)} placeholder="example.com" /></div>
+      <div><label className="text-sm font-medium mb-1.5 block">Keywords (one per line)</label><Textarea value={keywords} onChange={e => setKeywords(e.target.value)} placeholder={"seo services dubai\ndigital marketing agency\nlink building services"} rows={8} /></div>
+      {domain && kwList.length > 0 && (
+        <div className="space-y-2">
+          <p className="text-sm font-medium">{kwList.length} keywords to check</p>
+          <div className="space-y-2 max-h-[500px] overflow-auto">
+            {kwList.map((kw, i) => (
+              <div key={i} className="glass rounded-lg p-3 flex flex-wrap justify-between items-center gap-2">
+                <span className="text-sm flex-1">{kw}</span>
+                <div className="flex gap-2">
+                  <a href={`https://www.google.com/search?q=${encodeURIComponent(kw)}`} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Search →</a>
+                  <a href={`https://www.google.com/search?q=site:${encodeURIComponent(domain)}+${encodeURIComponent(kw)}`} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">site: Check →</a>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">💡 Open each link to manually check your position. For automated tracking, use Google Search Console or rank tracking tools.</p>
+        </div>
+      )}
+    </div>
+  );
+};

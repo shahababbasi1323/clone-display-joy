@@ -6,11 +6,11 @@ import WordCounter from "./tools/WordCounter";
 import MetaTagGenerator from "./tools/MetaTagGenerator";
 import SerpPreview from "./tools/SerpPreview";
 import { CharacterCounter, KeywordDensityChecker, ReadabilityChecker, DuplicateSentenceFinder, LoremIpsumGenerator, TextCaseConverter, ArticleRewriterHelper, HeadlineAnalyzer, GrammarChecker } from "./tools/ContentTools";
-import { BulkTitleChecker, MetaDescriptionChecker, HeadingAnalyzer, ImageAltTextGenerator, CanonicalTagGenerator, OpenGraphPreview, GoogleIndexChecker } from "./tools/MetaTools";
-import { RobotsTxtGenerator, SitemapGenerator, HtaccessRedirectGenerator, SchemaGenerator, JsonLdValidator, HreflangTagGenerator, SlugGenerator, UrlEncoderDecoder, HttpStatusChecker, PageSizeCalculator, CoreWebVitalsGuide } from "./tools/TechnicalTools";
-import { KeywordSuggestionTool, LsiKeywordGenerator, QuestionGenerator, KeywordGapPlanner, SearchIntentClassifier, KeywordGrouper } from "./tools/KeywordTools";
+import { BulkTitleChecker, MetaDescriptionChecker, HeadingAnalyzer, ImageAltTextGenerator, CanonicalTagGenerator, OpenGraphPreview, GoogleIndexChecker, SerpChecker } from "./tools/MetaTools";
+import { RobotsTxtGenerator, SitemapGenerator, HtaccessRedirectGenerator, SchemaGenerator, JsonLdValidator, HreflangTagGenerator, SlugGenerator, UrlEncoderDecoder, HttpStatusChecker, PageSizeCalculator, CoreWebVitalsGuide, PageSpeedAnalyzer, XmlToUrlConverter } from "./tools/TechnicalTools";
+import { KeywordSuggestionTool, LsiKeywordGenerator, QuestionGenerator, KeywordGapPlanner, SearchIntentClassifier, KeywordGrouper, BulkKeywordChecker } from "./tools/KeywordTools";
 import { LinkedInPostFormatter, LinkedInHeadlineGenerator, LinkedInSummaryGenerator, TwitterThreadFormatter, SocialMediaImageSizeGuide, HashtagGenerator, InstagramBioGenerator, SocialPostCalendar } from "./tools/SocialTools";
-import { GmbAuditChecklist, CitationSourceFinder, NapConsistencyChecker, ReviewResponseGenerator, LocalKeywordGenerator } from "./tools/LocalSeoTools";
+import { GmbAuditChecklist, CitationSourceFinder, NapConsistencyChecker, ReviewResponseGenerator, LocalKeywordGenerator, GbpKeywordChecker } from "./tools/LocalSeoTools";
 import { AiSearchPromptGenerator, AiContentOptimizer, BrandMentionGuide } from "./tools/AiSeoTools";
 import { AnchorTextAnalyzer, GuestPostPitchGenerator, BrokenLinkEmailGenerator, BacklinkQualityChecklist, DisavowFileGenerator } from "./tools/BacklinkTools";
 import { ProductDescriptionOptimizer, EcommerceSchemaGenerator, CategoryPageOptimizer } from "./tools/EcommerceTools";
@@ -39,6 +39,7 @@ const registry: Record<string, React.FC> = {
   "canonical-tag-generator": CanonicalTagGenerator,
   "open-graph-preview": OpenGraphPreview,
   "google-index-checker": GoogleIndexChecker,
+  "serp-checker": SerpChecker,
   "robots-txt-generator": RobotsTxtGenerator,
   "sitemap-generator": SitemapGenerator,
   "htaccess-redirect-generator": HtaccessRedirectGenerator,
@@ -50,12 +51,15 @@ const registry: Record<string, React.FC> = {
   "http-status-checker": HttpStatusChecker,
   "page-size-checker": PageSizeCalculator,
   "core-web-vitals-guide": CoreWebVitalsGuide,
+  "page-speed-analyzer": PageSpeedAnalyzer,
+  "xml-to-url-converter": XmlToUrlConverter,
   "keyword-suggestion-tool": KeywordSuggestionTool,
   "lsi-keyword-generator": LsiKeywordGenerator,
   "question-generator": QuestionGenerator,
   "competitor-keyword-gap-planner": KeywordGapPlanner,
   "search-intent-classifier": SearchIntentClassifier,
   "keyword-grouper": KeywordGrouper,
+  "bulk-keyword-checker": BulkKeywordChecker,
   "linkedin-post-formatter": LinkedInPostFormatter,
   "linkedin-headline-generator": LinkedInHeadlineGenerator,
   "linkedin-summary-generator": LinkedInSummaryGenerator,
@@ -69,6 +73,7 @@ const registry: Record<string, React.FC> = {
   "nap-consistency-checker": NapConsistencyChecker,
   "review-response-generator": ReviewResponseGenerator,
   "local-keyword-generator": LocalKeywordGenerator,
+  "gbp-keyword-checker": GbpKeywordChecker,
   "ai-search-prompt-tester": AiSearchPromptGenerator,
   "ai-content-optimizer": AiContentOptimizer,
   "brand-mention-tracker-guide": BrandMentionGuide,
