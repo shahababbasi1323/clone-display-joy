@@ -236,9 +236,19 @@ export const BulkKeywordChecker = () => {
         <div className="flex justify-between items-center mb-4">
           <h3 className="text-lg font-bold">Search Links</h3>
           {results.length > 0 && (
-            <Button size="sm" onClick={() => results.forEach(r => window.open(r.searchUrl, "_blank"))}>
-              Open All ({results.length})
-            </Button>
+            <div className="flex gap-2">
+              <Button size="sm" variant="outline" onClick={() => {
+                results.forEach((r, i) => setTimeout(() => window.open(r.searchUrl, "_blank"), i * 3000));
+              }}>
+                Open All (3s delay)
+              </Button>
+              <Button size="sm" variant="outline" onClick={() => {
+                const text = results.map(r => r.searchUrl).join("\n");
+                navigator.clipboard.writeText(text);
+              }}>
+                Copy All Links
+              </Button>
+            </div>
           )}
         </div>
         {results.length === 0 ? (
