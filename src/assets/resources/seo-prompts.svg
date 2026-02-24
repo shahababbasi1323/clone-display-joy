@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0D1A"/>
+      <stop offset="100%" style="stop-color:#141830"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1080" height="1350" fill="url(#bgP)"/>
+  
+  <!-- Header -->
+  <text x="540" y="50" text-anchor="middle" fill="#00E676" font-family="monospace" font-size="13" letter-spacing="4">SHAHAB ABBASI | FREE SEO RESOURCE</text>
+  
+  <text x="540" y="105" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="36" font-weight="bold">20 SEO Prompts That</text>
+  <text x="540" y="148" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="36" font-weight="bold">Save 15+ Hours/Week</text>
+  <text x="540" y="180" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="15">Copy, Paste into ChatGPT, Get Results Instantly</text>
+  
+  <line x1="380" y1="200" x2="700" y2="200" stroke="#00E676" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Category 1: On-Page SEO -->
+  <rect x="50" y="225" width="470" height="240" rx="12" fill="#1a1e38" stroke="#2196F3" stroke-width="1" opacity="0.9"/>
+  <rect x="50" y="225" width="470" height="35" rx="12" fill="#2196F3" opacity="0.15"/>
+  <text x="285" y="250" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="15" font-weight="bold">ON-PAGE SEO PROMPTS</text>
+  
+  <text x="75" y="285" fill="#FFFFFF" font-family="Arial" font-size="12">1. Bulk Meta Descriptions (50 in 5 min)</text>
+  <text x="75" y="308" fill="#FFFFFF" font-family="Arial" font-size="12">2. Title Tag Optimizer (double CTR)</text>
+  <text x="75" y="331" fill="#FFFFFF" font-family="Arial" font-size="12">3. Internal Link Finder (find missing links)</text>
+  <text x="75" y="354" fill="#FFFFFF" font-family="Arial" font-size="12">4. Header Tag Structure Audit</text>
+  <text x="75" y="377" fill="#FFFFFF" font-family="Arial" font-size="12">5. Image Alt Text Generator (bulk)</text>
+  <text x="75" y="400" fill="#FFFFFF" font-family="Arial" font-size="12">6. FAQ Schema Content Creator</text>
+  <text x="75" y="423" fill="#FFFFFF" font-family="Arial" font-size="12">7. Content Quality Scorer (out of 10)</text>
+  
+  <text x="490" y="450" text-anchor="end" fill="#2196F3" font-family="Arial" font-size="11" font-weight="bold">7 Prompts</text>
+  
+  <!-- Category 2: Technical SEO -->
+  <rect x="560" y="225" width="470" height="240" rx="12" fill="#1a1e38" stroke="#FF9800" stroke-width="1" opacity="0.9"/>
+  <rect x="560" y="225" width="470" height="35" rx="12" fill="#FF9800" opacity="0.15"/>
+  <text x="795" y="250" text-anchor="middle" fill="#FF9800" font-family="Arial" font-size="15" font-weight="bold">TECHNICAL SEO PROMPTS</text>
+  
+  <text x="585" y="285" fill="#FFFFFF" font-family="Arial" font-size="12">8. Full Website Audit (10 min audit)</text>
+  <text x="585" y="308" fill="#FFFFFF" font-family="Arial" font-size="12">9. Schema Markup Generator (JSON-LD)</text>
+  <text x="585" y="331" fill="#FFFFFF" font-family="Arial" font-size="12">10. Page Speed Fix Analyzer</text>
+  <text x="585" y="354" fill="#FFFFFF" font-family="Arial" font-size="12">11. Redirect Map Builder</text>
+  <text x="585" y="377" fill="#FFFFFF" font-family="Arial" font-size="12">12. Robots.txt and Sitemap Checker</text>
+  <text x="585" y="400" fill="#FFFFFF" font-family="Arial" font-size="12">13. Cannibalization Finder</text>
+  
+  <text x="1000" y="450" text-anchor="end" fill="#FF9800" font-family="Arial" font-size="11" font-weight="bold">6 Prompts</text>
+  
+  <!-- Category 3: Content -->
+  <rect x="50" y="490" width="470" height="220" rx="12" fill="#1a1e38" stroke="#E91E63" stroke-width="1" opacity="0.9"/>
+  <rect x="50" y="490" width="470" height="35" rx="12" fill="#E91E63" opacity="0.15"/>
+  <text x="285" y="515" text-anchor="middle" fill="#E91E63" font-family="Arial" font-size="15" font-weight="bold">CONTENT WRITING PROMPTS</text>
+  
+  <text x="75" y="550" fill="#FFFFFF" font-family="Arial" font-size="12">14. SEO Blog Post Writer (ranks fast)</text>
+  <text x="75" y="573" fill="#FFFFFF" font-family="Arial" font-size="12">15. Content Calendar Generator (3 months)</text>
+  <text x="75" y="596" fill="#FFFFFF" font-family="Arial" font-size="12">16. Keyword Cluster Organizer</text>
+  <text x="75" y="619" fill="#FFFFFF" font-family="Arial" font-size="12">17. Content Brief Creator</text>
+  <text x="75" y="642" fill="#FFFFFF" font-family="Arial" font-size="12">18. AI Content Humanizer</text>
+  <text x="75" y="665" fill="#FFFFFF" font-family="Arial" font-size="12">19. Blog Post Refresher/Updater</text>
+  
+  <text x="490" y="695" text-anchor="end" fill="#E91E63" font-family="Arial" font-size="11" font-weight="bold">6 Prompts</text>
+  
+  <!-- Category 4: Backlinks -->
+  <rect x="560" y="490" width="470" height="220" rx="12" fill="#1a1e38" stroke="#4CAF50" stroke-width="1" opacity="0.9"/>
+  <rect x="560" y="490" width="470" height="35" rx="12" fill="#4CAF50" opacity="0.15"/>
+  <text x="795" y="515" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="15" font-weight="bold">BACKLINK PROMPTS</text>
+  
+  <text x="585" y="550" fill="#FFFFFF" font-family="Arial" font-size="12">20. Backlink Profile Auditor</text>
+  <text x="585" y="573" fill="#FFFFFF" font-family="Arial" font-size="12">21. Outreach Email Writer (18% reply rate)</text>
+  <text x="585" y="596" fill="#FFFFFF" font-family="Arial" font-size="12">22. HARO/Digital PR Pitch Writer</text>
+  <text x="585" y="619" fill="#FFFFFF" font-family="Arial" font-size="12">23. Competitor Backlink Analyzer</text>
+  <text x="585" y="642" fill="#FFFFFF" font-family="Arial" font-size="12">24. Broken Link Outreach Email</text>
+  
+  <text x="1000" y="695" text-anchor="end" fill="#4CAF50" font-family="Arial" font-size="11" font-weight="bold">5 Prompts</text>
+  
+  <!-- Stats Bar -->
+  <rect x="50" y="740" width="980" height="70" rx="12" fill="#1a1e38"/>
+  
+  <text x="175" y="770" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="28" font-weight="bold">20+</text>
+  <text x="175" y="795" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">Ready Prompts</text>
+  
+  <text x="395" y="770" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="28" font-weight="bold">15+</text>
+  <text x="395" y="795" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">Hours Saved/Week</text>
+  
+  <text x="615" y="770" text-anchor="middle" fill="#FF9800" font-family="Arial" font-size="28" font-weight="bold">50+</text>
+  <text x="615" y="795" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">Tasks Automated</text>
+  
+  <text x="835" y="770" text-anchor="middle" fill="#E91E63" font-family="Arial" font-size="28" font-weight="bold">$0</text>
+  <text x="835" y="795" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">Cost (100% Free)</text>
+  
+  <!-- Example Prompt Preview -->
+  <rect x="50" y="835" width="980" height="340" rx="12" fill="#0d1117" stroke="#00E676" stroke-width="1"/>
+  <text x="540" y="870" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="16" font-weight="bold">PREVIEW: Bulk Meta Description Prompt</text>
+  
+  <text x="80" y="905" fill="#78909C" font-family="monospace" font-size="10.5">"I have a website about [your niche].</text>
+  <text x="80" y="925" fill="#78909C" font-family="monospace" font-size="10.5">Here are 50 page URLs and their main keywords:</text>
+  <text x="80" y="945" fill="#78909C" font-family="monospace" font-size="10.5">[Paste your list]</text>
+  <text x="80" y="975" fill="#78909C" font-family="monospace" font-size="10.5">Write a unique, SEO-optimized meta description for each.</text>
+  <text x="80" y="995" fill="#78909C" font-family="monospace" font-size="10.5">Rules:</text>
+  <text x="80" y="1015" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Maximum 155 characters</text>
+  <text x="80" y="1035" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Include the target keyword naturally</text>
+  <text x="80" y="1055" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Add a call-to-action</text>
+  <text x="80" y="1075" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Make each one unique</text>
+  <text x="80" y="1095" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Match search intent</text>
+  <text x="80" y="1115" fill="#FFFFFF" font-family="monospace" font-size="10.5">- Use power words that increase CTR"</text>
+  
+  <rect x="630" y="900" width="370" height="240" rx="10" fill="#141830"/>
+  <text x="815" y="935" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="14" font-weight="bold">RESULT:</text>
+  <text x="815" y="965" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="12">50 unique metas</text>
+  <text x="815" y="990" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="12">in 5 minutes</text>
+  <text x="815" y="1025" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">vs 3+ hours manually</text>
+  <text x="815" y="1065" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="24" font-weight="bold">97% Time Saved</text>
+  <text x="815" y="1100" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="11">Tested on 10+ client sites</text>
+  
+  <!-- CTA -->
+  <rect x="50" y="1200" width="980" height="110" rx="14" fill="#1a1e38" stroke="#00E676" stroke-width="1.5"/>
+  <text x="540" y="1240" text-anchor="middle" fill="#00E676" font-family="Arial" font-size="22" font-weight="bold">Comment "PROMPT PACK" on My LinkedIn Post</text>
+  <text x="540" y="1270" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="14">I will DM you the complete pack with ALL 20 prompts | 100% FREE</text>
+  <text x="540" y="1295" text-anchor="middle" fill="#64B5F6" font-family="Arial" font-size="13">shahababbasi.com | @ShahabAbbasi302 | linkedin.com/in/shahab-abbasi-seo-specialist</text>
+  
+  <rect x="0" y="1335" width="1080" height="15" fill="#00E676" opacity="0.3"/>
+</svg>

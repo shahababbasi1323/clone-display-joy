@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27"/>
+      <stop offset="100%" style="stop-color:#1a1f3a"/>
+    </linearGradient>
+    <filter id="sh2" x="-3%" y="-3%" width="106%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <rect width="1080" height="1350" fill="url(#bg2)"/>
+  
+  <!-- Decorative -->
+  <circle cx="50" cy="50" r="150" fill="#f44336" opacity="0.03"/>
+  <circle cx="1030" cy="1300" r="200" fill="#4CAF50" opacity="0.03"/>
+  
+  <!-- Header -->
+  <text x="540" y="55" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="14" font-weight="bold" letter-spacing="5">SHAHAB ABBASI | LOCAL SEO EXPERT</text>
+  
+  <text x="540" y="110" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="38" font-weight="bold">7 Local SEO Mistakes</text>
+  <text x="540" y="150" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="22" font-weight="bold">That Kill Your Rankings</text>
+  <text x="540" y="185" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="15">(And How to Fix Them)</text>
+  
+  <line x1="390" y1="205" x2="690" y2="205" stroke="#EF5350" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Mistake 1 -->
+  <rect x="60" y="230" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="285" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="293" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">1</text>
+  <text x="165" y="275" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">Keyword Stuffing in Business Name</text>
+  <text x="165" y="300" fill="#90A4AE" font-family="Arial" font-size="13">Wrong: "Ahmed Plumber - Best Plumber in Lahore, Cheap Plumber Lahore"</text>
+  <text x="165" y="322" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Use your REAL business name only. Google will penalize fake names.</text>
+  
+  <!-- Mistake 2 -->
+  <rect x="60" y="360" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="415" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="423" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">2</text>
+  <text x="165" y="405" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">Inconsistent NAP Information</text>
+  <text x="165" y="430" fill="#90A4AE" font-family="Arial" font-size="13">Your Name, Address, Phone is different on different websites.</text>
+  <text x="165" y="452" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Make NAP EXACTLY the same everywhere - website, GMB, directories, social media.</text>
+  
+  <!-- Mistake 3 -->
+  <rect x="60" y="490" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="545" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="553" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">3</text>
+  <text x="165" y="535" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">Not Responding to Reviews</text>
+  <text x="165" y="560" fill="#90A4AE" font-family="Arial" font-size="13">You get reviews but never reply. Google sees this as low engagement.</text>
+  <text x="165" y="582" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Reply to EVERY review (positive and negative) within 24-48 hours.</text>
+  
+  <!-- Mistake 4 -->
+  <rect x="60" y="620" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="675" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="683" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">4</text>
+  <text x="165" y="665" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">Wrong Categories Selected</text>
+  <text x="165" y="690" fill="#90A4AE" font-family="Arial" font-size="13">Using broad categories instead of specific ones that match your services.</text>
+  <text x="165" y="712" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Choose the most SPECIFIC primary category. Use up to 9 secondary categories.</text>
+  
+  <!-- Mistake 5 -->
+  <rect x="60" y="750" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="805" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="813" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">5</text>
+  <text x="165" y="795" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">No Photos or Low Quality Photos</text>
+  <text x="165" y="820" fill="#90A4AE" font-family="Arial" font-size="13">Businesses with photos get 42% more direction requests and 35% more clicks.</text>
+  <text x="165" y="842" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Upload 10+ real photos. Add new photos every month. No stock photos.</text>
+  
+  <!-- Mistake 6 -->
+  <rect x="60" y="880" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="935" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="943" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">6</text>
+  <text x="165" y="925" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">No Google Business Posts</text>
+  <text x="165" y="950" fill="#90A4AE" font-family="Arial" font-size="13">You set up GMB once and never post again. Google sees inactive profiles as less relevant.</text>
+  <text x="165" y="972" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Post 1-2 times per week. Share updates, offers, and photos. Schedule in advance.</text>
+  
+  <!-- Mistake 7 -->
+  <rect x="60" y="1010" width="960" height="110" rx="12" fill="#1e2340" filter="url(#sh2)"/>
+  <circle cx="120" cy="1065" r="25" fill="#EF5350" opacity="0.15"/>
+  <text x="120" y="1073" text-anchor="middle" fill="#EF5350" font-family="Arial" font-size="20" font-weight="bold">7</text>
+  <text x="165" y="1055" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="bold">Missing Schema Markup on Website</text>
+  <text x="165" y="1080" fill="#90A4AE" font-family="Arial" font-size="13">No LocalBusiness or FAQ schema means AI and Google cannot understand your business well.</text>
+  <text x="165" y="1102" fill="#66BB6A" font-family="Arial" font-size="13">Fix: Add LocalBusiness schema with name, address, phone, hours, and geo coordinates.</text>
+  
+  <!-- CTA Box -->
+  <rect x="60" y="1155" width="960" height="150" rx="16" fill="#1e2340" stroke="#4CAF50" stroke-width="1.5" opacity="0.9"/>
+  
+  <text x="540" y="1200" text-anchor="middle" fill="#66BB6A" font-family="Arial" font-size="20" font-weight="bold">Want My Complete GMB Audit Checklist?</text>
+  <text x="540" y="1235" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="15">Comment "GMB Checklist" on my LinkedIn post and I will DM it to you FREE.</text>
+  <text x="540" y="1268" text-anchor="middle" fill="#64B5F6" font-family="Arial" font-size="14">shahababbasi.com | @ShahabAbbasi302 | +92 304 1316771</text>
+  
+  <!-- Bottom bar -->
+  <rect x="0" y="1335" width="1080" height="15" fill="#EF5350" opacity="0.3"/>
+</svg>

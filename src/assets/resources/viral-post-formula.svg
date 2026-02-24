@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#080b1a"/>
+      <stop offset="100%" style="stop-color:#10152e"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1080" height="1350" fill="url(#bgV)"/>
+  
+  <!-- Brand -->
+  <text x="540" y="45" text-anchor="middle" fill="#FF6D00" font-family="monospace" font-size="13" letter-spacing="4">SHAHAB ABBASI | SEO STRATEGIST</text>
+  
+  <!-- Title -->
+  <text x="540" y="100" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="34" font-weight="bold">The Viral LinkedIn</text>
+  <text x="540" y="142" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="34" font-weight="bold">Post Formula</text>
+  <text x="540" y="175" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="14">How One Post Got Me 50+ Leads in 48 Hours</text>
+  
+  <line x1="350" y1="195" x2="730" y2="195" stroke="#FF6D00" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Step 1: HOOK -->
+  <rect x="60" y="220" width="960" height="155" rx="12" fill="#141830" stroke="#FF5252" stroke-width="1.5"/>
+  <circle cx="110" cy="260" r="22" fill="#FF5252" opacity="0.2"/>
+  <text x="110" y="267" text-anchor="middle" fill="#FF5252" font-family="Arial" font-size="18" font-weight="bold">1</text>
+  <text x="145" y="262" fill="#FF5252" font-family="Arial" font-size="20" font-weight="bold">THE HOOK (First 2 Lines)</text>
+  <text x="145" y="285" fill="#B0BEC5" font-family="Arial" font-size="12">This is the ONLY thing people see before clicking "See more"</text>
+  
+  <text x="90" y="315" fill="#FFFFFF" font-family="monospace" font-size="11">"Stop writing meta descriptions one by one."</text>
+  
+  <text x="90" y="343" fill="#78909C" font-family="Arial" font-size="11">WHY IT WORKS: Calls out a specific pain point. Creates curiosity gap.</text>
+  <text x="90" y="362" fill="#78909C" font-family="Arial" font-size="11">Forces the reader to click "See more" to find out the alternative.</text>
+  
+  <!-- Step 2: VALUE -->
+  <rect x="60" y="395" width="960" height="155" rx="12" fill="#141830" stroke="#4CAF50" stroke-width="1.5"/>
+  <circle cx="110" cy="435" r="22" fill="#4CAF50" opacity="0.2"/>
+  <text x="110" y="442" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="18" font-weight="bold">2</text>
+  <text x="145" y="437" fill="#4CAF50" font-family="Arial" font-size="20" font-weight="bold">THE VALUE (Body - Real Content)</text>
+  <text x="145" y="460" fill="#B0BEC5" font-family="Arial" font-size="12">Give the ACTUAL value. Not a teaser. The real thing.</text>
+  
+  <text x="90" y="490" fill="#FFFFFF" font-family="monospace" font-size="11">Share the actual ChatGPT prompt, the real strategy, the exact steps.</text>
+  <text x="90" y="510" fill="#FFFFFF" font-family="monospace" font-size="11">People can use it IMMEDIATELY. No strings attached.</text>
+  
+  <text x="90" y="538" fill="#78909C" font-family="Arial" font-size="11">WHY IT WORKS: Generosity builds trust. People share useful content.</text>
+  
+  <!-- Step 3: PROOF -->
+  <rect x="60" y="570" width="960" height="155" rx="12" fill="#141830" stroke="#2196F3" stroke-width="1.5"/>
+  <circle cx="110" cy="610" r="22" fill="#2196F3" opacity="0.2"/>
+  <text x="110" y="617" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="18" font-weight="bold">3</text>
+  <text x="145" y="612" fill="#2196F3" font-family="Arial" font-size="20" font-weight="bold">THE PROOF (Specific Data)</text>
+  <text x="145" y="635" fill="#B0BEC5" font-family="Arial" font-size="12">Back up your value with specific, believable numbers.</text>
+  
+  <text x="90" y="665" fill="#FFFFFF" font-family="monospace" font-size="11">"This ONE prompt saved me 3 hours last week."</text>
+  <text x="90" y="685" fill="#FFFFFF" font-family="monospace" font-size="11">"Client traffic went from 79 to 224 clicks (+183%)"</text>
+  
+  <text x="90" y="713" fill="#78909C" font-family="Arial" font-size="11">WHY IT WORKS: Specific numbers are believable. Vague claims are not.</text>
+  
+  <!-- Step 4: CTA -->
+  <rect x="60" y="745" width="960" height="155" rx="12" fill="#141830" stroke="#FF6D00" stroke-width="1.5"/>
+  <circle cx="110" cy="785" r="22" fill="#FF6D00" opacity="0.2"/>
+  <text x="110" y="792" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="18" font-weight="bold">4</text>
+  <text x="145" y="787" fill="#FF6D00" font-family="Arial" font-size="20" font-weight="bold">THE CTA (Comment Trigger)</text>
+  <text x="145" y="810" fill="#B0BEC5" font-family="Arial" font-size="12">One simple action. Low barrier. High reward.</text>
+  
+  <text x="90" y="840" fill="#FFFFFF" font-family="monospace" font-size="11">"Comment 'META' below and I will send you the full PDF."</text>
+  
+  <text x="90" y="868" fill="#78909C" font-family="Arial" font-size="11">WHY IT WORKS: Easy action (one word). Promise of more value.</text>
+  <text x="90" y="887" fill="#78909C" font-family="Arial" font-size="11">Comments boost algorithm. Each commenter becomes a lead.</text>
+  
+  <!-- Results Box -->
+  <rect x="60" y="925" width="960" height="190" rx="14" fill="#1a1e38" stroke="#FFD600" stroke-width="2"/>
+  <text x="540" y="965" text-anchor="middle" fill="#FFD600" font-family="Arial" font-size="22" font-weight="bold">THE RESULT FROM ONE POST</text>
+  
+  <text x="175" y="1010" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="36" font-weight="bold">187</text>
+  <text x="175" y="1035" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="13">Comments</text>
+  
+  <text x="395" y="1010" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="36" font-weight="bold">50+</text>
+  <text x="395" y="1035" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="13">Leads</text>
+  
+  <text x="615" y="1010" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="36" font-weight="bold">12</text>
+  <text x="615" y="1035" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="13">Paying Clients</text>
+  
+  <text x="835" y="1010" text-anchor="middle" fill="#FFD600" font-family="Arial" font-size="36" font-weight="bold">$14K+</text>
+  <text x="835" y="1035" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="13">Revenue</text>
+  
+  <text x="540" y="1085" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="12">From ONE LinkedIn post using this exact formula</text>
+  <text x="540" y="1105" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="bold">Pain Point Hook + Real Value + Specific Proof + Easy CTA = Leads</text>
+  
+  <!-- FORMULA SUMMARY -->
+  <rect x="60" y="1140" width="225" height="70" rx="10" fill="#FF5252" opacity="0.15"/>
+  <text x="172" y="1175" text-anchor="middle" fill="#FF5252" font-family="Arial" font-size="14" font-weight="bold">HOOK</text>
+  <text x="172" y="1195" text-anchor="middle" fill="#FF5252" font-family="Arial" font-size="10">Stop the scroll</text>
+  
+  <text x="308" y="1180" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="24">+</text>
+  
+  <rect x="330" y="1140" width="225" height="70" rx="10" fill="#4CAF50" opacity="0.15"/>
+  <text x="442" y="1175" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="14" font-weight="bold">VALUE</text>
+  <text x="442" y="1195" text-anchor="middle" fill="#4CAF50" font-family="Arial" font-size="10">Give real content</text>
+  
+  <text x="578" y="1180" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="24">+</text>
+  
+  <rect x="600" y="1140" width="200" height="70" rx="10" fill="#2196F3" opacity="0.15"/>
+  <text x="700" y="1175" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="14" font-weight="bold">PROOF</text>
+  <text x="700" y="1195" text-anchor="middle" fill="#2196F3" font-family="Arial" font-size="10">Show numbers</text>
+  
+  <text x="823" y="1180" text-anchor="middle" fill="#78909C" font-family="Arial" font-size="24">+</text>
+  
+  <rect x="845" y="1140" width="175" height="70" rx="10" fill="#FF6D00" opacity="0.15"/>
+  <text x="932" y="1175" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="14" font-weight="bold">CTA</text>
+  <text x="932" y="1195" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="10">Capture leads</text>
+  
+  <!-- CTA -->
+  <rect x="60" y="1235" width="960" height="75" rx="14" fill="#1a1e38" stroke="#FF6D00" stroke-width="1.5"/>
+  <text x="540" y="1268" text-anchor="middle" fill="#FF6D00" font-family="Arial" font-size="18" font-weight="bold">Comment "FORMULA" on My LinkedIn Post for Template Pack</text>
+  <text x="540" y="1293" text-anchor="middle" fill="#B0BEC5" font-family="Arial" font-size="12">shahababbasi.com | @ShahabAbbasi302 | Follow for more viral formulas</text>
+  
+  <rect x="0" y="1335" width="1080" height="15" fill="#FF6D00" opacity="0.3"/>
+</svg>
