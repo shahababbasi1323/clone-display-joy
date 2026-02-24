@@ -236,21 +236,13 @@ const FreeSeoResources = () => {
                     {resource.statsBadge}
                   </div>
 
-                  {/* Actions */}
-                  <div className="mt-auto space-y-2">
+                  {/* View Resource */}
+                  <div className="mt-auto">
                     <Link to={`/free-seo-resources/${resource.slug}`} className="block">
                       <Button variant="default" className="w-full">
                         View Resource <ArrowRight className="h-4 w-4 ml-2" />
                       </Button>
                     </Link>
-                    <Button
-                      onClick={() => handleDownloadClick(resource)}
-                      className={unlocked ? "w-full glow-accent bg-accent text-accent-foreground hover:bg-accent/90" : "w-full"}
-                      variant="outline"
-                    >
-                      <Download className="h-4 w-4 mr-2" />
-                      {unlocked ? "Download Free PDF" : "Enter Email to Download"}
-                    </Button>
                   </div>
                 </div>
               </motion.div>
