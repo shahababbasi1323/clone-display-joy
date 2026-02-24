@@ -20,6 +20,7 @@ const generateParticles = () =>
 const WelcomePopup = () => {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -49,6 +50,11 @@ const WelcomePopup = () => {
     const trimmedPhone = phone.trim();
     const trimmedMsg = message.trim();
 
+    const trimmedName = name.trim();
+    if (!trimmedName) {
+      toast.error("Please enter your name.");
+      return;
+    }
     if (!trimmedEmail) {
       toast.error("Please enter your email address.");
       return;
@@ -57,7 +63,7 @@ const WelcomePopup = () => {
     setLoading(true);
     try {
       const { error } = await supabase.from("leads").insert({
-        name: trimmedEmail.split("@")[0],
+        name: trimmedName,
         email: trimmedEmail,
         phone: trimmedPhone || null,
         message: trimmedMsg || null,
@@ -67,7 +73,7 @@ const WelcomePopup = () => {
 
       await supabase.functions.invoke("notify-lead", {
         body: {
-          name: trimmedEmail.split("@")[0],
+          name: trimmedName,
           email: trimmedEmail,
           phone: trimmedPhone || null,
           message: trimmedMsg || "Welcome popup - 25% discount claim",
@@ -209,6 +215,18 @@ const WelcomePopup = () => {
 
                     {/* Form */}
                     <form onSubmit={handleSubmit} className="space-y-2.5">
+                      <div className="group flex items-center gap-2.5 rounded-xl bg-muted/40 border border-border/80 hover:border-primary/40 focus-within:border-primary/60 focus-within:bg-muted/60 px-3.5 py-2.5 transition-all">
+                        <span className="text-muted-foreground group-focus-within:text-primary shrink-0 transition-colors text-sm">👤</span>
+                        <input
+                          type="text"
+                          required
+                          maxLength={100}
+                          placeholder="Your name *"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/60 text-sm outline-none"
+                        />
+                      </div>
                       <div className="group flex items-center gap-2.5 rounded-xl bg-muted/40 border border-border/80 hover:border-primary/40 focus-within:border-primary/60 focus-within:bg-muted/60 px-3.5 py-2.5 transition-all">
                         <Mail className="h-4 w-4 text-muted-foreground group-focus-within:text-primary shrink-0 transition-colors" />
                         <input
