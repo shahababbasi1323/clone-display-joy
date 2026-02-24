@@ -10,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { resources, categories, faqs, type ResourceCategory } from "@/data/resourcesData";
+import { storageDownloadUrls } from "@/data/resourceContentData";
 
 const FreeSeoResources = () => {
   const [email, setEmail] = useState("");
@@ -63,12 +64,16 @@ const FreeSeoResources = () => {
     setUnlocked(true);
     setModalResource(null);
     toast({ title: `📥 ${resource?.title} unlocked!` });
-    if (resource?.downloadUrl) window.open(resource.downloadUrl, "_blank");
+    if (resource) {
+      const url = storageDownloadUrls[resource.slug] || resource.downloadUrl;
+      window.open(url, "_blank");
+    }
   };
 
   const handleDownloadClick = (resource: typeof resources[0]) => {
     if (unlocked) {
-      window.open(resource.downloadUrl, "_blank");
+      const url = storageDownloadUrls[resource.slug] || resource.downloadUrl;
+      window.open(url, "_blank");
     } else {
       setModalResource(resource.id);
     }
