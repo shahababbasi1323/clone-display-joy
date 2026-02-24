@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
 import TawkTo from "./TawkTo";
+import WelcomePopup from "./WelcomePopup";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Footer />
       <WhatsAppButton />
       <TawkTo />
+      <WelcomePopup />
     </div>
   );
 };
