@@ -5,7 +5,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 const DISMISS_KEY = "welcome_popup_dismissed";
-const POPUP_DELAY = 5000;
 
 const WelcomePopup = () => {
   const [open, setOpen] = useState(false);
@@ -17,8 +16,17 @@ const WelcomePopup = () => {
   useEffect(() => {
     const dismissed = localStorage.getItem(DISMISS_KEY);
     if (dismissed) return;
-    const timer = setTimeout(() => setOpen(true), POPUP_DELAY);
-    return () => clearTimeout(timer);
+
+    const handleScroll = () => {
+      const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      if (scrollPercent >= 30) {
+        setOpen(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const dismiss = () => {
