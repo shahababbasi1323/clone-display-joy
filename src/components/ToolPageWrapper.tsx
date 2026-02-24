@@ -7,6 +7,7 @@ import Layout from "@/components/Layout";
 import { type ToolData, toolsDataMap } from "@/data/toolsData";
 import { getToolRelatedServices, getToolRelatedBlogs, getToolRelatedPpcServices } from "@/data/internalLinks";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 interface Props {
   tool: ToolData;
@@ -40,14 +41,13 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
   const related = getRelatedTools(tool);
   const steps = howToSteps(tool.name);
 
+  useSeoMeta({
+    title: tool.metaTitle,
+    description: tool.metaDescription,
+    canonical: `https://shahababbasi.com/tools/${tool.slug}`,
+  });
+
   useEffect(() => {
-    document.title = tool.metaTitle;
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", tool.metaDescription);
 
     const schemas = [
       { "@context": "https://schema.org", "@type": "WebApplication", name: tool.name, description: tool.metaDescription, url: window.location.href, applicationCategory: "SEO Tool", operatingSystem: "All", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },

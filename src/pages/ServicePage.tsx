@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getServiceBySlug } from "@/data/servicesData";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 import ServiceHero from "@/components/service/ServiceHero";
 import ServiceContent from "@/components/service/ServiceContent";
 import ServiceInterlinking from "@/components/service/ServiceInterlinking";
@@ -12,6 +13,12 @@ import ServiceSchema from "@/components/service/ServiceSchema";
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? getServiceBySlug(slug) : undefined;
+
+  useSeoMeta({
+    title: service?.metaTitle || "SEO Services | Shahab Abbasi",
+    description: service?.metaDescription || "Professional SEO services by Shahab Abbasi.",
+    canonical: service ? `https://shahababbasi.com/services/${service.slug}` : undefined,
+  });
 
   if (!service) return <NotFound />;
 
