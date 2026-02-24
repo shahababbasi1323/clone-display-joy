@@ -1,83 +1,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Download, Mail, ArrowRight, Check, Sparkles, Users, FileDown, DollarSign } from "lucide-react";
+import { ArrowRight, Check, Sparkles, Users, FileDown, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
-import { supabase } from "@/integrations/supabase/client";
-import { useToast } from "@/hooks/use-toast";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { resources, categories, faqs, type ResourceCategory } from "@/data/resourcesData";
-import { storageDownloadUrls } from "@/data/resourceContentData";
 
 const FreeSeoResources = () => {
-  const [email, setEmail] = useState("");
-  const [heroEmail, setHeroEmail] = useState("");
-  const [unlocked, setUnlocked] = useState(false);
   const [activeCategory, setActiveCategory] = useState<ResourceCategory>("All");
-  const [modalResource, setModalResource] = useState<number | null>(null);
-  const [modalEmail, setModalEmail] = useState("");
-  const { toast } = useToast();
 
   useSeoMeta({
     title: "Free SEO Resources | 16 Tools, Templates & Guides | Shahab Abbasi",
     description: "Download 16 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
     canonical: "https://shahababbasi.com/free-seo-resources",
   });
-
-  const submitEmail = async (emailValue: string, source: string, tag?: string) => {
-    const { error } = await supabase.from("leads").insert({
-      name: "Resource Download",
-      email: emailValue,
-      source,
-      message: tag ? `Downloaded: ${tag}` : "Unlocked all free SEO resources",
-    });
-    if (!error) {
-      supabase.functions.invoke("notify-lead", {
-        body: { name: "Resource Download", email: emailValue, message: tag ? `Downloaded: ${tag}` : "Unlocked all SEO resources", source },
-      });
-    }
-    return error;
-  };
-
-  const handleHeroUnlock = async (e: React.FormEvent) => {
-    e.preventDefault();
-    await submitEmail(heroEmail, "resources_hero_unlock");
-    setUnlocked(true);
-    toast({ title: "🎉 All 16 resources unlocked!", description: "Click any Download button to get your PDF." });
-  };
-
-  const handleDownloadAll = async (e: React.FormEvent) => {
-    e.preventDefault();
-    await submitEmail(email, "resources_download_all");
-    setUnlocked(true);
-    toast({ title: "🎉 Resources unlocked!", description: "Click any Download button to get your PDF." });
-  };
-
-  const handleModalSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (modalResource === null) return;
-    const resource = resources.find(r => r.id === modalResource);
-    await submitEmail(modalEmail, `resource_${resource?.emailTag}`, resource?.title);
-    setUnlocked(true);
-    setModalResource(null);
-    toast({ title: `📥 ${resource?.title} unlocked!` });
-    if (resource) {
-      const url = storageDownloadUrls[resource.slug] || resource.downloadUrl;
-      window.open(url, "_blank");
-    }
-  };
-
-  const handleDownloadClick = (resource: typeof resources[0]) => {
-    if (unlocked) {
-      const url = storageDownloadUrls[resource.slug] || resource.downloadUrl;
-      window.open(url, "_blank");
-    } else {
-      setModalResource(resource.id);
-    }
-  };
 
   const filtered = activeCategory === "All" ? resources : resources.filter(r => r.category === activeCategory);
 
@@ -121,7 +59,7 @@ const FreeSeoResources = () => {
             </p>
 
             {/* Stats Row */}
-            <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {[
                 { icon: FileDown, label: "16 Resources", color: "text-primary" },
                 { icon: Sparkles, label: "200+ AI Prompts", color: "text-purple-400" },
@@ -134,24 +72,6 @@ const FreeSeoResources = () => {
                 </div>
               ))}
             </div>
-
-            {/* Hero Email Capture */}
-            {!unlocked ? (
-              <form onSubmit={handleHeroUnlock} className="max-w-lg mx-auto">
-                <p className="text-sm text-muted-foreground mb-3">Get ALL 16 resources in one email</p>
-                <div className="flex gap-2">
-                  <Input type="email" placeholder="your@email.com" value={heroEmail} onChange={e => setHeroEmail(e.target.value)} required className="flex-1 h-12" />
-                  <Button type="submit" size="lg" className="glow-primary h-12 px-6 shrink-0">
-                    Download All <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-                <p className="text-xs text-muted-foreground mt-2">No spam. Unsubscribe anytime.</p>
-              </form>
-            ) : (
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold">
-                <Check className="h-5 w-5" /> All 16 resources unlocked — click any card to download!
-              </div>
-            )}
           </motion.div>
         </div>
       </section>
@@ -251,38 +171,6 @@ const FreeSeoResources = () => {
         </div>
       </section>
 
-      {/* Download All Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-accent/5 to-primary/10" />
-        <div className="container mx-auto relative z-10">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Want ALL 16 Resources <span className="text-gradient">in One Email?</span>
-            </h2>
-            <p className="text-muted-foreground mb-8">
-              Enter your email and I'll send the complete SEO Resource Library.
-            </p>
-            {!unlocked ? (
-              <form onSubmit={handleDownloadAll} className="max-w-lg mx-auto">
-                <div className="flex gap-2">
-                  <Input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)} required className="flex-1 h-12" />
-                  <Button type="submit" size="lg" className="glow-accent bg-accent text-accent-foreground hover:bg-accent/90 h-12 px-6 shrink-0">
-                    Send Me Everything <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-                <p className="text-sm text-muted-foreground mt-3">
-                  Join 500+ SEO professionals. Unsubscribe anytime.
-                </p>
-              </form>
-            ) : (
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent/10 border border-accent/30 text-accent font-semibold">
-                <Check className="h-5 w-5" /> All resources unlocked! Scroll up and download.
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="section-padding">
         <div className="container mx-auto max-w-3xl">
@@ -317,34 +205,6 @@ const FreeSeoResources = () => {
           </div>
         </div>
       </section>
-
-      {/* Email Modal */}
-      {modalResource !== null && !unlocked && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setModalResource(null)} />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="relative bg-card border border-border rounded-2xl p-8 max-w-md w-full shadow-2xl"
-          >
-            <button onClick={() => setModalResource(null)} className="absolute top-4 right-4 text-muted-foreground hover:text-foreground">✕</button>
-            <div className="text-center mb-6">
-              <Mail className="h-10 w-10 text-primary mx-auto mb-3" />
-              <h3 className="text-xl font-bold mb-1">
-                Download {resources.find(r => r.id === modalResource)?.title}
-              </h3>
-              <p className="text-sm text-muted-foreground">Enter your email to get instant access.</p>
-            </div>
-            <form onSubmit={handleModalSubmit} className="space-y-4">
-              <Input type="email" placeholder="your@email.com" value={modalEmail} onChange={e => setModalEmail(e.target.value)} required className="h-12" />
-              <Button type="submit" className="w-full h-12 glow-primary">
-                <Download className="h-4 w-4 mr-2" /> Download Free PDF
-              </Button>
-              <p className="text-xs text-center text-muted-foreground">No spam. Unsubscribe anytime.</p>
-            </form>
-          </motion.div>
-        </div>
-      )}
 
       {/* Schema: CollectionPage + FAQPage */}
       <script
