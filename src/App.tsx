@@ -14,6 +14,7 @@ import ToolsHub from "./pages/ToolsHub";
 import ToolPage from "./pages/ToolPage";
 import FreeSeoAudit from "./pages/FreeSeoAudit";
 import FreeSeoResources from "./pages/FreeSeoResources";
+import ResourceLandingPage from "./pages/ResourceLandingPage";
 import Testimonials from "./pages/Testimonials";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -65,6 +66,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/free-seo-audit" element={<FreeSeoAudit />} />
           <Route path="/free-seo-resources" element={<FreeSeoResources />} />
+          <Route path="/free-seo-resources/:slug" element={<ResourceLandingPage />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
