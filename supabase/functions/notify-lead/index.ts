@@ -26,8 +26,12 @@ serve(async (req) => {
     const subject =
       source === "free_seo_audit"
         ? `🔍 New Free SEO Audit Request from ${name}`
+        : source === "welcome-popup"
+        ? `🎉 New Welcome Offer Lead: ${email}`
         : source?.startsWith("resource_")
         ? `📥 New Resource Download: ${resourceTitle || message}`
+        : source === "pricing_custom_quote"
+        ? `💰 New Custom Quote Request from ${name}`
         : `📩 New Contact Form Submission from ${name}`;
 
     const htmlBody = `

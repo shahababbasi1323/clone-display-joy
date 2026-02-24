@@ -84,6 +84,18 @@ const WelcomePopup = () => {
         source: "welcome-popup",
       });
       if (error) throw error;
+
+      // Send email notification
+      await supabase.functions.invoke("notify-lead", {
+        body: {
+          name: trimmedEmail.split("@")[0],
+          email: trimmedEmail,
+          phone: trimmedPhone || null,
+          message: trimmedMsg || "Welcome popup - 25% discount claim",
+          source: "welcome-popup",
+        },
+      });
+
       toast.success("🎉 Discount claimed! We'll reach out shortly.");
       dismiss();
     } catch {
