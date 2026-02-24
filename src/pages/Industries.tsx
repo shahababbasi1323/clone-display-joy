@@ -6,8 +6,14 @@ import Layout from "@/components/Layout";
 import { industriesData, INDUSTRY_CATEGORIES } from "@/data/industriesData";
 import { getIndustryCategoryImage } from "@/components/industry/industryImages";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const Industries = () => {
+  useSeoMeta({
+    title: "SEO Services by Industry — Healthcare, Legal, E-commerce & More | Shahab Abbasi",
+    description: "Industry-specific SEO strategies for 18+ niches including healthcare, legal, e-commerce, real estate, finance, education, and technology. Get a custom SEO plan tailored to your industry.",
+    canonical: "https://shahababbasi.com/industries",
+  });
   return (
     <Layout>
       <section className="section-padding">

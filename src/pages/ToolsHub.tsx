@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import { toolCategories, toolsDataMap } from "@/data/toolsData";
 import { Button } from "@/components/ui/button";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
+import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const categoryIcons: Record<string, any> = {
   "Content & Writing": FileText,
@@ -26,6 +27,12 @@ const categoryIcons: Record<string, any> = {
 const totalTools = toolCategories.reduce((sum, cat) => sum + cat.slugs.length, 0);
 
 const ToolsHub = () => {
+  useSeoMeta({
+    title: "75+ Free SEO Tools — Keyword Research, Technical SEO & More | Shahab Abbasi",
+    description: "Access 75+ free SEO tools for keyword research, content optimization, technical audits, backlink analysis, local SEO, SERP previews, and PPC calculators. No signup required.",
+    canonical: "https://shahababbasi.com/tools",
+  });
+
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   const filteredCategories = activeCategory
