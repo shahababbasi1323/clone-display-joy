@@ -233,7 +233,14 @@ export const BulkKeywordChecker = () => {
 
       {/* Right Panel - Search Links */}
       <div className="glass rounded-xl p-6">
-        <h3 className="text-lg font-bold mb-4">Search Links</h3>
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-lg font-bold">Search Links</h3>
+          {results.length > 0 && (
+            <Button size="sm" onClick={() => results.forEach(r => window.open(r.searchUrl, "_blank"))}>
+              Open All ({results.length})
+            </Button>
+          )}
+        </div>
         {results.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
             <Search className="h-12 w-12 mb-3 opacity-50" />
@@ -250,7 +257,7 @@ export const BulkKeywordChecker = () => {
                 </div>
               </div>
             ))}
-            <p className="text-xs text-muted-foreground mt-3">💡 Open each link to manually check your position. Use incognito mode for unbiased results.</p>
+            <p className="text-xs text-muted-foreground mt-3">💡 Your browser may block multiple popups — allow popups for this site. Use incognito for unbiased results.</p>
           </div>
         )}
       </div>
