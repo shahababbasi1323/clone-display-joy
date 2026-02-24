@@ -8,12 +8,12 @@ import {
 import { Button } from "@/components/ui/button";
 
 const navItems = [
-  { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
-  { label: "Blog Posts", href: "/admin/blog", icon: FileText },
-  { label: "Case Studies", href: "/admin/case-studies", icon: Briefcase },
-  { label: "Testimonials", href: "/admin/testimonials", icon: MessageSquare },
-  { label: "Leads", href: "/admin/leads", icon: Mail },
-  { label: "Settings", href: "/admin/settings", icon: Settings },
+  { label: "Dashboard", href: "/wah", icon: LayoutDashboard },
+  { label: "Blog Posts", href: "/wah/blog", icon: FileText },
+  { label: "Case Studies", href: "/wah/case-studies", icon: Briefcase },
+  { label: "Testimonials", href: "/wah/testimonials", icon: MessageSquare },
+  { label: "Leads", href: "/wah/leads", icon: Mail },
+  { label: "Settings", href: "/wah/settings", icon: Settings },
 ];
 
 interface AdminLayoutProps {
@@ -28,7 +28,7 @@ const AdminLayout = ({ children, title }: AdminLayoutProps) => {
 
   useEffect(() => {
     if (!loading && (!user || !isAdmin)) {
-      navigate("/admin/login");
+      navigate("/wah/login");
     }
   }, [loading, user, isAdmin, navigate]);
 
@@ -76,7 +76,7 @@ const AdminLayout = ({ children, title }: AdminLayoutProps) => {
             variant="ghost"
             size="sm"
             className="w-full justify-start gap-2 text-muted-foreground"
-            onClick={() => signOut().then(() => navigate("/admin/login"))}
+            onClick={() => signOut().then(() => navigate("/wah/login"))}
           >
             <LogOut className="h-4 w-4" /> Sign Out
           </Button>

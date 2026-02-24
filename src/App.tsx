@@ -71,13 +71,13 @@ const App = () => (
           <Route path="/terms-of-service" element={<TermsOfService />} />
 
           {/* Admin */}
-          <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/admin/blog" element={<AdminBlog />} />
-          <Route path="/admin/case-studies" element={<AdminCaseStudies />} />
-          <Route path="/admin/testimonials" element={<AdminTestimonials />} />
-          <Route path="/admin/leads" element={<AdminLeads />} />
-          <Route path="/admin/settings" element={<AdminSettings />} />
+          <Route path="/wah/login" element={<AdminLogin />} />
+          <Route path="/wah" element={<AdminDashboard />} />
+          <Route path="/wah/blog" element={<AdminBlog />} />
+          <Route path="/wah/case-studies" element={<AdminCaseStudies />} />
+          <Route path="/wah/testimonials" element={<AdminTestimonials />} />
+          <Route path="/wah/leads" element={<AdminLeads />} />
+          <Route path="/wah/settings" element={<AdminSettings />} />
 
           {/* Multilingual industry pages */}
           <Route path="/:lang/industries" element={<IndustriesLang />} />

@@ -16,7 +16,7 @@ const AdminLogin = () => {
   const { toast } = useToast();
 
   if (user && isAdmin) {
-    navigate("/admin");
+    navigate("/wah");
     return null;
   }
 
@@ -28,7 +28,7 @@ const AdminLogin = () => {
       toast({ title: "Login failed", description: error.message, variant: "destructive" });
     } else {
       toast({ title: "Logged in!" });
-      navigate("/admin");
+      navigate("/wah");
     }
     setLoading(false);
   };
