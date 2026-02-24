@@ -4,9 +4,6 @@ import { X, Gift, Mail, Phone, MessageCircle, ArrowRight, Zap, Percent } from "l
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
-const DISMISS_KEY = "welcome_popup_dismissed";
-const DISMISS_DURATION = 24 * 60 * 60 * 1000; // 24 hours
-
 const WelcomePopup = () => {
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
@@ -15,8 +12,6 @@ const WelcomePopup = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const dismissedAt = localStorage.getItem(DISMISS_KEY);
-    if (dismissedAt && Date.now() - Number(dismissedAt) < DISMISS_DURATION) return;
 
     const handleScroll = () => {
       const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
@@ -32,7 +27,6 @@ const WelcomePopup = () => {
 
   const dismiss = () => {
     setOpen(false);
-    localStorage.setItem(DISMISS_KEY, Date.now().toString());
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
