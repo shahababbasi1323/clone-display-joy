@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -156,7 +157,8 @@ const Navbar = () => {
           )}
         </nav>
 
-        <div className="hidden lg:flex items-center">
+        <div className="hidden lg:flex items-center gap-2">
+          <ThemeToggle />
           <Link to="/free-seo-audit">
             <Button variant="default" size="sm" className="glow-primary">
               Book a Call
@@ -214,11 +216,14 @@ const Navbar = () => {
                 </Link>
               )
             )}
-            <Link to="/free-seo-audit" className="mt-2 px-4">
-              <Button variant="default" className="w-full glow-primary">
-                Book a Call
-              </Button>
-            </Link>
+            <div className="flex items-center gap-2 mt-2 px-4">
+              <ThemeToggle />
+              <Link to="/free-seo-audit" className="flex-1">
+                <Button variant="default" className="w-full glow-primary">
+                  Book a Call
+                </Button>
+              </Link>
+            </div>
           </nav>
         </div>
       )}
