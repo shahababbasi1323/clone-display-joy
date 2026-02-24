@@ -249,3 +249,39 @@ export const GoogleIndexChecker = () => {
     </div>
   );
 };
+
+export const SerpChecker = () => {
+  const [domain, setDomain] = useState("");
+  const [keywords, setKeywords] = useState("");
+  const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
+
+  return (
+    <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label className="text-sm font-medium mb-1.5 block">Your Domain</label><Input value={domain} onChange={e => setDomain(e.target.value)} placeholder="example.com" /></div>
+      </div>
+      <div><label className="text-sm font-medium mb-1.5 block">Target Keywords (one per line)</label><Textarea value={keywords} onChange={e => setKeywords(e.target.value)} placeholder={"seo services\ndigital marketing\nlink building"} rows={6} /></div>
+      {domain && kwList.length > 0 && (
+        <div className="space-y-3">
+          <p className="text-sm font-medium">Check Rankings on Google</p>
+          {kwList.map((kw, i) => {
+            const query = `site:${domain} ${kw}`;
+            const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(kw)}`;
+            const siteSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+            return (
+              <div key={i} className="glass rounded-xl p-4">
+                <p className="text-sm font-medium mb-2">{kw}</p>
+                <div className="flex flex-wrap gap-2">
+                  <a href={searchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Search Google →</a>
+                  <a href={siteSearchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">site: Check →</a>
+                  <CopyButton text={query} />
+                </div>
+              </div>
+            );
+          })}
+          <p className="text-xs text-muted-foreground">💡 For accurate rank tracking, use Google Search Console or tools like Ahrefs/SEMrush.</p>
+        </div>
+      )}
+    </div>
+  );
+};
