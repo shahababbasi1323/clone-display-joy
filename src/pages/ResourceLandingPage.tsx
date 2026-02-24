@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Download, Mail, ArrowRight, Check, ArrowLeft, Sparkles, AlertTriangle, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,7 @@ import { resourceWebContent, storageDownloadUrls } from "@/data/resourceContentD
 
 const ResourceLandingPage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
   const resource = resources.find(r => r.slug === slug);
   const webContent = resourceWebContent.find(r => r.slug === slug);
   const [email, setEmail] = useState("");
@@ -40,12 +41,19 @@ const ResourceLandingPage = () => {
       message: `Downloaded: ${resource.title}`,
     });
     supabase.functions.invoke("notify-lead", {
-      body: { name: "Resource Download", email, message: `Downloaded: ${resource.title}`, source: `resource_${resource.emailTag}` },
+      body: {
+        name: "Resource Download",
+        email,
+        message: `Downloaded: ${resource.title}`,
+        source: `resource_${resource.emailTag}`,
+        downloadUrl,
+        resourceTitle: resource.title,
+      },
     });
     setUnlocked(true);
     setIsSubmitting(false);
     toast({ title: `📥 ${resource.title} unlocked!` });
-    window.open(downloadUrl, "_blank");
+    navigate(`/free-seo-resources/thank-you?title=${encodeURIComponent(resource.title)}&url=${encodeURIComponent(downloadUrl)}`);
   };
 
   const Icon = resource.icon;

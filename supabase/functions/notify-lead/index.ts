@@ -20,17 +20,20 @@ serve(async (req) => {
   }
 
   try {
-    const { name, email, phone, website, service, message, source } = await req.json();
+    const { name, email, phone, website, service, message, source, downloadUrl, resourceTitle } = await req.json();
 
+    // --- 1. Admin notification email ---
     const subject =
       source === "free_seo_audit"
         ? `🔍 New Free SEO Audit Request from ${name}`
+        : source?.startsWith("resource_")
+        ? `📥 New Resource Download: ${resourceTitle || message}`
         : `📩 New Contact Form Submission from ${name}`;
 
     const htmlBody = `
       <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
         <h2 style="color:#6366f1;border-bottom:2px solid #6366f1;padding-bottom:10px;">
-          ${source === "free_seo_audit" ? "New SEO Audit Request" : "New Contact Form Lead"}
+          ${source === "free_seo_audit" ? "New SEO Audit Request" : source?.startsWith("resource_") ? "New Resource Download" : "New Contact Form Lead"}
         </h2>
         <table style="width:100%;border-collapse:collapse;margin:20px 0;">
           <tr><td style="padding:8px 0;font-weight:bold;width:120px;">Name:</td><td>${name}</td></tr>
@@ -44,7 +47,7 @@ serve(async (req) => {
       </div>
     `;
 
-    const res = await fetch("https://api.resend.com/emails", {
+    const adminEmail = fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${RESEND_API_KEY}`,
@@ -58,9 +61,70 @@ serve(async (req) => {
       }),
     });
 
-    const data = await res.json();
-    if (!res.ok) {
-      throw new Error(`Resend API error [${res.status}]: ${JSON.stringify(data)}`);
+    // --- 2. User resource delivery email (only for resource downloads) ---
+    let userEmail: Promise<Response> | null = null;
+    if (source?.startsWith("resource_") && downloadUrl && resourceTitle) {
+      const userHtml = `
+        <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px;background:#ffffff;">
+          <div style="text-align:center;margin-bottom:30px;">
+            <h1 style="color:#1a1a2e;margin:0;">Shahab Abbasi</h1>
+            <p style="color:#6366f1;font-size:14px;margin-top:4px;">SEO Strategist & GEO Expert</p>
+          </div>
+          
+          <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:12px;padding:30px;text-align:center;color:#ffffff;margin-bottom:24px;">
+            <h2 style="margin:0 0 8px 0;font-size:24px;">Your Resource is Ready! 🎉</h2>
+            <p style="margin:0;opacity:0.9;font-size:16px;">${resourceTitle}</p>
+          </div>
+          
+          <p style="color:#374151;font-size:16px;line-height:1.6;">
+            Hi there! Thanks for downloading <strong>${resourceTitle}</strong>. Click the button below to get your PDF:
+          </p>
+          
+          <div style="text-align:center;margin:30px 0;">
+            <a href="${downloadUrl}" style="display:inline-block;background:#6366f1;color:#ffffff;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:16px;">
+              📥 Download Your PDF
+            </a>
+          </div>
+          
+          <div style="background:#f8f9fa;border-radius:8px;padding:20px;margin-top:24px;">
+            <h3 style="color:#1a1a2e;margin:0 0 12px 0;font-size:16px;">Want more free resources?</h3>
+            <p style="color:#6b7280;margin:0;font-size:14px;line-height:1.6;">
+              I have 16 professional SEO templates, guides, and AI prompt packs — all free.<br/>
+              <a href="https://shahababbasi.com/free-seo-resources" style="color:#6366f1;font-weight:bold;">Browse All Resources →</a>
+            </p>
+          </div>
+          
+          <div style="border-top:1px solid #e5e7eb;margin-top:30px;padding-top:20px;text-align:center;">
+            <p style="color:#9ca3af;font-size:12px;margin:0;">
+              Need help with SEO? <a href="https://shahababbasi.com/free-seo-audit" style="color:#6366f1;">Get a Free SEO Audit</a><br/>
+              © ${new Date().getFullYear()} Shahab Abbasi · <a href="https://shahababbasi.com" style="color:#9ca3af;">shahababbasi.com</a>
+            </p>
+          </div>
+        </div>
+      `;
+
+      userEmail = fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${RESEND_API_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "Shahab Abbasi <onboarding@resend.dev>",
+          to: [email],
+          subject: `📥 Your download: ${resourceTitle}`,
+          html: userHtml,
+        }),
+      });
+    }
+
+    // Send both emails in parallel
+    const results = await Promise.all([adminEmail, ...(userEmail ? [userEmail] : [])]);
+    
+    const adminRes = results[0];
+    const adminData = await adminRes.json();
+    if (!adminRes.ok) {
+      throw new Error(`Resend API error [${adminRes.status}]: ${JSON.stringify(adminData)}`);
     }
 
     return new Response(JSON.stringify({ success: true }), {
