@@ -46,6 +46,7 @@ export const toolsData: ToolData[] = [
   t("canonical-tag-generator","Canonical Tag Generator","Canonical Tag Generator - Duplicate Content Fix","Generate canonical link tags to manage duplicate content across your site.","Meta & On-Page SEO"),
   t("open-graph-preview","Open Graph Preview","Open Graph Preview - Social Share Simulator","Preview how your link appears when shared on Facebook, LinkedIn, and Twitter.","Meta & On-Page SEO"),
   t("google-index-checker","Google Index Status Info","Google Index Checker - Is Your Page Indexed?","Learn how to check if your pages are indexed by Google using the site: operator.","Meta & On-Page SEO"),
+  t("bulk-index-checker","Bulk Index Checker","Bulk Index Checker - Check Multiple Pages Indexed","Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.","Meta & On-Page SEO"),
   t("serp-checker","SERP Checker","SERP Checker - Check Search Engine Rankings","Check your website's position in search engine results for target keywords.","Meta & On-Page SEO"),
   t("robots-txt-generator","Robots.txt Generator","Robots.txt Generator - Free SEO Tool","Build a robots.txt file with allow/disallow rules, sitemaps, and user agents.","Technical SEO"),
   t("sitemap-generator","XML Sitemap Generator","XML Sitemap Generator - Free SEO Tool","Generate XML sitemaps with URLs, priority, change frequency, and last modified dates.","Technical SEO"),

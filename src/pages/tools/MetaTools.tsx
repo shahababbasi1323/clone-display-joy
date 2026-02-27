@@ -250,6 +250,97 @@ export const GoogleIndexChecker = () => {
   );
 };
 
+export const BulkIndexChecker = () => {
+  const [urls, setUrls] = useState("");
+  const [delay, setDelay] = useState(2);
+  const [isChecking, setIsChecking] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const urlList = urls.split("\n").map(u => u.trim()).filter(Boolean);
+
+  const normalizeUrl = (url: string) => {
+    let u = url.replace(/^https?:\/\//, "").replace(/^www\./, "");
+    if (u.endsWith("/")) u = u.slice(0, -1);
+    return u;
+  };
+
+  const checkAll = async () => {
+    if (urlList.length === 0) return;
+    setIsChecking(true);
+    setProgress(0);
+    for (let i = 0; i < urlList.length; i++) {
+      const normalized = normalizeUrl(urlList[i]);
+      const query = `site:${normalized}`;
+      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_blank");
+      setProgress(i + 1);
+      if (i < urlList.length - 1) {
+        await new Promise(r => setTimeout(r, delay * 1000));
+      }
+    }
+    setIsChecking(false);
+  };
+
+  const allQueries = urlList.map(u => `site:${normalizeUrl(u)}`).join("\n");
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <label className="text-sm font-medium mb-1.5 block">URLs to Check (one per line)</label>
+        <Textarea
+          value={urls}
+          onChange={e => setUrls(e.target.value)}
+          placeholder={"https://example.com/page-1\nhttps://example.com/page-2\nexample.com/blog/post-title\n..."}
+          rows={10}
+        />
+        <p className="text-xs text-muted-foreground mt-1">{urlList.length} URL{urlList.length !== 1 ? "s" : ""} entered</p>
+      </div>
+      <div className="flex flex-wrap gap-4 items-end">
+        <div>
+          <label className="text-sm font-medium mb-1.5 block">Delay Between Tabs</label>
+          <select value={delay} onChange={e => setDelay(Number(e.target.value))} className="glass rounded-lg px-3 py-2 text-sm">
+            <option value={1}>1 second</option>
+            <option value={2}>2 seconds</option>
+            <option value={3}>3 seconds</option>
+            <option value={5}>5 seconds</option>
+            <option value={10}>10 seconds</option>
+          </select>
+        </div>
+        <Button onClick={checkAll} size="lg" disabled={urlList.length === 0 || isChecking}>
+          {isChecking ? `Checking ${progress}/${urlList.length}...` : `Check ${urlList.length} URL${urlList.length !== 1 ? "s" : ""}`}
+        </Button>
+        {urlList.length > 0 && <CopyButton text={allQueries} />}
+      </div>
+      {isChecking && (
+        <div className="h-2 rounded-full bg-secondary overflow-hidden">
+          <div className="h-full bg-accent transition-all" style={{ width: `${(progress / urlList.length) * 100}%` }} />
+        </div>
+      )}
+      {urlList.length > 0 && (
+        <div className="space-y-2">
+          <p className="text-sm font-medium">Preview</p>
+          <div className="grid grid-cols-1 gap-2 max-h-[400px] overflow-auto">
+            {urlList.map((url, i) => {
+              const normalized = normalizeUrl(url);
+              const query = `site:${normalized}`;
+              return (
+                <div key={i} className="glass rounded-lg p-3 flex items-center justify-between gap-3">
+                  <div className="min-w-0 flex-1">
+                    <code className="text-xs break-all">{query}</code>
+                  </div>
+                  <div className="flex gap-2 shrink-0">
+                    <a href={`https://www.google.com/search?q=${encodeURIComponent(query)}`} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline whitespace-nowrap">Check →</a>
+                    <CopyButton text={query} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-xs text-muted-foreground">💡 If Google returns results, the page is indexed. No results = not indexed. Allow pop-ups for bulk checking.</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
 export const SerpChecker = () => {
   const [domain, setDomain] = useState("");
   const [keywords, setKeywords] = useState("");

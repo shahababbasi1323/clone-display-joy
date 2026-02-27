@@ -39,6 +39,7 @@ const registry: Record<string, React.FC> = {
   "canonical-tag-generator": CanonicalTagGenerator,
   "open-graph-preview": OpenGraphPreview,
   "google-index-checker": GoogleIndexChecker,
+  "bulk-index-checker": BulkIndexChecker,
   "serp-checker": SerpChecker,
   "robots-txt-generator": RobotsTxtGenerator,
   "sitemap-generator": SitemapGenerator,
