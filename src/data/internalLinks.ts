@@ -33,6 +33,7 @@ const toolToServices: Record<string, string[]> = {
   "canonical-tag-generator": ["technical-seo"],
   "open-graph-preview": ["on-page-seo"],
   "google-index-checker": ["technical-seo", "seo-audit"],
+  "bulk-index-checker": ["technical-seo", "seo-audit"],
   // Technical tools → technical-seo
   "robots-txt-generator": ["technical-seo"],
   "sitemap-generator": ["technical-seo"],

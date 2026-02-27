@@ -8,7 +8,7 @@ export interface ToolData {
 
 export const toolCategories = [
   { name: "Content & Writing", slugs: ["word-counter","character-counter","keyword-density-checker","readability-checker","plagiarism-sentence-checker","lorem-ipsum-generator","text-case-converter","article-rewriter-helper","headline-analyzer","grammar-checker"] },
-  { name: "Meta & On-Page SEO", slugs: ["meta-tag-generator","google-serp-preview","bulk-title-checker","meta-description-checker","heading-analyzer","image-alt-text-generator","canonical-tag-generator","open-graph-preview","google-index-checker","serp-checker"] },
+  { name: "Meta & On-Page SEO", slugs: ["meta-tag-generator","google-serp-preview","bulk-title-checker","meta-description-checker","heading-analyzer","image-alt-text-generator","canonical-tag-generator","open-graph-preview","google-index-checker","bulk-index-checker","serp-checker"] },
   { name: "Technical SEO", slugs: ["robots-txt-generator","sitemap-generator","htaccess-redirect-generator","schema-generator","json-ld-validator","hreflang-tag-generator","slug-generator","url-encoder-decoder","http-status-checker","page-size-checker","core-web-vitals-guide","page-speed-analyzer","xml-to-url-converter"] },
   { name: "Keyword & Research", slugs: ["keyword-suggestion-tool","lsi-keyword-generator","question-generator","competitor-keyword-gap-planner","search-intent-classifier","keyword-grouper","bulk-keyword-checker"] },
   { name: "Social Media & LinkedIn", slugs: ["linkedin-post-formatter","linkedin-headline-generator","linkedin-summary-generator","twitter-thread-formatter","social-media-image-size-guide","hashtag-generator","instagram-bio-generator","social-post-scheduler-planner"] },
@@ -46,6 +46,7 @@ export const toolsData: ToolData[] = [
   t("canonical-tag-generator","Canonical Tag Generator","Canonical Tag Generator - Duplicate Content Fix","Generate canonical link tags to manage duplicate content across your site.","Meta & On-Page SEO"),
   t("open-graph-preview","Open Graph Preview","Open Graph Preview - Social Share Simulator","Preview how your link appears when shared on Facebook, LinkedIn, and Twitter.","Meta & On-Page SEO"),
   t("google-index-checker","Google Index Status Info","Google Index Checker - Is Your Page Indexed?","Learn how to check if your pages are indexed by Google using the site: operator.","Meta & On-Page SEO"),
+  t("bulk-index-checker","Bulk Index Checker","Bulk Index Checker - Check Multiple Pages Indexed","Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.","Meta & On-Page SEO"),
   t("serp-checker","SERP Checker","SERP Checker - Check Search Engine Rankings","Check your website's position in search engine results for target keywords.","Meta & On-Page SEO"),
   t("robots-txt-generator","Robots.txt Generator","Robots.txt Generator - Free SEO Tool","Build a robots.txt file with allow/disallow rules, sitemaps, and user agents.","Technical SEO"),
   t("sitemap-generator","XML Sitemap Generator","XML Sitemap Generator - Free SEO Tool","Generate XML sitemaps with URLs, priority, change frequency, and last modified dates.","Technical SEO"),
