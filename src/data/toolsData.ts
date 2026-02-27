@@ -8,7 +8,7 @@ export interface ToolData {
 
 export const toolCategories = [
   { name: "Content & Writing", slugs: ["word-counter","character-counter","keyword-density-checker","readability-checker","plagiarism-sentence-checker","lorem-ipsum-generator","text-case-converter","article-rewriter-helper","headline-analyzer","grammar-checker"] },
-  { name: "Meta & On-Page SEO", slugs: ["meta-tag-generator","google-serp-preview","bulk-title-checker","meta-description-checker","heading-analyzer","image-alt-text-generator","canonical-tag-generator","open-graph-preview","google-index-checker","serp-checker"] },
+  { name: "Meta & On-Page SEO", slugs: ["meta-tag-generator","google-serp-preview","bulk-title-checker","meta-description-checker","heading-analyzer","image-alt-text-generator","canonical-tag-generator","open-graph-preview","google-index-checker","bulk-index-checker","serp-checker"] },
   { name: "Technical SEO", slugs: ["robots-txt-generator","sitemap-generator","htaccess-redirect-generator","schema-generator","json-ld-validator","hreflang-tag-generator","slug-generator","url-encoder-decoder","http-status-checker","page-size-checker","core-web-vitals-guide","page-speed-analyzer","xml-to-url-converter"] },
   { name: "Keyword & Research", slugs: ["keyword-suggestion-tool","lsi-keyword-generator","question-generator","competitor-keyword-gap-planner","search-intent-classifier","keyword-grouper","bulk-keyword-checker"] },
   { name: "Social Media & LinkedIn", slugs: ["linkedin-post-formatter","linkedin-headline-generator","linkedin-summary-generator","twitter-thread-formatter","social-media-image-size-guide","hashtag-generator","instagram-bio-generator","social-post-scheduler-planner"] },
