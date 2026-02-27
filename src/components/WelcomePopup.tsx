@@ -28,6 +28,9 @@ const WelcomePopup = () => {
   const particles = useMemo(() => generateParticles(), []);
 
   useEffect(() => {
+    // Don't show popup on /tools pages
+    if (window.location.pathname.startsWith("/tools")) return;
+
     const handleScroll = () => {
       const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
       if (scrollPercent >= 30) {
