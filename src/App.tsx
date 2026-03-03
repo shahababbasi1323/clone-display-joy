@@ -22,6 +22,7 @@ import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+import Sitemap from "./pages/Sitemap";
 import LocationPage from "./pages/LocationPage";
 import LocationsLang from "./pages/LocationsLang";
 import Blog from "./pages/Blog";
