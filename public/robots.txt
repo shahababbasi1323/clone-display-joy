@@ -17,8 +17,4 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-User-agent: *
-Allow: /
-Disallow: /wah/
-
 Sitemap: https://shahababbasi.com/sitemap.xml
