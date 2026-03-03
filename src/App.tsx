@@ -76,6 +76,7 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/sitemap" element={<Sitemap />} />
 
           {/* Admin */}
           <Route path="/wah/login" element={<AdminLogin />} />
