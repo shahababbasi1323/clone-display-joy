@@ -221,7 +221,7 @@ const FreeSeoResources = () => {
               url: "https://shahababbasi.com/free-seo-resources",
               mainEntity: {
                 "@type": "ItemList",
-                numberOfItems: 16,
+                numberOfItems: 17,
                 itemListElement: resources.map((r, i) => ({
                   "@type": "ListItem",
                   position: i + 1,
