@@ -63,7 +63,7 @@ const FreeSeoResources = () => {
             {/* Stats Row */}
             <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {[
-                { icon: FileDown, label: "16 Resources", color: "text-primary" },
+                { icon: FileDown, label: "17 Resources", color: "text-primary" },
                 { icon: Sparkles, label: "200+ AI Prompts", color: "text-purple-400" },
                 { icon: Users, label: "500+ Downloads", color: "text-accent" },
                 { icon: DollarSign, label: "$0 Cost", color: "text-amber-400" },
