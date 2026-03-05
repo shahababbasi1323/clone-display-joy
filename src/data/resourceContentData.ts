@@ -543,4 +543,5 @@ export const storageDownloadUrls: Record<string, string> = {
   "monthly-report-template": `${STORAGE_BASE}/monthly-seo-report-template.pdf`,
   "linkedin-templates": `${STORAGE_BASE}/linkedin-post-templates.pdf`,
   "seo-career-roadmap": `${STORAGE_BASE}/seo-career-roadmap.pdf`,
+  "keyword-clustering-guide": `${STORAGE_BASE}/keyword-clustering-guide.pdf`,
 };
