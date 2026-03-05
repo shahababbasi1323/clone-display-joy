@@ -13,8 +13,8 @@ const FreeSeoResources = () => {
   const [activeCategory, setActiveCategory] = useState<ResourceCategory>("All");
 
   useSeoMeta({
-    title: "Free SEO Resources | 16 Tools, Templates & Guides | Shahab Abbasi",
-    description: "Download 16 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
+    title: "Free SEO Resources | 17 Tools, Templates & Guides | Shahab Abbasi",
+    description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
     canonical: "https://shahababbasi.com/free-seo-resources",
   });
 
