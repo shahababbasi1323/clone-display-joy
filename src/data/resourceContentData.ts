@@ -523,6 +523,31 @@ export const resourceWebContent: ResourceWebContent[] = [
       ], proTip: "The SEO industry is growing 15% year-over-year. Best time to start is now." },
     ],
   },
+  {
+    slug: "keyword-clustering-guide",
+    sections: [
+      { heading: "The AI Prompt", text: "A single, comprehensive ChatGPT prompt that clusters any keyword list into actionable groups based on three criteria: search intent, semantic relevance, and funnel stage.", proTip: "Paste your full keyword list directly into the prompt — it handles hundreds of keywords at once." },
+      { heading: "3 Clustering Criteria", items: [
+        { label: "Search Intent", detail: "Classify keywords as informational, navigational, commercial, or transactional to match content type." },
+        { label: "Semantic Relevance", detail: "Group topically related keywords together to build content clusters and topical authority." },
+        { label: "Funnel Stage", detail: "Map keywords to awareness, consideration, or decision stage for strategic content planning." },
+      ], proTip: "Combining all three criteria in one prompt replaces expensive clustering tools like KeywordInsights or ClusterAi." },
+      { heading: "Cluster Output Format", items: [
+        { label: "Cluster name & primary keyword" },
+        { label: "Supporting keywords list" },
+        { label: "Recommended content type (blog, landing page, guide)" },
+        { label: "Search intent classification" },
+        { label: "Funnel stage assignment" },
+      ] },
+      { heading: "5 Keyword Categories Reference Table", items: [
+        { label: "Informational Keywords", detail: "How-to, what-is, guide — top-of-funnel awareness content." },
+        { label: "Navigational Keywords", detail: "Brand + product searches — ensure your pages rank for your own brand." },
+        { label: "Commercial Keywords", detail: "Best, top, review, comparison — middle-of-funnel consideration content." },
+        { label: "Transactional Keywords", detail: "Buy, price, discount, near me — bottom-of-funnel conversion content." },
+        { label: "Local Keywords", detail: "City + service, near me — geo-targeted content for local SEO." },
+      ], proTip: "Map each cluster to one of these 5 categories for a complete content strategy in one prompt." },
+    ],
+  },
 ];
 
 // Storage download URLs
@@ -543,4 +568,5 @@ export const storageDownloadUrls: Record<string, string> = {
   "monthly-report-template": `${STORAGE_BASE}/monthly-seo-report-template.pdf`,
   "linkedin-templates": `${STORAGE_BASE}/linkedin-post-templates.pdf`,
   "seo-career-roadmap": `${STORAGE_BASE}/seo-career-roadmap.pdf`,
+  "keyword-clustering-guide": `${STORAGE_BASE}/keyword-clustering-guide.pdf`,
 };

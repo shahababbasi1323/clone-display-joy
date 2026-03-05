@@ -13,8 +13,8 @@ const FreeSeoResources = () => {
   const [activeCategory, setActiveCategory] = useState<ResourceCategory>("All");
 
   useSeoMeta({
-    title: "Free SEO Resources | 16 Tools, Templates & Guides | Shahab Abbasi",
-    description: "Download 16 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
+    title: "Free SEO Resources | 17 Tools, Templates & Guides | Shahab Abbasi",
+    description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
     canonical: "https://shahababbasi.com/free-seo-resources",
   });
 
@@ -30,8 +30,8 @@ const FreeSeoResources = () => {
   };
 
   const categoryCount: Record<ResourceCategory, number> = {
-    "All": 16,
-    "AI Prompts": 3,
+    "All": 17,
+    "AI Prompts": 4,
     "Checklists": 3,
     "Strategy Guides": 5,
     "Templates": 3,
@@ -54,7 +54,7 @@ const FreeSeoResources = () => {
               Free SEO <span className="text-gradient">Resources</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-4">
-              Download 16 Professional Templates, Guides & AI Prompt Packs
+              Download 17 Professional Templates, Guides & AI Prompt Packs
             </h2>
             <p className="text-muted-foreground mb-8 text-lg">
               Everything I use with my paying clients — yours free. No fluff. Just results.
@@ -63,7 +63,7 @@ const FreeSeoResources = () => {
             {/* Stats Row */}
             <div className="flex flex-wrap justify-center gap-6 md:gap-10">
               {[
-                { icon: FileDown, label: "16 Resources", color: "text-primary" },
+                { icon: FileDown, label: "17 Resources", color: "text-primary" },
                 { icon: Sparkles, label: "200+ AI Prompts", color: "text-purple-400" },
                 { icon: Users, label: "500+ Downloads", color: "text-accent" },
                 { icon: DollarSign, label: "$0 Cost", color: "text-amber-400" },
@@ -217,11 +217,11 @@ const FreeSeoResources = () => {
               "@context": "https://schema.org",
               "@type": "CollectionPage",
               name: "Free SEO Resources",
-              description: "Download 16 free SEO resources — AI prompts, checklists, templates & strategy guides.",
+              description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides.",
               url: "https://shahababbasi.com/free-seo-resources",
               mainEntity: {
                 "@type": "ItemList",
-                numberOfItems: 16,
+                numberOfItems: 17,
                 itemListElement: resources.map((r, i) => ({
                   "@type": "ListItem",
                   position: i + 1,

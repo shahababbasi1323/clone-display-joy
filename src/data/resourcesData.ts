@@ -1,4 +1,4 @@
-import { Bot, Search, Globe, ClipboardCheck, Zap, MapPin, Link2, PenTool, Wrench, ShoppingBag, LinkIcon, FileText, Target, BarChart3, Linkedin, GraduationCap } from "lucide-react";
+import { Bot, Search, Globe, ClipboardCheck, Zap, MapPin, Link2, PenTool, Wrench, ShoppingBag, LinkIcon, FileText, Target, BarChart3, Linkedin, GraduationCap, Layers } from "lucide-react";
 
 export type ResourceCategory = "All" | "AI Prompts" | "Checklists" | "Strategy Guides" | "Templates" | "Career";
 
@@ -161,6 +161,15 @@ export const resources: Resource[] = [
     downloadUrl: "https://drive.google.com/file/d/1izJUa7YjIjJwNsW6eyYF6Ox3wCjwsee_/view",
     icon: GraduationCap,
     whatsInside: ["Month 1-3: Foundation skills", "Month 4-6: Intermediate skills", "Month 7-9: Advanced techniques", "Month 10-12: Specialization", "Certification recommendations", "Portfolio building guide", "Salary benchmarks by level"],
+  },
+  {
+    id: 17, slug: "keyword-clustering-guide", title: "Keyword Clustering Guide", category: "AI Prompts", isNew: true,
+    description: "One AI prompt to cluster any keyword list by search intent, semantic relevance & funnel stage. Includes a reference table for 5 keyword categories and a complete clustering framework.",
+    highlights: ["1 AI prompt", "3 clustering criteria", "5 keyword categories"],
+    statsBadge: "1 Prompt | 3 Criteria | 5 Categories", emailTag: "keyword-clustering",
+    downloadUrl: "https://drive.google.com/file/d/1M-bRP3zCC5nHTttLeSDz9mEDzH8Gi4fx/view",
+    icon: Layers,
+    whatsInside: ["Full AI prompt for keyword clustering", "3 clustering criteria breakdown", "Search intent classification", "Semantic relevance grouping", "Funnel stage mapping", "Reference table for 5 keyword categories", "One-prompt content strategy approach"],
   },
 ];
 
