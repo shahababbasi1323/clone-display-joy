@@ -217,7 +217,7 @@ const FreeSeoResources = () => {
               "@context": "https://schema.org",
               "@type": "CollectionPage",
               name: "Free SEO Resources",
-              description: "Download 16 free SEO resources — AI prompts, checklists, templates & strategy guides.",
+              description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides.",
               url: "https://shahababbasi.com/free-seo-resources",
               mainEntity: {
                 "@type": "ItemList",
