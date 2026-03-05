@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
 import TawkTo from "./TawkTo";
 import WelcomePopup from "./WelcomePopup";
+import GlobalSchemas from "./GlobalSchemas";
 
 interface LayoutProps {
   children: ReactNode;
@@ -18,6 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
       <WhatsAppButton />
       <TawkTo />
       <WelcomePopup />
+      <GlobalSchemas />
     </div>
   );
 };
