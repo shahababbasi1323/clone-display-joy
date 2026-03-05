@@ -30,8 +30,8 @@ const FreeSeoResources = () => {
   };
 
   const categoryCount: Record<ResourceCategory, number> = {
-    "All": 16,
-    "AI Prompts": 3,
+    "All": 17,
+    "AI Prompts": 4,
     "Checklists": 3,
     "Strategy Guides": 5,
     "Templates": 3,
