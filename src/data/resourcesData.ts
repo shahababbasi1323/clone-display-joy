@@ -1,4 +1,4 @@
-import { Bot, Search, Globe, ClipboardCheck, Zap, MapPin, Link2, PenTool, Wrench, ShoppingBag, LinkIcon, FileText, Target, BarChart3, Linkedin, GraduationCap } from "lucide-react";
+import { Bot, Search, Globe, ClipboardCheck, Zap, MapPin, Link2, PenTool, Wrench, ShoppingBag, LinkIcon, FileText, Target, BarChart3, Linkedin, GraduationCap, Layers } from "lucide-react";
 
 export type ResourceCategory = "All" | "AI Prompts" | "Checklists" | "Strategy Guides" | "Templates" | "Career";
 
