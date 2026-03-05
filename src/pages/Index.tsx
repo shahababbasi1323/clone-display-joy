@@ -707,29 +707,6 @@ const Index = () => {
           __html: JSON.stringify([
             {
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Shahab Abbasi",
-              jobTitle: "SEO Strategist & Digital Marketing Expert",
-              description: "Expert SEO consultant and digital growth strategist helping businesses rank #1 on Google, drive organic traffic, and scale revenue through proven search engine optimization and digital marketing strategies.",
-              url: "https://shahababbasi.com",
-              telephone: "+923041316771",
-              address: { "@type": "PostalAddress", addressLocality: "Islamabad", addressCountry: "PK" },
-              sameAs: ["https://linkedin.com/in/shahab-abbasi-seo-specialist"],
-              knowsAbout: ["Search Engine Optimization", "Digital Marketing", "PPC Advertising", "Content Marketing", "Link Building", "Technical SEO", "Local SEO", "E-commerce SEO", "AI Search Optimization"],
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Shahab Abbasi SEO",
-              url: "https://shahababbasi.com",
-              logo: "https://shahababbasi.com/logo.png",
-              description: "Full-service SEO & digital marketing agency helping businesses worldwide grow organic traffic, generate leads, and increase revenue.",
-              contactPoint: { "@type": "ContactPoint", telephone: "+923041316771", contactType: "customer service", availableLanguage: ["English", "Arabic", "Urdu"] },
-              areaServed: ["PK", "AE", "SA", "GB", "US", "CA", "DE", "FR"],
-              serviceType: ["SEO Services", "PPC Management", "Content Marketing", "Link Building", "Web Design"],
-            },
-            {
-              "@context": "https://schema.org",
               "@type": "ProfessionalService",
               name: "Shahab Abbasi SEO Services",
               url: "https://shahababbasi.com",
@@ -738,13 +715,6 @@ const Index = () => {
               priceRange: "$500 - $5000",
               openingHoursSpecification: { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "18:00" },
               aggregateRating: { "@type": "AggregateRating", ratingValue: "5", reviewCount: "50", bestRating: "5" },
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Shahab Abbasi — SEO Expert & Digital Marketing",
-              url: "https://shahababbasi.com",
-              potentialAction: { "@type": "SearchAction", target: "https://shahababbasi.com/search?q={search_term_string}", "query-input": "required name=search_term_string" },
             },
             {
               "@context": "https://schema.org",
