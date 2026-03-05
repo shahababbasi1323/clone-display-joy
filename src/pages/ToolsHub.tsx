@@ -106,6 +106,44 @@ const ToolsHub = () => {
           </div>
         </div>
       </section>
+
+      {/* Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              name: "Free SEO Tools",
+              description: "50+ free SEO tools for keyword research, technical audits, content optimization, link building, and more.",
+              url: "https://shahababbasi.com/tools",
+              mainEntity: {
+                "@type": "ItemList",
+                itemListElement: toolCategories.flatMap((cat, ci) =>
+                  cat.slugs.map((slug, si) => {
+                    const tool = toolsDataMap[slug];
+                    return tool ? {
+                      "@type": "ListItem",
+                      position: ci * 10 + si + 1,
+                      name: tool.name,
+                      url: `https://shahababbasi.com/tools/${slug}`,
+                    } : null;
+                  }).filter(Boolean)
+                ),
+              },
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://shahababbasi.com/" },
+                { "@type": "ListItem", position: 2, name: "Free SEO Tools", item: "https://shahababbasi.com/tools" },
+              ],
+            },
+          ]),
+        }}
+      />
     </Layout>
   );
 };
