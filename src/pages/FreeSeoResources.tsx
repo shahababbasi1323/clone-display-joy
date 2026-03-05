@@ -54,7 +54,7 @@ const FreeSeoResources = () => {
               Free SEO <span className="text-gradient">Resources</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-4">
-              Download 16 Professional Templates, Guides & AI Prompt Packs
+              Download 17 Professional Templates, Guides & AI Prompt Packs
             </h2>
             <p className="text-muted-foreground mb-8 text-lg">
               Everything I use with my paying clients — yours free. No fluff. Just results.
