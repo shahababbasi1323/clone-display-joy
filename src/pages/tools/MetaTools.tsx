@@ -255,6 +255,7 @@ export const BulkIndexChecker = () => {
   const [delay, setDelay] = useState(2);
   const [isChecking, setIsChecking] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [paused, setPaused] = useState(false);
   const urlList = urls.split("\n").map(u => u.trim()).filter(Boolean);
 
   const normalizeUrl = (url: string) => {
@@ -263,20 +264,34 @@ export const BulkIndexChecker = () => {
     return u;
   };
 
-  const checkAll = async () => {
+  const checkAll = useCallback(async (startFrom = 0) => {
     if (urlList.length === 0) return;
     setIsChecking(true);
-    setProgress(0);
-    for (let i = 0; i < urlList.length; i++) {
+    setPaused(false);
+    if (startFrom === 0) setProgress(0);
+
+    for (let i = startFrom; i < urlList.length; i++) {
       const normalized = normalizeUrl(urlList[i]);
       const query = `site:${normalized}`;
-      window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_blank");
+      const win = window.open(`https://www.google.com/search?q=${encodeURIComponent(query)}`, "_blank");
       setProgress(i + 1);
+
+      if (!win || win.closed) {
+        setPaused(true);
+        return;
+      }
+
       if (i < urlList.length - 1) {
         await new Promise(r => setTimeout(r, delay * 1000));
       }
     }
     setIsChecking(false);
+    setPaused(false);
+  }, [urlList, delay]);
+
+  const handleStop = () => {
+    setIsChecking(false);
+    setPaused(false);
   };
 
   const allQueries = urlList.map(u => `site:${normalizeUrl(u)}`).join("\n");
@@ -304,12 +319,34 @@ export const BulkIndexChecker = () => {
             <option value={10}>10 seconds</option>
           </select>
         </div>
-        <Button onClick={checkAll} size="lg" disabled={urlList.length === 0 || isChecking}>
-          {isChecking ? `Checking ${progress}/${urlList.length}...` : `Check ${urlList.length} URL${urlList.length !== 1 ? "s" : ""}`}
-        </Button>
+        {!isChecking ? (
+          <Button onClick={() => checkAll(0)} size="lg" disabled={urlList.length === 0}>
+            Check {urlList.length} URL{urlList.length !== 1 ? "s" : ""}
+          </Button>
+        ) : paused ? (
+          <div className="flex gap-2">
+            <Button onClick={() => checkAll(progress)} size="lg">
+              ▶ Continue ({progress}/{urlList.length})
+            </Button>
+            <Button onClick={handleStop} size="lg" variant="outline">Stop</Button>
+          </div>
+        ) : (
+          <Button onClick={handleStop} size="lg" variant="outline">
+            ⏸ Checking {progress}/{urlList.length}...
+          </Button>
+        )}
         {urlList.length > 0 && <CopyButton text={allQueries} />}
       </div>
-      {isChecking && (
+
+      {/* Popup blocked warning */}
+      {paused && (
+        <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
+          <p className="font-medium text-yellow-600 dark:text-yellow-400">⚠️ Popup blocked!</p>
+          <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle popups allow karo, phir <strong>"Continue"</strong> dabao — wahi se continue hoga ({progress}/{urlList.length}).</p>
+        </div>
+      )}
+
+      {isChecking && !paused && (
         <div className="h-2 rounded-full bg-secondary overflow-hidden">
           <div className="h-full bg-accent transition-all" style={{ width: `${(progress / urlList.length) * 100}%` }} />
         </div>
@@ -322,7 +359,7 @@ export const BulkIndexChecker = () => {
               const normalized = normalizeUrl(url);
               const query = `site:${normalized}`;
               return (
-                <div key={i} className="glass rounded-lg p-3 flex items-center justify-between gap-3">
+                <div key={i} className={`glass rounded-lg p-3 flex items-center justify-between gap-3 ${i < progress ? "opacity-50" : ""}`}>
                   <div className="min-w-0 flex-1">
                     <code className="text-xs break-all">{query}</code>
                   </div>
