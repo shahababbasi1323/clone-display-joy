@@ -20,6 +20,7 @@ export const toolCategories = [
   { name: "Conversion & UX", slugs: ["cta-generator","ab-test-duration-calculator","color-contrast-checker","page-speed-checklist"] },
   { name: "Email & Outreach", slugs: ["email-subject-line-tester","cold-email-generator"] },
   { name: "PPC & Paid Ads", slugs: ["google-ads-budget-calculator","roas-calculator","ad-copy-generator","quality-score-estimator","ppc-campaign-audit-checklist"] },
+  { name: "Domain & URL Tools", slugs: ["bulk-expired-domain-checker","domain-authority-checker","redirect-chain-checker"] },
 ];
 
 const t = (slug: string, name: string, metaTitle: string, metaDescription: string, category: string): ToolData => ({
@@ -108,6 +109,9 @@ export const toolsData: ToolData[] = [
   t("ad-copy-generator","Ad Copy Generator","Ad Copy Generator - Google Ads RSA Headlines","Generate Google Ads responsive search ad headlines (30 chars) and descriptions (90 chars) for your campaigns.","PPC & Paid Ads"),
   t("quality-score-estimator","Quality Score Estimator","Quality Score Estimator - Google Ads Checker","Estimate your Google Ads Quality Score with a 12-factor checklist covering ad relevance, CTR, and landing pages.","PPC & Paid Ads"),
   t("ppc-campaign-audit-checklist","PPC Campaign Audit Checklist","PPC Audit Checklist - 20 Point Campaign Review","20-point PPC campaign audit covering structure, keywords, ad copy, bidding, and conversion tracking.","PPC & Paid Ads"),
+  t("bulk-expired-domain-checker","Bulk Expired Domain Checker","Bulk Expired Domain Checker - Find Available Domains","Check multiple domains in bulk for expiration status. Identify potentially expired or available domains for acquisition.","Domain & URL Tools"),
+  t("domain-authority-checker","Domain Authority Checker","Domain Authority Checker - Estimate DA Score","Estimate domain authority score based on TLD quality, domain length, brandability, and HTTPS status.","Domain & URL Tools"),
+  t("redirect-chain-checker","Redirect Chain Checker","Redirect Chain Checker - Trace URL Redirects","Trace redirect chains for URLs including HTTP→HTTPS, www redirects, and trailing slash redirects.","Domain & URL Tools"),
 ];
 
 export const toolsDataMap: Record<string, ToolData> = Object.fromEntries(

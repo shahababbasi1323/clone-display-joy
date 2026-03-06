@@ -18,6 +18,7 @@ import { SeoRoiCalculator, CpcSavingsCalculator, DomainAgeChecker, WebsiteCostEs
 import { CtaGenerator, AbTestDurationCalculator, ColorContrastChecker, PageSpeedChecklist } from "./tools/ConversionTools";
 import { EmailSubjectLineTester, ColdEmailGenerator } from "./tools/EmailTools";
 import { GoogleAdsBudgetCalculator, RoasCalculator, AdCopyGenerator, QualityScoreEstimator, PpcCampaignAuditChecklist } from "./tools/PpcTools";
+import { BulkExpiredDomainChecker, DomainAuthorityChecker, RedirectChainChecker } from "./tools/DomainTools";
 
 const registry: Record<string, React.FC> = {
   "word-counter": WordCounter,
@@ -101,6 +102,9 @@ const registry: Record<string, React.FC> = {
   "ad-copy-generator": AdCopyGenerator,
   "quality-score-estimator": QualityScoreEstimator,
   "ppc-campaign-audit-checklist": PpcCampaignAuditChecklist,
+  "bulk-expired-domain-checker": BulkExpiredDomainChecker,
+  "domain-authority-checker": DomainAuthorityChecker,
+  "redirect-chain-checker": RedirectChainChecker,
 };
 
 const ToolPage = () => {
