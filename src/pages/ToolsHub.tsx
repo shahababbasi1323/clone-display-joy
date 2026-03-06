@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Wrench, FileText, Code, Eye, Search, Share2, MapPin, Bot, LinkIcon, ShoppingCart, BarChart3, MousePointerClick, Mail, ArrowRight, Megaphone } from "lucide-react";
+import { Wrench, FileText, Code, Eye, Search, Share2, MapPin, Bot, LinkIcon, ShoppingCart, BarChart3, MousePointerClick, Mail, ArrowRight, Megaphone, Globe } from "lucide-react";
 import Layout from "@/components/Layout";
 import { toolCategories, toolsDataMap } from "@/data/toolsData";
 import { Button } from "@/components/ui/button";
