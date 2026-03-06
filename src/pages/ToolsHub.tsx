@@ -22,6 +22,7 @@ const categoryIcons: Record<string, any> = {
   "Conversion & UX": MousePointerClick,
   "Email & Outreach": Mail,
   "PPC & Paid Ads": Megaphone,
+  "Domain & URL Tools": Globe,
 };
 
 const totalTools = toolCategories.reduce((sum, cat) => sum + cat.slugs.length, 0);

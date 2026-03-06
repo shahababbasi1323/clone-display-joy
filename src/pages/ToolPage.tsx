@@ -102,6 +102,9 @@ const registry: Record<string, React.FC> = {
   "ad-copy-generator": AdCopyGenerator,
   "quality-score-estimator": QualityScoreEstimator,
   "ppc-campaign-audit-checklist": PpcCampaignAuditChecklist,
+  "bulk-expired-domain-checker": BulkExpiredDomainChecker,
+  "domain-authority-checker": DomainAuthorityChecker,
+  "redirect-chain-checker": RedirectChainChecker,
 };
 
 const ToolPage = () => {
