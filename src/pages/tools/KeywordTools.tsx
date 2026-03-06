@@ -172,6 +172,11 @@ export const BulkKeywordChecker = () => {
   const [langCode, setLangCode] = useState("");
   const [delay, setDelay] = useState(3);
   const [results, setResults] = useState<{ keyword: string; searchUrl: string; siteUrl: string }[]>([]);
+  const [isOpening, setIsOpening] = useState(false);
+  const [openProgress, setOpenProgress] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const pausedRef = useRef(false);
+  const cancelRef = useRef(false);
   const kwList = keywords.split("\n").map(k => k.trim()).filter(Boolean);
 
   const generateLinks = () => {
