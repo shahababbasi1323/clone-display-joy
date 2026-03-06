@@ -193,6 +193,46 @@ export const BulkKeywordChecker = () => {
       return { keyword: kw, searchUrl, siteUrl };
     });
     setResults(links);
+    setOpenProgress(0);
+    setIsOpening(false);
+    setPaused(false);
+  };
+
+  const openAllSequentially = useCallback(async (startFrom = 0) => {
+    setIsOpening(true);
+    setPaused(false);
+    pausedRef.current = false;
+    cancelRef.current = false;
+
+    for (let i = startFrom; i < results.length; i++) {
+      if (cancelRef.current) break;
+
+      const win = window.open(results[i].searchUrl, "_blank");
+      setOpenProgress(i + 1);
+
+      if (!win || win.closed) {
+        // Popup was blocked — pause and wait for user to allow & click Continue
+        setPaused(true);
+        pausedRef.current = true;
+        return; // stop here, user will click Continue after allowing popups
+      }
+
+      if (i < results.length - 1) {
+        await new Promise(r => setTimeout(r, delay * 1000));
+      }
+    }
+    setIsOpening(false);
+    setPaused(false);
+  }, [results, delay]);
+
+  const handleContinue = () => {
+    openAllSequentially(openProgress);
+  };
+
+  const handleStop = () => {
+    cancelRef.current = true;
+    setIsOpening(false);
+    setPaused(false);
   };
 
   return (
@@ -253,11 +293,24 @@ export const BulkKeywordChecker = () => {
                 <option value={5}>5s delay</option>
                 <option value={10}>10s delay</option>
               </select>
-              <Button size="sm" variant="outline" onClick={() => {
-                results.forEach((r, i) => setTimeout(() => window.open(r.searchUrl, "_blank"), i * delay * 1000));
-              }}>
-                Open All
-              </Button>
+              {!isOpening ? (
+                <Button size="sm" variant="outline" onClick={() => openAllSequentially(0)}>
+                  Open All
+                </Button>
+              ) : paused ? (
+                <>
+                  <Button size="sm" variant="default" onClick={handleContinue}>
+                    ▶ Continue ({openProgress}/{results.length})
+                  </Button>
+                  <Button size="sm" variant="outline" onClick={handleStop}>
+                    Stop
+                  </Button>
+                </>
+              ) : (
+                <Button size="sm" variant="outline" onClick={handleStop}>
+                  ⏸ Opening {openProgress}/{results.length}...
+                </Button>
+              )}
               <Button size="sm" variant="outline" onClick={() => {
                 navigator.clipboard.writeText(results.map(r => r.searchUrl).join("\n"));
               }}>
@@ -266,6 +319,15 @@ export const BulkKeywordChecker = () => {
             </div>
           )}
         </div>
+
+        {/* Popup blocked warning */}
+        {paused && (
+          <div className="mb-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
+            <p className="font-medium text-yellow-600 dark:text-yellow-400">⚠️ Popup blocked!</p>
+            <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle browser mein popups allow karo, phir <strong>"Continue"</strong> button dabao — yeh wahi se shuru hoga jahan ruka tha ({openProgress}/{results.length}).</p>
+          </div>
+        )}
+
         {results.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-64 text-muted-foreground">
             <Search className="h-12 w-12 mb-3 opacity-50" />
@@ -274,7 +336,7 @@ export const BulkKeywordChecker = () => {
         ) : (
           <div className="space-y-2 max-h-[600px] overflow-auto">
             {results.map((r, i) => (
-              <div key={i} className="glass rounded-lg p-3 space-y-1">
+              <div key={i} className={`glass rounded-lg p-3 space-y-1 ${i < openProgress ? "opacity-50" : ""}`}>
                 <p className="text-sm font-medium">{r.keyword}{location ? ` — ${location}` : ""}</p>
                 <div className="flex flex-wrap gap-3">
                   <a href={r.searchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Google Search →</a>
@@ -282,7 +344,6 @@ export const BulkKeywordChecker = () => {
                 </div>
               </div>
             ))}
-            <p className="text-xs text-muted-foreground mt-3">💡 Your browser may block multiple popups — allow popups for this site. Use incognito for unbiased results.</p>
           </div>
         )}
       </div>
