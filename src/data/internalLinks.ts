@@ -151,6 +151,22 @@ const toolToBlogs: Record<string, string[]> = {
   "ecommerce-schema-generator": ["ecommerce-seo-guide"],
   "category-page-optimizer": ["ecommerce-seo-guide"],
   "page-speed-checklist": ["technical-seo-audit-checklist"],
+  // Domain tools → blogs
+  "bulk-expired-domain-checker": ["link-building-strategies", "seo-strategy-guide-2025"],
+  "domain-authority-checker": ["link-building-strategies"],
+  "redirect-chain-checker": ["technical-seo-audit-checklist"],
+  "broken-link-checker": ["technical-seo-audit-checklist", "link-building-strategies"],
+  // PPC tools → blogs
+  "google-ads-budget-calculator": ["seo-strategy-guide-2025"],
+  "roas-calculator": ["ecommerce-seo-guide"],
+  // Conversion tools → blogs
+  "cta-generator": ["content-marketing-seo"],
+  "color-contrast-checker": ["technical-seo-audit-checklist"],
+  // Email tools → blogs
+  "cold-email-generator": ["link-building-strategies"],
+  // Reporting tools → blogs
+  "seo-roi-calculator": ["seo-strategy-guide-2025"],
+  "website-cost-estimator": ["seo-strategy-guide-2025"],
 };
 
 // ── Service → Blog/Industry/Location mappings ───────────────────────
