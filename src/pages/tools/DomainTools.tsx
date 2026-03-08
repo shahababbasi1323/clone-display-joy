@@ -216,6 +216,225 @@ export const DomainAuthorityChecker = () => {
 };
 
 /* ── Redirect Chain Checker ── */
+/* ── Broken Link Checker ── */
+export const BrokenLinkChecker = () => {
+  const [url, setUrl] = useState("");
+  const [links, setLinks] = useState<{ href: string; text: string; status: string; ok: boolean; checked: boolean }[]>([]);
+  const [checking, setChecking] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [error, setError] = useState("");
+  const [paused, setPaused] = useState(false);
+  const [pausedAt, setPausedAt] = useState(0);
+
+  const extractAndCheck = useCallback(async (startFrom = 0) => {
+    if (startFrom === 0) {
+      let target = url.trim();
+      if (!target) return;
+      if (!/^https?:\/\//.test(target)) target = `https://${target}`;
+
+      setChecking(true);
+      setError("");
+      setPaused(false);
+      setLinks([]);
+      setProgress(0);
+
+      // Fetch page HTML via a CORS proxy approach - parse links from input
+      // Since we can't fetch arbitrary pages due to CORS, we'll use an approach
+      // where user can paste HTML or we try fetching
+      try {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 10000);
+        const res = await fetch(target, { signal: controller.signal });
+        clearTimeout(timeout);
+
+        if (!res.ok) {
+          setError(`Could not fetch page: HTTP ${res.status}. Try pasting the page HTML below instead.`);
+          setChecking(false);
+          return;
+        }
+
+        const html = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+        const anchors = doc.querySelectorAll("a[href]");
+        const extracted: { href: string; text: string; status: string; ok: boolean; checked: boolean }[] = [];
+        const seen = new Set<string>();
+
+        anchors.forEach(a => {
+          let href = a.getAttribute("href") || "";
+          if (href.startsWith("mailto:") || href.startsWith("tel:") || href.startsWith("javascript:") || href === "#" || href.startsWith("#")) return;
+          // Resolve relative URLs
+          try {
+            const resolved = new URL(href, target).href;
+            if (!seen.has(resolved)) {
+              seen.add(resolved);
+              extracted.push({ href: resolved, text: (a.textContent || "").trim().slice(0, 60), status: "Pending", ok: true, checked: false });
+            }
+          } catch {}
+        });
+
+        if (!extracted.length) {
+          setError("No outbound links found on this page.");
+          setChecking(false);
+          return;
+        }
+
+        setLinks(extracted);
+        // Now check each link
+        for (let i = 0; i < extracted.length; i++) {
+          const link = extracted[i];
+          let status = "Unknown";
+          let ok = false;
+          try {
+            const ctrl = new AbortController();
+            const t = setTimeout(() => ctrl.abort(), 6000);
+            const r = await fetch(link.href, { method: "HEAD", mode: "no-cors", signal: ctrl.signal });
+            clearTimeout(t);
+            status = "✅ Reachable";
+            ok = true;
+          } catch (err: any) {
+            if (err.name === "AbortError") {
+              status = "⏱️ Timeout";
+            } else {
+              status = "❌ Broken / Unreachable";
+            }
+          }
+          setLinks(prev => prev.map((l, idx) => idx === i ? { ...l, status, ok, checked: true } : l));
+          setProgress(i + 1);
+          if (i < extracted.length - 1) await new Promise(r => setTimeout(r, 200));
+        }
+      } catch (err: any) {
+        if (err.name === "AbortError") {
+          setError("Request timed out. The page may be blocking automated requests.");
+        } else {
+          setError("Could not fetch page due to CORS restrictions. This tool works best with pages that allow cross-origin requests.");
+        }
+      }
+      setChecking(false);
+    } else {
+      // Resume from paused position
+      setChecking(true);
+      setPaused(false);
+
+      for (let i = startFrom; i < links.length; i++) {
+        const link = links[i];
+        let status = "Unknown";
+        let ok = false;
+        try {
+          const ctrl = new AbortController();
+          const t = setTimeout(() => ctrl.abort(), 6000);
+          await fetch(link.href, { method: "HEAD", mode: "no-cors", signal: ctrl.signal });
+          clearTimeout(t);
+          status = "✅ Reachable";
+          ok = true;
+        } catch (err: any) {
+          if (err.name === "AbortError") {
+            status = "⏱️ Timeout";
+          } else {
+            status = "❌ Broken / Unreachable";
+          }
+        }
+        setLinks(prev => prev.map((l, idx) => idx === i ? { ...l, status, ok, checked: true } : l));
+        setProgress(i + 1);
+        if (i < links.length - 1) await new Promise(r => setTimeout(r, 200));
+      }
+      setChecking(false);
+    }
+  }, [url, links]);
+
+  const checkedCount = links.filter(l => l.checked).length;
+  const brokenCount = links.filter(l => l.checked && !l.ok).length;
+  const healthyCount = links.filter(l => l.checked && l.ok).length;
+
+  return (
+    <div className="space-y-6 max-w-3xl">
+      <div className="flex gap-3">
+        <Input
+          value={url}
+          onChange={e => setUrl(e.target.value)}
+          placeholder="Enter URL to scan (e.g., https://example.com)"
+          onKeyDown={e => e.key === "Enter" && extractAndCheck(0)}
+        />
+        <Button onClick={() => extractAndCheck(0)} disabled={checking || !url.trim()}>
+          {checking ? <><Loader2 className="h-4 w-4 mr-2 animate-spin" /> Scanning ({progress}/{links.length})...</> : "Scan Links"}
+        </Button>
+      </div>
+
+      {error && (
+        <div className="glass rounded-xl p-4 border-l-4 border-red-500">
+          <div className="flex items-start gap-2">
+            <XCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
+            <p className="text-sm">{error}</p>
+          </div>
+        </div>
+      )}
+
+      {links.length > 0 && (
+        <>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <StatCard label="Total Links" value={links.length} />
+            <StatCard label="Checked" value={`${checkedCount}/${links.length}`} />
+            <StatCard label="Healthy" value={healthyCount} />
+            <StatCard label="Broken" value={brokenCount} />
+          </div>
+
+          {checking && (
+            <div className="h-2 rounded-full bg-secondary overflow-hidden">
+              <div className="h-full bg-primary transition-all" style={{ width: `${(progress / links.length) * 100}%` }} />
+            </div>
+          )}
+
+          {brokenCount > 0 && (
+            <div className="glass rounded-xl p-4 border-l-4 border-red-500">
+              <div className="flex items-start gap-2">
+                <AlertTriangle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-medium text-sm">{brokenCount} Broken Link{brokenCount !== 1 ? "s" : ""} Found</p>
+                  <p className="text-xs text-muted-foreground mt-1">Fix or remove these links to improve user experience and SEO.</p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className="space-y-2">
+            {links.map((l, i) => (
+              <div key={i} className="glass rounded-xl p-3 flex items-center gap-3">
+                <div className="shrink-0">
+                  {!l.checked ? (
+                    <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+                  ) : l.ok ? (
+                    <CheckCircle className="h-4 w-4 text-green-500" />
+                  ) : (
+                    <XCircle className="h-4 w-4 text-red-500" />
+                  )}
+                </div>
+                <div className="min-w-0 flex-1">
+                  <a href={l.href} target="_blank" rel="noopener noreferrer" className="font-mono text-xs truncate block hover:text-primary transition-colors">
+                    {l.href}
+                  </a>
+                  {l.text && <p className="text-xs text-muted-foreground truncate mt-0.5">"{l.text}"</p>}
+                </div>
+                <span className={`text-xs font-medium whitespace-nowrap ${l.ok && l.checked ? "text-green-500" : !l.ok && l.checked ? "text-red-500" : "text-muted-foreground"}`}>
+                  {l.status}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {checkedCount === links.length && checkedCount > 0 && (
+            <div className="glass rounded-xl p-4 border-l-4 border-accent">
+              <p className="text-xs text-muted-foreground">
+                <strong>Note:</strong> Due to browser CORS restrictions, some links may show as "Broken" even if they're accessible. The "no-cors" mode can only confirm reachability, not exact HTTP status codes. For full analysis, use server-side tools like Screaming Frog or Ahrefs.
+              </p>
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+};
+
+/* ── Redirect Chain Checker ── */
 export const RedirectChainChecker = () => {
   const [url, setUrl] = useState("");
   const [chain, setChain] = useState<{ url: string; status: string; type: string }[]>([]);
