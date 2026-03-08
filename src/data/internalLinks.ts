@@ -101,6 +101,17 @@ const toolToServices: Record<string, string[]> = {
   "ad-copy-generator": ["on-page-seo", "content-strategy"],
   "quality-score-estimator": ["on-page-seo", "technical-seo"],
   "ppc-campaign-audit-checklist": ["seo-audit", "seo-consulting"],
+  // Domain tools → technical-seo
+  "bulk-expired-domain-checker": ["technical-seo", "link-building"],
+  "domain-authority-checker": ["off-page-seo", "link-building"],
+  "redirect-chain-checker": ["technical-seo", "website-speed-optimization"],
+  "broken-link-checker": ["technical-seo", "seo-audit"],
+  // Bulk tools
+  "bulk-keyword-checker": ["keyword-research", "seo-audit"],
+  "serp-checker": ["keyword-research", "seo-audit"],
+  "gbp-keyword-checker": ["local-seo", "google-business-profile"],
+  "page-speed-analyzer": ["website-speed-optimization", "technical-seo"],
+  "xml-to-url-converter": ["technical-seo", "seo-audit"],
 };
 
 /** PPC tools → PPC services cross-link */
@@ -140,6 +151,22 @@ const toolToBlogs: Record<string, string[]> = {
   "ecommerce-schema-generator": ["ecommerce-seo-guide"],
   "category-page-optimizer": ["ecommerce-seo-guide"],
   "page-speed-checklist": ["technical-seo-audit-checklist"],
+  // Domain tools → blogs
+  "bulk-expired-domain-checker": ["link-building-strategies", "seo-strategy-guide-2025"],
+  "domain-authority-checker": ["link-building-strategies"],
+  "redirect-chain-checker": ["technical-seo-audit-checklist"],
+  "broken-link-checker": ["technical-seo-audit-checklist", "link-building-strategies"],
+  // PPC tools → blogs
+  "google-ads-budget-calculator": ["seo-strategy-guide-2025"],
+  "roas-calculator": ["ecommerce-seo-guide"],
+  // Conversion tools → blogs
+  "cta-generator": ["content-marketing-seo"],
+  "color-contrast-checker": ["technical-seo-audit-checklist"],
+  // Email tools → blogs
+  "cold-email-generator": ["link-building-strategies"],
+  // Reporting tools → blogs
+  "seo-roi-calculator": ["seo-strategy-guide-2025"],
+  "website-cost-estimator": ["seo-strategy-guide-2025"],
 };
 
 // ── Service → Blog/Industry/Location mappings ───────────────────────

@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MessageSquare, BookOpen, Wrench, Megaphone } from "lucide-react";
+import { ArrowRight, MessageSquare, BookOpen, Wrench, Megaphone, CheckCircle, Users, Target, Lightbulb, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { type ToolData, toolsDataMap } from "@/data/toolsData";
 import { getToolRelatedServices, getToolRelatedBlogs, getToolRelatedPpcServices } from "@/data/internalLinks";
+import { getToolContent } from "@/data/toolsContent";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 
@@ -29,17 +30,12 @@ const getRelatedTools = (tool: ToolData): ToolData[] => {
   return [...sameCategory.slice(0, 3), ...others.slice(0, Math.max(0, 4 - sameCategory.length))].slice(0, 4);
 };
 
-const howToSteps = (name: string) => [
-  `Enter your content or data into the input field above.`,
-  `The ${name} will process your input automatically.`,
-  `Review the results, scores, or generated output.`,
-  `Click "Copy" to copy the results to your clipboard.`,
-];
+const benefitIcons = [CheckCircle, Zap, Target, Lightbulb];
 
 const ToolPageWrapper = ({ tool, children }: Props) => {
   const faqs = generateFaqs(tool);
   const related = getRelatedTools(tool);
-  const steps = howToSteps(tool.name);
+  const toolContent = getToolContent(tool.category);
 
   useSeoMeta({
     title: tool.metaTitle,
@@ -48,16 +44,64 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
   });
 
   useEffect(() => {
+    const howToSteps = toolContent?.howToSteps || [
+      "Enter your content or data into the input field above.",
+      `The ${tool.name} will process your input automatically.`,
+      "Review the results, scores, or generated output.",
+      "Click 'Copy' to copy the results to your clipboard.",
+    ];
 
     const schemas = [
-      { "@context": "https://schema.org", "@type": "WebApplication", name: tool.name, description: tool.metaDescription, url: window.location.href, applicationCategory: "SEO Tool", operatingSystem: "All", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
-      { "@context": "https://schema.org", "@type": "SoftwareApplication", name: tool.name, description: tool.metaDescription, applicationCategory: "BusinessApplication", operatingSystem: "All", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } },
-      { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
-      { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
-        { "@type": "ListItem", position: 2, name: "SEO Tools", item: `${window.location.origin}/tools` },
-        { "@type": "ListItem", position: 3, name: tool.name, item: window.location.href },
-      ]},
+      { 
+        "@context": "https://schema.org", 
+        "@type": "WebApplication", 
+        name: tool.name, 
+        description: tool.metaDescription, 
+        url: window.location.href, 
+        applicationCategory: "SEO Tool", 
+        operatingSystem: "All", 
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        creator: { "@type": "Organization", name: "Shahab Abbasi SEO" }
+      },
+      { 
+        "@context": "https://schema.org", 
+        "@type": "SoftwareApplication", 
+        name: tool.name, 
+        description: tool.metaDescription, 
+        applicationCategory: "BusinessApplication", 
+        operatingSystem: "All", 
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" } 
+      },
+      { 
+        "@context": "https://schema.org", 
+        "@type": "HowTo", 
+        name: `How to Use ${tool.name}`,
+        description: `Step-by-step guide to using the ${tool.name} for SEO optimization.`,
+        step: howToSteps.map((step, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: `Step ${i + 1}`,
+          text: step
+        }))
+      },
+      { 
+        "@context": "https://schema.org", 
+        "@type": "FAQPage", 
+        mainEntity: faqs.map(f => ({ 
+          "@type": "Question", 
+          name: f.q, 
+          acceptedAnswer: { "@type": "Answer", text: f.a } 
+        })) 
+      },
+      { 
+        "@context": "https://schema.org", 
+        "@type": "BreadcrumbList", 
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: window.location.origin },
+          { "@type": "ListItem", position: 2, name: "SEO Tools", item: `${window.location.origin}/tools` },
+          { "@type": "ListItem", position: 3, name: tool.name, item: window.location.href },
+        ]
+      },
     ];
 
     const script = document.createElement("script");
@@ -66,12 +110,13 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
     script.id = "tool-schema";
     document.head.appendChild(script);
     return () => { document.getElementById("tool-schema")?.remove(); };
-  }, [tool]);
+  }, [tool, toolContent, faqs]);
 
   return (
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto max-w-5xl">
+          {/* Hero Section */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBreadcrumbs items={[{ label: "Tools", href: "/tools" }, { label: tool.name }]} className="mb-6" />
             <p className="text-sm text-accent font-medium mb-2">{tool.category}</p>
@@ -79,15 +124,66 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
             <p className="text-muted-foreground mb-8">{tool.metaDescription}</p>
           </motion.div>
 
+          {/* Tool Component */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
             {children}
           </motion.div>
 
+          {/* What is This Tool - With Image */}
+          {toolContent && (
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">What is the {tool.name}?</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="glass rounded-xl p-6">
+                  <p className="text-muted-foreground mb-4">{toolContent.shortDescription}</p>
+                  <p className="text-muted-foreground">{toolContent.longDescription}</p>
+                </div>
+                <div className="glass rounded-xl overflow-hidden">
+                  <img 
+                    src={toolContent.image} 
+                    alt={`${tool.name} - ${tool.category} Tool`}
+                    className="w-full h-full object-cover min-h-[200px]"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {/* Benefits Section */}
+          {toolContent && (
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">Key Benefits</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {toolContent.benefits.map((benefit, i) => {
+                  const Icon = benefitIcons[i % benefitIcons.length];
+                  return (
+                    <div key={i} className="glass rounded-xl p-5 flex gap-4">
+                      <div className="p-2 rounded-lg bg-accent/10 h-fit">
+                        <Icon className="h-5 w-5 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-sm mb-1">{benefit.title}</h3>
+                        <p className="text-xs text-muted-foreground">{benefit.description}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
+
           {/* How to Use */}
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
             <h2 className="text-2xl font-bold mb-6">How to Use This Tool</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {steps.map((step, i) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {(toolContent?.howToSteps || [
+                "Enter your content or data into the input field above.",
+                `The ${tool.name} will process your input automatically.`,
+                "Review the results, scores, or generated output.",
+                "Click 'Copy' to copy the results to your clipboard.",
+                "Use the insights to optimize your SEO strategy."
+              ]).slice(0, 5).map((step, i) => (
                 <div key={i} className="glass rounded-xl p-4 flex gap-4">
                   <span className="text-accent font-bold text-lg">{i + 1}</span>
                   <p className="text-sm text-muted-foreground">{step}</p>
@@ -95,6 +191,58 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
               ))}
             </div>
           </motion.div>
+
+          {/* Use Cases & Pro Tips */}
+          {toolContent && (
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Use Cases */}
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">Common Use Cases</h2>
+                  <div className="glass rounded-xl p-6">
+                    <ul className="space-y-3">
+                      {toolContent.useCases.map((useCase, i) => (
+                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span>{useCase}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Pro Tips */}
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">Pro Tips</h2>
+                  <div className="glass rounded-xl p-6">
+                    <ul className="space-y-3">
+                      {toolContent.proTips.map((tip, i) => (
+                        <li key={i} className="flex gap-3 text-sm text-muted-foreground">
+                          <Lightbulb className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span>{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Target Audience */}
+                  <div className="mt-4">
+                    <h3 className="font-semibold text-sm mb-2 flex items-center gap-2">
+                      <Users className="h-4 w-4 text-muted-foreground" />
+                      Who Uses This Tool
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {toolContent.targetAudience.map((audience, i) => (
+                        <span key={i} className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full">
+                          {audience}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
 
           {/* Why This Tool */}
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
