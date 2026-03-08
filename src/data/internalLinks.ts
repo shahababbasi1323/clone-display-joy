@@ -101,6 +101,17 @@ const toolToServices: Record<string, string[]> = {
   "ad-copy-generator": ["on-page-seo", "content-strategy"],
   "quality-score-estimator": ["on-page-seo", "technical-seo"],
   "ppc-campaign-audit-checklist": ["seo-audit", "seo-consulting"],
+  // Domain tools → technical-seo
+  "bulk-expired-domain-checker": ["technical-seo", "link-building"],
+  "domain-authority-checker": ["off-page-seo", "link-building"],
+  "redirect-chain-checker": ["technical-seo", "website-speed-optimization"],
+  "broken-link-checker": ["technical-seo", "seo-audit"],
+  // Bulk tools
+  "bulk-keyword-checker": ["keyword-research", "seo-audit"],
+  "serp-checker": ["keyword-research", "seo-audit"],
+  "gbp-keyword-checker": ["local-seo", "google-business-profile"],
+  "page-speed-analyzer": ["website-speed-optimization", "technical-seo"],
+  "xml-to-url-converter": ["technical-seo", "seo-audit"],
 };
 
 /** PPC tools → PPC services cross-link */
