@@ -724,6 +724,471 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Adjust colors until you achieve at least AA compliance (4.5:1)",
       "Test with your actual font sizes — large text has relaxed requirements (3:1)"
     ]
+  },
+  "sitemap-generator": {
+    shortDescription: "Generate valid XML sitemaps with URLs, priority values, change frequency, and last modified dates.",
+    longDescription: "The XML Sitemap Generator creates properly formatted sitemaps that help search engines discover and index all your important pages. Sitemaps are especially critical for large websites, new sites without many backlinks, and sites with complex navigation. This tool lets you add multiple URLs with custom priority (0.0-1.0), change frequency (daily, weekly, monthly), and lastmod timestamps — all exported as valid XML ready for upload.",
+    benefits: [
+      { title: "Faster Indexing", description: "Help search engines discover new and updated pages immediately." },
+      { title: "Crawl Prioritization", description: "Signal which pages are most important with priority values." },
+      { title: "Large Site Support", description: "Generate sitemaps for sites with thousands of pages." },
+      { title: "Standards Compliant", description: "Output follows the official sitemap.org XML protocol." }
+    ],
+    useCases: [
+      "Web developers launching new websites that need immediate indexing",
+      "E-commerce teams with thousands of product pages to index",
+      "Content publishers with frequent blog post updates",
+      "SEO agencies creating sitemaps during site migrations",
+      "Webmasters managing multi-language sites with separate URL structures"
+    ],
+    proTips: [
+      "Set homepage priority to 1.0 and decrease for deeper pages (0.8, 0.6, 0.4)",
+      "Use 'daily' changefreq for frequently updated content, 'monthly' for static pages",
+      "Keep sitemaps under 50,000 URLs — create sitemap index files for larger sites",
+      "Submit your sitemap to Google Search Console and Bing Webmaster Tools"
+    ],
+    targetAudience: ["Web Developers", "SEO Specialists", "E-commerce Managers", "Content Publishers", "Webmasters"],
+    howToSteps: [
+      "Add URLs one by one or paste a list of page URLs",
+      "Set priority (0.0-1.0) based on page importance",
+      "Choose change frequency (daily, weekly, monthly, yearly)",
+      "Add last modified dates for recently updated pages",
+      "Copy or download the generated XML sitemap file"
+    ]
+  },
+  "hreflang-tag-generator": {
+    shortDescription: "Generate hreflang link tags for multi-language and multi-region websites to serve the right content globally.",
+    longDescription: "The Hreflang Tag Generator creates the complex link elements needed for international SEO. Hreflang tags tell Google which language and regional version of a page to show users based on their location and language settings. Getting hreflang wrong leads to the wrong country version appearing in search, frustrated users, and lost international traffic. This tool handles the syntax complexity so you can focus on your global content strategy.",
+    benefits: [
+      { title: "Correct Language Targeting", description: "Ensure French users see /fr/ pages and German users see /de/ pages." },
+      { title: "Prevent Duplicate Content", description: "Tell Google that similar pages in different languages aren't duplicates." },
+      { title: "Improve International UX", description: "Reduce bounce rates from users landing on wrong-language pages." },
+      { title: "Syntax Validation", description: "Generate correctly formatted tags — hreflang errors are notoriously tricky." }
+    ],
+    useCases: [
+      "Global brands managing websites in 10+ languages",
+      "E-commerce stores serving different currencies and regions",
+      "SaaS companies with localized product pages",
+      "Travel sites with country-specific content and pricing",
+      "News publishers with regional editions"
+    ],
+    proTips: [
+      "Always include an x-default hreflang for users who don't match any specified locale",
+      "Hreflang must be reciprocal — page A must link to B and B must link back to A",
+      "Use ISO 639-1 language codes (en, de, fr) and ISO 3166-1 Alpha-2 country codes (US, GB, DE)",
+      "Verify implementation with Google Search Console's International Targeting report"
+    ],
+    targetAudience: ["International SEO Specialists", "Global Brand Managers", "Web Developers", "E-commerce Teams"],
+    howToSteps: [
+      "Enter the base URL of the page you're tagging",
+      "Add language/region variants (en-US, en-GB, de-DE, fr-FR, etc.)",
+      "Set the x-default URL for unmatched locales",
+      "Generate the complete set of hreflang link tags",
+      "Copy and add to the <head> section of each page variant"
+    ]
+  },
+  "ab-test-duration-calculator": {
+    shortDescription: "Calculate how long to run A/B tests based on traffic, baseline conversion rate, and minimum detectable effect.",
+    longDescription: "The A/B Test Duration Calculator tells you exactly how many days to run your experiment for statistically valid results. Stopping tests too early leads to false positives — you'll think a variant won when it actually didn't. Running too long wastes time and traffic. Enter your daily visitors, current conversion rate, and the minimum improvement you want to detect, and this tool calculates the required sample size and test duration with 95% statistical significance.",
+    benefits: [
+      { title: "Statistical Validity", description: "Ensure your test results are real, not random noise." },
+      { title: "Prevent False Positives", description: "Stop early stopping that leads to wrong decisions." },
+      { title: "Resource Planning", description: "Know upfront how long experiments will take to conclude." },
+      { title: "Minimum Detectable Effect", description: "Understand the smallest improvement your test can reliably detect." }
+    ],
+    useCases: [
+      "CRO specialists planning landing page experiments",
+      "Product managers testing new feature variants",
+      "E-commerce teams running pricing and CTA tests",
+      "Marketing teams A/B testing email and ad creative",
+      "Growth engineers setting up experimentation frameworks"
+    ],
+    proTips: [
+      "Run tests for at least 2 full business cycles (typically 2 weeks) to capture variance",
+      "Smaller MDE requires more traffic — be realistic about detectable improvements",
+      "Don't peek at results and stop early — commit to the calculated duration",
+      "Account for weekday vs weekend traffic patterns in your timeline"
+    ],
+    targetAudience: ["CRO Specialists", "Product Managers", "Growth Engineers", "Data Scientists", "Marketing Teams"],
+    howToSteps: [
+      "Enter your average daily unique visitors to the test page",
+      "Input your current (baseline) conversion rate as a percentage",
+      "Set the minimum detectable effect — the smallest lift you care about",
+      "Choose your statistical significance level (default 95%)",
+      "Review the required sample size and estimated test duration"
+    ]
+  },
+  "google-ads-budget-calculator": {
+    shortDescription: "Plan your Google Ads budget by estimating clicks, conversions, revenue, and ROAS from your campaign metrics.",
+    longDescription: "The Google Ads Budget Calculator helps you plan campaigns with realistic projections before spending a dollar. Enter your expected CPC, daily budget, conversion rate, and average order value to see estimated monthly clicks, conversions, revenue, and return on ad spend. Use it to set budgets that align with business goals, justify ad spend to stakeholders, and compare scenarios with different CPC or conversion assumptions.",
+    benefits: [
+      { title: "Budget Confidence", description: "Know what results to expect before launching campaigns." },
+      { title: "ROI Projections", description: "Calculate expected ROAS and revenue at different budget levels." },
+      { title: "Scenario Planning", description: "Compare outcomes with different CPC or conversion rate assumptions." },
+      { title: "Stakeholder Buy-In", description: "Present data-backed budgets to executives and clients." }
+    ],
+    useCases: [
+      "PPC managers building monthly and quarterly ad budgets",
+      "E-commerce teams forecasting paid acquisition costs",
+      "Agencies creating campaign proposals for prospective clients",
+      "Marketing directors allocating budget across channels",
+      "Startups planning their first Google Ads investment"
+    ],
+    proTips: [
+      "Use Google Keyword Planner CPC estimates for realistic cost projections",
+      "Factor in a 20-30% buffer for CPC fluctuations and competition",
+      "Calculate break-even ROAS based on your profit margins, not revenue",
+      "Start with smaller budgets to validate assumptions before scaling"
+    ],
+    targetAudience: ["PPC Managers", "E-commerce Teams", "Agency Account Managers", "Marketing Directors", "Startup Founders"],
+    howToSteps: [
+      "Enter your expected average cost-per-click (CPC)",
+      "Set your daily or monthly ad budget",
+      "Input your landing page conversion rate",
+      "Add your average order value or lead value",
+      "Review projected clicks, conversions, revenue, and ROAS"
+    ]
+  },
+  "roas-calculator": {
+    shortDescription: "Calculate Return on Ad Spend, ACoS, net profit, and break-even ROAS for your paid advertising campaigns.",
+    longDescription: "The ROAS Calculator is essential for understanding your paid advertising profitability. Enter your ad spend and revenue to instantly calculate ROAS (as a ratio and percentage), ACoS (Advertising Cost of Sale), net profit, and profit margin. It also shows you the break-even ROAS based on your profit margins — the minimum return you need to avoid losing money. Use it for Google Ads, Facebook Ads, Amazon PPC, and any paid channel.",
+    benefits: [
+      { title: "Profitability Clarity", description: "Know exactly whether your ads are making or losing money." },
+      { title: "Break-Even Analysis", description: "Calculate the minimum ROAS needed to be profitable." },
+      { title: "Cross-Platform Use", description: "Works for Google, Facebook, Amazon, TikTok — any paid channel." },
+      { title: "Quick Decisions", description: "Instantly evaluate campaign performance without spreadsheets." }
+    ],
+    useCases: [
+      "E-commerce managers monitoring campaign profitability daily",
+      "Amazon sellers calculating ACoS targets for PPC campaigns",
+      "Agency teams reporting ROAS to clients in plain language",
+      "Performance marketers optimizing ad spend allocation",
+      "CFOs evaluating marketing channel efficiency"
+    ],
+    proTips: [
+      "ROAS of 4:1 (400%) is often considered good, but break-even depends on your margins",
+      "Calculate break-even ROAS first — anything above that is pure profit",
+      "Track ROAS at campaign, ad group, and keyword level for granular optimization",
+      "Consider customer lifetime value, not just first purchase, for accurate ROAS"
+    ],
+    targetAudience: ["E-commerce Managers", "Amazon Sellers", "Performance Marketers", "Agency Teams", "Media Buyers"],
+    howToSteps: [
+      "Enter your total ad spend for the period",
+      "Input the total revenue generated from those ads",
+      "Optionally add your product cost or profit margin",
+      "Review ROAS, ACoS, profit, and break-even ROAS",
+      "Use insights to optimize or reallocate budget"
+    ]
+  },
+  "ad-copy-generator": {
+    shortDescription: "Generate Google Ads responsive search ad headlines (30 chars) and descriptions (90 chars) for your campaigns.",
+    longDescription: "The Ad Copy Generator creates headlines and descriptions that fit Google Ads' strict character limits. Responsive Search Ads (RSAs) require up to 15 headlines (30 characters each) and 4 descriptions (90 characters each). This tool helps you brainstorm variations quickly, check character counts in real-time, and ensure your copy hits the right length before pasting into Google Ads. No more truncation surprises or rejected ads.",
+    benefits: [
+      { title: "Character Compliance", description: "Stay within 30-char headline and 90-char description limits." },
+      { title: "Variation Ideas", description: "Generate multiple headline and description options quickly." },
+      { title: "RSA Ready", description: "Create the 15 headlines and 4 descriptions RSAs need." },
+      { title: "Quality Score Boost", description: "Relevant, diverse ad copy improves Quality Score." }
+    ],
+    useCases: [
+      "PPC specialists creating RSA ad groups from scratch",
+      "Copywriters brainstorming ad variations for testing",
+      "E-commerce teams writing product-focused ad copy",
+      "Agencies producing ad copy at scale for multiple clients",
+      "Marketing teams refreshing stale ad creative"
+    ],
+    proTips: [
+      "Include your primary keyword in at least 3 headlines for relevance",
+      "Use different angles: features, benefits, urgency, social proof, offers",
+      "Pin your best-performing headline to position 1 for consistency",
+      "Test headlines with numbers, questions, and CTAs for variety"
+    ],
+    targetAudience: ["PPC Specialists", "Copywriters", "E-commerce Teams", "Digital Marketing Agencies"],
+    howToSteps: [
+      "Enter your product, service, or offer details",
+      "Generate headline variations (aim for 10-15 unique options)",
+      "Check character counts — yellow/red warnings appear at limits",
+      "Generate description variations (aim for 4 unique options)",
+      "Copy compliant ad copy directly into Google Ads"
+    ]
+  },
+  "quality-score-estimator": {
+    shortDescription: "Estimate your Google Ads Quality Score with a 12-factor checklist covering ad relevance, CTR, and landing pages.",
+    longDescription: "The Quality Score Estimator helps you understand and improve the 1-10 score Google assigns to your keywords. Quality Score directly impacts your CPC and ad position — a score of 7+ can reduce costs by 50% compared to score of 5. This tool evaluates the three main components: expected click-through rate, ad relevance, and landing page experience, with a detailed checklist covering all the factors Google considers.",
+    benefits: [
+      { title: "Lower CPCs", description: "Higher Quality Scores reduce your cost-per-click significantly." },
+      { title: "Better Ad Position", description: "Quality Score is a key factor in ad rank calculations." },
+      { title: "Actionable Insights", description: "Checklist identifies exactly what to improve." },
+      { title: "Competitive Advantage", description: "Outperform competitors paying the same CPC." }
+    ],
+    useCases: [
+      "PPC managers diagnosing poor-performing keywords",
+      "Account auditors identifying Quality Score improvement opportunities",
+      "Landing page designers optimizing for Google Ads traffic",
+      "Agency teams explaining Quality Score factors to clients",
+      "New advertisers learning Google Ads best practices"
+    ],
+    proTips: [
+      "Ad relevance: Include the exact keyword in your headline and description",
+      "Expected CTR: Use compelling CTAs and match search intent precisely",
+      "Landing page: Ensure fast load times, mobile-friendly design, and relevant content",
+      "Focus on keywords with spend — improving high-spend, low-QS keywords has the biggest impact"
+    ],
+    targetAudience: ["PPC Managers", "Account Auditors", "Landing Page Designers", "Google Ads Specialists"],
+    howToSteps: [
+      "Enter your keyword, ad copy, and landing page URL",
+      "Complete the 12-factor checklist for each QS component",
+      "Review your estimated Quality Score (1-10)",
+      "Identify which factors are dragging down your score",
+      "Implement improvements and track QS changes in Google Ads"
+    ]
+  },
+  "ppc-campaign-audit-checklist": {
+    shortDescription: "20-point PPC campaign audit covering structure, keywords, ad copy, bidding, and conversion tracking.",
+    longDescription: "The PPC Campaign Audit Checklist is a comprehensive 20-point review system for Google Ads and other PPC platforms. It covers account structure, keyword match types and negatives, ad copy quality, bidding strategy, conversion tracking, and budget allocation. Use it for quarterly account health checks, pre-launch reviews, or client onboarding audits. Each item includes pass/fail criteria and recommendations for fixing common issues.",
+    benefits: [
+      { title: "Systematic Review", description: "Never miss critical issues with a structured 20-point framework." },
+      { title: "Consistent Quality", description: "Apply the same standards across all accounts and clients." },
+      { title: "Time Savings", description: "Faster audits with a pre-built checklist vs. ad-hoc reviews." },
+      { title: "Client Deliverable", description: "Export audit results as professional reports." }
+    ],
+    useCases: [
+      "Agency teams onboarding new PPC clients",
+      "In-house teams conducting quarterly account reviews",
+      "Consultants auditing accounts before taking over management",
+      "PPC managers preparing for busy season optimization",
+      "Training junior team members on audit best practices"
+    ],
+    proTips: [
+      "Audit high-spend campaigns first — that's where improvements have the biggest impact",
+      "Check conversion tracking setup before analyzing performance data",
+      "Review search terms report monthly to find negative keyword opportunities",
+      "Benchmark metrics against industry averages for realistic expectations"
+    ],
+    targetAudience: ["PPC Managers", "Agency Teams", "Consultants", "In-House Marketing Teams"],
+    howToSteps: [
+      "Open your Google Ads account alongside this checklist",
+      "Work through each of the 20 audit items systematically",
+      "Mark each item as pass, fail, or needs improvement",
+      "Document specific findings and recommendations",
+      "Prioritize fixes by impact and implement changes"
+    ]
+  },
+  "google-business-profile-audit": {
+    shortDescription: "Interactive 30+ point checklist to optimize your Google Business Profile for local search rankings.",
+    longDescription: "The Google Business Profile Audit Checklist covers every optimization opportunity for your GBP listing. From basic NAP consistency to advanced features like products, services, and Q&A, this 30+ point audit ensures you're not leaving local visibility on the table. A fully optimized GBP can appear in the local 3-pack, Google Maps, and knowledge panels — driving foot traffic and calls from nearby customers actively searching for your services.",
+    benefits: [
+      { title: "Local 3-Pack Visibility", description: "Optimize for the coveted map pack in local search results." },
+      { title: "Complete Profile", description: "Fill every field Google uses to rank and display your business." },
+      { title: "Competitive Edge", description: "Most businesses only complete 50% of their GBP — stand out by completing 100%." },
+      { title: "Review Optimization", description: "Learn to generate and respond to reviews strategically." }
+    ],
+    useCases: [
+      "Local business owners setting up their first GBP",
+      "Multi-location brands auditing franchise GBP consistency",
+      "Local SEO agencies onboarding new clients",
+      "Marketing managers preparing for local campaign launches",
+      "Reputation managers optimizing review response strategy"
+    ],
+    proTips: [
+      "Add photos weekly — active profiles rank higher in local results",
+      "Use all 750 characters in your business description with local keywords",
+      "Respond to every review within 24 hours — positive and negative",
+      "Add products and services with detailed descriptions and pricing"
+    ],
+    targetAudience: ["Local Business Owners", "Local SEO Agencies", "Multi-Location Brands", "Franchise Managers"],
+    howToSteps: [
+      "Log into your Google Business Profile dashboard",
+      "Work through each audit section: basics, media, reviews, posts, products",
+      "Check off completed items and note gaps",
+      "Prioritize high-impact optimizations (photos, reviews, services)",
+      "Implement changes and track ranking improvements"
+    ]
+  },
+  "anchor-text-analyzer": {
+    shortDescription: "Categorize and analyze anchor text distribution to maintain a natural, healthy link profile.",
+    longDescription: "The Anchor Text Analyzer categorizes your backlink anchor texts into types (branded, exact match, partial match, generic, URL, etc.) and shows the distribution percentages. Search engines use anchor text diversity as a signal of natural link building. Over-optimization with too many exact match anchors looks manipulative and can trigger penalties. Use this tool to audit your current link profile or plan new link building with the right anchor text ratios.",
+    benefits: [
+      { title: "Penalty Prevention", description: "Avoid over-optimization that triggers Google penalties." },
+      { title: "Natural Distribution", description: "Achieve the branded-heavy ratios that top sites have." },
+      { title: "Audit Ready", description: "Categorize hundreds of anchor texts in seconds." },
+      { title: "Strategy Planning", description: "Know which anchor types to target in future outreach." }
+    ],
+    useCases: [
+      "SEO managers auditing client link profiles",
+      "Link builders planning anchor text strategy for new campaigns",
+      "Agencies preparing link profile reports for clients",
+      "In-house teams recovering from over-optimization penalties",
+      "Consultants benchmarking against competitor anchor distributions"
+    ],
+    proTips: [
+      "Aim for 40-60% branded anchors, 20-30% generic/URL, and under 10% exact match",
+      "Analyze competitor anchor profiles to benchmark natural ratios for your niche",
+      "Diversify exact match anchors with variations, synonyms, and long-tail versions",
+      "Disavow links with spammy anchor text that could trigger penalties"
+    ],
+    targetAudience: ["SEO Managers", "Link Builders", "Agency Teams", "Penalty Recovery Specialists"],
+    howToSteps: [
+      "Export your anchor text list from Ahrefs, SEMrush, or GSC",
+      "Paste the anchor texts into the analyzer",
+      "Review categorization: branded, exact, partial, generic, URL, other",
+      "Check percentage distribution against recommended ratios",
+      "Identify over-optimized anchors and plan diversification"
+    ]
+  },
+  "disavow-file-generator": {
+    shortDescription: "Generate properly formatted disavow.txt files for Google Search Console to remove toxic backlinks.",
+    longDescription: "The Disavow File Generator creates the exact .txt format Google requires for disavowing harmful backlinks. When your site has toxic, spammy, or paid links pointing to it, Google may penalize your rankings. The disavow tool tells Google to ignore those links. But the file format is strict — one wrong character and the upload fails. This tool ensures correct syntax for both individual URLs and domain-wide disavows, with comments to document your reasons.",
+    benefits: [
+      { title: "Correct Formatting", description: "Generate files that pass Google Search Console validation." },
+      { title: "Penalty Recovery", description: "Essential for recovering from manual actions and algorithmic penalties." },
+      { title: "Bulk Processing", description: "Disavow hundreds of domains and URLs in one file." },
+      { title: "Documentation", description: "Add comments explaining why each link was disavowed." }
+    ],
+    useCases: [
+      "Sites recovering from Google manual actions",
+      "Negative SEO attack victims removing malicious links",
+      "Agencies cleaning up client link profiles",
+      "Sites recovering from Penguin penalty effects",
+      "Proactive disavowal of low-quality links before they cause problems"
+    ],
+    proTips: [
+      "Use 'domain:example.com' to disavow all links from a domain, not individual URLs",
+      "Only disavow links you've genuinely tried to remove manually first",
+      "Keep a backup of all disavow file versions with dates",
+      "Review disavow file quarterly and remove entries for dead domains"
+    ],
+    targetAudience: ["Penalty Recovery Specialists", "SEO Agencies", "Webmasters", "Link Profile Auditors"],
+    howToSteps: [
+      "Compile your list of toxic domains and URLs to disavow",
+      "Enter domains (will auto-format with domain: prefix) and URLs",
+      "Add optional comments to document your reasoning",
+      "Download the generated disavow.txt file",
+      "Upload to Google Search Console Disavow Tool"
+    ]
+  },
+  "product-description-optimizer": {
+    shortDescription: "Check product descriptions for keyword presence, length, benefit coverage, and SEO quality factors.",
+    longDescription: "The Product Description Optimizer analyzes your e-commerce product copy against SEO best practices. It checks description length (aim for 150-300 words), keyword presence and density, benefit-focused language, and readability. Great product descriptions do three things: rank for product searches, answer buyer questions, and overcome objections. This tool ensures your descriptions check all the boxes before publishing.",
+    benefits: [
+      { title: "Higher Rankings", description: "Optimized descriptions rank for long-tail product searches." },
+      { title: "Better Conversions", description: "Benefit-focused copy addresses buyer concerns and drives purchases." },
+      { title: "Unique Content", description: "Avoid duplicate content penalties from manufacturer descriptions." },
+      { title: "Scalable QA", description: "Quality-check hundreds of product descriptions consistently." }
+    ],
+    useCases: [
+      "E-commerce managers optimizing product catalog copy",
+      "Copywriters writing descriptions for new product launches",
+      "SEO teams auditing existing product pages for improvements",
+      "Dropshippers rewriting manufacturer descriptions for uniqueness",
+      "Agencies delivering product description optimization services"
+    ],
+    proTips: [
+      "Lead with the main benefit, not features — what problem does this product solve?",
+      "Include the product name and key modifiers naturally within the first sentence",
+      "Use bullet points for scannable feature lists below the main description",
+      "Add related keywords and synonyms to capture long-tail search variations"
+    ],
+    targetAudience: ["E-commerce Managers", "Product Copywriters", "SEO Teams", "Dropshippers", "Agencies"],
+    howToSteps: [
+      "Paste your product description into the analyzer",
+      "Enter your target keyword and product name",
+      "Review the length, keyword density, and quality scores",
+      "Check the benefit and feature coverage analysis",
+      "Implement recommendations and re-analyze until optimized"
+    ]
+  },
+  "canonical-tag-generator": {
+    shortDescription: "Generate canonical link tags to consolidate duplicate content and control which URL version Google indexes.",
+    longDescription: "The Canonical Tag Generator creates the <link rel='canonical'> HTML element that tells search engines which URL is the 'master' version of a page. E-commerce sites, blogs with URL parameters, and sites with www/non-www variations all face duplicate content issues. Without canonical tags, Google may index the wrong version or split ranking signals across duplicates. This tool generates valid canonical tags and explains when and how to use them.",
+    benefits: [
+      { title: "Consolidate Signals", description: "Pass all ranking power to your preferred URL version." },
+      { title: "Prevent Duplicate Content", description: "Stop Google from indexing parameter URLs, print pages, or tracking URLs." },
+      { title: "Control Indexing", description: "Choose exactly which URL version appears in search results." },
+      { title: "Cross-Domain Support", description: "Canonical to content syndication partners when needed." }
+    ],
+    useCases: [
+      "E-commerce sites with filter/sort URL parameters",
+      "Sites with www and non-www versions both accessible",
+      "Pages accessible via HTTP and HTTPS",
+      "Blogs with pagination or category/tag duplicates",
+      "Content syndication where originals and copies both exist"
+    ],
+    proTips: [
+      "Self-referencing canonicals (pointing to the current URL) are best practice for all pages",
+      "Canonicals are hints, not directives — Google may ignore them if the pages are too different",
+      "Use 301 redirects for true duplicates; canonicals for near-duplicates with valid reasons to exist",
+      "Check canonicals with browser dev tools or GSC URL Inspection tool"
+    ],
+    targetAudience: ["Web Developers", "Technical SEOs", "E-commerce Teams", "Content Publishers"],
+    howToSteps: [
+      "Enter the canonical (preferred) URL for the page",
+      "Copy the generated <link rel='canonical'> tag",
+      "Paste into the <head> section of all duplicate/variant pages",
+      "Verify implementation with browser developer tools",
+      "Monitor in Google Search Console for canonical selection issues"
+    ]
+  },
+  "slug-generator": {
+    shortDescription: "Convert any text to clean, SEO-friendly URL slugs with proper formatting and special character handling.",
+    longDescription: "The URL Slug Generator transforms titles, headlines, and any text into clean URL slugs optimized for both search engines and users. It handles special characters, accents, spaces, and punctuation — converting them to URL-safe equivalents. Good slugs are short, descriptive, keyword-rich, and easy to read. This tool follows best practices: lowercase letters, hyphens between words, no stop words, and no trailing hyphens.",
+    benefits: [
+      { title: "SEO-Friendly URLs", description: "Clean slugs with keywords rank better and get more clicks." },
+      { title: "User-Friendly", description: "Readable URLs that users understand and trust before clicking." },
+      { title: "Consistent Formatting", description: "Apply the same slug rules across your entire site." },
+      { title: "Special Character Handling", description: "Properly converts accents, symbols, and international characters." }
+    ],
+    useCases: [
+      "Content teams creating URLs for new blog posts",
+      "E-commerce managers generating product page URLs",
+      "Developers building CMS slug generation features",
+      "SEO specialists cleaning up messy URL structures",
+      "International sites handling non-ASCII characters in URLs"
+    ],
+    proTips: [
+      "Keep slugs under 60 characters for optimal display in SERPs",
+      "Include your primary keyword in the slug, but don't keyword-stuff",
+      "Avoid changing slugs after publishing — set up 301 redirects if you must",
+      "Remove stop words (a, an, the, of, to) to keep slugs concise"
+    ],
+    targetAudience: ["Content Teams", "Web Developers", "SEO Specialists", "E-commerce Managers"],
+    howToSteps: [
+      "Paste your page title or headline into the input field",
+      "The tool automatically generates a clean slug",
+      "Toggle options for stop word removal and length limits",
+      "Copy the generated slug for your CMS or codebase",
+      "Use consistently across your site for URL structure"
+    ]
+  },
+  "local-keyword-generator": {
+    shortDescription: "Generate local keyword combinations by combining your services with cities, neighborhoods, and local modifiers.",
+    longDescription: "The Local Keyword Generator creates hundreds of location-based keyword variations by combining your services with geographic modifiers. Enter your service (plumber, dentist, lawyer) and locations (city names, neighborhoods, zip codes) to generate keywords like 'emergency plumber in Brooklyn' or 'family dentist near downtown Austin'. These long-tail local keywords are essential for Google Maps rankings, local service ads, and location page content.",
+    benefits: [
+      { title: "Bulk Generation", description: "Create hundreds of local keyword variations in seconds." },
+      { title: "Map Pack Targeting", description: "Keywords optimized for Google Maps and local 3-pack results." },
+      { title: "Content Planning", description: "Build out location pages for each service area you cover." },
+      { title: "PPC Campaigns", description: "Generate location-based keywords for local search ads." }
+    ],
+    useCases: [
+      "Local service businesses expanding to new areas",
+      "Agencies building local SEO strategies for multi-location clients",
+      "Franchise brands creating location pages at scale",
+      "PPC managers building local search ad campaigns",
+      "Content teams planning city-specific landing pages"
+    ],
+    proTips: [
+      "Include neighborhood names, not just cities — 'dentist in SoHo' vs 'dentist in Manhattan'",
+      "Add modifiers like 'near me', 'best', '24 hour', 'emergency', 'affordable'",
+      "Create dedicated landing pages for your top 10-20 local keyword clusters",
+      "Use in Google Business Profile descriptions and service area settings"
+    ],
+    targetAudience: ["Local Service Businesses", "Local SEO Agencies", "Franchise Brands", "PPC Managers"],
+    howToSteps: [
+      "Enter your primary service or business type",
+      "Add locations: cities, neighborhoods, zip codes, regions",
+      "Select modifier types: intent, quality, urgency, location",
+      "Generate the full keyword matrix",
+      "Export for content planning, GBP optimization, or PPC campaigns"
+    ]
   }
 };
 
