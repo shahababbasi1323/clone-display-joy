@@ -35,7 +35,7 @@ const benefitIcons = [CheckCircle, Zap, Target, Lightbulb];
 const ToolPageWrapper = ({ tool, children }: Props) => {
   const faqs = generateFaqs(tool);
   const related = getRelatedTools(tool);
-  const toolContent = getToolContent(tool.category);
+  const toolContent = getToolContent(tool.category, tool.slug);
 
   useSeoMeta({
     title: tool.metaTitle,
