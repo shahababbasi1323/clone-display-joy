@@ -466,9 +466,274 @@ export const toolCategoryContent: Record<string, ToolCategoryContent> = {
   }
 };
 
-/** Get content for a specific tool based on its category */
-export function getToolContent(category: string): ToolCategoryContent | null {
-  return toolCategoryContent[category] || null;
+/** Tool-specific content overrides keyed by slug. Merges on top of category content. */
+export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> = {
+  "word-counter": {
+    shortDescription: "Count words, characters, sentences, paragraphs, and estimate reading & speaking time instantly — no signup required.",
+    longDescription: "The Word Counter is a must-have tool for writers, bloggers, students, and SEO professionals. Whether you're writing a 1,500-word blog post, checking an essay's word limit, or estimating how long a speech will take, this tool gives you real-time metrics the moment you type or paste. Unlike basic counters, it also tracks paragraphs, sentences, and calculates both reading time (at 200 WPM) and speaking time (at 130 WPM) — perfect for presentation prep and podcast scripts.",
+    benefits: [
+      { title: "Real-Time Counting", description: "See word, character, and sentence counts update instantly as you type — zero lag." },
+      { title: "Reading & Speaking Time", description: "Estimate how long content takes to read or speak aloud for better planning." },
+      { title: "Paragraph Tracking", description: "Monitor paragraph count to keep your content structure scannable." },
+      { title: "No Character Limits", description: "Paste entire articles, books, or documents — no input size restrictions." }
+    ],
+    useCases: [
+      "Bloggers hitting target word counts (1,000–2,500 words) for SEO-optimized articles",
+      "Students checking essay length against assignment requirements",
+      "Speakers and presenters estimating talk duration from scripts",
+      "Copywriters ensuring ad copy fits within strict character limits",
+      "Translators comparing source and target text lengths",
+      "Journalists meeting editorial word count guidelines"
+    ],
+    proTips: [
+      "For SEO blog posts, aim for 1,500–2,500 words to compete for competitive keywords",
+      "Reading time under 7 minutes (≈1,400 words) gets the highest engagement on most platforms",
+      "Break content into paragraphs of 2-3 sentences for better mobile readability",
+      "Use the speaking time estimate to plan webinar scripts — aim for 15-20 min segments"
+    ],
+    targetAudience: ["Bloggers", "Students", "Copywriters", "Speakers", "SEO Writers", "Journalists"],
+    howToSteps: [
+      "Paste your text or start typing directly in the text area",
+      "View real-time word, character, and sentence counts on the right panel",
+      "Check characters without spaces for platform-specific limits",
+      "Use reading time to plan article length for audience engagement",
+      "Use speaking time to estimate presentation or podcast duration"
+    ]
+  },
+  "meta-tag-generator": {
+    shortDescription: "Generate SEO-optimized HTML meta tags, Open Graph tags, and Twitter Cards with a live Google SERP preview.",
+    longDescription: "The Meta Tag Generator creates production-ready HTML code for your page's most important SEO elements. Enter your title, description, keywords, and URL to instantly generate primary meta tags, Open Graph tags for Facebook and LinkedIn, and Twitter Card markup. The built-in Google preview shows exactly how your page will appear in search results, helping you craft click-worthy titles and descriptions that maximize CTR. Every character count is tracked with color-coded progress bars so you never exceed recommended limits.",
+    benefits: [
+      { title: "One-Click Code Generation", description: "Get complete meta tag HTML ready to paste into your <head> section." },
+      { title: "Live SERP Preview", description: "See exactly how your title and description appear in Google results before publishing." },
+      { title: "Social Media Ready", description: "Automatically generates Open Graph and Twitter Card tags for perfect social shares." },
+      { title: "Character Limit Tracking", description: "Color-coded progress bars warn you before titles or descriptions get truncated." }
+    ],
+    useCases: [
+      "Web developers adding meta tags to new pages or site launches",
+      "SEO specialists optimizing title tags and descriptions for higher CTR",
+      "Content managers updating meta data across hundreds of blog posts",
+      "Marketing teams ensuring consistent branding in social media shares",
+      "Freelancers generating deliverables for client SEO audits",
+      "Shopify and WordPress users who prefer copy-paste over plugin settings"
+    ],
+    proTips: [
+      "Front-load your primary keyword in the title for better rankings and visibility",
+      "Include a clear value proposition or CTA in your meta description to boost CTR",
+      "Keep titles at 50-60 characters and descriptions at 140-155 characters to avoid truncation",
+      "Always fill in the URL field to generate accurate canonical and OG URL tags"
+    ],
+    targetAudience: ["Web Developers", "SEO Specialists", "Content Managers", "Freelancers", "Marketing Teams"],
+    howToSteps: [
+      "Enter your page title (aim for under 60 characters)",
+      "Write a compelling meta description (under 160 characters)",
+      "Add comma-separated keywords relevant to the page",
+      "Enter the full page URL for Open Graph and canonical tags",
+      "Preview the Google search result appearance and copy the generated HTML"
+    ]
+  },
+  "keyword-density-checker": {
+    shortDescription: "Analyze keyword frequency and density percentage to optimize content without over-stuffing.",
+    longDescription: "The Keyword Density Checker scans your content and ranks every word by frequency, showing exact counts and percentage density. It filters out short words (under 3 characters) to focus on meaningful keywords. Use it to ensure your target keyword appears at the right density (1-2%) and to spot unintentional keyword stuffing that could trigger search engine penalties.",
+    benefits: [
+      { title: "Avoid Penalties", description: "Catch keyword stuffing before it triggers algorithmic penalties." },
+      { title: "Optimize Naturally", description: "Achieve ideal 1-2% density for primary keywords." },
+      { title: "Discover Themes", description: "See which topics your content naturally emphasizes." },
+      { title: "Competitive Analysis", description: "Paste competitor content to reverse-engineer their keyword strategy." }
+    ],
+    useCases: [
+      "SEO writers checking target keyword density before publishing",
+      "Content auditors reviewing existing pages for optimization opportunities",
+      "Competitors analysis — paste rival content to find their keyword focus",
+      "Editors ensuring editorial guidelines for keyword usage are met",
+      "E-commerce teams optimizing product descriptions for search"
+    ],
+    proTips: [
+      "Primary keyword density of 1-2% is ideal; above 3% risks over-optimization",
+      "Check density for LSI/related keywords too — not just your primary term",
+      "Run the checker on top-ranking competitor pages to benchmark density",
+      "Density alone doesn't guarantee rankings — focus on search intent and quality"
+    ],
+    targetAudience: ["SEO Writers", "Content Auditors", "E-commerce Teams", "Content Strategists"],
+    howToSteps: [
+      "Paste your article or blog post content into the text area",
+      "Review the top 20 most frequent words with counts and percentages",
+      "Check if your target keyword appears at 1-2% density",
+      "Identify overused filler words that dilute topic relevance",
+      "Adjust content and re-check until density is optimized"
+    ]
+  },
+  "readability-checker": {
+    shortDescription: "Check Flesch-Kincaid reading ease score, grade level, and sentence complexity for any text.",
+    longDescription: "The Readability Checker uses the Flesch-Kincaid formula to score your content's reading difficulty on a 0-100 scale. It also calculates grade level, average sentence length, and syllables per word. Content scoring 60-70 is ideal for general web audiences. Use it to simplify complex writing, improve user engagement, and reduce bounce rates — all factors that indirectly boost SEO rankings.",
+    benefits: [
+      { title: "Audience Matching", description: "Ensure your writing matches your target audience's reading level." },
+      { title: "Lower Bounce Rates", description: "Easier-to-read content keeps visitors on page longer." },
+      { title: "Better Engagement", description: "Simplified content gets more shares and backlinks." },
+      { title: "SEO Advantage", description: "Google favors content that satisfies user intent quickly." }
+    ],
+    targetAudience: ["Content Writers", "UX Writers", "Educators", "Healthcare Communicators", "Legal Writers"],
+    howToSteps: [
+      "Paste your content into the text area",
+      "Review the Flesch Reading Ease score (aim for 60-70 for web content)",
+      "Check grade level — most web content should target Grade 7-9",
+      "Look at average sentence length — keep under 20 words per sentence",
+      "Simplify complex sections and re-check the score"
+    ]
+  },
+  "headline-analyzer": {
+    shortDescription: "Score your headlines for emotional impact, power words, length, and click-through potential.",
+    longDescription: "The Headline Analyzer evaluates your headlines on a 100-point scale across multiple factors: character and word count, presence of power words and emotional triggers, number usage, and question format. Great headlines are the single biggest factor in whether someone clicks your search result, opens your email, or reads your blog post. This tool helps you craft headlines that drive maximum engagement.",
+    benefits: [
+      { title: "Higher CTR", description: "Headlines with power words and numbers get up to 73% more clicks." },
+      { title: "Emotional Connection", description: "Detect emotional triggers that create urgency and curiosity." },
+      { title: "Optimal Length", description: "Hit the 50-60 character sweet spot for search and social." },
+      { title: "Data-Driven Writing", description: "Replace guesswork with a scoring system backed by engagement research." }
+    ],
+    targetAudience: ["Content Marketers", "Bloggers", "Email Marketers", "Social Media Managers", "Copywriters"],
+    howToSteps: [
+      "Type or paste your headline into the input field",
+      "Review the overall score out of 100",
+      "Check which power words and emotional words are detected",
+      "Try adding a number or question format to boost the score",
+      "Compare multiple headline variations to pick the strongest one"
+    ]
+  },
+  "schema-generator": {
+    shortDescription: "Generate valid JSON-LD structured data for LocalBusiness, Article, Product, FAQ, and more schema types.",
+    longDescription: "The Schema Markup Generator creates production-ready JSON-LD code that you can paste directly into your page's HTML. Structured data helps search engines understand your content and enables rich results like star ratings, FAQ dropdowns, recipe cards, and event listings in Google. Choose from multiple schema types, fill in the fields, and get validated markup instantly — no coding knowledge required.",
+    benefits: [
+      { title: "Rich Search Results", description: "Enable star ratings, FAQ dropdowns, prices, and more in Google SERPs." },
+      { title: "No Coding Required", description: "Fill in a form and get valid JSON-LD code ready to paste." },
+      { title: "Multiple Schema Types", description: "Support for LocalBusiness, Article, Product, FAQ, Event, and more." },
+      { title: "Validation Built In", description: "Generated markup follows Google's structured data guidelines." }
+    ],
+    targetAudience: ["Web Developers", "SEO Specialists", "Local Business Owners", "E-commerce Managers", "Content Publishers"],
+    howToSteps: [
+      "Select the schema type that matches your page content",
+      "Fill in the required fields (name, description, URL, etc.)",
+      "Review the generated JSON-LD code in the output panel",
+      "Copy the code and paste it into your page's <head> or <body>",
+      "Validate with Google's Rich Results Test to confirm eligibility"
+    ]
+  },
+  "robots-txt-generator": {
+    shortDescription: "Build a properly formatted robots.txt file with allow/disallow rules, sitemap references, and custom user agents.",
+    longDescription: "The Robots.txt Generator helps you create the critical file that controls how search engine bots crawl your website. Misconfigured robots.txt files can accidentally block important pages from indexing or waste crawl budget on low-value URLs. This tool lets you add multiple user agents, set allow/disallow rules, and include sitemap references — all with proper formatting that follows the robots exclusion standard.",
+    benefits: [
+      { title: "Crawl Budget Control", description: "Direct bots to your most important pages and block low-value areas." },
+      { title: "Prevent Accidental Blocking", description: "Visual interface prevents syntax errors that block indexing." },
+      { title: "Multi-Bot Support", description: "Set different rules for Googlebot, Bingbot, and other crawlers." },
+      { title: "Sitemap Integration", description: "Include sitemap URLs to speed up content discovery." }
+    ],
+    targetAudience: ["Web Developers", "Technical SEOs", "Webmasters", "DevOps Engineers"],
+    howToSteps: [
+      "Add user agent rules (use * for all bots or specify Googlebot, Bingbot, etc.)",
+      "Set Allow and Disallow paths for each user agent",
+      "Add your XML sitemap URL for automatic discovery",
+      "Review the generated robots.txt file for accuracy",
+      "Copy and upload to your website's root directory"
+    ]
+  },
+  "linkedin-post-formatter": {
+    shortDescription: "Format LinkedIn posts with bold, italic, and Unicode styling plus emojis and hashtags for maximum engagement.",
+    longDescription: "The LinkedIn Post Formatter transforms plain text into eye-catching posts using Unicode bold and italic characters that work natively on LinkedIn. Since LinkedIn doesn't support markdown or rich text formatting, Unicode text styling is the only way to make your posts stand out in the feed. Add strategic emoji placement, structure with line breaks, and append relevant hashtags to maximize impressions and engagement.",
+    benefits: [
+      { title: "Stand Out in Feed", description: "Bold and italic text catches attention in a sea of plain posts." },
+      { title: "Higher Engagement", description: "Formatted posts get 2-3x more impressions than plain text." },
+      { title: "Professional Look", description: "Structured formatting signals thought leadership." },
+      { title: "One-Click Copy", description: "Copy formatted text and paste directly into LinkedIn." }
+    ],
+    targetAudience: ["LinkedIn Creators", "Personal Brand Builders", "B2B Marketers", "Thought Leaders", "Recruiters"],
+    howToSteps: [
+      "Type or paste your LinkedIn post text",
+      "Select text and apply bold or italic formatting",
+      "Add emojis and bullet points for visual structure",
+      "Append 3-5 relevant hashtags at the end",
+      "Copy the formatted post and paste into LinkedIn"
+    ]
+  },
+  "google-serp-preview": {
+    shortDescription: "Preview exactly how your page title, URL, and description will appear in Google search results on desktop and mobile.",
+    longDescription: "The Google SERP Preview simulator shows a pixel-perfect preview of your search listing before you publish. See exactly where your title truncates, how your URL breadcrumbs display, and whether your description fits within Google's character limits. Compare desktop and mobile views side by side to ensure your listing looks compelling on every device. This tool is essential for maximizing click-through rates from organic search.",
+    benefits: [
+      { title: "Prevent Truncation", description: "See exactly where Google cuts off your title and description." },
+      { title: "Maximize CTR", description: "Craft listings that stand out and drive more clicks." },
+      { title: "Mobile Preview", description: "Check how listings appear on mobile devices." },
+      { title: "Pre-Publish Confidence", description: "Eliminate guesswork before updating meta tags." }
+    ],
+    targetAudience: ["SEO Managers", "Content Teams", "Web Developers", "Digital Marketers", "Agency Teams"],
+    howToSteps: [
+      "Enter your page title as it appears in the <title> tag",
+      "Add the page URL to see breadcrumb formatting",
+      "Write or paste your meta description",
+      "Toggle between desktop and mobile preview modes",
+      "Adjust title and description until they display perfectly"
+    ]
+  },
+  "seo-roi-calculator": {
+    shortDescription: "Calculate the financial return of your SEO investment with traffic, conversion, and revenue projections.",
+    longDescription: "The SEO ROI Calculator helps you build a data-driven business case for SEO investment. Input your monthly organic traffic, conversion rate, average order value, and SEO costs to see projected revenue, ROI percentage, and break-even timeline. Use it to justify budgets to stakeholders, compare SEO vs PPC cost efficiency, and set realistic growth expectations for your organic search strategy.",
+    benefits: [
+      { title: "Justify Budgets", description: "Present clear ROI data to executives and stakeholders." },
+      { title: "Set Expectations", description: "Project realistic revenue timelines for SEO campaigns." },
+      { title: "Compare Channels", description: "Show SEO cost efficiency vs paid advertising." },
+      { title: "Track Progress", description: "Benchmark actual results against initial projections." }
+    ],
+    targetAudience: ["SEO Managers", "Marketing Directors", "Agency Owners", "CMOs", "Consultants"],
+    howToSteps: [
+      "Enter your current or projected monthly organic traffic",
+      "Input your website's conversion rate and average order value",
+      "Add monthly SEO investment costs (tools, content, agency fees)",
+      "Review projected revenue, ROI percentage, and payback period",
+      "Use the results in proposals, reports, and budget presentations"
+    ]
+  },
+  "email-subject-line-tester": {
+    shortDescription: "Score email subject lines for length, power words, personalization, and spam trigger detection.",
+    longDescription: "The Email Subject Line Tester scores your subject lines on a 100-point scale analyzing length optimization, power word presence, emoji usage, spam trigger words, and personalization elements. With average email open rates around 20%, a compelling subject line is the single biggest lever for improving email performance. Test multiple variations to find the highest-scoring option before sending.",
+    benefits: [
+      { title: "Higher Open Rates", description: "Optimized subject lines can improve opens by 30-50%." },
+      { title: "Spam Detection", description: "Catch trigger words that send emails to spam folders." },
+      { title: "A/B Testing", description: "Compare multiple variations to pick the winner." },
+      { title: "Mobile Optimization", description: "Ensure subject lines display fully on mobile screens." }
+    ],
+    targetAudience: ["Email Marketers", "Newsletter Creators", "Sales Teams", "Marketing Automation Specialists"],
+    howToSteps: [
+      "Type your email subject line into the input field",
+      "Review the overall score and individual factor analysis",
+      "Check for spam trigger words and fix any detected",
+      "Try variations with numbers, power words, or questions",
+      "Pick the highest-scoring subject line for your campaign"
+    ]
+  },
+  "color-contrast-checker": {
+    shortDescription: "Check foreground and background color combinations against WCAG 2.1 accessibility standards.",
+    longDescription: "The Color Contrast Checker calculates the contrast ratio between any two colors and evaluates compliance with WCAG 2.1 AA and AAA accessibility standards. Accessible design isn't optional — it's required by law in many jurisdictions and improves usability for all visitors. Poor contrast is one of the most common accessibility failures, affecting readability for the 300 million people worldwide with color vision deficiency.",
+    benefits: [
+      { title: "Legal Compliance", description: "Meet ADA, EAA, and WCAG requirements for digital accessibility." },
+      { title: "Better Readability", description: "High contrast improves reading speed and comprehension for everyone." },
+      { title: "Inclusive Design", description: "Serve users with low vision and color blindness effectively." },
+      { title: "SEO Signal", description: "Google considers page experience, and accessibility is part of UX quality." }
+    ],
+    targetAudience: ["UI Designers", "Frontend Developers", "Accessibility Specialists", "Brand Teams", "UX Researchers"],
+    howToSteps: [
+      "Enter or pick your foreground (text) color",
+      "Enter or pick your background color",
+      "Review the contrast ratio and WCAG compliance levels",
+      "Adjust colors until you achieve at least AA compliance (4.5:1)",
+      "Test with your actual font sizes — large text has relaxed requirements (3:1)"
+    ]
+  }
+};
+
+/** Get content for a specific tool, merging tool-specific overrides on top of category content */
+export function getToolContent(category: string, slug?: string): ToolCategoryContent | null {
+  const base = toolCategoryContent[category] || null;
+  if (!base || !slug) return base;
+  const override = toolSpecificContent[slug];
+  if (!override) return base;
+  return { ...base, ...override, benefits: override.benefits || base.benefits };
 }
 
 /** Get all category names */
