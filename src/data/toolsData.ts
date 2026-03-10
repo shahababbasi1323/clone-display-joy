@@ -20,7 +20,7 @@ export const toolCategories = [
   { name: "Conversion & UX", slugs: ["cta-generator","ab-test-duration-calculator","color-contrast-checker","page-speed-checklist"] },
   { name: "Email & Outreach", slugs: ["email-subject-line-tester","cold-email-generator"] },
   { name: "PPC & Paid Ads", slugs: ["google-ads-budget-calculator","roas-calculator","ad-copy-generator","quality-score-estimator","ppc-campaign-audit-checklist"] },
-  { name: "Domain & URL Tools", slugs: ["bulk-expired-domain-checker","domain-authority-checker","redirect-chain-checker","broken-link-checker"] },
+  { name: "Domain & URL Tools", slugs: ["bulk-expired-domain-checker","domain-authority-checker","redirect-chain-checker","broken-link-checker","bulk-url-issue-checker"] },
 ];
 
 const t = (slug: string, name: string, metaTitle: string, metaDescription: string, category: string): ToolData => ({
