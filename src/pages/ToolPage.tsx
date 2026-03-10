@@ -107,6 +107,7 @@ const registry: Record<string, React.FC> = {
   "domain-authority-checker": DomainAuthorityChecker,
   "redirect-chain-checker": RedirectChainChecker,
   "broken-link-checker": BrokenLinkChecker,
+  "bulk-url-issue-checker": BulkUrlIssueChecker,
 };
 
 const ToolPage = () => {
