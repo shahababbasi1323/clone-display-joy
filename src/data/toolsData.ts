@@ -20,7 +20,7 @@ export const toolCategories = [
   { name: "Conversion & UX", slugs: ["cta-generator","ab-test-duration-calculator","color-contrast-checker","page-speed-checklist"] },
   { name: "Email & Outreach", slugs: ["email-subject-line-tester","cold-email-generator"] },
   { name: "PPC & Paid Ads", slugs: ["google-ads-budget-calculator","roas-calculator","ad-copy-generator","quality-score-estimator","ppc-campaign-audit-checklist"] },
-  { name: "Domain & URL Tools", slugs: ["bulk-expired-domain-checker","domain-authority-checker","redirect-chain-checker","broken-link-checker"] },
+  { name: "Domain & URL Tools", slugs: ["bulk-expired-domain-checker","domain-authority-checker","redirect-chain-checker","broken-link-checker","bulk-url-issue-checker"] },
 ];
 
 const t = (slug: string, name: string, metaTitle: string, metaDescription: string, category: string): ToolData => ({
@@ -113,6 +113,7 @@ export const toolsData: ToolData[] = [
   t("domain-authority-checker","Domain Authority Checker","Domain Authority Checker - Estimate DA Score","Estimate domain authority score based on TLD quality, domain length, brandability, and HTTPS status.","Domain & URL Tools"),
   t("redirect-chain-checker","Redirect Chain Checker","Redirect Chain Checker - Trace URL Redirects","Trace redirect chains for URLs including HTTP→HTTPS, www redirects, and trailing slash redirects.","Domain & URL Tools"),
   t("broken-link-checker","Broken Link Checker","Broken Link Checker - Find Broken Outbound Links","Scan any webpage to find broken outbound links. Identify dead links hurting your SEO and user experience.","Domain & URL Tools"),
+  t("bulk-url-issue-checker","Bulk URL Issue Checker","Bulk URL Issue Checker - Find Dead Links & Errors","Check multiple URLs in bulk for 404 errors, dead links, timeouts, and other HTTP issues. Export results as CSV.","Domain & URL Tools"),
 ];
 
 export const toolsDataMap: Record<string, ToolData> = Object.fromEntries(
