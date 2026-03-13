@@ -122,8 +122,8 @@ export const ForceIndexingTool = () => {
       toast.error("Please enter at least one valid URL");
       return;
     }
-    if (urls.length > 100) {
-      toast.error("Maximum 100 URLs at a time");
+    if (urls.length > 500) {
+      toast.error("Maximum 500 URLs at a time");
       return;
     }
 
