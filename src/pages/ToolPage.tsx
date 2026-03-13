@@ -20,6 +20,7 @@ import { EmailSubjectLineTester, ColdEmailGenerator } from "./tools/EmailTools";
 import { GoogleAdsBudgetCalculator, RoasCalculator, AdCopyGenerator, QualityScoreEstimator, PpcCampaignAuditChecklist } from "./tools/PpcTools";
 import { BulkExpiredDomainChecker, DomainAuthorityChecker, RedirectChainChecker, BrokenLinkChecker } from "./tools/DomainTools";
 import { BulkUrlIssueChecker } from "./tools/UrlIssueTools";
+import { ForceIndexingTool } from "./tools/IndexingTools";
 
 const registry: Record<string, React.FC> = {
   "word-counter": WordCounter,
@@ -108,6 +109,7 @@ const registry: Record<string, React.FC> = {
   "redirect-chain-checker": RedirectChainChecker,
   "broken-link-checker": BrokenLinkChecker,
   "bulk-url-issue-checker": BulkUrlIssueChecker,
+  "force-google-indexing": ForceIndexingTool,
 };
 
 const ToolPage = () => {
