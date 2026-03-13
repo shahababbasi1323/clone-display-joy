@@ -44,6 +44,43 @@ export const ForceIndexingTool = () => {
   const [processing, setProcessing] = useState(false);
   const [progress, setProgress] = useState({ done: 0, total: 0 });
 
+  const allSiteUrls = useMemo(() => {
+    const BASE = "https://shahababbasi.com";
+    const urls: string[] = [
+      BASE,
+      `${BASE}/about`,
+      `${BASE}/services`,
+      `${BASE}/industries`,
+      `${BASE}/locations`,
+      `${BASE}/ppc`,
+      `${BASE}/pricing`,
+      `${BASE}/tools`,
+      `${BASE}/blog`,
+      `${BASE}/contact`,
+      `${BASE}/free-seo-audit`,
+      `${BASE}/free-seo-resources`,
+      `${BASE}/testimonials`,
+      `${BASE}/faq`,
+      `${BASE}/sitemap`,
+    ];
+    servicesData.forEach(s => urls.push(`${BASE}/services/${s.slug}`));
+    ppcServicesData.forEach(p => urls.push(`${BASE}/ppc/${p.slug}`));
+    industriesData.forEach(i => urls.push(`${BASE}/industries/${i.slug}`));
+    locationsData.forEach(l => {
+      const pfx = l.langPrefix ? `/${l.langPrefix}` : "";
+      urls.push(`${BASE}${pfx}/${l.slug}`);
+    });
+    toolsData.forEach(t => urls.push(`${BASE}/tools/${t.slug}`));
+    blogPosts.forEach(b => urls.push(`${BASE}/blog/${b.slug}`));
+    resources.forEach(r => urls.push(`${BASE}/free-seo-resources/${r.slug}`));
+    return urls;
+  }, []);
+
+  const loadAllSiteUrls = () => {
+    setInput(allSiteUrls.join("\n"));
+    toast.success(`Loaded ${allSiteUrls.length} shahababbasi.com URLs!`);
+  };
+
   const parseUrls = (text: string): string[] => {
     return text
       .split(/[\n,]+/)
