@@ -109,6 +109,7 @@ const registry: Record<string, React.FC> = {
   "redirect-chain-checker": RedirectChainChecker,
   "broken-link-checker": BrokenLinkChecker,
   "bulk-url-issue-checker": BulkUrlIssueChecker,
+  "force-google-indexing": ForceIndexingTool,
 };
 
 const ToolPage = () => {
