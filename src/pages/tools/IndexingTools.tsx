@@ -1,10 +1,17 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Rocket, ExternalLink, CheckCircle2, AlertTriangle, Info, Copy, Globe, Zap } from "lucide-react";
+import { Rocket, ExternalLink, CheckCircle2, AlertTriangle, Info, Copy, Globe, Zap, ListPlus } from "lucide-react";
 import { toast } from "sonner";
+import { servicesData } from "@/data/servicesData";
+import { locationsData } from "@/data/locationsData";
+import { blogPosts } from "@/data/blogData";
+import { toolsData } from "@/data/toolsData";
+import { ppcServicesData } from "@/data/ppcServicesData";
+import { industriesData } from "@/data/industriesData";
+import { resources } from "@/data/resourcesData";
 
 interface IndexResult {
   url: string;
@@ -36,6 +43,43 @@ export const ForceIndexingTool = () => {
   const [results, setResults] = useState<IndexResult[]>([]);
   const [processing, setProcessing] = useState(false);
   const [progress, setProgress] = useState({ done: 0, total: 0 });
+
+  const allSiteUrls = useMemo(() => {
+    const BASE = "https://shahababbasi.com";
+    const urls: string[] = [
+      BASE,
+      `${BASE}/about`,
+      `${BASE}/services`,
+      `${BASE}/industries`,
+      `${BASE}/locations`,
+      `${BASE}/ppc`,
+      `${BASE}/pricing`,
+      `${BASE}/tools`,
+      `${BASE}/blog`,
+      `${BASE}/contact`,
+      `${BASE}/free-seo-audit`,
+      `${BASE}/free-seo-resources`,
+      `${BASE}/testimonials`,
+      `${BASE}/faq`,
+      `${BASE}/sitemap`,
+    ];
+    servicesData.forEach(s => urls.push(`${BASE}/services/${s.slug}`));
+    ppcServicesData.forEach(p => urls.push(`${BASE}/ppc/${p.slug}`));
+    industriesData.forEach(i => urls.push(`${BASE}/industries/${i.slug}`));
+    locationsData.forEach(l => {
+      const pfx = l.langPrefix ? `/${l.langPrefix}` : "";
+      urls.push(`${BASE}${pfx}/${l.slug}`);
+    });
+    toolsData.forEach(t => urls.push(`${BASE}/tools/${t.slug}`));
+    blogPosts.forEach(b => urls.push(`${BASE}/blog/${b.slug}`));
+    resources.forEach(r => urls.push(`${BASE}/free-seo-resources/${r.slug}`));
+    return urls;
+  }, []);
+
+  const loadAllSiteUrls = () => {
+    setInput(allSiteUrls.join("\n"));
+    toast.success(`Loaded ${allSiteUrls.length} shahababbasi.com URLs!`);
+  };
 
   const parseUrls = (text: string): string[] => {
     return text
@@ -78,8 +122,8 @@ export const ForceIndexingTool = () => {
       toast.error("Please enter at least one valid URL");
       return;
     }
-    if (urls.length > 100) {
-      toast.error("Maximum 100 URLs at a time");
+    if (urls.length > 500) {
+      toast.error("Maximum 500 URLs at a time");
       return;
     }
 
@@ -168,9 +212,14 @@ export const ForceIndexingTool = () => {
 
       {/* Input */}
       <div>
-        <label className="text-sm font-medium text-foreground mb-2 block">
-          Enter URLs (one per line, max 100)
-        </label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="text-sm font-medium text-foreground">
+            Enter URLs (one per line, max 500)
+          </label>
+          <Button variant="outline" size="sm" onClick={loadAllSiteUrls} className="gap-1 text-xs">
+            <ListPlus className="h-3 w-3" /> Load All shahababbasi.com URLs ({allSiteUrls.length})
+          </Button>
+        </div>
         <Textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
