@@ -214,7 +214,7 @@ export const ForceIndexingTool = () => {
       <div>
         <div className="flex items-center justify-between mb-2">
           <label className="text-sm font-medium text-foreground">
-            Enter URLs (one per line, max 100)
+            Enter URLs (one per line, max 500)
           </label>
           <Button variant="outline" size="sm" onClick={loadAllSiteUrls} className="gap-1 text-xs">
             <ListPlus className="h-3 w-3" /> Load All shahababbasi.com URLs ({allSiteUrls.length})
