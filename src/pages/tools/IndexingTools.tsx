@@ -1,10 +1,17 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Rocket, ExternalLink, CheckCircle2, AlertTriangle, Info, Copy, Globe, Zap } from "lucide-react";
+import { Rocket, ExternalLink, CheckCircle2, AlertTriangle, Info, Copy, Globe, Zap, ListPlus } from "lucide-react";
 import { toast } from "sonner";
+import { servicesData } from "@/data/servicesData";
+import { locationsData } from "@/data/locationsData";
+import { blogPosts } from "@/data/blogData";
+import { toolsData } from "@/data/toolsData";
+import { ppcServicesData } from "@/data/ppcServicesData";
+import { industriesData } from "@/data/industriesData";
+import { resources } from "@/data/resourcesData";
 
 interface IndexResult {
   url: string;
