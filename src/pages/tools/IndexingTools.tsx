@@ -212,9 +212,14 @@ export const ForceIndexingTool = () => {
 
       {/* Input */}
       <div>
-        <label className="text-sm font-medium text-foreground mb-2 block">
-          Enter URLs (one per line, max 100)
-        </label>
+        <div className="flex items-center justify-between mb-2">
+          <label className="text-sm font-medium text-foreground">
+            Enter URLs (one per line, max 100)
+          </label>
+          <Button variant="outline" size="sm" onClick={loadAllSiteUrls} className="gap-1 text-xs">
+            <ListPlus className="h-3 w-3" /> Load All shahababbasi.com URLs ({allSiteUrls.length})
+          </Button>
+        </div>
         <Textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
