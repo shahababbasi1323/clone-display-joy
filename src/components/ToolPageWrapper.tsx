@@ -244,20 +244,6 @@ const ToolPageWrapper = ({ tool, children }: Props) => {
             </motion.div>
           )}
 
-          {/* Why This Tool */}
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
-            <h2 className="text-2xl font-bold mb-4">Why Use Our {tool.name}?</h2>
-            <div className="glass rounded-xl p-6 space-y-3">
-              <p className="text-muted-foreground">Our {tool.name} is built for SEO professionals, content creators, and digital marketers who need fast, reliable results without signing up or paying for expensive tools.</p>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>✅ 100% free — no signup, no limits</li>
-                <li>✅ Privacy-first — all processing happens in your browser</li>
-                <li>✅ Instant results — no waiting for server responses</li>
-                <li>✅ Mobile-friendly — works on any device</li>
-                <li>✅ Copy-to-clipboard — easily use results anywhere</li>
-              </ul>
-            </div>
-          </motion.div>
 
           {/* Related Tools */}
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="mt-16">
