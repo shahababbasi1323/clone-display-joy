@@ -86,6 +86,8 @@ const IndustryPage = () => {
 
       {/* Rich SEO Content — anchor text variations, LSI keywords */}
       <section id="digital-marketing-guide" className="scroll-mt-20">
+        <IndustryContent industry={industry} />
+      </section>
 
       {/* Keywords We Target */}
       <section id="keywords" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
