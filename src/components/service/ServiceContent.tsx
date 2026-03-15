@@ -185,7 +185,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
 
       {/* LSI Content */}
       {lsi && (
-        <section className="section-padding">
+        <section id="why-it-matters" className="section-padding scroll-mt-20">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold mb-6">{lsi.title}</h2>
             <div className="space-y-4">
