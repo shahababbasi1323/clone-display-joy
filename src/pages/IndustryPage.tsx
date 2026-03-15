@@ -13,6 +13,7 @@ import IndustryServices from "@/components/industry/IndustryServices";
 import IndustryContent from "@/components/industry/IndustryContent";
 import IndustryInterlinking from "@/components/industry/IndustryInterlinking";
 import IndustrySchema from "@/components/industry/IndustrySchema";
+import IndustryTableOfContents from "@/components/industry/IndustryTableOfContents";
 
 const IndustryPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -32,11 +33,16 @@ const IndustryPage = () => {
       {/* Hero with trust signals */}
       <IndustryHero industry={industry} />
 
+      {/* Table of Contents */}
+      <IndustryTableOfContents industry={industry} />
+
       {/* Why SEO Matters — LSI keyword rich */}
-      <IndustryWhySeo industry={industry} />
+      <section id="why-seo-matters" className="scroll-mt-20">
+        <IndustryWhySeo industry={industry} />
+      </section>
 
       {/* Challenges */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="industry-challenges" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold mb-10">
             {industry.shortTitle} Industry <span className="text-gradient">Challenges</span>
@@ -53,7 +59,7 @@ const IndustryPage = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="section-padding">
+      <section id="our-approach" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold mb-10">Our {industry.shortTitle} SEO <span className="text-gradient">Approach</span></h2>
           <div className="space-y-6">
@@ -74,13 +80,17 @@ const IndustryPage = () => {
       </section>
 
       {/* Full Services Section */}
-      <IndustryServices industry={industry} />
+      <section id="services" className="scroll-mt-20">
+        <IndustryServices industry={industry} />
+      </section>
 
       {/* Rich SEO Content — anchor text variations, LSI keywords */}
-      <IndustryContent industry={industry} />
+      <section id="digital-marketing-guide" className="scroll-mt-20">
+        <IndustryContent industry={industry} />
+      </section>
 
       {/* Keywords We Target */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="keywords" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-3 mb-4">
             <Target className="h-6 w-6 text-accent" />
@@ -98,7 +108,7 @@ const IndustryPage = () => {
       </section>
 
       {/* Results */}
-      <section className="section-padding">
+      <section id="results" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-3 mb-10">
             <BarChart3 className="h-6 w-6 text-accent" />
@@ -138,7 +148,7 @@ const IndustryPage = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding">
+      <section id="faq" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-4">
             {industry.shortTitle} SEO <span className="text-gradient">FAQ</span>
