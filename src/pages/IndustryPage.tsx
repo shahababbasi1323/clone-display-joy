@@ -13,6 +13,7 @@ import IndustryServices from "@/components/industry/IndustryServices";
 import IndustryContent from "@/components/industry/IndustryContent";
 import IndustryInterlinking from "@/components/industry/IndustryInterlinking";
 import IndustrySchema from "@/components/industry/IndustrySchema";
+import IndustryTableOfContents from "@/components/industry/IndustryTableOfContents";
 
 const IndustryPage = () => {
   const { slug } = useParams<{ slug: string }>();
