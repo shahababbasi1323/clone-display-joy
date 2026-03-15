@@ -33,11 +33,16 @@ const IndustryPage = () => {
       {/* Hero with trust signals */}
       <IndustryHero industry={industry} />
 
+      {/* Table of Contents */}
+      <IndustryTableOfContents industry={industry} />
+
       {/* Why SEO Matters — LSI keyword rich */}
-      <IndustryWhySeo industry={industry} />
+      <section id="why-seo-matters" className="scroll-mt-20">
+        <IndustryWhySeo industry={industry} />
+      </section>
 
       {/* Challenges */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="industry-challenges" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold mb-10">
             {industry.shortTitle} Industry <span className="text-gradient">Challenges</span>
