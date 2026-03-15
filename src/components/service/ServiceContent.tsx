@@ -168,7 +168,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
   return (
     <>
       {/* What Is */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="what-is" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-4">{service.whatIs.title}</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">{service.whatIs.description}</p>
