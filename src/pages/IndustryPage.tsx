@@ -88,7 +88,7 @@ const IndustryPage = () => {
       <section id="digital-marketing-guide" className="scroll-mt-20">
 
       {/* Keywords We Target */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="keywords" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-3 mb-4">
             <Target className="h-6 w-6 text-accent" />
@@ -106,7 +106,7 @@ const IndustryPage = () => {
       </section>
 
       {/* Results */}
-      <section className="section-padding">
+      <section id="results" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center gap-3 mb-10">
             <BarChart3 className="h-6 w-6 text-accent" />
