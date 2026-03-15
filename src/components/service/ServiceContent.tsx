@@ -168,7 +168,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
   return (
     <>
       {/* What Is */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="what-is" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-4">{service.whatIs.title}</h2>
           <p className="text-muted-foreground leading-relaxed mb-8">{service.whatIs.description}</p>
@@ -185,7 +185,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
 
       {/* LSI Content */}
       {lsi && (
-        <section className="section-padding">
+        <section id="why-it-matters" className="section-padding scroll-mt-20">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold mb-6">{lsi.title}</h2>
             <div className="space-y-4">
@@ -205,7 +205,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       )}
 
       {/* Process */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="our-process" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-10">{service.process.title}</h2>
           <div className="space-y-6">
@@ -237,7 +237,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* Tools & Deliverables */}
-      <section className="section-padding">
+      <section id="tools-deliverables" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
@@ -266,7 +266,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* Pricing */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="pricing" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <div className="glass rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-2">Pricing</h2>
@@ -282,7 +282,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding">
+      <section id="faq" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-10">
             Frequently Asked <span className="text-gradient">Questions</span>
