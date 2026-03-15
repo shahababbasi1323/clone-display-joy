@@ -237,7 +237,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* Tools & Deliverables */}
-      <section className="section-padding">
+      <section id="tools-deliverables" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
