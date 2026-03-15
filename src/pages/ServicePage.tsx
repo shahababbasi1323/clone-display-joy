@@ -26,6 +26,7 @@ const ServicePage = () => {
   return (
     <Layout>
       <ServiceHero service={service} />
+      <ServiceTableOfContents service={service} />
       <ServiceContent service={service} />
       <ServiceInterlinking service={service} />
 

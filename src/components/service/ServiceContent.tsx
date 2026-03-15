@@ -282,7 +282,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding">
+      <section id="faq" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-10">
             Frequently Asked <span className="text-gradient">Questions</span>
