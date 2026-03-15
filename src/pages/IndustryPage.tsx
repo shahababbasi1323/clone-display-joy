@@ -146,7 +146,7 @@ const IndustryPage = () => {
       </section>
 
       {/* FAQ */}
-      <section className="section-padding">
+      <section id="faq" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold text-center mb-4">
             {industry.shortTitle} SEO <span className="text-gradient">FAQ</span>
