@@ -9,6 +9,7 @@ import ServiceHero from "@/components/service/ServiceHero";
 import ServiceContent from "@/components/service/ServiceContent";
 import ServiceInterlinking from "@/components/service/ServiceInterlinking";
 import ServiceSchema from "@/components/service/ServiceSchema";
+import ServiceTableOfContents from "@/components/service/ServiceTableOfContents";
 
 const ServicePage = () => {
   const { slug } = useParams<{ slug: string }>();
