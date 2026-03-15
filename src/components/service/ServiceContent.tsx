@@ -266,7 +266,7 @@ const ServiceContent = ({ service }: { service: ServiceData }) => {
       </section>
 
       {/* Pricing */}
-      <section className="section-padding bg-card/20 border-y border-border">
+      <section id="pricing" className="section-padding bg-card/20 border-y border-border scroll-mt-20">
         <div className="container mx-auto max-w-4xl">
           <div className="glass rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-2">Pricing</h2>
