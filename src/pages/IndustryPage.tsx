@@ -59,7 +59,7 @@ const IndustryPage = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="section-padding">
+      <section id="our-approach" className="section-padding scroll-mt-20">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold mb-10">Our {industry.shortTitle} SEO <span className="text-gradient">Approach</span></h2>
           <div className="space-y-6">
@@ -80,10 +80,12 @@ const IndustryPage = () => {
       </section>
 
       {/* Full Services Section */}
-      <IndustryServices industry={industry} />
+      <section id="services" className="scroll-mt-20">
+        <IndustryServices industry={industry} />
+      </section>
 
       {/* Rich SEO Content — anchor text variations, LSI keywords */}
-      <IndustryContent industry={industry} />
+      <section id="digital-marketing-guide" className="scroll-mt-20">
 
       {/* Keywords We Target */}
       <section className="section-padding bg-card/20 border-y border-border">
