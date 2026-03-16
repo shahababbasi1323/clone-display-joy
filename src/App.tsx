@@ -30,6 +30,7 @@ import BlogPostPage from "./pages/BlogPost";
 import Industries from "./pages/Industries";
 import IndustryPage from "./pages/IndustryPage";
 import Locations from "./pages/Locations";
+import CountryHubPage from "./pages/CountryHubPage";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminBlog from "./pages/admin/AdminBlog";
