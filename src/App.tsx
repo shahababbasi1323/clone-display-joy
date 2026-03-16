@@ -30,6 +30,7 @@ import BlogPostPage from "./pages/BlogPost";
 import Industries from "./pages/Industries";
 import IndustryPage from "./pages/IndustryPage";
 import Locations from "./pages/Locations";
+import CountryHubPage from "./pages/CountryHubPage";
 import AdminLogin from "./pages/admin/AdminLogin";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminBlog from "./pages/admin/AdminBlog";
@@ -60,6 +61,7 @@ const App = () => (
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/:slug" element={<IndustryPage />} />
           <Route path="/locations" element={<Locations />} />
+          <Route path="/locations/:country" element={<CountryHubPage />} />
           <Route path="/ppc" element={<PpcServices />} />
           <Route path="/ppc/:slug" element={<PpcServicePage />} />
           <Route path="/contact" element={<Contact />} />

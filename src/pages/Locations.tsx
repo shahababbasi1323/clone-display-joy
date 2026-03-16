@@ -4,6 +4,7 @@ import { ArrowRight, MapPin, Globe, Search, PenTool, Monitor, Share2, BarChart3,
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { locationsData } from "@/data/locationsData";
+import { getCountryHubByCode } from "@/data/countryHubData";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 
@@ -110,7 +111,14 @@ const Locations = () => {
               <div key={country} className="mb-12">
                 <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                   <MapPin className="h-5 w-5 text-primary" />
-                  {country}
+                  {(() => {
+                    const hub = getCountryHubByCode(cities[0]?.countryCode);
+                    return hub ? (
+                      <Link to={`/locations/${hub.slug}`} className="hover:text-primary transition-colors">
+                        {country}
+                      </Link>
+                    ) : country;
+                  })()}
                   <span className="text-sm font-normal text-muted-foreground">({cities.length} {cities.length === 1 ? "city" : "cities"})</span>
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
