@@ -20,6 +20,7 @@ function sitemapPlugin(): Plugin {
           const { resources } = await import("./src/data/resourcesData");
           const { industriesData } = await import("./src/data/industriesData");
           const { locationsData } = await import("./src/data/locationsData");
+          const { countryHubData } = await import("./src/data/countryHubData");
 
           const BASE = "https://shahababbasi.com";
           const today = new Date().toISOString().split("T")[0];
