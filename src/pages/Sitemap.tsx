@@ -8,6 +8,7 @@ import { toolsData, toolCategories } from "@/data/toolsData";
 import { blogPosts } from "@/data/blogData";
 import { ppcServicesData } from "@/data/ppcServicesData";
 import { resources } from "@/data/resourcesData";
+import { countryHubData } from "@/data/countryHubData";
 import { MapPin, Wrench, BookOpen, Building2, Megaphone, FileText, Download, Globe, Info } from "lucide-react";
 
 const SitemapSection = ({
@@ -139,6 +140,15 @@ const Sitemap = () => {
             </div>
           </SitemapSection>
 
+          {/* Country Hubs */}
+          <SitemapSection title={`Country Hub Pages (${countryHubData.length})`} icon={Globe}>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+              {countryHubData.map((hub) => (
+                <SitemapLink key={hub.slug} to={`/locations/${hub.slug}`} label={`${hub.name} SEO`} />
+              ))}
+            </ul>
+          </SitemapSection>
+
           {/* Locations */}
           <SitemapSection title={`Location Pages (${locationsData.length})`} icon={MapPin}>
             {Object.entries(locationsByCountry).map(([country, locs]) => (
@@ -208,7 +218,7 @@ const Sitemap = () => {
             <p className="text-muted-foreground text-sm">
               Total pages indexed:{" "}
               <span className="font-bold text-foreground">
-                {16 + servicesData.length + ppcServicesData.length + industriesData.length + locationsData.length + toolsData.length + blogPosts.length + resources.length + 10}+
+                {16 + servicesData.length + ppcServicesData.length + industriesData.length + countryHubData.length + locationsData.length + toolsData.length + blogPosts.length + resources.length + 10}+
               </span>
             </p>
           </div>

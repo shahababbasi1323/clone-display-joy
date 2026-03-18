@@ -20,6 +20,7 @@ function sitemapPlugin(): Plugin {
           const { resources } = await import("./src/data/resourcesData");
           const { industriesData } = await import("./src/data/industriesData");
           const { locationsData } = await import("./src/data/locationsData");
+          const { countryHubData } = await import("./src/data/countryHubData");
 
           const BASE = "https://shahababbasi.com";
           const today = new Date().toISOString().split("T")[0];
@@ -54,6 +55,7 @@ function sitemapPlugin(): Plugin {
           for (const b of blogPosts) add(`/blog/${b.slug}`, "monthly", "0.7");
           for (const r of resources) add(`/free-seo-resources/${r.slug}`, "monthly", "0.6");
           for (const ind of industriesData) add(`/industries/${ind.slug}`, "weekly", "0.7");
+          for (const hub of countryHubData) add(`/locations/${hub.slug}`, "weekly", "0.7");
           for (const loc of locationsData) {
             const pfx = loc.langPrefix ? `/${loc.langPrefix}` : "";
             add(`${pfx}/${loc.slug}`, "weekly", "0.7");
