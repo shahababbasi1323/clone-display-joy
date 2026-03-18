@@ -301,7 +301,40 @@ const Navbar = () => {
         <div className="lg:hidden glass border-t border-border">
           <nav className="container mx-auto py-4 flex flex-col gap-1">
             {navLinks.map((link) =>
-              link.children ? (
+              link.mega ? (
+                <div key={link.label}>
+                  <button
+                    onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
+                    className="w-full px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary flex items-center justify-between"
+                  >
+                    {link.label}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileSubmenu === link.label && (
+                    <div className="ml-2 border-l border-border max-h-[50vh] overflow-y-auto">
+                      <Link to="/locations" className="px-6 py-3 rounded-lg text-sm font-semibold text-primary hover:bg-secondary block">
+                        🌍 All Locations
+                      </Link>
+                      {(link as any).megaGroups.map((group: any) => (
+                        <div key={group.title}>
+                          <div className="px-6 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                            {group.title}
+                          </div>
+                          {group.items.map((item: any) => (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              className="px-6 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : link.children ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
