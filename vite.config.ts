@@ -55,6 +55,7 @@ function sitemapPlugin(): Plugin {
           for (const b of blogPosts) add(`/blog/${b.slug}`, "monthly", "0.7");
           for (const r of resources) add(`/free-seo-resources/${r.slug}`, "monthly", "0.6");
           for (const ind of industriesData) add(`/industries/${ind.slug}`, "weekly", "0.7");
+          for (const hub of countryHubData) add(`/locations/${hub.slug}`, "weekly", "0.7");
           for (const loc of locationsData) {
             const pfx = loc.langPrefix ? `/${loc.langPrefix}` : "";
             add(`${pfx}/${loc.slug}`, "weekly", "0.7");

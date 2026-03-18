@@ -140,6 +140,15 @@ const Sitemap = () => {
             </div>
           </SitemapSection>
 
+          {/* Country Hubs */}
+          <SitemapSection title={`Country Hub Pages (${countryHubData.length})`} icon={Globe}>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
+              {countryHubData.map((hub) => (
+                <SitemapLink key={hub.slug} to={`/locations/${hub.slug}`} label={`${hub.name} SEO`} />
+              ))}
+            </ul>
+          </SitemapSection>
+
           {/* Locations */}
           <SitemapSection title={`Location Pages (${locationsData.length})`} icon={MapPin}>
             {Object.entries(locationsByCountry).map(([country, locs]) => (
