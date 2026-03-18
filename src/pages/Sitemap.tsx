@@ -218,7 +218,7 @@ const Sitemap = () => {
             <p className="text-muted-foreground text-sm">
               Total pages indexed:{" "}
               <span className="font-bold text-foreground">
-                {16 + servicesData.length + ppcServicesData.length + industriesData.length + locationsData.length + toolsData.length + blogPosts.length + resources.length + 10}+
+                {16 + servicesData.length + ppcServicesData.length + industriesData.length + countryHubData.length + locationsData.length + toolsData.length + blogPosts.length + resources.length + 10}+
               </span>
             </p>
           </div>
