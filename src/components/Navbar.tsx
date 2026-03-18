@@ -44,73 +44,105 @@ const navLinks = [
   {
     label: "Locations",
     href: "/locations",
-    children: [
-      { label: "🌍 All Locations", href: "/locations" },
-      { label: "── North America ──", href: "/locations", group: true } as any,
-      { label: "🇺🇸 USA", href: "/locations/usa" },
-      { label: "🇨🇦 Canada", href: "/locations/canada" },
-      { label: "🇲🇽 Mexico", href: "/locations/mexico" },
-      { label: "── Europe ──", href: "/locations", group: true } as any,
-      { label: "🇬🇧 United Kingdom", href: "/locations/uk" },
-      { label: "🇩🇪 Germany", href: "/locations/germany" },
-      { label: "🇫🇷 France", href: "/locations/france" },
-      { label: "🇮🇹 Italy", href: "/locations/italy" },
-      { label: "🇪🇸 Spain", href: "/locations/spain" },
-      { label: "🇳🇱 Netherlands", href: "/locations/netherlands" },
-      { label: "🇵🇹 Portugal", href: "/locations/portugal" },
-      { label: "🇮🇪 Ireland", href: "/locations/ireland" },
-      { label: "🇦🇹 Austria", href: "/locations/austria" },
-      { label: "🇨🇭 Switzerland", href: "/locations/switzerland" },
-      { label: "🇧🇪 Belgium", href: "/locations/belgium" },
-      { label: "🇵🇱 Poland", href: "/locations/poland" },
-      { label: "🇨🇿 Czech Republic", href: "/locations/czech-republic" },
-      { label: "🇭🇺 Hungary", href: "/locations/hungary" },
-      { label: "🇷🇴 Romania", href: "/locations/romania" },
-      { label: "🇬🇷 Greece", href: "/locations/greece" },
-      { label: "🇹🇷 Turkey", href: "/locations/turkey" },
-      { label: "── Scandinavia ──", href: "/locations", group: true } as any,
-      { label: "🇩🇰 Denmark", href: "/locations/denmark" },
-      { label: "🇸🇪 Sweden", href: "/locations/sweden" },
-      { label: "🇳🇴 Norway", href: "/locations/norway" },
-      { label: "🇫🇮 Finland", href: "/locations/finland" },
-      { label: "── Middle East ──", href: "/locations", group: true } as any,
-      { label: "🇦🇪 UAE", href: "/locations/uae" },
-      { label: "🇸🇦 Saudi Arabia", href: "/locations/saudi-arabia" },
-      { label: "🇮🇱 Israel", href: "/locations/israel" },
-      { label: "── Asia Pacific ──", href: "/locations", group: true } as any,
-      { label: "🇦🇺 Australia", href: "/locations/australia" },
-      { label: "🇳🇿 New Zealand", href: "/locations/new-zealand" },
-      { label: "🇮🇳 India", href: "/locations/india" },
-      { label: "🇵🇰 Pakistan", href: "/locations/pakistan" },
-      { label: "🇯🇵 Japan", href: "/locations/japan" },
-      { label: "🇰🇷 South Korea", href: "/locations/south-korea" },
-      { label: "🇸🇬 Singapore", href: "/locations/singapore" },
-      { label: "🇲🇾 Malaysia", href: "/locations/malaysia" },
-      { label: "🇹🇭 Thailand", href: "/locations/thailand" },
-      { label: "🇵🇭 Philippines", href: "/locations/philippines" },
-      { label: "── Americas ──", href: "/locations", group: true } as any,
-      { label: "🇧🇷 Brazil", href: "/locations/brazil" },
-      { label: "🇨🇴 Colombia", href: "/locations/colombia" },
-      { label: "🇦🇷 Argentina", href: "/locations/argentina" },
-      { label: "🇨🇱 Chile", href: "/locations/chile" },
-      { label: "🇵🇪 Peru", href: "/locations/peru" },
-      { label: "── Africa ──", href: "/locations", group: true } as any,
-      { label: "🇿🇦 South Africa", href: "/locations/south-africa" },
-      { label: "🇳🇬 Nigeria", href: "/locations/nigeria" },
-      { label: "🇰🇪 Kenya", href: "/locations/kenya" },
-      { label: "── By Language ──", href: "/locations", group: true } as any,
-      { label: "🇸🇦 العربية", href: "/ar/locations" },
-      { label: "🇫🇷 Français", href: "/fr/locations" },
-      { label: "🇩🇪 Deutsch", href: "/de/locations" },
-      { label: "🇪🇸 Español", href: "/es/locations" },
-      { label: "🇳🇱 Nederlands", href: "/nl/locations" },
-      { label: "🇮🇹 Italiano", href: "/it/locations" },
-      { label: "🇵🇹 Português", href: "/pt/locations" },
-      { label: "🇹🇷 Türkçe", href: "/tr/locations" },
-      { label: "🇯🇵 日本語", href: "/ja/locations" },
-      { label: "🇰🇷 한국어", href: "/ko/locations" },
+    mega: true,
+    megaGroups: [
+      {
+        title: "North America",
+        items: [
+          { label: "🇺🇸 USA", href: "/locations/usa" },
+          { label: "🇨🇦 Canada", href: "/locations/canada" },
+          { label: "🇲🇽 Mexico", href: "/locations/mexico" },
+        ],
+      },
+      {
+        title: "Europe",
+        items: [
+          { label: "🇬🇧 United Kingdom", href: "/locations/uk" },
+          { label: "🇩🇪 Germany", href: "/locations/germany" },
+          { label: "🇫🇷 France", href: "/locations/france" },
+          { label: "🇮🇹 Italy", href: "/locations/italy" },
+          { label: "🇪🇸 Spain", href: "/locations/spain" },
+          { label: "🇳🇱 Netherlands", href: "/locations/netherlands" },
+          { label: "🇵🇹 Portugal", href: "/locations/portugal" },
+          { label: "🇮🇪 Ireland", href: "/locations/ireland" },
+          { label: "🇦🇹 Austria", href: "/locations/austria" },
+          { label: "🇨🇭 Switzerland", href: "/locations/switzerland" },
+          { label: "🇧🇪 Belgium", href: "/locations/belgium" },
+          { label: "🇵🇱 Poland", href: "/locations/poland" },
+          { label: "🇨🇿 Czech Republic", href: "/locations/czech-republic" },
+          { label: "🇭🇺 Hungary", href: "/locations/hungary" },
+          { label: "🇷🇴 Romania", href: "/locations/romania" },
+          { label: "🇬🇷 Greece", href: "/locations/greece" },
+          { label: "🇹🇷 Turkey", href: "/locations/turkey" },
+        ],
+      },
+      {
+        title: "Scandinavia",
+        items: [
+          { label: "🇩🇰 Denmark", href: "/locations/denmark" },
+          { label: "🇸🇪 Sweden", href: "/locations/sweden" },
+          { label: "🇳🇴 Norway", href: "/locations/norway" },
+          { label: "🇫🇮 Finland", href: "/locations/finland" },
+        ],
+      },
+      {
+        title: "Middle East",
+        items: [
+          { label: "🇦🇪 UAE", href: "/locations/uae" },
+          { label: "🇸🇦 Saudi Arabia", href: "/locations/saudi-arabia" },
+          { label: "🇮🇱 Israel", href: "/locations/israel" },
+        ],
+      },
+      {
+        title: "Asia Pacific",
+        items: [
+          { label: "🇦🇺 Australia", href: "/locations/australia" },
+          { label: "🇳🇿 New Zealand", href: "/locations/new-zealand" },
+          { label: "🇮🇳 India", href: "/locations/india" },
+          { label: "🇵🇰 Pakistan", href: "/locations/pakistan" },
+          { label: "🇯🇵 Japan", href: "/locations/japan" },
+          { label: "🇰🇷 South Korea", href: "/locations/south-korea" },
+          { label: "🇸🇬 Singapore", href: "/locations/singapore" },
+          { label: "🇲🇾 Malaysia", href: "/locations/malaysia" },
+          { label: "🇹🇭 Thailand", href: "/locations/thailand" },
+          { label: "🇵🇭 Philippines", href: "/locations/philippines" },
+        ],
+      },
+      {
+        title: "South America",
+        items: [
+          { label: "🇧🇷 Brazil", href: "/locations/brazil" },
+          { label: "🇨🇴 Colombia", href: "/locations/colombia" },
+          { label: "🇦🇷 Argentina", href: "/locations/argentina" },
+          { label: "🇨🇱 Chile", href: "/locations/chile" },
+          { label: "🇵🇪 Peru", href: "/locations/peru" },
+        ],
+      },
+      {
+        title: "Africa",
+        items: [
+          { label: "🇿🇦 South Africa", href: "/locations/south-africa" },
+          { label: "🇳🇬 Nigeria", href: "/locations/nigeria" },
+          { label: "🇰🇪 Kenya", href: "/locations/kenya" },
+        ],
+      },
+      {
+        title: "By Language",
+        items: [
+          { label: "🇸🇦 العربية", href: "/ar/locations" },
+          { label: "🇫🇷 Français", href: "/fr/locations" },
+          { label: "🇩🇪 Deutsch", href: "/de/locations" },
+          { label: "🇪🇸 Español", href: "/es/locations" },
+          { label: "🇳🇱 Nederlands", href: "/nl/locations" },
+          { label: "🇮🇹 Italiano", href: "/it/locations" },
+          { label: "🇵🇹 Português", href: "/pt/locations" },
+          { label: "🇹🇷 Türkçe", href: "/tr/locations" },
+          { label: "🇯🇵 日本語", href: "/ja/locations" },
+          { label: "🇰🇷 한국어", href: "/ko/locations" },
+        ],
+      },
     ],
-  },
+  } as any,
   { label: "Pricing", href: "/pricing" },
   { label: "Tools", href: "/tools" },
   { label: "Blog", href: "/blog" },
@@ -160,7 +192,49 @@ const Navbar = () => {
 
         <nav className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) =>
-            link.children ? (
+            link.mega ? (
+              // Mega menu for Locations
+              <div key={link.label} className="relative static">
+                <button
+                  onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
+                >
+                  {link.label}
+                  <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
+                </button>
+                {openDropdown === link.label && (
+                  <div className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto">
+                    {/* All Locations link */}
+                    <div className="mb-4 pb-3 border-b border-border">
+                      <Link to="/locations" className="text-sm font-semibold text-primary hover:underline">
+                        🌍 View All Locations →
+                      </Link>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                      {(link as any).megaGroups.map((group: any) => (
+                        <div key={group.title}>
+                          <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
+                            {group.title}
+                          </h4>
+                          <ul className="space-y-1">
+                            {group.items.map((item: any) => (
+                              <li key={item.href}>
+                                <Link
+                                  to={item.href}
+                                  className="block text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/80 rounded px-2 py-1 transition-colors"
+                                >
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : link.children ? (
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
@@ -227,7 +301,40 @@ const Navbar = () => {
         <div className="lg:hidden glass border-t border-border">
           <nav className="container mx-auto py-4 flex flex-col gap-1">
             {navLinks.map((link) =>
-              link.children ? (
+              link.mega ? (
+                <div key={link.label}>
+                  <button
+                    onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
+                    className="w-full px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary flex items-center justify-between"
+                  >
+                    {link.label}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
+                  </button>
+                  {mobileSubmenu === link.label && (
+                    <div className="ml-2 border-l border-border max-h-[50vh] overflow-y-auto">
+                      <Link to="/locations" className="px-6 py-3 rounded-lg text-sm font-semibold text-primary hover:bg-secondary block">
+                        🌍 All Locations
+                      </Link>
+                      {(link as any).megaGroups.map((group: any) => (
+                        <div key={group.title}>
+                          <div className="px-6 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                            {group.title}
+                          </div>
+                          {group.items.map((item: any) => (
+                            <Link
+                              key={item.href}
+                              to={item.href}
+                              className="px-6 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary block"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : link.children ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
