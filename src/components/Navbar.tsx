@@ -192,7 +192,49 @@ const Navbar = () => {
 
         <nav className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) =>
-            link.children ? (
+            link.mega ? (
+              // Mega menu for Locations
+              <div key={link.label} className="relative static">
+                <button
+                  onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                  className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
+                >
+                  {link.label}
+                  <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
+                </button>
+                {openDropdown === link.label && (
+                  <div className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto">
+                    {/* All Locations link */}
+                    <div className="mb-4 pb-3 border-b border-border">
+                      <Link to="/locations" className="text-sm font-semibold text-primary hover:underline">
+                        🌍 View All Locations →
+                      </Link>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                      {(link as any).megaGroups.map((group: any) => (
+                        <div key={group.title}>
+                          <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
+                            {group.title}
+                          </h4>
+                          <ul className="space-y-1">
+                            {group.items.map((item: any) => (
+                              <li key={item.href}>
+                                <Link
+                                  to={item.href}
+                                  className="block text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/80 rounded px-2 py-1 transition-colors"
+                                >
+                                  {item.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : link.children ? (
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
