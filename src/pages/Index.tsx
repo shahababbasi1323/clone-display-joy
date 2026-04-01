@@ -182,7 +182,7 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              🚀 Trusted by 50+ Businesses Worldwide — SEO & Digital Growth Expert
+              Trusted by 50+ Businesses Worldwide — SEO & Digital Growth Expert
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Rank #1 on Google, <span className="text-gradient">5x Your Revenue</span> &{" "}
