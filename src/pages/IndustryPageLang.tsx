@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { getI18nIndustryBySlug, industryI18nUI, type SupportedIndustryLang } from "@/data/industriesI18n";
 import { getIndustryCategoryImage } from "@/components/industry/industryImages";
+import { getI18nIndustryHreflang } from "@/utils/industryHreflang";
 
 const VALID_LANGS: SupportedIndustryLang[] = ["ar", "fr", "de", "es", "nl"];
 
