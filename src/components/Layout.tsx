@@ -5,6 +5,7 @@ import WhatsAppButton from "./WhatsAppButton";
 import TawkTo from "./TawkTo";
 import WelcomePopup from "./WelcomePopup";
 import GlobalSchemas from "./GlobalSchemas";
+import CrawlerLinks from "./CrawlerLinks";
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
       <TawkTo />
       <WelcomePopup />
       <GlobalSchemas />
+      <CrawlerLinks />
     </div>
   );
 };
