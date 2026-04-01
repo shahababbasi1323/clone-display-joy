@@ -21,10 +21,13 @@ const IndustryPage = () => {
   const industry = slug ? getIndustryBySlug(slug) : undefined;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const hreflang = industry ? getIndustryHreflang(industry.slug) : [];
+
   useSeoMeta({
     title: industry?.metaTitle || "Industry SEO Services | Shahab Abbasi",
     description: industry?.metaDescription || "Industry-specific SEO strategies by Shahab Abbasi.",
     canonical: industry ? `https://shahababbasi.com/industries/${industry.slug}` : undefined,
+    hreflang,
   });
 
   if (!industry) return <NotFound />;

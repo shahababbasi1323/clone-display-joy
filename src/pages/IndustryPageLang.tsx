@@ -26,10 +26,13 @@ const IndustryPageLang = () => {
   const Icon = industry.icon;
   const heroImage = getIndustryCategoryImage(industry.category);
 
+  const hreflang = getI18nIndustryHreflang(l, industry.slug);
+
   useSeoMeta({
     title: industry.metaTitle,
     description: industry.metaDescription,
     canonical: `https://shahababbasi.com/${l}/industries/${industry.slug}`,
+    hreflang,
   });
 
   return (
