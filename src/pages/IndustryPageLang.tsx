@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import { getI18nIndustryBySlug, industryI18nUI, type SupportedIndustryLang } from "@/data/industriesI18n";
 import { getIndustryCategoryImage } from "@/components/industry/industryImages";
+import { getI18nIndustryHreflang } from "@/utils/industryHreflang";
 
 const VALID_LANGS: SupportedIndustryLang[] = ["ar", "fr", "de", "es", "nl"];
 
@@ -25,10 +26,13 @@ const IndustryPageLang = () => {
   const Icon = industry.icon;
   const heroImage = getIndustryCategoryImage(industry.category);
 
+  const hreflang = getI18nIndustryHreflang(l, industry.slug);
+
   useSeoMeta({
     title: industry.metaTitle,
     description: industry.metaDescription,
     canonical: `https://shahababbasi.com/${l}/industries/${industry.slug}`,
+    hreflang,
   });
 
   return (

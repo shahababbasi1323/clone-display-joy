@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getIndustryBySlug } from "@/data/industriesData";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import { getIndustryHreflang } from "@/utils/industryHreflang";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryWhySeo from "@/components/industry/IndustryWhySeo";
 import IndustryServices from "@/components/industry/IndustryServices";
@@ -20,10 +21,13 @@ const IndustryPage = () => {
   const industry = slug ? getIndustryBySlug(slug) : undefined;
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const hreflang = industry ? getIndustryHreflang(industry.slug) : [];
+
   useSeoMeta({
     title: industry?.metaTitle || "Industry SEO Services | Shahab Abbasi",
     description: industry?.metaDescription || "Industry-specific SEO strategies by Shahab Abbasi.",
     canonical: industry ? `https://shahababbasi.com/industries/${industry.slug}` : undefined,
+    hreflang,
   });
 
   if (!industry) return <NotFound />;

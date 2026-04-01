@@ -46,8 +46,8 @@ const CrawlerLinks = () => {
         <Link key={`ppc-${s.slug}`} to={`/ppc/${s.slug}`}>{s.title}</Link>
       ))}
 
-      {/* Industries (English) */}
-      {industriesData.map((i) => (
+      {/* Industries (English) — deduplicated */}
+      {industriesData.filter((ind, i, arr) => arr.findIndex(x => x.slug === ind.slug) === i).map((i) => (
         <Link key={`ind-${i.slug}`} to={`/industries/${i.slug}`}>{i.shortTitle}</Link>
       ))}
 
