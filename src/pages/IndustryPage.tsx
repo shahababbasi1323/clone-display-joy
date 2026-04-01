@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 import { getIndustryBySlug } from "@/data/industriesData";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
+import { getIndustryHreflang } from "@/utils/industryHreflang";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryWhySeo from "@/components/industry/IndustryWhySeo";
 import IndustryServices from "@/components/industry/IndustryServices";
