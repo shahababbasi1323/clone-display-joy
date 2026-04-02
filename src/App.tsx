@@ -80,6 +80,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/rss" element={<RssFeed />} />
 
           {/* Admin */}
           <Route path="/wah/login" element={<AdminLogin />} />
