@@ -4,16 +4,16 @@
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>Shahab Abbasi – SEO Blog</title>
-    <link>https://shahababbasi.com/blog</link>
-    <description>Expert SEO tips, strategies, and guides by Shahab Abbasi covering keyword research, link building, technical SEO, local SEO, e-commerce optimization, and AI-powered search strategies.</description>
+    <title>Shahab Abbasi – SEO Expert</title>
+    <link>https://shahababbasi.com</link>
+    <description>Expert SEO services, tools, guides, and strategies by Shahab Abbasi. Covering all industries, locations, and digital marketing channels.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Apr 2026 06:11:36 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 06:15:46 GMT</lastBuildDate>
     <atom:link href="https://shahababbasi.com/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://shahababbasi.com/favicon-512.png</url>
-      <title>Shahab Abbasi – SEO Blog</title>
-      <link>https://shahababbasi.com/blog</link>
+      <title>Shahab Abbasi – SEO Expert</title>
+      <link>https://shahababbasi.com</link>
     </image>
     <item>
       <title><![CDATA[The Ultimate SEO Strategy Guide for 2026: Rank #1 on Google]]></title>
@@ -142,6 +142,222 @@
       <description><![CDATA[A comprehensive guide to SEO in Scandinavian markets covering Danish, Swedish, Norwegian, and Finnish search optimization strategies.]]></description>
       <pubDate>Fri, 20 Feb 2026 00:00:00 GMT</pubDate>
       <category><![CDATA[International SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Technical SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/technical-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/technical-seo</guid>
+      <description><![CDATA[Professional Technical SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[On-Page SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/on-page-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/on-page-seo</guid>
+      <description><![CDATA[Professional On-Page SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Off-Page SEO & Link Building | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/off-page-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/off-page-seo</guid>
+      <description><![CDATA[Professional Off-Page SEO & Link Building services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Local SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/local-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/local-seo</guid>
+      <description><![CDATA[Professional Local SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[E-commerce SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/ecommerce-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/ecommerce-seo</guid>
+      <description><![CDATA[Professional E-commerce SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[GEO Optimization | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/geo-optimization</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/geo-optimization</guid>
+      <description><![CDATA[Professional GEO Optimization services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[AEO - Answer Engine Optimization | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/aeo-optimization</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/aeo-optimization</guid>
+      <description><![CDATA[Professional AEO - Answer Engine Optimization services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[SEO Content Strategy | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/content-strategy</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/content-strategy</guid>
+      <description><![CDATA[Professional SEO Content Strategy services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Shopify SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/shopify-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/shopify-seo</guid>
+      <description><![CDATA[Professional Shopify SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[WordPress SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/wordpress-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/wordpress-seo</guid>
+      <description><![CDATA[Professional WordPress SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[International SEO | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/international-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/international-seo</guid>
+      <description><![CDATA[Professional International SEO services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Professional SEO Audit | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/seo-audit</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/seo-audit</guid>
+      <description><![CDATA[Professional Professional SEO Audit services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Keyword Research | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/keyword-research</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/keyword-research</guid>
+      <description><![CDATA[Professional Keyword Research services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Google Business Profile Optimization | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/google-business-profile</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/google-business-profile</guid>
+      <description><![CDATA[Professional Google Business Profile Optimization services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Link Building | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/link-building</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/link-building</guid>
+      <description><![CDATA[Professional Link Building services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[SEO Consulting | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/seo-consulting</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/seo-consulting</guid>
+      <description><![CDATA[Professional SEO Consulting services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Website Speed Optimization | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/website-speed-optimization</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/website-speed-optimization</guid>
+      <description><![CDATA[Professional Website Speed Optimization services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Schema Markup Implementation | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/schema-markup</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/schema-markup</guid>
+      <description><![CDATA[Professional Schema Markup Implementation services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[SEO Training & Workshops | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/services/seo-training</link>
+      <guid isPermaLink="true">https://shahababbasi.com/services/seo-training</guid>
+      <description><![CDATA[Professional SEO Training & Workshops services by Shahab Abbasi. Get expert SEO solutions tailored for your business.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[SEO Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Google Ads Management | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/ppc/google-ads-management</link>
+      <guid isPermaLink="true">https://shahababbasi.com/ppc/google-ads-management</guid>
+      <description><![CDATA[Professional Google Ads Management services. Maximize your ROI with expert PPC management.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[PPC Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Social Media Advertising | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/ppc/social-media-ads</link>
+      <guid isPermaLink="true">https://shahababbasi.com/ppc/social-media-ads</guid>
+      <description><![CDATA[Professional Social Media Advertising services. Maximize your ROI with expert PPC management.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[PPC Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Remarketing & Retargeting | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/ppc/remarketing-retargeting</link>
+      <guid isPermaLink="true">https://shahababbasi.com/ppc/remarketing-retargeting</guid>
+      <description><![CDATA[Professional Remarketing & Retargeting services. Maximize your ROI with expert PPC management.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[PPC Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[PPC Audit & Strategy | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/ppc/ppc-audit-strategy</link>
+      <guid isPermaLink="true">https://shahababbasi.com/ppc/ppc-audit-strategy</guid>
+      <description><![CDATA[Professional PPC Audit & Strategy services. Maximize your ROI with expert PPC management.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[PPC Services]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+    <item>
+      <title><![CDATA[Local Search Ads | Shahab Abbasi]]></title>
+      <link>https://shahababbasi.com/ppc/local-search-ads</link>
+      <guid isPermaLink="true">https://shahababbasi.com/ppc/local-search-ads</guid>
+      <description><![CDATA[Professional Local Search Ads services. Maximize your ROI with expert PPC management.]]></description>
+      <pubDate>Thu, 02 Apr 2026 06:15:46 GMT</pubDate>
+      <category><![CDATA[PPC Services]]></category>
       <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
     </item>
   </channel>
