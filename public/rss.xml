@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Shahab Abbasi – SEO Blog</title>
+    <link>https://shahababbasi.com/blog</link>
+    <description>Expert SEO tips, strategies, and guides by Shahab Abbasi covering keyword research, link building, technical SEO, local SEO, e-commerce optimization, and AI-powered search strategies.</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Apr 2026 06:11:36 GMT</lastBuildDate>
+    <atom:link href="https://shahababbasi.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://shahababbasi.com/favicon-512.png</url>
+      <title>Shahab Abbasi – SEO Blog</title>
+      <link>https://shahababbasi.com/blog</link>
+    </image>
+    <item>
+      <title><![CDATA[The Ultimate SEO Strategy Guide for 2026: Rank #1 on Google]]></title>
+      <link>https://shahababbasi.com/blog/seo-strategy-guide-2025</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/seo-strategy-guide-2025</guid>
+      <description><![CDATA[Discover the proven SEO strategies that will help your website dominate Google search results in 2026 and beyond.]]></description>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[SEO Strategy]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/seo-strategy.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/seo-strategy.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/seo-strategy.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Complete Technical SEO Audit Checklist: 50+ Points to Check]]></title>
+      <link>https://shahababbasi.com/blog/technical-seo-audit-checklist</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/technical-seo-audit-checklist</guid>
+      <description><![CDATA[A step-by-step technical SEO audit checklist covering crawlability, indexing, site speed, mobile optimization, and structured data.]]></description>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Technical SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/technical-seo.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/technical-seo.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/technical-seo.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Local SEO Guide: How to Dominate Google Maps & Local Pack]]></title>
+      <link>https://shahababbasi.com/blog/local-seo-guide</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/local-seo-guide</guid>
+      <description><![CDATA[Master local SEO to drive foot traffic and local leads. From Google Business Profile to local citations, this guide covers it all.]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Local SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/local-seo.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/local-seo.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/local-seo.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[E-commerce SEO: The Complete Guide to Ranking Product Pages]]></title>
+      <link>https://shahababbasi.com/blog/ecommerce-seo-guide</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/ecommerce-seo-guide</guid>
+      <description><![CDATA[Learn how to optimize your online store for search engines and drive organic sales with proven e-commerce SEO strategies.]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[E-commerce SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/ecommerce-seo.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/ecommerce-seo.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/ecommerce-seo.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[10 Link Building Strategies That Drive Real Results in 2026]]></title>
+      <link>https://shahababbasi.com/blog/link-building-strategies</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/link-building-strategies</guid>
+      <description><![CDATA[Build a powerful backlink profile with these 10 proven link building strategies. From guest posting to digital PR, learn what actually works.]]></description>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Link Building]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/link-building.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/link-building.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/link-building.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Content Marketing & SEO: How to Create Content That Ranks]]></title>
+      <link>https://shahababbasi.com/blog/content-marketing-seo</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/content-marketing-seo</guid>
+      <description><![CDATA[Combine content marketing with SEO to create articles, guides, and resources that rank on Google and drive consistent organic traffic.]]></description>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Content Marketing]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/content-marketing.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/content-marketing.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/content-marketing.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Google Algorithm Updates 2026: What Changed and How to Adapt]]></title>
+      <link>https://shahababbasi.com/blog/google-algorithm-updates</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/google-algorithm-updates</guid>
+      <description><![CDATA[Stay informed about the latest Google algorithm updates and learn how to adapt your SEO strategy to maintain and improve your rankings.]]></description>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Google Updates]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/google-updates.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/google-updates.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/google-updates.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Keyword Research Guide: Find High-Value Keywords That Convert]]></title>
+      <link>https://shahababbasi.com/blog/keyword-research-guide</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/keyword-research-guide</guid>
+      <description><![CDATA[Learn how to find the perfect keywords for your SEO strategy. From seed keywords to long-tail opportunities, this guide covers every technique.]]></description>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Keyword Research]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/keyword-research.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/keyword-research.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/keyword-research.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[On-Page SEO Optimization: The Complete Checklist for 2026]]></title>
+      <link>https://shahababbasi.com/blog/on-page-seo-optimization</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/on-page-seo-optimization</guid>
+      <description><![CDATA[Optimize every element on your web pages for maximum search visibility. This on-page SEO checklist covers everything from title tags to internal linking.]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[On-Page SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/on-page-seo.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/on-page-seo.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/on-page-seo.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[AI SEO & GEO: How to Optimize for AI Search Engines in 2026]]></title>
+      <link>https://shahababbasi.com/blog/ai-seo-geo-optimization</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/ai-seo-geo-optimization</guid>
+      <description><![CDATA[Discover how to optimize your content for AI-powered search engines with GEO (Generative Engine Optimization). The future of search is here.]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[AI & SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+      <enclosure url="https://shahababbasi.com/assets/blog/ai-seo.jpg" type="image/jpeg" length="0"/>
+      <media:content url="https://shahababbasi.com/assets/blog/ai-seo.jpg" medium="image" type="image/jpeg"/>
+      <media:thumbnail url="https://shahababbasi.com/assets/blog/ai-seo.jpg"/>
+    </item>
+    <item>
+      <title><![CDATA[Scandinavian SEO: The Complete Guide to Ranking in Nordic Markets]]></title>
+      <link>https://shahababbasi.com/blog/scandinavian-seo-guide</link>
+      <guid isPermaLink="true">https://shahababbasi.com/blog/scandinavian-seo-guide</guid>
+      <description><![CDATA[A comprehensive guide to SEO in Scandinavian markets covering Danish, Swedish, Norwegian, and Finnish search optimization strategies.]]></description>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[International SEO]]></category>
+      <dc:creator><![CDATA[Shahab Abbasi]]></dc:creator>
+    </item>
+  </channel>
+</rss>
