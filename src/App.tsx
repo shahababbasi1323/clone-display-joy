@@ -42,6 +42,7 @@ import IndustriesLang from "./pages/IndustriesLang";
 import IndustryPageLang from "./pages/IndustryPageLang";
 import PpcServices from "./pages/PpcServices";
 import PpcServicePage from "./pages/PpcServicePage";
+import RssFeed from "./pages/RssFeed";
 
 const queryClient = new QueryClient();
 
