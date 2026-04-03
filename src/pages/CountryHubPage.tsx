@@ -1,10 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, MapPin, Globe, Search, PenTool, Monitor, Share2, BarChart3, Megaphone, List } from "lucide-react";
+import { ArrowRight, MapPin, Globe, Search, PenTool, Monitor, Share2, BarChart3, Megaphone, List, Star, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Layout from "@/components/Layout";
 import { locationsData } from "@/data/locationsData";
 import { getCountryHubBySlug, countryHubData } from "@/data/countryHubData";
+import { getCountryHeroImage } from "@/components/country/countryImages";
 import { useSeoMeta } from "@/hooks/useSeoMeta";
 import PageBreadcrumbs from "@/components/PageBreadcrumbs";
 import NotFound from "./NotFound";
