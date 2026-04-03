@@ -48,8 +48,21 @@ const CountryHubPage = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding pb-0">
-        <div className="container mx-auto">
+      <section className="relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src={getCountryHeroImage(hub.slug)}
+            alt={`Digital marketing in ${hub.name}`}
+            className="w-full h-full object-cover"
+            loading="eager"
+            width={1280}
+            height={720}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60" />
+        </div>
+
+        <div className="container mx-auto relative z-10 section-padding">
           <PageBreadcrumbs
             items={[
               { label: "Locations", href: "/locations" },
@@ -57,28 +70,67 @@ const CountryHubPage = () => {
             ]}
             className="mb-8"
           />
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center max-w-3xl mx-auto mb-10"
-          >
-            <span className="text-5xl mb-4 block">{hub.emoji}</span>
-            <h1 className="text-4xl md:text-5xl font-bold mb-5">
-              {hub.heroHeading.split(hub.name).map((part, i, arr) =>
-                i < arr.length - 1 ? (
-                  <span key={i}>
-                    {part}
-                    <span className="text-gradient">{hub.name}</span>
-                  </span>
-                ) : (
-                  <span key={i}>{part}</span>
-                )
-              )}
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {hub.heroDescription}
-            </p>
-          </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="max-w-xl"
+            >
+              <span className="text-5xl mb-4 block">{hub.emoji}</span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-5">
+                {hub.heroHeading.split(hub.name).map((part, i, arr) =>
+                  i < arr.length - 1 ? (
+                    <span key={i}>
+                      {part}
+                      <span className="text-gradient">{hub.name}</span>
+                    </span>
+                  ) : (
+                    <span key={i}>{part}</span>
+                  )
+                )}
+              </h1>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
+                {hub.heroDescription}
+              </p>
+              {/* Trust signals */}
+              <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
+                <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-accent" /> 4.9/5 Client Rating</span>
+                <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-accent" /> 55+ Countries Served</span>
+                <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-accent" /> Free SEO Audit</span>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/free-seo-audit">
+                  <Button size="lg" className="glow-primary">
+                    Get Free {hub.name} Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button variant="outline" size="lg">Talk to an Expert</Button>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Hero Image visible on lg */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+              className="hidden lg:block"
+            >
+              <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src={getCountryHeroImage(hub.slug)}
+                    alt={`${hub.name} digital marketing services`}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    width={1280}
+                    height={720}
+                  />
+                </AspectRatio>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
