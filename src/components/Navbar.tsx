@@ -219,7 +219,73 @@ const navLinks = [
     ],
   } as any,
   { label: "Pricing", href: "/pricing" },
-  { label: "Tools", href: "/tools" },
+  {
+    label: "Tools",
+    href: "/tools",
+    mega: true,
+    megaGroups: [
+      {
+        title: "Content & Writing",
+        items: [
+          { label: "Word Counter", href: "/tools/word-counter" },
+          { label: "Readability Checker", href: "/tools/readability-checker" },
+          { label: "Headline Analyzer", href: "/tools/headline-analyzer" },
+          { label: "Article Rewriter", href: "/tools/article-rewriter-helper" },
+          { label: "All Content Tools →", href: "/tools/content-writing" },
+        ],
+      },
+      {
+        title: "Meta & On-Page SEO",
+        items: [
+          { label: "Meta Tag Generator", href: "/tools/meta-tag-generator" },
+          { label: "SERP Preview", href: "/tools/google-serp-preview" },
+          { label: "Google Index Checker", href: "/tools/google-index-checker" },
+          { label: "Heading Analyzer", href: "/tools/heading-analyzer" },
+          { label: "All Meta Tools →", href: "/tools/meta-on-page" },
+        ],
+      },
+      {
+        title: "Technical SEO",
+        items: [
+          { label: "Schema Generator", href: "/tools/schema-generator" },
+          { label: "Robots.txt Generator", href: "/tools/robots-txt-generator" },
+          { label: "Sitemap Generator", href: "/tools/sitemap-generator" },
+          { label: "Page Speed Analyzer", href: "/tools/page-speed-analyzer" },
+          { label: "All Technical Tools →", href: "/tools/technical-seo" },
+        ],
+      },
+      {
+        title: "Keyword & Research",
+        items: [
+          { label: "Keyword Suggestions", href: "/tools/keyword-suggestion-tool" },
+          { label: "LSI Keywords", href: "/tools/lsi-keyword-generator" },
+          { label: "Question Generator", href: "/tools/question-generator" },
+          { label: "Keyword Grouper", href: "/tools/keyword-grouper" },
+          { label: "All Keyword Tools →", href: "/tools/keyword-research" },
+        ],
+      },
+      {
+        title: "Social & LinkedIn",
+        items: [
+          { label: "LinkedIn Formatter", href: "/tools/linkedin-post-formatter" },
+          { label: "Headline Generator", href: "/tools/linkedin-headline-generator" },
+          { label: "Hashtag Generator", href: "/tools/hashtag-generator" },
+          { label: "All Social Tools →", href: "/tools/social-media" },
+        ],
+      },
+      {
+        title: "More Tools",
+        items: [
+          { label: "Local SEO Tools", href: "/tools/local-seo" },
+          { label: "Backlink Tools", href: "/tools/backlink-off-page" },
+          { label: "PPC & Ads Tools", href: "/tools/ppc-paid-ads" },
+          { label: "Domain & URL Tools", href: "/tools/domain-url" },
+          { label: "E-commerce Tools", href: "/tools/ecommerce-seo" },
+          { label: "All 85+ Tools →", href: "/tools" },
+        ],
+      },
+    ],
+  } as any,
   { label: "Blog", href: "/blog" },
   {
     label: "Resources",
@@ -282,7 +348,7 @@ const Navbar = () => {
                     {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
                       <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
-                        {link.label === "Locations" ? "🌍 View All Locations →" : link.label === "Industries" ? "🏭 View All Industries →" : "🚀 View All Services →"}
+                        {link.label === "Locations" ? "🌍 View All Locations →" : link.label === "Industries" ? "🏭 View All Industries →" : link.label === "Tools" ? "🛠️ View All 85+ Tools →" : "🚀 View All Services →"}
                       </Link>
                     </div>
                     <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4 lg:grid-cols-5"}`}>
