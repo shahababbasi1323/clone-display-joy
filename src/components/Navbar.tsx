@@ -90,6 +90,12 @@ const navLinks = [
         items: [
           { label: "🇦🇪 UAE", href: "/locations/uae" },
           { label: "🇸🇦 Saudi Arabia", href: "/locations/saudi-arabia" },
+          { label: "🇶🇦 Qatar", href: "/locations/qatar" },
+          { label: "🇰🇼 Kuwait", href: "/locations/kuwait" },
+          { label: "🇧🇭 Bahrain", href: "/locations/bahrain" },
+          { label: "🇴🇲 Oman", href: "/locations/oman" },
+          { label: "🇯🇴 Jordan", href: "/locations/jordan" },
+          { label: "🇪🇬 Egypt", href: "/locations/egypt" },
           { label: "🇮🇱 Israel", href: "/locations/israel" },
         ],
       },
