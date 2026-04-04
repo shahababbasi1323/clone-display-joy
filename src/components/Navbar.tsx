@@ -285,7 +285,7 @@ const Navbar = () => {
                         {link.label === "Locations" ? "🌍 View All Locations →" : link.label === "Industries" ? "🏭 View All Industries →" : "🚀 View All Services →"}
                       </Link>
                     </div>
-                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
+                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4 lg:grid-cols-5"}`}>
                       {(link as any).megaGroups.map((group: any) => (
                         <div key={group.title}>
                           <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
