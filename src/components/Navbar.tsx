@@ -223,13 +223,13 @@ const Navbar = () => {
                 </button>
                 {openDropdown === link.label && (
                   <div className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto">
-                    {/* All Locations link */}
+                    {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
-                      <Link to="/locations" className="text-sm font-semibold text-primary hover:underline">
-                        🌍 View All Locations →
+                      <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
+                        {link.label === "Locations" ? "🌍 View All Locations →" : "🚀 View All Services →"}
                       </Link>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
                       {(link as any).megaGroups.map((group: any) => (
                         <div key={group.title}>
                           <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
