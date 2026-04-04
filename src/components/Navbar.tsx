@@ -282,7 +282,7 @@ const Navbar = () => {
                     {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
                       <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
-                        {link.label === "Locations" ? "🌍 View All Locations →" : "🚀 View All Services →"}
+                        {link.label === "Locations" ? "🌍 View All Locations →" : link.label === "Industries" ? "🏭 View All Industries →" : "🚀 View All Services →"}
                       </Link>
                     </div>
                     <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
