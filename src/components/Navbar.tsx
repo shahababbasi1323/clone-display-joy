@@ -10,25 +10,35 @@ const navLinks = [
   {
     label: "Services",
     href: "/services",
-    children: [
-      { label: "Technical SEO", href: "/services/technical-seo" },
-      { label: "On-Page SEO", href: "/services/on-page-seo" },
-      { label: "Link Building", href: "/services/link-building" },
-      { label: "Local SEO", href: "/services/local-seo" },
-      { label: "E-commerce SEO", href: "/services/ecommerce-seo" },
-      { label: "GEO Optimization", href: "/services/geo-optimization" },
-      { label: "Content Strategy", href: "/services/content-strategy" },
-      { label: "SEO Consulting", href: "/services/seo-consulting" },
-      { label: "All SEO Services →", href: "/services" },
-      { label: "── PPC Services ──", href: "/ppc", group: true } as any,
-      { label: "Google Ads Management", href: "/ppc/google-ads-management" },
-      { label: "Social Media Ads", href: "/ppc/social-media-ads" },
-      { label: "Remarketing & Retargeting", href: "/ppc/remarketing-retargeting" },
-      { label: "Local Search Ads", href: "/ppc/local-search-ads" },
-      { label: "PPC Audit & Strategy", href: "/ppc/ppc-audit-strategy" },
-      { label: "All PPC Services →", href: "/ppc" },
+    mega: true,
+    megaGroups: [
+      {
+        title: "SEO Services",
+        items: [
+          { label: "Technical SEO", href: "/services/technical-seo" },
+          { label: "On-Page SEO", href: "/services/on-page-seo" },
+          { label: "Link Building", href: "/services/link-building" },
+          { label: "Local SEO", href: "/services/local-seo" },
+          { label: "E-commerce SEO", href: "/services/ecommerce-seo" },
+          { label: "GEO Optimization", href: "/services/geo-optimization" },
+          { label: "Content Strategy", href: "/services/content-strategy" },
+          { label: "SEO Consulting", href: "/services/seo-consulting" },
+          { label: "All SEO Services →", href: "/services" },
+        ],
+      },
+      {
+        title: "PPC Services",
+        items: [
+          { label: "Google Ads Management", href: "/ppc/google-ads-management" },
+          { label: "Social Media Ads", href: "/ppc/social-media-ads" },
+          { label: "Remarketing & Retargeting", href: "/ppc/remarketing-retargeting" },
+          { label: "Local Search Ads", href: "/ppc/local-search-ads" },
+          { label: "PPC Audit & Strategy", href: "/ppc/ppc-audit-strategy" },
+          { label: "All PPC Services →", href: "/ppc" },
+        ],
+      },
     ],
-  },
+  } as any,
   {
     label: "Industries",
     href: "/industries",
@@ -213,13 +223,13 @@ const Navbar = () => {
                 </button>
                 {openDropdown === link.label && (
                   <div className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto">
-                    {/* All Locations link */}
+                    {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
-                      <Link to="/locations" className="text-sm font-semibold text-primary hover:underline">
-                        🌍 View All Locations →
+                      <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
+                        {link.label === "Locations" ? "🌍 View All Locations →" : "🚀 View All Services →"}
                       </Link>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
                       {(link as any).megaGroups.map((group: any) => (
                         <div key={group.title}>
                           <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
