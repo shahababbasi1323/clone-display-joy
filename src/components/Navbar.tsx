@@ -42,15 +42,71 @@ const navLinks = [
   {
     label: "Industries",
     href: "/industries",
-    children: [
-      { label: "🇬🇧 English", href: "/industries" },
-      { label: "🇸🇦 العربية", href: "/ar/industries" },
-      { label: "🇫🇷 Français", href: "/fr/industries" },
-      { label: "🇩🇪 Deutsch", href: "/de/industries" },
-      { label: "🇪🇸 Español", href: "/es/industries" },
-      { label: "🇳🇱 Nederlands", href: "/nl/industries" },
+    mega: true,
+    megaGroups: [
+      {
+        title: "Healthcare & Medical",
+        items: [
+          { label: "Healthcare SEO", href: "/industries/healthcare-seo" },
+          { label: "Dental SEO", href: "/industries/dental-seo" },
+          { label: "Hospital SEO", href: "/industries/hospital-seo" },
+          { label: "Chiropractic SEO", href: "/industries/chiropractic-seo" },
+          { label: "Dermatology SEO", href: "/industries/dermatology-seo" },
+          { label: "Mental Health SEO", href: "/industries/mental-health-seo" },
+          { label: "Med Spa SEO", href: "/industries/med-spa-seo" },
+          { label: "Physical Therapy SEO", href: "/industries/physical-therapy-seo" },
+          { label: "Veterinary SEO", href: "/industries/veterinary-seo" },
+          { label: "+ 7 more →", href: "/industries" },
+        ],
+      },
+      {
+        title: "Legal & Professional",
+        items: [
+          { label: "Law Firm SEO", href: "/industries/law-firm-seo" },
+          { label: "Accounting SEO", href: "/industries/accounting-seo" },
+          { label: "Insurance SEO", href: "/industries/insurance-seo" },
+          { label: "Financial Advisor SEO", href: "/industries/financial-advisor-seo" },
+          { label: "Consulting SEO", href: "/industries/consulting-seo" },
+          { label: "Immigration Lawyer SEO", href: "/industries/immigration-seo" },
+          { label: "+ 3 more →", href: "/industries" },
+        ],
+      },
+      {
+        title: "Home Services & Trades",
+        items: [
+          { label: "Plumbing SEO", href: "/industries/plumbing-seo" },
+          { label: "HVAC SEO", href: "/industries/hvac-seo" },
+          { label: "Electrician SEO", href: "/industries/electrician-seo" },
+          { label: "Roofing SEO", href: "/industries/roofing-seo" },
+          { label: "Landscaping SEO", href: "/industries/landscaping-seo" },
+          { label: "Cleaning SEO", href: "/industries/cleaning-seo" },
+          { label: "+ 9 more →", href: "/industries" },
+        ],
+      },
+      {
+        title: "More Industries",
+        items: [
+          { label: "Car Dealership SEO", href: "/industries/automotive-seo" },
+          { label: "Fintech SEO", href: "/industries/fintech-seo" },
+          { label: "Online Course SEO", href: "/industries/online-course-seo" },
+          { label: "Dog Grooming SEO", href: "/industries/dog-grooming-seo" },
+          { label: "Pet Store SEO", href: "/industries/pet-store-seo" },
+          { label: "All Industries →", href: "/industries" },
+        ],
+      },
+      {
+        title: "By Language",
+        items: [
+          { label: "🇬🇧 English", href: "/industries" },
+          { label: "🇸🇦 العربية", href: "/ar/industries" },
+          { label: "🇫🇷 Français", href: "/fr/industries" },
+          { label: "🇩🇪 Deutsch", href: "/de/industries" },
+          { label: "🇪🇸 Español", href: "/es/industries" },
+          { label: "🇳🇱 Nederlands", href: "/nl/industries" },
+        ],
+      },
     ],
-  },
+  } as any,
   {
     label: "Locations",
     href: "/locations",
@@ -226,10 +282,10 @@ const Navbar = () => {
                     {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
                       <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
-                        {link.label === "Locations" ? "🌍 View All Locations →" : "🚀 View All Services →"}
+                        {link.label === "Locations" ? "🌍 View All Locations →" : link.label === "Industries" ? "🏭 View All Industries →" : "🚀 View All Services →"}
                       </Link>
                     </div>
-                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4"}`}>
+                    <div className={`grid gap-6 ${(link as any).megaGroups.length <= 3 ? "grid-cols-2 md:grid-cols-3" : "grid-cols-2 md:grid-cols-4 lg:grid-cols-5"}`}>
                       {(link as any).megaGroups.map((group: any) => (
                         <div key={group.title}>
                           <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground/70 mb-2">
