@@ -481,9 +481,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Complete SEO & Digital Marketing <span className="text-gradient">Service Catalog</span>
+              Every Weapon in Your <span className="text-gradient">Digital Arsenal</span>
             </h2>
-            <p className="text-muted-foreground">From technical audits and keyword research to content marketing, link building & AI search optimization — explore every service designed to grow your online presence and revenue.</p>
+            <p className="text-muted-foreground">Technical audits, killer content, authority backlinks, AI search — pick the services that move the needle, or let us build the full stack.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {servicesData.slice(0, 10).map((svc) => {
