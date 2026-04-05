@@ -189,7 +189,7 @@ const h = (lang: string, prefix: string, slug: string) => ({
 
 export const locationsData: LocationData[] = [
   // ============================================================
-  // 🇵🇰 PAKISTAN (English — 8 Cities)
+  // PAKISTAN (English — 8 Cities)
   // ============================================================
   en("Islamabad", "islamabad", "Pakistan", "PK", ["rawalpindi", "lahore", "peshawar"]),
   en("Rawalpindi", "rawalpindi", "Pakistan", "PK", ["islamabad", "lahore", "faisalabad"]),
@@ -201,7 +201,7 @@ export const locationsData: LocationData[] = [
   en("Sialkot", "sialkot", "Pakistan", "PK", ["lahore", "faisalabad", "islamabad"]),
 
   // ============================================================
-  // 🇦🇪 UAE (English — 7 Cities)
+  // UAE (English — 7 Cities)
   // ============================================================
   en("Dubai", "dubai", "UAE", "AE", ["abu-dhabi", "sharjah", "ajman"]),
   en("Abu Dhabi", "abu-dhabi", "UAE", "AE", ["dubai", "al-ain", "sharjah"]),
@@ -212,7 +212,7 @@ export const locationsData: LocationData[] = [
   en("Al Ain", "al-ain", "UAE", "AE", ["abu-dhabi", "dubai", "sharjah"]),
 
   // ============================================================
-  // 🇸🇦 SAUDI ARABIA (Arabic — 8 Cities)
+  // SAUDI ARABIA (Arabic — 8 Cities)
   // ============================================================
   ar("Riyadh", "الرياض", "riyadh", "Saudi Arabia", "السعودية", "SA", ["jeddah", "dammam", "makkah"]),
   ar("Jeddah", "جدة", "jeddah", "Saudi Arabia", "السعودية", "SA", ["riyadh", "makkah", "madinah"]),
@@ -224,55 +224,55 @@ export const locationsData: LocationData[] = [
   ar("Abha", "أبها", "abha", "Saudi Arabia", "السعودية", "SA", ["riyadh", "jeddah", "makkah"], [], "المنطقة الجنوبية"),
 
   // ============================================================
-  // 🇶🇦 QATAR (Arabic — 2 Cities)
+  // QATAR (Arabic — 2 Cities)
   // ============================================================
   ar("Doha", "الدوحة", "doha", "Qatar", "قطر", "QA", ["lusail"]),
   ar("Lusail", "لوسيل", "lusail", "Qatar", "قطر", "QA", ["doha"]),
 
   // ============================================================
-  // 🇧🇭 BAHRAIN (Arabic — 1 City)
+  // BAHRAIN (Arabic — 1 City)
   // ============================================================
   ar("Manama", "المنامة", "manama", "Bahrain", "البحرين", "BH", ["riffa"]),
 
   // ============================================================
-  // 🇰🇼 KUWAIT (Arabic — 1 City)
+  // KUWAIT (Arabic — 1 City)
   // ============================================================
   ar("Kuwait City", "الكويت", "kuwait-city", "Kuwait", "الكويت", "KW", ["hawalli", "salmiya"]),
 
   // ============================================================
-  // 🇴🇲 OMAN (Arabic — 1 City)
+  // OMAN (Arabic — 1 City)
   // ============================================================
   ar("Muscat", "مسقط", "muscat", "Oman", "عُمان", "OM", ["salalah", "sohar"]),
 
   // ============================================================
-  // 🇯🇴 JORDAN (Arabic — 1 City)
+  // JORDAN (Arabic — 1 City)
   // ============================================================
   ar("Amman", "عمّان", "amman", "Jordan", "الأردن", "JO", ["irbid"]),
 
   // ============================================================
-  // 🇱🇧 LEBANON (Arabic — 1 City)
+  // LEBANON (Arabic — 1 City)
   // ============================================================
   ar("Beirut", "بيروت", "beirut", "Lebanon", "لبنان", "LB", ["tripoli-lebanon"]),
 
   // ============================================================
-  // 🇪🇬 EGYPT (Arabic — 2 Cities)
+  // EGYPT (Arabic — 2 Cities)
   // ============================================================
   ar("Cairo", "القاهرة", "cairo", "Egypt", "مصر", "EG", ["alexandria", "giza"]),
   ar("Alexandria", "الإسكندرية", "alexandria", "Egypt", "مصر", "EG", ["cairo", "giza"]),
 
   // ============================================================
-  // 🇲🇦 MOROCCO (French + Arabic — 1 City each)
+  // MOROCCO (French + Arabic — 1 City each)
   // ============================================================
   fr("Casablanca", "casablanca", "Maroc", "MA", ["marrakech", "rabat"], [h("ar", "ar", "seo-services-casablanca")]),
   ar("Casablanca", "الدار البيضاء", "casablanca", "Morocco", "المغرب", "MA", ["marrakech", "rabat"], [h("fr", "fr", "seo-services-casablanca")]),
 
   // ============================================================
-  // 🇹🇳 TUNISIA (French — 1 City)
+  // TUNISIA (French — 1 City)
   // ============================================================
   fr("Tunis", "tunis", "Tunisie", "TN", []),
 
   // ============================================================
-  // 🇬🇧 UNITED KINGDOM (English — 12 Cities)
+  // UNITED KINGDOM (English — 12 Cities)
   // ============================================================
   en("London", "london", "United Kingdom", "GB", ["manchester", "birmingham", "bristol"]),
   en("Manchester", "manchester", "United Kingdom", "GB", ["london", "liverpool", "leeds"]),
@@ -288,7 +288,7 @@ export const locationsData: LocationData[] = [
   en("Nottingham", "nottingham", "United Kingdom", "GB", ["birmingham", "sheffield", "leeds"]),
 
   // ============================================================
-  // 🇺🇸 UNITED STATES (English — 20 Cities)
+  // UNITED STATES (English — 20 Cities)
   // ============================================================
   en("New York", "new-york", "United States", "US", ["boston", "charlotte", "detroit"]),
   en("Los Angeles", "los-angeles", "United States", "US", ["san-diego", "san-francisco", "las-vegas"]),
@@ -312,7 +312,7 @@ export const locationsData: LocationData[] = [
   en("Minneapolis", "minneapolis", "United States", "US", ["chicago", "detroit", "denver"]),
 
   // ============================================================
-  // 🇨🇦 CANADA (English + French — 8 Cities)
+  // CANADA (English + French — 8 Cities)
   // ============================================================
   en("Toronto", "toronto", "Canada", "CA", ["ottawa", "montreal", "vancouver"]),
   en("Vancouver", "vancouver", "Canada", "CA", ["toronto", "calgary", "edmonton"]),
@@ -326,7 +326,7 @@ export const locationsData: LocationData[] = [
   fr("Québec", "quebec-city", "Canada", "CA", ["montreal", "ottawa"]),
 
   // ============================================================
-  // 🇩🇪 GERMANY (German — 10 Cities)
+  // GERMANY (German — 10 Cities)
   // ============================================================
   de("Berlin", "berlin", "Deutschland", "DE", ["hamburg", "leipzig", "dortmund"]),
   de("München", "munich", "Deutschland", "DE", ["stuttgart", "frankfurt", "cologne"]),
@@ -340,14 +340,14 @@ export const locationsData: LocationData[] = [
   de("Hannover", "hanover", "Deutschland", "DE", ["hamburg", "berlin", "dortmund"]),
 
   // ============================================================
-  // 🇦🇹 AUSTRIA (German — 3 Cities)
+  // AUSTRIA (German — 3 Cities)
   // ============================================================
   de("Wien", "vienna", "Österreich", "AT", ["graz", "salzburg"]),
   de("Graz", "graz", "Österreich", "AT", ["vienna", "salzburg"]),
   de("Salzburg", "salzburg", "Österreich", "AT", ["vienna", "graz"]),
 
   // ============================================================
-  // 🇨🇭 SWITZERLAND (German + French — 4 Cities)
+  // SWITZERLAND (German + French — 4 Cities)
   // ============================================================
   de("Zürich", "zurich", "Schweiz", "CH", ["bern", "geneva", "lausanne"]),
   de("Bern", "bern", "Schweiz", "CH", ["zurich", "geneva", "lausanne"]),
@@ -355,7 +355,7 @@ export const locationsData: LocationData[] = [
   fr("Lausanne", "lausanne", "Suisse", "CH", ["geneva", "zurich", "bern"]),
 
   // ============================================================
-  // 🇫🇷 FRANCE (French — 10 Cities)
+  // FRANCE (French — 10 Cities)
   // ============================================================
   fr("Paris", "paris", "France", "FR", ["lyon", "lille", "strasbourg"]),
   fr("Lyon", "lyon", "France", "FR", ["paris", "marseille", "toulouse"]),
@@ -369,14 +369,14 @@ export const locationsData: LocationData[] = [
   fr("Montpellier", "montpellier", "France", "FR", ["toulouse", "nice", "marseille"]),
 
   // ============================================================
-  // 🇧🇪 BELGIUM (French + Dutch — 3 Cities)
+  // BELGIUM (French + Dutch — 3 Cities)
   // ============================================================
   fr("Bruxelles", "brussels", "Belgique", "BE", ["antwerp"], [h("nl", "nl", "seo-services-brussels")]),
   nl("Brussel", "brussels", "België", "BE", ["antwerp"], [h("fr", "fr", "seo-services-brussels")]),
   nl("Antwerpen", "antwerp", "België", "BE", ["brussels"]),
 
   // ============================================================
-  // 🇮🇹 ITALY (Italian — 8 Cities)
+  // ITALY (Italian — 8 Cities)
   // ============================================================
   it("Milano", "milan", "Italia", "IT", ["turin", "genoa", "bologna"]),
   it("Roma", "rome", "Italia", "IT", ["naples", "florence", "bologna"]),
@@ -388,7 +388,7 @@ export const locationsData: LocationData[] = [
   it("Genova", "genoa", "Italia", "IT", ["milan", "turin", "florence"]),
 
   // ============================================================
-  // 🇪🇸 SPAIN (Spanish — 8 Cities)
+  // SPAIN (Spanish — 8 Cities)
   // ============================================================
   es("Madrid", "madrid", "España", "ES", ["barcelona", "valencia", "seville"]),
   es("Barcelona", "barcelona", "España", "ES", ["madrid", "valencia", "zaragoza"]),
@@ -400,14 +400,14 @@ export const locationsData: LocationData[] = [
   es("Alicante", "alicante", "España", "ES", ["valencia", "madrid", "barcelona"]),
 
   // ============================================================
-  // 🇵🇹 PORTUGAL (Portuguese — 3 Cities)
+  // PORTUGAL (Portuguese — 3 Cities)
   // ============================================================
   pt("Lisboa", "lisbon", "Portugal", "PT", ["porto", "braga"]),
   pt("Porto", "porto", "Portugal", "PT", ["lisbon", "braga"]),
   pt("Braga", "braga", "Portugal", "PT", ["porto", "lisbon"]),
 
   // ============================================================
-  // 🇧🇷 BRAZIL (Portuguese — 6 Cities)
+  // BRAZIL (Portuguese — 6 Cities)
   // ============================================================
   pt("São Paulo", "sao-paulo", "Brasil", "BR", ["rio-de-janeiro", "belo-horizonte", "curitiba"]),
   pt("Rio de Janeiro", "rio-de-janeiro", "Brasil", "BR", ["sao-paulo", "belo-horizonte", "brasilia"]),
@@ -417,7 +417,7 @@ export const locationsData: LocationData[] = [
   pt("Fortaleza", "fortaleza", "Brasil", "BR", ["brasilia", "sao-paulo", "rio-de-janeiro"]),
 
   // ============================================================
-  // 🇳🇱 NETHERLANDS (Dutch — 6 Cities)
+  // NETHERLANDS (Dutch — 6 Cities)
   // ============================================================
   nl("Amsterdam", "amsterdam", "Nederland", "NL", ["rotterdam", "the-hague", "utrecht"]),
   nl("Rotterdam", "rotterdam", "Nederland", "NL", ["amsterdam", "the-hague", "utrecht"]),
@@ -427,7 +427,7 @@ export const locationsData: LocationData[] = [
   nl("Groningen", "groningen", "Nederland", "NL", ["amsterdam", "utrecht", "eindhoven"]),
 
   // ============================================================
-  // 🇩🇰 DENMARK (Danish — 4 Cities)
+  // DENMARK (Danish — 4 Cities)
   // ============================================================
   da("København", "copenhagen", "Danmark", "DK",
     ["aarhus", "odense", "aalborg"],
@@ -451,7 +451,7 @@ export const locationsData: LocationData[] = [
   ),
 
   // ============================================================
-  // 🇸🇪 SWEDEN (Swedish — 4 Cities)
+  // SWEDEN (Swedish — 4 Cities)
   // ============================================================
   sv("Stockholm", "stockholm", "Sverige", "SE",
     ["gothenburg", "malmo", "uppsala"],
@@ -475,7 +475,7 @@ export const locationsData: LocationData[] = [
   ),
 
   // ============================================================
-  // 🇳🇴 NORWAY (Norwegian — 3 Cities)
+  // NORWAY (Norwegian — 3 Cities)
   // ============================================================
   no_("Oslo", "oslo", "Norge", "NO",
     ["bergen", "trondheim"],
@@ -495,7 +495,7 @@ export const locationsData: LocationData[] = [
   ),
 
   // ============================================================
-  // 🇫🇮 FINLAND (Finnish — 3 Cities)
+  // FINLAND (Finnish — 3 Cities)
   // ============================================================
   fi("Helsinki", "helsinki", "Suomi", "FI",
     ["tampere", "turku"],
@@ -515,7 +515,7 @@ export const locationsData: LocationData[] = [
   ),
 
   // ============================================================
-  // 🇵🇱 POLAND (Polish — 5 Cities)
+  // POLAND (Polish — 5 Cities)
   // ============================================================
   pl("Warszawa", "warsaw", "Polska", "PL", ["krakow", "wroclaw", "poznan"]),
   pl("Kraków", "krakow", "Polska", "PL", ["warsaw", "wroclaw", "poznan"]),
@@ -524,32 +524,32 @@ export const locationsData: LocationData[] = [
   pl("Gdańsk", "gdansk", "Polska", "PL", ["warsaw", "poznan", "wroclaw"]),
 
   // ============================================================
-  // 🇨🇿 CZECH REPUBLIC (Czech — 2 Cities)
+  // CZECH REPUBLIC (Czech — 2 Cities)
   // ============================================================
   cs("Praha", "prague", "Česko", "CZ", ["brno"]),
   cs("Brno", "brno", "Česko", "CZ", ["prague"]),
 
   // ============================================================
-  // 🇭🇺 HUNGARY (Hungarian — 2 Cities)
+  // HUNGARY (Hungarian — 2 Cities)
   // ============================================================
   hu("Budapest", "budapest", "Magyarország", "HU", ["debrecen"]),
   hu("Debrecen", "debrecen", "Magyarország", "HU", ["budapest"]),
 
   // ============================================================
-  // 🇷🇴 ROMANIA (Romanian — 3 Cities)
+  // ROMANIA (Romanian — 3 Cities)
   // ============================================================
   ro("București", "bucharest", "România", "RO", ["cluj", "timisoara"]),
   ro("Cluj-Napoca", "cluj", "România", "RO", ["bucharest", "timisoara"]),
   ro("Timișoara", "timisoara", "România", "RO", ["bucharest", "cluj"]),
 
   // ============================================================
-  // 🇬🇷 GREECE (Greek — 2 Cities)
+  // GREECE (Greek — 2 Cities)
   // ============================================================
   el("Αθήνα", "athens", "Ελλάδα", "GR", ["thessaloniki"]),
   el("Θεσσαλονίκη", "thessaloniki", "Ελλάδα", "GR", ["athens"]),
 
   // ============================================================
-  // 🇹🇷 TURKEY (Turkish — 6 Cities)
+  // TURKEY (Turkish — 6 Cities)
   // ============================================================
   tr("İstanbul", "istanbul", "Türkiye", "TR", ["ankara", "izmir", "bursa"]),
   tr("Ankara", "ankara", "Türkiye", "TR", ["istanbul", "izmir", "bursa"]),
@@ -559,7 +559,7 @@ export const locationsData: LocationData[] = [
   tr("Adana", "adana", "Türkiye", "TR", ["antalya", "istanbul", "ankara"]),
 
   // ============================================================
-  // 🇦🇺 AUSTRALIA (English — 6 Cities)
+  // AUSTRALIA (English — 6 Cities)
   // ============================================================
   en("Sydney", "sydney", "Australia", "AU", ["melbourne", "brisbane", "gold-coast"]),
   en("Melbourne", "melbourne", "Australia", "AU", ["sydney", "brisbane", "adelaide"]),
@@ -569,103 +569,103 @@ export const locationsData: LocationData[] = [
   en("Gold Coast", "gold-coast", "Australia", "AU", ["brisbane", "sydney", "melbourne"]),
 
   // ============================================================
-  // 🇳🇿 NEW ZEALAND (English — 3 Cities)
+  // NEW ZEALAND (English — 3 Cities)
   // ============================================================
   en("Auckland", "auckland", "New Zealand", "NZ", ["wellington", "christchurch"]),
   en("Wellington", "wellington", "New Zealand", "NZ", ["auckland", "christchurch"]),
   en("Christchurch", "christchurch", "New Zealand", "NZ", ["auckland", "wellington"]),
 
   // ============================================================
-  // 🇸🇬 SINGAPORE (English)
+  // SINGAPORE (English)
   // ============================================================
   en("Singapore", "singapore", "Singapore", "SG", ["kuala-lumpur", "bangkok"]),
 
   // ============================================================
-  // 🇲🇾 MALAYSIA (English — 3 Cities)
+  // MALAYSIA (English — 3 Cities)
   // ============================================================
   en("Kuala Lumpur", "kuala-lumpur", "Malaysia", "MY", ["penang", "johor-bahru", "singapore"]),
   en("Penang", "penang", "Malaysia", "MY", ["kuala-lumpur", "johor-bahru"]),
   en("Johor Bahru", "johor-bahru", "Malaysia", "MY", ["kuala-lumpur", "singapore", "penang"]),
 
   // ============================================================
-  // 🇹🇭 THAILAND (English — 2 Cities)
+  // THAILAND (English — 2 Cities)
   // ============================================================
   en("Bangkok", "bangkok", "Thailand", "TH", ["chiang-mai", "singapore"]),
   en("Chiang Mai", "chiang-mai", "Thailand", "TH", ["bangkok"]),
 
   // ============================================================
-  // 🇵🇭 PHILIPPINES (English — 2 Cities)
+  // PHILIPPINES (English — 2 Cities)
   // ============================================================
   en("Manila", "manila", "Philippines", "PH", ["cebu"]),
   en("Cebu", "cebu", "Philippines", "PH", ["manila"]),
 
   // ============================================================
-  // 🇯🇵 JAPAN (Japanese — 2 Cities)
+  // JAPAN (Japanese — 2 Cities)
   // ============================================================
   ja("東京", "tokyo", "日本", "JP", ["osaka"]),
   ja("大阪", "osaka", "日本", "JP", ["tokyo"]),
 
   // ============================================================
-  // 🇰🇷 SOUTH KOREA (Korean — 2 Cities)
+  // SOUTH KOREA (Korean — 2 Cities)
   // ============================================================
   ko("서울", "seoul", "한국", "KR", ["busan"]),
   ko("부산", "busan", "한국", "KR", ["seoul"]),
 
   // ============================================================
-  // 🇿🇦 SOUTH AFRICA (English — 3 Cities)
+  // SOUTH AFRICA (English — 3 Cities)
   // ============================================================
   en("Johannesburg", "johannesburg", "South Africa", "ZA", ["cape-town", "durban"]),
   en("Cape Town", "cape-town", "South Africa", "ZA", ["johannesburg", "durban"]),
   en("Durban", "durban", "South Africa", "ZA", ["johannesburg", "cape-town"]),
 
   // ============================================================
-  // 🇳🇬 NIGERIA (English — 2 Cities)
+  // NIGERIA (English — 2 Cities)
   // ============================================================
   en("Lagos", "lagos", "Nigeria", "NG", ["abuja"]),
   en("Abuja", "abuja", "Nigeria", "NG", ["lagos"]),
 
   // ============================================================
-  // 🇰🇪 KENYA (English — 1 City)
+  // KENYA (English — 1 City)
   // ============================================================
   en("Nairobi", "nairobi", "Kenya", "KE", ["lagos"]),
 
   // ============================================================
-  // 🇲🇽 MEXICO (Spanish — 3 Cities)
+  // MEXICO (Spanish — 3 Cities)
   // ============================================================
   es("Ciudad de México", "mexico-city", "México", "MX", ["guadalajara", "monterrey"]),
   es("Guadalajara", "guadalajara", "México", "MX", ["mexico-city", "monterrey"]),
   es("Monterrey", "monterrey", "México", "MX", ["mexico-city", "guadalajara"]),
 
   // ============================================================
-  // 🇨🇴 COLOMBIA (Spanish — 2 Cities)
+  // COLOMBIA (Spanish — 2 Cities)
   // ============================================================
   es("Bogotá", "bogota", "Colombia", "CO", ["medellin"]),
   es("Medellín", "medellin", "Colombia", "CO", ["bogota"]),
 
   // ============================================================
-  // 🇦🇷 ARGENTINA (Spanish — 2 Cities)
+  // ARGENTINA (Spanish — 2 Cities)
   // ============================================================
   es("Buenos Aires", "buenos-aires", "Argentina", "AR", ["cordoba-argentina"]),
   es("Córdoba", "cordoba-argentina", "Argentina", "AR", ["buenos-aires"]),
 
   // ============================================================
-  // 🇨🇱 CHILE (Spanish — 1 City)
+  // CHILE (Spanish — 1 City)
   // ============================================================
   es("Santiago", "santiago", "Chile", "CL", ["buenos-aires", "lima"]),
 
   // ============================================================
-  // 🇵🇪 PERU (Spanish — 1 City)
+  // PERU (Spanish — 1 City)
   // ============================================================
   es("Lima", "lima", "Perú", "PE", ["santiago", "bogota"]),
 
   // ============================================================
-  // 🇮🇱 ISRAEL (English + Hebrew — 2 Cities)
+  // ISRAEL (English + Hebrew — 2 Cities)
   // ============================================================
   en("Tel Aviv", "tel-aviv", "Israel", "IL", [], [h("he", "he", "seo-services-tel-aviv")]),
   { ...he("תל אביב", "tel-aviv", "ישראל", "IL", [], [h("en", "", "seo-services-tel-aviv")]), isRTL: true },
 
   // ============================================================
-  // 🇮🇪 IRELAND (English — 2 Cities)
+  // IRELAND (English — 2 Cities)
   // ============================================================
   en("Dublin", "dublin", "Ireland", "IE", ["cork", "london"]),
   en("Cork", "cork", "Ireland", "IE", ["dublin"]),

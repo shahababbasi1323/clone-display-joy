@@ -34,8 +34,7 @@ const ResourceThankYou = () => {
             </div>
 
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Thank You! 🎉
-            </h1>
+              Thank You! </h1>
             <p className="text-lg text-muted-foreground mb-2">
               <strong className="text-foreground">{title}</strong> is ready for you.
             </p>
@@ -64,10 +63,10 @@ const ResourceThankYou = () => {
               <h2 className="text-xl font-bold mb-4 text-center">What's Next?</h2>
               <div className="space-y-4">
                 {[
-                  { text: "Check your email for the PDF download link", icon: "📧" },
-                  { text: "Apply the strategies to your website today", icon: "🚀" },
-                  { text: "Get a free personalized SEO audit of your site", icon: "🔍", link: "/free-seo-audit" },
-                  { text: "Explore our professional SEO services", icon: "💼", link: "/services" },
+                  { text: "Check your email for the PDF download link", icon: "" },
+                  { text: "Apply the strategies to your website today", icon: "" },
+                  { text: "Get a free personalized SEO audit of your site", icon: "", link: "/free-seo-audit" },
+                  { text: "Explore our professional SEO services", icon: "", link: "/services" },
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <span className="text-xl shrink-0">{step.icon}</span>

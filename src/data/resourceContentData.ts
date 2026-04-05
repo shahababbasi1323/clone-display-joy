@@ -519,7 +519,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Mid-Level SEO (1-3 years): $45K-$70K" },
         { label: "Senior SEO (3-5 years): $70K-$100K" },
         { label: "SEO Manager/Director (5+ years): $100K-$150K+" },
-        { label: "Freelance/Agency Owner: Unlimited 🚀" },
+        { label: "Freelance/Agency Owner: Unlimited " },
       ], proTip: "The SEO industry is growing 15% year-over-year. Best time to start is now." },
     ],
   },
