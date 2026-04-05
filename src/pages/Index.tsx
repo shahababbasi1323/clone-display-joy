@@ -237,11 +237,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              SEO & Digital Marketing Services That <span className="text-gradient">Drive Revenue</span>
+              The Growth Engine Behind <span className="text-gradient">6 & 7-Figure Brands</span>
             </h2>
             <p className="text-muted-foreground">
-              From <Link to="/services/technical-seo" className="text-primary hover:underline">technical SEO audits</Link> to{" "}
-              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI search optimization</Link> — everything your business needs to get found online, attract qualified leads, and convert visitors into paying customers.
+              From <Link to="/services/technical-seo" className="text-primary hover:underline">deep technical audits</Link> to{" "}
+              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI-powered search domination</Link> — every lever your business needs to outrank, outperform, and outlast the competition.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
