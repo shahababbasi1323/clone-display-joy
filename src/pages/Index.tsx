@@ -366,9 +366,9 @@ const Index = () => {
       <section className="section-padding">
         <div className="container mx-auto text-center">
           <Wrench className="h-10 w-10 mx-auto text-accent mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">75+ Free SEO & Marketing Tools</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">85+ Free Tools Your Competitors Don't Want You to Find</h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-4">
-            Analyze your website's performance, audit your on-page SEO, research keywords, generate meta tags, calculate PPC budgets, and uncover growth opportunities — completely free.
+            Audit your SEO, spy on competitors, generate perfect meta tags, calculate ad ROI — all in one place, all free. No signup required.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-xs text-muted-foreground mb-8">
             <Link to="/tools/word-counter" className="glass rounded-lg px-3 py-1.5 hover:text-primary transition-colors">Word Counter</Link>
