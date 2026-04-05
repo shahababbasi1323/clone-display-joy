@@ -23,11 +23,11 @@ const applyUnicode = (text: string, type: "bold" | "italic") => {
 
 const WRITING_STYLES: { name: string; desc: string; transform: (text: string) => string }[] = [
   { name: "Professional", desc: "Polished, formal tone for business audiences", transform: (t) => t },
-  { name: "Casual", desc: "Friendly, conversational tone for engagement", transform: (t) => t.replace(/\. /g, "! ").replace(/\.$/g, "! 🙌") },
+  { name: "Casual", desc: "Friendly, conversational tone for engagement", transform: (t) => t.replace(/\. /g, "! ").replace(/\.$/g, "! ") },
   { name: "Storytelling", desc: "Narrative-driven, hook-based format", transform: (t) => {
     const lines = t.split("\n").filter(Boolean);
     if (lines.length <= 1) return `Here's a story that changed my perspective:\n\n${t}\n\n↓ (thread below)`;
-    return `${lines[0]}\n\n${lines.slice(1).join("\n\n")}\n\n♻️ Repost if this resonated.`;
+    return `${lines[0]}\n\n${lines.slice(1).join("\n\n")}\n\n♻ Repost if this resonated.`;
   }},
   { name: "List Format", desc: "Numbered points for maximum readability", transform: (t) => {
     const sentences = t.split(/[.!?]+/).filter(s => s.trim());
@@ -180,7 +180,7 @@ export const LinkedInPostFormatter = () => {
             <div>
               <p className="font-semibold text-sm">{name}</p>
               <p className="text-xs text-muted-foreground">{headline}</p>
-              <p className="text-xs text-muted-foreground">Now • 🌐</p>
+              <p className="text-xs text-muted-foreground">Now • </p>
             </div>
           </div>
 
@@ -191,7 +191,7 @@ export const LinkedInPostFormatter = () => {
 
           {/* Engagement stats */}
           <div className="px-4 py-2 border-t border-border flex justify-between text-xs text-muted-foreground">
-            <span>❤️😊 57</span>
+            <span>❤57</span>
             <span>24 comments · 6 reposts</span>
           </div>
 
@@ -229,7 +229,7 @@ export const LinkedInHeadlineGenerator = () => {
     `${role} | ${skills || "Expert"} | Helping ${industry || "businesses"} grow`,
     `${role} → ${skills || "Specialist"} in ${industry || "your industry"}`,
     `Experienced ${role} | ${skills || "Professional"} | ${industry || "Industry"} enthusiast`,
-    `${role} 🚀 ${skills || "Helping"} ${industry || "companies"} achieve results`,
+    `${role} ${skills || "Helping"} ${industry || "companies"} achieve results`,
     `${role} | ${skills || "Driven"} professional passionate about ${industry || "growth"}`,
     `Your go-to ${role} for ${skills || "exceptional"} ${industry || "results"}`,
   ] : [];
@@ -262,7 +262,7 @@ export const LinkedInSummaryGenerator = () => {
   const [experience, setExperience] = useState("");
   const [skills, setSkills] = useState("");
   const [passion, setPassion] = useState("");
-  const summary = role ? `As a ${role} with ${experience || "extensive"} experience, I specialize in ${skills || "delivering exceptional results"}.\n\n${passion ? `I'm passionate about ${passion} and ` : "I "}believe in driving measurable outcomes for every project I take on.\n\nThroughout my career, I've helped organizations achieve their goals through strategic thinking, data-driven decisions, and a commitment to excellence.\n\n🔹 ${skills ? skills.split(",").map(s => s.trim()).join("\n🔹 ") : "Strategic Planning\n🔹 Team Leadership\n🔹 Growth Strategy"}\n\nLet's connect! I'm always open to discussing new opportunities and collaborations.\n\n📩 Feel free to reach out.` : "";
+  const summary = role ? `As a ${role} with ${experience || "extensive"} experience, I specialize in ${skills || "delivering exceptional results"}.\n\n${passion ? `I'm passionate about ${passion} and ` : "I "}believe in driving measurable outcomes for every project I take on.\n\nThroughout my career, I've helped organizations achieve their goals through strategic thinking, data-driven decisions, and a commitment to excellence.\n\n${skills ? skills.split(",").map(s => s.trim()).join("\n") : "Strategic Planning\nTeam Leadership\nGrowth Strategy"}\n\nLet's connect! I'm always open to discussing new opportunities and collaborations.\n\nFeel free to reach out.` : "";
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -382,11 +382,11 @@ export const InstagramBioGenerator = () => {
   const [role, setRole] = useState("");
   const [niche, setNiche] = useState("");
   const bios = name ? [
-    `${role || "Creator"} ✨ ${niche || "Living life"} 🌟 ${name}`,
-    `${name} | ${role || "Dreamer"} 💫 ${niche || "Making things happen"} 👇`,
-    `🚀 ${role || "Professional"} | ${niche || "Sharing my journey"}\n📩 DM for collabs\n🔗 Link below`,
-    `${name} ✦ ${role || ""}\n${niche || "Content you'll love"} 💖\n📍 Worldwide`,
-    `Hey, I'm ${name}! 👋\n${role || "Creator"} × ${niche || "Explorer"}\n✨ Let's connect!`,
+    `${role || "Creator"} ✨ ${niche || "Living life"} ${name}`,
+    `${name} | ${role || "Dreamer"} ${niche || "Making things happen"} `,
+    `${role || "Professional"} | ${niche || "Sharing my journey"}\nDM for collabs\nLink below`,
+    `${name} ✦ ${role || ""}\n${niche || "Content you'll love"} \nWorldwide`,
+    `Hey, I'm ${name}! \n${role || "Creator"} × ${niche || "Explorer"}\n✨ Let's connect!`,
   ] : [];
 
   return (
@@ -442,7 +442,7 @@ export const SocialPostCalendar = () => {
           </div>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground">💡 Best posting times: LinkedIn (Tue-Thu 9-11 AM), Instagram (Mon-Fri 11 AM-1 PM), Twitter (Wed-Fri 9-11 AM)</p>
+      <p className="text-xs text-muted-foreground">Best posting times: LinkedIn (Tue-Thu 9-11 AM), Instagram (Mon-Fri 11 AM-1 PM), Twitter (Wed-Fri 9-11 AM)</p>
     </div>
   );
 };

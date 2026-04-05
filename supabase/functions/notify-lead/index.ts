@@ -25,13 +25,13 @@ serve(async (req) => {
     // --- 1. Admin notification email ---
     const subject =
       source === "free_seo_audit"
-        ? `🔍 New Free SEO Audit Request from ${name}`
+        ? `New Free SEO Audit Request from ${name}`
         : source === "welcome-popup"
-        ? `🎉 New Welcome Offer Lead: ${email}`
+        ? `New Welcome Offer Lead: ${email}`
         : source?.startsWith("resource_")
-        ? `📥 New Resource Download: ${resourceTitle || message}`
+        ? `New Resource Download: ${resourceTitle || message}`
         : source === "pricing_custom_quote"
-        ? `💰 New Custom Quote Request from ${name}`
+        ? `New Custom Quote Request from ${name}`
         : `📩 New Contact Form Submission from ${name}`;
 
     const htmlBody = `
@@ -78,7 +78,7 @@ serve(async (req) => {
           </div>
           
           <div style="background:linear-gradient(135deg,#00C853,#00E676);border-radius:12px;padding:30px;text-align:center;color:#ffffff;margin-bottom:24px;">
-            <h2 style="margin:0 0 8px 0;font-size:28px;">🎉 Your 25% Discount is Confirmed!</h2>
+            <h2 style="margin:0 0 8px 0;font-size:28px;">Your 25% Discount is Confirmed!</h2>
             <p style="margin:0;opacity:0.9;font-size:16px;">Use it on your first project with us</p>
           </div>
           
@@ -99,7 +99,7 @@ serve(async (req) => {
 
           <div style="text-align:center;margin:30px 0;">
             <a href="https://shahababbasi.com/free-seo-audit" style="display:inline-block;background:#6366f1;color:#ffffff;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:16px;">
-              🚀 Get Your Free Growth Audit
+              Get Your Free Growth Audit
             </a>
           </div>
           
@@ -116,7 +116,7 @@ serve(async (req) => {
           <div style="text-align:center;margin:24px 0;">
             <p style="color:#374151;font-size:14px;margin:0 0 8px;">Prefer to chat directly?</p>
             <a href="https://wa.me/923041316771?text=Hi%20Shahab%2C%20I%20have%20the%20WELCOME25%20discount%20code!" style="display:inline-block;background:#25D366;color:#ffffff;text-decoration:none;padding:10px 24px;border-radius:24px;font-weight:bold;font-size:14px;">
-              💬 WhatsApp Us
+              WhatsApp Us
             </a>
           </div>
           
@@ -137,7 +137,7 @@ serve(async (req) => {
         body: JSON.stringify({
           from: "Shahab Abbasi <contact@shahababbasi.com>",
           to: [email],
-          subject: "🎉 Your 25% Discount Code: WELCOME25",
+          subject: "Your 25% Discount Code: WELCOME25",
           html: discountHtml,
         }),
       });
@@ -153,7 +153,7 @@ serve(async (req) => {
           </div>
           
           <div style="background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:12px;padding:30px;text-align:center;color:#ffffff;margin-bottom:24px;">
-            <h2 style="margin:0 0 8px 0;font-size:24px;">Your Resource is Ready! 🎉</h2>
+            <h2 style="margin:0 0 8px 0;font-size:24px;">Your Resource is Ready! </h2>
             <p style="margin:0;opacity:0.9;font-size:16px;">${resourceTitle}</p>
           </div>
           
@@ -163,7 +163,7 @@ serve(async (req) => {
           
           <div style="text-align:center;margin:30px 0;">
             <a href="${downloadUrl}" style="display:inline-block;background:#6366f1;color:#ffffff;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:16px;">
-              📥 Download Your PDF
+              Download Your PDF
             </a>
           </div>
           
@@ -193,7 +193,7 @@ serve(async (req) => {
         body: JSON.stringify({
           from: "Shahab Abbasi <contact@shahababbasi.com>",
           to: [email],
-          subject: `📥 Your download: ${resourceTitle}`,
+          subject: `Your download: ${resourceTitle}`,
           html: userHtml,
         }),
       });

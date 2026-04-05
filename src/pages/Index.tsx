@@ -182,7 +182,7 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              🔥 50+ Brands Scaled — Join the Waitlist Before Your Competitor Does
+              50+ Brands Scaled — Join the Waitlist Before Your Competitor Does
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Stop Being <span className="text-accent">Invisible Online.</span>{" "}
@@ -194,7 +194,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  🚀 Claim Your Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  Claim Your Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/services">
@@ -355,7 +355,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">
-                🎯 Book Your Free Strategy Call — Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
+                Book Your Free Strategy Call — Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -687,7 +687,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  🔥 Get My Free Audit Now <ArrowRight className="ml-2 h-5 w-5" />
+                  Get My Free Audit Now <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/pricing">

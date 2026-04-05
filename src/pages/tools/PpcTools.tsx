@@ -70,7 +70,7 @@ export const GoogleAdsBudgetCalculator = () => {
               </span>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground">💡 A healthy ROAS for most businesses is 3x–5x. Below 2x, consider optimizing your campaign or landing pages.</p>
+          <p className="text-xs text-muted-foreground">A healthy ROAS for most businesses is 3x–5x. Below 2x, consider optimizing your campaign or landing pages.</p>
         </div>
       )}
     </div>
@@ -121,10 +121,10 @@ export const RoasCalculator = () => {
               {roas.toFixed(2)}x
             </p>
             <p className="text-xs text-muted-foreground mt-2">
-              {roas >= 4 ? "🏆 Excellent — your campaigns are highly profitable" :
-               roas >= 3 ? "✅ Good — solid return on your ad investment" :
-               roas >= 2 ? "⚠️ Average — room for optimization" :
-               "🔴 Below average — review targeting and landing pages"}
+              {roas >= 4 ? "Excellent — your campaigns are highly profitable" :
+               roas >= 3 ? "Good — solid return on your ad investment" :
+               roas >= 2 ? "Average — room for optimization" :
+               "Below average — review targeting and landing pages"}
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export const RoasCalculator = () => {
             <StatCard label="Break-even ROAS" value={`${profitableRoas.toFixed(2)}x`} />
           </div>
 
-          <p className="text-xs text-muted-foreground">💡 ACoS (Advertising Cost of Sales) is the inverse of ROAS. A lower ACoS means higher efficiency.</p>
+          <p className="text-xs text-muted-foreground">ACoS (Advertising Cost of Sales) is the inverse of ROAS. A lower ACoS means higher efficiency.</p>
         </div>
       )}
     </div>
@@ -213,7 +213,7 @@ export const AdCopyGenerator = () => {
             <CopyButton text={output} />
           </div>
           <pre className="glass rounded-xl p-4 text-xs leading-relaxed whitespace-pre-wrap">{output}</pre>
-          <p className="text-xs text-muted-foreground mt-3">💡 Google recommends 15 headlines and 4 descriptions per RSA. Use these as starting points and create variations.</p>
+          <p className="text-xs text-muted-foreground mt-3">Google recommends 15 headlines and 4 descriptions per RSA. Use these as starting points and create variations.</p>
         </div>
       )}
     </div>
@@ -259,10 +259,10 @@ export const QualityScoreEstimator = () => {
       <div className="glass rounded-xl p-4 text-center">
         <p className="text-sm text-muted-foreground">{checkedCount}/{factors.length} factors met</p>
         <p className="text-xs text-muted-foreground mt-2">
-          {score >= 8 ? "🏆 Excellent — you'll enjoy lower CPCs and better ad positions" :
-           score >= 6 ? "✅ Good — a few improvements could further reduce costs" :
-           score >= 4 ? "⚠️ Average — significant savings possible with optimization" :
-           "🔴 Low — review ad relevance, landing page, and keyword match"}
+          {score >= 8 ? "Excellent — you'll enjoy lower CPCs and better ad positions" :
+           score >= 6 ? "Good — a few improvements could further reduce costs" :
+           score >= 4 ? "Average — significant savings possible with optimization" :
+           "Low — review ad relevance, landing page, and keyword match"}
         </p>
       </div>
     </div>
@@ -346,10 +346,10 @@ export const PpcCampaignAuditChecklist = () => {
       <div className="glass rounded-xl p-4 text-center">
         <p className="text-sm font-medium">{completed}/{total} checks passed</p>
         <p className="text-xs text-muted-foreground mt-1">
-          {score >= 80 ? "🏆 Your campaigns are well-optimized. Focus on scaling." :
-           score >= 60 ? "✅ Good foundation — address remaining items for better performance." :
-           score >= 40 ? "⚠️ Several optimization opportunities found. Prioritize high-impact items." :
-           "🔴 Significant issues detected. Consider a professional PPC audit."}
+          {score >= 80 ? "Your campaigns are well-optimized. Focus on scaling." :
+           score >= 60 ? "Good foundation — address remaining items for better performance." :
+           score >= 40 ? "Several optimization opportunities found. Prioritize high-impact items." :
+           "Significant issues detected. Consider a professional PPC audit."}
         </p>
       </div>
     </div>

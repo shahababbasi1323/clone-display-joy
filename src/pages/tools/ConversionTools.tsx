@@ -71,7 +71,7 @@ export const AbTestDurationCalculator = () => {
           <StatCard label="Weeks" value={`${Math.ceil(days / 7)} weeks`} />
         </div>
       )}
-      <p className="text-xs text-muted-foreground">💡 Always run tests for at least 1-2 full business cycles (weeks). Avoid stopping tests early.</p>
+      <p className="text-xs text-muted-foreground">Always run tests for at least 1-2 full business cycles (weeks). Avoid stopping tests early.</p>
     </div>
   );
 };

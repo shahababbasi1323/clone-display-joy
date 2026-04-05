@@ -204,7 +204,7 @@ const WelcomePopup = () => {
 
                     {/* Heading */}
                     <h2 className="text-center text-xl font-extrabold mb-0.5 tracking-tight">
-                      Special Welcome Offer! 🎉
+                      Special Welcome Offer! 
                     </h2>
                     <p className="text-center text-accent font-semibold text-sm mb-0.5">
                       Get 25% Off Your First Project
@@ -330,7 +330,7 @@ const WelcomePopup = () => {
                     >
                       <CheckCircle2 className="h-10 w-10 text-accent" />
                     </motion.div>
-                    <h3 className="text-xl font-bold mb-2">You're In! 🎉</h3>
+                    <h3 className="text-xl font-bold mb-2">You're In! </h3>
                     <p className="text-accent font-semibold text-lg mb-1">WELCOME25</p>
                     <p className="text-muted-foreground text-sm mb-1">
                       Your 25% discount code has been sent to

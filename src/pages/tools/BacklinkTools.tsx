@@ -35,8 +35,8 @@ export const AnchorTextAnalyzer = () => {
             <div className="glass rounded-xl p-4">
               <p className="text-sm font-medium mb-2">Health Assessment</p>
               <p className="text-xs text-muted-foreground">
-                {(categories["Keyword"]?.length || 0) / total > 0.5 ? "⚠ Too many exact-match keyword anchors. Diversify with branded and generic anchors." :
-                  (categories["Generic"]?.length || 0) / total > 0.5 ? "⚠ Too many generic anchors. Include more keyword-rich and branded anchors." :
+                {(categories["Keyword"]?.length || 0) / total > 0.5 ? "Too many exact-match keyword anchors. Diversify with branded and generic anchors." :
+                  (categories["Generic"]?.length || 0) / total > 0.5 ? "Too many generic anchors. Include more keyword-rich and branded anchors." :
                     "✓ Anchor text distribution looks healthy."}
               </p>
             </div>

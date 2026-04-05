@@ -328,7 +328,7 @@ export const ForceIndexingTool = () => {
         <div className="flex items-start gap-3">
           <Info className="h-5 w-5 text-primary mt-0.5 shrink-0" />
           <div className="space-y-2 text-sm text-muted-foreground">
-            <p className="font-semibold text-foreground">💡 Pro Tips for Faster Indexing</p>
+            <p className="font-semibold text-foreground">Pro Tips for Faster Indexing</p>
             <ul className="list-disc list-inside space-y-1">
               <li>
                 <strong>Google Search Console</strong> — Use "Request Indexing" in URL Inspection for the fastest results (usually indexed within hours).

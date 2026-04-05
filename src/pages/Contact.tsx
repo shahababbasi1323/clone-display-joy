@@ -116,7 +116,7 @@ const Contact = () => {
             <div className="lg:col-span-3">
               {submitted ? (
                 <div className="glass rounded-xl p-10 text-center">
-                  <div className="text-4xl mb-4">✅</div>
+                  <div className="text-4xl mb-4"></div>
                   <h3 className="text-xl font-semibold mb-2">Message Sent!</h3>
                   <p className="text-muted-foreground">Thank you for reaching out. I'll get back to you within 24 hours.</p>
                 </div>

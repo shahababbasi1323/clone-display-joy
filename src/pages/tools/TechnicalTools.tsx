@@ -310,7 +310,7 @@ export const CoreWebVitalsGuide = () => {
           <ul className="space-y-1">{cwv.fixes.map((f, i) => <li key={i} className="text-sm text-muted-foreground">• {f}</li>)}</ul>
         </div>
       </div>
-      <p className="text-xs text-muted-foreground">💡 Measure with: Google PageSpeed Insights, Chrome DevTools Lighthouse, or Search Console Core Web Vitals report.</p>
+      <p className="text-xs text-muted-foreground">Measure with: Google PageSpeed Insights, Chrome DevTools Lighthouse, or Search Console Core Web Vitals report.</p>
     </div>
   );
 };

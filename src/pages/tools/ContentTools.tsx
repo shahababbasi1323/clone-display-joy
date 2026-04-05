@@ -220,7 +220,7 @@ export const ArticleRewriterHelper = () => {
       <div className="space-y-4">
         <StatCard label="Total Words" value={words.length} />
         <StatCard label="Avg Sentence Length" value={`${avgSentenceLen} words`} />
-        {avgSentenceLen > 20 && <p className="text-xs text-destructive px-2">⚠ Consider shortening sentences. Aim for 15-20 words.</p>}
+        {avgSentenceLen > 20 && <p className="text-xs text-destructive px-2">Consider shortening sentences. Aim for 15-20 words.</p>}
         <p className="text-sm font-medium mt-2">Overused Words (3+ times)</p>
         <div className="space-y-2 max-h-[300px] overflow-auto">
           {overused.length === 0 && <p className="text-sm text-muted-foreground">No overused words detected</p>}
@@ -296,7 +296,7 @@ export const GrammarChecker = () => {
             <div key={i} className="glass rounded-lg p-3">
               <div className="flex justify-between"><span className="text-xs font-medium text-destructive">{issue.type}</span></div>
               <p className="text-sm mt-1">{issue.match}</p>
-              <p className="text-xs text-muted-foreground mt-1">💡 {issue.suggestion}</p>
+              <p className="text-xs text-muted-foreground mt-1">{issue.suggestion}</p>
             </div>
           ))}
         </div>

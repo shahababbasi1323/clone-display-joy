@@ -95,12 +95,12 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Industries</h3>
             <ul className="space-y-2">
               {[
-                { label: "🇬🇧 English", href: "/industries" },
-                { label: "🇸🇦 العربية", href: "/ar/industries" },
-                { label: "🇫🇷 Français", href: "/fr/industries" },
-                { label: "🇩🇪 Deutsch", href: "/de/industries" },
-                { label: "🇪🇸 Español", href: "/es/industries" },
-                { label: "🇳🇱 Nederlands", href: "/nl/industries" },
+                { label: "English", href: "/industries" },
+                { label: "العربية", href: "/ar/industries" },
+                { label: "Français", href: "/fr/industries" },
+                { label: "Deutsch", href: "/de/industries" },
+                { label: "Español", href: "/es/industries" },
+                { label: "Nederlands", href: "/nl/industries" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">

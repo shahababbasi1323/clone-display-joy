@@ -29,13 +29,13 @@ export const BulkExpiredDomainChecker = () => {
         const timeout = setTimeout(() => controller.abort(), 5000);
         const res = await fetch(`https://${domain}`, { method: "HEAD", mode: "no-cors", signal: controller.signal });
         clearTimeout(timeout);
-        status = "🟢 Active (Registered)";
+        status = "Active (Registered)";
       } catch (err: any) {
         if (err.name === "AbortError") {
-          status = "⏱️ Timeout (Possibly Expired)";
+          status = "Timeout (Possibly Expired)";
         } else {
           // Network error could mean expired/unregistered
-          status = "🔴 Unreachable (Possibly Expired)";
+          status = "Unreachable (Possibly Expired)";
         }
       }
 
@@ -290,13 +290,13 @@ export const BrokenLinkChecker = () => {
             const t = setTimeout(() => ctrl.abort(), 6000);
             const r = await fetch(link.href, { method: "HEAD", mode: "no-cors", signal: ctrl.signal });
             clearTimeout(t);
-            status = "✅ Reachable";
+            status = "Reachable";
             ok = true;
           } catch (err: any) {
             if (err.name === "AbortError") {
-              status = "⏱️ Timeout";
+              status = "Timeout";
             } else {
-              status = "❌ Broken / Unreachable";
+              status = "Broken / Unreachable";
             }
           }
           setLinks(prev => prev.map((l, idx) => idx === i ? { ...l, status, ok, checked: true } : l));
@@ -325,13 +325,13 @@ export const BrokenLinkChecker = () => {
           const t = setTimeout(() => ctrl.abort(), 6000);
           await fetch(link.href, { method: "HEAD", mode: "no-cors", signal: ctrl.signal });
           clearTimeout(t);
-          status = "✅ Reachable";
+          status = "Reachable";
           ok = true;
         } catch (err: any) {
           if (err.name === "AbortError") {
-            status = "⏱️ Timeout";
+            status = "Timeout";
           } else {
-            status = "❌ Broken / Unreachable";
+            status = "Broken / Unreachable";
           }
         }
         setLinks(prev => prev.map((l, idx) => idx === i ? { ...l, status, ok, checked: true } : l));
