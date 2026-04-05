@@ -453,8 +453,8 @@ const Navbar = () => {
                   </button>
                   {mobileSubmenu === link.label && (
                     <div className="ml-2 border-l border-border max-h-[50vh] overflow-y-auto">
-                      <Link to="/locations" className="px-6 py-3 rounded-lg text-sm font-semibold text-primary hover:bg-secondary block">
-                        🌍 All Locations
+                      <Link to={link.href} className="px-6 py-3 rounded-lg text-sm font-semibold text-primary hover:bg-secondary block">
+                        {link.label === "Locations" ? "🌍 All Locations" : link.label === "Industries" ? "🏭 All Industries" : link.label === "Tools" ? "🛠️ All Tools" : "🚀 All Services"}
                       </Link>
                       {(link as any).megaGroups.map((group: any) => (
                         <div key={group.title}>
