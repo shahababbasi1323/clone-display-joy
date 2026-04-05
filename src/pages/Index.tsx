@@ -513,10 +513,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Industry-Specific SEO <span className="text-gradient">Expertise</span>
+              We Speak Your <span className="text-gradient">Industry's Language</span>
             </h2>
             <p className="text-muted-foreground">
-              We build tailored search engine optimization strategies for every industry — because each niche has unique search behavior, buyer intent, and competitive dynamics. Explore your <Link to="/industries" className="text-primary hover:underline">industry SEO solutions</Link>.
+              Cookie-cutter SEO doesn't work. We build razor-sharp strategies for your niche — because a dentist's keywords aren't a lawyer's. Explore your <Link to="/industries" className="text-primary hover:underline">industry playbook</Link>.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
