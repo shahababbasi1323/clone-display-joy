@@ -182,31 +182,31 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              Trusted by 50+ Businesses Worldwide — SEO & Digital Growth Expert
+              🔥 50+ Brands Scaled — Join the Waitlist Before Your Competitor Does
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Rank #1 on Google, <span className="text-gradient">5x Your Revenue</span> &{" "}
-              <span className="text-accent">Dominate Your Market</span>
+              Stop Being <span className="text-accent">Invisible Online.</span>{" "}
+              <span className="text-gradient">We Put You on Page 1</span> — Guaranteed.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Stop losing customers to competitors who rank higher. I deliver <strong>proven SEO strategies</strong>, high-converting <Link to="/ppc" className="text-primary hover:underline">PPC campaigns</Link>, and data-driven <Link to="/services" className="text-primary hover:underline">digital marketing</Link> that generates consistent organic traffic, qualified leads, and measurable revenue growth — without wasting budget on ads that don't convert.
+              Your competitors are stealing your customers <em>right now</em>. We flip the script with <strong>battle-tested SEO</strong>, high-ROI <Link to="/ppc" className="text-primary hover:underline font-semibold">PPC campaigns</Link>, and <Link to="/services" className="text-primary hover:underline font-semibold">growth-driven marketing</Link> that turns clicks into customers and traffic into revenue — fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Get My Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  🚀 Claim Your Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/services">
                 <Button variant="outline" size="lg" className="text-base px-8">
-                  Explore All Services
+                  See What We Do →
                 </Button>
               </Link>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> No Long-Term Contracts</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> Zero Lock-in Contracts</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> 100% Transparent Reporting</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> Results in 90 Days</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> ROI in 90 Days or We Work Free</span>
             </div>
           </motion.div>
         </div>
