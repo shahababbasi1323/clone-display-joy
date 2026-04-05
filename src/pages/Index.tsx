@@ -281,10 +281,10 @@ const Index = () => {
           <div className="mt-20">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                PPC & Paid <span className="text-gradient">Advertising</span> That Converts
+                Instant Leads. Instant Sales. <span className="text-gradient">PPC That Pays for Itself</span>
               </h2>
               <p className="text-muted-foreground">
-                Need immediate results while your SEO compounds? Our <Link to="/ppc" className="text-primary hover:underline">pay-per-click management services</Link> drive instant, measurable traffic and conversions across Google, Facebook, Instagram & LinkedIn.
+                Can't wait for SEO to kick in? Our <Link to="/ppc" className="text-primary hover:underline">paid ads experts</Link> launch laser-targeted campaigns across Google, Meta, Instagram & LinkedIn that deliver paying customers from day one.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
