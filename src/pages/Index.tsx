@@ -182,31 +182,31 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              Trusted by 50+ Businesses Worldwide — SEO & Digital Growth Expert
+              🔥 50+ Brands Scaled — Join the Waitlist Before Your Competitor Does
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Rank #1 on Google, <span className="text-gradient">5x Your Revenue</span> &{" "}
-              <span className="text-accent">Dominate Your Market</span>
+              Stop Being <span className="text-accent">Invisible Online.</span>{" "}
+              <span className="text-gradient">We Put You on Page 1</span> — Guaranteed.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Stop losing customers to competitors who rank higher. I deliver <strong>proven SEO strategies</strong>, high-converting <Link to="/ppc" className="text-primary hover:underline">PPC campaigns</Link>, and data-driven <Link to="/services" className="text-primary hover:underline">digital marketing</Link> that generates consistent organic traffic, qualified leads, and measurable revenue growth — without wasting budget on ads that don't convert.
+              Your competitors are stealing your customers <em>right now</em>. We flip the script with <strong>battle-tested SEO</strong>, high-ROI <Link to="/ppc" className="text-primary hover:underline font-semibold">PPC campaigns</Link>, and <Link to="/services" className="text-primary hover:underline font-semibold">growth-driven marketing</Link> that turns clicks into customers and traffic into revenue — fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Get My Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  🚀 Claim Your Free Growth Audit <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/services">
                 <Button variant="outline" size="lg" className="text-base px-8">
-                  Explore All Services
+                  See What We Do →
                 </Button>
               </Link>
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> No Long-Term Contracts</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> Zero Lock-in Contracts</span>
               <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> 100% Transparent Reporting</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> Results in 90 Days</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-accent" /> ROI in 90 Days or We Work Free</span>
             </div>
           </motion.div>
         </div>
@@ -237,11 +237,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              SEO & Digital Marketing Services That <span className="text-gradient">Drive Revenue</span>
+              The Growth Engine Behind <span className="text-gradient">6 & 7-Figure Brands</span>
             </h2>
             <p className="text-muted-foreground">
-              From <Link to="/services/technical-seo" className="text-primary hover:underline">technical SEO audits</Link> to{" "}
-              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI search optimization</Link> — everything your business needs to get found online, attract qualified leads, and convert visitors into paying customers.
+              From <Link to="/services/technical-seo" className="text-primary hover:underline">deep technical audits</Link> to{" "}
+              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI-powered search domination</Link> — every lever your business needs to outrank, outperform, and outlast the competition.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -281,10 +281,10 @@ const Index = () => {
           <div className="mt-20">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                PPC & Paid <span className="text-gradient">Advertising</span> That Converts
+                Instant Leads. Instant Sales. <span className="text-gradient">PPC That Pays for Itself</span>
               </h2>
               <p className="text-muted-foreground">
-                Need immediate results while your SEO compounds? Our <Link to="/ppc" className="text-primary hover:underline">pay-per-click management services</Link> drive instant, measurable traffic and conversions across Google, Facebook, Instagram & LinkedIn.
+                Can't wait for SEO to kick in? Our <Link to="/ppc" className="text-primary hover:underline">paid ads experts</Link> launch laser-targeted campaigns across Google, Meta, Instagram & LinkedIn that deliver paying customers from day one.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -328,10 +328,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How We <span className="text-gradient">Grow Your Business</span> Online
+              From Zero Visibility to <span className="text-gradient">Market Leader</span> — Here's How
             </h2>
             <p className="text-muted-foreground">
-              A proven, transparent 4-step process that's helped 50+ businesses across 5+ countries achieve page 1 rankings and sustainable revenue growth.
+              Our battle-tested 4-step framework has helped 50+ brands go from "Where is my website?" to "We can't keep up with the leads." Here's exactly what happens:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -355,7 +355,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">
-                Book Your Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                🎯 Book Your Free Strategy Call — Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -366,9 +366,9 @@ const Index = () => {
       <section className="section-padding">
         <div className="container mx-auto text-center">
           <Wrench className="h-10 w-10 mx-auto text-accent mb-4" />
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">75+ Free SEO & Marketing Tools</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">85+ Free Tools Your Competitors Don't Want You to Find</h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-4">
-            Analyze your website's performance, audit your on-page SEO, research keywords, generate meta tags, calculate PPC budgets, and uncover growth opportunities — completely free.
+            Audit your SEO, spy on competitors, generate perfect meta tags, calculate ad ROI — all in one place, all free. No signup required.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-xs text-muted-foreground mb-8">
             <Link to="/tools/word-counter" className="glass rounded-lg px-3 py-1.5 hover:text-primary transition-colors">Word Counter</Link>
@@ -390,9 +390,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Proven Results: <span className="text-gradient">Real Business Growth</span>
+              Don't Take Our Word for It — <span className="text-gradient">See the Numbers</span>
             </h2>
-            <p className="text-muted-foreground">See how businesses like yours used our SEO & digital marketing services to generate more organic traffic, qualified leads, and measurable revenue.</p>
+            <p className="text-muted-foreground">Real brands. Real revenue. Here's what happens when you stop guessing and start growing with a proven system.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {caseStudies.map((cs, i) => (
@@ -432,7 +432,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            What Our Clients <span className="text-gradient">Say About Us</span>
+            Hear It Straight from <span className="text-gradient">Clients Who Scaled</span>
           </h2>
           <div className="max-w-2xl mx-auto">
             <motion.div
@@ -481,9 +481,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Complete SEO & Digital Marketing <span className="text-gradient">Service Catalog</span>
+              Every Weapon in Your <span className="text-gradient">Digital Arsenal</span>
             </h2>
-            <p className="text-muted-foreground">From technical audits and keyword research to content marketing, link building & AI search optimization — explore every service designed to grow your online presence and revenue.</p>
+            <p className="text-muted-foreground">Technical audits, killer content, authority backlinks, AI search — pick the services that move the needle, or let us build the full stack.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {servicesData.slice(0, 10).map((svc) => {
@@ -513,10 +513,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Industry-Specific SEO <span className="text-gradient">Expertise</span>
+              We Speak Your <span className="text-gradient">Industry's Language</span>
             </h2>
             <p className="text-muted-foreground">
-              We build tailored search engine optimization strategies for every industry — because each niche has unique search behavior, buyer intent, and competitive dynamics. Explore your <Link to="/industries" className="text-primary hover:underline">industry SEO solutions</Link>.
+              Cookie-cutter SEO doesn't work. We build razor-sharp strategies for your niche — because a dentist's keywords aren't a lawyer's. Explore your <Link to="/industries" className="text-primary hover:underline">industry playbook</Link>.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
@@ -547,10 +547,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Digital Marketing Services <span className="text-gradient">Worldwide</span>
+              We Rank Businesses in <span className="text-gradient">40+ Countries</span> — Is Yours Next?
             </h2>
             <p className="text-muted-foreground">
-              Serving businesses across 40+ countries with localized SEO, PPC management, web design & content marketing strategies tailored to each market's search behavior and competition.
+              Whether you're in Dubai, London, New York, or Islamabad — we know how to win in your local market with hyper-targeted SEO, PPC & content strategies.
             </p>
           </div>
           <div className="space-y-8">
@@ -594,9 +594,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Latest SEO & Marketing <span className="text-gradient">Insights</span>
+              Growth Playbooks & <span className="text-gradient">SEO Secrets</span> We Actually Use
             </h2>
-            <p className="text-muted-foreground">Actionable search engine optimization tips, digital marketing strategies, and industry insights to help you grow your business online faster. Visit our <Link to="/blog" className="text-primary hover:underline">blog</Link> for more.</p>
+            <p className="text-muted-foreground">No fluff, no filler — just the exact strategies we use to 5x client revenue. Steal them from our <Link to="/blog" className="text-primary hover:underline">blog</Link>.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.map((post, i) => (
@@ -644,7 +644,7 @@ const Index = () => {
       <section className="section-padding bg-card/20 border-y border-border">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Frequently Asked <span className="text-gradient">Questions</span>
+            Got Questions? We've Got <span className="text-gradient">Straight Answers</span>
           </h2>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
@@ -679,20 +679,20 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="glass rounded-2xl p-10 md:p-16 glow-primary">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to <span className="text-gradient">Rank #1 & Scale Your Business</span>?
+              Your Competitors Already Called. <span className="text-gradient">Your Move.</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              Get a free, comprehensive audit of your website's SEO health, keyword opportunities, competitor landscape & online marketing performance — with a clear, prioritized action plan to start generating more organic traffic, qualified leads & revenue within 90 days.
+              Every day you wait is another day they outrank you. Get a free audit with a crystal-clear roadmap to page 1 rankings, more leads & explosive revenue — delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Request Your Free Business Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  🔥 Get My Free Audit Now <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/pricing">
                 <Button variant="outline" size="lg" className="text-base px-8">
-                  View Pricing Plans
+                  See Pricing & Plans
                 </Button>
               </Link>
             </div>
