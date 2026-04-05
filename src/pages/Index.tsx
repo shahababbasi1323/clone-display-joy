@@ -644,7 +644,7 @@ const Index = () => {
       <section className="section-padding bg-card/20 border-y border-border">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Frequently Asked <span className="text-gradient">Questions</span>
+            Got Questions? We've Got <span className="text-gradient">Straight Answers</span>
           </h2>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
