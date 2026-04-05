@@ -86,7 +86,7 @@ export const DomainAgeChecker = () => {
               </div>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground">💡 Older domains with clean history typically have more trust and authority in search engines.</p>
+          <p className="text-xs text-muted-foreground">Older domains with clean history typically have more trust and authority in search engines.</p>
         </div>
       )}
     </div>

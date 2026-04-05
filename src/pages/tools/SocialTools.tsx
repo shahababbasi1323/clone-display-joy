@@ -27,7 +27,7 @@ const WRITING_STYLES: { name: string; desc: string; transform: (text: string) =>
   { name: "Storytelling", desc: "Narrative-driven, hook-based format", transform: (t) => {
     const lines = t.split("\n").filter(Boolean);
     if (lines.length <= 1) return `Here's a story that changed my perspective:\n\n${t}\n\n↓ (thread below)`;
-    return `${lines[0]}\n\n${lines.slice(1).join("\n\n")}\n\n♻️ Repost if this resonated.`;
+    return `${lines[0]}\n\n${lines.slice(1).join("\n\n")}\n\n♻ Repost if this resonated.`;
   }},
   { name: "List Format", desc: "Numbered points for maximum readability", transform: (t) => {
     const sentences = t.split(/[.!?]+/).filter(s => s.trim());
@@ -191,7 +191,7 @@ export const LinkedInPostFormatter = () => {
 
           {/* Engagement stats */}
           <div className="px-4 py-2 border-t border-border flex justify-between text-xs text-muted-foreground">
-            <span>❤️57</span>
+            <span>❤57</span>
             <span>24 comments · 6 reposts</span>
           </div>
 

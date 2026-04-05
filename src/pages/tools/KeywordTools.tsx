@@ -106,10 +106,10 @@ export const SearchIntentClassifier = () => {
   const [input, setInput] = useState("");
   const classify = (kw: string): { intent: string; color: string } => {
     const k = kw.toLowerCase();
-    if (/buy|price|cost|cheap|deal|discount|coupon|order|purchase|shop|hire/.test(k)) return { intent: "Transactional 💰", color: "text-green-500" };
-    if (/best|top|review|compare|vs|alternative|recommendation/.test(k)) return { intent: "Commercial 🔍", color: "text-yellow-500" };
-    if (/login|sign in|website|official|contact|address|phone/.test(k)) return { intent: "Navigational 🧭", color: "text-blue-500" };
-    return { intent: "Informational ℹ️", color: "text-purple-500" };
+    if (/buy|price|cost|cheap|deal|discount|coupon|order|purchase|shop|hire/.test(k)) return { intent: "Transactional ", color: "text-green-500" };
+    if (/best|top|review|compare|vs|alternative|recommendation/.test(k)) return { intent: "Commercial ", color: "text-yellow-500" };
+    if (/login|sign in|website|official|contact|address|phone/.test(k)) return { intent: "Navigational ", color: "text-blue-500" };
+    return { intent: "Informational ", color: "text-purple-500" };
   };
   const keywords = input.split("\n").filter(k => k.trim());
 
@@ -323,7 +323,7 @@ export const BulkKeywordChecker = () => {
         {/* Popup blocked warning */}
         {paused && (
           <div className="mb-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
-            <p className="font-medium text-yellow-600 dark:text-yellow-400">⚠️ Popup blocked!</p>
+            <p className="font-medium text-yellow-600 dark:text-yellow-400">Popup blocked!</p>
             <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle browser mein popups allow karo, phir <strong>"Continue"</strong> button dabao — yeh wahi se shuru hoga jahan ruka tha ({openProgress}/{results.length}).</p>
           </div>
         )}

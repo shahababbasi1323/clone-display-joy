@@ -213,7 +213,7 @@ export const GbpKeywordChecker = () => {
               );
             })}
           </div>
-          <p className="text-xs text-muted-foreground">💡 Search each keyword on Google Maps to see your GBP ranking. Use incognito mode for unbiased results.</p>
+          <p className="text-xs text-muted-foreground">Search each keyword on Google Maps to see your GBP ranking. Use incognito mode for unbiased results.</p>
         </div>
       )}
     </div>

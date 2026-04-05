@@ -107,7 +107,7 @@ const FreeSeoAudit = () => {
             <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
               {submitted ? (
                 <div className="glass rounded-2xl p-10 text-center glow-primary">
-                  <div className="text-5xl mb-4">🎉</div>
+                  <div className="text-5xl mb-4"></div>
                   <h2 className="text-2xl font-bold mb-2">Audit Requested!</h2>
                   <p className="text-muted-foreground mb-6">I'll analyze your website and send you a detailed report within 24 hours.</p>
                   <Link to="/blog">

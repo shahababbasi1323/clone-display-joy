@@ -91,8 +91,8 @@ export const HeadingAnalyzer = () => {
           <StatCard label="Total Headings" value={headings.length} />
           <StatCard label="H1 Tags" value={h1Count} />
         </div>
-        {h1Count > 1 && <p className="text-xs text-destructive mb-3">⚠ Multiple H1 tags detected. Use only one H1 per page.</p>}
-        {h1Count === 0 && html && <p className="text-xs text-destructive mb-3">⚠ No H1 tag found. Every page should have one H1.</p>}
+        {h1Count > 1 && <p className="text-xs text-destructive mb-3">Multiple H1 tags detected. Use only one H1 per page.</p>}
+        {h1Count === 0 && html && <p className="text-xs text-destructive mb-3">No H1 tag found. Every page should have one H1.</p>}
         <div className="space-y-1">
           {headings.map((h, i) => (
             <div key={i} className="glass rounded-lg p-2 flex items-center gap-2" style={{ marginLeft: `${(h.level - 1) * 16}px` }}>
@@ -243,7 +243,7 @@ export const GoogleIndexChecker = () => {
               </div>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground">💡 For detailed index data, use Google Search Console (free).</p>
+          <p className="text-xs text-muted-foreground">For detailed index data, use Google Search Console (free).</p>
         </div>
       )}
     </div>
@@ -341,7 +341,7 @@ export const BulkIndexChecker = () => {
       {/* Popup blocked warning */}
       {paused && (
         <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
-          <p className="font-medium text-yellow-600 dark:text-yellow-400">⚠️ Popup blocked!</p>
+          <p className="font-medium text-yellow-600 dark:text-yellow-400">Popup blocked!</p>
           <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle popups allow karo, phir <strong>"Continue"</strong> dabao — wahi se continue hoga ({progress}/{urlList.length}).</p>
         </div>
       )}
@@ -371,7 +371,7 @@ export const BulkIndexChecker = () => {
               );
             })}
           </div>
-          <p className="text-xs text-muted-foreground">💡 If Google returns results, the page is indexed. No results = not indexed. Allow pop-ups for bulk checking.</p>
+          <p className="text-xs text-muted-foreground">If Google returns results, the page is indexed. No results = not indexed. Allow pop-ups for bulk checking.</p>
         </div>
       )}
     </div>
@@ -407,7 +407,7 @@ export const SerpChecker = () => {
               </div>
             );
           })}
-          <p className="text-xs text-muted-foreground">💡 For accurate rank tracking, use Google Search Console or tools like Ahrefs/SEMrush.</p>
+          <p className="text-xs text-muted-foreground">For accurate rank tracking, use Google Search Console or tools like Ahrefs/SEMrush.</p>
         </div>
       )}
     </div>

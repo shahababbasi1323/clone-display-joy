@@ -53,7 +53,7 @@ const ResourceLandingPage = () => {
     });
     setUnlocked(true);
     setIsSubmitting(false);
-    toast({ title: `📥 ${resource.title} unlocked!` });
+    toast({ title: `${resource.title} unlocked!` });
     navigate(`/free-seo-resources/thank-you?title=${encodeURIComponent(resource.title)}&url=${encodeURIComponent(downloadUrl)}`);
   };
 

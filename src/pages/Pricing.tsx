@@ -349,7 +349,7 @@ const Pricing = () => {
                 </Button>
               ) : quoteSubmitted ? (
                 <div className="text-center py-4">
-                  <div className="text-3xl mb-2">✅</div>
+                  <div className="text-3xl mb-2"></div>
                   <p className="font-semibold">Proposal request received! We'll get back to you within 24 hours with a custom plan.</p>
                 </div>
               ) : (

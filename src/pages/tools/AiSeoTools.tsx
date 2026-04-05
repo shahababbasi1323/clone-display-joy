@@ -69,7 +69,7 @@ export const AiContentOptimizer = () => {
         {checks.map((c, i) => (
           <div key={i} className={`glass rounded-lg p-3 border-l-4 ${c.pass ? "border-l-accent" : "border-l-destructive"}`}>
             <div className="flex justify-between"><span className="text-sm font-medium">{c.name}</span><span className={c.pass ? "text-accent text-sm" : "text-destructive text-sm"}>{c.pass ? "✓" : "✗"}</span></div>
-            {!c.pass && <p className="text-xs text-muted-foreground mt-1">💡 {c.tip}</p>}
+            {!c.pass && <p className="text-xs text-muted-foreground mt-1">{c.tip}</p>}
           </div>
         ))}
         {!content && <p className="text-sm text-muted-foreground">Paste content to analyze AI search optimization</p>}
