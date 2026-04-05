@@ -355,7 +355,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">
-                Book Your Free Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
+                🎯 Book Your Free Strategy Call — Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
