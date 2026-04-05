@@ -390,9 +390,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Proven Results: <span className="text-gradient">Real Business Growth</span>
+              Don't Take Our Word for It — <span className="text-gradient">See the Numbers</span>
             </h2>
-            <p className="text-muted-foreground">See how businesses like yours used our SEO & digital marketing services to generate more organic traffic, qualified leads, and measurable revenue.</p>
+            <p className="text-muted-foreground">Real brands. Real revenue. Here's what happens when you stop guessing and start growing with a proven system.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {caseStudies.map((cs, i) => (
