@@ -432,7 +432,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            What Our Clients <span className="text-gradient">Say About Us</span>
+            Hear It Straight from <span className="text-gradient">Clients Who Scaled</span>
           </h2>
           <div className="max-w-2xl mx-auto">
             <motion.div
