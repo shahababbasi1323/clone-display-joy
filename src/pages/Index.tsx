@@ -594,9 +594,9 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Latest SEO & Marketing <span className="text-gradient">Insights</span>
+              Growth Playbooks & <span className="text-gradient">SEO Secrets</span> We Actually Use
             </h2>
-            <p className="text-muted-foreground">Actionable search engine optimization tips, digital marketing strategies, and industry insights to help you grow your business online faster. Visit our <Link to="/blog" className="text-primary hover:underline">blog</Link> for more.</p>
+            <p className="text-muted-foreground">No fluff, no filler — just the exact strategies we use to 5x client revenue. Steal them from our <Link to="/blog" className="text-primary hover:underline">blog</Link>.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.map((post, i) => (
