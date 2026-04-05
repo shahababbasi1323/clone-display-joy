@@ -547,10 +547,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Digital Marketing Services <span className="text-gradient">Worldwide</span>
+              We Rank Businesses in <span className="text-gradient">40+ Countries</span> — Is Yours Next?
             </h2>
             <p className="text-muted-foreground">
-              Serving businesses across 40+ countries with localized SEO, PPC management, web design & content marketing strategies tailored to each market's search behavior and competition.
+              Whether you're in Dubai, London, New York, or Islamabad — we know how to win in your local market with hyper-targeted SEO, PPC & content strategies.
             </p>
           </div>
           <div className="space-y-8">
