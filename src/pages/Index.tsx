@@ -679,20 +679,20 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="glass rounded-2xl p-10 md:p-16 glow-primary">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to <span className="text-gradient">Rank #1 & Scale Your Business</span>?
+              Your Competitors Already Called. <span className="text-gradient">Your Move.</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              Get a free, comprehensive audit of your website's SEO health, keyword opportunities, competitor landscape & online marketing performance — with a clear, prioritized action plan to start generating more organic traffic, qualified leads & revenue within 90 days.
+              Every day you wait is another day they outrank you. Get a free audit with a crystal-clear roadmap to page 1 rankings, more leads & explosive revenue — delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary text-base px-8">
-                  Request Your Free Business Audit <ArrowRight className="ml-2 h-5 w-5" />
+                  🔥 Get My Free Audit Now <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link to="/pricing">
                 <Button variant="outline" size="lg" className="text-base px-8">
-                  View Pricing Plans
+                  See Pricing & Plans
                 </Button>
               </Link>
             </div>
