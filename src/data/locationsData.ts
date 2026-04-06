@@ -16,14 +16,35 @@ export interface LocationData {
 }
 
 // Factory helpers
+// Unique meta description generator using city-specific variation
+const hashStr = (s: string) => { let h = 0; for (let i = 0; i < s.length; i++) h = ((h << 5) - h + s.charCodeAt(i)) | 0; return Math.abs(h); };
+
+const enDescTemplates = [
+  (c: string, co: string) => `Top-rated SEO agency in ${c}, ${co}. We deliver higher rankings, more organic traffic, and measurable ROI through technical SEO, content strategy, and authority link building. Claim your free audit.`,
+  (c: string, co: string) => `Grow your ${c} business with expert SEO services. Our proven strategies combine on-page optimization, local SEO, and data-driven content marketing to dominate search results in ${co}. Free consultation.`,
+  (c: string, co: string) => `Looking for SEO experts in ${c}? We help ${co} businesses rank higher on Google with comprehensive audits, keyword research, link building, and AI-ready content optimization. Get started free.`,
+  (c: string, co: string) => `Results-driven SEO services for businesses in ${c}, ${co}. From Core Web Vitals optimization to GEO and AEO strategies, we build long-term organic growth. Request your free SEO analysis.`,
+  (c: string, co: string) => `Boost your online visibility in ${c} with a dedicated SEO partner. We specialize in technical audits, local map pack rankings, and conversion-focused content for ${co} markets. Free site audit.`,
+  (c: string, co: string) => `${c} SEO services that drive real business growth. Our ${co}-focused team handles everything from site architecture to link acquisition and AI search optimization. Schedule a free strategy call.`,
+  (c: string, co: string) => `Rank #1 in ${c} with our tailored SEO solutions. We combine deep technical expertise, strategic content writing, and white-hat backlinks to outperform competitors in ${co}. Free audit available.`,
+  (c: string, co: string) => `Award-winning SEO company serving ${c} and ${co}. Specializing in technical SEO, local search dominance, e-commerce optimization, and generative engine visibility. Get your free growth plan.`,
+];
+
+const enTitleTemplates = [
+  (c: string, co: string) => `SEO Services in ${c} | Expert SEO Agency ${co}`,
+  (c: string, co: string) => `${c} SEO Agency | Proven Search Engine Optimization ${co}`,
+  (c: string, co: string) => `SEO Expert in ${c} | Top-Rated SEO Services ${co}`,
+  (c: string, co: string) => `Best SEO Company in ${c} | SEO Specialists ${co}`,
+];
+
 const en = (
   city: string, slugCity: string, country: string, cc: string,
   nearby: string[], alt: { lang: string; href: string }[] = [], region?: string
 ): LocationData => ({
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "en", langPrefix: "",
-  metaTitle: `SEO Services in ${city} | Expert SEO Agency ${country}`,
-  metaDescription: `Professional SEO services in ${city}, ${country}. Technical SEO, link building, content strategy & GEO optimization. Free SEO audit for your ${city} business.`,
+  metaTitle: enTitleTemplates[hashStr(slugCity) % enTitleTemplates.length](city, country),
+  metaDescription: enDescTemplates[hashStr(slugCity) % enDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
