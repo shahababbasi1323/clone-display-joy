@@ -27,7 +27,7 @@ const ResourceLandingPage = () => {
   const downloadUrl = storageDownloadUrls[resource.slug] || resource.downloadUrl;
 
   useSeoMeta({
-    title: `${resource.title} — Free Download | Shahab Abbasi`,
+    title: `${resource.title} - Free Download | Shahab Abbasi`,
     description: resource.description,
     canonical: `https://shahababbasi.com/free-seo-resources/${resource.slug}`,
   });
@@ -258,7 +258,7 @@ const ResourceLandingPage = () => {
       <section className="pb-20 px-4">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-2xl font-bold mb-4">Want All 16 Resources?</h2>
-          <p className="text-muted-foreground mb-6">Get the complete SEO Resource Library — templates, guides, checklists & AI prompts.</p>
+          <p className="text-muted-foreground mb-6">Get the complete SEO Resource Library - templates, guides, checklists & AI prompts.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link to="/free-seo-resources"><Button className="glow-primary">Browse All 16 Resources <ArrowRight className="ml-2 h-4 w-4" /></Button></Link>
             <Link to="/free-seo-audit"><Button variant="outline">Get Free SEO Audit</Button></Link>

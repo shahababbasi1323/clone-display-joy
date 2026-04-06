@@ -163,7 +163,7 @@ const LocationIndustriesInterlink = ({ content, countryCode, lang = "en" }: Prop
                   <h3 className="font-semibold text-sm">{localName} SEO</h3>
                 </div>
                 <p className="text-xs text-muted-foreground line-clamp-2 mb-2">
-                  {langNames?.[ind.slug] ? `${localName} — ${ind.metaDescription}` : ind.metaDescription}
+                  {langNames?.[ind.slug] ? `${localName} - ${ind.metaDescription}` : ind.metaDescription}
                 </p>
                 <span className="text-xs text-primary flex items-center gap-1">
                   {learnMore} <ArrowRight className="h-3 w-3" />

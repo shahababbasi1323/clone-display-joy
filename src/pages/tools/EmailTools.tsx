@@ -48,7 +48,7 @@ export const ColdEmailGenerator = () => {
       `Subject: Resource suggestion for ${company || "your"} ${topic || "article"}\n\nHi${name ? ` ${name}` : ""},\n\nI was reading your article about ${topic || "[topic]"} and found it incredibly helpful.\n\nI recently published a comprehensive guide on a related topic that might complement your resource. It covers [specific angle] with original data.\n\nWould you consider adding it as a reference? Here's the link: [Your URL]\n\nThanks for your time,\n[Your Name]`,
     ],
     "partnership": [
-      `Subject: Partnership idea — ${topic || "mutual growth"}\n\nHi${name ? ` ${name}` : ""},\n\nI'm reaching out from [Your Company]. We work in the ${topic || "[industry]"} space and I believe there could be great synergy between our companies.\n\nSpecifically, I was thinking we could [co-create content / cross-promote / joint webinar].\n\nWould you have 15 minutes this week for a quick call?\n\nBest regards,\n[Your Name]`,
+      `Subject: Partnership idea - ${topic || "mutual growth"}\n\nHi${name ? ` ${name}` : ""},\n\nI'm reaching out from [Your Company]. We work in the ${topic || "[industry]"} space and I believe there could be great synergy between our companies.\n\nSpecifically, I was thinking we could [co-create content / cross-promote / joint webinar].\n\nWould you have 15 minutes this week for a quick call?\n\nBest regards,\n[Your Name]`,
     ],
   };
 

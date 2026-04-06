@@ -98,7 +98,7 @@ export const industriesData: IndustryData[] = [
       { title: "Insurance & Pricing Concerns", desc: "Patients search for dentists who accept their insurance. Creating content around insurance and pricing questions captures high-intent traffic." },
     ],
     [
-      { title: "Service Page Optimization", desc: "Create and optimize dedicated pages for each dental service — implants, veneers, Invisalign, emergency dental, pediatric dentistry." },
+      { title: "Service Page Optimization", desc: "Create and optimize dedicated pages for each dental service - implants, veneers, Invisalign, emergency dental, pediatric dentistry." },
       { title: "Local Map Pack Dominance", desc: "Optimize GBP, build dental citations, and implement review generation to appear in the top 3 map results." },
       { title: "Patient-Focused Content", desc: "Blog posts answering common dental questions, treatment explainers, and before/after case studies that build trust." },
       { title: "Dental Schema Markup", desc: "Implement dental practice schema, FAQ schema, and review schema for enhanced search result appearances." },
@@ -176,10 +176,10 @@ export const industriesData: IndustryData[] = [
       { title: "Diverse Specialization Targeting", desc: "Therapists specialize in anxiety, depression, trauma, couples, adolescents, EMDR, and more. Each specialty requires its own keyword strategy and landing page." },
     ],
     [
-      { title: "Specialty Landing Pages", desc: "Dedicated pages for each specialization — anxiety therapy, depression counseling, PTSD treatment, couples therapy, grief counseling, child psychology, addiction counseling — with empathetic, keyword-rich content." },
+      { title: "Specialty Landing Pages", desc: "Dedicated pages for each specialization - anxiety therapy, depression counseling, PTSD treatment, couples therapy, grief counseling, child psychology, addiction counseling - with empathetic, keyword-rich content." },
       { title: "Directory Profile Optimization", desc: "Optimize your Psychology Today, GoodTherapy, TherapyDen, and Zocdoc profiles with compelling bios, accurate specialties, and insurance information." },
       { title: "Telehealth SEO Expansion", desc: "Rank for 'online therapist', 'virtual counseling', and state-wide telehealth searches to expand your client base beyond your physical location." },
-      { title: "Compassionate Content Marketing", desc: "Blog content addressing mental health topics — coping strategies, therapy FAQs, self-care guides — that builds trust while driving organic traffic from people considering therapy." },
+      { title: "Compassionate Content Marketing", desc: "Blog content addressing mental health topics - coping strategies, therapy FAQs, self-care guides - that builds trust while driving organic traffic from people considering therapy." },
     ],
     ["therapist near me", "anxiety counselor", "marriage counselor near me", "PTSD therapist", "depression therapist", "child psychologist", "online therapy", "couples therapy near me", "grief counseling", "trauma therapist", "EMDR therapy near me", "CBT therapist", "addiction counselor", "family therapist", "anger management classes", "psychiatric evaluation"],
     [
@@ -189,8 +189,8 @@ export const industriesData: IndustryData[] = [
       { metric: "4.6x", label: "Return on Investment" },
     ],
     [
-      { q: "How can SEO help my therapy practice get more clients?", a: "SEO puts your practice in front of people actively searching for help — 'anxiety therapist near me', 'couples counseling'. These are clients ready to book, not just browsing. Ranking for these terms builds a steady intake pipeline." },
-      { q: "How do you handle sensitive mental health content?", a: "We follow clinical content guidelines — compassionate language, trigger warnings, crisis resources (988 Lifeline), no unsubstantiated claims, and HIPAA-compliant forms. All content is reviewed for ethical appropriateness." },
+      { q: "How can SEO help my therapy practice get more clients?", a: "SEO puts your practice in front of people actively searching for help - 'anxiety therapist near me', 'couples counseling'. These are clients ready to book, not just browsing. Ranking for these terms builds a steady intake pipeline." },
+      { q: "How do you handle sensitive mental health content?", a: "We follow clinical content guidelines - compassionate language, trigger warnings, crisis resources (988 Lifeline), no unsubstantiated claims, and HIPAA-compliant forms. All content is reviewed for ethical appropriateness." },
       { q: "Should I optimize for telehealth therapy keywords?", a: "Absolutely. Telehealth therapy searches have grown 300%+ since 2020. Ranking for 'online therapist in [state]' expands your reach dramatically beyond your local area." },
       { q: "How do I compete with BetterHelp and Talkspace in search?", a: "You can't outrank them for broad terms, but you dominate local and specialty searches. 'EMDR therapist near me' or 'couples counselor [city]' are terms where private practices consistently outperform platforms." },
       { q: "What's the ROI of mental health practice SEO?", a: "With average session rates of $100-$200 and clients attending weekly, a single new client generates $5,000-$10,000 annually. SEO that brings even 3-5 new clients per month delivers exceptional ROI." },
@@ -201,7 +201,7 @@ export const industriesData: IndustryData[] = [
 
   ind("veterinary-seo", "Veterinary SEO", "Veterinarians", "SEO for Veterinarians - Vet Clinic Marketing", "SEO for veterinary clinics and animal hospitals. Attract pet owners, increase appointments, and grow your veterinary practice.", Heart, "Healthcare & Medical", "Veterinarians", "Help pet owners find your veterinary practice. Our SEO strategies drive more appointments and build trust with local pet owners.",
     [{ title: "Local Competition", desc: "Vet clinics compete intensely for local searches. Standing out requires strong local SEO and excellent reviews." }, { title: "Emergency Searches", desc: "Emergency vet searches are critical. Your practice needs to rank for urgent queries to capture time-sensitive appointments." }, { title: "Service Diversity", desc: "Vet practices offer varied services from routine checkups to surgery. Each needs optimization." }, { title: "Pet Owner Trust", desc: "Pet owners research extensively before choosing a vet. Reviews and content build the trust needed for conversion." }],
-    [{ title: "Local Vet SEO", desc: "Dominate local searches for veterinary services with GBP optimization and local citations." }, { title: "Emergency Visibility", desc: "Ensure your practice appears for emergency vet searches with 24/7 availability content." }, { title: "Service Optimization", desc: "Optimize pages for each service — vaccinations, spay/neuter, dental, surgery, boarding." }, { title: "Review Management", desc: "Build and manage pet owner reviews to increase trust and local rankings." }],
+    [{ title: "Local Vet SEO", desc: "Dominate local searches for veterinary services with GBP optimization and local citations." }, { title: "Emergency Visibility", desc: "Ensure your practice appears for emergency vet searches with 24/7 availability content." }, { title: "Service Optimization", desc: "Optimize pages for each service - vaccinations, spay/neuter, dental, surgery, boarding." }, { title: "Review Management", desc: "Build and manage pet owner reviews to increase trust and local rankings." }],
     ["vet near me", "emergency vet", "animal hospital", "pet vaccination", "dog grooming", "cat clinic", "veterinary surgery", "pet dental care"],
     defaultCase,
     [{ q: "How can SEO help my veterinary clinic?", a: "SEO helps pet owners in your area find your clinic when searching for vet services. By ranking for 'vet near me' and specific services, you attract more pet owners ready to book." }, { q: "How important are reviews for vet clinics?", a: "Extremely important. Pet owners trust reviews heavily when choosing a vet. We implement review generation systems to build your online reputation." }, { q: "Should I have separate pages for each vet service?", a: "Yes! Dedicated pages for vaccinations, surgery, dental care, etc. help you rank for specific service searches and provide better information to pet owners." }, { q: "Can you help with emergency vet visibility?", a: "Absolutely. We optimize for emergency vet keywords and ensure your practice appears in urgent searches with accurate hours and emergency contact information." }, { q: "What's the typical ROI for veterinary SEO?", a: "Most vet clinics see 3-5x ROI within the first year. A single new client generates $500+ in annual revenue, making SEO a highly profitable investment." }],
@@ -213,12 +213,12 @@ export const industriesData: IndustryData[] = [
     "Grow your chiropractic practice with SEO strategies that put you in front of patients searching for drug-free pain relief, sports recovery, and wellness care.",
     [
       { title: "Medical Credibility Gap", desc: "Chiropractic care sometimes faces skepticism from patients and search engines. Your content must demonstrate evidence-based practice, clinical credentials, and measurable outcomes to build trust." },
-      { title: "Condition-Based Search Intent", desc: "Patients don't search for 'chiropractor' — they search for 'back pain relief', 'sciatica treatment', 'neck pain help'. Your SEO must map to conditions, not just your title." },
+      { title: "Condition-Based Search Intent", desc: "Patients don't search for 'chiropractor' - they search for 'back pain relief', 'sciatica treatment', 'neck pain help'. Your SEO must map to conditions, not just your title." },
       { title: "Insurance & Cost Barriers", desc: "Patients frequently search 'does insurance cover chiropractor' or 'chiropractor cost without insurance'. Transparent pricing and insurance content captures high-intent traffic." },
       { title: "PT & Orthopedic Competition", desc: "Physical therapists and orthopedic practices compete for the same pain-related keywords. Differentiation through unique chiropractic benefits is essential." },
     ],
     [
-      { title: "Condition-Specific Landing Pages", desc: "Dedicated pages for every condition — lower back pain, sciatica, herniated disc, whiplash, migraines, scoliosis, carpal tunnel — with symptom descriptions, treatment explanations, and patient testimonials." },
+      { title: "Condition-Specific Landing Pages", desc: "Dedicated pages for every condition - lower back pain, sciatica, herniated disc, whiplash, migraines, scoliosis, carpal tunnel - with symptom descriptions, treatment explanations, and patient testimonials." },
       { title: "Evidence-Based Content Hub", desc: "Publish research-backed articles demonstrating chiropractic efficacy, linking to peer-reviewed studies, and featuring your doctors' credentials and experience." },
       { title: "Local Chiropractic Dominance", desc: "GBP optimization with professional photos, service menus, weekly health tips, and aggressive review generation from satisfied patients." },
       { title: "Wellness & Prevention Content", desc: "Content about posture improvement, ergonomic tips, sports performance, and preventive chiropractic care that attracts wellness-oriented patients." },
@@ -231,10 +231,10 @@ export const industriesData: IndustryData[] = [
       { metric: "4.8x", label: "Return on Investment" },
     ],
     [
-      { q: "How does SEO help chiropractors get more patients?", a: "Most chiropractic patients start with a Google search for their symptoms — 'lower back pain relief', 'sciatica treatment near me'. SEO puts your practice in front of these patients at the exact moment they're seeking help." },
+      { q: "How does SEO help chiropractors get more patients?", a: "Most chiropractic patients start with a Google search for their symptoms - 'lower back pain relief', 'sciatica treatment near me'. SEO puts your practice in front of these patients at the exact moment they're seeking help." },
       { q: "What keywords should chiropractors target?", a: "Condition keywords (back pain, sciatica, neck pain), treatment keywords (spinal adjustment, decompression), demographic keywords (sports chiropractor, prenatal chiropractor), and local keywords (chiropractor in [city])." },
       { q: "How do I prove chiropractic credibility online?", a: "Highlight board certifications, years of practice, continuing education, patient outcome data, and links to peer-reviewed research supporting chiropractic care. Google rewards demonstrated expertise." },
-      { q: "Can SEO help me compete with physical therapists?", a: "Yes. While PT and chiropractic share some keywords, your unique approaches — adjustments, spinal manipulation, holistic wellness — differentiate your content and capture patients specifically seeking chiropractic care." },
+      { q: "Can SEO help me compete with physical therapists?", a: "Yes. While PT and chiropractic share some keywords, your unique approaches - adjustments, spinal manipulation, holistic wellness - differentiate your content and capture patients specifically seeking chiropractic care." },
       { q: "What's the ROI of chiropractic SEO?", a: "With average patient lifetime values of $2,000-$5,000 and treatment plans spanning weeks to months, even 5-10 new patients per month from SEO delivers $10K-$50K in annual revenue." },
     ],
     ["local-seo", "content-strategy", "google-business-profile", "on-page-seo"],
@@ -266,7 +266,7 @@ export const industriesData: IndustryData[] = [
       { q: "Should I separate medical and cosmetic dermatology on my website?", a: "Yes. Medical and cosmetic patients have completely different search intent and decision criteria. Separate sections with tailored messaging, keywords, and CTAs perform significantly better than combined pages." },
       { q: "How important are before/after photos for dermatology SEO?", a: "Critical. Before/after galleries are the #1 conversion driver for cosmetic dermatology and significantly boost image search traffic. We ensure HIPAA compliance, proper patient consent, and full image optimization." },
       { q: "What's the most valuable keyword for dermatologists?", a: "'Botox near me' and 'dermal fillers near me' have the highest commercial value at $300-$800 per procedure. Medical terms like 'skin cancer screening' drive volume. We target a strategic mix of both." },
-      { q: "How do I rank for skin condition searches?", a: "Build comprehensive condition pages — acne, eczema, psoriasis, rosacea — with symptoms, causes, treatment options, and when to see a dermatologist. These informational pages capture patients early in their journey." },
+      { q: "How do I rank for skin condition searches?", a: "Build comprehensive condition pages - acne, eczema, psoriasis, rosacea - with symptoms, causes, treatment options, and when to see a dermatologist. These informational pages capture patients early in their journey." },
       { q: "What's the ROI of dermatology SEO?", a: "Cosmetic procedures average $300-$2,000 per visit with repeat patients. Medical dermatology generates steady insurance revenue. Most practices see 5-8x ROI from SEO within the first year." },
     ],
     ["local-seo", "on-page-seo", "content-strategy", "link-building"],
@@ -275,7 +275,7 @@ export const industriesData: IndustryData[] = [
 
   ind("plastic-surgery-seo", "Plastic Surgery SEO", "Plastic Surgeons", "SEO for Plastic Surgeons - Cosmetic Surgery Marketing", "SEO services for plastic surgeons and cosmetic surgery practices. Attract qualified patients for elective procedures with premium digital marketing.", Heart, "Healthcare & Medical", "Plastic Surgeons", "Attract high-value cosmetic surgery patients with SEO strategies designed for the competitive plastic surgery market.",
     [{ title: "High Competition", desc: "Plastic surgery is one of the most competitive medical SEO niches with high CPC and established competitors." }, { title: "Trust & Credentials", desc: "Patients research extensively before choosing a surgeon. Demonstrating credentials and results is critical." }, { title: "High-Value Keywords", desc: "Plastic surgery keywords have high commercial value. Ranking for these terms directly drives significant revenue." }, { title: "Visual Portfolio", desc: "Before/after galleries are expected but must be carefully managed for compliance and SEO." }],
-    [{ title: "Procedure Page Optimization", desc: "Create detailed, optimized pages for each procedure — rhinoplasty, breast augmentation, facelift, liposuction." }, { title: "Surgeon Authority Building", desc: "Build the surgeon's personal brand with credentials, publications, media appearances, and expert content." }, { title: "Visual Content Strategy", desc: "Optimize before/after galleries, video testimonials, and procedure videos for search visibility." }, { title: "Reputation Management", desc: "Manage patient reviews across platforms to build trust and improve local rankings." }],
+    [{ title: "Procedure Page Optimization", desc: "Create detailed, optimized pages for each procedure - rhinoplasty, breast augmentation, facelift, liposuction." }, { title: "Surgeon Authority Building", desc: "Build the surgeon's personal brand with credentials, publications, media appearances, and expert content." }, { title: "Visual Content Strategy", desc: "Optimize before/after galleries, video testimonials, and procedure videos for search visibility." }, { title: "Reputation Management", desc: "Manage patient reviews across platforms to build trust and improve local rankings." }],
     ["plastic surgeon near me", "rhinoplasty surgeon", "breast augmentation", "facelift specialist", "liposuction", "tummy tuck", "cosmetic surgeon", "BBL surgeon"],
     [{ metric: "500%", label: "Consultation Requests" }, { metric: "200+", label: "Keywords Ranked" }, { metric: "#1", label: "Google Maps Position" }, { metric: "8x", label: "ROI Achieved" }],
     [{ q: "How competitive is plastic surgery SEO?", a: "Extremely competitive. Plastic surgery keywords have some of the highest CPCs in healthcare. Our strategies focus on long-tail keywords and local dominance to compete effectively." }, { q: "How important are before/after photos for SEO?", a: "Critical. Optimized galleries drive image search traffic and dramatically improve conversion rates. We ensure proper consent, alt tags, and schema markup for all visual content." }, { q: "What's the typical cost of plastic surgery SEO?", a: "Given the high competition and high patient value, we recommend our Growth or Enterprise packages ($1,000-$2,000/month). The ROI is substantial given that a single procedure generates $5,000-$15,000+." }, { q: "Can SEO replace paid ads for my practice?", a: "SEO complements paid ads and provides better long-term ROI. Many practices reduce ad spend by 30-50% as organic traffic grows, while maintaining or increasing consultations." }, { q: "How do you build trust for a plastic surgeon online?", a: "Through credential highlighting, patient testimonials, before/after galleries, educational content, media mentions, and board certification promotion across all digital touchpoints." }],
@@ -284,7 +284,7 @@ export const industriesData: IndustryData[] = [
   ),
 
   ind("optometry-seo", "Optometry SEO", "Eye Doctors & Optometrists", "SEO for Eye Doctors & Optometrists - Vision Care Practice Marketing", "Comprehensive SEO for optometrists and ophthalmologists. Rank for eye exams, glasses, contacts, LASIK, and all vision care searches to attract new patients.", Heart, "Healthcare & Medical", "Eye Doctors",
-    "Help more patients find your eye care practice with SEO that captures every vision-related search — from routine eye exams to specialty services like LASIK consultations and pediatric eye care.",
+    "Help more patients find your eye care practice with SEO that captures every vision-related search - from routine eye exams to specialty services like LASIK consultations and pediatric eye care.",
     [
       { title: "Product + Service Hybrid Model", desc: "Eye care uniquely combines medical services (exams, disease management) with retail (glasses, contacts). Your SEO must drive traffic for both appointments and product purchases." },
       { title: "Online Retailer Disruption", desc: "Warby Parker, Zenni, and 1-800 Contacts dominate product searches. Local optometrists must differentiate with personalized care, fitting expertise, and medical services online retailers can't provide." },
@@ -292,7 +292,7 @@ export const industriesData: IndustryData[] = [
       { title: "Specialty Vision Services", desc: "Myopia management, vision therapy, dry eye treatment, and specialty contact lenses are growing niches with lower competition and higher patient value." },
     ],
     [
-      { title: "Insurance Acceptance Pages", desc: "Dedicated pages for every insurance plan you accept — VSP, EyeMed, MetLife Vision, Aetna — capturing insurance-specific searches that drive the majority of patient decisions." },
+      { title: "Insurance Acceptance Pages", desc: "Dedicated pages for every insurance plan you accept - VSP, EyeMed, MetLife Vision, Aetna - capturing insurance-specific searches that drive the majority of patient decisions." },
       { title: "Specialty Service SEO", desc: "Optimized pages for myopia management, dry eye treatment, vision therapy, low vision aids, and specialty contact lenses that differentiate you from basic eye exam competitors." },
       { title: "Local Eye Care Dominance", desc: "GBP optimization with photos of your office and eyewear showroom, appointment links, accepted insurance lists, and systematic review generation." },
       { title: "Eyewear E-commerce SEO", desc: "If selling online, optimize product pages for brand-specific searches, virtual try-on features, and 'buy glasses online' keywords with proper product schema." },
@@ -315,10 +315,10 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // Additional Healthcare — hand-crafted
+  // Additional Healthcare - hand-crafted
   ind("fertility-clinic-seo", "Fertility Clinic SEO", "Fertility Clinics", "SEO for Fertility Clinics - IVF & Reproductive Health Marketing", "SEO for fertility clinics and IVF centers. Attract couples seeking reproductive health services with compassionate, compliant digital marketing.", Heart, "Healthcare & Medical", "Fertility Clinics", "Help hopeful families find your fertility clinic with sensitive, HIPAA-compliant SEO that builds trust and drives consultations.",
     [{ title: "Emotional Sensitivity", desc: "Fertility content must be compassionate and supportive. Patients are often vulnerable and need reassurance throughout their research journey." }, { title: "High-Value Services", desc: "IVF and fertility treatments are high-value procedures ($10K-$30K+). SEO must capture and convert these high-intent searches." }, { title: "YMYL & E-E-A-T", desc: "Fertility content is classified as YMYL. Google demands exceptional expertise, authoritativeness, and trustworthiness signals." }, { title: "Success Rate Transparency", desc: "Patients search for clinic success rates. Publishing verifiable statistics builds trust while supporting SEO." }],
-    [{ title: "Compassionate Content", desc: "Create supportive educational content on IVF, egg freezing, and fertility conditions that guides patients with empathy." }, { title: "Physician Authority Building", desc: "Highlight doctor credentials, research publications, and clinic achievements for E-E-A-T compliance." }, { title: "Treatment Page Optimization", desc: "Build detailed pages for IVF, IUI, egg freezing, genetic testing, and each fertility service." }, { title: "Patient Journey Content", desc: "Map content to the emotional fertility journey — from initial research to treatment decisions." }],
+    [{ title: "Compassionate Content", desc: "Create supportive educational content on IVF, egg freezing, and fertility conditions that guides patients with empathy." }, { title: "Physician Authority Building", desc: "Highlight doctor credentials, research publications, and clinic achievements for E-E-A-T compliance." }, { title: "Treatment Page Optimization", desc: "Build detailed pages for IVF, IUI, egg freezing, genetic testing, and each fertility service." }, { title: "Patient Journey Content", desc: "Map content to the emotional fertility journey - from initial research to treatment decisions." }],
     ["fertility clinic near me", "IVF specialist", "egg freezing", "infertility treatment", "IUI procedure", "reproductive endocrinologist", "fertility doctor", "surrogacy agency"],
     [{ metric: "280%", label: "Consultation Requests" }, { metric: "120+", label: "Keywords Ranked" }, { metric: "85%", label: "Organic Traffic Growth" }, { metric: "5x", label: "Return on Investment" }],
     [{ q: "How can SEO help fertility clinics?", a: "SEO connects couples actively searching for fertility help with your clinic. Ranking for 'IVF near me' and specific treatment keywords drives highly qualified consultations." }, { q: "How do you handle sensitive fertility content?", a: "We create compassionate, medically accurate content reviewed by your physicians. We avoid insensitive language and include emotional support resources." }, { q: "Should we publish our success rates?", a: "Yes, transparently sharing CDC-verified success rates builds tremendous trust and is a key differentiator in search results and conversions." }, { q: "How long until we see results?", a: "Most fertility clinics see ranking improvements within 2-3 months, with significant consultation increases in 4-6 months." }, { q: "What's the ROI of fertility clinic SEO?", a: "With IVF cycles valued at $15,000-$30,000+, even one additional patient per month from SEO delivers massive ROI." }],
@@ -331,23 +331,23 @@ export const industriesData: IndustryData[] = [
     [{ title: "Near-Me Optimization", desc: "Dominate 'urgent care near me' searches with aggressive local SEO and GBP optimization." }, { title: "Service Clarity Pages", desc: "Build clear pages listing services, insurance, hours, and what conditions you treat." }, { title: "Wait Time Marketing", desc: "Integrate live wait time displays and highlight convenience advantages over ERs." }, { title: "After-Hours SEO", desc: "Capture 'after hours doctor' and weekend/holiday medical searches." }],
     ["urgent care near me", "walk-in clinic", "after hours doctor", "urgent care open now", "minor emergency clinic", "no appointment doctor", "weekend clinic"],
     defaultCase,
-    [{ q: "How fast can urgent care SEO show results?", a: "Local urgent care SEO often shows results within 4-8 weeks due to high local search volume and clear geographic targeting." }, { q: "Should we show wait times on our website?", a: "Yes! Real-time or average wait times improve both conversions and search engagement metrics." }, { q: "How do we rank for 'near me' searches?", a: "Through optimized Google Business Profile, accurate NAP citations, location-specific content, and strong review profiles." }, { q: "Should we compare ourselves to ERs?", a: "Yes — 'urgent care vs ER' content captures patients unsure where to go. Clear guidance on when to choose urgent care drives qualified visits." }, { q: "What's the value of SEO for urgent care?", a: "With average visits worth $150-$500 and high volume potential, ranking #1 for local urgent care searches can generate $50K-$200K+ in annual revenue." }],
+    [{ q: "How fast can urgent care SEO show results?", a: "Local urgent care SEO often shows results within 4-8 weeks due to high local search volume and clear geographic targeting." }, { q: "Should we show wait times on our website?", a: "Yes! Real-time or average wait times improve both conversions and search engagement metrics." }, { q: "How do we rank for 'near me' searches?", a: "Through optimized Google Business Profile, accurate NAP citations, location-specific content, and strong review profiles." }, { q: "Should we compare ourselves to ERs?", a: "Yes - 'urgent care vs ER' content captures patients unsure where to go. Clear guidance on when to choose urgent care drives qualified visits." }, { q: "What's the value of SEO for urgent care?", a: "With average visits worth $150-$500 and high volume potential, ranking #1 for local urgent care searches can generate $50K-$200K+ in annual revenue." }],
     ["local-seo", "google-business-profile", "on-page-seo"],
     defaultLocs
   ),
 
   ind("physical-therapy-seo", "Physical Therapy SEO", "Physical Therapists", "SEO for Physical Therapy Clinics - PT Practice Marketing & Patient Acquisition", "Expert SEO for physical therapy clinics. Rank for sports rehab, post-surgical recovery, back pain treatment, dry needling, and all PT-related keywords to build a direct-to-patient pipeline.", Heart, "Healthcare & Medical", "Physical Therapy",
-    "Build a steady stream of patients with SEO strategies designed for physical therapy clinics — from sports injury rehab to post-surgical recovery and chronic pain management.",
+    "Build a steady stream of patients with SEO strategies designed for physical therapy clinics - from sports injury rehab to post-surgical recovery and chronic pain management.",
     [
       { title: "Referral Dependency Trap", desc: "Most PT clinics rely on physician referrals for 60-80% of patients. SEO builds a direct-to-patient pipeline that reduces referral dependency and fills schedule gaps." },
-      { title: "Direct Access Opportunity", desc: "Most US states now allow direct access to physical therapy without a referral. Many patients don't know this — SEO content educating them about direct access is a massive competitive advantage." },
-      { title: "Condition-Specific Search Intent", desc: "Patients search for solutions to their specific problem — 'ACL rehab near me', 'lower back pain treatment', 'rotator cuff rehab'. Generic 'PT near me' captures only a fraction of demand." },
+      { title: "Direct Access Opportunity", desc: "Most US states now allow direct access to physical therapy without a referral. Many patients don't know this - SEO content educating them about direct access is a massive competitive advantage." },
+      { title: "Condition-Specific Search Intent", desc: "Patients search for solutions to their specific problem - 'ACL rehab near me', 'lower back pain treatment', 'rotator cuff rehab'. Generic 'PT near me' captures only a fraction of demand." },
       { title: "Telehealth PT Expansion", desc: "Virtual physical therapy is growing rapidly, especially for ongoing rehab programs. SEO must capture both in-clinic and telehealth searches to maximize patient volume." },
     ],
     [
-      { title: "Condition-Based Landing Pages", desc: "Dedicated pages for every condition — ACL rehab, back pain, rotator cuff, knee replacement recovery, hip replacement rehab, TMJ, vestibular therapy, pelvic floor PT — each optimized for specific search queries." },
+      { title: "Condition-Based Landing Pages", desc: "Dedicated pages for every condition - ACL rehab, back pain, rotator cuff, knee replacement recovery, hip replacement rehab, TMJ, vestibular therapy, pelvic floor PT - each optimized for specific search queries." },
       { title: "Direct Access Education Campaign", desc: "Content educating patients about direct access laws in your state, positioning your clinic as the go-to choice for patients who want PT without waiting for a referral." },
-      { title: "Specialty Differentiation SEO", desc: "Optimize for specialty services — dry needling, manual therapy, aquatic therapy, sports performance, concussion rehab — that differentiate you from generic PT clinics." },
+      { title: "Specialty Differentiation SEO", desc: "Optimize for specialty services - dry needling, manual therapy, aquatic therapy, sports performance, concussion rehab - that differentiate you from generic PT clinics." },
       { title: "Physician Referral + Patient SEO", desc: "Dual strategy targeting both patients directly and referring physicians with professional content that demonstrates your clinical expertise and outcomes." },
     ],
     ["physical therapy near me", "sports rehab", "back pain physical therapy", "knee rehab", "physical therapist", "post-surgery rehab", "dry needling near me", "pelvic floor therapy", "vestibular therapy", "ACL rehab", "rotator cuff rehab", "occupational therapy near me", "aquatic therapy", "TMJ therapy", "concussion rehab", "physical therapy direct access"],
@@ -359,7 +359,7 @@ export const industriesData: IndustryData[] = [
     ],
     [
       { q: "Can SEO really reduce my dependence on physician referrals?", a: "Yes. Direct-to-patient SEO is transforming PT practices. Content about direct access laws, condition-specific landing pages, and local SEO builds an independent patient pipeline that fills schedule gaps and grows revenue." },
-      { q: "What conditions should I create pages for?", a: "Every condition you treat should have its own page — ACL recovery, back pain, rotator cuff, knee replacement rehab, sports injuries, chronic pain, TMJ, pelvic floor dysfunction. Each page captures unique search intent." },
+      { q: "What conditions should I create pages for?", a: "Every condition you treat should have its own page - ACL recovery, back pain, rotator cuff, knee replacement rehab, sports injuries, chronic pain, TMJ, pelvic floor dysfunction. Each page captures unique search intent." },
       { q: "How does direct access content help my SEO?", a: "Most patients don't know they can see a PT without a referral. 'Can I go to physical therapy without a referral' gets thousands of monthly searches. Educational content on this topic captures high-intent patients." },
       { q: "Should I offer telehealth physical therapy?", a: "Telehealth PT demand is growing 200%+ year-over-year. Offering and optimizing for virtual PT expands your reach and captures patients who prefer home-based rehab programs." },
       { q: "What's the ROI of PT clinic SEO?", a: "With average treatment plans of 8-12 visits at $100-$200 per session, a single new patient generates $800-$2,400. SEO bringing 10+ new patients per month delivers 5-8x ROI." },
@@ -369,8 +369,8 @@ export const industriesData: IndustryData[] = [
   ),
 
   ind("med-spa-seo", "Med Spa SEO", "Med Spas", "SEO for Med Spas - Medical Aesthetics Marketing", "SEO for medical spas and aesthetic clinics. Attract clients seeking Botox, fillers, laser treatments, and body contouring services.", Heart, "Healthcare & Medical", "Med Spas", "Attract high-value aesthetic clients with SEO strategies that showcase your med spa's expertise in cosmetic treatments and wellness.",
-    [{ title: "High Competition", desc: "Med spas are one of the fastest-growing healthcare niches. Competition for aesthetic keywords is fierce." }, { title: "Procedure Diversity", desc: "Botox, fillers, laser, CoolSculpting — each procedure needs dedicated optimization and content." }, { title: "Visual Proof", desc: "Potential clients want to see results. Before/after galleries must be optimized for search and conversion." }, { title: "Trust & Safety", desc: "Clients need assurance of medical oversight and safety. Credentials and certifications must be prominent." }],
-    [{ title: "Procedure Pages", desc: "Build comprehensive pages for every treatment — Botox, dermal fillers, laser hair removal, microneedling, IV therapy." }, { title: "Visual SEO", desc: "Optimize before/after galleries for image search with proper alt tags, schema, and consent-based content." }, { title: "Local Luxury SEO", desc: "Position your med spa as the premium local choice through local SEO and upscale content." }, { title: "Provider Authority", desc: "Highlight medical director credentials, nurse practitioner expertise, and safety certifications." }],
+    [{ title: "High Competition", desc: "Med spas are one of the fastest-growing healthcare niches. Competition for aesthetic keywords is fierce." }, { title: "Procedure Diversity", desc: "Botox, fillers, laser, CoolSculpting - each procedure needs dedicated optimization and content." }, { title: "Visual Proof", desc: "Potential clients want to see results. Before/after galleries must be optimized for search and conversion." }, { title: "Trust & Safety", desc: "Clients need assurance of medical oversight and safety. Credentials and certifications must be prominent." }],
+    [{ title: "Procedure Pages", desc: "Build comprehensive pages for every treatment - Botox, dermal fillers, laser hair removal, microneedling, IV therapy." }, { title: "Visual SEO", desc: "Optimize before/after galleries for image search with proper alt tags, schema, and consent-based content." }, { title: "Local Luxury SEO", desc: "Position your med spa as the premium local choice through local SEO and upscale content." }, { title: "Provider Authority", desc: "Highlight medical director credentials, nurse practitioner expertise, and safety certifications." }],
     ["med spa near me", "Botox near me", "lip filler", "laser hair removal", "CoolSculpting", "microneedling", "chemical peel", "IV therapy", "body contouring"],
     [{ metric: "450%", label: "Treatment Bookings" }, { metric: "175+", label: "Keywords Ranked" }, { metric: "#1", label: "For Botox Near Me" }, { metric: "6x", label: "ROI Achieved" }],
     [{ q: "How competitive is med spa SEO?", a: "Very competitive. Med spa keywords like 'Botox near me' have high search volume and CPC. Organic rankings are extremely valuable for reducing ad dependency." }, { q: "Should each procedure have its own page?", a: "Absolutely. Dedicated pages for Botox, fillers, laser treatments, etc. help you rank for specific procedure searches and provide detailed information clients need." }, { q: "How important are before/after photos for SEO?", a: "Critical. Optimized galleries drive image search traffic and significantly improve conversion rates. Always obtain proper patient consent." }, { q: "Can SEO help attract premium clients?", a: "Yes. Premium positioning through content, visual branding, and targeting luxury-intent keywords attracts higher-spending clients." }, { q: "What's the value of ranking for 'Botox near me'?", a: "One Botox client is worth $2,000-$4,000+ annually with repeat visits. Ranking #1 for this term alone can generate significant monthly revenue." }],
@@ -380,7 +380,7 @@ export const industriesData: IndustryData[] = [
 
   ind("home-health-seo", "Home Health SEO", "Home Health Agencies", "SEO for Home Health Care - In-Home Care Marketing", "SEO for home health agencies and in-home care providers. Connect with families searching for home health aides, nursing, and senior care.", Heart, "Healthcare & Medical", "Home Health Care", "Help families find trusted home health care services with SEO strategies that build trust and capture caregiver searches.",
     [{ title: "Family Decision-Makers", desc: "Adult children often search for home care for aging parents. Content must address both patient needs and family concerns." }, { title: "Trust is Everything", desc: "Inviting caregivers into homes requires exceptional trust. Reviews, certifications, and transparency are critical." }, { title: "Geographic Precision", desc: "Home health serves specific geographic areas. SEO must precisely target your service territory." }, { title: "Insurance & Medicaid", desc: "Many families search by insurance acceptance. Clear coverage information captures these high-intent searches." }],
-    [{ title: "Care Service Pages", desc: "Build dedicated pages for skilled nursing, personal care, companion care, hospice, and specialty services." }, { title: "Trust-Focused Content", desc: "Create content highlighting caregiver screening, training, certifications, and quality standards." }, { title: "Family Resource Hub", desc: "Build guides for families navigating home health decisions — what to expect, how to choose, and insurance navigation." }, { title: "Local Care SEO", desc: "Optimize for every community, neighborhood, and city within your service area." }],
+    [{ title: "Care Service Pages", desc: "Build dedicated pages for skilled nursing, personal care, companion care, hospice, and specialty services." }, { title: "Trust-Focused Content", desc: "Create content highlighting caregiver screening, training, certifications, and quality standards." }, { title: "Family Resource Hub", desc: "Build guides for families navigating home health decisions - what to expect, how to choose, and insurance navigation." }, { title: "Local Care SEO", desc: "Optimize for every community, neighborhood, and city within your service area." }],
     ["home health care near me", "in-home nursing", "senior care services", "home health aide", "companion care", "hospice care", "respite care", "private duty nursing"],
     defaultCase,
     [{ q: "How do families search for home health care?", a: "Most start with 'home health care near me' or condition-specific searches. Adult children frequently research on behalf of parents, so content must address their concerns." }, { q: "How important are reviews for home health agencies?", a: "Extremely important. Families need to trust you in their loved one's home. Positive reviews from other families are the strongest trust signal." }, { q: "Should we create content about insurance coverage?", a: "Yes! Insurance and Medicaid eligibility content captures high-intent searches from families ready to start care." }, { q: "How do we target our specific service area?", a: "We create location-specific pages for each community you serve, optimizing for hyper-local keywords." }, { q: "What's the lifetime value of a home health client?", a: "Home health clients average $20,000-$100,000+ in services. SEO-driven client acquisition delivers exceptional ROI." }],
@@ -390,7 +390,7 @@ export const industriesData: IndustryData[] = [
 
   ind("addiction-treatment-seo", "Addiction Treatment SEO", "Rehab Centers", "SEO for Rehab Centers - Addiction Treatment Marketing", "SEO for addiction treatment centers, rehab facilities, and detox programs. Help people find recovery resources with ethical digital marketing.", Heart, "Healthcare & Medical", "Rehab Centers", "Connect people seeking help with addiction to your treatment center through ethical, compassionate SEO that saves lives.",
     [{ title: "Ethical Marketing", desc: "Addiction treatment marketing must be ethical and compliant with LegitScript and state advertising regulations." }, { title: "Life-or-Death Searches", desc: "People searching for rehab are often in crisis. Your SEO must ensure they find legitimate, quality treatment options." }, { title: "Insurance Verification", desc: "Patients need to know if their insurance covers treatment. Insurance verification content is high-priority." }, { title: "Competitive Market", desc: "The rehab industry is intensely competitive online. Ethical differentiation through quality content is essential." }],
-    [{ title: "Treatment Program Pages", desc: "Build comprehensive pages for each program — detox, inpatient, outpatient, PHP, IOP, MAT, and sober living." }, { title: "Ethical Content Strategy", desc: "Create compassionate, evidence-based content that helps people make informed treatment decisions." }, { title: "Insurance Verification SEO", desc: "Optimize insurance verification pages and tools to capture families checking coverage." }, { title: "Compliance & Credibility", desc: "Highlight CARF accreditation, LegitScript certification, and clinical team credentials." }],
+    [{ title: "Treatment Program Pages", desc: "Build comprehensive pages for each program - detox, inpatient, outpatient, PHP, IOP, MAT, and sober living." }, { title: "Ethical Content Strategy", desc: "Create compassionate, evidence-based content that helps people make informed treatment decisions." }, { title: "Insurance Verification SEO", desc: "Optimize insurance verification pages and tools to capture families checking coverage." }, { title: "Compliance & Credibility", desc: "Highlight CARF accreditation, LegitScript certification, and clinical team credentials." }],
     ["drug rehab near me", "alcohol treatment center", "detox center", "addiction recovery", "inpatient rehab", "outpatient treatment", "sober living", "mental health and addiction treatment"],
     [{ metric: "320%", label: "Admission Inquiries" }, { metric: "200+", label: "Keywords Ranked" }, { metric: "90%", label: "Organic Growth" }, { metric: "7x", label: "ROI Achieved" }],
     [{ q: "How do you ensure ethical addiction treatment marketing?", a: "We follow LegitScript guidelines, avoid predatory tactics, ensure all claims are evidence-based, and focus on helping people find quality, accredited treatment." }, { q: "How competitive is rehab SEO?", a: "Extremely competitive. Addiction treatment keywords have some of the highest CPCs in healthcare. Organic rankings provide massive value and credibility advantages." }, { q: "Should we optimize for specific substances?", a: "Yes. Separate pages for alcohol treatment, opioid addiction, meth recovery, etc. capture condition-specific searches with higher conversion rates." }, { q: "How important is insurance content?", a: "Critical. Insurance verification is often the first step families take. Optimized insurance content captures high-intent searches from families ready to commit to treatment." }, { q: "What certifications help with SEO?", a: "LegitScript certification, CARF accreditation, and state licensing all serve as trust signals that improve both rankings and conversion rates." }],
@@ -402,18 +402,18 @@ export const industriesData: IndustryData[] = [
   // LEGAL & PROFESSIONAL SERVICES
   // ============================================================
   ind("law-firm-seo", "Law Firm SEO", "Law Firms", "SEO for Law Firms - Legal Marketing & Lead Generation", "Specialized SEO for law firms and attorneys. Rank higher for legal services, attract qualified clients, and grow your practice with expert legal marketing.", Scale, "Legal & Professional Services", "Law Firms", "Attract more qualified clients with SEO strategies built for the competitive legal market. We help law firms rank for high-value practice area keywords.",
-    [{ title: "Extreme Competition", desc: "Legal SEO is among the most competitive niches. Law firm keywords have some of the highest CPCs, making organic rankings extremely valuable." }, { title: "Practice Area Diversity", desc: "Law firms cover multiple practice areas — personal injury, family law, criminal defense. Each needs dedicated optimization." }, { title: "YMYL Compliance", desc: "Legal content falls under Google's YMYL category, requiring demonstrated expertise and authority to rank." }, { title: "Ethical Considerations", desc: "Bar association rules govern legal advertising. SEO strategies must comply with legal marketing ethics." }],
+    [{ title: "Extreme Competition", desc: "Legal SEO is among the most competitive niches. Law firm keywords have some of the highest CPCs, making organic rankings extremely valuable." }, { title: "Practice Area Diversity", desc: "Law firms cover multiple practice areas - personal injury, family law, criminal defense. Each needs dedicated optimization." }, { title: "YMYL Compliance", desc: "Legal content falls under Google's YMYL category, requiring demonstrated expertise and authority to rank." }, { title: "Ethical Considerations", desc: "Bar association rules govern legal advertising. SEO strategies must comply with legal marketing ethics." }],
     [{ title: "Practice Area Pages", desc: "Build comprehensive, optimized pages for each practice area with case results, FAQs, and compelling CTAs." }, { title: "Legal Content Authority", desc: "Create authoritative legal guides and blog posts that establish your firm as a trusted resource." }, { title: "Local Legal SEO", desc: "Dominate local searches for attorneys in your area with GBP, citations, and geo-targeted content." }, { title: "Competitive Link Building", desc: "Build high-authority legal backlinks through bar association listings, legal directories, and media mentions." }],
     ["lawyer near me", "personal injury attorney", "divorce lawyer", "criminal defense attorney", "immigration lawyer", "estate planning attorney", "DUI lawyer", "workers compensation lawyer"],
     [{ metric: "600%", label: "Case Inquiries Growth" }, { metric: "250+", label: "Keywords Ranked" }, { metric: "#1", label: "For Target Keywords" }, { metric: "10x", label: "ROI Achieved" }],
-    [{ q: "How competitive is law firm SEO?", a: "Law firm SEO is among the most competitive niches. Keywords like 'personal injury lawyer' have CPCs of $100+. This makes organic rankings incredibly valuable — a top position can save thousands in monthly ad spend." }, { q: "Do you handle bar association compliance?", a: "Yes, we ensure all content and marketing strategies comply with your jurisdiction's bar association rules regarding legal advertising and attorney solicitation." }, { q: "How do you target different practice areas?", a: "Each practice area gets its own comprehensive page with dedicated keywords, content, and link building. We avoid keyword cannibalization and ensure clear topical relevance for each area." }, { q: "What's the ROI of law firm SEO?", a: "Legal SEO typically delivers 5-10x ROI. A single personal injury case can be worth $10,000-$100,000+ in fees, making even high investment in SEO extremely profitable." }, { q: "How long to rank for competitive legal keywords?", a: "Competitive legal keywords typically take 6-12 months to rank. We target easier wins early while building authority for high-value terms." }],
+    [{ q: "How competitive is law firm SEO?", a: "Law firm SEO is among the most competitive niches. Keywords like 'personal injury lawyer' have CPCs of $100+. This makes organic rankings incredibly valuable - a top position can save thousands in monthly ad spend." }, { q: "Do you handle bar association compliance?", a: "Yes, we ensure all content and marketing strategies comply with your jurisdiction's bar association rules regarding legal advertising and attorney solicitation." }, { q: "How do you target different practice areas?", a: "Each practice area gets its own comprehensive page with dedicated keywords, content, and link building. We avoid keyword cannibalization and ensure clear topical relevance for each area." }, { q: "What's the ROI of law firm SEO?", a: "Legal SEO typically delivers 5-10x ROI. A single personal injury case can be worth $10,000-$100,000+ in fees, making even high investment in SEO extremely profitable." }, { q: "How long to rank for competitive legal keywords?", a: "Competitive legal keywords typically take 6-12 months to rank. We target easier wins early while building authority for high-value terms." }],
     ["local-seo", "content-strategy", "link-building"],
     defaultLocs
   ),
 
   ind("accounting-seo", "Accounting SEO", "Accountants", "SEO for Accountants & CPAs - Accounting Firm Marketing", "SEO for accounting firms and CPAs. Attract business and individual clients searching for tax, bookkeeping, and advisory services.", Scale, "Legal & Professional Services", "Accountants & CPAs", "Grow your accounting practice with SEO that attracts clients searching for tax preparation, bookkeeping, auditing, and financial advisory services.",
     [{ title: "Seasonal Demand", desc: "Tax season creates massive search spikes. Your SEO must be optimized to capture this seasonal demand." }, { title: "Service Differentiation", desc: "Accounting firms offer varied services. Clear differentiation between tax, audit, bookkeeping, and advisory is needed." }, { title: "Trust Requirements", desc: "Clients trust accountants with sensitive financial data. Your online presence must convey professionalism and reliability." }, { title: "B2B vs B2C", desc: "Business and individual clients search differently. SEO strategies must target both audiences effectively." }],
-    [{ title: "Service-Specific SEO", desc: "Optimize for each service — tax preparation, bookkeeping, payroll, auditing, business advisory." }, { title: "Seasonal Content Strategy", desc: "Plan content around tax deadlines, regulatory changes, and seasonal financial planning needs." }, { title: "Local Business SEO", desc: "Target local business owners searching for nearby accounting services." }, { title: "Thought Leadership", desc: "Position your firm as a trusted financial advisor through expert content and guides." }],
+    [{ title: "Service-Specific SEO", desc: "Optimize for each service - tax preparation, bookkeeping, payroll, auditing, business advisory." }, { title: "Seasonal Content Strategy", desc: "Plan content around tax deadlines, regulatory changes, and seasonal financial planning needs." }, { title: "Local Business SEO", desc: "Target local business owners searching for nearby accounting services." }, { title: "Thought Leadership", desc: "Position your firm as a trusted financial advisor through expert content and guides." }],
     ["accountant near me", "CPA firm", "tax preparation services", "bookkeeping services", "small business accountant", "tax planning", "payroll services", "audit firm"],
     defaultCase,
     [{ q: "When should I start SEO for tax season?", a: "Start 3-4 months before tax season to build rankings. SEO results compound over time, so year-round optimization ensures peak visibility when demand spikes." }, { q: "Should I target business or individual clients?", a: "Both, but with separate content strategies. Business clients have higher lifetime value but different search patterns than individual tax clients." }, { q: "How does accounting SEO differ from other service SEO?", a: "Accounting SEO requires seasonal planning, compliance awareness, trust-building content, and dual B2B/B2C targeting. We tailor strategies for the unique accounting market." }, { q: "What content should accounting firms create?", a: "Tax tips, deadline reminders, regulatory updates, financial planning guides, and industry-specific accounting advice. Content should demonstrate expertise and build trust." }, { q: "How can I compete with big accounting firms?", a: "Focus on local SEO, personalized service messaging, industry specializations, and client testimonials. Small firms can outrank large ones for local searches." }],
@@ -422,8 +422,8 @@ export const industriesData: IndustryData[] = [
   ),
 
   ind("insurance-seo", "Insurance SEO", "Insurance Agents", "SEO for Insurance Agents - Insurance Company Marketing", "SEO services for insurance agents and agencies. Rank higher for insurance searches, generate leads, and grow your book of business.", Scale, "Legal & Professional Services", "Insurance Agents", "Generate more insurance leads with SEO strategies that put your agency in front of prospects actively searching for coverage.",
-    [{ title: "Carrier Competition", desc: "Insurance agents compete with large carriers who have massive marketing budgets." }, { title: "Multiple Lines", desc: "Auto, home, life, health — each insurance line needs separate optimization." }, { title: "Comparison Shopping", desc: "Insurance shoppers compare multiple agents. Your SEO must capture them early in the process." }, { title: "Regulatory Content", desc: "Insurance content must be accurate and compliant with state regulations." }],
-    [{ title: "Line-Specific Pages", desc: "Optimize pages for each insurance line — auto, home, life, health, business insurance." }, { title: "Local Agent SEO", desc: "Dominate local searches for insurance agents with GBP optimization and community presence." }, { title: "Comparison Content", desc: "Create content that helps prospects compare coverage options, positioning you as a trusted advisor." }, { title: "Lead Generation", desc: "Implement conversion-focused SEO with quote forms, calculators, and clear calls to action." }],
+    [{ title: "Carrier Competition", desc: "Insurance agents compete with large carriers who have massive marketing budgets." }, { title: "Multiple Lines", desc: "Auto, home, life, health - each insurance line needs separate optimization." }, { title: "Comparison Shopping", desc: "Insurance shoppers compare multiple agents. Your SEO must capture them early in the process." }, { title: "Regulatory Content", desc: "Insurance content must be accurate and compliant with state regulations." }],
+    [{ title: "Line-Specific Pages", desc: "Optimize pages for each insurance line - auto, home, life, health, business insurance." }, { title: "Local Agent SEO", desc: "Dominate local searches for insurance agents with GBP optimization and community presence." }, { title: "Comparison Content", desc: "Create content that helps prospects compare coverage options, positioning you as a trusted advisor." }, { title: "Lead Generation", desc: "Implement conversion-focused SEO with quote forms, calculators, and clear calls to action." }],
     ["insurance agent near me", "auto insurance quotes", "home insurance", "life insurance agent", "business insurance", "health insurance broker", "cheap car insurance", "renters insurance"],
     defaultCase,
     [{ q: "How can SEO help insurance agents?", a: "SEO puts your agency in front of people actively searching for insurance. Ranking for 'insurance agent near me' and specific product keywords drives qualified leads directly to your agency." }, { q: "How do I compete with big insurance companies?", a: "Focus on local SEO, personalized service, and specific insurance lines. Local agents can outrank national carriers for location-specific searches." }, { q: "What insurance keywords should I target?", a: "Start with 'insurance agent near me' and product-specific terms like 'auto insurance quotes in [city]'. Also target comparison and educational keywords." }, { q: "How important are reviews for insurance SEO?", a: "Very important. Insurance is a trust-based business. Positive reviews significantly impact both rankings and conversion rates for agents." }, { q: "Can SEO reduce my lead acquisition costs?", a: "Yes. SEO-generated leads typically cost 60-80% less than paid advertising leads, and they convert better because they come from people actively searching for your services." }],
@@ -453,7 +453,7 @@ export const industriesData: IndustryData[] = [
 
   ind("immigration-seo", "Immigration Lawyer SEO", "Immigration Lawyers", "SEO for Immigration Lawyers - Visa & Immigration Marketing", "SEO for immigration attorneys. Help clients navigate visa applications, green cards, and citizenship with targeted legal marketing.", Scale, "Legal & Professional Services", "Immigration Lawyers", "Help immigrants find your legal services with SEO strategies that capture visa, green card, and citizenship searches in multiple languages.",
     [{ title: "Multilingual SEO", desc: "Immigration clients search in multiple languages. Multilingual content and hreflang implementation capture broader audiences." }, { title: "Policy Changes", desc: "Immigration law changes frequently. Content must be kept current to maintain accuracy and rankings." }, { title: "High Emotional Stakes", desc: "Immigration decisions are life-changing. Content must be empathetic, accurate, and actionable." }, { title: "Geographic Diversity", desc: "Clients may be anywhere. SEO must balance local office visibility with national/international reach." }],
-    [{ title: "Visa-Specific Content", desc: "Build comprehensive pages for each visa type — H-1B, L-1, EB-5, family-based, asylum, and naturalization." }, { title: "Multilingual SEO", desc: "Create optimized content in Spanish, Chinese, Hindi, and other relevant languages for your client base." }, { title: "Policy Update Content", desc: "Publish timely updates on immigration policy changes that capture trending search traffic." }, { title: "Case Type Pages", desc: "Optimize for specific immigration situations — deportation defense, DACA, work permits, marriage-based green cards." }],
+    [{ title: "Visa-Specific Content", desc: "Build comprehensive pages for each visa type - H-1B, L-1, EB-5, family-based, asylum, and naturalization." }, { title: "Multilingual SEO", desc: "Create optimized content in Spanish, Chinese, Hindi, and other relevant languages for your client base." }, { title: "Policy Update Content", desc: "Publish timely updates on immigration policy changes that capture trending search traffic." }, { title: "Case Type Pages", desc: "Optimize for specific immigration situations - deportation defense, DACA, work permits, marriage-based green cards." }],
     ["immigration lawyer near me", "H-1B visa attorney", "green card lawyer", "deportation defense", "asylum attorney", "citizenship lawyer", "DACA attorney", "work visa"],
     defaultCase,
     [{ q: "Should I create content in other languages?", a: "Yes! Many immigration clients search in their native language. Spanish, Chinese, and Hindi content can dramatically expand your reach and client base." }, { q: "How do policy changes affect SEO?", a: "Policy changes create search spikes. Publishing timely, accurate updates positions you as the go-to authority and drives significant traffic." }, { q: "What visa types should I optimize for?", a: "Prioritize your most common case types. H-1B, family-based green cards, and asylum are typically high-volume. Create comprehensive pages for each." }, { q: "How do I build trust with immigrant communities?", a: "Multilingual content, community involvement, testimonials, and transparent fee information build trust across diverse communities." }, { q: "What's the ROI of immigration law SEO?", a: "Immigration cases range from $3,000-$15,000+. SEO-generated leads typically convert at higher rates than paid leads, delivering excellent ROI." }],
@@ -462,18 +462,18 @@ export const industriesData: IndustryData[] = [
   ),
 
   ind("bankruptcy-seo", "Bankruptcy Attorney SEO", "Bankruptcy Lawyers", "SEO for Bankruptcy Attorneys - Debt Relief Marketing", "SEO for bankruptcy attorneys and debt relief lawyers. Reach individuals and businesses seeking financial recovery solutions.", Scale, "Legal & Professional Services", "Bankruptcy Lawyers", "Connect with clients in financial distress through compassionate SEO strategies that help them find the debt relief they need.",
-    [{ title: "Sensitive Topic", desc: "Bankruptcy is stigmatized. Content must be compassionate, non-judgmental, and empowering for people in financial difficulty." }, { title: "Chapter-Specific SEO", desc: "Chapter 7, Chapter 13, Chapter 11 — each has different audiences and requires separate optimization." }, { title: "Urgency-Driven Searches", desc: "Many bankruptcy searches happen when creditors are threatening. Content must address immediate concerns." }, { title: "Free Consultation Focus", desc: "Most bankruptcy clients expect free consultations. CTAs must emphasize no-cost, no-obligation meetings." }],
+    [{ title: "Sensitive Topic", desc: "Bankruptcy is stigmatized. Content must be compassionate, non-judgmental, and empowering for people in financial difficulty." }, { title: "Chapter-Specific SEO", desc: "Chapter 7, Chapter 13, Chapter 11 - each has different audiences and requires separate optimization." }, { title: "Urgency-Driven Searches", desc: "Many bankruptcy searches happen when creditors are threatening. Content must address immediate concerns." }, { title: "Free Consultation Focus", desc: "Most bankruptcy clients expect free consultations. CTAs must emphasize no-cost, no-obligation meetings." }],
     [{ title: "Chapter Pages", desc: "Build detailed pages for Chapter 7, Chapter 13, and Chapter 11 bankruptcy with eligibility, process, and outcome information." }, { title: "Compassionate Content", desc: "Create supportive content addressing the emotional aspects of financial hardship and recovery." }, { title: "Means Test Calculator", desc: "Offer online means test calculators that capture leads while providing genuine value to prospective clients." }, { title: "Creditor Defense Content", desc: "Optimize for 'stop foreclosure', 'wage garnishment help', and other crisis-driven searches." }],
     ["bankruptcy lawyer near me", "Chapter 7 bankruptcy", "Chapter 13 attorney", "debt relief lawyer", "stop foreclosure", "wage garnishment help", "debt consolidation attorney"],
     defaultCase,
-    [{ q: "How do people search for bankruptcy help?", a: "Most start with crisis searches — 'stop foreclosure', 'debt collector harassment', 'wage garnishment help'. Content addressing these immediate concerns captures clients." }, { q: "Should I offer free consultations?", a: "Yes, and promote them prominently. Free consultations are expected in bankruptcy law and are a powerful conversion tool." }, { q: "How do I handle the stigma around bankruptcy?", a: "Use compassionate, empowering language. Position bankruptcy as a fresh start and legal right, not a failure." }, { q: "Which chapter should I focus on for SEO?", a: "Optimize for all chapters you handle, but Chapter 7 typically has the highest search volume. Create dedicated pages for each." }, { q: "What's the average value of a bankruptcy client?", a: "Chapter 7 cases average $1,500-$3,500, while Chapter 13 cases can be $3,000-$6,000. Volume is key — SEO can generate significant case flow." }],
+    [{ q: "How do people search for bankruptcy help?", a: "Most start with crisis searches - 'stop foreclosure', 'debt collector harassment', 'wage garnishment help'. Content addressing these immediate concerns captures clients." }, { q: "Should I offer free consultations?", a: "Yes, and promote them prominently. Free consultations are expected in bankruptcy law and are a powerful conversion tool." }, { q: "How do I handle the stigma around bankruptcy?", a: "Use compassionate, empowering language. Position bankruptcy as a fresh start and legal right, not a failure." }, { q: "Which chapter should I focus on for SEO?", a: "Optimize for all chapters you handle, but Chapter 7 typically has the highest search volume. Create dedicated pages for each." }, { q: "What's the average value of a bankruptcy client?", a: "Chapter 7 cases average $1,500-$3,500, while Chapter 13 cases can be $3,000-$6,000. Volume is key - SEO can generate significant case flow." }],
     ["local-seo", "content-strategy", "on-page-seo"],
     defaultLocs
   ),
 
   ind("employment-law-seo", "Employment Law SEO", "Employment Lawyers", "SEO for Employment Lawyers - Workplace Discrimination Marketing", "SEO for employment attorneys. Attract clients facing wrongful termination, discrimination, wage theft, and workplace harassment.", Scale, "Legal & Professional Services", "Employment Lawyers", "Help employees find justice with SEO strategies that connect workplace violation victims with your employment law expertise.",
-    [{ title: "Dual-Audience SEO", desc: "Employment lawyers may serve employees, employers, or both. SEO must clearly target the right audience." }, { title: "Case-Type Diversity", desc: "Discrimination, harassment, wage theft, wrongful termination — each needs separate SEO targeting." }, { title: "Emotional Decision-Making", desc: "Clients are often angry, scared, or desperate. Content must validate feelings while demonstrating legal expertise." }, { title: "Class Action Potential", desc: "Some employment cases become class actions. SEO can help identify and attract group claims." }],
-    [{ title: "Case Type Pages", desc: "Build pages for discrimination, harassment, wrongful termination, wage theft, FMLA violations, and whistleblower claims." }, { title: "Rights Education Content", desc: "Create employee rights guides that capture informational searches and build your authority." }, { title: "Industry-Specific Pages", desc: "Target workplace violations in specific industries — tech, healthcare, construction, retail." }, { title: "FAQ & Know-Your-Rights", desc: "Comprehensive FAQ content addressing common employment law questions drives significant traffic." }],
+    [{ title: "Dual-Audience SEO", desc: "Employment lawyers may serve employees, employers, or both. SEO must clearly target the right audience." }, { title: "Case-Type Diversity", desc: "Discrimination, harassment, wage theft, wrongful termination - each needs separate SEO targeting." }, { title: "Emotional Decision-Making", desc: "Clients are often angry, scared, or desperate. Content must validate feelings while demonstrating legal expertise." }, { title: "Class Action Potential", desc: "Some employment cases become class actions. SEO can help identify and attract group claims." }],
+    [{ title: "Case Type Pages", desc: "Build pages for discrimination, harassment, wrongful termination, wage theft, FMLA violations, and whistleblower claims." }, { title: "Rights Education Content", desc: "Create employee rights guides that capture informational searches and build your authority." }, { title: "Industry-Specific Pages", desc: "Target workplace violations in specific industries - tech, healthcare, construction, retail." }, { title: "FAQ & Know-Your-Rights", desc: "Comprehensive FAQ content addressing common employment law questions drives significant traffic." }],
     ["employment lawyer near me", "wrongful termination attorney", "workplace discrimination lawyer", "wage theft attorney", "sexual harassment lawyer", "FMLA violation", "whistleblower attorney"],
     defaultCase,
     [{ q: "Should I target employees or employers?", a: "This depends on your practice focus. Most employment lawyers serve employees, so we target employee-side keywords. If you serve employers, we create separate B2B content." }, { q: "What employment law topics drive the most traffic?", a: "Wrongful termination, workplace discrimination, sexual harassment, and wage theft generate the highest search volumes." }, { q: "How do I rank for competitive employment law terms?", a: "Through authoritative content, case type pages, educational resources, and local SEO. Link building from legal directories and bar associations accelerates rankings." }, { q: "Should I create content about specific industries?", a: "Yes! Industry-specific employment law content (tech worker rights, healthcare employee violations) captures niche audiences with higher conversion rates." }, { q: "What's the value of employment law SEO?", a: "Contingency cases can be worth $10,000-$500,000+ in fees. Even a few additional cases per month from SEO dramatically impacts revenue." }],
@@ -482,7 +482,7 @@ export const industriesData: IndustryData[] = [
   ),
 
   ind("tax-attorney-seo", "Tax Attorney SEO", "Tax Attorneys", "SEO for Tax Attorneys - IRS Problem Resolution Marketing", "SEO for tax attorneys and tax resolution firms. Help clients facing IRS audits, tax liens, and penalties find qualified legal help.", Scale, "Legal & Professional Services", "Tax Attorneys", "Connect with taxpayers facing IRS problems through SEO strategies that capture urgent tax resolution searches.",
-    [{ title: "Seasonal + Urgency", desc: "Tax searches spike around deadlines and when IRS notices arrive. SEO must capture both seasonal and urgent traffic." }, { title: "IRS Fear Factor", desc: "Clients are often terrified of the IRS. Content must be reassuring while demonstrating your ability to resolve problems." }, { title: "Scam Awareness", desc: "Tax resolution scams make clients wary. Establishing legitimacy and credentials is paramount." }, { title: "Complex Services", desc: "Offer in compromise, audit defense, innocent spouse — each service needs clear, optimized explanation." }],
+    [{ title: "Seasonal + Urgency", desc: "Tax searches spike around deadlines and when IRS notices arrive. SEO must capture both seasonal and urgent traffic." }, { title: "IRS Fear Factor", desc: "Clients are often terrified of the IRS. Content must be reassuring while demonstrating your ability to resolve problems." }, { title: "Scam Awareness", desc: "Tax resolution scams make clients wary. Establishing legitimacy and credentials is paramount." }, { title: "Complex Services", desc: "Offer in compromise, audit defense, innocent spouse - each service needs clear, optimized explanation." }],
     [{ title: "IRS Problem Pages", desc: "Build pages for tax audits, tax liens, wage levies, offer in compromise, unfiled returns, and penalty abatement." }, { title: "Urgency Content", desc: "Create content addressing IRS notices, deadlines, and time-sensitive tax situations." }, { title: "Seasonal Tax Content", desc: "Publish tax season content that captures planning and preparation searches." }, { title: "Trust & Credentials", desc: "Highlight bar admission, CPA credentials, enrolled agent status, and IRS representation authority." }],
     ["tax attorney near me", "IRS audit help", "tax lien removal", "offer in compromise", "back taxes help", "tax debt relief", "unfiled tax returns", "IRS penalty abatement"],
     defaultCase,
@@ -492,23 +492,23 @@ export const industriesData: IndustryData[] = [
   ),
 
   // ============================================================
-  // HOME SERVICES & TRADES — IN-DEPTH ENTRIES
+  // HOME SERVICES & TRADES - IN-DEPTH ENTRIES
   // ============================================================
 
-  // PLUMBING — detailed
+  // PLUMBING - detailed
   ind("plumbing-seo", "Plumbing SEO", "Plumbers", "SEO for Plumbers - Plumbing Company Lead Generation & Marketing", "Specialized SEO services for plumbing companies. Rank for emergency plumber searches, drain cleaning, water heater repair, and all residential & commercial plumbing keywords.", Home, "Home Services & Trades", "Plumbers",
     "Get more plumbing leads with SEO strategies designed for local plumbing businesses. From emergency calls to scheduled installations, we put your plumbing company in front of homeowners actively searching for your services.",
     [
-      { title: "Emergency Search Dominance", desc: "Over 40% of plumbing searches are emergencies — burst pipes, clogged drains, and water heater failures. If you're not ranking when panic strikes, you're losing high-value jobs to competitors." },
+      { title: "Emergency Search Dominance", desc: "Over 40% of plumbing searches are emergencies - burst pipes, clogged drains, and water heater failures. If you're not ranking when panic strikes, you're losing high-value jobs to competitors." },
       { title: "Hyper-Local Competition", desc: "Dozens of plumbers fight for the same zip codes. Google's Local Pack only shows 3 results, so your GBP and local signals must be stronger than every competitor in your service area." },
       { title: "Seasonal Demand Swings", desc: "Frozen pipes in winter, AC drain issues in summer, and sewer backups in spring. Your content and ad strategy must align with seasonal plumbing demand patterns." },
       { title: "Low Trust Barrier", desc: "Homeowners fear being overcharged by plumbers. Reviews, transparent pricing content, and licensing badges are essential trust signals that drive conversions." },
     ],
     [
       { title: "Emergency Keyword Blitz", desc: "We target high-intent terms like 'emergency plumber near me', '24 hour plumber', and 'burst pipe repair' with fast-loading landing pages optimized for mobile." },
-      { title: "Service Area Pages", desc: "Dedicated geo-optimized pages for every city, neighborhood, and zip code you serve — each with unique content, schema markup, and local trust signals." },
+      { title: "Service Area Pages", desc: "Dedicated geo-optimized pages for every city, neighborhood, and zip code you serve - each with unique content, schema markup, and local trust signals." },
       { title: "Google Business Profile Mastery", desc: "Full GBP optimization with service menus, Q&A, weekly posts, photo uploads, and a systematic review generation strategy." },
-      { title: "Plumbing Content Hub", desc: "Educational content — 'how to fix a running toilet', 'signs you need a water heater replacement' — that builds topical authority and captures DIY-to-hire traffic." },
+      { title: "Plumbing Content Hub", desc: "Educational content - 'how to fix a running toilet', 'signs you need a water heater replacement' - that builds topical authority and captures DIY-to-hire traffic." },
     ],
     ["plumber near me", "emergency plumber", "24 hour plumber", "drain cleaning service", "water heater repair", "sewer line repair", "toilet repair", "leak detection", "pipe repair near me", "clogged drain", "tankless water heater installation", "sump pump repair", "garbage disposal repair", "gas line repair", "backflow testing", "hydro jetting"],
     [
@@ -518,7 +518,7 @@ export const industriesData: IndustryData[] = [
       { metric: "5.2x", label: "Return on Investment" },
     ],
     [
-      { q: "How quickly can I rank for 'plumber near me'?", a: "With aggressive local SEO — GBP optimization, citation building, and review generation — most plumbing companies see Local Pack improvements within 6-8 weeks. Organic rankings for competitive terms take 3-5 months." },
+      { q: "How quickly can I rank for 'plumber near me'?", a: "With aggressive local SEO - GBP optimization, citation building, and review generation - most plumbing companies see Local Pack improvements within 6-8 weeks. Organic rankings for competitive terms take 3-5 months." },
       { q: "Should I create separate pages for each plumbing service?", a: "Absolutely. Dedicated pages for drain cleaning, water heater repair, sewer line services, and every specialty you offer help you rank for specific searches and improve conversion rates by matching user intent." },
       { q: "How important are reviews for plumbing SEO?", a: "Reviews are the #1 local ranking factor and the #1 trust signal for homeowners choosing a plumber. We implement automated review requests via SMS and email to build your reputation systematically." },
       { q: "What's the average cost-per-lead from plumbing SEO?", a: "SEO-generated plumbing leads typically cost $15-40 each, compared to $75-150+ from Google Ads or HomeAdvisor. Over 12 months, SEO delivers 3-5x lower cost per acquisition." },
@@ -528,18 +528,18 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // HVAC — detailed
+  // HVAC - detailed
   ind("hvac-seo", "HVAC SEO", "HVAC Companies", "SEO for HVAC Companies - Heating & Cooling Lead Generation", "Expert SEO services for HVAC companies. Dominate local search for AC repair, furnace installation, heating services, and all HVAC keywords in your service area.", Home, "Home Services & Trades", "HVAC Companies",
     "Attract more HVAC leads year-round with SEO built for heating and cooling businesses. We help you rank for AC repair in summer, furnace services in winter, and maintenance year-round.",
     [
       { title: "Extreme Seasonality", desc: "HVAC demand spikes dramatically in summer and winter. Your SEO must rank you before each season hits so you capture demand when it peaks." },
       { title: "High Ticket Competition", desc: "HVAC installations average $5,000-$15,000. This high revenue per job means intense competition from well-funded competitors bidding on every keyword." },
       { title: "Emergency vs. Planned", desc: "Emergency 'AC not working' searches convert differently than 'best HVAC company for installation'. Your funnel must handle both urgency levels." },
-      { title: "Brand & Equipment Queries", desc: "Homeowners search by brand — 'Carrier AC repair', 'Trane furnace installation'. Optimizing for manufacturer-specific terms captures brand-loyal customers." },
+      { title: "Brand & Equipment Queries", desc: "Homeowners search by brand - 'Carrier AC repair', 'Trane furnace installation'. Optimizing for manufacturer-specific terms captures brand-loyal customers." },
     ],
     [
       { title: "Seasonal Content Strategy", desc: "Pre-position content for AC keywords before summer and heating keywords before winter so you're already ranking when demand surges." },
-      { title: "Equipment-Specific Pages", desc: "Dedicated pages for each brand and equipment type — heat pumps, mini-splits, central AC, gas furnaces — capturing specific buyer intent." },
+      { title: "Equipment-Specific Pages", desc: "Dedicated pages for each brand and equipment type - heat pumps, mini-splits, central AC, gas furnaces - capturing specific buyer intent." },
       { title: "Emergency HVAC Rankings", desc: "Mobile-first emergency pages for 'AC not cooling', 'furnace not heating', and 'no heat' searches with click-to-call and instant forms." },
       { title: "Maintenance Plan SEO", desc: "Content marketing for HVAC maintenance plans that builds recurring revenue and keeps your business top-of-mind between seasons." },
     ],
@@ -554,21 +554,21 @@ export const industriesData: IndustryData[] = [
       { q: "When should I start HVAC SEO for summer/winter?", a: "Start 3-4 months before peak season. SEO takes time to build rankings, so beginning AC-focused content in February and heating content in August ensures you're positioned when demand spikes." },
       { q: "Should I create pages for each HVAC brand I service?", a: "Yes. Brand-specific pages like 'Carrier AC Repair' or 'Trane Furnace Installation' capture high-intent searches from homeowners loyal to specific manufacturers." },
       { q: "How do I compete with large HVAC franchises in SEO?", a: "Local SEO is the equalizer. Independent HVAC companies can outrank franchises by dominating Google Business Profile, earning authentic local reviews, and creating hyper-local content." },
-      { q: "What keywords should HVAC companies target?", a: "Emergency terms ('AC not working'), service terms ('AC repair near me'), installation terms ('heat pump installation cost'), and maintenance terms ('HVAC tune-up') — segmented by season." },
+      { q: "What keywords should HVAC companies target?", a: "Emergency terms ('AC not working'), service terms ('AC repair near me'), installation terms ('heat pump installation cost'), and maintenance terms ('HVAC tune-up') - segmented by season." },
       { q: "How much should an HVAC company invest in SEO?", a: "Most HVAC companies invest $1,500-$4,000/month in SEO. With average installation revenue of $5,000-$15,000, just 1-2 extra jobs per month delivers strong ROI." },
     ],
     ["local-seo", "google-business-profile", "content-strategy"],
     defaultLocs
   ),
 
-  // ELECTRICIAN — detailed
+  // ELECTRICIAN - detailed
   ind("electrician-seo", "Electrician SEO", "Electricians", "SEO for Electricians - Electrical Contractor Marketing & Leads", "Specialized SEO for electricians and electrical contractors. Rank for panel upgrades, EV charger installation, electrical repair, and all residential & commercial electrical keywords.", Zap, "Home Services & Trades", "Electricians",
     "Generate more electrical service leads with SEO strategies tailored for electricians. From emergency repairs to EV charger installations, we help you dominate local search results.",
     [
-      { title: "Safety & Licensing Trust", desc: "Electrical work is dangerous. Homeowners need confidence in licensing, insurance, and safety records before hiring — your website must communicate trust instantly." },
+      { title: "Safety & Licensing Trust", desc: "Electrical work is dangerous. Homeowners need confidence in licensing, insurance, and safety records before hiring - your website must communicate trust instantly." },
       { title: "Emerging Service Demand", desc: "EV charger installation, solar panel wiring, smart home systems, and generator installation are booming. SEO must capture these growing search categories." },
       { title: "Commercial vs. Residential", desc: "Commercial electrical contracts are high-value but require different content and keywords than residential. Your SEO strategy needs both funnels." },
-      { title: "Emergency Electrical Searches", desc: "'Electrical emergency', 'power outage repair', 'sparking outlet' — these urgent searches need immediate visibility with mobile-optimized pages." },
+      { title: "Emergency Electrical Searches", desc: "'Electrical emergency', 'power outage repair', 'sparking outlet' - these urgent searches need immediate visibility with mobile-optimized pages." },
     ],
     [
       { title: "Service Specialization Pages", desc: "Dedicated pages for panel upgrades, EV charger installation, whole-house rewiring, generator installation, and every specialty service." },
@@ -594,13 +594,13 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // CLEANING SERVICES — detailed
+  // CLEANING SERVICES - detailed
   ind("cleaning-seo", "Cleaning Company SEO", "Cleaning Companies", "SEO for Cleaning Companies - Janitorial & Maid Service Marketing", "SEO services for cleaning companies, maid services, and janitorial businesses. Rank for house cleaning, office cleaning, deep cleaning, and commercial janitorial keywords.", Sparkles, "Home Services & Trades", "Cleaning Companies",
     "Grow your cleaning business with SEO that attracts both residential and commercial cleaning clients. We help you rank for house cleaning, office janitorial, move-out cleaning, and specialty services.",
     [
       { title: "Low Barrier to Entry", desc: "The cleaning industry has low entry barriers, creating intense competition. Hundreds of cleaning companies compete for the same local searches, making SEO differentiation essential." },
       { title: "Recurring Revenue Keywords", desc: "Cleaning is a recurring service. Ranking for 'weekly house cleaning' and 'office cleaning contracts' captures high-lifetime-value clients, not just one-time jobs." },
-      { title: "Trust & Background Checks", desc: "Customers invite cleaners into their homes. Trust signals — background checks, insurance, bonding, reviews — are critical conversion factors." },
+      { title: "Trust & Background Checks", desc: "Customers invite cleaners into their homes. Trust signals - background checks, insurance, bonding, reviews - are critical conversion factors." },
       { title: "Residential vs. Commercial Split", desc: "Residential clients search differently than commercial facility managers. Your SEO must serve both audiences with tailored content and landing pages." },
     ],
     [
@@ -627,17 +627,17 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // PEST CONTROL — detailed
+  // PEST CONTROL - detailed
   ind("pest-control-seo", "Pest Control SEO", "Pest Control", "SEO for Pest Control Companies - Exterminator Marketing & Leads", "Specialized SEO for pest control companies and exterminators. Rank for termite treatment, bed bug removal, rodent control, and all pest-related keywords in your service area.", Home, "Home Services & Trades", "Pest Control",
     "Attract more pest control leads with SEO strategies built for exterminators. From termite inspections to bed bug treatments, we help you rank when homeowners are desperate for help.",
     [
-      { title: "Panic-Driven Searches", desc: "Most pest control searches happen during infestations — customers are panicked and ready to hire immediately. Ranking for these urgent queries means capturing high-conversion leads." },
+      { title: "Panic-Driven Searches", desc: "Most pest control searches happen during infestations - customers are panicked and ready to hire immediately. Ranking for these urgent queries means capturing high-conversion leads." },
       { title: "Seasonal Pest Patterns", desc: "Ants in spring, mosquitoes in summer, rodents in fall, spiders year-round. Your content calendar must align with seasonal pest activity in your region." },
       { title: "DIY Competition", desc: "Many homeowners try DIY pest control first. Your content must position professional treatment as superior to store-bought solutions while capturing DIY-failure traffic." },
-      { title: "Pest-Specific Rankings", desc: "Homeowners search for specific pests — 'termite treatment', 'bed bug exterminator', 'rat removal'. Each pest type needs its own optimized page." },
+      { title: "Pest-Specific Rankings", desc: "Homeowners search for specific pests - 'termite treatment', 'bed bug exterminator', 'rat removal'. Each pest type needs its own optimized page." },
     ],
     [
-      { title: "Pest-Specific Landing Pages", desc: "Dedicated, in-depth pages for every pest you treat — termites, bed bugs, cockroaches, rodents, ants, mosquitoes, wasps, spiders, wildlife, and more." },
+      { title: "Pest-Specific Landing Pages", desc: "Dedicated, in-depth pages for every pest you treat - termites, bed bugs, cockroaches, rodents, ants, mosquitoes, wasps, spiders, wildlife, and more." },
       { title: "Seasonal Content Strategy", desc: "Pre-publish content aligned with seasonal pest patterns so you're already ranking when homeowners start searching for specific infestations." },
       { title: "Emergency Pest Rankings", desc: "Mobile-optimized emergency pages for 'emergency exterminator', 'same day pest control', and panic searches with instant contact options." },
       { title: "Recurring Treatment SEO", desc: "Content promoting monthly and quarterly pest prevention plans that convert one-time emergency calls into recurring revenue clients." },
@@ -651,7 +651,7 @@ export const industriesData: IndustryData[] = [
     ],
     [
       { q: "How fast can I rank for pest control keywords?", a: "Emergency and long-tail pest terms ('bed bug exterminator [city]') can rank within 4-6 weeks. Competitive head terms like 'pest control near me' typically take 3-5 months with consistent effort." },
-      { q: "Should I create a page for every pest type?", a: "Yes! Homeowners search by specific pest — 'termite treatment near me', 'bed bug removal cost'. Each pest page captures unique search intent and dramatically increases your keyword footprint." },
+      { q: "Should I create a page for every pest type?", a: "Yes! Homeowners search by specific pest - 'termite treatment near me', 'bed bug removal cost'. Each pest page captures unique search intent and dramatically increases your keyword footprint." },
       { q: "How do seasonal changes affect pest control SEO?", a: "We pre-publish seasonal content 2-3 months ahead. Ant and termite content goes live in January for spring demand; rodent content in August for fall. This ensures rankings before seasonal search spikes." },
       { q: "Can SEO reduce my dependence on lead generation sites?", a: "Absolutely. Many pest control companies spend $5,000-$15,000/month on HomeAdvisor, Angi, or Thumbtack. SEO-generated leads cost 70-80% less and you own the relationship directly." },
       { q: "What's the best content strategy for pest control?", a: "Pest identification guides, prevention tips, treatment comparisons (DIY vs professional), seasonal pest calendars, and health risk content. This builds topical authority and captures informational-to-transactional search journeys." },
@@ -660,7 +660,7 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // LOCKSMITH — detailed
+  // LOCKSMITH - detailed
   ind("locksmith-seo", "Locksmith SEO", "Locksmiths", "SEO for Locksmiths - Emergency Lockout Marketing & Lead Generation", "SEO services for locksmith businesses. Rank for emergency lockout, lock change, key duplication, smart lock installation, and all locksmith keywords.", Home, "Home Services & Trades", "Locksmiths",
     "Get more locksmith calls with SEO strategies built for emergency and scheduled locksmith services. We help you rank when customers are locked out and searching on their phones.",
     [
@@ -693,7 +693,7 @@ export const industriesData: IndustryData[] = [
     defaultLocs
   ),
 
-  // ROOFING — detailed
+  // ROOFING - detailed
   ind("roofing-seo", "Roofing SEO", "Roofers", "SEO for Roofers - Roofing Company Marketing & Lead Generation", "Expert SEO for roofing companies. Rank for roof repair, roof replacement, storm damage, and all roofing keywords to generate qualified leads.", Home, "Home Services & Trades", "Roofers",
     "Generate more roofing leads with SEO strategies built for roofing contractors. From storm damage repairs to full replacements, we help you rank for high-value roofing keywords.",
     [
@@ -718,8 +718,8 @@ export const industriesData: IndustryData[] = [
     [
       { q: "How does storm damage affect roofing SEO?", a: "Storms create massive search spikes. We pre-build storm damage pages so when severe weather hits your area, your site is already optimized to capture the surge in roofing searches." },
       { q: "Should I create pages for each roofing material?", a: "Yes. Homeowners search specifically for 'metal roof installation', 'asphalt shingle replacement', etc. Material-specific pages capture these searches and showcase your expertise." },
-      { q: "How can SEO help with insurance claim roofing jobs?", a: "Content about the insurance claim process — what's covered, how to document damage, working with adjusters — captures homeowners early in their decision process and positions you as the expert." },
-      { q: "What's the ROI of roofing SEO?", a: "With average roof replacements at $10,000-$20,000, even 2-3 extra jobs per month from SEO delivers $20,000-$60,000 in revenue — typically 5-8x ROI on your SEO investment." },
+      { q: "How can SEO help with insurance claim roofing jobs?", a: "Content about the insurance claim process - what's covered, how to document damage, working with adjusters - captures homeowners early in their decision process and positions you as the expert." },
+      { q: "What's the ROI of roofing SEO?", a: "With average roof replacements at $10,000-$20,000, even 2-3 extra jobs per month from SEO delivers $20,000-$60,000 in revenue - typically 5-8x ROI on your SEO investment." },
       { q: "How long does roofing SEO take?", a: "Initial local ranking improvements in 6-8 weeks. Competitive terms like 'roofer near me' take 3-5 months. Storm-related content can rank quickly due to lower competition." },
     ],
     ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"],
@@ -772,8 +772,8 @@ export const industriesData: IndustryData[] = [
       { q: "How can SEO help my painting business?", a: "SEO puts your painting company in front of homeowners actively searching for painters. Ranking for 'painter near me' and service-specific terms drives a steady stream of estimate requests." },
       { q: "What painting keywords have the highest intent?", a: "'Painter near me', 'house painting estimate', 'interior painter [city]', and 'cabinet painter near me' signal high intent. We prioritize keywords that lead directly to bookings." },
       { q: "Should I create content about paint colors?", a: "Yes. Color advice content attracts homeowners in the research phase. 'Best paint colors for kitchens' and similar guides capture traffic that converts into painting leads." },
-      { q: "How do I compete with cheap painters on Google?", a: "Showcase professionalism — licensing, insurance, warranties, portfolio quality, and reviews. SEO content that emphasizes quality and reliability attracts better clients willing to pay fair prices." },
-      { q: "What's the ROI of painting company SEO?", a: "With average exterior jobs at $3,000-$6,000 and interiors at $1,500-$4,000, even 5-10 extra leads per month from SEO delivers massive returns — typically 5-8x ROI." },
+      { q: "How do I compete with cheap painters on Google?", a: "Showcase professionalism - licensing, insurance, warranties, portfolio quality, and reviews. SEO content that emphasizes quality and reliability attracts better clients willing to pay fair prices." },
+      { q: "What's the ROI of painting company SEO?", a: "With average exterior jobs at $3,000-$6,000 and interiors at $1,500-$4,000, even 5-10 extra leads per month from SEO delivers massive returns - typically 5-8x ROI." },
     ],
     ["local-seo", "google-business-profile", "on-page-seo", "content-strategy"], defaultLocs
   ),
@@ -789,15 +789,15 @@ export const industriesData: IndustryData[] = [
     [
       { title: "Move-Type Pages", desc: "Dedicated pages for local moving, long distance, interstate, commercial/office, apartment, piano, and specialty item moving." },
       { title: "Moving Guide Content", desc: "Checklists, packing tips, timeline planners, and cost guides that capture top-of-funnel traffic and build trust." },
-      { title: "Route-Specific SEO", desc: "Optimize for specific moving routes — 'movers from [city A] to [city B]' — capturing long-distance moving searches." },
+      { title: "Route-Specific SEO", desc: "Optimize for specific moving routes - 'movers from [city A] to [city B]' - capturing long-distance moving searches." },
       { title: "Trust & Credibility SEO", desc: "Showcase DOT numbers, insurance, BBB ratings, and verified reviews prominently to overcome trust barriers." },
     ],
     ["movers near me", "moving company", "local movers", "long distance movers", "commercial moving", "packing services", "piano moving", "apartment movers", "office relocation", "interstate moving", "moving cost calculator", "same day movers", "storage and moving", "senior moving services", "furniture movers"],
     [{ metric: "350%", label: "Booking Increase" }, { metric: "#1", label: "Local Pack" }, { metric: "200+", label: "Monthly Quotes" }, { metric: "4.8x", label: "ROI" }],
     [
       { q: "How competitive is moving company SEO?", a: "Very competitive in most markets. However, many moving companies rely on lead-buying services. Direct SEO generates owned leads at 60-70% lower cost per acquisition." },
-      { q: "Should I focus on local or long-distance SEO?", a: "Both, but start with local — it's faster to rank and builds your foundation. Long-distance SEO takes longer but captures higher-value moves." },
-      { q: "How do I build trust online as a mover?", a: "Display DOT/MC numbers, insurance info, BBB rating, and genuine customer reviews. Create content about avoiding moving scams — positioning yourself as the trustworthy alternative." },
+      { q: "Should I focus on local or long-distance SEO?", a: "Both, but start with local - it's faster to rank and builds your foundation. Long-distance SEO takes longer but captures higher-value moves." },
+      { q: "How do I build trust online as a mover?", a: "Display DOT/MC numbers, insurance info, BBB rating, and genuine customer reviews. Create content about avoiding moving scams - positioning yourself as the trustworthy alternative." },
       { q: "What moving content converts best?", a: "Moving cost calculators, packing checklists, and moving timeline guides generate leads. These tools provide value while capturing contact information." },
       { q: "When should I ramp up moving SEO?", a: "Start building rankings in January-February for the summer peak season. Year-round SEO ensures you maintain rankings and capture off-season moves too." },
     ],
@@ -807,7 +807,7 @@ export const industriesData: IndustryData[] = [
   // ---- TOWING (detailed) ----
   ind("towing-seo", "Towing Company SEO", "Towing Companies", "SEO for Towing Companies - Tow Truck Marketing", "SEO for towing companies. Rank for emergency towing, roadside assistance, flatbed towing, and accident recovery searches to get more calls.", Car, "Home Services & Trades", "Towing Companies", "Get more towing calls with SEO that ensures your company appears first when stranded motorists search for emergency towing and roadside assistance.",
     [
-      { title: "Extreme Urgency", desc: "Towing searches are immediate emergencies. The #1 result gets the call — there's no browsing. Speed and visibility are everything." },
+      { title: "Extreme Urgency", desc: "Towing searches are immediate emergencies. The #1 result gets the call - there's no browsing. Speed and visibility are everything." },
       { title: "Mobile-First Market", desc: "99% of towing searches happen on mobile from stranded motorists. Your site must load instantly and make calling effortless." },
       { title: "24/7 Availability", desc: "Towing is a round-the-clock business. Your SEO must communicate 24/7 availability clearly to capture after-hours searches." },
       { title: "Map Pack Dominance", desc: "Google Maps results dominate towing searches. Map pack position #1 can generate 80% of all organic towing calls." },
@@ -815,13 +815,13 @@ export const industriesData: IndustryData[] = [
     [
       { title: "Emergency SEO Dominance", desc: "Optimize for 'tow truck near me', 'emergency towing', '24/7 towing' with lightning-fast mobile pages and click-to-call functionality." },
       { title: "Service-Specific Pages", desc: "Dedicated pages for flatbed towing, motorcycle towing, heavy-duty towing, accident towing, junk car removal, and roadside assistance." },
-      { title: "Hyper-Local Coverage", desc: "Service area pages for every highway, intersection, and neighborhood you cover — targeting 'towing on [highway]' searches." },
+      { title: "Hyper-Local Coverage", desc: "Service area pages for every highway, intersection, and neighborhood you cover - targeting 'towing on [highway]' searches." },
       { title: "Mobile Speed Optimization", desc: "Sub-2-second load times on mobile, prominent phone number, click-to-call buttons, and instant location detection." },
     ],
     ["tow truck near me", "towing service", "emergency towing", "roadside assistance", "flatbed towing", "motorcycle towing", "junk car removal", "accident towing", "24 hour towing", "heavy duty towing", "lockout service", "tire change service", "jump start service", "long distance towing", "impound towing"],
     [{ metric: "500%", label: "Call Volume" }, { metric: "#1", label: "Map Pack" }, { metric: "24/7", label: "Lead Flow" }, { metric: "7x", label: "ROI" }],
     [
-      { q: "Why is SEO so important for towing companies?", a: "Towing is the ultimate emergency search. The #1 result gets the call — period. There's no comparison shopping when you're stranded. Ranking first means capturing nearly every lead." },
+      { q: "Why is SEO so important for towing companies?", a: "Towing is the ultimate emergency search. The #1 result gets the call - period. There's no comparison shopping when you're stranded. Ranking first means capturing nearly every lead." },
       { q: "How fast does my towing website need to be?", a: "Under 2 seconds on mobile. Stranded motorists have no patience. Every second of delay costs calls. We optimize for blazing-fast mobile performance." },
       { q: "Should I create pages for different towing services?", a: "Yes. Flatbed, motorcycle, heavy-duty, accident, and junk car removal each attract different searches. Dedicated pages capture more total traffic." },
       { q: "How do I dominate the Google Map Pack for towing?", a: "GBP optimization, consistent citations, review generation, geo-tagged photos, and local content. Map pack position #1 captures the majority of towing calls." },
@@ -839,7 +839,7 @@ export const industriesData: IndustryData[] = [
       { title: "Task App Competition", desc: "TaskRabbit, Thumbtack, and similar platforms compete for handyman searches. Organic SEO reduces dependency on these platforms." },
     ],
     [
-      { title: "Service Directory Pages", desc: "Create optimized pages for your top 15-20 services — drywall repair, furniture assembly, TV mounting, door installation, shelving, painting touchups." },
+      { title: "Service Directory Pages", desc: "Create optimized pages for your top 15-20 services - drywall repair, furniture assembly, TV mounting, door installation, shelving, painting touchups." },
       { title: "Neighborhood SEO", desc: "Target every neighborhood and community you serve with location-specific handyman service pages." },
       { title: "Problem-Based Content", desc: "Create 'how to fix' content that captures DIY searches and converts them into service calls when the project is too complex." },
       { title: "Trust-Building Strategy", desc: "Showcase background checks, insurance, warranties, and reviews to differentiate from unverified competitors and task apps." },
@@ -851,7 +851,7 @@ export const industriesData: IndustryData[] = [
       { q: "Should I create pages for every handyman service?", a: "Yes, for your top services. Drywall repair, furniture assembly, TV mounting, and other specific services each have search volume. Even low-volume pages collectively drive significant traffic." },
       { q: "How do I compete with TaskRabbit and Thumbtack?", a: "Direct SEO captures the same customers before they reach platforms. Your own website means no platform fees, higher margins, and direct customer relationships." },
       { q: "What handyman keywords convert best?", a: "'Handyman near me', specific service + 'near me' terms, and 'same day handyman' signal high intent. We prioritize keywords that lead directly to service calls." },
-      { q: "How important are reviews for handyman SEO?", a: "Critical. Handyman work is trust-based — you're entering someone's home. A strong review profile (4.7+) with recent reviews is often the deciding factor." },
+      { q: "How important are reviews for handyman SEO?", a: "Critical. Handyman work is trust-based - you're entering someone's home. A strong review profile (4.7+) with recent reviews is often the deciding factor." },
     ],
     ["local-seo", "google-business-profile", "on-page-seo", "content-strategy"], defaultLocs
   ),
@@ -859,13 +859,13 @@ export const industriesData: IndustryData[] = [
   // ---- GARAGE DOOR (detailed) ----
   ind("garage-door-seo", "Garage Door SEO", "Garage Door Companies", "SEO for Garage Door Companies - Repair & Install Marketing", "SEO for garage door companies. Rank for garage door repair, spring replacement, opener installation, and emergency service searches.", Home, "Home Services & Trades", "Garage Door Companies", "Open more revenue with SEO that captures homeowners searching for garage door repair, spring replacement, opener installation, and emergency service.",
     [
-      { title: "Emergency-Driven Demand", desc: "A broken garage door is an emergency — cars get trapped, homes become insecure. Emergency search terms drive the highest-value calls." },
+      { title: "Emergency-Driven Demand", desc: "A broken garage door is an emergency - cars get trapped, homes become insecure. Emergency search terms drive the highest-value calls." },
       { title: "Scam Industry Reputation", desc: "Garage door scams are widespread. Customers are cautious. Trust signals, transparent pricing, and reviews are essential for conversions." },
       { title: "High Ticket Services", desc: "Full door replacements can exceed $2,000-$5,000. SEO for installation keywords captures high-value projects." },
-      { title: "Brand & Model Searches", desc: "Homeowners search for specific brands — LiftMaster, Chamberlain, Clopay. Brand pages capture these qualified searches." },
+      { title: "Brand & Model Searches", desc: "Homeowners search for specific brands - LiftMaster, Chamberlain, Clopay. Brand pages capture these qualified searches." },
     ],
     [
-      { title: "Emergency Landing Pages", desc: "Dedicated pages for 'garage door won't open', 'broken spring', 'garage door off track' — high-urgency, high-conversion searches." },
+      { title: "Emergency Landing Pages", desc: "Dedicated pages for 'garage door won't open', 'broken spring', 'garage door off track' - high-urgency, high-conversion searches." },
       { title: "Service Segmentation", desc: "Separate pages for spring replacement, opener installation, panel replacement, new door installation, and commercial garage doors." },
       { title: "Trust & Transparency", desc: "Pricing guides, warranty information, licensing details, and review showcasing to overcome industry trust issues." },
       { title: "Brand-Specific Pages", desc: "Create pages for LiftMaster, Chamberlain, Clopay, Amarr, and Wayne Dalton to capture brand-loyal searches." },
@@ -874,10 +874,10 @@ export const industriesData: IndustryData[] = [
     [{ metric: "450%", label: "Service Calls" }, { metric: "#1", label: "Emergency Rankings" }, { metric: "180+", label: "Monthly Leads" }, { metric: "6.5x", label: "ROI" }],
     [
       { q: "How urgent is SEO for garage door companies?", a: "Garage door searches are among the most urgent in home services. The #1 result captures the majority of calls. If you're not ranking, your competitors are getting those emergency calls." },
-      { q: "How do I overcome the garage door scam reputation?", a: "Transparent pricing, prominently displayed licensing and insurance, real customer reviews, and trust-building content about how to spot scams — positioning your company as the honest alternative." },
+      { q: "How do I overcome the garage door scam reputation?", a: "Transparent pricing, prominently displayed licensing and insurance, real customer reviews, and trust-building content about how to spot scams - positioning your company as the honest alternative." },
       { q: "What garage door keywords convert best?", a: "'Garage door repair near me', 'broken garage door spring', and 'garage door won't open' are the highest-converting emergency terms. Installation keywords capture higher-value projects." },
       { q: "Should I create content about garage door brands?", a: "Yes. Brand-specific pages capture homeowners searching for 'LiftMaster repair' or 'Clopay garage doors'. These users know what they want and convert quickly." },
-      { q: "What's the ROI of garage door SEO?", a: "With spring repairs at $200-$400 and full door replacements at $2,000-$5,000, even 10-15 extra calls per month delivers $5,000-$20,000+ in revenue — typically 5-7x ROI." },
+      { q: "What's the ROI of garage door SEO?", a: "With spring repairs at $200-$400 and full door replacements at $2,000-$5,000, even 10-15 extra calls per month delivers $5,000-$20,000+ in revenue - typically 5-7x ROI." },
     ],
     ["local-seo", "google-business-profile", "technical-seo", "on-page-seo"], defaultLocs
   ),
@@ -885,7 +885,7 @@ export const industriesData: IndustryData[] = [
   // ---- FLOORING (detailed) ----
   ind("flooring-seo", "Flooring Company SEO", "Flooring Companies", "SEO for Flooring Companies - Flooring Installation Marketing", "SEO for flooring companies. Rank for hardwood flooring, tile installation, carpet, vinyl plank, and floor refinishing searches to get more projects.", Home, "Home Services & Trades", "Flooring Companies", "Step up your leads with SEO that captures homeowners searching for hardwood, tile, carpet, vinyl, and flooring installation services.",
     [
-      { title: "Material Diversity", desc: "Hardwood, tile, carpet, vinyl, laminate, epoxy — each flooring type has unique search patterns and customer demographics." },
+      { title: "Material Diversity", desc: "Hardwood, tile, carpet, vinyl, laminate, epoxy - each flooring type has unique search patterns and customer demographics." },
       { title: "Big Box Competition", desc: "Home Depot and Lowe's dominate national flooring searches. Local SEO and installation expertise are your competitive advantages." },
       { title: "Visual Decision Making", desc: "Flooring is a visual purchase. Portfolio photos, showroom imagery, and before-and-after galleries heavily influence decisions." },
       { title: "Commercial vs Residential", desc: "Commercial flooring projects are higher value. B2B SEO targeting property managers and contractors opens lucrative revenue streams." },
@@ -926,10 +926,10 @@ export const industriesData: IndustryData[] = [
     [{ metric: "400%", label: "Service Calls" }, { metric: "#1", label: "Emergency Rankings" }, { metric: "130+", label: "Monthly Leads" }, { metric: "5.8x", label: "ROI" }],
     [
       { q: "How can SEO help my tree service business?", a: "SEO puts your tree service at the top of Google when homeowners need tree removal, trimming, or emergency storm cleanup. These high-intent searches convert into booked jobs." },
-      { q: "How do I capture emergency tree removal searches?", a: "Dedicated emergency pages, fast mobile load times, click-to-call buttons, and 24/7 messaging. When storms hit, you need to already be ranking — it's too late to start SEO after the storm." },
+      { q: "How do I capture emergency tree removal searches?", a: "Dedicated emergency pages, fast mobile load times, click-to-call buttons, and 24/7 messaging. When storms hit, you need to already be ranking - it's too late to start SEO after the storm." },
       { q: "Should I highlight ISA certification and insurance?", a: "Absolutely. Tree work is dangerous and expensive. Certification and insurance are major trust signals that differentiate professionals from unqualified operators." },
       { q: "What tree service keywords convert best?", a: "'Tree removal near me', 'emergency tree service', and 'stump grinding near me' have the highest conversion rates. Species-specific and service-specific terms also perform well." },
-      { q: "What's the ROI of tree service SEO?", a: "With average removal jobs at $1,000-$3,000 and large removals exceeding $5,000, even 5-10 extra leads per month delivers $5,000-$30,000 in revenue — typically 5-8x ROI." },
+      { q: "What's the ROI of tree service SEO?", a: "With average removal jobs at $1,000-$3,000 and large removals exceeding $5,000, even 5-10 extra leads per month delivers $5,000-$30,000 in revenue - typically 5-8x ROI." },
     ],
     ["local-seo", "google-business-profile", "content-strategy", "on-page-seo"], defaultLocs
   ),
@@ -953,7 +953,7 @@ export const industriesData: IndustryData[] = [
   ...createTechSaas(),
 
   // ============================================================
-  // EDUCATION & TRAINING — DETAILED SUB-INDUSTRIES
+  // EDUCATION & TRAINING - DETAILED SUB-INDUSTRIES
   // ============================================================
   ind("tutoring-seo", "Tutoring SEO", "Tutoring Services", "SEO for Tutoring Services - Academic Tutoring Marketing", "Specialized SEO for tutoring centers and private tutors. Rank for math tutor, reading help, SAT prep, and academic support searches to fill your schedule year-round.", GraduationCap, "Education & Training", "Tutoring Services", "Fill your tutoring calendar with SEO strategies that connect you with students and parents searching for academic support, test prep, and subject-specific tutoring.",
     [
@@ -963,9 +963,9 @@ export const industriesData: IndustryData[] = [
       { title: "Trust & Credentials", desc: "Parents are entrusting their child's education. Highlighting qualifications, background checks, teaching experience, and results is essential for conversion." },
     ],
     [
-      { title: "Subject Landing Pages", desc: "Dedicated pages for math tutoring, reading tutoring, science tutoring, SAT/ACT prep, and every subject you teach — each optimized for local + subject keywords." },
+      { title: "Subject Landing Pages", desc: "Dedicated pages for math tutoring, reading tutoring, science tutoring, SAT/ACT prep, and every subject you teach - each optimized for local + subject keywords." },
       { title: "Test Prep SEO Blitz", desc: "Seasonal campaigns targeting SAT prep, ACT tutoring, AP exam help, and state test preparation timed to peak demand periods." },
-      { title: "Parent-Focused Content", desc: "Blog content answering parent questions — 'how to help my child with math', 'signs my child needs a tutor', 'online vs in-person tutoring' — that builds trust and captures top-funnel traffic." },
+      { title: "Parent-Focused Content", desc: "Blog content answering parent questions - 'how to help my child with math', 'signs my child needs a tutor', 'online vs in-person tutoring' - that builds trust and captures top-funnel traffic." },
       { title: "Local & Virtual SEO", desc: "Optimize for 'tutor near me' with GBP while also targeting 'online tutor' for broader reach. Dual strategy maximizes student acquisition." },
     ],
     ["tutor near me", "math tutor", "reading tutor", "SAT prep tutoring", "online tutoring", "chemistry tutor", "English tutor", "homework help", "ACT prep", "AP exam tutor", "algebra tutor", "physics tutor", "elementary tutor", "high school tutor", "test preparation"],
@@ -989,7 +989,7 @@ export const industriesData: IndustryData[] = [
     ],
     [
       { title: "Course Landing Page SEO", desc: "Optimize each course page with compelling descriptions, curriculum details, instructor credentials, student reviews, and course schema markup for rich results." },
-      { title: "Educational Content Funnel", desc: "Free blog posts and YouTube videos targeting related searches that funnel visitors to paid courses — 'how to learn Python' leads to your Python course." },
+      { title: "Educational Content Funnel", desc: "Free blog posts and YouTube videos targeting related searches that funnel visitors to paid courses - 'how to learn Python' leads to your Python course." },
       { title: "Course Schema & Rich Results", desc: "Implement Course, Review, and HowTo schema markup for enhanced search appearances with ratings, pricing, and enrollment information." },
       { title: "YouTube & Video SEO", desc: "Optimize course preview videos, free tutorials, and promotional content on YouTube to capture video search traffic." },
     ],
@@ -997,7 +997,7 @@ export const industriesData: IndustryData[] = [
     [{ metric: "450%", label: "Enrollment Growth" }, { metric: "200+", label: "Keywords Ranked" }, { metric: "60%", label: "Organic Revenue" }, { metric: "6x", label: "ROI" }],
     [
       { q: "How do I compete with Udemy and Coursera?", a: "Niche expertise and long-tail keywords. Instead of 'Python course', target 'Python for data analysts' or 'Python for financial modeling'. Specificity beats platforms." },
-      { q: "Should I give away free content for SEO?", a: "Yes — strategically. Free content attracts traffic and builds trust. The key is creating a clear funnel from free resources to paid courses with compelling CTAs." },
+      { q: "Should I give away free content for SEO?", a: "Yes - strategically. Free content attracts traffic and builds trust. The key is creating a clear funnel from free resources to paid courses with compelling CTAs." },
       { q: "How important is YouTube for course SEO?", a: "Very. YouTube is the #2 search engine. Free tutorial videos drive massive traffic and build authority that converts viewers into paid students." },
       { q: "Can SEO help sell courses without paid ads?", a: "Absolutely. Many successful course creators generate 50-80% of sales from organic search. SEO provides sustainable enrollment without ongoing ad spend." },
       { q: "What schema markup helps course pages?", a: "Course schema shows course name, provider, and description in search results. Combined with Review and FAQ schema, it dramatically improves click-through rates." },
@@ -1007,13 +1007,13 @@ export const industriesData: IndustryData[] = [
 
   ind("daycare-seo", "Daycare SEO", "Daycare Centers", "SEO for Daycare Centers - Child Care Marketing", "SEO for daycare centers, preschools, and child care facilities. Rank for daycare searches, attract parents, and maintain full enrollment year-round.", GraduationCap, "Education & Training", "Daycare Centers", "Keep your daycare at full enrollment with SEO strategies that help parents find and choose your child care center over competitors.",
     [
-      { title: "Extreme Local Competition", desc: "Parents search within a small radius — 'daycare near me' or 'daycare in [neighborhood]'. Standing out among dozens of local competitors requires dominant local SEO." },
+      { title: "Extreme Local Competition", desc: "Parents search within a small radius - 'daycare near me' or 'daycare in [neighborhood]'. Standing out among dozens of local competitors requires dominant local SEO." },
       { title: "Trust & Safety Concerns", desc: "Parents prioritize safety above all. Your online presence must prominently display licensing, certifications, staff qualifications, and safety protocols." },
       { title: "Waitlist vs Enrollment", desc: "Many daycares have waitlists while others struggle to fill spots. SEO can either build waitlists or fill gaps depending on your situation." },
-      { title: "Age-Specific Programs", desc: "Infant care, toddler programs, preschool, after-school — each age group has different keywords and parent concerns." },
+      { title: "Age-Specific Programs", desc: "Infant care, toddler programs, preschool, after-school - each age group has different keywords and parent concerns." },
     ],
     [
-      { title: "Age Group Landing Pages", desc: "Dedicated pages for infant care, toddler programs, preschool, pre-K, and after-school programs — each targeting age-specific search queries." },
+      { title: "Age Group Landing Pages", desc: "Dedicated pages for infant care, toddler programs, preschool, pre-K, and after-school programs - each targeting age-specific search queries." },
       { title: "Trust-First Local SEO", desc: "GBP optimization with photos, virtual tours, licensing info, and parent reviews to build trust before the first visit." },
       { title: "Parent Resource Content", desc: "Blog content on child development milestones, school readiness tips, and parenting advice that positions your daycare as an educational authority." },
       { title: "Tour Conversion Optimization", desc: "Optimize tour booking pages, implement scheduling schema, and create compelling virtual tour content to convert website visitors into scheduled tours." },
@@ -1025,7 +1025,7 @@ export const industriesData: IndustryData[] = [
       { q: "How important are reviews for daycare SEO?", a: "Critically important. Parents read every review before trusting a daycare with their child. A strong review profile improves rankings AND conversion rates dramatically." },
       { q: "Should I show pricing on my website?", a: "Yes. Parents want to know affordability before calling. Transparent pricing reduces unqualified inquiries and attracts families who match your price point." },
       { q: "Can SEO help build a waitlist?", a: "Yes. Strong SEO creates consistent demand. When enrollment is full, we optimize for waitlist signups and future enrollment periods." },
-      { q: "What content should a daycare website have?", a: "Program descriptions, staff bios, safety certifications, daily schedules, meal information, parent testimonials, and educational philosophy — all optimized for parent searches." },
+      { q: "What content should a daycare website have?", a: "Program descriptions, staff bios, safety certifications, daily schedules, meal information, parent testimonials, and educational philosophy - all optimized for parent searches." },
     ],
     ["local-seo", "google-business-profile", "content-strategy"], defaultLocs
   ),
@@ -1033,7 +1033,7 @@ export const industriesData: IndustryData[] = [
   ind("driving-school-seo", "Driving School SEO", "Driving Schools", "SEO for Driving Schools - Driver Education Marketing", "SEO for driving schools and driver education providers. Rank for driving lessons, learner's permit, and CDL training searches in your area.", GraduationCap, "Education & Training", "Driving Schools", "Fill your driving school schedule with SEO strategies that capture teens, new drivers, and CDL students searching for driving lessons.",
     [
       { title: "Seasonal Teen Demand", desc: "Driving school demand peaks when teens turn 16. Summer months are busiest. SEO must rank before peak season to capture this annual surge." },
-      { title: "Multiple Student Types", desc: "Teens, adult learners, international license holders, CDL students — each audience searches differently and needs tailored content." },
+      { title: "Multiple Student Types", desc: "Teens, adult learners, international license holders, CDL students - each audience searches differently and needs tailored content." },
       { title: "Price Comparison Shopping", desc: "Students and parents compare driving school prices extensively. Transparent pricing and value proposition are essential for conversion." },
       { title: "Online Course Competition", desc: "Online driver's ed courses compete with in-person instruction. Content must emphasize the value of behind-the-wheel training." },
     ],
@@ -1063,9 +1063,9 @@ export const industriesData: IndustryData[] = [
       { title: "Free Resource Competition", desc: "Free coding resources (freeCodeCamp, YouTube, Codecademy) compete for attention. Content must justify the paid bootcamp value proposition." },
     ],
     [
-      { title: "Program Track Pages", desc: "Dedicated pages for full-stack development, data science, UX/UI design, cybersecurity, and each program track — optimized for career-changer keywords." },
+      { title: "Program Track Pages", desc: "Dedicated pages for full-stack development, data science, UX/UI design, cybersecurity, and each program track - optimized for career-changer keywords." },
       { title: "Outcomes-Driven Content", desc: "Alumni success stories, salary reports, hiring partner lists, and employment statistics that prove ROI and build trust with prospects." },
-      { title: "Career Change Content Hub", desc: "Blog content targeting 'how to become a developer', 'career change to tech', 'is coding bootcamp worth it' — capturing top-funnel career changers." },
+      { title: "Career Change Content Hub", desc: "Blog content targeting 'how to become a developer', 'career change to tech', 'is coding bootcamp worth it' - capturing top-funnel career changers." },
       { title: "Comparison & Review SEO", desc: "Optimize for 'best coding bootcamp', '[your bootcamp] reviews', and comparison queries that prospects search during evaluation." },
     ],
     ["coding bootcamp", "learn to code", "web development course", "data science bootcamp", "software engineering program", "full stack training", "UX design bootcamp", "cybersecurity bootcamp", "coding bootcamp near me", "online coding bootcamp", "best coding bootcamp", "coding bootcamp cost", "career change to tech", "learn Python bootcamp", "JavaScript course"],
@@ -1073,7 +1073,7 @@ export const industriesData: IndustryData[] = [
     [
       { q: "How competitive is coding bootcamp SEO?", a: "Very competitive for generic terms. We focus on specialization ('data science bootcamp in [city]'), outcome keywords ('bootcamp with job guarantee'), and comparison content to win in this space." },
       { q: "What content converts bootcamp prospects?", a: "Alumni success stories, salary outcome data, day-in-the-life content, curriculum deep-dives, and honest 'is it worth it' articles. Transparency builds trust in a skeptical market." },
-      { q: "Should we target 'free coding resources' searches?", a: "Yes — strategically. Free intro courses and tutorials attract top-funnel traffic. Smart CTAs convert serious learners from free resources to paid bootcamp enrollment." },
+      { q: "Should we target 'free coding resources' searches?", a: "Yes - strategically. Free intro courses and tutorials attract top-funnel traffic. Smart CTAs convert serious learners from free resources to paid bootcamp enrollment." },
       { q: "How do we rank for 'best coding bootcamp'?", a: "Earn genuine reviews, build comparison content, create transparent outcomes reporting, and build authority through alumni success content and industry partnerships." },
       { q: "Can SEO reduce our cost per enrollment?", a: "Significantly. Organic leads from SEO cost 60-80% less than paid ads and often convert better because they've consumed your content and trust your brand." },
     ],
@@ -1089,13 +1089,13 @@ export const industriesData: IndustryData[] = [
   ...createEcommerce(),
 
   // ============================================================
-  // AUTOMOTIVE & TRANSPORTATION — DETAILED SUB-INDUSTRIES
+  // AUTOMOTIVE & TRANSPORTATION - DETAILED SUB-INDUSTRIES
   // ============================================================
   ind("automotive-seo", "Car Dealership SEO", "Car Dealerships", "SEO for Car Dealerships - Auto Dealer Digital Marketing", "Specialized SEO for new and used car dealerships. Rank for car searches, attract buyers, and sell more vehicles with automotive-focused digital marketing.", Car, "Automotive & Transportation", "Car Dealerships", "Sell more vehicles with SEO strategies that put your dealership in front of buyers searching for cars, trucks, and SUVs online.",
     [
       { title: "Massive Inventory Pages", desc: "Dealerships have hundreds of vehicle pages. Each needs unique content to avoid thin content penalties while ranking for specific make, model, and year searches." },
       { title: "Third-Party Aggregator Dominance", desc: "AutoTrader, Cars.com, CarGurus dominate search results. Dealerships must use local SEO and branded strategies to compete with these massive platforms." },
-      { title: "High-Consideration Purchase", desc: "Car buying involves weeks of research. SEO must capture buyers at every stage — from 'best SUV 2026' to 'Toyota dealer near me'." },
+      { title: "High-Consideration Purchase", desc: "Car buying involves weeks of research. SEO must capture buyers at every stage - from 'best SUV 2026' to 'Toyota dealer near me'." },
       { title: "Service Department Revenue", desc: "Service departments generate recurring revenue. SEO for 'oil change near me' and 'brake repair' captures ongoing service customers." },
     ],
     [
@@ -1118,10 +1118,10 @@ export const industriesData: IndustryData[] = [
 
   ind("auto-repair-seo", "Auto Repair SEO", "Auto Repair Shops", "SEO for Auto Repair Shops - Mechanic Marketing Services", "Specialized SEO for auto repair shops and mechanics. Rank for car repair searches, build trust with vehicle owners, and generate consistent service calls.", Car, "Automotive & Transportation", "Auto Repair Shops", "Fill your service bays with SEO strategies that capture car owners searching for oil changes, brake repair, engine diagnostics, and every auto service.",
     [
-      { title: "Emergency Repair Urgency", desc: "Many auto repair searches are urgent — 'check engine light on', 'brakes grinding', 'car won't start'. Ranking for emergency keywords captures high-converting traffic." },
+      { title: "Emergency Repair Urgency", desc: "Many auto repair searches are urgent - 'check engine light on', 'brakes grinding', 'car won't start'. Ranking for emergency keywords captures high-converting traffic." },
       { title: "Trust Deficit", desc: "Consumers distrust auto mechanics. Your SEO and content strategy must overcome this perception with transparency, reviews, and educational content." },
       { title: "Franchise & Chain Competition", desc: "Midas, Jiffy Lube, Pep Boys spend heavily on SEO. Independent shops need smarter local strategies to compete with national chains." },
-      { title: "Service Diversity", desc: "Oil changes, brakes, transmission, electrical, AC, tires — dozens of services need individual optimization to capture specific repair searches." },
+      { title: "Service Diversity", desc: "Oil changes, brakes, transmission, electrical, AC, tires - dozens of services need individual optimization to capture specific repair searches." },
     ],
     [
       { title: "Service-Specific Pages", desc: "Dedicated landing pages for oil change, brake repair, transmission service, engine diagnostics, AC repair, tire service, and every specialty you offer." },
@@ -1136,14 +1136,14 @@ export const industriesData: IndustryData[] = [
       { q: "How do I compete with Midas and Jiffy Lube?", a: "Local SEO is your advantage. Better reviews, local content, community involvement, and transparent pricing let independent shops outrank chains for local searches." },
       { q: "Should I list my prices online?", a: "Yes. Price transparency builds trust and captures comparison shoppers. We optimize pricing pages with schema markup for enhanced search visibility." },
       { q: "How important are reviews for auto repair SEO?", a: "Reviews are the #1 factor for local auto repair rankings. They also directly impact whether customers call you or your competitor. A 4.8+ star rating is the goal." },
-      { q: "What services should I create pages for?", a: "Every service you offer should have its own page — oil change, brakes, tires, transmission, AC, electrical, diagnostics. Each captures different search intent." },
+      { q: "What services should I create pages for?", a: "Every service you offer should have its own page - oil change, brakes, tires, transmission, AC, electrical, diagnostics. Each captures different search intent." },
     ],
     ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
   ),
 
   ind("car-wash-seo", "Car Wash SEO", "Car Washes", "SEO for Car Washes & Auto Detailing - Carwash Marketing", "SEO for car washes and auto detailing businesses. Rank for car wash near me, mobile detailing, ceramic coating, and paint protection searches.", Car, "Automotive & Transportation", "Car Washes & Detailing", "Drive more vehicles through your car wash with SEO strategies targeting car wash seekers, detailing enthusiasts, and ceramic coating customers.",
     [
-      { title: "Hyper-Local Search Behavior", desc: "Car wash searches are extremely local — people want the nearest option. Your SEO must dominate the immediate 5-mile radius around your location." },
+      { title: "Hyper-Local Search Behavior", desc: "Car wash searches are extremely local - people want the nearest option. Your SEO must dominate the immediate 5-mile radius around your location." },
       { title: "Low-Ticket High-Volume", desc: "Individual car washes are low-ticket. SEO strategy must focus on membership conversions and premium services like detailing and ceramic coating." },
       { title: "Weather-Dependent Demand", desc: "Car wash demand fluctuates with weather and seasons. SEO content must address seasonal peaks and maintain visibility year-round." },
       { title: "Membership Model Competition", desc: "Unlimited wash memberships require different SEO than single washes. Capturing membership comparison searches is key to recurring revenue." },
@@ -1161,7 +1161,7 @@ export const industriesData: IndustryData[] = [
       { q: "Should I focus on car wash or detailing SEO?", a: "Both, but separately. Car wash keywords drive volume while detailing keywords drive premium revenue. We optimize for both to maximize total revenue." },
       { q: "How important is Google Business Profile for car washes?", a: "It's everything. Most car wash searches show map results first. A fully optimized GBP with great photos, accurate hours, and strong reviews is your most valuable SEO asset." },
       { q: "Can SEO help sell car wash memberships?", a: "Yes. Creating comparison content, membership landing pages, and value calculators captures people searching for 'unlimited car wash plans' and converts them to recurring members." },
-      { q: "What about mobile detailing SEO?", a: "Mobile detailing has different search patterns — 'mobile detailing near me', 'detailing at my home'. We create specific strategies for mobile operators with service area targeting." },
+      { q: "What about mobile detailing SEO?", a: "Mobile detailing has different search patterns - 'mobile detailing near me', 'detailing at my home'. We create specific strategies for mobile operators with service area targeting." },
     ],
     ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
   ),
@@ -1169,15 +1169,15 @@ export const industriesData: IndustryData[] = [
   ind("motorcycle-seo", "Motorcycle Dealer SEO", "Motorcycle Dealers", "SEO for Motorcycle Dealers - Powersports Marketing Services", "SEO for motorcycle dealerships and powersports retailers. Rank for motorcycle sales, service, and parts searches to attract riders and enthusiasts.", Car, "Automotive & Transportation", "Motorcycle Dealers", "Rev up your motorcycle dealership with SEO that captures riders searching for new bikes, used motorcycles, service, and parts.",
     [
       { title: "Seasonal Riding Demand", desc: "Motorcycle interest peaks in spring and summer. SEO must build rankings before riding season to capture buyers when demand surges." },
-      { title: "Brand Loyalty", desc: "Riders are fiercely brand-loyal — Harley, Honda, Yamaha, Kawasaki. Brand-specific SEO is essential for capturing loyal riders searching for their preferred make." },
+      { title: "Brand Loyalty", desc: "Riders are fiercely brand-loyal - Harley, Honda, Yamaha, Kawasaki. Brand-specific SEO is essential for capturing loyal riders searching for their preferred make." },
       { title: "Enthusiast Community", desc: "Motorcycle buyers are passionate enthusiasts who research extensively. Content must speak their language and demonstrate genuine riding knowledge." },
       { title: "Multi-Revenue Streams", desc: "Sales, service, parts, accessories, and apparel all need SEO. Each revenue stream has different keywords and customer intent." },
     ],
     [
-      { title: "Brand & Model Pages", desc: "Optimized pages for each motorcycle brand and popular models — Harley-Davidson, Honda, Yamaha, Indian, Ducati — with detailed specs and pricing." },
+      { title: "Brand & Model Pages", desc: "Optimized pages for each motorcycle brand and popular models - Harley-Davidson, Honda, Yamaha, Indian, Ducati - with detailed specs and pricing." },
       { title: "Service & Parts SEO", desc: "Target 'motorcycle service near me', 'Harley parts', and brand-specific maintenance searches to drive service department revenue." },
       { title: "Riding Community Content", desc: "Route guides, gear reviews, riding tips, and event coverage that builds authority and attracts passionate riders to your dealership." },
-      { title: "Seasonal Campaign Planning", desc: "Content and optimization timed to riding season — pre-season buying guides, spring maintenance checklists, and new model year reveals." },
+      { title: "Seasonal Campaign Planning", desc: "Content and optimization timed to riding season - pre-season buying guides, spring maintenance checklists, and new model year reveals." },
     ],
     ["motorcycle dealer near me", "used motorcycles", "Harley dealer", "Honda motorcycle", "motorcycle parts", "ATV dealer", "motorcycle service", "sport bike for sale", "cruiser motorcycle", "motorcycle gear", "dirt bike dealer", "motorcycle trade-in", "motorcycle financing", "Indian motorcycle dealer", "Yamaha dealer"],
     [{ metric: "300%", label: "Showroom Traffic" }, { metric: "#1", label: "Brand Search Rankings" }, { metric: "55%", label: "Parts Revenue Growth" }, { metric: "4x", label: "ROI" }],
@@ -1210,7 +1210,7 @@ export const industriesData: IndustryData[] = [
   ...createOtherIndustries(),
 
   // ============================================================
-  // FINANCE & BANKING — DETAILED SUB-INDUSTRIES
+  // FINANCE & BANKING - DETAILED SUB-INDUSTRIES
   // ============================================================
   ind("mortgage-seo", "Mortgage SEO", "Mortgage Lenders", "SEO for Mortgage Lenders - Home Loan Marketing Services", "Specialized SEO for mortgage brokers and lenders. Rank for home loan, refinance, and mortgage rate searches to generate qualified borrower leads.", Landmark, "Finance & Banking", "Mortgage Lenders", "Generate more qualified borrower leads with SEO strategies that capture home buyers and refinancers searching for mortgage rates, loan programs, and lender comparisons.",
     [
@@ -1220,7 +1220,7 @@ export const industriesData: IndustryData[] = [
       { title: "Compliance Requirements", desc: "TILA, RESPA, and fair lending regulations restrict how mortgage products can be marketed online. All SEO content must maintain compliance." },
     ],
     [
-      { title: "Loan Program Pages", desc: "Dedicated pages for conventional, FHA, VA, USDA, jumbo, and specialized loan programs — each optimized for program-specific searches." },
+      { title: "Loan Program Pages", desc: "Dedicated pages for conventional, FHA, VA, USDA, jumbo, and specialized loan programs - each optimized for program-specific searches." },
       { title: "Rate & Calculator Content", desc: "Regularly updated rate pages, mortgage calculators, and affordability tools that capture rate-shopping searches and keep visitors engaged." },
       { title: "First-Time Buyer Content Hub", desc: "Comprehensive guides for first-time homebuyers covering down payments, pre-approval, closing costs, and the entire mortgage process." },
       { title: "Local Market SEO", desc: "Target 'mortgage broker in [city]', local real estate market content, and community-specific lending information." },
@@ -1240,14 +1240,14 @@ export const industriesData: IndustryData[] = [
   ind("accounting-seo", "Accounting SEO", "Accountants & CPAs", "SEO for Accountants & CPAs - Accounting Firm Marketing", "SEO for accounting firms, CPAs, and bookkeepers. Rank for tax preparation, bookkeeping, and financial services searches to grow your client base.", Landmark, "Finance & Banking", "Accountants & CPAs", "Attract more clients for your accounting firm with SEO strategies targeting tax preparation, bookkeeping, audit, and financial advisory searches.",
     [
       { title: "Extreme Tax Season Peaks", desc: "Accounting searches spike dramatically January–April. SEO must rank before tax season to capture the annual rush of taxpayer searches." },
-      { title: "Service Breadth", desc: "Tax prep, bookkeeping, payroll, audit, advisory, estate planning — each service has distinct keywords and audiences requiring separate optimization." },
+      { title: "Service Breadth", desc: "Tax prep, bookkeeping, payroll, audit, advisory, estate planning - each service has distinct keywords and audiences requiring separate optimization." },
       { title: "Trust & Credentials", desc: "Clients trust CPAs with their finances. CPA certification, years of experience, and specializations must be prominently displayed and schema-marked." },
       { title: "Business vs Individual Clients", desc: "B2B and B2C accounting require completely different keyword strategies, content, and value propositions." },
     ],
     [
       { title: "Service-Specific Pages", desc: "Dedicated pages for tax preparation, bookkeeping, payroll services, audit & assurance, business advisory, and estate/trust accounting." },
       { title: "Tax Season Content Blitz", desc: "Tax tips, deduction guides, deadline reminders, and tax law change content published before January to rank during peak season." },
-      { title: "Industry Niche Targeting", desc: "Specialize content for industries you serve — real estate accounting, medical practice bookkeeping, restaurant tax planning — to capture niche searches." },
+      { title: "Industry Niche Targeting", desc: "Specialize content for industries you serve - real estate accounting, medical practice bookkeeping, restaurant tax planning - to capture niche searches." },
       { title: "Local CPA SEO", desc: "GBP optimization, local citations, and 'CPA near me' targeting to dominate your geographic market." },
     ],
     ["accountant near me", "CPA near me", "tax preparation", "bookkeeping services", "payroll service", "business tax accountant", "tax advisor", "small business CPA", "QuickBooks bookkeeper", "tax planning", "IRS audit help", "estate tax planning", "nonprofit accountant", "forensic accounting", "CFO services"],
@@ -1265,15 +1265,15 @@ export const industriesData: IndustryData[] = [
   ind("insurance-seo", "Insurance SEO", "Insurance Agents", "SEO for Insurance Agents & Agencies - Insurance Marketing Services", "SEO for insurance agents and agencies. Rank for auto insurance, home insurance, life insurance, and Medicare searches to generate qualified policy leads.", Landmark, "Finance & Banking", "Insurance Agents", "Write more policies with SEO strategies that capture insurance shoppers comparing quotes, switching carriers, and searching for coverage options.",
     [
       { title: "Carrier & Aggregator Dominance", desc: "GEICO, Progressive, State Farm, and aggregators like Policygenius dominate insurance searches. Independent agents must focus on local and service-specific strategies." },
-      { title: "Product Complexity", desc: "Auto, home, life, health, business, Medicare — each insurance line has unique keywords, regulations, and customer intent requiring separate optimization." },
+      { title: "Product Complexity", desc: "Auto, home, life, health, business, Medicare - each insurance line has unique keywords, regulations, and customer intent requiring separate optimization." },
       { title: "Quote-Driven Intent", desc: "Insurance shoppers want quotes. SEO must capture 'cheap auto insurance' and 'home insurance quotes' while directing traffic to your quoting process." },
-      { title: "Life Event Triggers", desc: "Insurance purchases are triggered by life events — buying a home, having a baby, turning 65. Content must align with these triggers." },
+      { title: "Life Event Triggers", desc: "Insurance purchases are triggered by life events - buying a home, having a baby, turning 65. Content must align with these triggers." },
     ],
     [
-      { title: "Insurance Line Pages", desc: "Dedicated pages for auto, homeowners, life, health, business, umbrella, renters, and Medicare insurance — each with line-specific keywords and content." },
+      { title: "Insurance Line Pages", desc: "Dedicated pages for auto, homeowners, life, health, business, umbrella, renters, and Medicare insurance - each with line-specific keywords and content." },
       { title: "Local Agent Optimization", desc: "GBP optimization, local citations, and 'insurance agent near me' targeting to dominate your geographic market over national carriers." },
       { title: "Quote Funnel Content", desc: "Comparison guides, coverage explainers, and 'how much does [insurance] cost' content that drives quote requests from informed shoppers." },
-      { title: "Life Event Content", desc: "Content targeting 'insurance for new homeowners', 'life insurance after baby', 'Medicare enrollment guide' — capturing people at the moment they need coverage." },
+      { title: "Life Event Content", desc: "Content targeting 'insurance for new homeowners', 'life insurance after baby', 'Medicare enrollment guide' - capturing people at the moment they need coverage." },
     ],
     ["insurance agent near me", "auto insurance quotes", "home insurance", "life insurance", "business insurance", "Medicare plans", "health insurance broker", "renters insurance", "umbrella insurance", "commercial insurance", "workers comp insurance", "cheap car insurance", "SR-22 insurance", "flood insurance", "insurance for small business"],
     [{ metric: "350%", label: "Quote Requests" }, { metric: "#1", label: "Local Agent Rankings" }, { metric: "80%", label: "More Policies Written" }, { metric: "5x", label: "ROI" }],
@@ -1282,7 +1282,7 @@ export const industriesData: IndustryData[] = [
       { q: "Should I target all insurance lines?", a: "Focus on your most profitable lines first. If auto and home are your bread and butter, optimize those before expanding to life, business, and specialty coverage." },
       { q: "How do I get more quote requests from SEO?", a: "Create comparison content, coverage calculators, and clear quote request CTAs. 'How much does [type] insurance cost in [state]' captures high-intent shoppers." },
       { q: "Can SEO help during Medicare open enrollment?", a: "Absolutely. Medicare searches surge during enrollment periods. Pre-optimized content for Medicare Advantage, Medigap, and Part D captures seniors actively comparing plans." },
-      { q: "What's the lifetime value that justifies SEO investment?", a: "Insurance clients have high lifetime value — a home+auto bundle averages $2,000-$4,000/year for 5-10+ years. SEO that generates even a few extra policies monthly delivers massive returns." },
+      { q: "What's the lifetime value that justifies SEO investment?", a: "Insurance clients have high lifetime value - a home+auto bundle averages $2,000-$4,000/year for 5-10+ years. SEO that generates even a few extra policies monthly delivers massive returns." },
     ],
     ["local-seo", "content-strategy", "google-business-profile"], defaultLocs
   ),
@@ -1295,7 +1295,7 @@ export const industriesData: IndustryData[] = [
       { title: "Rapid Product Evolution", desc: "Fintech products evolve quickly. SEO content must keep pace with feature launches, regulatory changes, and market shifts." },
     ],
     [
-      { title: "Product & Feature Pages", desc: "Optimized pages for each product feature — payments, lending, investing, savings, crypto — with clear value propositions and compliance disclosures." },
+      { title: "Product & Feature Pages", desc: "Optimized pages for each product feature - payments, lending, investing, savings, crypto - with clear value propositions and compliance disclosures." },
       { title: "Financial Education Content", desc: "Educational content on personal finance, investing basics, budgeting tools, and financial literacy that drives massive organic traffic." },
       { title: "Comparison & Alternative SEO", desc: "Rank for '[competitor] alternatives', 'best [product type] apps', and comparison queries that capture evaluating users." },
       { title: "Technical & Security Content", desc: "Content demonstrating encryption, regulatory compliance, FDIC insurance partnerships, and security infrastructure to build trust." },
@@ -1320,7 +1320,7 @@ export const industriesData: IndustryData[] = [
       { title: "Digital Transformation", desc: "Members expect modern digital banking. SEO must showcase your digital capabilities while maintaining community brand identity." },
     ],
     [
-      { title: "Product & Rate Pages", desc: "Optimized pages for savings accounts, auto loans, mortgages, credit cards, and CDs — highlighting competitive rates with rate comparison content." },
+      { title: "Product & Rate Pages", desc: "Optimized pages for savings accounts, auto loans, mortgages, credit cards, and CDs - highlighting competitive rates with rate comparison content." },
       { title: "Community & Local SEO", desc: "GBP optimization for each branch, community involvement content, and local event sponsorship promotion." },
       { title: "Member Education Content", desc: "Financial literacy content, budgeting guides, and credit improvement resources that attract members while building community authority." },
       { title: "Membership Conversion Pages", desc: "Clear eligibility information, simple join-online processes, and compelling reasons to switch from banks to your credit union." },
@@ -1543,7 +1543,7 @@ function createTechSaas(): IndustryData[] {
       [
         { title: "Product-Led SEO", desc: `Optimize for product-related searches and create content that demonstrates your solution's value.` },
         { title: "Technical Content Marketing", desc: `Build comprehensive content hubs with guides, comparisons, and technical documentation.` },
-        { title: "Conversion Optimization", desc: `Implement SEO-driven conversion paths — from blog to signup/demo request.` },
+        { title: "Conversion Optimization", desc: `Implement SEO-driven conversion paths - from blog to signup/demo request.` },
         { title: "Competitive Positioning", desc: `Create comparison pages and alternative pages that capture competitor-aware searches.` },
       ],
       keywords, defaultCase,
@@ -1622,7 +1622,7 @@ function createEcommerce(): IndustryData[] {
       [
         { title: "Product Visibility", desc: `Thousands of products need individual optimization. Prioritizing high-value products is essential.` },
         { title: "Competitive Pricing Searches", desc: `Shoppers compare prices and products. Your content must capture comparison and review searches.` },
-        { title: "Technical Complexity", desc: `E-commerce sites have unique technical challenges — duplicate content, faceted navigation, pagination.` },
+        { title: "Technical Complexity", desc: `E-commerce sites have unique technical challenges - duplicate content, faceted navigation, pagination.` },
         { title: "Seasonal Patterns", desc: `Shopping behavior varies by season. SEO strategy must align with peak shopping periods.` },
       ],
       [
@@ -1886,12 +1886,12 @@ function createMediaEntertainment(): IndustryData[] {
       [
         { title: "Content Discovery SEO", desc: `Optimize all content for maximum search discoverability across Google, YouTube, and niche platforms.` },
         { title: "Audience Growth Strategy", desc: `Build organic audience funnels that convert searchers into subscribers and fans.` },
-        { title: "Schema & Rich Results", desc: `Implement media-specific schema for enhanced search appearances — reviews, events, episodes, videos.` },
+        { title: "Schema & Rich Results", desc: `Implement media-specific schema for enhanced search appearances - reviews, events, episodes, videos.` },
         { title: "Cross-Platform SEO", desc: `Coordinate SEO across website, YouTube, podcast directories, and social platforms for maximum reach.` },
       ],
       keywords, defaultCase,
       [
-        { q: `How can SEO help ${shortTitle.toLowerCase()} grow?`, a: `SEO drives organic discovery — people searching for content like yours. By optimizing for relevant search terms, you attract new audiences who are actively looking for entertainment in your niche.` },
+        { q: `How can SEO help ${shortTitle.toLowerCase()} grow?`, a: `SEO drives organic discovery - people searching for content like yours. By optimizing for relevant search terms, you attract new audiences who are actively looking for entertainment in your niche.` },
         { q: `Should I focus on Google or platform-specific SEO?`, a: `Both. Google drives website traffic, while platform SEO (YouTube, Spotify, Apple Podcasts) maximizes discovery within each ecosystem. A coordinated strategy works best.` },
         { q: `How do I compete with major entertainment brands?`, a: `Niche targeting. Major brands can't cover every topic deeply. By dominating specific niches and long-tail keywords, you build a loyal audience that big players miss.` },
         { q: `What schema markup helps media SEO?`, a: `VideoObject, MusicRecording, PodcastEpisode, Event, and Review schema all create rich results that dramatically improve click-through rates in search.` },
@@ -2112,7 +2112,7 @@ function createMarketingAgencies(): IndustryData[] {
   ];
   return svcs.map(([slug, title, shortTitle, metaTitle, keywords]) =>
     ind(slug, title, shortTitle, metaTitle,
-      `SEO for ${shortTitle.toLowerCase()}. Practice what you preach — grow your agency with the same SEO strategies you recommend to clients.`,
+      `SEO for ${shortTitle.toLowerCase()}. Practice what you preach - grow your agency with the same SEO strategies you recommend to clients.`,
       icon, cat, shortTitle,
       `Grow your ${shortTitle.toLowerCase()} business with SEO strategies that attract ideal clients and establish you as a marketing authority.`,
       [
@@ -2129,7 +2129,7 @@ function createMarketingAgencies(): IndustryData[] {
       ],
       keywords, defaultCase,
       [
-        { q: `Why do marketing agencies need SEO?`, a: `Your own rankings are the best proof of competence. Clients Google potential agencies — ranking #1 for your niche demonstrates the expertise you're selling.` },
+        { q: `Why do marketing agencies need SEO?`, a: `Your own rankings are the best proof of competence. Clients Google potential agencies - ranking #1 for your niche demonstrates the expertise you're selling.` },
         { q: `How should agencies position themselves for SEO?`, a: `Specialize. "Marketing agency" is too broad. "B2B SaaS marketing agency" or "healthcare digital marketing" are targetable niches with qualified traffic.` },
         { q: `What content should agencies create?`, a: `Original research, case studies with results, industry benchmark reports, and strategic frameworks that prospects reference and share.` },
         { q: `How do agencies balance client work and own SEO?`, a: `Treat your agency as your #1 client. Allocate dedicated time for content creation, link building, and technical optimization. It's the best lead generation you can do.` },
@@ -2161,7 +2161,7 @@ function createTelecom(): IndustryData[] {
         { title: "Churn Prevention", desc: `Existing customers search for alternatives. Content and SEO can help retain customers researching competitors.` },
       ],
       [
-        { title: "Comparison Content SEO", desc: `Create honest comparison content that captures shoppers evaluating providers — and positions you favorably.` },
+        { title: "Comparison Content SEO", desc: `Create honest comparison content that captures shoppers evaluating providers - and positions you favorably.` },
         { title: "Service Area Pages", desc: `Build optimized pages for each city, zip code, and neighborhood where you provide service.` },
         { title: "Plan & Pricing SEO", desc: `Optimize plan pages with clear pricing, features, and speed information that matches searcher intent.` },
         { title: "Support Content Hub", desc: `Create self-service support content that reduces costs while capturing search traffic.` },
@@ -2189,7 +2189,7 @@ function createTelecom(): IndustryData[] {
   industriesData.push(
     ind("phone-repair-seo", "Phone Repair SEO", "Phone Repair", "SEO for Phone Repair Shops - Mobile Repair Marketing", "SEO services for phone repair businesses. Rank for cracked screen repair, battery replacement, and mobile device repair searches in your area.", Smartphone, cat, "Phone Repair Shops", "Dominate local search for phone repair services. From cracked screens to water damage, we help your repair shop attract more walk-in customers.",
       [
-        { title: "Urgency-Based Searches", desc: "Phone repair searches are urgent — customers need fixes now. Your SEO must capture 'phone repair near me' instantly with top local rankings." },
+        { title: "Urgency-Based Searches", desc: "Phone repair searches are urgent - customers need fixes now. Your SEO must capture 'phone repair near me' instantly with top local rankings." },
         { title: "Brand-Specific Competition", desc: "Customers search by brand: iPhone repair, Samsung repair, Google Pixel repair. Each needs dedicated optimization." },
         { title: "Price Sensitivity", desc: "Customers compare repair costs before visiting. Transparent pricing content and competitive positioning are essential." },
         { title: "Trust & Warranty Concerns", desc: "Customers worry about repair quality and warranties. Building trust through reviews and guarantees is critical for conversion." },
@@ -2206,7 +2206,7 @@ function createTelecom(): IndustryData[] {
         { q: "How can SEO help my phone repair shop?", a: "Most phone repair customers search Google first. Ranking #1 for 'phone repair near me' and brand-specific terms drives a steady stream of walk-in customers without paid ads." },
         { q: "Should I create pages for each phone brand?", a: "Absolutely. Customers search 'iPhone repair near me' or 'Samsung screen fix'. Dedicated pages for each brand dramatically increase your chances of ranking for these specific searches." },
         { q: "How important are reviews for phone repair SEO?", a: "Critical. Reviews are the #1 factor for local repair shop rankings. We implement automated review request systems to consistently build your online reputation." },
-        { q: "How fast can I see results?", a: "Phone repair SEO is highly local, so results come faster — often within 6-8 weeks for map pack rankings. Full organic rankings typically improve within 3-4 months." },
+        { q: "How fast can I see results?", a: "Phone repair SEO is highly local, so results come faster - often within 6-8 weeks for map pack rankings. Full organic rankings typically improve within 3-4 months." },
         { q: "Do you optimize for mail-in repair searches too?", a: "Yes. We optimize for both local walk-in and mail-in repair keywords, expanding your customer base beyond your immediate area." },
       ],
       ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
@@ -2246,7 +2246,7 @@ function createTelecom(): IndustryData[] {
     ind("tablet-repair-seo", "Tablet Repair SEO", "Tablet Repair", "SEO for Tablet & iPad Repair Shops", "SEO for tablet and iPad repair businesses. Rank for iPad screen repair, tablet battery replacement, and device restoration searches.", Smartphone, cat, "Tablet & iPad Repair", "Attract more tablet repair customers with SEO strategies optimized for iPad, Samsung Galaxy Tab, and other tablet repair searches.",
       [
         { title: "Niche Market", desc: "Tablet repair is a niche within device repair. Targeted SEO helps you stand out from general phone and computer repair shops." },
-        { title: "Brand Variations", desc: "iPad, Samsung Tab, Microsoft Surface, Amazon Fire — each brand's repair terms need dedicated optimization." },
+        { title: "Brand Variations", desc: "iPad, Samsung Tab, Microsoft Surface, Amazon Fire - each brand's repair terms need dedicated optimization." },
         { title: "Parts & Pricing", desc: "Customers compare repair vs replacement costs. Content must justify repair value and provide transparent pricing." },
         { title: "Limited Awareness", desc: "Many consumers don't know tablet repair is available. Educational content expands the market." },
       ],
@@ -2281,7 +2281,7 @@ function createTelecom(): IndustryData[] {
       [
         { title: "Console-Specific Pages", desc: "Optimized pages for PS5 repair, Xbox repair, Nintendo Switch repair, and retro console restoration." },
         { title: "Issue-Specific SEO", desc: "Target 'PS5 overheating fix', 'Xbox disc drive repair', 'Switch Joy-Con drift fix' and similar problem searches." },
-        { title: "Gaming Community Content", desc: "Create content that resonates with gamers — maintenance tips, mod guides, and repair tutorials." },
+        { title: "Gaming Community Content", desc: "Create content that resonates with gamers - maintenance tips, mod guides, and repair tutorials." },
         { title: "Local + Mail-In SEO", desc: "Optimize for both local walk-in and nationwide mail-in console repair services." },
       ],
       ["PS5 repair near me", "Xbox repair", "Nintendo Switch fix", "console repair shop", "Joy-Con drift fix", "PS5 HDMI repair", "Xbox disc drive repair", "retro console repair", "gaming console fix"],
@@ -2309,7 +2309,7 @@ function createTelecom(): IndustryData[] {
       [
         { title: "Smartwatch Pages", desc: "Optimize for Apple Watch screen repair, battery replacement, and other smartwatch-specific services." },
         { title: "Luxury Watch Content", desc: "Brand pages for Rolex, Omega, Tag Heuer servicing that demonstrate certified expertise." },
-        { title: "Service-Specific SEO", desc: "Battery replacement, crystal repair, water damage, band replacement — each gets a dedicated page." },
+        { title: "Service-Specific SEO", desc: "Battery replacement, crystal repair, water damage, band replacement - each gets a dedicated page." },
         { title: "Local & Specialty SEO", desc: "Dominate local search while also targeting collectors and enthusiasts nationwide." },
       ],
       ["watch repair near me", "Apple Watch screen repair", "Rolex service", "watch battery replacement", "smartwatch repair", "luxury watch restoration", "watch crystal replacement", "watch band repair"],
@@ -2346,7 +2346,7 @@ function createTelecom(): IndustryData[] {
         { q: "How fast can appliance repair SEO work?", a: "Appliance repair is highly local and urgent. Map pack improvements often happen in 4-6 weeks. Full organic rankings improve in 3-4 months." },
         { q: "Should I create pages for every appliance brand?", a: "Yes. Brand-specific pages capture searches like 'LG washer repair near me'. These long-tail terms convert extremely well." },
         { q: "How do I compete with franchise appliance repair companies?", a: "Local SEO, better reviews, faster response times, and community content. Franchises often have generic content that can't match locally optimized pages." },
-        { q: "Is seasonal SEO important for appliance repair?", a: "Yes. We prepare content and optimize ahead of seasonal peaks — AC repair before summer, furnace repair before winter — so you rank when demand surges." },
+        { q: "Is seasonal SEO important for appliance repair?", a: "Yes. We prepare content and optimize ahead of seasonal peaks - AC repair before summer, furnace repair before winter - so you rank when demand surges." },
         { q: "Can SEO replace paid ads for appliance repair?", a: "Over time, yes. Organic leads cost 70% less than paid leads and convert better. Most successful appliance repair companies use SEO as their primary lead source." },
       ],
       ["local-seo", "google-business-profile", "on-page-seo"], defaultLocs
@@ -2386,14 +2386,14 @@ function createTelecom(): IndustryData[] {
     ind("printer-repair-seo", "Printer Repair SEO", "Printer Repair", "SEO for Printer Repair & Copier Services", "SEO for printer and copier repair businesses. Rank for printer fix, copier maintenance, and office equipment repair searches.", Printer, cat, "Printer & Copier Repair", "Get more printer repair service calls with SEO targeting home and office printer fix, copier maintenance, and managed print services.",
       [
         { title: "B2B and B2C Markets", desc: "Printer repair serves both home users and businesses. Enterprise contracts and home repairs require different SEO approaches." },
-        { title: "Brand Complexity", desc: "HP, Canon, Brother, Epson, Xerox — each brand has loyal users searching for brand-specific repair help." },
+        { title: "Brand Complexity", desc: "HP, Canon, Brother, Epson, Xerox - each brand has loyal users searching for brand-specific repair help." },
         { title: "Managed Print Services", desc: "B2B managed print services represent high-value recurring revenue. SEO for these terms is highly competitive." },
         { title: "Declining Home Printing", desc: "While home printing declines, business printing remains strong. SEO must focus on the most profitable segments." },
       ],
       [
-        { title: "Brand Repair Pages", desc: "HP printer repair, Canon fix, Brother maintenance — dedicated pages for every major brand." },
+        { title: "Brand Repair Pages", desc: "HP printer repair, Canon fix, Brother maintenance - dedicated pages for every major brand." },
         { title: "Business IT SEO", desc: "Target 'managed print services', 'office copier repair', and 'commercial printer maintenance' searches." },
-        { title: "Problem-Based Content", desc: "Optimize for 'printer not printing', 'paper jam fix', 'printer offline' — common problem searches." },
+        { title: "Problem-Based Content", desc: "Optimize for 'printer not printing', 'paper jam fix', 'printer offline' - common problem searches." },
         { title: "Local Service SEO", desc: "Map pack optimization and service area pages for local printer repair dominance." },
       ],
       ["printer repair near me", "HP printer fix", "copier repair", "printer not printing", "office printer service", "managed print services", "laser printer repair", "Canon printer fix"],
@@ -2419,7 +2419,7 @@ function createTelecom(): IndustryData[] {
         { title: "National vs Local", desc: "Data recovery serves both local walk-ins and nationwide mail-in customers. SEO must target both." },
       ],
       [
-        { title: "Service-Specific Pages", desc: "Hard drive recovery, SSD recovery, RAID recovery, flash drive rescue — each gets optimized content." },
+        { title: "Service-Specific Pages", desc: "Hard drive recovery, SSD recovery, RAID recovery, flash drive rescue - each gets optimized content." },
         { title: "Emergency SEO", desc: "Rank for 'emergency data recovery', 'urgent hard drive repair', and '24/7 data recovery' searches." },
         { title: "Trust-Building Content", desc: "Success rate statistics, clean room certification, case studies, and customer testimonials for credibility." },
         { title: "National Mail-In SEO", desc: "Optimize for nationwide searches to capture mail-in data recovery customers beyond your local market." },
@@ -2444,12 +2444,12 @@ function createTelecom(): IndustryData[] {
         { title: "Extreme Seasonality", desc: "AC repair peaks in summer, heating in winter. Year-round SEO strategy must prepare for seasonal surges months in advance." },
         { title: "Emergency Searches", desc: "HVAC failures are emergencies. 'AC not working' and 'no heat' searches spike with extreme weather. Speed to rank is critical." },
         { title: "High Competition", desc: "HVAC is one of the most competitive local SEO markets. Large companies spend heavily on both paid and organic search." },
-        { title: "Service Diversity", desc: "Installation, repair, maintenance, duct cleaning — each service line needs its own SEO strategy and content." },
+        { title: "Service Diversity", desc: "Installation, repair, maintenance, duct cleaning - each service line needs its own SEO strategy and content." },
       ],
       [
         { title: "Seasonal Content Planning", desc: "Prepare AC content before summer and heating content before winter so pages are ranking when demand surges." },
         { title: "Emergency Ranking Strategy", desc: "Optimize for 'emergency AC repair', 'no heat fix', '24/7 HVAC service' with dedicated emergency landing pages." },
-        { title: "Full Service Coverage", desc: "Installation, repair, maintenance, duct cleaning, indoor air quality — every service gets a dedicated, optimized page." },
+        { title: "Full Service Coverage", desc: "Installation, repair, maintenance, duct cleaning, indoor air quality - every service gets a dedicated, optimized page." },
         { title: "Hyper-Local Targeting", desc: "Service area pages for every city and neighborhood, targeting 'AC repair in [area]' searches." },
       ],
       ["AC repair near me", "HVAC service", "furnace repair", "air conditioning fix", "heating repair", "emergency AC service", "HVAC installation", "duct cleaning", "AC not cooling"],
@@ -2473,13 +2473,13 @@ function createTelecom(): IndustryData[] {
   industriesData.push(ind("dog-grooming-seo", "Dog Grooming SEO", "Dog Grooming", "SEO for Dog Groomers - Pet Grooming Marketing Services", "Specialized SEO for dog grooming businesses. Rank higher for grooming searches, attract pet owners, and grow your grooming salon with proven digital marketing.", Scissors, "Pet Care & Veterinary", "Dog Grooming", "Attract more pet owners with SEO built for dog grooming businesses. From breed-specific grooming to mobile grooming services, we help you rank for the searches that fill your appointment book.",
     [
       { title: "Hyper-Local Competition", desc: "Pet owners search for groomers near them. You need to dominate 'dog grooming near me' and 'pet groomer [city]' results to capture nearby customers." },
-      { title: "Breed-Specific Searches", desc: "Owners search for groomers experienced with specific breeds — poodle grooming, doodle grooming, husky deshedding. Each breed query is a ranking opportunity." },
+      { title: "Breed-Specific Searches", desc: "Owners search for groomers experienced with specific breeds - poodle grooming, doodle grooming, husky deshedding. Each breed query is a ranking opportunity." },
       { title: "Visual-Driven Decisions", desc: "Pet owners want to see before-and-after photos and a clean, trustworthy facility. Image SEO and Google Business Profile photos are essential." },
       { title: "Review Sensitivity", desc: "Pet owners treat groomers like family. A single bad review can devastate bookings. Review management and generation are critical." },
     ],
     [
       { title: "Local Grooming SEO", desc: "Dominate Google Maps and local search for grooming queries in every neighborhood you serve with optimized Google Business Profile and local citations." },
-      { title: "Breed & Service Pages", desc: "Create dedicated pages for every breed and service — puppy's first groom, senior dog grooming, deshedding, nail trimming, teeth cleaning, creative grooming." },
+      { title: "Breed & Service Pages", desc: "Create dedicated pages for every breed and service - puppy's first groom, senior dog grooming, deshedding, nail trimming, teeth cleaning, creative grooming." },
       { title: "Visual Content Strategy", desc: "Optimize before-and-after galleries, Instagram integration, and image alt text to capture image search traffic and build trust." },
       { title: "Booking Optimization", desc: "Streamline the path from search to booked appointment with click-to-call, online booking integration, and conversion-optimized landing pages." },
     ],
@@ -2499,12 +2499,12 @@ function createTelecom(): IndustryData[] {
     [
       { title: "Trust & Safety Concerns", desc: "Pet owners are leaving their family members in your care. Your website must convey safety, cleanliness, and expertise to overcome hesitation." },
       { title: "Seasonal Demand Spikes", desc: "Boarding demand surges during holidays, summer, and school breaks. SEO must be established before peak seasons to capture this traffic." },
-      { title: "Facility Differentiation", desc: "With many boarding options available, you need to clearly communicate what makes your facility special — cage-free, webcams, outdoor play areas, etc." },
+      { title: "Facility Differentiation", desc: "With many boarding options available, you need to clearly communicate what makes your facility special - cage-free, webcams, outdoor play areas, etc." },
       { title: "Multi-Service Rankings", desc: "Boarding, daycare, overnight stays, long-term boarding, and specialized care each need dedicated ranking strategies." },
     ],
     [
       { title: "Trust-Building SEO", desc: "Optimize facility tours, staff bios, safety certifications, and webcam pages to build the trust pet owners need before booking." },
-      { title: "Seasonal SEO Planning", desc: "Pre-optimize holiday boarding pages months in advance — Christmas pet boarding, summer dog daycare, Thanksgiving kennels — so you rank when demand peaks." },
+      { title: "Seasonal SEO Planning", desc: "Pre-optimize holiday boarding pages months in advance - Christmas pet boarding, summer dog daycare, Thanksgiving kennels - so you rank when demand peaks." },
       { title: "Service & Facility Pages", desc: "Dedicated pages for boarding, daycare, luxury suites, grooming add-ons, training packages, and special needs pet care." },
       { title: "Local Authority Building", desc: "Dominate local search with Google Business Profile, pet industry citations, partnerships with local vets, and community event content." },
     ],
@@ -2524,7 +2524,7 @@ function createTelecom(): IndustryData[] {
     [
       { title: "Emergency Search Intent", desc: "Emergency vet searches are high-urgency. Ranking for '24-hour vet' and 'emergency animal hospital' can be life-saving and practice-defining." },
       { title: "YMYL Content Standards", desc: "Veterinary content falls under Google's Your Money or Your Life category. Content must demonstrate expertise, authority, and trustworthiness (E-E-A-T)." },
-      { title: "Service Complexity", desc: "Vet clinics offer dozens of services — vaccinations, surgery, dental, diagnostics, exotic pets. Each needs optimized content and proper schema markup." },
+      { title: "Service Complexity", desc: "Vet clinics offer dozens of services - vaccinations, surgery, dental, diagnostics, exotic pets. Each needs optimized content and proper schema markup." },
       { title: "Multi-Species Targeting", desc: "Unlike human healthcare, vets serve dogs, cats, birds, reptiles, and exotic animals. Each species creates unique keyword opportunities." },
     ],
     [
@@ -2545,7 +2545,7 @@ function createTelecom(): IndustryData[] {
     ["local-seo", "google-business-profile", "content-strategy", "schema-markup"], defaultLocs
   ));
 
-  industriesData.push(ind("pet-store-seo", "Pet Store SEO", "Pet Stores", "SEO for Pet Stores - Pet Shop Marketing & Ecommerce SEO", "Specialized SEO for pet stores and pet supply shops. Rank higher for pet product searches, drive foot traffic and online sales with proven strategies.", Store, "Pet Care & Veterinary", "Pet Stores", "Drive more customers to your pet store — online and in-store — with SEO strategies built for pet retail. From premium pet food to specialty supplies, rank for what pet owners buy.",
+  industriesData.push(ind("pet-store-seo", "Pet Store SEO", "Pet Stores", "SEO for Pet Stores - Pet Shop Marketing & Ecommerce SEO", "Specialized SEO for pet stores and pet supply shops. Rank higher for pet product searches, drive foot traffic and online sales with proven strategies.", Store, "Pet Care & Veterinary", "Pet Stores", "Drive more customers to your pet store - online and in-store - with SEO strategies built for pet retail. From premium pet food to specialty supplies, rank for what pet owners buy.",
     [
       { title: "Ecommerce vs Local Balance", desc: "Pet stores must balance local foot traffic SEO with ecommerce product SEO. Both channels need dedicated strategies to maximize revenue." },
       { title: "Amazon & Chewy Competition", desc: "Competing with major online retailers requires niche differentiation, local advantage, and expert content that big-box stores can't match." },
@@ -2572,13 +2572,13 @@ function createTelecom(): IndustryData[] {
 
   industriesData.push(ind("pet-training-seo", "Pet Training SEO", "Pet Training", "SEO for Dog Trainers - Pet Training Marketing Services", "Specialized SEO for dog trainers and pet training businesses. Rank for obedience, behavior, and puppy training searches to grow your client base.", PawPrint, "Pet Care & Veterinary", "Pet Training", "Fill your training classes and private sessions with SEO designed for dog trainers and pet behaviorists. Rank for the training searches pet owners make every day.",
     [
-      { title: "Method Differentiation", desc: "Positive reinforcement, balanced training, clicker training — pet owners search for specific methods. Your content must clearly communicate your approach." },
-      { title: "Behavior-Specific Searches", desc: "Owners search for solutions to specific problems — leash pulling, aggression, separation anxiety. Each behavior issue is a high-intent keyword opportunity." },
+      { title: "Method Differentiation", desc: "Positive reinforcement, balanced training, clicker training - pet owners search for specific methods. Your content must clearly communicate your approach." },
+      { title: "Behavior-Specific Searches", desc: "Owners search for solutions to specific problems - leash pulling, aggression, separation anxiety. Each behavior issue is a high-intent keyword opportunity." },
       { title: "Credential Trust", desc: "Pet owners want certified, experienced trainers. Your website must prominently display certifications (CPDT-KA, IACP) and demonstrate expertise." },
-      { title: "Service Format Variety", desc: "Group classes, private sessions, board-and-train, puppy socialization, virtual training — each format needs its own optimized content." },
+      { title: "Service Format Variety", desc: "Group classes, private sessions, board-and-train, puppy socialization, virtual training - each format needs its own optimized content." },
     ],
     [
-      { title: "Behavior Problem Content", desc: "Create comprehensive guides for every common behavior issue — barking, biting, jumping, aggression, anxiety — targeting solution-seeking pet owners." },
+      { title: "Behavior Problem Content", desc: "Create comprehensive guides for every common behavior issue - barking, biting, jumping, aggression, anxiety - targeting solution-seeking pet owners." },
       { title: "Training Service Pages", desc: "Dedicated pages for puppy training, obedience classes, behavior modification, agility, therapy dog certification, and board-and-train programs." },
       { title: "Trainer Authority Building", desc: "Showcase certifications, success stories, training methodology, and before-and-after case studies to build E-E-A-T credibility." },
       { title: "Local Training SEO", desc: "Optimize for 'dog trainer near me', 'puppy classes [city]', and neighborhood-level searches with Google Business Profile and local content." },
@@ -2588,7 +2588,7 @@ function createTelecom(): IndustryData[] {
     [
       { q: "How can SEO help my dog training business?", a: "SEO puts you at the top of Google when dog owners search for training help. This drives a consistent stream of new clients seeking exactly the services you offer." },
       { q: "What keywords should dog trainers target?", a: "Target behavior-specific terms like 'dog aggression trainer,' service terms like 'puppy obedience classes,' and local terms like 'dog trainer in [city].'" },
-      { q: "Should I write about dog behavior problems?", a: "Absolutely. Comprehensive guides on barking, biting, leash reactivity, and separation anxiety attract pet owners actively seeking professional help — your ideal clients." },
+      { q: "Should I write about dog behavior problems?", a: "Absolutely. Comprehensive guides on barking, biting, leash reactivity, and separation anxiety attract pet owners actively seeking professional help - your ideal clients." },
       { q: "How important are certifications for SEO?", a: "Very important for E-E-A-T. Prominently displaying CPDT-KA, IACP, or other certifications builds trust with both Google and potential clients." },
       { q: "Can I rank for virtual dog training?", a: "Yes. Virtual and online dog training searches have grown significantly. Dedicated pages for remote training sessions can capture this growing market." },
     ],

@@ -94,10 +94,10 @@ export const ReadabilityChecker = () => {
       </div>
       <div className="space-y-3">
         <ScoreDisplay score={Math.max(0, Math.min(100, flesch))} label="Flesch Reading Ease" />
-        <StatCard label="Grade Level" value={wc > 0 ? `Grade ${Math.max(1, grade)}` : "—"} />
-        <StatCard label="Reading Level" value={wc > 0 ? level : "—"} />
-        <StatCard label="Avg Sentence Length" value={sc > 0 ? `${Math.round(wc / sc)} words` : "—"} />
-        <StatCard label="Avg Syllables/Word" value={wc > 0 ? (totalSyllables / wc).toFixed(1) : "—"} />
+        <StatCard label="Grade Level" value={wc > 0 ? `Grade ${Math.max(1, grade)}` : "-"} />
+        <StatCard label="Reading Level" value={wc > 0 ? level : "-"} />
+        <StatCard label="Avg Sentence Length" value={sc > 0 ? `${Math.round(wc / sc)} words` : "-"} />
+        <StatCard label="Avg Syllables/Word" value={wc > 0 ? (totalSyllables / wc).toFixed(1) : "-"} />
         <StatCard label="Total Words" value={wc} />
         <StatCard label="Total Sentences" value={sc} />
       </div>
@@ -198,7 +198,7 @@ export const TextCaseConverter = () => {
               <span className="text-sm font-medium">{c.name}</span>
               <CopyButton text={text ? c.fn(text) : ""} />
             </div>
-            <p className="text-sm text-muted-foreground break-all line-clamp-3">{text ? c.fn(text) : "—"}</p>
+            <p className="text-sm text-muted-foreground break-all line-clamp-3">{text ? c.fn(text) : "-"}</p>
           </div>
         ))}
       </div>

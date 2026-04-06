@@ -72,7 +72,7 @@ const Sitemap = () => {
             <span className="text-gradient">HTML Sitemap</span>
           </h1>
           <p className="text-muted-foreground text-lg">
-            Browse every page on shahababbasi.com — SEO services, PPC services, 75+ free tools, 200+ location pages, industry-specific SEO, blog articles, and downloadable resources.
+            Browse every page on shahababbasi.com - SEO services, PPC services, 75+ free tools, 200+ location pages, industry-specific SEO, blog articles, and downloadable resources.
           </p>
         </div>
 
@@ -154,7 +154,7 @@ const Sitemap = () => {
             {Object.entries(locationsByCountry).map(([country, locs]) => (
               <div key={country} className="mb-4">
                 <h3 className="text-sm font-semibold text-foreground mb-2">
-                  {country} — {locs.length} {locs.length === 1 ? "city" : "cities"}
+                  {country} - {locs.length} {locs.length === 1 ? "city" : "cities"}
                 </h3>
                 <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
                   {locs.map((loc) => (

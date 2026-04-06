@@ -29,7 +29,7 @@ export const SeoRoiCalculator = () => {
         <StatCard label="Monthly Revenue" value={`$${revenue.toLocaleString()}`} />
         <StatCard label="Monthly Profit" value={`$${profit.toLocaleString()}`} />
         <StatCard label="ROI" value={`${roi.toFixed(0)}%`} />
-        <StatCard label="Break-even" value={breakeven > 0 ? `${breakeven} months` : "—"} />
+        <StatCard label="Break-even" value={breakeven > 0 ? `${breakeven} months` : "-"} />
       </div>
     </div>
   );
@@ -135,7 +135,7 @@ export const WebsiteCostEstimator = () => {
       </div>
       <div className="glass rounded-xl p-6 text-center">
         <p className="text-sm text-muted-foreground mb-2">Estimated Cost Range</p>
-        <p className="text-3xl font-bold text-accent">${low.toLocaleString()} — ${high.toLocaleString()}</p>
+        <p className="text-3xl font-bold text-accent">${low.toLocaleString()} - ${high.toLocaleString()}</p>
         <p className="text-xs text-muted-foreground mt-2">Base: ${baseCost} ({pages} pages) + Features: ${featureCost}</p>
       </div>
     </div>

@@ -40,7 +40,7 @@ const IndustryPage = () => {
       {/* Table of Contents */}
       <IndustryTableOfContents industry={industry} />
 
-      {/* Why SEO Matters — LSI keyword rich */}
+      {/* Why SEO Matters - LSI keyword rich */}
       <section id="why-seo-matters" className="scroll-mt-20">
         <IndustryWhySeo industry={industry} />
       </section>
@@ -88,7 +88,7 @@ const IndustryPage = () => {
         <IndustryServices industry={industry} />
       </section>
 
-      {/* Rich SEO Content — anchor text variations, LSI keywords */}
+      {/* Rich SEO Content - anchor text variations, LSI keywords */}
       <section id="digital-marketing-guide" className="scroll-mt-20">
         <IndustryContent industry={industry} />
       </section>

@@ -342,7 +342,7 @@ export const BulkIndexChecker = () => {
       {paused && (
         <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
           <p className="font-medium text-yellow-600 dark:text-yellow-400">Popup blocked!</p>
-          <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle popups allow karo, phir <strong>"Continue"</strong> dabao — wahi se continue hoga ({progress}/{urlList.length}).</p>
+          <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle popups allow karo, phir <strong>"Continue"</strong> dabao - wahi se continue hoga ({progress}/{urlList.length}).</p>
         </div>
       )}
 

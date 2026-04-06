@@ -469,13 +469,13 @@ export const toolCategoryContent: Record<string, ToolCategoryContent> = {
 /** Tool-specific content overrides keyed by slug. Merges on top of category content. */
 export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> = {
   "word-counter": {
-    shortDescription: "Count words, characters, sentences, paragraphs, and estimate reading & speaking time instantly — no signup required.",
-    longDescription: "The Word Counter is a must-have tool for writers, bloggers, students, and SEO professionals. Whether you're writing a 1,500-word blog post, checking an essay's word limit, or estimating how long a speech will take, this tool gives you real-time metrics the moment you type or paste. Unlike basic counters, it also tracks paragraphs, sentences, and calculates both reading time (at 200 WPM) and speaking time (at 130 WPM) — perfect for presentation prep and podcast scripts.",
+    shortDescription: "Count words, characters, sentences, paragraphs, and estimate reading & speaking time instantly - no signup required.",
+    longDescription: "The Word Counter is a must-have tool for writers, bloggers, students, and SEO professionals. Whether you're writing a 1,500-word blog post, checking an essay's word limit, or estimating how long a speech will take, this tool gives you real-time metrics the moment you type or paste. Unlike basic counters, it also tracks paragraphs, sentences, and calculates both reading time (at 200 WPM) and speaking time (at 130 WPM) - perfect for presentation prep and podcast scripts.",
     benefits: [
-      { title: "Real-Time Counting", description: "See word, character, and sentence counts update instantly as you type — zero lag." },
+      { title: "Real-Time Counting", description: "See word, character, and sentence counts update instantly as you type - zero lag." },
       { title: "Reading & Speaking Time", description: "Estimate how long content takes to read or speak aloud for better planning." },
       { title: "Paragraph Tracking", description: "Monitor paragraph count to keep your content structure scannable." },
-      { title: "No Character Limits", description: "Paste entire articles, books, or documents — no input size restrictions." }
+      { title: "No Character Limits", description: "Paste entire articles, books, or documents - no input size restrictions." }
     ],
     useCases: [
       "Bloggers hitting target word counts (1,000–2,500 words) for SEO-optimized articles",
@@ -489,7 +489,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "For SEO blog posts, aim for 1,500–2,500 words to compete for competitive keywords",
       "Reading time under 7 minutes (≈1,400 words) gets the highest engagement on most platforms",
       "Break content into paragraphs of 2-3 sentences for better mobile readability",
-      "Use the speaking time estimate to plan webinar scripts — aim for 15-20 min segments"
+      "Use the speaking time estimate to plan webinar scripts - aim for 15-20 min segments"
     ],
     targetAudience: ["Bloggers", "Students", "Copywriters", "Speakers", "SEO Writers", "Journalists"],
     howToSteps: [
@@ -544,15 +544,15 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     useCases: [
       "SEO writers checking target keyword density before publishing",
       "Content auditors reviewing existing pages for optimization opportunities",
-      "Competitors analysis — paste rival content to find their keyword focus",
+      "Competitors analysis - paste rival content to find their keyword focus",
       "Editors ensuring editorial guidelines for keyword usage are met",
       "E-commerce teams optimizing product descriptions for search"
     ],
     proTips: [
       "Primary keyword density of 1-2% is ideal; above 3% risks over-optimization",
-      "Check density for LSI/related keywords too — not just your primary term",
+      "Check density for LSI/related keywords too - not just your primary term",
       "Run the checker on top-ranking competitor pages to benchmark density",
-      "Density alone doesn't guarantee rankings — focus on search intent and quality"
+      "Density alone doesn't guarantee rankings - focus on search intent and quality"
     ],
     targetAudience: ["SEO Writers", "Content Auditors", "E-commerce Teams", "Content Strategists"],
     howToSteps: [
@@ -565,7 +565,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "readability-checker": {
     shortDescription: "Check Flesch-Kincaid reading ease score, grade level, and sentence complexity for any text.",
-    longDescription: "The Readability Checker uses the Flesch-Kincaid formula to score your content's reading difficulty on a 0-100 scale. It also calculates grade level, average sentence length, and syllables per word. Content scoring 60-70 is ideal for general web audiences. Use it to simplify complex writing, improve user engagement, and reduce bounce rates — all factors that indirectly boost SEO rankings.",
+    longDescription: "The Readability Checker uses the Flesch-Kincaid formula to score your content's reading difficulty on a 0-100 scale. It also calculates grade level, average sentence length, and syllables per word. Content scoring 60-70 is ideal for general web audiences. Use it to simplify complex writing, improve user engagement, and reduce bounce rates - all factors that indirectly boost SEO rankings.",
     benefits: [
       { title: "Audience Matching", description: "Ensure your writing matches your target audience's reading level." },
       { title: "Lower Bounce Rates", description: "Easier-to-read content keeps visitors on page longer." },
@@ -576,8 +576,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     howToSteps: [
       "Paste your content into the text area",
       "Review the Flesch Reading Ease score (aim for 60-70 for web content)",
-      "Check grade level — most web content should target Grade 7-9",
-      "Look at average sentence length — keep under 20 words per sentence",
+      "Check grade level - most web content should target Grade 7-9",
+      "Look at average sentence length - keep under 20 words per sentence",
       "Simplify complex sections and re-check the score"
     ]
   },
@@ -601,7 +601,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "schema-generator": {
     shortDescription: "Generate valid JSON-LD structured data for LocalBusiness, Article, Product, FAQ, and more schema types.",
-    longDescription: "The Schema Markup Generator creates production-ready JSON-LD code that you can paste directly into your page's HTML. Structured data helps search engines understand your content and enables rich results like star ratings, FAQ dropdowns, recipe cards, and event listings in Google. Choose from multiple schema types, fill in the fields, and get validated markup instantly — no coding knowledge required.",
+    longDescription: "The Schema Markup Generator creates production-ready JSON-LD code that you can paste directly into your page's HTML. Structured data helps search engines understand your content and enables rich results like star ratings, FAQ dropdowns, recipe cards, and event listings in Google. Choose from multiple schema types, fill in the fields, and get validated markup instantly - no coding knowledge required.",
     benefits: [
       { title: "Rich Search Results", description: "Enable star ratings, FAQ dropdowns, prices, and more in Google SERPs." },
       { title: "No Coding Required", description: "Fill in a form and get valid JSON-LD code ready to paste." },
@@ -619,7 +619,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "robots-txt-generator": {
     shortDescription: "Build a properly formatted robots.txt file with allow/disallow rules, sitemap references, and custom user agents.",
-    longDescription: "The Robots.txt Generator helps you create the critical file that controls how search engine bots crawl your website. Misconfigured robots.txt files can accidentally block important pages from indexing or waste crawl budget on low-value URLs. This tool lets you add multiple user agents, set allow/disallow rules, and include sitemap references — all with proper formatting that follows the robots exclusion standard.",
+    longDescription: "The Robots.txt Generator helps you create the critical file that controls how search engine bots crawl your website. Misconfigured robots.txt files can accidentally block important pages from indexing or waste crawl budget on low-value URLs. This tool lets you add multiple user agents, set allow/disallow rules, and include sitemap references - all with proper formatting that follows the robots exclusion standard.",
     benefits: [
       { title: "Crawl Budget Control", description: "Direct bots to your most important pages and block low-value areas." },
       { title: "Prevent Accidental Blocking", description: "Visual interface prevents syntax errors that block indexing." },
@@ -709,7 +709,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "color-contrast-checker": {
     shortDescription: "Check foreground and background color combinations against WCAG 2.1 accessibility standards.",
-    longDescription: "The Color Contrast Checker calculates the contrast ratio between any two colors and evaluates compliance with WCAG 2.1 AA and AAA accessibility standards. Accessible design isn't optional — it's required by law in many jurisdictions and improves usability for all visitors. Poor contrast is one of the most common accessibility failures, affecting readability for the 300 million people worldwide with color vision deficiency.",
+    longDescription: "The Color Contrast Checker calculates the contrast ratio between any two colors and evaluates compliance with WCAG 2.1 AA and AAA accessibility standards. Accessible design isn't optional - it's required by law in many jurisdictions and improves usability for all visitors. Poor contrast is one of the most common accessibility failures, affecting readability for the 300 million people worldwide with color vision deficiency.",
     benefits: [
       { title: "Legal Compliance", description: "Meet ADA, EAA, and WCAG requirements for digital accessibility." },
       { title: "Better Readability", description: "High contrast improves reading speed and comprehension for everyone." },
@@ -722,12 +722,12 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Enter or pick your background color",
       "Review the contrast ratio and WCAG compliance levels",
       "Adjust colors until you achieve at least AA compliance (4.5:1)",
-      "Test with your actual font sizes — large text has relaxed requirements (3:1)"
+      "Test with your actual font sizes - large text has relaxed requirements (3:1)"
     ]
   },
   "sitemap-generator": {
     shortDescription: "Generate valid XML sitemaps with URLs, priority values, change frequency, and last modified dates.",
-    longDescription: "The XML Sitemap Generator creates properly formatted sitemaps that help search engines discover and index all your important pages. Sitemaps are especially critical for large websites, new sites without many backlinks, and sites with complex navigation. This tool lets you add multiple URLs with custom priority (0.0-1.0), change frequency (daily, weekly, monthly), and lastmod timestamps — all exported as valid XML ready for upload.",
+    longDescription: "The XML Sitemap Generator creates properly formatted sitemaps that help search engines discover and index all your important pages. Sitemaps are especially critical for large websites, new sites without many backlinks, and sites with complex navigation. This tool lets you add multiple URLs with custom priority (0.0-1.0), change frequency (daily, weekly, monthly), and lastmod timestamps - all exported as valid XML ready for upload.",
     benefits: [
       { title: "Faster Indexing", description: "Help search engines discover new and updated pages immediately." },
       { title: "Crawl Prioritization", description: "Signal which pages are most important with priority values." },
@@ -744,7 +744,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Set homepage priority to 1.0 and decrease for deeper pages (0.8, 0.6, 0.4)",
       "Use 'daily' changefreq for frequently updated content, 'monthly' for static pages",
-      "Keep sitemaps under 50,000 URLs — create sitemap index files for larger sites",
+      "Keep sitemaps under 50,000 URLs - create sitemap index files for larger sites",
       "Submit your sitemap to Google Search Console and Bing Webmaster Tools"
     ],
     targetAudience: ["Web Developers", "SEO Specialists", "E-commerce Managers", "Content Publishers", "Webmasters"],
@@ -763,7 +763,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       { title: "Correct Language Targeting", description: "Ensure French users see /fr/ pages and German users see /de/ pages." },
       { title: "Prevent Duplicate Content", description: "Tell Google that similar pages in different languages aren't duplicates." },
       { title: "Improve International UX", description: "Reduce bounce rates from users landing on wrong-language pages." },
-      { title: "Syntax Validation", description: "Generate correctly formatted tags — hreflang errors are notoriously tricky." }
+      { title: "Syntax Validation", description: "Generate correctly formatted tags - hreflang errors are notoriously tricky." }
     ],
     useCases: [
       "Global brands managing websites in 10+ languages",
@@ -774,7 +774,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Always include an x-default hreflang for users who don't match any specified locale",
-      "Hreflang must be reciprocal — page A must link to B and B must link back to A",
+      "Hreflang must be reciprocal - page A must link to B and B must link back to A",
       "Use ISO 639-1 language codes (en, de, fr) and ISO 3166-1 Alpha-2 country codes (US, GB, DE)",
       "Verify implementation with Google Search Console's International Targeting report"
     ],
@@ -789,7 +789,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "ab-test-duration-calculator": {
     shortDescription: "Calculate how long to run A/B tests based on traffic, baseline conversion rate, and minimum detectable effect.",
-    longDescription: "The A/B Test Duration Calculator tells you exactly how many days to run your experiment for statistically valid results. Stopping tests too early leads to false positives — you'll think a variant won when it actually didn't. Running too long wastes time and traffic. Enter your daily visitors, current conversion rate, and the minimum improvement you want to detect, and this tool calculates the required sample size and test duration with 95% statistical significance.",
+    longDescription: "The A/B Test Duration Calculator tells you exactly how many days to run your experiment for statistically valid results. Stopping tests too early leads to false positives - you'll think a variant won when it actually didn't. Running too long wastes time and traffic. Enter your daily visitors, current conversion rate, and the minimum improvement you want to detect, and this tool calculates the required sample size and test duration with 95% statistical significance.",
     benefits: [
       { title: "Statistical Validity", description: "Ensure your test results are real, not random noise." },
       { title: "Prevent False Positives", description: "Stop early stopping that leads to wrong decisions." },
@@ -805,15 +805,15 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Run tests for at least 2 full business cycles (typically 2 weeks) to capture variance",
-      "Smaller MDE requires more traffic — be realistic about detectable improvements",
-      "Don't peek at results and stop early — commit to the calculated duration",
+      "Smaller MDE requires more traffic - be realistic about detectable improvements",
+      "Don't peek at results and stop early - commit to the calculated duration",
       "Account for weekday vs weekend traffic patterns in your timeline"
     ],
     targetAudience: ["CRO Specialists", "Product Managers", "Growth Engineers", "Data Scientists", "Marketing Teams"],
     howToSteps: [
       "Enter your average daily unique visitors to the test page",
       "Input your current (baseline) conversion rate as a percentage",
-      "Set the minimum detectable effect — the smallest lift you care about",
+      "Set the minimum detectable effect - the smallest lift you care about",
       "Choose your statistical significance level (default 95%)",
       "Review the required sample size and estimated test duration"
     ]
@@ -851,11 +851,11 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "roas-calculator": {
     shortDescription: "Calculate Return on Ad Spend, ACoS, net profit, and break-even ROAS for your paid advertising campaigns.",
-    longDescription: "The ROAS Calculator is essential for understanding your paid advertising profitability. Enter your ad spend and revenue to instantly calculate ROAS (as a ratio and percentage), ACoS (Advertising Cost of Sale), net profit, and profit margin. It also shows you the break-even ROAS based on your profit margins — the minimum return you need to avoid losing money. Use it for Google Ads, Facebook Ads, Amazon PPC, and any paid channel.",
+    longDescription: "The ROAS Calculator is essential for understanding your paid advertising profitability. Enter your ad spend and revenue to instantly calculate ROAS (as a ratio and percentage), ACoS (Advertising Cost of Sale), net profit, and profit margin. It also shows you the break-even ROAS based on your profit margins - the minimum return you need to avoid losing money. Use it for Google Ads, Facebook Ads, Amazon PPC, and any paid channel.",
     benefits: [
       { title: "Profitability Clarity", description: "Know exactly whether your ads are making or losing money." },
       { title: "Break-Even Analysis", description: "Calculate the minimum ROAS needed to be profitable." },
-      { title: "Cross-Platform Use", description: "Works for Google, Facebook, Amazon, TikTok — any paid channel." },
+      { title: "Cross-Platform Use", description: "Works for Google, Facebook, Amazon, TikTok - any paid channel." },
       { title: "Quick Decisions", description: "Instantly evaluate campaign performance without spreadsheets." }
     ],
     useCases: [
@@ -867,7 +867,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "ROAS of 4:1 (400%) is often considered good, but break-even depends on your margins",
-      "Calculate break-even ROAS first — anything above that is pure profit",
+      "Calculate break-even ROAS first - anything above that is pure profit",
       "Track ROAS at campaign, ad group, and keyword level for granular optimization",
       "Consider customer lifetime value, not just first purchase, for accurate ROAS"
     ],
@@ -906,14 +906,14 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     howToSteps: [
       "Enter your product, service, or offer details",
       "Generate headline variations (aim for 10-15 unique options)",
-      "Check character counts — yellow/red warnings appear at limits",
+      "Check character counts - yellow/red warnings appear at limits",
       "Generate description variations (aim for 4 unique options)",
       "Copy compliant ad copy directly into Google Ads"
     ]
   },
   "quality-score-estimator": {
     shortDescription: "Estimate your Google Ads Quality Score with a 12-factor checklist covering ad relevance, CTR, and landing pages.",
-    longDescription: "The Quality Score Estimator helps you understand and improve the 1-10 score Google assigns to your keywords. Quality Score directly impacts your CPC and ad position — a score of 7+ can reduce costs by 50% compared to score of 5. This tool evaluates the three main components: expected click-through rate, ad relevance, and landing page experience, with a detailed checklist covering all the factors Google considers.",
+    longDescription: "The Quality Score Estimator helps you understand and improve the 1-10 score Google assigns to your keywords. Quality Score directly impacts your CPC and ad position - a score of 7+ can reduce costs by 50% compared to score of 5. This tool evaluates the three main components: expected click-through rate, ad relevance, and landing page experience, with a detailed checklist covering all the factors Google considers.",
     benefits: [
       { title: "Lower CPCs", description: "Higher Quality Scores reduce your cost-per-click significantly." },
       { title: "Better Ad Position", description: "Quality Score is a key factor in ad rank calculations." },
@@ -931,7 +931,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Ad relevance: Include the exact keyword in your headline and description",
       "Expected CTR: Use compelling CTAs and match search intent precisely",
       "Landing page: Ensure fast load times, mobile-friendly design, and relevant content",
-      "Focus on keywords with spend — improving high-spend, low-QS keywords has the biggest impact"
+      "Focus on keywords with spend - improving high-spend, low-QS keywords has the biggest impact"
     ],
     targetAudience: ["PPC Managers", "Account Auditors", "Landing Page Designers", "Google Ads Specialists"],
     howToSteps: [
@@ -959,7 +959,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Training junior team members on audit best practices"
     ],
     proTips: [
-      "Audit high-spend campaigns first — that's where improvements have the biggest impact",
+      "Audit high-spend campaigns first - that's where improvements have the biggest impact",
       "Check conversion tracking setup before analyzing performance data",
       "Review search terms report monthly to find negative keyword opportunities",
       "Benchmark metrics against industry averages for realistic expectations"
@@ -975,11 +975,11 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "google-business-profile-audit": {
     shortDescription: "Interactive 30+ point checklist to optimize your Google Business Profile for local search rankings.",
-    longDescription: "The Google Business Profile Audit Checklist covers every optimization opportunity for your GBP listing. From basic NAP consistency to advanced features like products, services, and Q&A, this 30+ point audit ensures you're not leaving local visibility on the table. A fully optimized GBP can appear in the local 3-pack, Google Maps, and knowledge panels — driving foot traffic and calls from nearby customers actively searching for your services.",
+    longDescription: "The Google Business Profile Audit Checklist covers every optimization opportunity for your GBP listing. From basic NAP consistency to advanced features like products, services, and Q&A, this 30+ point audit ensures you're not leaving local visibility on the table. A fully optimized GBP can appear in the local 3-pack, Google Maps, and knowledge panels - driving foot traffic and calls from nearby customers actively searching for your services.",
     benefits: [
       { title: "Local 3-Pack Visibility", description: "Optimize for the coveted map pack in local search results." },
       { title: "Complete Profile", description: "Fill every field Google uses to rank and display your business." },
-      { title: "Competitive Edge", description: "Most businesses only complete 50% of their GBP — stand out by completing 100%." },
+      { title: "Competitive Edge", description: "Most businesses only complete 50% of their GBP - stand out by completing 100%." },
       { title: "Review Optimization", description: "Learn to generate and respond to reviews strategically." }
     ],
     useCases: [
@@ -990,9 +990,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Reputation managers optimizing review response strategy"
     ],
     proTips: [
-      "Add photos weekly — active profiles rank higher in local results",
+      "Add photos weekly - active profiles rank higher in local results",
       "Use all 750 characters in your business description with local keywords",
-      "Respond to every review within 24 hours — positive and negative",
+      "Respond to every review within 24 hours - positive and negative",
       "Add products and services with detailed descriptions and pricing"
     ],
     targetAudience: ["Local Business Owners", "Local SEO Agencies", "Multi-Location Brands", "Franchise Managers"],
@@ -1037,7 +1037,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "disavow-file-generator": {
     shortDescription: "Generate properly formatted disavow.txt files for Google Search Console to remove toxic backlinks.",
-    longDescription: "The Disavow File Generator creates the exact .txt format Google requires for disavowing harmful backlinks. When your site has toxic, spammy, or paid links pointing to it, Google may penalize your rankings. The disavow tool tells Google to ignore those links. But the file format is strict — one wrong character and the upload fails. This tool ensures correct syntax for both individual URLs and domain-wide disavows, with comments to document your reasons.",
+    longDescription: "The Disavow File Generator creates the exact .txt format Google requires for disavowing harmful backlinks. When your site has toxic, spammy, or paid links pointing to it, Google may penalize your rankings. The disavow tool tells Google to ignore those links. But the file format is strict - one wrong character and the upload fails. This tool ensures correct syntax for both individual URLs and domain-wide disavows, with comments to document your reasons.",
     benefits: [
       { title: "Correct Formatting", description: "Generate files that pass Google Search Console validation." },
       { title: "Penalty Recovery", description: "Essential for recovering from manual actions and algorithmic penalties." },
@@ -1083,7 +1083,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Agencies delivering product description optimization services"
     ],
     proTips: [
-      "Lead with the main benefit, not features — what problem does this product solve?",
+      "Lead with the main benefit, not features - what problem does this product solve?",
       "Include the product name and key modifiers naturally within the first sentence",
       "Use bullet points for scannable feature lists below the main description",
       "Add related keywords and synonyms to capture long-tail search variations"
@@ -1115,7 +1115,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Self-referencing canonicals (pointing to the current URL) are best practice for all pages",
-      "Canonicals are hints, not directives — Google may ignore them if the pages are too different",
+      "Canonicals are hints, not directives - Google may ignore them if the pages are too different",
       "Use 301 redirects for true duplicates; canonicals for near-duplicates with valid reasons to exist",
       "Check canonicals with browser dev tools or GSC URL Inspection tool"
     ],
@@ -1130,7 +1130,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "slug-generator": {
     shortDescription: "Convert any text to clean, SEO-friendly URL slugs with proper formatting and special character handling.",
-    longDescription: "The URL Slug Generator transforms titles, headlines, and any text into clean URL slugs optimized for both search engines and users. It handles special characters, accents, spaces, and punctuation — converting them to URL-safe equivalents. Good slugs are short, descriptive, keyword-rich, and easy to read. This tool follows best practices: lowercase letters, hyphens between words, no stop words, and no trailing hyphens.",
+    longDescription: "The URL Slug Generator transforms titles, headlines, and any text into clean URL slugs optimized for both search engines and users. It handles special characters, accents, spaces, and punctuation - converting them to URL-safe equivalents. Good slugs are short, descriptive, keyword-rich, and easy to read. This tool follows best practices: lowercase letters, hyphens between words, no stop words, and no trailing hyphens.",
     benefits: [
       { title: "SEO-Friendly URLs", description: "Clean slugs with keywords rank better and get more clicks." },
       { title: "User-Friendly", description: "Readable URLs that users understand and trust before clicking." },
@@ -1147,7 +1147,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Keep slugs under 60 characters for optimal display in SERPs",
       "Include your primary keyword in the slug, but don't keyword-stuff",
-      "Avoid changing slugs after publishing — set up 301 redirects if you must",
+      "Avoid changing slugs after publishing - set up 301 redirects if you must",
       "Remove stop words (a, an, the, of, to) to keep slugs concise"
     ],
     targetAudience: ["Content Teams", "Web Developers", "SEO Specialists", "E-commerce Managers"],
@@ -1176,7 +1176,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Content teams planning city-specific landing pages"
     ],
     proTips: [
-      "Include neighborhood names, not just cities — 'dentist in SoHo' vs 'dentist in Manhattan'",
+      "Include neighborhood names, not just cities - 'dentist in SoHo' vs 'dentist in Manhattan'",
       "Add modifiers like 'near me', 'best', '24 hour', 'emergency', 'affordable'",
       "Create dedicated landing pages for your top 10-20 local keyword clusters",
       "Use in Google Business Profile descriptions and service area settings"
@@ -1192,7 +1192,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "character-counter": {
     shortDescription: "Count characters with and without spaces, track platform-specific limits, and monitor text length in real time.",
-    longDescription: "The Character Counter gives you precise character counts for any text — with spaces, without spaces, and against platform-specific limits. Whether you're writing Twitter/X posts (280 chars), Instagram bios (150 chars), LinkedIn headlines (220 chars), or SMS messages (160 chars), this tool ensures you never exceed limits. It updates in real time as you type, so you can edit on the fly without constantly checking.",
+    longDescription: "The Character Counter gives you precise character counts for any text - with spaces, without spaces, and against platform-specific limits. Whether you're writing Twitter/X posts (280 chars), Instagram bios (150 chars), LinkedIn headlines (220 chars), or SMS messages (160 chars), this tool ensures you never exceed limits. It updates in real time as you type, so you can edit on the fly without constantly checking.",
     benefits: [
       { title: "Platform Compliance", description: "Stay within character limits for every social platform and ad format." },
       { title: "With/Without Spaces", description: "Toggle between character counts with and without spaces." },
@@ -1207,10 +1207,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "App developers writing UI copy for fixed-width fields"
     ],
     proTips: [
-      "Twitter/X allows 280 characters — but tweets under 100 chars get 17% more engagement",
-      "Instagram bios allow 150 characters — front-load your value proposition",
-      "LinkedIn headlines allow 220 characters — use all of them for keyword-rich branding",
-      "Google Ads headlines are 30 chars, descriptions 90 chars — every character matters"
+      "Twitter/X allows 280 characters - but tweets under 100 chars get 17% more engagement",
+      "Instagram bios allow 150 characters - front-load your value proposition",
+      "LinkedIn headlines allow 220 characters - use all of them for keyword-rich branding",
+      "Google Ads headlines are 30 chars, descriptions 90 chars - every character matters"
     ],
     targetAudience: ["Social Media Managers", "PPC Specialists", "SEO Professionals", "Copywriters", "App Developers"],
     howToSteps: [
@@ -1238,10 +1238,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Editors doing final quality assurance on long-form guides"
     ],
     proTips: [
-      "Run this tool after merging content from multiple sources — duplicates are common",
+      "Run this tool after merging content from multiple sources - duplicates are common",
       "Check product descriptions across similar products for accidental copy-paste",
       "Use alongside a readability checker for comprehensive content QA",
-      "Repeated headings and CTAs are fine — focus on body text duplicates"
+      "Repeated headings and CTAs are fine - focus on body text duplicates"
     ],
     targetAudience: ["Content Managers", "Academic Writers", "Editors", "E-commerce Teams", "Agency Writers"],
     howToSteps: [
@@ -1269,10 +1269,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Theme developers showing text in demo templates"
     ],
     proTips: [
-      "Use realistic paragraph counts — most blog posts have 15-25 paragraphs",
+      "Use realistic paragraph counts - most blog posts have 15-25 paragraphs",
       "For landing pages, generate 3-5 short paragraphs per section",
       "Combine with your real headings to create more realistic mockups",
-      "Remember to replace all lorem ipsum before going live — Google may flag it"
+      "Remember to replace all lorem ipsum before going live - Google may flag it"
     ],
     targetAudience: ["UI/UX Designers", "Web Developers", "Graphic Designers", "Theme Developers"],
     howToSteps: [
@@ -1316,11 +1316,11 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "article-rewriter-helper": {
     shortDescription: "Highlight overused words, show word frequency analysis, and get suggestions to improve content variety.",
-    longDescription: "The Article Rewriting Helper analyzes your content for overused words, repetitive phrases, and vocabulary diversity. It highlights frequently repeated words, shows a frequency table, and suggests where to add variety. Unlike AI rewriters, this tool keeps you in control — it flags problems and lets you make the creative decisions. Use it to improve readability, reduce redundancy, and create more engaging content that holds reader attention.",
+    longDescription: "The Article Rewriting Helper analyzes your content for overused words, repetitive phrases, and vocabulary diversity. It highlights frequently repeated words, shows a frequency table, and suggests where to add variety. Unlike AI rewriters, this tool keeps you in control - it flags problems and lets you make the creative decisions. Use it to improve readability, reduce redundancy, and create more engaging content that holds reader attention.",
     benefits: [
       { title: "Spot Repetition", description: "Instantly see which words you're overusing in your content." },
       { title: "Vocabulary Diversity", description: "Improve content quality with varied word choices." },
-      { title: "Writer Control", description: "You decide what to change — no AI rewrites that lose your voice." },
+      { title: "Writer Control", description: "You decide what to change - no AI rewrites that lose your voice." },
       { title: "Frequency Analysis", description: "Visual word frequency breakdown for data-driven editing." }
     ],
     useCases: [
@@ -1333,7 +1333,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Words appearing 5+ times in a 1,000-word article may be overused",
       "Use a thesaurus for common overused words like 'important', 'great', 'very'",
-      "Focus on reducing adverb overuse — it tightens your writing significantly",
+      "Focus on reducing adverb overuse - it tightens your writing significantly",
       "Read overused word context to decide if repetition is intentional emphasis"
     ],
     targetAudience: ["Blog Writers", "Content Editors", "SEO Writers", "Academic Writers", "Marketing Teams"],
@@ -1363,8 +1363,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Aim for less than 10% passive voice for engaging web content",
-      "Replace 'in order to' with 'to' — it's always shorter and clearer",
-      "Read flagged sentences aloud — your ear catches awkwardness your eyes miss",
+      "Replace 'in order to' with 'to' - it's always shorter and clearer",
+      "Read flagged sentences aloud - your ear catches awkwardness your eyes miss",
       "Focus on the highest-impact fixes first: clarity over perfection"
     ],
     targetAudience: ["Bloggers", "Non-Native Writers", "Email Marketers", "Students", "Social Media Managers"],
@@ -1378,7 +1378,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "bulk-title-checker": {
     shortDescription: "Check multiple title tags at once for character count, pixel width, and SEO best practices.",
-    longDescription: "The Bulk Title Tag Checker lets you paste multiple title tags and instantly analyze each one for character count, estimated pixel width, keyword presence, and SEO compliance. Google truncates titles at approximately 580 pixels on desktop, not at a fixed character count — so pixel width matters more than you think. This tool flags titles that are too long, too short, missing keywords, or poorly formatted, making it essential for large-scale SEO audits.",
+    longDescription: "The Bulk Title Tag Checker lets you paste multiple title tags and instantly analyze each one for character count, estimated pixel width, keyword presence, and SEO compliance. Google truncates titles at approximately 580 pixels on desktop, not at a fixed character count - so pixel width matters more than you think. This tool flags titles that are too long, too short, missing keywords, or poorly formatted, making it essential for large-scale SEO audits.",
     benefits: [
       { title: "Batch Analysis", description: "Check 50+ title tags in one pass instead of one at a time." },
       { title: "Pixel Width Tracking", description: "See estimated pixel width, not just character count." },
@@ -1393,7 +1393,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Developers validating dynamically generated title tags"
     ],
     proTips: [
-      "Pixel width matters more than character count — W and M are wider than i and l",
+      "Pixel width matters more than character count - W and M are wider than i and l",
       "Front-load the primary keyword in titles for better rankings",
       "Include your brand name at the end with a pipe separator: 'Title | Brand'",
       "Aim for 50-60 characters as a general rule, but check pixel width for precision"
@@ -1424,10 +1424,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Marketing teams A/B testing description variations"
     ],
     proTips: [
-      "Include your primary keyword — Google bolds it when it matches the search query",
+      "Include your primary keyword - Google bolds it when it matches the search query",
       "Add a CTA like 'Learn more', 'Get started', or 'Shop now' at the end",
       "Keep descriptions between 140-155 characters for optimal display",
-      "Unique descriptions for every page — never duplicate across your site"
+      "Unique descriptions for every page - never duplicate across your site"
     ],
     targetAudience: ["SEO Specialists", "Content Managers", "E-commerce Teams", "Agency SEOs"],
     howToSteps: [
@@ -1455,7 +1455,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Content editors reviewing article structure before publishing"
     ],
     proTips: [
-      "Every page should have exactly one H1 — it's your main topic signal",
+      "Every page should have exactly one H1 - it's your main topic signal",
       "Never skip heading levels: H2 → H3 → H4, not H2 → H4",
       "Use H2s for main sections and H3s for subsections within each H2",
       "Heading tags should describe content, not be used for styling"
@@ -1488,7 +1488,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Describe what's IN the image, not what you want it to rank for",
       "Keep alt text under 125 characters for screen reader compatibility",
-      "Don't start with 'Image of' or 'Picture of' — screen readers already announce it's an image",
+      "Don't start with 'Image of' or 'Picture of' - screen readers already announce it's an image",
       "Decorative images should have empty alt text (alt=''), not no alt attribute"
     ],
     targetAudience: ["SEO Teams", "E-commerce Managers", "Content Creators", "Accessibility Specialists"],
@@ -1502,7 +1502,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "open-graph-preview": {
     shortDescription: "Preview how your link appears when shared on Facebook, LinkedIn, and Twitter with Open Graph tag simulation.",
-    longDescription: "The Open Graph Preview simulates how your URL will look when shared on Facebook, LinkedIn, and Twitter/X. See the image, title, description, and domain display for each platform before sharing. Poor social previews mean fewer clicks when your content is shared — this tool ensures every share looks professional and compelling. Check image dimensions, title truncation, and description formatting across all platforms in one view.",
+    longDescription: "The Open Graph Preview simulates how your URL will look when shared on Facebook, LinkedIn, and Twitter/X. See the image, title, description, and domain display for each platform before sharing. Poor social previews mean fewer clicks when your content is shared - this tool ensures every share looks professional and compelling. Check image dimensions, title truncation, and description formatting across all platforms in one view.",
     benefits: [
       { title: "Multi-Platform Preview", description: "See Facebook, LinkedIn, and Twitter previews simultaneously." },
       { title: "Click-Worthy Shares", description: "Ensure shared links look professional and compelling." },
@@ -1518,9 +1518,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Facebook OG images should be 1200×630 pixels for optimal display",
-      "LinkedIn uses the same OG tags as Facebook — optimize once for both",
+      "LinkedIn uses the same OG tags as Facebook - optimize once for both",
       "Twitter uses its own twitter:card tags but falls back to OG tags",
-      "Clear platform caches after updating OG tags — changes aren't instant"
+      "Clear platform caches after updating OG tags - changes aren't instant"
     ],
     targetAudience: ["Marketing Teams", "Content Creators", "Social Media Managers", "PR Teams"],
     howToSteps: [
@@ -1533,11 +1533,11 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "google-index-checker": {
     shortDescription: "Learn how to check if your pages are indexed by Google using the site: search operator.",
-    longDescription: "The Google Index Status Info tool teaches you how to verify whether specific pages are indexed by Google using the site: operator. Simply enter your URL, and the tool generates the exact Google search query you need. It also explains common reasons pages aren't indexed and how to fix them. Index coverage is the foundation of SEO — if Google hasn't indexed your page, it can't rank for anything.",
+    longDescription: "The Google Index Status Info tool teaches you how to verify whether specific pages are indexed by Google using the site: operator. Simply enter your URL, and the tool generates the exact Google search query you need. It also explains common reasons pages aren't indexed and how to fix them. Index coverage is the foundation of SEO - if Google hasn't indexed your page, it can't rank for anything.",
     benefits: [
       { title: "Instant Verification", description: "Check indexation status for any URL in seconds." },
       { title: "Troubleshooting Guide", description: "Learn common reasons pages aren't indexed." },
-      { title: "No Tools Required", description: "Uses Google's own search operators — no third-party tools needed." },
+      { title: "No Tools Required", description: "Uses Google's own search operators - no third-party tools needed." },
       { title: "Actionable Fixes", description: "Get specific recommendations to fix indexing issues." }
     ],
     useCases: [
@@ -1564,12 +1564,12 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "bulk-index-checker": {
     shortDescription: "Check if multiple URLs are indexed by Google in bulk using the site: operator with staggered tab opening.",
-    longDescription: "The Bulk Index Checker lets you verify indexation status for dozens or hundreds of URLs simultaneously. Paste your URL list, and the tool opens site: operator searches in staggered tabs — with configurable delays to avoid being blocked by Google. It includes smart popup detection that pauses execution if your browser blocks the tabs, with a resume button to continue from exactly where you left off.",
+    longDescription: "The Bulk Index Checker lets you verify indexation status for dozens or hundreds of URLs simultaneously. Paste your URL list, and the tool opens site: operator searches in staggered tabs - with configurable delays to avoid being blocked by Google. It includes smart popup detection that pauses execution if your browser blocks the tabs, with a resume button to continue from exactly where you left off.",
     benefits: [
       { title: "Bulk Processing", description: "Check hundreds of URLs in one session instead of one at a time." },
       { title: "Smart Tab Management", description: "Staggered opening with configurable delays prevents Google blocking." },
       { title: "Resume Capability", description: "Pause and resume from the exact URL if popups are blocked." },
-      { title: "No API Needed", description: "Uses Google's own search — no API keys or paid tools required." }
+      { title: "No API Needed", description: "Uses Google's own search - no API keys or paid tools required." }
     ],
     useCases: [
       "SEO agencies auditing index coverage across client sites",
@@ -1581,7 +1581,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Set 2-3 second delays between tab openings to avoid Google CAPTCHAs",
       "Allow popups in your browser settings before starting for smooth operation",
-      "Focus on checking important pages first — homepage, category pages, top products",
+      "Focus on checking important pages first - homepage, category pages, top products",
       "Combine with Google Search Console's Index Coverage report for complete data"
     ],
     targetAudience: ["SEO Agencies", "E-commerce Teams", "Technical SEOs", "Webmasters"],
@@ -1613,7 +1613,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Use incognito/private mode for less personalized search results",
       "Check rankings from different locations using Google's location parameter",
       "Track rankings over time by checking weekly and logging positions",
-      "Don't obsess over single keyword rankings — focus on traffic trends"
+      "Don't obsess over single keyword rankings - focus on traffic trends"
     ],
     targetAudience: ["SEO Managers", "Consultants", "Content Creators", "Business Owners", "Agency Teams"],
     howToSteps: [
@@ -1641,9 +1641,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Agencies managing client site migrations"
     ],
     proTips: [
-      "Always use 301 redirects for permanent URL changes — 302s don't pass full SEO value",
+      "Always use 301 redirects for permanent URL changes - 302s don't pass full SEO value",
       "Test redirects in a staging environment before deploying to production",
-      "Avoid redirect chains — redirect directly to the final destination URL",
+      "Avoid redirect chains - redirect directly to the final destination URL",
       "Keep a log of all redirects for future reference and troubleshooting"
     ],
     targetAudience: ["Web Developers", "SEO Teams", "Webmasters", "E-commerce Managers"],
@@ -1657,7 +1657,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "json-ld-validator": {
     shortDescription: "Validate JSON-LD structured data syntax, check for errors, and preview parsed schema output.",
-    longDescription: "The JSON-LD Validator checks your structured data markup for syntax errors, missing required properties, and formatting issues. Paste your JSON-LD code to get instant validation with clear error messages pointing to the exact issue. Valid structured data is essential for earning rich results in Google — star ratings, FAQ dropdowns, recipe cards, and more. Catch and fix errors before deploying to prevent failed rich result eligibility.",
+    longDescription: "The JSON-LD Validator checks your structured data markup for syntax errors, missing required properties, and formatting issues. Paste your JSON-LD code to get instant validation with clear error messages pointing to the exact issue. Valid structured data is essential for earning rich results in Google - star ratings, FAQ dropdowns, recipe cards, and more. Catch and fix errors before deploying to prevent failed rich result eligibility.",
     benefits: [
       { title: "Syntax Validation", description: "Catch JSON formatting errors before deploying to production." },
       { title: "Property Checking", description: "Verify required and recommended properties are present." },
@@ -1672,7 +1672,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "E-commerce teams validating product schema for rich results"
     ],
     proTips: [
-      "Always validate after editing JSON-LD — a missing comma breaks everything",
+      "Always validate after editing JSON-LD - a missing comma breaks everything",
       "Use Google's Rich Results Test after validation for eligibility checking",
       "Check both required and recommended properties for maximum rich result coverage",
       "Validate schema from your live pages by pasting the rendered JSON-LD"
@@ -1688,7 +1688,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "url-encoder-decoder": {
     shortDescription: "Encode or decode URLs for proper formatting, safe transmission, and debugging URL parameter issues.",
-    longDescription: "The URL Encoder/Decoder converts text to and from URL-safe format (percent-encoding). URLs can only contain certain ASCII characters — spaces, special characters, and non-ASCII characters must be encoded. This tool handles encoding for query parameters, decoding tracking URLs, and debugging URL formatting issues. Essential for developers working with APIs, marketers managing tracking parameters, and SEO professionals analyzing crawl logs.",
+    longDescription: "The URL Encoder/Decoder converts text to and from URL-safe format (percent-encoding). URLs can only contain certain ASCII characters - spaces, special characters, and non-ASCII characters must be encoded. This tool handles encoding for query parameters, decoding tracking URLs, and debugging URL formatting issues. Essential for developers working with APIs, marketers managing tracking parameters, and SEO professionals analyzing crawl logs.",
     benefits: [
       { title: "Safe URL Formatting", description: "Ensure special characters don't break your URLs." },
       { title: "Debug Tracking URLs", description: "Decode complex UTM and tracking parameter strings." },
@@ -1703,7 +1703,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Data analysts decoding URLs in analytics exports"
     ],
     proTips: [
-      "Spaces become %20 in URLs — but + is also valid in query strings",
+      "Spaces become %20 in URLs - but + is also valid in query strings",
       "Double-encoding (encoding already encoded text) causes broken URLs",
       "Decode tracking URLs to understand which parameters are being passed",
       "Use encoding for any non-ASCII characters in URLs (accents, CJK characters)"
@@ -1734,10 +1734,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Technical SEOs auditing redirect implementations"
     ],
     proTips: [
-      "A 200 status doesn't mean the page is correct — soft 404s return 200 for error pages",
-      "301 redirects pass SEO value; 302s may not — use 301 for permanent URL changes",
-      "503 tells Google to come back later — use during planned maintenance",
-      "410 is stronger than 404 — use it to tell Google a page is permanently gone"
+      "A 200 status doesn't mean the page is correct - soft 404s return 200 for error pages",
+      "301 redirects pass SEO value; 302s may not - use 301 for permanent URL changes",
+      "503 tells Google to come back later - use during planned maintenance",
+      "410 is stronger than 404 - use it to tell Google a page is permanently gone"
     ],
     targetAudience: ["Web Developers", "SEO Specialists", "Webmasters", "QA Engineers"],
     howToSteps: [
@@ -1750,7 +1750,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "page-size-checker": {
     shortDescription: "Estimate page size from HTML, CSS, and JavaScript inputs for performance optimization planning.",
-    longDescription: "The Page Size Calculator estimates the total transfer size of a web page based on your HTML, CSS, JavaScript, and image inputs. Page size directly impacts load speed — every 100KB increase adds measurable latency on mobile networks. This tool helps you budget page weight during development, identify heavy components, and plan optimization targets. Aim for under 1MB total transfer size for optimal Core Web Vitals.",
+    longDescription: "The Page Size Calculator estimates the total transfer size of a web page based on your HTML, CSS, JavaScript, and image inputs. Page size directly impacts load speed - every 100KB increase adds measurable latency on mobile networks. This tool helps you budget page weight during development, identify heavy components, and plan optimization targets. Aim for under 1MB total transfer size for optimal Core Web Vitals.",
     benefits: [
       { title: "Performance Budgeting", description: "Set and track page weight budgets during development." },
       { title: "Component Analysis", description: "See which resources contribute most to page size." },
@@ -1766,7 +1766,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Aim for under 1MB total transfer size for most pages",
-      "Images are usually 60-80% of page weight — optimize them first",
+      "Images are usually 60-80% of page weight - optimize them first",
       "Lazy-load below-the-fold images to reduce initial page size",
       "Minify and compress HTML, CSS, and JavaScript for production"
     ],
@@ -1796,9 +1796,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Stakeholders learning about technical SEO requirements"
     ],
     proTips: [
-      "LCP should be under 2.5 seconds — optimize your hero image and above-the-fold content",
-      "CLS should be under 0.1 — always set width/height on images and embeds",
-      "INP replaced FID in March 2024 — focus on JavaScript responsiveness",
+      "LCP should be under 2.5 seconds - optimize your hero image and above-the-fold content",
+      "CLS should be under 0.1 - always set width/height on images and embeds",
+      "INP replaced FID in March 2024 - focus on JavaScript responsiveness",
       "Use Chrome DevTools Performance panel to diagnose specific CWV issues"
     ],
     targetAudience: ["Web Developers", "SEO Teams", "Performance Engineers", "Marketing Teams"],
@@ -1812,7 +1812,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "page-speed-analyzer": {
     shortDescription: "Analyze page load speed factors and get prioritized recommendations for performance improvement.",
-    longDescription: "The Page Speed Checker helps you evaluate and improve your website's loading performance. Enter key metrics or check off performance factors to get a comprehensive analysis with prioritized recommendations. Slow pages hurt both user experience and SEO rankings — Google has confirmed page speed is a ranking factor, and 53% of mobile users abandon sites that take over 3 seconds to load.",
+    longDescription: "The Page Speed Checker helps you evaluate and improve your website's loading performance. Enter key metrics or check off performance factors to get a comprehensive analysis with prioritized recommendations. Slow pages hurt both user experience and SEO rankings - Google has confirmed page speed is a ranking factor, and 53% of mobile users abandon sites that take over 3 seconds to load.",
     benefits: [
       { title: "Prioritized Fixes", description: "Know which optimizations will have the biggest impact." },
       { title: "SEO Impact", description: "Understand how speed issues affect your search rankings." },
@@ -1858,7 +1858,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Agencies preparing content audits for new client onboarding"
     ],
     proTips: [
-      "Check for sitemap index files first — they link to multiple sub-sitemaps",
+      "Check for sitemap index files first - they link to multiple sub-sitemaps",
       "Compare sitemap URLs against crawled URLs to find orphan pages",
       "Use lastmod dates to identify recently updated content",
       "Export to CSV for sorting and filtering in spreadsheets"
@@ -1892,7 +1892,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Start broad ('digital marketing') and drill into niches ('digital marketing for dentists')",
       "Question-based keywords are perfect for FAQ sections and featured snippets",
       "Combine with search volume data from Google Keyword Planner for prioritization",
-      "'vs' and 'alternative' keywords have high commercial intent — great for comparison pages"
+      "'vs' and 'alternative' keywords have high commercial intent - great for comparison pages"
     ],
     targetAudience: ["Content Strategists", "SEO Specialists", "PPC Managers", "Freelance Writers"],
     howToSteps: [
@@ -1905,7 +1905,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "lsi-keyword-generator": {
     shortDescription: "Generate semantically related keywords and phrases to improve content topical relevance and depth.",
-    longDescription: "The LSI Keyword Generator produces related terms and semantic phrases that help search engines understand your content's topic more deeply. Latent Semantic Indexing (LSI) keywords are conceptually related terms — for 'coffee', LSI keywords would include 'espresso', 'brewing', 'caffeine', 'roast'. Using these in your content signals comprehensive topical coverage to Google, improving rankings for your primary keyword and related searches.",
+    longDescription: "The LSI Keyword Generator produces related terms and semantic phrases that help search engines understand your content's topic more deeply. Latent Semantic Indexing (LSI) keywords are conceptually related terms - for 'coffee', LSI keywords would include 'espresso', 'brewing', 'caffeine', 'roast'. Using these in your content signals comprehensive topical coverage to Google, improving rankings for your primary keyword and related searches.",
     benefits: [
       { title: "Topical Authority", description: "Signal deep expertise by covering related concepts." },
       { title: "Natural Language", description: "LSI keywords make content sound natural, not keyword-stuffed." },
@@ -1920,7 +1920,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Agency teams building content briefs for writers"
     ],
     proTips: [
-      "Don't force LSI keywords — weave them naturally into your content",
+      "Don't force LSI keywords - weave them naturally into your content",
       "Use 5-10 related terms per 1,000 words for good topical coverage",
       "Check competitor content for LSI keywords they're using that you're not",
       "LSI keywords in headings signal topic relevance especially strongly"
@@ -1936,12 +1936,12 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "question-generator": {
     shortDescription: "Generate question-based keywords using who, what, when, where, why, and how patterns for your topic.",
-    longDescription: "The People Also Ask Generator creates question-based keyword variations that mirror the 'People Also Ask' boxes in Google search results. Enter your topic and get dozens of questions using every question modifier: how, what, why, when, where, who, can, does, is, and more. Question keywords are goldmines for featured snippets, FAQ schema, and content that directly answers user queries — the core of modern SEO.",
+    longDescription: "The People Also Ask Generator creates question-based keyword variations that mirror the 'People Also Ask' boxes in Google search results. Enter your topic and get dozens of questions using every question modifier: how, what, why, when, where, who, can, does, is, and more. Question keywords are goldmines for featured snippets, FAQ schema, and content that directly answers user queries - the core of modern SEO.",
     benefits: [
       { title: "Featured Snippet Targets", description: "Question keywords are the primary source of featured snippets." },
       { title: "FAQ Content", description: "Generate FAQ sections with questions people actually search for." },
       { title: "Content Planning", description: "Each question is a potential blog post or content section." },
-      { title: "Voice Search Ready", description: "Most voice searches are questions — optimize for this growing channel." }
+      { title: "Voice Search Ready", description: "Most voice searches are questions - optimize for this growing channel." }
     ],
     useCases: [
       "Content teams building FAQ sections for key pages",
@@ -1967,7 +1967,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "competitor-keyword-gap-planner": {
     shortDescription: "Plan keyword targeting strategy by identifying content gaps and opportunities vs competitors.",
-    longDescription: "The Keyword Gap Planner helps you identify keyword opportunities by systematically comparing your content coverage against competitors. Input your current keywords and competitor keywords to find gaps — terms they rank for that you don't, shared terms where you rank lower, and unique terms only you target. This strategic planning tool turns competitive analysis into actionable content priorities.",
+    longDescription: "The Keyword Gap Planner helps you identify keyword opportunities by systematically comparing your content coverage against competitors. Input your current keywords and competitor keywords to find gaps - terms they rank for that you don't, shared terms where you rank lower, and unique terms only you target. This strategic planning tool turns competitive analysis into actionable content priorities.",
     benefits: [
       { title: "Competitive Intelligence", description: "See exactly where competitors outperform you." },
       { title: "Content Priorities", description: "Focus content creation on high-impact gap areas." },
@@ -1983,8 +1983,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Focus on high-volume keywords where competitors rank but you don't have content",
-      "Look for keywords where you rank on page 2 — these are quick win optimization opportunities",
-      "Don't try to fill every gap — prioritize by search volume and business relevance",
+      "Look for keywords where you rank on page 2 - these are quick win optimization opportunities",
+      "Don't try to fill every gap - prioritize by search volume and business relevance",
       "Update this analysis quarterly as competitive landscapes shift"
     ],
     targetAudience: ["SEO Managers", "Agency Teams", "Content Strategists", "Marketing Directors"],
@@ -1997,8 +1997,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ]
   },
   "search-intent-classifier": {
-    shortDescription: "Classify keywords by search intent — Informational, Navigational, Commercial, or Transactional.",
-    longDescription: "The Search Intent Classifier categorizes your keywords by the user's underlying purpose: Informational (learning), Navigational (finding a site), Commercial (comparing options), or Transactional (ready to buy). Matching content type to search intent is one of the most important SEO factors — Google ranks pages that satisfy user intent, regardless of keyword optimization. This tool helps you create the right content format for each keyword.",
+    shortDescription: "Classify keywords by search intent - Informational, Navigational, Commercial, or Transactional.",
+    longDescription: "The Search Intent Classifier categorizes your keywords by the user's underlying purpose: Informational (learning), Navigational (finding a site), Commercial (comparing options), or Transactional (ready to buy). Matching content type to search intent is one of the most important SEO factors - Google ranks pages that satisfy user intent, regardless of keyword optimization. This tool helps you create the right content format for each keyword.",
     benefits: [
       { title: "Content-Intent Match", description: "Create the right content type for each keyword's intent." },
       { title: "Higher Rankings", description: "Google prioritizes pages that match search intent." },
@@ -2029,7 +2029,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "keyword-grouper": {
     shortDescription: "Group keywords by common themes, words, and topics for organized content planning and ad groups.",
-    longDescription: "The Keyword Grouper clusters your keyword list by shared words and themes, creating organized groups ready for content planning or PPC ad groups. Instead of a flat list of 500 keywords, you get structured clusters like 'how to [topic]', '[topic] for beginners', 'best [topic]', etc. Each cluster can become a blog post, landing page, or ad group — turning keyword research into an actionable content plan.",
+    longDescription: "The Keyword Grouper clusters your keyword list by shared words and themes, creating organized groups ready for content planning or PPC ad groups. Instead of a flat list of 500 keywords, you get structured clusters like 'how to [topic]', '[topic] for beginners', 'best [topic]', etc. Each cluster can become a blog post, landing page, or ad group - turning keyword research into an actionable content plan.",
     benefits: [
       { title: "Content Clusters", description: "Turn flat keyword lists into topic clusters for content planning." },
       { title: "PPC Ad Groups", description: "Create tightly themed ad groups for better Quality Scores." },
@@ -2091,7 +2091,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "linkedin-headline-generator": {
     shortDescription: "Generate compelling LinkedIn headline options optimized for profile visibility and search discovery.",
-    longDescription: "The LinkedIn Headline Generator creates professional, keyword-rich headlines that help you stand out in LinkedIn search results. Your headline is the most visible text after your name — it appears in search, connection requests, comments, and group posts. This tool generates multiple variations using proven formulas: role + value proposition, results-driven, and expertise-based formats that attract profile views and connection requests.",
+    longDescription: "The LinkedIn Headline Generator creates professional, keyword-rich headlines that help you stand out in LinkedIn search results. Your headline is the most visible text after your name - it appears in search, connection requests, comments, and group posts. This tool generates multiple variations using proven formulas: role + value proposition, results-driven, and expertise-based formats that attract profile views and connection requests.",
     benefits: [
       { title: "Search Visibility", description: "Keywords in your headline help you appear in LinkedIn searches." },
       { title: "Professional Branding", description: "Stand out from generic job title headlines." },
@@ -2106,10 +2106,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Career changers highlighting transferable skills"
     ],
     proTips: [
-      "Use all 220 characters — more keywords mean more search visibility",
+      "Use all 220 characters - more keywords mean more search visibility",
       "Include your target job title even if it's aspirational",
       "Add a value proposition: 'Helping [who] achieve [what]'",
-      "Avoid buzzwords like 'guru', 'ninja', 'rockstar' — they hurt credibility"
+      "Avoid buzzwords like 'guru', 'ninja', 'rockstar' - they hurt credibility"
     ],
     targetAudience: ["Job Seekers", "Personal Brand Builders", "Consultants", "Sales Professionals"],
     howToSteps: [
@@ -2122,12 +2122,12 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "linkedin-summary-generator": {
     shortDescription: "Generate a professional LinkedIn About section from your career details, skills, and achievements.",
-    longDescription: "The LinkedIn Summary Generator creates compelling 'About' sections that tell your professional story effectively. Your LinkedIn summary is prime real estate — it's one of the first things recruiters and potential clients read. This tool structures your experience, skills, and achievements into a narrative format that's scannable, keyword-rich, and ends with a clear call-to-action. Stand out from the 70% of LinkedIn users who leave their summary blank.",
+    longDescription: "The LinkedIn Summary Generator creates compelling 'About' sections that tell your professional story effectively. Your LinkedIn summary is prime real estate - it's one of the first things recruiters and potential clients read. This tool structures your experience, skills, and achievements into a narrative format that's scannable, keyword-rich, and ends with a clear call-to-action. Stand out from the 70% of LinkedIn users who leave their summary blank.",
     benefits: [
       { title: "Professional Narrative", description: "Transform bullet points into a compelling career story." },
       { title: "SEO-Optimized", description: "Include keywords that recruiters and clients search for." },
       { title: "Structured Format", description: "Scannable layout with clear sections and calls-to-action." },
-      { title: "Overcome Writer's Block", description: "Stop staring at a blank page — get a professional draft instantly." }
+      { title: "Overcome Writer's Block", description: "Stop staring at a blank page - get a professional draft instantly." }
     ],
     useCases: [
       "Job seekers creating compelling LinkedIn profiles",
@@ -2137,10 +2137,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Recent graduates crafting their first professional summary"
     ],
     proTips: [
-      "Start with a hook — your first 3 lines show before 'See more'",
+      "Start with a hook - your first 3 lines show before 'See more'",
       "Include measurable achievements: 'Increased revenue by 40%' beats 'helped grow revenue'",
       "End with a CTA: what should someone do after reading your profile?",
-      "Use line breaks and short paragraphs — walls of text get skipped"
+      "Use line breaks and short paragraphs - walls of text get skipped"
     ],
     targetAudience: ["Job Seekers", "Career Changers", "Consultants", "Sales Professionals", "Graduates"],
     howToSteps: [
@@ -2170,7 +2170,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Start threads with a hook that makes people want to read more",
       "End with a CTA: 'Follow me for more' or 'Retweet if you found this useful'",
-      "Threads with 5-10 tweets get the best engagement — too long and people drop off",
+      "Threads with 5-10 tweets get the best engagement - too long and people drop off",
       "Add the thread hook in your bio during the day you post for maximum discovery"
     ],
     targetAudience: ["Content Creators", "Thought Leaders", "Marketers", "Authors", "Journalists"],
@@ -2201,8 +2201,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Design at 2x resolution for retina/high-DPI displays",
       "Use PNG for logos and graphics, JPEG for photos, and WebP for web use",
-      "Test images on both mobile and desktop — platforms display differently",
-      "Keep text within the 'safe zone' — platforms may crop edges"
+      "Test images on both mobile and desktop - platforms display differently",
+      "Keep text within the 'safe zone' - platforms may crop edges"
     ],
     targetAudience: ["Social Media Managers", "Graphic Designers", "Marketing Teams", "Content Creators"],
     howToSteps: [
@@ -2215,7 +2215,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "hashtag-generator": {
     shortDescription: "Generate relevant hashtags for your social media posts across all platforms instantly.",
-    longDescription: "The Hashtag Generator creates relevant, trending, and niche hashtag suggestions for your social media posts. Enter your topic and get hashtags organized by popularity and specificity — from broad hashtags (#marketing) to niche-specific ones (#b2bcontentmarketing). Using the right mix of popular and niche hashtags maximizes your post's reach across Instagram, LinkedIn, Twitter/X, and TikTok.",
+    longDescription: "The Hashtag Generator creates relevant, trending, and niche hashtag suggestions for your social media posts. Enter your topic and get hashtags organized by popularity and specificity - from broad hashtags (#marketing) to niche-specific ones (#b2bcontentmarketing). Using the right mix of popular and niche hashtags maximizes your post's reach across Instagram, LinkedIn, Twitter/X, and TikTok.",
     benefits: [
       { title: "Increased Reach", description: "The right hashtags expose your content to larger audiences." },
       { title: "Mix Strategy", description: "Blend popular, niche, and branded hashtags for optimal reach." },
@@ -2231,7 +2231,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Instagram: use 20-30 hashtags, mixing sizes (popular, medium, niche)",
-      "LinkedIn: use 3-5 highly relevant hashtags — more is spammy",
+      "LinkedIn: use 3-5 highly relevant hashtags - more is spammy",
       "Twitter/X: 1-2 hashtags per tweet performs best",
       "Create a branded hashtag and use it consistently across all posts"
     ],
@@ -2261,8 +2261,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Personal brand builders establishing their identity"
     ],
     proTips: [
-      "Front-load your value proposition — it shows in search previews",
-      "Use line breaks for scannability — each line is a separate point",
+      "Front-load your value proposition - it shows in search previews",
+      "Use line breaks for scannability - each line is a separate point",
       "Include one keyword for Instagram search discovery",
       "Update your CTA seasonally to keep the profile fresh"
     ],
@@ -2294,7 +2294,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Batch content creation: plan one week at a time for efficiency",
       "Follow the 80/20 rule: 80% value, 20% promotion",
-      "Repurpose content across platforms — a blog post becomes 5-10 social posts",
+      "Repurpose content across platforms - a blog post becomes 5-10 social posts",
       "Leave gaps for trending topics and real-time engagement"
     ],
     targetAudience: ["Social Media Managers", "Marketing Teams", "Agencies", "Solopreneurs"],
@@ -2308,7 +2308,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "local-citation-finder": {
     shortDescription: "Find top business directory and citation sources by country, city, and industry for local SEO.",
-    longDescription: "The Citation Source Finder helps you discover the most important business directories for listing your business. Citations (mentions of your business name, address, and phone on external websites) are a key local ranking factor. This tool provides curated directory lists organized by country, city, and industry — from major platforms like Yelp and YellowPages to niche directories specific to your business type.",
+    longDescription: "The Citation Source Finder helps you discover the most important business directories for listing your business. Citations (mentions of your business name, address, and phone on external websites) are a key local ranking factor. This tool provides curated directory lists organized by country, city, and industry - from major platforms like Yelp and YellowPages to niche directories specific to your business type.",
     benefits: [
       { title: "Country-Specific", description: "Find directories relevant to your country and city." },
       { title: "Industry Targeted", description: "Discover niche directories for your specific business type." },
@@ -2326,7 +2326,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Start with the big 4: Google, Bing, Yelp, and Apple Maps",
       "Ensure NAP (Name, Address, Phone) is EXACTLY consistent across all listings",
       "Add photos and descriptions to directory listings for richer profiles",
-      "Remove duplicate listings — they confuse search engines and customers"
+      "Remove duplicate listings - they confuse search engines and customers"
     ],
     targetAudience: ["Local Business Owners", "Local SEO Agencies", "Multi-Location Brands", "Franchise Managers"],
     howToSteps: [
@@ -2339,7 +2339,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "nap-consistency-checker": {
     shortDescription: "Check business name, address, and phone number variations for consistency across directory listings.",
-    longDescription: "The NAP Consistency Checker compares different versions of your business name, address, and phone number to identify inconsistencies. Even small variations — 'St' vs 'Street', '(555) 123-4567' vs '555-123-4567' — can confuse search engines and reduce local ranking power. Paste your business information from multiple sources, and this tool highlights differences that need to be standardized for maximum local SEO benefit.",
+    longDescription: "The NAP Consistency Checker compares different versions of your business name, address, and phone number to identify inconsistencies. Even small variations - 'St' vs 'Street', '(555) 123-4567' vs '555-123-4567' - can confuse search engines and reduce local ranking power. Paste your business information from multiple sources, and this tool highlights differences that need to be standardized for maximum local SEO benefit.",
     benefits: [
       { title: "Catch Inconsistencies", description: "Find subtle differences between directory listings." },
       { title: "Local Rankings", description: "Consistent NAP is a confirmed local search ranking factor." },
@@ -2354,10 +2354,10 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Businesses that rebranded and need to update all listings"
     ],
     proTips: [
-      "Standardize your business name — don't use 'LLC' in some listings and not others",
+      "Standardize your business name - don't use 'LLC' in some listings and not others",
       "Use the exact same phone number format across all directories",
       "Match your address to what Google Maps shows for your business",
-      "Check quarterly — directories can auto-modify your information"
+      "Check quarterly - directories can auto-modify your information"
     ],
     targetAudience: ["Local SEO Agencies", "Local Businesses", "Multi-Location Brands", "Franchise Systems"],
     howToSteps: [
@@ -2370,7 +2370,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "review-response-generator": {
     shortDescription: "Generate professional, brand-appropriate responses to positive and negative customer reviews.",
-    longDescription: "The Review Response Generator creates thoughtful, professional responses to customer reviews on Google, Yelp, TripAdvisor, and other platforms. Responding to reviews is critical for reputation management and local SEO — Google has confirmed that review responses influence local rankings. This tool generates personalized responses that acknowledge the customer, address their feedback, and reinforce your brand's commitment to service.",
+    longDescription: "The Review Response Generator creates thoughtful, professional responses to customer reviews on Google, Yelp, TripAdvisor, and other platforms. Responding to reviews is critical for reputation management and local SEO - Google has confirmed that review responses influence local rankings. This tool generates personalized responses that acknowledge the customer, address their feedback, and reinforce your brand's commitment to service.",
     benefits: [
       { title: "Reputation Management", description: "Professional responses show you value customer feedback." },
       { title: "Local SEO Boost", description: "Google rewards businesses that actively respond to reviews." },
@@ -2385,8 +2385,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Healthcare providers responding to patient feedback"
     ],
     proTips: [
-      "Respond to ALL reviews — positive and negative — within 24-48 hours",
-      "Never argue or get defensive with negative reviews — empathize and offer solutions",
+      "Respond to ALL reviews - positive and negative - within 24-48 hours",
+      "Never argue or get defensive with negative reviews - empathize and offer solutions",
       "Thank positive reviewers by name and mention something specific from their review",
       "Include a soft CTA in positive responses: 'We'd love to see you again!'"
     ],
@@ -2432,7 +2432,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "ai-search-prompt-tester": {
     shortDescription: "Generate prompts to test your brand visibility in AI search engines like ChatGPT, Perplexity, and Gemini.",
-    longDescription: "The AI Search Prompt Generator creates strategic prompts you can use to test whether AI search engines mention your brand. As AI-powered search (ChatGPT, Perplexity, Google AI Overviews) grows, brand visibility in AI responses becomes critical. This tool generates prompts across different angles — direct brand queries, category searches, comparison prompts, and recommendation requests — to comprehensively test your AI search presence.",
+    longDescription: "The AI Search Prompt Generator creates strategic prompts you can use to test whether AI search engines mention your brand. As AI-powered search (ChatGPT, Perplexity, Google AI Overviews) grows, brand visibility in AI responses becomes critical. This tool generates prompts across different angles - direct brand queries, category searches, comparison prompts, and recommendation requests - to comprehensively test your AI search presence.",
     benefits: [
       { title: "AI Visibility Audit", description: "Systematically check if AI search engines know about your brand." },
       { title: "Multi-Platform Testing", description: "Prompts work for ChatGPT, Perplexity, Gemini, and Copilot." },
@@ -2449,8 +2449,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Test the same prompts across ChatGPT, Perplexity, and Google AI Overviews for comparison",
       "Check both brand-specific and category-generic prompts",
-      "AI search engines pull from authoritative content — focus on EEAT signals",
-      "Update and retest monthly — AI search results change rapidly"
+      "AI search engines pull from authoritative content - focus on EEAT signals",
+      "Update and retest monthly - AI search results change rapidly"
     ],
     targetAudience: ["Brand Managers", "SEO Teams", "Marketing Directors", "GEO Specialists"],
     howToSteps: [
@@ -2478,7 +2478,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Brand managers ensuring key content is AI-friendly"
     ],
     proTips: [
-      "Lead with a concise, direct answer in the first paragraph — AI models love this",
+      "Lead with a concise, direct answer in the first paragraph - AI models love this",
       "Use clear H2/H3 headings that match common question patterns",
       "Include lists, tables, and structured data for easy AI parsing",
       "Add author credentials and citations for EEAT signals"
@@ -2512,7 +2512,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Test at least 10 relevant prompts per brand per platform monthly",
       "Log results in a spreadsheet with date, platform, prompt, and mention status",
       "Track competitor mentions to benchmark your relative visibility",
-      "AI results change frequently — monthly tracking captures meaningful trends"
+      "AI results change frequently - monthly tracking captures meaningful trends"
     ],
     targetAudience: ["SEO Teams", "Brand Managers", "Agency Teams", "Marketing Analysts"],
     howToSteps: [
@@ -2525,7 +2525,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "guest-post-pitch-generator": {
     shortDescription: "Generate customized guest post outreach email templates for link building campaigns.",
-    longDescription: "The Guest Post Pitch Generator creates professional outreach emails for securing guest posting opportunities. Enter the target website, your proposed topic, and your credentials to get personalized email templates that get responses. Guest posting remains one of the most effective white-hat link building strategies — but success depends on crafting pitches that stand out from the hundreds of generic requests editors receive daily.",
+    longDescription: "The Guest Post Pitch Generator creates professional outreach emails for securing guest posting opportunities. Enter the target website, your proposed topic, and your credentials to get personalized email templates that get responses. Guest posting remains one of the most effective white-hat link building strategies - but success depends on crafting pitches that stand out from the hundreds of generic requests editors receive daily.",
     benefits: [
       { title: "Higher Response Rates", description: "Personalized templates outperform generic outreach by 3-5x." },
       { title: "Time Savings", description: "Generate multiple pitch variations in seconds." },
@@ -2541,8 +2541,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Reference a specific recent article on the target site to show you've done research",
-      "Propose 2-3 topic ideas, not just one — give editors options",
-      "Keep pitches under 150 words — editors don't read long emails",
+      "Propose 2-3 topic ideas, not just one - give editors options",
+      "Keep pitches under 150 words - editors don't read long emails",
       "Follow up once after 5-7 days if you don't get a response"
     ],
     targetAudience: ["Link Builders", "Content Marketers", "SEO Agencies", "Freelance Writers", "PR Teams"],
@@ -2573,8 +2573,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       "Always create your replacement content BEFORE reaching out",
       "Include the exact broken URL and where it appears on their page",
-      "Be genuinely helpful — broken link building works because it solves a problem",
-      "Follow up once after 7-10 days — many responses come from follow-ups"
+      "Be genuinely helpful - broken link building works because it solves a problem",
+      "Follow up once after 7-10 days - many responses come from follow-ups"
     ],
     targetAudience: ["SEO Specialists", "Link Builders", "Content Marketers", "Agency Teams"],
     howToSteps: [
@@ -2587,7 +2587,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "backlink-quality-checklist": {
     shortDescription: "Interactive 15-point checklist to evaluate backlink quality, relevance, and potential risk.",
-    longDescription: "The Backlink Quality Checklist provides a systematic 15-point evaluation framework for assessing individual backlinks. Not all links are equal — a single high-quality link from a relevant, authoritative site is worth more than 100 low-quality links. This checklist evaluates relevance, authority, link type (dofollow/nofollow), anchor text, placement, and risk factors to help you decide which links are helping and which might be hurting your rankings.",
+    longDescription: "The Backlink Quality Checklist provides a systematic 15-point evaluation framework for assessing individual backlinks. Not all links are equal - a single high-quality link from a relevant, authoritative site is worth more than 100 low-quality links. This checklist evaluates relevance, authority, link type (dofollow/nofollow), anchor text, placement, and risk factors to help you decide which links are helping and which might be hurting your rankings.",
     benefits: [
       { title: "Quality Assessment", description: "Systematically evaluate any backlink on 15 quality factors." },
       { title: "Risk Detection", description: "Identify potentially harmful links before they trigger penalties." },
@@ -2602,9 +2602,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "In-house teams setting link building quality standards"
     ],
     proTips: [
-      "Relevance is the #1 quality factor — a link from a related site beats a high-DA unrelated one",
+      "Relevance is the #1 quality factor - a link from a related site beats a high-DA unrelated one",
       "Editorial links within content are more valuable than sidebar or footer links",
-      "Check if the linking page itself has backlinks — orphan pages pass less value",
+      "Check if the linking page itself has backlinks - orphan pages pass less value",
       "Nofollow links still have value for traffic, brand visibility, and natural link profiles"
     ],
     targetAudience: ["SEO Managers", "Link Builders", "Agency Teams", "Penalty Recovery Specialists"],
@@ -2618,7 +2618,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "ecommerce-schema-generator": {
     shortDescription: "Generate Product, Offer, Review, and AggregateRating schema for e-commerce product pages.",
-    longDescription: "The Ecommerce Schema Generator creates structured data markup specifically for product pages. Generate Product schema with offers (price, availability, currency), AggregateRating (stars, review count), and Review schema that enables rich results in Google — star ratings, prices, and availability badges in search results. These rich results dramatically increase click-through rates for product searches.",
+    longDescription: "The Ecommerce Schema Generator creates structured data markup specifically for product pages. Generate Product schema with offers (price, availability, currency), AggregateRating (stars, review count), and Review schema that enables rich results in Google - star ratings, prices, and availability badges in search results. These rich results dramatically increase click-through rates for product searches.",
     benefits: [
       { title: "Rich Product Results", description: "Display star ratings, prices, and availability in Google search." },
       { title: "Higher CTR", description: "Product rich results get 30-40% more clicks than plain results." },
@@ -2634,7 +2634,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Include AggregateRating with at least 5 reviews for star displays in SERPs",
-      "Keep prices up to date — outdated prices can trigger manual actions",
+      "Keep prices up to date - outdated prices can trigger manual actions",
       "Use the correct availability values: InStock, OutOfStock, PreOrder",
       "Test with Google's Rich Results Test before deploying to production"
     ],
@@ -2664,7 +2664,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Content teams writing unique category descriptions"
     ],
     proTips: [
-      "Write unique descriptions of 100-200 words for every category — avoid thin content",
+      "Write unique descriptions of 100-200 words for every category - avoid thin content",
       "Add internal links from category descriptions to related categories and guides",
       "Use canonical tags on filtered/sorted category URL variations",
       "Include FAQ sections on category pages for additional keyword targeting"
@@ -2680,7 +2680,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "cpc-savings-calculator": {
     shortDescription: "Calculate how much you save with organic SEO traffic compared to paying for Google Ads clicks.",
-    longDescription: "The CPC Savings Calculator shows the financial value of organic search traffic by calculating how much you'd pay for the same clicks through Google Ads. Enter your organic traffic volume and average CPC in your industry to see monthly and annual savings. This tool is invaluable for justifying SEO investments — when stakeholders see that organic traffic would cost $50,000/month in ads, the ROI of SEO becomes crystal clear.",
+    longDescription: "The CPC Savings Calculator shows the financial value of organic search traffic by calculating how much you'd pay for the same clicks through Google Ads. Enter your organic traffic volume and average CPC in your industry to see monthly and annual savings. This tool is invaluable for justifying SEO investments - when stakeholders see that organic traffic would cost $50,000/month in ads, the ROI of SEO becomes crystal clear.",
     benefits: [
       { title: "Budget Justification", description: "Show the dollar value of organic traffic in terms executives understand." },
       { title: "ROI Clarity", description: "Compare SEO investment against equivalent ad spend." },
@@ -2711,7 +2711,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "domain-age-checker": {
     shortDescription: "Check domain registration date and estimated age for SEO competitive analysis.",
-    longDescription: "The Domain Age Lookup provides estimated registration information for any domain. Domain age is a minor ranking factor — older domains tend to have more trust and authority. This tool helps you assess competitor domains, evaluate domains for purchase, and understand the competitive landscape. While domain age alone doesn't determine rankings, it provides context about a site's history and established authority.",
+    longDescription: "The Domain Age Lookup provides estimated registration information for any domain. Domain age is a minor ranking factor - older domains tend to have more trust and authority. This tool helps you assess competitor domains, evaluate domains for purchase, and understand the competitive landscape. While domain age alone doesn't determine rankings, it provides context about a site's history and established authority.",
     benefits: [
       { title: "Competitive Intel", description: "See how long competitor domains have been registered." },
       { title: "Domain Evaluation", description: "Assess age when purchasing expired or existing domains." },
@@ -2726,8 +2726,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Agency teams including domain age in competitive analysis reports"
     ],
     proTips: [
-      "Domain age matters less than content quality and backlinks — don't overweight it",
-      "An expired domain's age may not transfer its authority — check backlinks too",
+      "Domain age matters less than content quality and backlinks - don't overweight it",
+      "An expired domain's age may not transfer its authority - check backlinks too",
       "New domains can outrank old ones with better content and links",
       "Domain age is most useful for competitive context, not as a strategy driver"
     ],
@@ -2758,8 +2758,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     ],
     proTips: [
       "Budget 15-20% extra for unexpected requirements and scope changes",
-      "Ongoing costs (hosting, maintenance, updates) are often forgotten — factor them in",
-      "Custom design costs 2-3x more than template-based — choose based on brand needs",
+      "Ongoing costs (hosting, maintenance, updates) are often forgotten - factor them in",
+      "Custom design costs 2-3x more than template-based - choose based on brand needs",
       "Start with MVP features and add more in phase 2 to manage budget"
     ],
     targetAudience: ["Business Owners", "Marketing Managers", "Project Managers", "Freelancers", "Agency Teams"],
@@ -2773,7 +2773,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "cta-generator": {
     shortDescription: "Generate compelling call-to-action button text and copy for any page, goal, or conversion type.",
-    longDescription: "The CTA Button Text Generator creates high-converting call-to-action text for buttons, banners, and landing pages. Enter your product, goal, and target audience to get dozens of CTA variations — from urgency-driven ('Get Started Now') to value-focused ('See My Results') to benefit-led ('Unlock Premium Features'). Strong CTAs are the difference between a visitor and a customer, making this tool essential for conversion optimization.",
+    longDescription: "The CTA Button Text Generator creates high-converting call-to-action text for buttons, banners, and landing pages. Enter your product, goal, and target audience to get dozens of CTA variations - from urgency-driven ('Get Started Now') to value-focused ('See My Results') to benefit-led ('Unlock Premium Features'). Strong CTAs are the difference between a visitor and a customer, making this tool essential for conversion optimization.",
     benefits: [
       { title: "Higher Conversions", description: "Better CTAs can increase conversion rates by 20-30%." },
       { title: "Multiple Variations", description: "Generate 10+ options to A/B test for best performance." },
@@ -2788,9 +2788,9 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Ad managers writing compelling ad CTAs"
     ],
     proTips: [
-      "Use first-person CTAs ('Start My Free Trial') — they convert 25% better than third-person",
+      "Use first-person CTAs ('Start My Free Trial') - they convert 25% better than third-person",
       "Add urgency without being sleazy: 'Limited spots' beats 'BUY NOW!!!'",
-      "Match CTA text to the page's promise — don't use 'Buy Now' on an informational page",
+      "Match CTA text to the page's promise - don't use 'Buy Now' on an informational page",
       "Test one CTA variable at a time for clear A/B test results"
     ],
     targetAudience: ["Landing Page Designers", "E-commerce Teams", "SaaS Marketers", "Email Marketers"],
@@ -2819,8 +2819,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "DevOps engineers optimizing server and CDN configurations"
     ],
     proTips: [
-      "Start with image optimization — it usually gives the biggest single improvement",
-      "Enable compression (GZIP/Brotli) before anything else — it's quick and high-impact",
+      "Start with image optimization - it usually gives the biggest single improvement",
+      "Enable compression (GZIP/Brotli) before anything else - it's quick and high-impact",
       "Measure before and after each change with Google PageSpeed Insights",
       "Focus on above-the-fold content loading first for best perceived performance"
     ],
@@ -2850,8 +2850,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Freelancers pitching services to potential clients"
     ],
     proTips: [
-      "Personalize the first line — reference their work, company, or a shared connection",
-      "Keep emails under 100 words — shorter emails get higher response rates",
+      "Personalize the first line - reference their work, company, or a shared connection",
+      "Keep emails under 100 words - shorter emails get higher response rates",
       "Include a specific, easy-to-answer CTA: 'Would a 15-min call work this week?'",
       "Send follow-ups on Tuesdays and Thursdays between 8-10 AM for best open rates"
     ],
@@ -2866,7 +2866,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "bulk-expired-domain-checker": {
     shortDescription: "Check multiple domains in bulk for expiration status and identify potentially available domains.",
-    longDescription: "The Bulk Expired Domain Checker lets you verify the status of dozens of domains simultaneously. Enter your domain list and the tool opens WHOIS lookups in staggered tabs to check registration and expiration status. Expired domains can be valuable for SEO — they may retain backlinks, domain authority, and brand recognition. Use this tool to find acquisition opportunities or monitor competitor domain statuses.",
+    longDescription: "The Bulk Expired Domain Checker lets you verify the status of dozens of domains simultaneously. Enter your domain list and the tool opens WHOIS lookups in staggered tabs to check registration and expiration status. Expired domains can be valuable for SEO - they may retain backlinks, domain authority, and brand recognition. Use this tool to find acquisition opportunities or monitor competitor domain statuses.",
     benefits: [
       { title: "Bulk Processing", description: "Check 50+ domains at once instead of one at a time." },
       { title: "Acquisition Opportunities", description: "Find expired domains with existing authority and backlinks." },
@@ -2881,8 +2881,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Web developers checking domain availability for new projects"
     ],
     proTips: [
-      "Check backlinks and DA before acquiring expired domains — age alone isn't valuable",
-      "Verify the domain's history with the Wayback Machine — avoid domains with spammy pasts",
+      "Check backlinks and DA before acquiring expired domains - age alone isn't valuable",
+      "Verify the domain's history with the Wayback Machine - avoid domains with spammy pasts",
       "Set calendar reminders for your own domain renewals to prevent accidental expiration",
       "Use staggered delays to avoid rate limiting from WHOIS servers"
     ],
@@ -2914,7 +2914,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
     proTips: [
       ".com domains generally carry more trust than exotic TLDs",
       "Short, brandable domains correlate with higher authority",
-      "HTTPS is a confirmed ranking factor — always use it",
+      "HTTPS is a confirmed ranking factor - always use it",
       "Combine this with backlink analysis for a more complete authority picture"
     ],
     targetAudience: ["SEO Analysts", "Domain Buyers", "Link Builders", "Startup Founders"],
@@ -2943,8 +2943,8 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "Performance engineers optimizing server response paths"
     ],
     proTips: [
-      "Always redirect directly to the final destination — avoid chains",
-      "Audit redirects after site migrations — chains are commonly introduced",
+      "Always redirect directly to the final destination - avoid chains",
+      "Audit redirects after site migrations - chains are commonly introduced",
       "Mixed chains (301 → 302 → 301) are especially problematic for SEO",
       "Redirect chains of 3+ hops should be a high-priority fix"
     ],
@@ -2959,7 +2959,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
   },
   "broken-link-checker": {
     shortDescription: "Scan any webpage to find broken outbound links that hurt SEO and user experience.",
-    longDescription: "The Broken Link Checker scans a webpage and identifies all broken outbound links (links pointing to pages that return 404, 500, or other error status codes). Broken links create dead ends for users and waste crawl budget — both harmful to SEO. Google has stated that excessive broken links can negatively impact how they assess site quality. Regular broken link audits are a basic but essential SEO maintenance task.",
+    longDescription: "The Broken Link Checker scans a webpage and identifies all broken outbound links (links pointing to pages that return 404, 500, or other error status codes). Broken links create dead ends for users and waste crawl budget - both harmful to SEO. Google has stated that excessive broken links can negatively impact how they assess site quality. Regular broken link audits are a basic but essential SEO maintenance task.",
     benefits: [
       { title: "SEO Maintenance", description: "Fix broken links before they impact your rankings." },
       { title: "User Experience", description: "Eliminate frustrating dead-end links for visitors." },
@@ -2974,7 +2974,7 @@ export const toolSpecificContent: Record<string, Partial<ToolCategoryContent>> =
       "E-commerce managers checking product page outbound links"
     ],
     proTips: [
-      "Check resource pages and link roundups first — they have the most outbound links",
+      "Check resource pages and link roundups first - they have the most outbound links",
       "Audit links quarterly for actively maintained sites",
       "Replace broken links with updated alternatives rather than just removing them",
       "Use broken links you find on competitor sites for broken link building outreach"

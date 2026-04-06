@@ -121,10 +121,10 @@ export const RoasCalculator = () => {
               {roas.toFixed(2)}x
             </p>
             <p className="text-xs text-muted-foreground mt-2">
-              {roas >= 4 ? "Excellent — your campaigns are highly profitable" :
-               roas >= 3 ? "Good — solid return on your ad investment" :
-               roas >= 2 ? "Average — room for optimization" :
-               "Below average — review targeting and landing pages"}
+              {roas >= 4 ? "Excellent - your campaigns are highly profitable" :
+               roas >= 3 ? "Good - solid return on your ad investment" :
+               roas >= 2 ? "Average - room for optimization" :
+               "Below average - review targeting and landing pages"}
             </p>
           </div>
 
@@ -160,17 +160,17 @@ export const AdCopyGenerator = () => {
 
   if (prod) {
     headlines.push(
-      `${prod} — ${unique || "Best Deals Online"}`.slice(0, 30),
+      `${prod} - ${unique || "Best Deals Online"}`.slice(0, 30),
       `Top-Rated ${prod} | ${cta}`.slice(0, 30),
-      `${prod} — Save Up to 50%`.slice(0, 30),
+      `${prod} - Save Up to 50%`.slice(0, 30),
       `#1 ${prod} | Trusted Experts`.slice(0, 30),
-      `Get ${prod} Today — Free Quote`.slice(0, 30),
-      `${prod} — Fast & Affordable`.slice(0, 30),
+      `Get ${prod} Today - Free Quote`.slice(0, 30),
+      `${prod} - Fast & Affordable`.slice(0, 30),
     );
     descriptions.push(
       `Looking for ${prod.toLowerCase()}? ${unique || "We deliver top quality at competitive prices."} ${cta} today and see the difference.`.slice(0, 90),
       `${unique || `Discover premium ${prod.toLowerCase()}`}. ${kw ? `Searching for ${kw}?` : ""} Get started with a free consultation. ${cta}!`.slice(0, 90),
-      `Trusted by 1000+ customers. Professional ${prod.toLowerCase()} with proven results. ${cta} — limited time offer available.`.slice(0, 90),
+      `Trusted by 1000+ customers. Professional ${prod.toLowerCase()} with proven results. ${cta} - limited time offer available.`.slice(0, 90),
     );
   }
 
@@ -259,10 +259,10 @@ export const QualityScoreEstimator = () => {
       <div className="glass rounded-xl p-4 text-center">
         <p className="text-sm text-muted-foreground">{checkedCount}/{factors.length} factors met</p>
         <p className="text-xs text-muted-foreground mt-2">
-          {score >= 8 ? "Excellent — you'll enjoy lower CPCs and better ad positions" :
-           score >= 6 ? "Good — a few improvements could further reduce costs" :
-           score >= 4 ? "Average — significant savings possible with optimization" :
-           "Low — review ad relevance, landing page, and keyword match"}
+          {score >= 8 ? "Excellent - you'll enjoy lower CPCs and better ad positions" :
+           score >= 6 ? "Good - a few improvements could further reduce costs" :
+           score >= 4 ? "Average - significant savings possible with optimization" :
+           "Low - review ad relevance, landing page, and keyword match"}
         </p>
       </div>
     </div>
@@ -347,7 +347,7 @@ export const PpcCampaignAuditChecklist = () => {
         <p className="text-sm font-medium">{completed}/{total} checks passed</p>
         <p className="text-xs text-muted-foreground mt-1">
           {score >= 80 ? "Your campaigns are well-optimized. Focus on scaling." :
-           score >= 60 ? "Good foundation — address remaining items for better performance." :
+           score >= 60 ? "Good foundation - address remaining items for better performance." :
            score >= 40 ? "Several optimization opportunities found. Prioritize high-impact items." :
            "Significant issues detected. Consider a professional PPC audit."}
         </p>

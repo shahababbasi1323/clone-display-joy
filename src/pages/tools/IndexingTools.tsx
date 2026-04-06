@@ -331,23 +331,23 @@ export const ForceIndexingTool = () => {
             <p className="font-semibold text-foreground">Pro Tips for Faster Indexing</p>
             <ul className="list-disc list-inside space-y-1">
               <li>
-                <strong>Google Search Console</strong> — Use "Request Indexing" in URL Inspection for the fastest results (usually indexed within hours).
+                <strong>Google Search Console</strong> - Use "Request Indexing" in URL Inspection for the fastest results (usually indexed within hours).
               </li>
               <li>
-                <strong>IndexNow API</strong> — Submit your key at{" "}
+                <strong>IndexNow API</strong> - Submit your key at{" "}
                 <button onClick={openBingSubmit} className="text-primary underline">
                   Bing Webmaster Tools
                 </button>{" "}
                 for instant Bing/Yandex indexing.
               </li>
               <li>
-                <strong>Internal links</strong> — Add internal links from high-authority pages to speed up crawling.
+                <strong>Internal links</strong> - Add internal links from high-authority pages to speed up crawling.
               </li>
               <li>
-                <strong>Updated sitemap</strong> — Ensure new URLs are in your XML sitemap with today's date as lastmod.
+                <strong>Updated sitemap</strong> - Ensure new URLs are in your XML sitemap with today's date as lastmod.
               </li>
               <li>
-                <strong>Social sharing</strong> — Share new URLs on Twitter/X and LinkedIn to trigger social crawlers.
+                <strong>Social sharing</strong> - Share new URLs on Twitter/X and LinkedIn to trigger social crawlers.
               </li>
             </ul>
           </div>

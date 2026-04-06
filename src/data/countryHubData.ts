@@ -22,8 +22,8 @@ export const countryHubData: CountryHubData[] = [
     heroDescription: "From New York to Los Angeles, we help American businesses dominate search engines, run high-converting ad campaigns, and build world-class websites. Our data-driven strategies are tailored to each city's unique competitive landscape.",
     whyContent: [
       "The US digital market is the most competitive in the world. With over 30 million small businesses and a search engine penetration rate above 90%, ranking on Google in American cities requires a sophisticated, multi-channel approach combining technical SEO, high-authority link building, and conversion-focused content.",
-      "We understand the nuances of local search across the United States — from the hyper-competitive NYC market to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior, city-level competition analysis, and industry-specific ranking factors.",
-      "Whether you're a startup in San Francisco, an e-commerce brand in Miami, or a service provider in Chicago, our full-stack digital marketing services — including PPC management, web design, and social media — are built to deliver measurable ROI in the American market.",
+      "We understand the nuances of local search across the United States - from the hyper-competitive NYC market to emerging tech hubs like Austin and Denver. Our strategies account for regional search behavior, city-level competition analysis, and industry-specific ranking factors.",
+      "Whether you're a startup in San Francisco, an e-commerce brand in Miami, or a service provider in Chicago, our full-stack digital marketing services - including PPC management, web design, and social media - are built to deliver measurable ROI in the American market.",
     ],
   },
   {
@@ -34,11 +34,11 @@ export const countryHubData: CountryHubData[] = [
     metaTitle: "SEO & Digital Marketing Agency in the UK | 15 Cities Served",
     metaDescription: "Professional SEO, PPC, web design & digital marketing services across 15 UK cities. London, Manchester, Birmingham & more. Free growth audit.",
     heroHeading: "Digital Marketing Agency Across the United Kingdom",
-    heroDescription: "We serve businesses in 15 major UK cities with expert SEO, Google Ads management, responsive web design, and content strategy — all tailored to the British market.",
+    heroDescription: "We serve businesses in 15 major UK cities with expert SEO, Google Ads management, responsive web design, and content strategy - all tailored to the British market.",
     whyContent: [
       "The UK is Europe's most mature digital advertising market, with over £27 billion spent on digital ads annually. Standing out requires precise keyword targeting, authoritative backlink profiles, and content that resonates with British consumers.",
       "From London's ultra-competitive financial sector to Manchester's thriving tech scene and Edinburgh's tourism-driven economy, each UK city demands a bespoke digital strategy built on local market intelligence.",
-      "Our UK-focused services span technical SEO audits, Google Ads & Shopping campaigns, mobile-first web development, and social media growth — ensuring your brand captures its share of the 3.5 billion daily Google searches from UK users.",
+      "Our UK-focused services span technical SEO audits, Google Ads & Shopping campaigns, mobile-first web development, and social media growth - ensuring your brand captures its share of the 3.5 billion daily Google searches from UK users.",
     ],
   },
   {
@@ -52,7 +52,7 @@ export const countryHubData: CountryHubData[] = [
     heroDescription: "From Toronto to Vancouver, we deliver bilingual digital marketing strategies covering SEO, PPC, web design, and content creation for the Canadian market.",
     whyContent: [
       "Canada's bilingual digital landscape presents unique opportunities. With 37 million internet users and growing mobile search adoption, Canadian businesses need localized SEO strategies that account for both English and French-speaking audiences.",
-      "Our team understands the regional dynamics — from Toronto's competitive financial services market to Vancouver's tech ecosystem and Montreal's bilingual consumer base. We craft city-specific strategies that drive qualified traffic.",
+      "Our team understands the regional dynamics - from Toronto's competitive financial services market to Vancouver's tech ecosystem and Montreal's bilingual consumer base. We craft city-specific strategies that drive qualified traffic.",
       "We combine local SEO optimization, Google Ads management, conversion-focused web design, and data-driven content marketing to help Canadian businesses outperform their competitors in organic and paid search.",
     ],
   },
@@ -67,8 +67,8 @@ export const countryHubData: CountryHubData[] = [
     heroDescription: "We help Australian businesses in 6 major cities grow with expert SEO, PPC campaigns, modern web design, and data-driven content strategies.",
     whyContent: [
       "Australia's digital economy is booming, with over 22 million internet users and one of the highest smartphone penetration rates globally. Australian consumers rely heavily on Google search, making SEO and PPC essential for business growth.",
-      "Each Australian city has its own competitive dynamics — Sydney's crowded financial and retail markets, Melbourne's creative and tech sectors, and Brisbane's rapidly growing business ecosystem all require tailored digital approaches.",
-      "Our full-service offering covers technical SEO, local search optimization, Google Ads, responsive web design, and social media management — all calibrated for the Australian market's unique search patterns and consumer behavior.",
+      "Each Australian city has its own competitive dynamics - Sydney's crowded financial and retail markets, Melbourne's creative and tech sectors, and Brisbane's rapidly growing business ecosystem all require tailored digital approaches.",
+      "Our full-service offering covers technical SEO, local search optimization, Google Ads, responsive web design, and social media management - all calibrated for the Australian market's unique search patterns and consumer behavior.",
     ],
   },
   {
@@ -82,7 +82,7 @@ export const countryHubData: CountryHubData[] = [
     heroDescription: "We deliver bilingual Arabic-English digital marketing strategies across the UAE, including SEO, PPC, web design, and social media marketing for Dubai, Abu Dhabi, and beyond.",
     whyContent: [
       "The UAE is the Middle East's digital powerhouse, with one of the highest internet penetration rates in the world at over 99%. Businesses in Dubai and Abu Dhabi face fierce competition, making professional SEO and paid advertising essential for visibility.",
-      "Our UAE strategies account for the bilingual nature of the market — optimizing for both Arabic and English search queries — and the unique consumer behavior patterns driven by the region's expatriate-heavy demographics.",
+      "Our UAE strategies account for the bilingual nature of the market - optimizing for both Arabic and English search queries - and the unique consumer behavior patterns driven by the region's expatriate-heavy demographics.",
       "From e-commerce brands in Dubai to professional services in Abu Dhabi, we combine technical SEO, Google Ads, social media advertising, and conversion-optimized web design to help UAE businesses capture their target audience.",
     ],
   },
@@ -98,7 +98,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Saudi Arabia's Vision 2030 has accelerated digital transformation across every sector. With over 36 million internet users and one of the world's youngest populations, the Kingdom represents a massive opportunity for businesses investing in digital marketing.",
       "Our Saudi-focused strategies prioritize Arabic-language SEO, understanding the local search behavior patterns, religious and cultural sensitivities, and the growing dominance of mobile-first browsing among Saudi consumers.",
-      "We deliver end-to-end digital marketing services including technical SEO, Google Ads, social media management, and responsive web design — all optimized for Saudi Arabia's unique market dynamics and rapid e-commerce growth.",
+      "We deliver end-to-end digital marketing services including technical SEO, Google Ads, social media management, and responsive web design - all optimized for Saudi Arabia's unique market dynamics and rapid e-commerce growth.",
     ],
   },
   {
@@ -109,11 +109,11 @@ export const countryHubData: CountryHubData[] = [
     metaTitle: "SEO Agentur Deutschland | Digitales Marketing in 10 Städten",
     metaDescription: "Professionelle SEO-, PPC- und Webdesign-Dienste in 10 deutschen Städten. Berlin, München, Hamburg & mehr. Kostenloses SEO-Audit.",
     heroHeading: "Digital Marketing Agentur in Deutschland",
-    heroDescription: "Wir unterstützen deutsche Unternehmen in 10 Großstädten mit erstklassigem SEO, Google Ads, Webdesign und Content-Marketing — maßgeschneidert für den deutschen Markt.",
+    heroDescription: "Wir unterstützen deutsche Unternehmen in 10 Großstädten mit erstklassigem SEO, Google Ads, Webdesign und Content-Marketing - maßgeschneidert für den deutschen Markt.",
     whyContent: [
       "Germany is Europe's largest economy and a highly competitive digital market. With over 77 million internet users, German businesses need sophisticated SEO strategies that account for the language's complex keyword structures and the country's strict privacy regulations.",
       "From Berlin's startup ecosystem to Munich's industrial powerhouses and Hamburg's media landscape, each German city presents unique digital marketing challenges that require localized expertise and market intelligence.",
-      "Our German-market services encompass technical SEO, Google Ads management, DSGVO-compliant web development, and content strategies crafted in native German — ensuring your brand resonates with local audiences and outranks competitors.",
+      "Our German-market services encompass technical SEO, Google Ads management, DSGVO-compliant web development, and content strategies crafted in native German - ensuring your brand resonates with local audiences and outranks competitors.",
     ],
   },
   {
@@ -128,7 +128,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "France is the second-largest digital market in Europe, with over 60 million internet users. French consumers have distinct search behaviors and strong preferences for content in their native language, making localized SEO essential.",
       "From Paris's hyper-competitive business landscape to Lyon's industrial sector and the Côte d'Azur's tourism-driven economy, each French city requires tailored digital strategies built on local keyword research and competitor analysis.",
-      "Our France-focused services include technical SEO, référencement payant (Google Ads), responsive web design, and native French content creation — delivering measurable results for businesses across the Hexagone.",
+      "Our France-focused services include technical SEO, référencement payant (Google Ads), responsive web design, and native French content creation - delivering measurable results for businesses across the Hexagone.",
     ],
   },
   {
@@ -143,7 +143,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Italy's digital market is rapidly maturing, with over 50 million internet users and growing e-commerce adoption. Italian businesses need SEO strategies that account for the language's regional variations and the country's unique online consumer behavior.",
       "From Milan's fashion and finance hub to Rome's tourism sector and Turin's industrial landscape, each Italian city presents distinct digital marketing opportunities that demand localized expertise.",
-      "Our Italian-market services span SEO tecnico, Google Ads management, mobile-responsive web design, and native Italian content strategies — helping your business capture organic and paid traffic across the Bel Paese.",
+      "Our Italian-market services span SEO tecnico, Google Ads management, mobile-responsive web design, and native Italian content strategies - helping your business capture organic and paid traffic across the Bel Paese.",
     ],
   },
   {
@@ -158,7 +158,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Spain's digital market continues to grow rapidly, with over 42 million internet users and increasing mobile commerce adoption. Spanish businesses need SEO strategies that leverage the language's reach while addressing local competition in each city.",
       "From Madrid's corporate landscape to Barcelona's tech and creative sectors and Valencia's emerging startup scene, each Spanish city offers unique digital marketing opportunities that require localized keyword targeting and content.",
-      "Our Spain-focused services include technical SEO, posicionamiento SEM (Google Ads), responsive web design, and native Spanish content marketing — delivering ROI-driven results across the Iberian market.",
+      "Our Spain-focused services include technical SEO, posicionamiento SEM (Google Ads), responsive web design, and native Spanish content marketing - delivering ROI-driven results across the Iberian market.",
     ],
   },
   {
@@ -169,11 +169,11 @@ export const countryHubData: CountryHubData[] = [
     metaTitle: "SEO Bureau Nederland | Digitale Marketing in 6 Steden",
     metaDescription: "Professionele SEO-, PPC- en webdesigndiensten in 6 Nederlandse steden. Amsterdam, Rotterdam, Den Haag & meer. Gratis SEO-audit.",
     heroHeading: "Digitaal Marketing Bureau in Nederland",
-    heroDescription: "Wij helpen Nederlandse bedrijven in 6 grote steden met expert SEO, Google Ads, webdesign en contentmarketing — afgestemd op de Nederlandse markt.",
+    heroDescription: "Wij helpen Nederlandse bedrijven in 6 grote steden met expert SEO, Google Ads, webdesign en contentmarketing - afgestemd op de Nederlandse markt.",
     whyContent: [
       "The Netherlands has one of the highest internet penetration rates in Europe at over 96%. Dutch consumers are digitally savvy, making sophisticated SEO and paid search strategies essential for businesses looking to compete online.",
       "From Amsterdam's international business hub to Rotterdam's logistics sector and the government-centric market of The Hague, each Dutch city requires targeted digital marketing approaches built on local search intelligence.",
-      "Our Netherlands-focused services cover technical SEO, Google Ads, conversion-optimized web design, and Dutch-language content strategies — helping your business thrive in one of Europe's most connected markets.",
+      "Our Netherlands-focused services cover technical SEO, Google Ads, conversion-optimized web design, and Dutch-language content strategies - helping your business thrive in one of Europe's most connected markets.",
     ],
   },
   {
@@ -188,7 +188,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Portugal's digital economy is growing rapidly, fueled by a thriving startup ecosystem and increasing e-commerce adoption. With over 8 million internet users, Portuguese businesses need targeted SEO strategies to stand out.",
       "From Lisbon's tech hub to Porto's industrial heartland and Braga's emerging innovation scene, each Portuguese city offers unique digital marketing opportunities that demand localized expertise.",
-      "Our Portugal-focused services include technical SEO, Google Ads, mobile-first web design, and native Portuguese content creation — ensuring your brand captures organic traffic in this growing market.",
+      "Our Portugal-focused services include technical SEO, Google Ads, mobile-first web design, and native Portuguese content creation - ensuring your brand captures organic traffic in this growing market.",
     ],
   },
   {
@@ -203,7 +203,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Brazil is Latin America's largest digital market with over 180 million internet users. The country's massive online population and growing e-commerce sector make it essential for businesses to invest in professional SEO and digital marketing.",
       "From São Paulo's enormous business market to Rio de Janeiro's tourism-driven economy and Belo Horizonte's industrial sector, each Brazilian city has distinct competitive dynamics requiring localized strategies.",
-      "Our Brazil-focused services span SEO técnico, Google Ads, responsive web design, and native Brazilian Portuguese content strategies — delivering measurable growth in one of the world's fastest-growing digital markets.",
+      "Our Brazil-focused services span SEO técnico, Google Ads, responsive web design, and native Brazilian Portuguese content strategies - delivering measurable growth in one of the world's fastest-growing digital markets.",
     ],
   },
   {
@@ -216,9 +216,9 @@ export const countryHubData: CountryHubData[] = [
     heroHeading: "Digital Marketing Agency Across New Zealand",
     heroDescription: "We help Kiwi businesses in Auckland, Wellington, and Christchurch grow with expert SEO, Google Ads, web design, and content marketing strategies.",
     whyContent: [
-      "New Zealand's compact but highly connected digital market — with over 4.7 million internet users and 93% penetration — makes online visibility crucial for business success. Kiwi consumers research extensively online before purchasing.",
+      "New Zealand's compact but highly connected digital market - with over 4.7 million internet users and 93% penetration - makes online visibility crucial for business success. Kiwi consumers research extensively online before purchasing.",
       "From Auckland's commercial hub to Wellington's government and creative sectors and Christchurch's rebuilding economy, each NZ city has unique digital marketing dynamics that require tailored strategies.",
-      "Our NZ-focused services include local SEO, Google Ads, mobile-first web design, and content strategies crafted for the New Zealand market — helping your business capture its share of organic and paid search traffic.",
+      "Our NZ-focused services include local SEO, Google Ads, mobile-first web design, and content strategies crafted for the New Zealand market - helping your business capture its share of organic and paid search traffic.",
     ],
   },
   {
@@ -233,7 +233,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Singapore has the highest internet penetration in Southeast Asia at over 96%, with a highly educated, multilingual consumer base. The city-state's competitive business environment makes professional digital marketing essential for growth.",
       "As a regional business hub connecting East and West, Singapore demands digital strategies that account for multilingual audiences, cross-border commerce, and the city's position as a gateway to the ASEAN market.",
-      "Our Singapore-focused services cover technical SEO, Google Ads, conversion-optimized web design, and multilingual content strategies — helping your business thrive in one of Asia's most connected markets.",
+      "Our Singapore-focused services cover technical SEO, Google Ads, conversion-optimized web design, and multilingual content strategies - helping your business thrive in one of Asia's most connected markets.",
     ],
   },
   {
@@ -248,7 +248,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Malaysia's digital economy is booming with over 29 million internet users and rapidly growing e-commerce adoption. Malaysian businesses need multilingual digital strategies that reach both Malay and English-speaking audiences.",
       "From Kuala Lumpur's competitive commercial market to Penang's tech corridor and Johor Bahru's cross-border economy with Singapore, each Malaysian city presents unique digital marketing opportunities.",
-      "Our Malaysia-focused services include local SEO, Google Ads, mobile-first web design, and bilingual content strategies — delivering measurable results in one of Southeast Asia's fastest-growing digital markets.",
+      "Our Malaysia-focused services include local SEO, Google Ads, mobile-first web design, and bilingual content strategies - delivering measurable results in one of Southeast Asia's fastest-growing digital markets.",
     ],
   },
   {
@@ -263,7 +263,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Thailand is Southeast Asia's second-largest digital economy with over 57 million internet users. Thai consumers are highly active on mobile and social platforms, making a multi-channel digital approach essential.",
       "From Bangkok's massive commercial market to Chiang Mai's growing digital nomad and tech startup ecosystem, each Thai city offers distinct opportunities for businesses investing in SEO and digital marketing.",
-      "Our Thailand-focused services span technical SEO, Google Ads, responsive web design, and content strategies — helping your business capture organic traffic and paid conversions in the Thai market.",
+      "Our Thailand-focused services span technical SEO, Google Ads, responsive web design, and content strategies - helping your business capture organic traffic and paid conversions in the Thai market.",
     ],
   },
   {
@@ -278,7 +278,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "The Philippines has over 85 million internet users with one of the highest social media engagement rates globally. Filipino consumers are mobile-first, making SEO and digital advertising critical for reaching this connected audience.",
       "From Manila's sprawling metropolitan market to Cebu's rapidly growing business hub, Philippine businesses need localized digital marketing strategies that account for English-Tagalog bilingual search behavior.",
-      "Our Philippines-focused services include technical SEO, Google Ads, mobile-responsive web design, and bilingual content strategies — driving measurable growth in one of Asia's fastest-growing digital markets.",
+      "Our Philippines-focused services include technical SEO, Google Ads, mobile-responsive web design, and bilingual content strategies - driving measurable growth in one of Asia's fastest-growing digital markets.",
     ],
   },
   {
@@ -293,7 +293,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "South Africa is the continent's most developed digital market with over 42 million internet users. As competition intensifies across industries, South African businesses need professional SEO and digital marketing to capture online market share.",
       "From Johannesburg's financial hub to Cape Town's tech and tourism sectors and Durban's industrial coast, each South African city has unique market dynamics that demand tailored digital strategies.",
-      "Our South Africa-focused services cover technical SEO, Google Ads, responsive web design, and content marketing — helping your business grow in Africa's most competitive digital landscape.",
+      "Our South Africa-focused services cover technical SEO, Google Ads, responsive web design, and content marketing - helping your business grow in Africa's most competitive digital landscape.",
     ],
   },
   {
@@ -308,7 +308,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Nigeria is Africa's largest digital market with over 110 million internet users and a booming tech ecosystem. As more Nigerian consumers search online, businesses need professional SEO and digital marketing to stay competitive.",
       "From Lagos's massive commercial market to Abuja's government and corporate hub, Nigerian businesses require digital strategies that account for local search patterns and the country's mobile-first internet usage.",
-      "Our Nigeria-focused services include technical SEO, Google Ads, mobile-optimized web design, and content strategies — delivering measurable results in Africa's fastest-growing digital economy.",
+      "Our Nigeria-focused services include technical SEO, Google Ads, mobile-optimized web design, and content strategies - delivering measurable results in Africa's fastest-growing digital economy.",
     ],
   },
   {
@@ -321,9 +321,9 @@ export const countryHubData: CountryHubData[] = [
     heroHeading: "Digital Marketing Agency in Kenya",
     heroDescription: "We help Kenyan businesses in Nairobi grow with expert SEO, PPC, web design, and content marketing strategies tailored to the East African market.",
     whyContent: [
-      "Kenya is East Africa's digital leader, with Nairobi recognized as 'Silicon Savannah' — the continent's tech innovation hub. With over 47 million internet users, Kenyan businesses need professional digital marketing to compete in this rapidly evolving market.",
-      "Nairobi's diverse business landscape — from fintech startups to established enterprises — demands digital strategies built on local keyword research, competitive analysis, and mobile-first optimization.",
-      "Our Kenya-focused services include technical SEO, Google Ads, responsive web design, and content marketing — helping your business capture organic and paid traffic in East Africa's most connected market.",
+      "Kenya is East Africa's digital leader, with Nairobi recognized as 'Silicon Savannah' - the continent's tech innovation hub. With over 47 million internet users, Kenyan businesses need professional digital marketing to compete in this rapidly evolving market.",
+      "Nairobi's diverse business landscape - from fintech startups to established enterprises - demands digital strategies built on local keyword research, competitive analysis, and mobile-first optimization.",
+      "Our Kenya-focused services include technical SEO, Google Ads, responsive web design, and content marketing - helping your business capture organic and paid traffic in East Africa's most connected market.",
     ],
   },
   {
@@ -338,7 +338,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Ireland punches well above its weight digitally, serving as the European headquarters for many global tech companies. With over 4.5 million internet users and high digital literacy, Irish businesses face sophisticated online competition.",
       "From Dublin's thriving tech and financial services hub to Cork's growing business ecosystem, Irish companies need targeted SEO and digital marketing strategies that account for both local and international audiences.",
-      "Our Ireland-focused services span technical SEO, Google Ads, conversion-optimized web design, and content strategies — helping Irish businesses compete effectively in both domestic and international search results.",
+      "Our Ireland-focused services span technical SEO, Google Ads, conversion-optimized web design, and content strategies - helping Irish businesses compete effectively in both domestic and international search results.",
     ],
   },
   {
@@ -353,7 +353,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Israel's 'Startup Nation' has one of the world's most dynamic digital ecosystems. With over 8 million internet users and a highly tech-savvy population, Israeli businesses need cutting-edge SEO and digital marketing to stand out.",
       "Tel Aviv's competitive startup and tech landscape demands bilingual Hebrew-English digital strategies that account for RTL content optimization, local search patterns, and the city's international business connections.",
-      "Our Israel-focused services include technical SEO, Google Ads, responsive web design, and bilingual content strategies — delivering measurable results in one of the world's most innovative digital markets.",
+      "Our Israel-focused services include technical SEO, Google Ads, responsive web design, and bilingual content strategies - delivering measurable results in one of the world's most innovative digital markets.",
     ],
   },
   {
@@ -368,7 +368,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Turkey bridges Europe and Asia with over 70 million internet users and rapidly growing e-commerce adoption. Turkish businesses need localized SEO strategies that account for the Turkish language's unique keyword structures.",
       "From Istanbul's massive commercial market to Ankara's government sector and Izmir's export-driven economy, each Turkish city has distinct digital marketing dynamics requiring tailored approaches.",
-      "Our Turkey-focused services include technical SEO, Google Ads, mobile-responsive web design, and Turkish-language content strategies — helping your business capture organic and paid traffic in this dynamic market.",
+      "Our Turkey-focused services include technical SEO, Google Ads, mobile-responsive web design, and Turkish-language content strategies - helping your business capture organic and paid traffic in this dynamic market.",
     ],
   },
   {
@@ -383,7 +383,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Poland is Central Europe's largest digital market with over 30 million internet users and rapidly growing e-commerce. Polish businesses need localized SEO strategies that leverage the language's complex declension-based keyword patterns.",
       "From Warsaw's competitive corporate market to Kraków's tech hub and Wrocław's outsourcing sector, each Polish city offers unique digital marketing opportunities that demand localized expertise.",
-      "Our Poland-focused services cover technical SEO, Google Ads, responsive web design, and Polish-language content strategies — delivering measurable growth in one of Europe's most dynamic digital economies.",
+      "Our Poland-focused services cover technical SEO, Google Ads, responsive web design, and Polish-language content strategies - delivering measurable growth in one of Europe's most dynamic digital economies.",
     ],
   },
   {
@@ -398,7 +398,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "The Czech Republic has a highly connected population with over 9 million internet users. Czech businesses need SEO strategies tailored to the Czech language and the country's distinct online consumer behavior.",
       "From Prague's international business landscape to Brno's growing tech scene, Czech companies require localized digital marketing that accounts for the unique characteristics of the Czech search market.",
-      "Our Czech-focused services include technical SEO, Google Ads, web design, and Czech-language content strategies — helping your business outperform competitors in the Czech digital market.",
+      "Our Czech-focused services include technical SEO, Google Ads, web design, and Czech-language content strategies - helping your business outperform competitors in the Czech digital market.",
     ],
   },
   {
@@ -413,7 +413,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Hungary has over 8 million internet users with growing digital commerce adoption. The Hungarian language's unique structure makes localized SEO essential for businesses targeting Hungarian consumers.",
       "From Budapest's vibrant business hub to Debrecen's emerging tech scene, Hungarian companies need digital strategies built on local keyword research and an understanding of Hungarian search behavior.",
-      "Our Hungary-focused services span technical SEO, Google Ads, responsive web design, and Hungarian-language content — delivering measurable growth in this Central European market.",
+      "Our Hungary-focused services span technical SEO, Google Ads, responsive web design, and Hungarian-language content - delivering measurable growth in this Central European market.",
     ],
   },
   {
@@ -428,7 +428,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Romania has one of the fastest internet speeds in Europe with over 15 million users. The country's growing digital economy and tech talent pool make it an increasingly competitive online marketplace.",
       "From Bucharest's large commercial market to Cluj-Napoca's thriving tech hub and Timișoara's international business connections, each Romanian city has unique digital dynamics requiring tailored strategies.",
-      "Our Romania-focused services include technical SEO, Google Ads, mobile-first web design, and Romanian-language content — helping your business capture organic traffic in this fast-growing market.",
+      "Our Romania-focused services include technical SEO, Google Ads, mobile-first web design, and Romanian-language content - helping your business capture organic traffic in this fast-growing market.",
     ],
   },
   {
@@ -443,7 +443,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Greece's digital market is growing rapidly with over 8 million internet users. Tourism, shipping, and services dominate the economy, making SEO essential for businesses targeting both domestic and international audiences.",
       "From Athens's diverse commercial market to Thessaloniki's role as Greece's second economic hub, Greek businesses need localized digital strategies that account for Greek-language search patterns.",
-      "Our Greece-focused services include technical SEO, Google Ads, responsive web design, and Greek-language content strategies — helping your business capture search traffic in the Greek market.",
+      "Our Greece-focused services include technical SEO, Google Ads, responsive web design, and Greek-language content strategies - helping your business capture search traffic in the Greek market.",
     ],
   },
   {
@@ -458,7 +458,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Austria's digital market is highly developed with over 8 million internet users. Austrian businesses face competition from both local and German companies, making localized SEO strategies essential for standing out.",
       "From Vienna's international business landscape to Graz's automotive and tech sectors and Salzburg's tourism-driven economy, each Austrian city has distinct digital marketing needs.",
-      "Our Austria-focused services include technical SEO, Google Ads, responsive web design, and German-language content optimized for Austrian search patterns — ensuring your brand ranks where it matters.",
+      "Our Austria-focused services include technical SEO, Google Ads, responsive web design, and German-language content optimized for Austrian search patterns - ensuring your brand ranks where it matters.",
     ],
   },
   {
@@ -473,7 +473,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Switzerland is one of the world's wealthiest and most digitally connected markets, with over 8 million internet users across four language regions. Swiss businesses need multilingual SEO strategies that target German, French, Italian, and English-speaking audiences.",
       "From Zurich's financial powerhouse to Geneva's international organizations and Bern's political center, each Swiss city has unique market dynamics requiring tailored digital approaches.",
-      "Our Switzerland-focused services cover technical SEO, Google Ads, conversion-optimized web design, and multilingual content strategies — helping your business compete in one of Europe's most premium markets.",
+      "Our Switzerland-focused services cover technical SEO, Google Ads, conversion-optimized web design, and multilingual content strategies - helping your business compete in one of Europe's most premium markets.",
     ],
   },
   {
@@ -486,9 +486,9 @@ export const countryHubData: CountryHubData[] = [
     heroHeading: "Digital Marketing Agency in Belgium",
     heroDescription: "We help Belgian businesses in Brussels and Antwerp with bilingual French-Dutch SEO, Google Ads, web design, and content marketing strategies.",
     whyContent: [
-      "Belgium's bilingual digital market — split between French-speaking Wallonia and Dutch-speaking Flanders — requires unique SEO strategies that target both language communities with appropriate content.",
+      "Belgium's bilingual digital market - split between French-speaking Wallonia and Dutch-speaking Flanders - requires unique SEO strategies that target both language communities with appropriate content.",
       "From Brussels's role as the EU capital and international business center to Antwerp's commercial port and diamond district, Belgian businesses need localized digital strategies for each region.",
-      "Our Belgium-focused services include bilingual SEO, Google Ads, responsive web design, and content strategies in both French and Dutch — ensuring your brand reaches all Belgian consumers.",
+      "Our Belgium-focused services include bilingual SEO, Google Ads, responsive web design, and content strategies in both French and Dutch - ensuring your brand reaches all Belgian consumers.",
     ],
   },
   {
@@ -503,7 +503,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Denmark has one of the highest internet penetration rates globally at over 98%. Danish consumers are highly digital, making professional SEO and digital marketing critical for businesses competing in this connected market.",
       "From Copenhagen's international business landscape to Aarhus's cultural and educational hub, Danish businesses need SEO strategies tailored to Danish search behavior and the Nordic digital ecosystem.",
-      "Our Denmark-focused services include technical SEO, Google Ads, mobile-first web design, and Danish-language content — helping your business rank higher in Denmark's competitive digital market.",
+      "Our Denmark-focused services include technical SEO, Google Ads, mobile-first web design, and Danish-language content - helping your business rank higher in Denmark's competitive digital market.",
     ],
   },
   {
@@ -518,7 +518,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Sweden is one of Europe's most digitally advanced nations with over 10 million internet users. Swedish consumers are early adopters of technology, making sophisticated digital marketing strategies essential for online success.",
       "From Stockholm's thriving startup and fintech scene to Gothenburg's industrial and automotive sector, each Swedish city has unique digital marketing dynamics requiring localized approaches.",
-      "Our Sweden-focused services span technical SEO, Google Ads, responsive web design, and Swedish-language content — delivering measurable results in one of the Nordic region's most competitive markets.",
+      "Our Sweden-focused services span technical SEO, Google Ads, responsive web design, and Swedish-language content - delivering measurable results in one of the Nordic region's most competitive markets.",
     ],
   },
   {
@@ -533,7 +533,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Norway has one of the world's highest internet penetration rates and GDP per capita, making it a premium digital market. Norwegian businesses need sophisticated SEO strategies to compete for high-value online traffic.",
       "From Oslo's diverse commercial market to Bergen's maritime sector and Trondheim's tech and education hub, each Norwegian city presents unique digital marketing opportunities.",
-      "Our Norway-focused services include technical SEO, Google Ads, conversion-optimized web design, and Norwegian-language content — helping your business thrive in one of the Nordic region's most valuable markets.",
+      "Our Norway-focused services include technical SEO, Google Ads, conversion-optimized web design, and Norwegian-language content - helping your business thrive in one of the Nordic region's most valuable markets.",
     ],
   },
   {
@@ -548,7 +548,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Finland consistently ranks among the world's most connected nations. With over 5 million internet users and strong digital literacy, Finnish businesses need advanced SEO strategies to compete effectively online.",
       "From Helsinki's international business hub to Tampere's industrial and tech sector and Turku's maritime and pharma industries, each Finnish city has distinct digital marketing needs.",
-      "Our Finland-focused services cover technical SEO, Google Ads, mobile-first web design, and Finnish-language content strategies — driving measurable growth in one of the Nordic region's most innovative markets.",
+      "Our Finland-focused services cover technical SEO, Google Ads, mobile-first web design, and Finnish-language content strategies - driving measurable growth in one of the Nordic region's most innovative markets.",
     ],
   },
   {
@@ -563,7 +563,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Japan is the world's fourth-largest digital advertising market with over 118 million internet users. Japanese consumers have unique online behaviors and search patterns that require specialized SEO strategies.",
       "From Tokyo's enormous commercial market to Osaka's business and manufacturing hub, Japanese companies need digital strategies that account for Japanese-language keyword complexity and local search engine preferences.",
-      "Our Japan-focused services include technical SEO, Google Ads, mobile-responsive web design, and native Japanese content strategies — helping your business capture search traffic in one of the world's most sophisticated digital markets.",
+      "Our Japan-focused services include technical SEO, Google Ads, mobile-responsive web design, and native Japanese content strategies - helping your business capture search traffic in one of the world's most sophisticated digital markets.",
     ],
   },
   {
@@ -578,7 +578,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "South Korea has one of the world's fastest internet speeds and highest smartphone penetration rates. With over 49 million internet users, Korean businesses face intense online competition requiring professional digital marketing.",
       "From Seoul's massive commercial and tech market to Busan's international trade hub, Korean companies need digital strategies optimized for both Google and Naver search engines.",
-      "Our South Korea-focused services include technical SEO, search advertising, mobile-first web design, and Korean-language content strategies — delivering results in one of Asia's most competitive digital markets.",
+      "Our South Korea-focused services include technical SEO, search advertising, mobile-first web design, and Korean-language content strategies - delivering results in one of Asia's most competitive digital markets.",
     ],
   },
   {
@@ -593,7 +593,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Mexico is Latin America's second-largest digital market with over 100 million internet users. Mexican businesses need Spanish-language SEO strategies that account for the country's unique search patterns and rapidly growing e-commerce sector.",
       "From Mexico City's enormous commercial market to Guadalajara's tech sector and Monterrey's industrial powerhouse, each Mexican city has distinct competitive dynamics requiring localized digital approaches.",
-      "Our Mexico-focused services include technical SEO, Google Ads, responsive web design, and Mexican Spanish content strategies — delivering measurable growth in one of Latin America's most dynamic markets.",
+      "Our Mexico-focused services include technical SEO, Google Ads, responsive web design, and Mexican Spanish content strategies - delivering measurable growth in one of Latin America's most dynamic markets.",
     ],
   },
   {
@@ -608,7 +608,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Colombia's digital economy is rapidly expanding with over 38 million internet users. As e-commerce and digital services grow, Colombian businesses need professional SEO and digital marketing to capture online market share.",
       "From Bogotá's large capital market to Medellín's innovative tech and startup ecosystem, Colombian businesses require digital strategies tailored to local search behavior and competitive dynamics.",
-      "Our Colombia-focused services span technical SEO, Google Ads, mobile-first web design, and Colombian Spanish content — helping your business grow in one of South America's fastest-evolving digital markets.",
+      "Our Colombia-focused services span technical SEO, Google Ads, mobile-first web design, and Colombian Spanish content - helping your business grow in one of South America's fastest-evolving digital markets.",
     ],
   },
   {
@@ -623,7 +623,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Argentina has over 36 million internet users and a highly engaged digital consumer base. Argentine businesses need localized SEO strategies that account for regional Spanish variations and the country's unique online marketplace dynamics.",
       "From Buenos Aires's cosmopolitan commercial landscape to Córdoba's growing tech and education hub, Argentine companies require tailored digital marketing strategies.",
-      "Our Argentina-focused services include technical SEO, Google Ads, responsive web design, and Argentine Spanish content — driving measurable results in South America's second-largest digital market.",
+      "Our Argentina-focused services include technical SEO, Google Ads, responsive web design, and Argentine Spanish content - driving measurable results in South America's second-largest digital market.",
     ],
   },
   {
@@ -638,7 +638,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Chile has Latin America's highest internet penetration rate at over 90%, with over 17 million connected users. Chilean consumers are digitally sophisticated, making professional SEO essential for business visibility.",
       "Santiago dominates Chile's economy and digital landscape. Businesses in the capital need SEO strategies that address the city's competitive commercial market and Chile's growing e-commerce sector.",
-      "Our Chile-focused services include technical SEO, Google Ads, mobile-responsive web design, and Chilean Spanish content strategies — helping your business capture organic and paid search traffic in this premium Latin American market.",
+      "Our Chile-focused services include technical SEO, Google Ads, mobile-responsive web design, and Chilean Spanish content strategies - helping your business capture organic and paid search traffic in this premium Latin American market.",
     ],
   },
   {
@@ -653,7 +653,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Peru's digital economy is growing rapidly with over 24 million internet users. As more Peruvian consumers turn to online search and e-commerce, businesses need professional digital marketing to capture this growing audience.",
       "Lima is Peru's economic and digital center. Businesses in the capital face increasing online competition and need localized SEO strategies that account for Peruvian search behavior and consumer preferences.",
-      "Our Peru-focused services include technical SEO, Google Ads, responsive web design, and Peruvian Spanish content — driving measurable growth in one of South America's fastest-growing digital markets.",
+      "Our Peru-focused services include technical SEO, Google Ads, responsive web design, and Peruvian Spanish content - driving measurable growth in one of South America's fastest-growing digital markets.",
     ],
   },
   {
@@ -668,7 +668,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Pakistan's digital landscape is booming with over 120 million internet users and rapidly growing e-commerce adoption. Businesses that invest in professional SEO and digital marketing now will capture massive first-mover advantages.",
       "From Karachi's bustling commercial hub to Lahore's thriving tech ecosystem and Islamabad's growing startup scene, each Pakistani city presents unique digital opportunities that require localized strategies.",
-      "Our Pakistan-focused services include technical SEO, Google Ads, responsive web design, and bilingual content in English and Urdu — driving measurable growth in one of Asia's fastest-growing digital markets.",
+      "Our Pakistan-focused services include technical SEO, Google Ads, responsive web design, and bilingual content in English and Urdu - driving measurable growth in one of Asia's fastest-growing digital markets.",
     ],
   },
   {
@@ -683,7 +683,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "India has over 900 million internet users, making it one of the world's largest digital markets. With fierce competition across every industry, businesses need advanced SEO and digital marketing to stand out.",
       "From Mumbai's financial sector to Bangalore's tech hub and Delhi's vast consumer market, each Indian city demands a unique digital strategy built on local search intelligence and multilingual content.",
-      "Our India-focused services span technical SEO, Google Ads, mobile-first web development, and Hindi/English content strategies — ensuring your brand captures its share of India's massive search traffic.",
+      "Our India-focused services span technical SEO, Google Ads, mobile-first web development, and Hindi/English content strategies - ensuring your brand captures its share of India's massive search traffic.",
     ],
   },
   {
@@ -698,7 +698,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Bangladesh's digital economy is expanding rapidly with over 130 million internet users. As e-commerce and online services grow, businesses need professional digital marketing to capture this audience.",
       "Dhaka is the epicenter of Bangladesh's digital transformation. Businesses in the capital and Chittagong face increasing online competition requiring localized SEO and digital strategies.",
-      "Our Bangladesh-focused services include technical SEO, Google Ads, responsive web design, and Bengali/English content — driving growth in one of South Asia's fastest-growing digital markets.",
+      "Our Bangladesh-focused services include technical SEO, Google Ads, responsive web design, and Bengali/English content - driving growth in one of South Asia's fastest-growing digital markets.",
     ],
   },
   {
@@ -713,7 +713,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Egypt is the largest digital market in North Africa with over 80 million internet users. Businesses that invest in SEO and digital marketing now will capture significant market share in this rapidly growing economy.",
       "Cairo is the commercial and digital hub of the Arab world. Businesses in Egypt need bilingual Arabic-English SEO strategies that account for local search behavior and regional competition.",
-      "Our Egypt-focused services include technical SEO, Google Ads, responsive web design, and Arabic content strategy — driving measurable growth in the MENA region's largest market.",
+      "Our Egypt-focused services include technical SEO, Google Ads, responsive web design, and Arabic content strategy - driving measurable growth in the MENA region's largest market.",
     ],
   },
   {
@@ -728,7 +728,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Qatar has one of the highest internet penetration rates in the world at over 99%. Businesses in this affluent market need premium digital marketing strategies to reach high-value consumers.",
       "Doha's business landscape is highly competitive, with companies vying for attention from both local and expatriate audiences. Bilingual Arabic-English SEO strategies are essential for success.",
-      "Our Qatar-focused services include technical SEO, Google Ads, luxury-focused web design, and bilingual content — helping businesses thrive in one of the world's wealthiest markets.",
+      "Our Qatar-focused services include technical SEO, Google Ads, luxury-focused web design, and bilingual content - helping businesses thrive in one of the world's wealthiest markets.",
     ],
   },
   {
@@ -743,7 +743,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Kuwait has a highly connected population with over 98% internet penetration. Digital marketing is essential for businesses looking to reach Kuwait's tech-savvy, affluent consumers.",
       "The Kuwaiti market demands bilingual Arabic-English digital strategies that resonate with both local and expatriate audiences across e-commerce, real estate, and professional services.",
-      "Our Kuwait-focused services include technical SEO, Google Ads, mobile-first web design, and Arabic content strategy — driving growth in one of the Gulf's most connected markets.",
+      "Our Kuwait-focused services include technical SEO, Google Ads, mobile-first web design, and Arabic content strategy - driving growth in one of the Gulf's most connected markets.",
     ],
   },
   {
@@ -758,7 +758,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Bahrain is a key financial and business hub in the Gulf with nearly universal internet access. Businesses need sharp digital marketing to stand out in this compact but competitive market.",
       "As a gateway between East and West, Bahrain's businesses serve diverse audiences requiring multilingual digital strategies spanning Arabic, English, and regional content.",
-      "Our Bahrain-focused services include technical SEO, Google Ads, responsive web design, and bilingual content — helping businesses capture opportunities in the Gulf's most dynamic fintech hub.",
+      "Our Bahrain-focused services include technical SEO, Google Ads, responsive web design, and bilingual content - helping businesses capture opportunities in the Gulf's most dynamic fintech hub.",
     ],
   },
   {
@@ -773,7 +773,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Oman's digital transformation is accelerating with the country's Vision 2040 initiative driving increased internet adoption and e-commerce growth across all sectors.",
       "Muscat is Oman's commercial center where businesses face growing online competition. Localized SEO strategies in Arabic and English are essential for reaching Oman's diverse consumer base.",
-      "Our Oman-focused services include technical SEO, Google Ads, responsive web design, and bilingual content — supporting businesses in one of the Gulf's fastest-diversifying economies.",
+      "Our Oman-focused services include technical SEO, Google Ads, responsive web design, and bilingual content - supporting businesses in one of the Gulf's fastest-diversifying economies.",
     ],
   },
   {
@@ -788,7 +788,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Jordan is a growing tech hub in the Middle East with a young, digitally-savvy population. Businesses that invest in SEO and digital marketing can capture significant opportunities in this emerging market.",
       "Amman's startup ecosystem and established businesses alike need professional digital marketing to compete in an increasingly online marketplace spanning the Levant region.",
-      "Our Jordan-focused services include technical SEO, Google Ads, responsive web design, and Arabic content strategy — driving growth for businesses across the Jordanian market.",
+      "Our Jordan-focused services include technical SEO, Google Ads, responsive web design, and Arabic content strategy - driving growth for businesses across the Jordanian market.",
     ],
   },
   {
@@ -803,7 +803,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Sri Lanka's digital market is growing with over 15 million internet users and increasing e-commerce adoption. Businesses need professional SEO to capture this growing online audience.",
       "Colombo is Sri Lanka's business capital where companies face increasing digital competition. Localized strategies in English, Sinhala, and Tamil help businesses reach diverse audiences.",
-      "Our Sri Lanka-focused services include technical SEO, Google Ads, responsive web design, and multilingual content — driving growth in South Asia's emerging island economy.",
+      "Our Sri Lanka-focused services include technical SEO, Google Ads, responsive web design, and multilingual content - driving growth in South Asia's emerging island economy.",
     ],
   },
   {
@@ -818,7 +818,7 @@ export const countryHubData: CountryHubData[] = [
     whyContent: [
       "Nepal's internet usage is surging with over 25 million users coming online. Businesses that establish strong digital presence now will dominate as the market matures.",
       "Kathmandu's growing business ecosystem needs professional digital marketing to compete in an increasingly online marketplace. Tourism, education, and e-commerce sectors are leading digital adoption.",
-      "Our Nepal-focused services include technical SEO, Google Ads, responsive web design, and Nepali/English content — helping businesses capture Nepal's rapidly growing digital audience.",
+      "Our Nepal-focused services include technical SEO, Google Ads, responsive web design, and Nepali/English content - helping businesses capture Nepal's rapidly growing digital audience.",
     ],
   },
 ];

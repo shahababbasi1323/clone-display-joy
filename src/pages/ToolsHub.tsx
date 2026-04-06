@@ -46,7 +46,7 @@ const popularSlugs = [
 
 const ToolsHub = () => {
   useSeoMeta({
-    title: "75+ Free SEO Tools — Keyword Research, Technical SEO & More | Shahab Abbasi",
+    title: "75+ Free SEO Tools - Keyword Research, Technical SEO & More | Shahab Abbasi",
     description: "Access 75+ free SEO tools for keyword research, content optimization, technical audits, backlink analysis, local SEO, SERP previews, and PPC calculators. No signup required.",
     canonical: "https://shahababbasi.com/tools",
   });
@@ -81,7 +81,7 @@ const ToolsHub = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-10">
             <div className="p-3 rounded-lg bg-accent/10 w-fit mx-auto mb-4"><Wrench className="h-8 w-8 text-accent" /></div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Free <span className="text-gradient">SEO Tools</span></h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{totalTools}+ powerful tools to help you optimize your website's search performance and ad campaigns — completely free.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{totalTools}+ powerful tools to help you optimize your website's search performance and ad campaigns - completely free.</p>
           </motion.div>
 
           {/* Search Bar */}

@@ -12,7 +12,7 @@ const ResourceThankYou = () => {
   const downloadUrl = searchParams.get("url") || "";
 
   useSeoMeta({
-    title: "Thank You — Your Resource is Ready | Shahab Abbasi",
+    title: "Thank You - Your Resource is Ready | Shahab Abbasi",
     description: "Your free SEO resource is ready to download. Check your email for a copy too!",
     canonical: "https://shahababbasi.com/free-seo-resources/thank-you",
   });

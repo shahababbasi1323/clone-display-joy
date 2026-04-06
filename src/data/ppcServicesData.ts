@@ -51,7 +51,7 @@ export const ppcServicesData: PpcServiceData[] = [
     whatIs: {
       title: "What is Google Ads Management?",
       description:
-        "Google Ads management involves creating, optimizing, and scaling paid search campaigns across Google's advertising network — including Search, Display, Shopping, and YouTube — to drive qualified traffic and measurable conversions.",
+        "Google Ads management involves creating, optimizing, and scaling paid search campaigns across Google's advertising network - including Search, Display, Shopping, and YouTube - to drive qualified traffic and measurable conversions.",
       points: [
         "Search campaign setup targeting high-intent buyer keywords",
         "Display network campaigns for brand awareness and reach",
@@ -83,10 +83,10 @@ export const ppcServicesData: PpcServiceData[] = [
     ],
     pricing: { range: "Starting at $1,000/month + ad spend", note: "Management fee based on ad spend tier. Minimum $2,000/month ad budget recommended." },
     faqs: [
-      { q: "How much should I spend on Google Ads?", a: "We recommend a minimum of $2,000/month in ad spend for meaningful results. The ideal budget depends on your industry, competition, and goals — we'll recommend the right level during our strategy call." },
+      { q: "How much should I spend on Google Ads?", a: "We recommend a minimum of $2,000/month in ad spend for meaningful results. The ideal budget depends on your industry, competition, and goals - we'll recommend the right level during our strategy call." },
       { q: "How quickly will I see results from Google Ads?", a: "Unlike SEO, PPC delivers traffic immediately. However, optimization takes 2-4 weeks to gather enough data. Most clients see strong ROI improvements within the first 60 days." },
       { q: "Do you manage Shopping campaigns?", a: "Yes! We manage Google Shopping campaigns including feed optimization, product group segmentation, and Performance Max campaigns for e-commerce clients." },
-      { q: "What's your management fee structure?", a: "Our fee is a flat monthly rate based on your ad spend tier — not a percentage. This aligns our incentives with your ROI rather than encouraging higher spend." },
+      { q: "What's your management fee structure?", a: "Our fee is a flat monthly rate based on your ad spend tier - not a percentage. This aligns our incentives with your ROI rather than encouraging higher spend." },
       { q: "Can you take over an existing Google Ads account?", a: "Absolutely. We audit your current account, identify inefficiencies, and restructure campaigns for better performance. You always retain ownership of your account." },
     ],
     relatedServices: ["social-media-ads", "remarketing-retargeting", "ppc-audit-strategy"],
@@ -129,7 +129,7 @@ export const ppcServicesData: PpcServiceData[] = [
       title: "Our Social Ads Process",
       steps: [
         { title: "Audience Research", desc: "Define buyer personas and build custom audiences using first-party data and platform insights." },
-        { title: "Creative Strategy", desc: "Design scroll-stopping ad creatives — images, videos, carousels — tailored to each platform." },
+        { title: "Creative Strategy", desc: "Design scroll-stopping ad creatives - images, videos, carousels - tailored to each platform." },
         { title: "Campaign Launch", desc: "Set up campaigns with proper pixel tracking, conversion events, and budget allocation." },
         { title: "Testing & Optimization", desc: "Run A/B tests on creatives, copy, and audiences. Optimize for the lowest cost per acquisition." },
         { title: "Scale & Report", desc: "Scale winning ad sets, expand to new audiences, and deliver transparent performance reports." },
@@ -148,7 +148,7 @@ export const ppcServicesData: PpcServiceData[] = [
     pricing: { range: "Starting at $800/month + ad spend", note: "Creative production included. Minimum $1,500/month ad budget recommended." },
     faqs: [
       { q: "Which social platform is best for my business?", a: "It depends on your audience. B2C businesses often thrive on Facebook/Instagram, B2B on LinkedIn, and brands targeting younger demographics on TikTok. We'll recommend the right mix during our strategy call." },
-      { q: "Do you create the ad creatives?", a: "Yes! Our service includes ad creative design — images, carousels, and short-form video content optimized for each platform's best practices." },
+      { q: "Do you create the ad creatives?", a: "Yes! Our service includes ad creative design - images, carousels, and short-form video content optimized for each platform's best practices." },
       { q: "How do you measure social ad success?", a: "We track cost per lead/acquisition, ROAS (Return on Ad Spend), click-through rates, and conversion rates. Every metric ties back to your business goals." },
       { q: "Can social ads work for B2B companies?", a: "Absolutely. LinkedIn Ads are incredibly effective for B2B targeting by job title, company size, and industry. We also use Facebook for B2B retargeting and awareness campaigns." },
     ],
@@ -191,7 +191,7 @@ export const ppcServicesData: PpcServiceData[] = [
     process: {
       title: "Our Remarketing Process",
       steps: [
-        { title: "Audience Segmentation", desc: "Segment visitors by behavior — page views, cart abandonment, time on site — for personalized messaging." },
+        { title: "Audience Segmentation", desc: "Segment visitors by behavior - page views, cart abandonment, time on site - for personalized messaging." },
         { title: "Pixel & Tag Setup", desc: "Implement tracking pixels across Google, Meta, and LinkedIn for precise audience building." },
         { title: "Creative Development", desc: "Design dynamic and static ad creatives tailored to each audience segment and funnel stage." },
         { title: "Campaign Deployment", desc: "Launch remarketing campaigns with frequency caps and exclusion lists to avoid ad fatigue." },
@@ -241,7 +241,7 @@ export const ppcServicesData: PpcServiceData[] = [
     whatIs: {
       title: "What is a PPC Audit?",
       description:
-        "A PPC audit is a comprehensive review of your paid advertising accounts — including campaign structure, keyword targeting, ad copy, bidding strategy, and conversion tracking — to identify inefficiencies and opportunities for improvement.",
+        "A PPC audit is a comprehensive review of your paid advertising accounts - including campaign structure, keyword targeting, ad copy, bidding strategy, and conversion tracking - to identify inefficiencies and opportunities for improvement.",
       points: [
         "Account structure and campaign architecture review",
         "Quality Score analysis and improvement recommendations",
@@ -338,7 +338,7 @@ export const ppcServicesData: PpcServiceData[] = [
     faqs: [
       { q: "What are Google Local Services Ads?", a: "LSAs appear at the very top of Google search results with a 'Google Guaranteed' or 'Google Screened' badge. You only pay per lead (not per click), making them highly cost-effective for service businesses." },
       { q: "How small of an area can you target?", a: "We can target down to specific zip codes, neighborhoods, or a custom radius around your business location. This ensures your budget is spent only on potential customers in your service area." },
-      { q: "Can local PPC work alongside local SEO?", a: "Absolutely — they're complementary. PPC delivers immediate visibility while SEO builds long-term organic presence. Together, they dominate both paid and organic local search results." },
+      { q: "Can local PPC work alongside local SEO?", a: "Absolutely - they're complementary. PPC delivers immediate visibility while SEO builds long-term organic presence. Together, they dominate both paid and organic local search results." },
       { q: "Do you integrate with Google Business Profile?", a: "Yes! We connect your Google Ads with your Google Business Profile for location extensions, Maps ads, and unified local presence across Google's ecosystem." },
     ],
     relatedServices: ["google-ads-management", "social-media-ads", "ppc-audit-strategy"],

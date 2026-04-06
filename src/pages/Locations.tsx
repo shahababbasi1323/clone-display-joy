@@ -72,7 +72,7 @@ const Locations = () => {
               <Globe className="h-8 w-8 text-primary" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-5">
-              Your <span className="text-gradient">Digital Marketing Agency</span> — Worldwide
+              Your <span className="text-gradient">Digital Marketing Agency</span> - Worldwide
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We help businesses in {totalCities}+ cities across 40+ countries grow with expert SEO, PPC management, web design &amp; development, content writing, and social media marketing. Whether you need a complete digital strategy or a specialized service, our team delivers measurable results tailored to your local market.
@@ -183,15 +183,15 @@ const Locations = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-muted-foreground">
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Full-Stack Digital Expertise</h4>
-                <p>From SEO and PPC to custom web development, responsive web design, content writing, and social media management — we offer every digital marketing service under one roof so your brand stays consistent across all channels.</p>
+                <p>From SEO and PPC to custom web development, responsive web design, content writing, and social media management - we offer every digital marketing service under one roof so your brand stays consistent across all channels.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Local Market Intelligence</h4>
-                <p>We don't just run ads — we study your local competitors, audience behavior, and search trends to build hyper-targeted strategies that outperform generic agencies in your city.</p>
+                <p>We don't just run ads - we study your local competitors, audience behavior, and search trends to build hyper-targeted strategies that outperform generic agencies in your city.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Data-Driven Results</h4>
-                <p>Every campaign is backed by analytics. Whether it's organic traffic growth, PPC conversion rates, social media engagement, or website performance — we track, report, and optimize for measurable ROI.</p>
+                <p>Every campaign is backed by analytics. Whether it's organic traffic growth, PPC conversion rates, social media engagement, or website performance - we track, report, and optimize for measurable ROI.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Global Reach, Local Focus</h4>
@@ -205,7 +205,7 @@ const Locations = () => {
             <div className="glass rounded-2xl p-10 md:p-16 glow-primary max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold mb-4">Ready to Grow Your Business?</h2>
               <p className="text-muted-foreground mb-6">
-                Get a free digital marketing audit — covering SEO, PPC, web design, content, and social media — customized for your city and industry.
+                Get a free digital marketing audit - covering SEO, PPC, web design, content, and social media - customized for your city and industry.
               </p>
               <Link to="/free-seo-audit">
                 <Button size="lg" className="glow-primary">

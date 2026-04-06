@@ -118,7 +118,7 @@ const globalSchemas = [
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "Shahab Abbasi — SEO Expert & Digital Marketing",
+    name: "Shahab Abbasi - SEO Expert & Digital Marketing",
     url: SITE_URL,
     publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization` },
     inLanguage: "en",
