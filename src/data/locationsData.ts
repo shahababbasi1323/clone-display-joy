@@ -87,11 +87,6 @@ const fr = (
   hreflangAlternates: alt, region,
 });
 
-const de = (
-  city: string, slugCity: string, country: string, cc: string,
-  nearby: string[], alt: { lang: string; href: string }[] = [], region?: string
-): LocationData => ({
-  slug: `seo-services-${slugCity}`,
 const deDescTemplates = [
   (c: string, co: string) => `SEO-Agentur in ${c}, ${co}. Technisches SEO, strategischer Linkaufbau und datengetriebene Content-Optimierung für nachhaltiges Wachstum. Kostenloses SEO-Audit.`,
   (c: string, co: string) => `Professionelle Suchmaschinenoptimierung in ${c}. Wir steigern Ihre Sichtbarkeit in ${co} durch technische Audits, Content-Strategie und qualitatives Linkbuilding. Gratis Analyse.`,
