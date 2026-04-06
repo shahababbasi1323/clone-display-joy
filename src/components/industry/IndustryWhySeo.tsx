@@ -22,7 +22,7 @@ const IndustryWhySeo = ({ industry }: { industry: IndustryData }) => {
             Why <span className="text-gradient">{s}</span> Businesses Need SEO in 2026
           </h2>
           <p className="text-muted-foreground max-w-3xl leading-relaxed mb-10">
-            The {sl} industry is increasingly competitive online. With 93% of online experiences beginning with a search engine, your {sl} business must rank prominently for relevant keywords to capture market share. Search engine optimization for {sl} isn't optional — it's the foundation of sustainable digital growth, improved online visibility, and measurable return on investment.
+            The {sl} industry is increasingly competitive online. With 93% of online experiences beginning with a search engine, your {sl} business must rank prominently for relevant keywords to capture market share. Search engine optimization for {sl} isn't optional - it's the foundation of sustainable digital growth, improved online visibility, and measurable return on investment.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

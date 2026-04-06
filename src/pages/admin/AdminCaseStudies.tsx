@@ -61,8 +61,8 @@ const AdminCaseStudies = () => {
             {items.map((i) => (
               <tr key={i.id} className="border-b border-border/50 hover:bg-secondary/30">
                 <td className="p-4 font-medium">{i.title}</td>
-                <td className="p-4 text-muted-foreground">{i.client_name || "—"}</td>
-                <td className="p-4 text-muted-foreground">{i.industry || "—"}</td>
+                <td className="p-4 text-muted-foreground">{i.client_name || "-"}</td>
+                <td className="p-4 text-muted-foreground">{i.industry || "-"}</td>
                 <td className="p-4"><span className={`px-2 py-1 rounded-full text-xs ${i.published ? "bg-accent/20 text-accent" : "bg-muted text-muted-foreground"}`}>{i.published ? "Published" : "Draft"}</span></td>
                 <td className="p-4 flex gap-2">
                   <button onClick={() => setEditing({ id: i.id, slug: i.slug, title: i.title, meta_title: i.meta_title || "", meta_description: i.meta_description || "", client_name: i.client_name || "", industry: i.industry || "", challenge: i.challenge || "", solution: i.solution || "", results: i.results || "", content: i.content, cover_image: i.cover_image || "", published: i.published ?? false })} className="p-1.5 rounded hover:bg-secondary"><Pencil className="h-4 w-4" /></button>

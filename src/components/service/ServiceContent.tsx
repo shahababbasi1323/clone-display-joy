@@ -18,7 +18,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
   "on-page-seo": {
     title: "Why On-Page SEO Drives Sustainable Organic Traffic",
     paragraphs: [
-      "On-page search optimization is the practice of aligning every element on your web pages — from title tags and meta descriptions to heading hierarchy and content structure — with the keywords and search intent your target audience uses on Google, Bing, and AI search platforms.",
+      "On-page search optimization is the practice of aligning every element on your web pages - from title tags and meta descriptions to heading hierarchy and content structure - with the keywords and search intent your target audience uses on Google, Bing, and AI search platforms.",
       "Effective on-page SEO goes beyond keyword stuffing. It involves semantic SEO, latent semantic indexing (LSI) keywords, entity optimization, content depth analysis, internal linking architecture, and user engagement signals. Our approach ensures your pages satisfy both search engine algorithms and real human readers.",
       "From E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) signals to content freshness and topical relevance, our on-page optimization covers every ranking factor that determines your visibility in organic search results and featured snippets.",
     ],
@@ -26,7 +26,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
   "off-page-seo": {
     title: "Why Off-Page SEO & Link Building Builds Domain Authority",
     paragraphs: [
-      "Off-page SEO encompasses all optimization activities performed outside your website to improve search engine rankings. The most critical component is link building — earning high-quality backlinks from authoritative, relevant websites that signal trust to Google's PageRank algorithm.",
+      "Off-page SEO encompasses all optimization activities performed outside your website to improve search engine rankings. The most critical component is link building - earning high-quality backlinks from authoritative, relevant websites that signal trust to Google's PageRank algorithm.",
       "Our white-hat link acquisition strategies include manual outreach, guest posting on industry publications, digital PR campaigns, broken link building, resource page link development, and HARO (Help a Reporter Out) submissions. Every backlink we build is from a real, editorially relevant website.",
       "Beyond backlinks, off-page SEO includes brand mention optimization, social signals, forum participation, and entity building across the web. These factors collectively strengthen your domain authority and improve your competitive positioning in search results.",
     ],
@@ -52,7 +52,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
     paragraphs: [
       "Generative Engine Optimization (GEO) is the emerging discipline of making your brand visible in AI-powered search engines like ChatGPT, Google AI Overviews, Perplexity, Gemini, and Bing Copilot. As AI increasingly mediates how users find information, GEO ensures your business is cited and recommended.",
       "Our GEO strategy focuses on entity optimization, knowledge graph inclusion, structured data implementation, authoritative content creation, and brand mention building across sources that AI models use for training and retrieval-augmented generation (RAG).",
-      "Traditional SEO and GEO are complementary — strong search fundamentals support AI visibility. However, GEO requires additional focus on factual accuracy, citation-worthy content, and entity relationships that make your brand a trusted source in AI-generated responses.",
+      "Traditional SEO and GEO are complementary - strong search fundamentals support AI visibility. However, GEO requires additional focus on factual accuracy, citation-worthy content, and entity relationships that make your brand a trusted source in AI-generated responses.",
     ],
   },
   "aeo-optimization": {
@@ -60,14 +60,14 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
     paragraphs: [
       "Answer Engine Optimization (AEO) is the strategy of structuring your content to appear as the direct answer in featured snippets, People Also Ask boxes, voice search results, and AI-generated answer panels. With zero-click searches exceeding 60% of all Google queries, AEO ensures your brand captures visibility even when users don't click through.",
       "Our AEO methodology includes question-based content structuring, FAQ schema implementation, concise answer formatting, conversational keyword targeting for voice search, and People Also Ask (PAA) mining. We identify the exact queries your audience asks and position your content as the definitive answer.",
-      "AEO and GEO work hand-in-hand — content optimized for featured snippets and direct answers is also the content AI engines prefer to cite. By mastering both, your brand becomes the go-to authority across traditional search, voice assistants, and generative AI platforms.",
+      "AEO and GEO work hand-in-hand - content optimized for featured snippets and direct answers is also the content AI engines prefer to cite. By mastering both, your brand becomes the go-to authority across traditional search, voice assistants, and generative AI platforms.",
     ],
   },
   "content-strategy": {
     title: "Why a Data-Driven Content Strategy Builds Topical Authority",
     paragraphs: [
-      "SEO content strategy goes beyond publishing blog posts — it's about building topical authority through strategic topic clustering, pillar page architecture, and content gap analysis. Search engines reward websites that demonstrate comprehensive expertise on a subject through interconnected, high-quality content.",
-      "Our content strategy process includes competitor content audits, keyword opportunity mapping, editorial calendar development, content brief creation with target keywords and LSI terms, and ongoing performance optimization. Every piece of content is designed to serve a specific purpose in your SEO funnel — from awareness to conversion.",
+      "SEO content strategy goes beyond publishing blog posts - it's about building topical authority through strategic topic clustering, pillar page architecture, and content gap analysis. Search engines reward websites that demonstrate comprehensive expertise on a subject through interconnected, high-quality content.",
+      "Our content strategy process includes competitor content audits, keyword opportunity mapping, editorial calendar development, content brief creation with target keywords and LSI terms, and ongoing performance optimization. Every piece of content is designed to serve a specific purpose in your SEO funnel - from awareness to conversion.",
       "Content freshness, E-E-A-T signals, semantic depth, and internal linking between related articles all contribute to how Google evaluates your topical authority. We help you build a content ecosystem where each piece strengthens every other, creating compounding organic traffic growth over time.",
     ],
   },
@@ -84,7 +84,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
     paragraphs: [
       "WordPress powers over 40% of all websites, making it the most popular CMS in the world. While WordPress is inherently SEO-friendly, improper configuration of themes, plugins, caching, and security settings can severely limit your search engine visibility and page performance.",
       "Our WordPress SEO services include Yoast SEO or Rank Math configuration, permalink structure optimization, database cleanup, plugin conflict resolution, wp-cron optimization, image optimization with WebP conversion, caching layer setup (WP Rocket, LiteSpeed, Cloudflare), and security hardening against SEO spam attacks that can get your site deindexed.",
-      "From small business websites to large WordPress multisite installations, we optimize every layer of your WordPress stack — hosting environment, PHP version, theme code, plugin ecosystem, and content delivery — to achieve top Core Web Vitals scores and maximum search engine crawl efficiency.",
+      "From small business websites to large WordPress multisite installations, we optimize every layer of your WordPress stack - hosting environment, PHP version, theme code, plugin ecosystem, and content delivery - to achieve top Core Web Vitals scores and maximum search engine crawl efficiency.",
     ],
   },
   "international-seo": {
@@ -106,15 +106,15 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
   "keyword-research": {
     title: "Why Strategic Keyword Research Is the Foundation of Every SEO Campaign",
     paragraphs: [
-      "Keyword research is the process of discovering, analyzing, and prioritizing the search terms your target audience uses to find products, services, and information. Without data-driven keyword research, SEO efforts are directionless — you risk targeting keywords that are too competitive, too low-volume, or misaligned with buyer intent.",
+      "Keyword research is the process of discovering, analyzing, and prioritizing the search terms your target audience uses to find products, services, and information. Without data-driven keyword research, SEO efforts are directionless - you risk targeting keywords that are too competitive, too low-volume, or misaligned with buyer intent.",
       "Our keyword research methodology includes seed keyword expansion using multiple data sources (Ahrefs, SEMrush, Google Keyword Planner, AnswerThePublic), search intent classification (informational, navigational, commercial, transactional), keyword difficulty analysis, competitor keyword gap identification, and long-tail keyword mining for quick-win opportunities.",
-      "The output is a comprehensive keyword strategy document with 200-1000+ prioritized keywords mapped to existing and planned pages. We classify every keyword by intent, volume, difficulty, and business value — ensuring your content calendar, on-page optimization, and link building efforts are all aligned toward the highest-ROI opportunities.",
+      "The output is a comprehensive keyword strategy document with 200-1000+ prioritized keywords mapped to existing and planned pages. We classify every keyword by intent, volume, difficulty, and business value - ensuring your content calendar, on-page optimization, and link building efforts are all aligned toward the highest-ROI opportunities.",
     ],
   },
   "google-business-profile": {
     title: "Why Google Business Profile Optimization Drives Local Leads",
     paragraphs: [
-      "Google Business Profile (formerly Google My Business) is the single most impactful element of local SEO. A fully optimized GBP listing can dramatically increase your visibility in Google Maps, the local 3-pack, and location-based search results — driving phone calls, direction requests, and website visits from high-intent local customers.",
+      "Google Business Profile (formerly Google My Business) is the single most impactful element of local SEO. A fully optimized GBP listing can dramatically increase your visibility in Google Maps, the local 3-pack, and location-based search results - driving phone calls, direction requests, and website visits from high-intent local customers.",
       "Our GBP optimization covers every ranking factor: primary and secondary category selection, business description with local keywords, service and product listings, photo and video optimization (geotagged images, virtual tours), Google Posts for freshness signals, Q&A management, review generation strategies, and attribute optimization.",
       "Beyond initial setup, ongoing GBP management is critical. Regular posting, review responses, photo updates, and performance monitoring all signal to Google that your business is active and engaged. We provide continuous GBP management that keeps your listing competitive in an increasingly crowded local search landscape.",
     ],
@@ -122,7 +122,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
   "link-building": {
     title: "Why Quality Link Building Remains Google's Top Ranking Factor",
     paragraphs: [
-      "Backlinks remain one of Google's three most important ranking signals alongside content and RankBrain. Link building is the process of earning hyperlinks from external websites to yours — each quality backlink acts as a vote of confidence that tells search engines your content is valuable, credible, and authoritative.",
+      "Backlinks remain one of Google's three most important ranking signals alongside content and RankBrain. Link building is the process of earning hyperlinks from external websites to yours - each quality backlink acts as a vote of confidence that tells search engines your content is valuable, credible, and authoritative.",
       "Our link building approach is 100% white-hat and manual. We use editorial outreach to niche-relevant websites (DR 30-80+), guest post creation and placement on industry publications, digital PR for media coverage and brand mentions, broken link building, resource page acquisitions, and HARO journalist query responses. Every link is earned through genuine relationships and quality content.",
       "Link velocity, anchor text diversity, referring domain variety, and topical relevance all factor into how Google evaluates your backlink profile. We build a natural, diversified link portfolio that avoids algorithmic penalties while steadily increasing your domain authority and keyword rankings across competitive SERPs.",
     ],
@@ -131,7 +131,7 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
     title: "Why Expert SEO Consulting Accelerates In-House Team Performance",
     paragraphs: [
       "SEO consulting provides your business with expert strategic guidance without the full cost of outsourced execution. Whether you have an in-house marketing team that needs direction, a development team implementing technical changes, or leadership that needs an SEO roadmap, consulting bridges the gap between knowledge and action.",
-      "Our consulting engagements include comprehensive SEO strategy development, team training and mentoring, vendor evaluation, algorithm update impact assessments, competitive landscape analysis, and ongoing advisory support. We provide the expertise — your team handles the implementation with our guidance.",
+      "Our consulting engagements include comprehensive SEO strategy development, team training and mentoring, vendor evaluation, algorithm update impact assessments, competitive landscape analysis, and ongoing advisory support. We provide the expertise - your team handles the implementation with our guidance.",
       "For organizations building internal SEO capabilities, consulting accelerates the learning curve dramatically. Instead of months of trial-and-error, your team gains proven frameworks, documented processes, and expert oversight that ensures every SEO initiative is aligned with best practices and business objectives.",
     ],
   },
@@ -146,9 +146,9 @@ const lsiContentMap: Record<string, { title: string; paragraphs: string[] }> = {
   "schema-markup": {
     title: "Why Schema Markup Unlocks Rich Results and Enhanced SERP Visibility",
     paragraphs: [
-      "Schema markup (structured data) is JSON-LD code that helps search engines understand the context and meaning of your content. When properly implemented, schema can trigger rich results in Google — star ratings, FAQ dropdowns, product prices, event details, how-to steps, and more — dramatically increasing your click-through rate from search results.",
+      "Schema markup (structured data) is JSON-LD code that helps search engines understand the context and meaning of your content. When properly implemented, schema can trigger rich results in Google - star ratings, FAQ dropdowns, product prices, event details, how-to steps, and more - dramatically increasing your click-through rate from search results.",
       "Our schema implementation covers all major types: LocalBusiness for local SEO, Product and Offer for e-commerce, FAQ and HowTo for informational content, Article and BlogPosting for publishers, Event for time-sensitive content, Person and Organization for brand entities, BreadcrumbList for navigation, and VideoObject for multimedia content.",
-      "Schema markup also plays a critical role in AI search optimization. Structured data helps AI engines like ChatGPT, Perplexity, and Google AI Overviews understand your content's relationships, facts, and context — making your pages more likely to be cited in AI-generated responses and knowledge panels.",
+      "Schema markup also plays a critical role in AI search optimization. Structured data helps AI engines like ChatGPT, Perplexity, and Google AI Overviews understand your content's relationships, facts, and context - making your pages more likely to be cited in AI-generated responses and knowledge panels.",
     ],
   },
   "seo-training": {

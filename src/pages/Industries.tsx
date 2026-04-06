@@ -10,7 +10,7 @@ import { useSeoMeta } from "@/hooks/useSeoMeta";
 
 const Industries = () => {
   useSeoMeta({
-    title: "SEO Services by Industry — Healthcare, Legal, E-commerce & More | Shahab Abbasi",
+    title: "SEO Services by Industry - Healthcare, Legal, E-commerce & More | Shahab Abbasi",
     description: "Industry-specific SEO strategies for 18+ niches including healthcare, legal, e-commerce, real estate, finance, education, and technology. Get a custom SEO plan tailored to your industry.",
     canonical: "https://shahababbasi.com/industries",
   });

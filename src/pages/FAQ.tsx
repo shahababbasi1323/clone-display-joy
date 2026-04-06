@@ -12,7 +12,7 @@ const faqCategories = [
   {
     name: "General SEO",
     faqs: [
-      { q: "What is SEO and why does my business need it?", a: "SEO (Search Engine Optimization) is the process of improving your website's visibility in search engine results. It drives organic traffic, builds credibility, and generates leads — all without paying for ads. Every business with a website needs SEO to be found by potential customers." },
+      { q: "What is SEO and why does my business need it?", a: "SEO (Search Engine Optimization) is the process of improving your website's visibility in search engine results. It drives organic traffic, builds credibility, and generates leads - all without paying for ads. Every business with a website needs SEO to be found by potential customers." },
       { q: "How long does it take to see SEO results?", a: "Typically 3-6 months for significant results. Quick wins from technical fixes can show improvement within weeks, but sustainable ranking improvements and traffic growth require consistent effort over months." },
       { q: "Is SEO worth the investment for small businesses?", a: "Absolutely. SEO provides one of the highest ROIs of any digital marketing channel. Unlike paid ads, the traffic you earn through SEO continues flowing even after you stop investing. For small businesses, local SEO in particular can be a game-changer." },
       { q: "What's the difference between SEO and SEM?", a: "SEO focuses on organic (unpaid) search results, while SEM (Search Engine Marketing) includes paid advertising like Google Ads. SEO takes longer but provides sustainable results; SEM gives immediate visibility but stops when you stop paying." },
@@ -54,7 +54,7 @@ const faqCategories = [
       { q: "What does your SEO process look like?", a: "Our process: 1) Discovery call & audit, 2) Strategy development, 3) Technical fixes, 4) On-page optimization, 5) Content creation, 6) Link building, 7) Monthly reporting & strategy refinement. We keep you informed at every step." },
       { q: "Do you work with international clients?", a: "Yes! We work with clients across 5+ countries including Pakistan, UAE, UK, USA, Canada, and various European countries. All communication is done remotely via video calls, email, and project management tools." },
       { q: "What's included in the free SEO audit?", a: "Our free audit covers technical health, on-page SEO analysis, backlink profile review, keyword opportunity assessment, competitor analysis, and actionable recommendations. It's a comprehensive 15-20 page report delivered within 24 hours." },
-      { q: "How do you measure SEO success?", a: "We track key metrics including organic traffic, keyword rankings, conversion rates, click-through rates, domain authority, and most importantly — revenue impact. Monthly reports cover all metrics with clear insights." },
+      { q: "How do you measure SEO success?", a: "We track key metrics including organic traffic, keyword rankings, conversion rates, click-through rates, domain authority, and most importantly - revenue impact. Monthly reports cover all metrics with clear insights." },
     ],
   },
   {
@@ -71,8 +71,8 @@ const faqCategories = [
     faqs: [
       { q: "What is link building and why is it important?", a: "Link building is the process of acquiring hyperlinks from other websites to yours. These backlinks are one of Google's top ranking factors. Quality backlinks signal authority and trust, helping your site rank higher for competitive keywords." },
       { q: "What link building strategies do you use?", a: "We use white-hat strategies including guest posting on relevant blogs, digital PR, broken link building, resource page outreach, HARO (Help a Reporter Out), and creating link-worthy content like infographics and original research." },
-      { q: "How many backlinks do I need to rank?", a: "There's no magic number — it depends on your industry, competition, and target keywords. Quality matters far more than quantity. A few authoritative links from relevant sites can outperform hundreds of low-quality ones." },
-      { q: "Do you guarantee a certain number of backlinks per month?", a: "Yes, our Growth plan includes 10 quality backlinks per month and Enterprise includes 25. All links are from relevant, authoritative sites with real traffic — never from link farms or PBNs." },
+      { q: "How many backlinks do I need to rank?", a: "There's no magic number - it depends on your industry, competition, and target keywords. Quality matters far more than quantity. A few authoritative links from relevant sites can outperform hundreds of low-quality ones." },
+      { q: "Do you guarantee a certain number of backlinks per month?", a: "Yes, our Growth plan includes 10 quality backlinks per month and Enterprise includes 25. All links are from relevant, authoritative sites with real traffic - never from link farms or PBNs." },
     ],
   },
   {

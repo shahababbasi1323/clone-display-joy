@@ -24,7 +24,7 @@ const IndustryContent = ({ industry }: { industry: IndustryData }) => {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
-              Growing a successful {sl} business online requires more than just SEO. It takes a complete digital strategy — from professional web design and custom web development to expert content writing, PPC advertising, and social media management. Your {sl} business must appear prominently across Google, Bing, AI-powered search engines like ChatGPT and Perplexity, social media platforms, and paid search for queries like <strong>{kws}</strong>, and dozens of related long-tail keywords.
+              Growing a successful {sl} business online requires more than just SEO. It takes a complete digital strategy - from professional web design and custom web development to expert content writing, PPC advertising, and social media management. Your {sl} business must appear prominently across Google, Bing, AI-powered search engines like ChatGPT and Perplexity, social media platforms, and paid search for queries like <strong>{kws}</strong>, and dozens of related long-tail keywords.
             </p>
 
             <h3 className="text-xl font-bold !text-foreground pt-2">Web Design & Development for {s}</h3>
@@ -34,7 +34,7 @@ const IndustryContent = ({ industry }: { industry: IndustryData }) => {
 
             <h3 className="text-xl font-bold !text-foreground pt-2">On-Page SEO & Content Writing for {s}</h3>
             <p>
-              Effective <Link to="/services/on-page-seo" className="text-primary hover:underline">on-page SEO</Link> for {sl} starts with keyword-optimized title tags, compelling meta descriptions, and properly structured heading hierarchies. Our professional content writing team crafts engaging, SEO-optimized copy for every page — from service descriptions to blog articles and landing pages. This includes optimizing image alt text, internal anchor text diversity, URL slugs, and content readability scores.
+              Effective <Link to="/services/on-page-seo" className="text-primary hover:underline">on-page SEO</Link> for {sl} starts with keyword-optimized title tags, compelling meta descriptions, and properly structured heading hierarchies. Our professional content writing team crafts engaging, SEO-optimized copy for every page - from service descriptions to blog articles and landing pages. This includes optimizing image alt text, internal anchor text diversity, URL slugs, and content readability scores.
             </p>
 
             <h3 className="text-xl font-bold !text-foreground pt-2">Technical SEO Foundations</h3>
@@ -49,7 +49,7 @@ const IndustryContent = ({ industry }: { industry: IndustryData }) => {
 
             <h3 className="text-xl font-bold !text-foreground pt-2">Social Media Management for {s}</h3>
             <p>
-              Building brand awareness for your {sl} business requires strategic social media management. We create and manage content across LinkedIn, Instagram, Facebook, X, and industry-specific platforms — driving engagement, building community, and generating leads. Our social media strategies are integrated with your SEO and content writing efforts for maximum impact.
+              Building brand awareness for your {sl} business requires strategic social media management. We create and manage content across LinkedIn, Instagram, Facebook, X, and industry-specific platforms - driving engagement, building community, and generating leads. Our social media strategies are integrated with your SEO and content writing efforts for maximum impact.
             </p>
 
             <h3 className="text-xl font-bold !text-foreground pt-2">Local SEO & Content Strategy</h3>

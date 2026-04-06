@@ -178,7 +178,7 @@ export const SlugGenerator = () => {
       <Input value={text} onChange={e => setText(e.target.value)} placeholder="Enter text to convert to a URL slug..." className="text-lg" />
       {text && (
         <div className="glass rounded-xl p-4 flex justify-between items-center">
-          <code className="text-sm text-accent">{slug || "—"}</code>
+          <code className="text-sm text-accent">{slug || "-"}</code>
           <CopyButton text={slug} />
         </div>
       )}
@@ -235,7 +235,7 @@ export const HttpStatusChecker = () => {
       <Input value={code} onChange={e => setCode(e.target.value.replace(/\D/g, "").slice(0, 3))} placeholder="Enter HTTP status code (e.g. 301)" className="text-lg" />
       {status && (
         <div className="glass rounded-xl p-6">
-          <p className="text-2xl font-bold">{code} — {status.name}</p>
+          <p className="text-2xl font-bold">{code} - {status.name}</p>
           <p className="text-sm text-muted-foreground mt-3">{status.seo}</p>
         </div>
       )}

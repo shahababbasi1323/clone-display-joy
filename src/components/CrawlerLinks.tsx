@@ -1,5 +1,5 @@
 /**
- * CrawlerLinks — visually hidden internal links for search engine crawlers.
+ * CrawlerLinks - visually hidden internal links for search engine crawlers.
  * Renders every indexable page as an <a> tag so bots can discover and crawl
  * the full site graph from any page. Hidden from users via sr-only + aria-hidden.
  */
@@ -46,7 +46,7 @@ const CrawlerLinks = () => {
         <Link key={`ppc-${s.slug}`} to={`/ppc/${s.slug}`}>{s.title}</Link>
       ))}
 
-      {/* Industries (English) — deduplicated */}
+      {/* Industries (English) - deduplicated */}
       {industriesData.filter((ind, i, arr) => arr.findIndex(x => x.slug === ind.slug) === i).map((i) => (
         <Link key={`ind-${i.slug}`} to={`/industries/${i.slug}`}>{i.shortTitle}</Link>
       ))}

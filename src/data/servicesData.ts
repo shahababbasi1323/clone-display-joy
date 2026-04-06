@@ -122,7 +122,7 @@ export const servicesData: ServiceData[] = [
       { q: "How many pages can you optimize per month?", a: "This depends on your package. Starter covers 10 pages, Growth covers 25, and Enterprise offers unlimited optimization. Each page receives thorough keyword research and content improvements." },
       { q: "Do you rewrite existing content or create new?", a: "Both. We optimize existing content where possible and recommend new content creation when gaps exist in your keyword coverage or topical authority." },
       { q: "How do you choose which keywords to target?", a: "We analyze search volume, competition, relevance to your business, and search intent. We prioritize keywords that will drive qualified traffic and conversions." },
-      { q: "Will on-page SEO changes affect my site's design?", a: "On-page SEO changes are primarily about content and HTML elements. Your site's visual design remains the same — we enhance what users and search engines read." },
+      { q: "Will on-page SEO changes affect my site's design?", a: "On-page SEO changes are primarily about content and HTML elements. Your site's visual design remains the same - we enhance what users and search engines read." },
     ],
     relatedServices: ["content-strategy", "keyword-research", "technical-seo"],
     relatedTools: [
@@ -297,7 +297,7 @@ export const servicesData: ServiceData[] = [
     deliverables: ["AI visibility audit report", "Entity optimization strategy", "GEO-optimized content creation", "Knowledge graph optimization", "AI citation monitoring", "Monthly GEO performance reports", "Competitor AI visibility analysis"],
     pricing: { range: "Starting at $2,000/month", note: "Available in Enterprise package. Standalone GEO consulting available." },
     faqs: [
-      { q: "Is GEO different from SEO?", a: "Yes. While SEO focuses on ranking in traditional search results, GEO focuses on being cited by AI systems. They're complementary — strong SEO supports GEO, but GEO requires additional strategies around entity optimization and content structuring." },
+      { q: "Is GEO different from SEO?", a: "Yes. While SEO focuses on ranking in traditional search results, GEO focuses on being cited by AI systems. They're complementary - strong SEO supports GEO, but GEO requires additional strategies around entity optimization and content structuring." },
       { q: "Which AI search engines do you optimize for?", a: "We optimize for ChatGPT, Google AI Overviews, Perplexity, Gemini, Bing Copilot, and Claude. As new AI search platforms emerge, we adapt our strategies accordingly." },
       { q: "How do you track GEO results?", a: "We regularly test relevant queries across AI platforms to monitor brand mentions and citations. We also track indirect signals like website traffic from AI referrals and brand search volume." },
       { q: "How long until my brand appears in AI responses?", a: "AI visibility depends on content authority and entity strength. Most businesses see initial mentions within 2-4 months, with significant visibility improvements in 6-12 months." },
@@ -383,7 +383,7 @@ export const servicesData: ServiceData[] = [
     pricing: { range: "Starting at $1,000/month", note: "Includes strategy and 4 blog posts per month. Additional content available." },
     faqs: [
       { q: "How many blog posts do you write per month?", a: "Our standard package includes 4 SEO-optimized blog posts per month (1,500-2,500 words each). Additional content, long-form guides, and pillar pages are available at extra cost." },
-      { q: "Do you write the content or do I need to provide it?", a: "We handle everything — from keyword research and topic selection to writing, optimization, and publishing. We may ask for your input on technical topics specific to your industry." },
+      { q: "Do you write the content or do I need to provide it?", a: "We handle everything - from keyword research and topic selection to writing, optimization, and publishing. We may ask for your input on technical topics specific to your industry." },
       { q: "How long until content starts ranking?", a: "New content typically begins ranking within 2-4 months, with peak performance at 6-12 months. Consistent publishing accelerates the timeline as your topical authority grows." },
     ],
     relatedServices: ["on-page-seo", "keyword-research", "aeo-optimization"],
@@ -426,7 +426,7 @@ export const servicesData: ServiceData[] = [
     faqs: [
       { q: "Is Shopify good for SEO?", a: "Shopify is decent for SEO but has limitations like duplicate content from collections/tags, limited URL structure control, and theme-dependent page speed. Our Shopify SEO services address all these issues." },
       { q: "Can you optimize my Shopify theme?", a: "Yes! We optimize Liquid templates for speed and SEO, remove unnecessary app code, implement lazy loading, and ensure proper heading structure and schema markup." },
-      { q: "Should I use Shopify apps for SEO?", a: "We recommend minimal SEO apps — most add unnecessary bloat. We implement SEO best practices directly in your theme code for better performance." },
+      { q: "Should I use Shopify apps for SEO?", a: "We recommend minimal SEO apps - most add unnecessary bloat. We implement SEO best practices directly in your theme code for better performance." },
     ],
     relatedServices: ["ecommerce-seo", "technical-seo", "website-speed-optimization"],
     relatedTools: [],
@@ -466,7 +466,7 @@ export const servicesData: ServiceData[] = [
     deliverables: ["WordPress SEO audit", "SEO plugin configuration", "Speed optimization", "Content optimization", "Security review", "Monthly maintenance & reports"],
     pricing: { range: "Starting at $500/month", note: "One-time setup available from $500. Ongoing optimization recommended." },
     faqs: [
-      { q: "Which SEO plugin should I use?", a: "We typically recommend Yoast SEO Premium or Rank Math Pro. Both are excellent — the best choice depends on your specific needs. We'll configure whichever you prefer." },
+      { q: "Which SEO plugin should I use?", a: "We typically recommend Yoast SEO Premium or Rank Math Pro. Both are excellent - the best choice depends on your specific needs. We'll configure whichever you prefer." },
       { q: "Can you speed up my WordPress site?", a: "Absolutely. WordPress sites often have speed issues from bloated themes and plugins. We typically achieve 50-80% speed improvements through caching, optimization, and cleanup." },
       { q: "Do you handle WordPress security?", a: "Yes, SEO security is often overlooked. Hacked WordPress sites get deindexed by Google. We implement security best practices to protect your rankings." },
     ],
@@ -550,7 +550,7 @@ export const servicesData: ServiceData[] = [
     deliverables: ["15-20 page audit report", "Technical issue inventory", "Content optimization opportunities", "Backlink profile analysis", "Competitor benchmarking", "Prioritized action plan", "90-day implementation roadmap"],
     pricing: { range: "Starting at $300 (one-time)", note: "Included in all monthly SEO packages. Standalone audits delivered within 24-48 hours." },
     faqs: [
-      { q: "How is your audit different from free online tools?", a: "Free tools only scratch the surface. Our audit involves manual expert analysis, competitive context, and strategic recommendations — not just a list of errors. We prioritize issues by impact and provide implementation guidance." },
+      { q: "How is your audit different from free online tools?", a: "Free tools only scratch the surface. Our audit involves manual expert analysis, competitive context, and strategic recommendations - not just a list of errors. We prioritize issues by impact and provide implementation guidance." },
       { q: "How quickly do I receive the audit?", a: "Standalone audits are delivered within 24-48 hours. We schedule a call to walk you through findings and answer questions about implementation." },
       { q: "Do you help implement audit recommendations?", a: "Yes! While the audit is available standalone, we recommend our monthly packages for ongoing implementation, monitoring, and optimization." },
     ],
@@ -679,7 +679,7 @@ export const servicesData: ServiceData[] = [
     deliverables: ["Link building strategy", "Prospect list development", "Guest post creation", "Outreach campaign management", "10-25 quality links per month", "Link acquisition reports", "Authority growth tracking"],
     pricing: { range: "Starting at $1,000/month", note: "10 links in Growth, 25 in Enterprise. Custom volumes available." },
     faqs: [
-      { q: "How many links do you build per month?", a: "We build 10-25 quality links per month depending on your package. We prioritize quality over quantity — one link from a DR 70+ site is worth more than 100 low-quality links." },
+      { q: "How many links do you build per month?", a: "We build 10-25 quality links per month depending on your package. We prioritize quality over quantity - one link from a DR 70+ site is worth more than 100 low-quality links." },
       { q: "What DR/DA websites do you target?", a: "We target websites with DR 30+ minimum, with a focus on DR 50-80+ sites. More importantly, we prioritize relevance to your industry over raw metrics." },
       { q: "Do you provide link reports?", a: "Yes, detailed monthly reports showing every link acquired, including the referring domain, page, anchor text, and authority metrics. Full transparency always." },
     ],
@@ -721,7 +721,7 @@ export const servicesData: ServiceData[] = [
     deliverables: ["SEO strategy document", "Training sessions & recordings", "Process documentation", "Monthly advisory calls", "Strategy review reports", "Priority email support"],
     pricing: { range: "Starting at $200/hour or $1,500/month retainer", note: "One-time strategy sessions also available." },
     faqs: [
-      { q: "What's the difference between consulting and managed SEO?", a: "Consulting provides strategy, guidance, and training — your team handles execution. Managed SEO means we do everything. Many clients start with managed services and transition to consulting as their team grows." },
+      { q: "What's the difference between consulting and managed SEO?", a: "Consulting provides strategy, guidance, and training - your team handles execution. Managed SEO means we do everything. Many clients start with managed services and transition to consulting as their team grows." },
       { q: "Can you train my marketing team?", a: "Absolutely! We offer customized training programs covering keyword research, content optimization, technical SEO, link building, and analytics. Training can be delivered online or in-person." },
       { q: "How often are consulting calls?", a: "Standard retainer includes bi-weekly 1-hour calls. We're also available via email for quick questions between calls." },
     ],
@@ -764,7 +764,7 @@ export const servicesData: ServiceData[] = [
     pricing: { range: "Starting at $500 (one-time) or included in packages", note: "Most speed optimizations are completed within 1-2 weeks." },
     faqs: [
       { q: "How much faster can you make my site?", a: "We typically achieve 40-80% improvement in load times. Results depend on your starting point, hosting, and platform. We set realistic expectations after our initial audit." },
-      { q: "Will speed optimization affect my site's design?", a: "No. Speed optimization is invisible to users — they'll just experience faster load times. We optimize the technical delivery of your existing design without visual changes." },
+      { q: "Will speed optimization affect my site's design?", a: "No. Speed optimization is invisible to users - they'll just experience faster load times. We optimize the technical delivery of your existing design without visual changes." },
       { q: "Does page speed really affect rankings?", a: "Yes. Google has confirmed page speed is a ranking factor, particularly through Core Web Vitals. Faster sites also have lower bounce rates and higher conversions." },
     ],
     relatedServices: ["technical-seo", "shopify-seo", "wordpress-seo"],
@@ -820,7 +820,7 @@ export const servicesData: ServiceData[] = [
     icon: GraduationCap,
     heroTitle: "SEO Training &",
     heroHighlight: "Workshops",
-    heroDescription: "Learn SEO from an industry expert. Comprehensive training programs for individuals, marketing teams, and organizations — available online and in-person.",
+    heroDescription: "Learn SEO from an industry expert. Comprehensive training programs for individuals, marketing teams, and organizations - available online and in-person.",
     whatIs: {
       title: "What is SEO Training?",
       description: "Our SEO training programs equip you and your team with the knowledge and skills to execute SEO strategies effectively. From beginners to advanced practitioners, we offer customized training for all levels.",

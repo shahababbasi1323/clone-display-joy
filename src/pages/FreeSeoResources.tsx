@@ -14,7 +14,7 @@ const FreeSeoResources = () => {
 
   useSeoMeta({
     title: "Free SEO Resources | 17 Tools, Templates & Guides | Shahab Abbasi",
-    description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
+    description: "Download 17 free SEO resources - AI prompts, checklists, templates & strategy guides. Used by 500+ SEO professionals worldwide. No fluff, just results.",
     canonical: "https://shahababbasi.com/free-seo-resources",
   });
 
@@ -57,7 +57,7 @@ const FreeSeoResources = () => {
               Download 17 Professional Templates, Guides & AI Prompt Packs
             </h2>
             <p className="text-muted-foreground mb-8 text-lg">
-              Everything I use with my paying clients — yours free. No fluff. Just results.
+              Everything I use with my paying clients - yours free. No fluff. Just results.
             </p>
 
             {/* Stats Row */}
@@ -217,7 +217,7 @@ const FreeSeoResources = () => {
               "@context": "https://schema.org",
               "@type": "CollectionPage",
               name: "Free SEO Resources",
-              description: "Download 17 free SEO resources — AI prompts, checklists, templates & strategy guides.",
+              description: "Download 17 free SEO resources - AI prompts, checklists, templates & strategy guides.",
               url: "https://shahababbasi.com/free-seo-resources",
               mainEntity: {
                 "@type": "ItemList",

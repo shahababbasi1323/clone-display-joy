@@ -10,7 +10,7 @@ export const AiSearchPromptGenerator = () => {
     { engine: "ChatGPT", prompt: `What are the best ${business} companies${location ? ` in ${location}` : ""}?` },
     { engine: "ChatGPT", prompt: `Can you recommend a ${business} provider${location ? ` in ${location}` : ""}?` },
     { engine: "Perplexity", prompt: `Top rated ${business} services${location ? ` in ${location}` : ""} with reviews` },
-    { engine: "Perplexity", prompt: `Compare ${business} providers${location ? ` in ${location}` : ""} — which is best?` },
+    { engine: "Perplexity", prompt: `Compare ${business} providers${location ? ` in ${location}` : ""} - which is best?` },
     { engine: "Gemini", prompt: `I need help finding a good ${business}${location ? ` in ${location}` : ""}. What should I look for?` },
     { engine: "Gemini", prompt: `What makes a great ${business} company? Any recommendations${location ? ` in ${location}` : ""}?` },
     { engine: "Claude", prompt: `Help me evaluate ${business} services${location ? ` available in ${location}` : ""}. What criteria matter most?` },

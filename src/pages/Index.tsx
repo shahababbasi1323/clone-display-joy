@@ -29,7 +29,7 @@ const services = [
   { icon: Zap, title: "On-Page SEO & Content Marketing", slug: "on-page-seo", desc: "Keyword-optimized landing pages, blog content strategy, meta tag optimization & strategic internal linking that transforms your website into a 24/7 lead generation engine." },
   { icon: Link2, title: "Link Building & Digital PR", slug: "link-building", desc: "Earn high-authority backlinks through white-hat outreach, guest posting campaigns & digital PR to skyrocket your domain authority and search rankings." },
   { icon: ShoppingCart, title: "E-commerce SEO", slug: "ecommerce-seo", desc: "Product page optimization, rich snippet markup, category structure improvements & conversion rate optimization for Shopify, WooCommerce & custom stores." },
-  { icon: Bot, title: "GEO & AI Search Optimization", slug: "geo-optimization", desc: "Get your brand cited by ChatGPT, Perplexity, Google AI Overviews & next-gen answer engines — the future of search visibility is here." },
+  { icon: Bot, title: "GEO & AI Search Optimization", slug: "geo-optimization", desc: "Get your brand cited by ChatGPT, Perplexity, Google AI Overviews & next-gen answer engines - the future of search visibility is here." },
 ];
 
 const ppcServices = [
@@ -39,10 +39,10 @@ const ppcServices = [
 ];
 
 const processSteps = [
-  { icon: Search, title: "1. Free Website Audit", desc: "We analyze your current search rankings, technical health, backlink profile, and competitor landscape — completely free, no strings attached." },
+  { icon: Search, title: "1. Free Website Audit", desc: "We analyze your current search rankings, technical health, backlink profile, and competitor landscape - completely free, no strings attached." },
   { icon: Target, title: "2. Custom Growth Strategy", desc: "You receive a data-driven SEO roadmap with prioritized action items, target keywords, and projected ROI tailored to your industry and market." },
-  { icon: Zap, title: "3. Expert Implementation", desc: "Our team executes on-page optimization, content creation, link building, and technical fixes — so you can focus on running your business." },
-  { icon: BarChart3, title: "4. Transparent Reporting", desc: "Monthly performance reports with keyword rankings, organic traffic growth, lead attribution, and revenue impact — no vanity metrics, just results." },
+  { icon: Zap, title: "3. Expert Implementation", desc: "Our team executes on-page optimization, content creation, link building, and technical fixes - so you can focus on running your business." },
+  { icon: BarChart3, title: "4. Transparent Reporting", desc: "Monthly performance reports with keyword rankings, organic traffic growth, lead attribution, and revenue impact - no vanity metrics, just results." },
 ];
 
 const caseStudies = [
@@ -50,7 +50,7 @@ const caseStudies = [
     title: "E-commerce Store: 400% Revenue Growth in 6 Months",
     industry: "E-commerce",
     result: "+400% organic traffic",
-    desc: "Transformed a struggling online store from invisible to dominant — ranking on page 1 for 50+ high-value buyer-intent keywords through a full-funnel SEO & content marketing strategy.",
+    desc: "Transformed a struggling online store from invisible to dominant - ranking on page 1 for 50+ high-value buyer-intent keywords through a full-funnel SEO & content marketing strategy.",
     metrics: { traffic: "+400%", keywords: "50+", revenue: "+280%" },
   },
   {
@@ -74,7 +74,7 @@ const testimonials = [
   { name: "Sarah M.", company: "E-commerce Brand, UK", text: "Our Shopify store went from invisible to page 1 for our main keywords. The e-commerce SEO strategy was a total game-changer for our business growth.", rating: 5 },
   { name: "Marcus T.", company: "Law Firm, USA", text: "Best digital marketing investment we've ever made. Qualified leads from organic search increased by 300% within the first quarter. Absolutely recommend.", rating: 5 },
   { name: "Fatima K.", company: "Healthcare Clinic, Saudi Arabia", text: "Patient inquiries tripled after we started working with Shahab. Professional, data-driven approach to growing our online presence and local search visibility.", rating: 5 },
-  { name: "James O.", company: "SaaS Company, Canada", text: "The AI search optimization and GEO strategy put us ahead of every competitor. We're now getting cited by ChatGPT and Perplexity — absolute game changer.", rating: 5 },
+  { name: "James O.", company: "SaaS Company, Canada", text: "The AI search optimization and GEO strategy put us ahead of every competitor. We're now getting cited by ChatGPT and Perplexity - absolute game changer.", rating: 5 },
 ];
 
 // Group English locations by country for homepage display
@@ -90,33 +90,33 @@ const blogPosts = [
   {
     title: "How to Rank #1 on Google in 2026: The Complete SEO Guide",
     slug: "seo-strategy-2026",
-    excerpt: "The definitive guide to search engine optimization — covering keyword research, on-page SEO, technical audits, link building, and AI search optimization for sustainable business growth.",
+    excerpt: "The definitive guide to search engine optimization - covering keyword research, on-page SEO, technical audits, link building, and AI search optimization for sustainable business growth.",
     date: "Feb 10, 2026",
     category: "SEO Strategy",
   },
   {
     title: "10 Digital Marketing Mistakes Killing Your Online Visibility",
     slug: "on-page-seo-guide",
-    excerpt: "Discover the most common SEO and content marketing errors that prevent businesses from ranking — and the proven fixes to boost your organic search performance fast.",
+    excerpt: "Discover the most common SEO and content marketing errors that prevent businesses from ranking - and the proven fixes to boost your organic search performance fast.",
     date: "Feb 5, 2026",
     category: "Digital Marketing",
   },
   {
     title: "AI Search Is Here: How to Get Found by ChatGPT & Google AI Overviews",
     slug: "ai-seo-future",
-    excerpt: "A practical guide to Generative Engine Optimization (GEO) — the new frontier of online visibility, brand authority, and high-intent lead generation in the age of AI.",
+    excerpt: "A practical guide to Generative Engine Optimization (GEO) - the new frontier of online visibility, brand authority, and high-intent lead generation in the age of AI.",
     date: "Jan 28, 2026",
     category: "AI & SEO",
   },
 ];
 
 const faqs = [
-  { q: "How can SEO help me grow my business online?", a: "Search engine optimization drives qualified organic traffic to your website — people actively searching for your products or services. It's the highest-ROI digital marketing channel, delivering compounding growth without ongoing ad spend. Businesses that invest in SEO consistently see 5-10x better returns compared to paid advertising alone." },
+  { q: "How can SEO help me grow my business online?", a: "Search engine optimization drives qualified organic traffic to your website - people actively searching for your products or services. It's the highest-ROI digital marketing channel, delivering compounding growth without ongoing ad spend. Businesses that invest in SEO consistently see 5-10x better returns compared to paid advertising alone." },
   { q: "What digital marketing services do you offer?", a: "We offer a full suite of digital marketing services including technical SEO audits, on-page optimization, content marketing & copywriting, link building & digital PR, local SEO, international SEO, e-commerce SEO, PPC management (Google Ads, social media ads), and AI search optimization (GEO). Explore our complete services to find the right fit." },
-  { q: "How long does it take to see results from SEO?", a: "Most businesses see meaningful ranking improvements within 3-6 months, though some technical fixes and quick wins can show impact within weeks. SEO is a long-term investment that delivers compounding returns — the longer you invest, the greater your competitive advantage in organic search." },
+  { q: "How long does it take to see results from SEO?", a: "Most businesses see meaningful ranking improvements within 3-6 months, though some technical fixes and quick wins can show impact within weeks. SEO is a long-term investment that delivers compounding returns - the longer you invest, the greater your competitive advantage in organic search." },
   { q: "Do you work with businesses worldwide?", a: "Yes! We serve businesses across 40+ countries including Pakistan, UAE, Saudi Arabia, UK, USA, Canada, Germany, France, and more. All services are delivered remotely with weekly reporting, transparent communication, and dedicated account management. Check our locations page for your city." },
-  { q: "What's the difference between SEO and PPC advertising?", a: "PPC (pay-per-click) stops generating traffic the moment you stop paying. SEO builds lasting organic visibility — once you rank on page 1, you continue getting free, high-intent traffic 24/7. Most successful businesses use both: PPC for immediate results and SEO for sustainable, long-term growth." },
-  { q: "What's included in the free SEO audit?", a: "Our comprehensive free audit covers your website's technical health (speed, mobile-friendliness, crawlability), on-page SEO score, backlink profile analysis, competitor benchmarking, keyword gap analysis, and content opportunities — delivered with a prioritized action plan to start growing your organic search visibility immediately." },
+  { q: "What's the difference between SEO and PPC advertising?", a: "PPC (pay-per-click) stops generating traffic the moment you stop paying. SEO builds lasting organic visibility - once you rank on page 1, you continue getting free, high-intent traffic 24/7. Most successful businesses use both: PPC for immediate results and SEO for sustainable, long-term growth." },
+  { q: "What's included in the free SEO audit?", a: "Our comprehensive free audit covers your website's technical health (speed, mobile-friendliness, crawlability), on-page SEO score, backlink profile analysis, competitor benchmarking, keyword gap analysis, and content opportunities - delivered with a prioritized action plan to start growing your organic search visibility immediately." },
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -154,8 +154,8 @@ const Index = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
   useSeoMeta({
-    title: "Shahab Abbasi — #1 SEO Expert & Digital Marketing Strategist | Grow Online Fast",
-    description: "Grow your business online with proven SEO, PPC & digital marketing strategies. Rank #1 on Google, drive organic traffic, generate more leads & 5x your revenue. Free SEO audit — 50+ businesses scaled worldwide.",
+    title: "Shahab Abbasi - #1 SEO Expert & Digital Marketing Strategist | Grow Online Fast",
+    description: "Grow your business online with proven SEO, PPC & digital marketing strategies. Rank #1 on Google, drive organic traffic, generate more leads & 5x your revenue. Free SEO audit - 50+ businesses scaled worldwide.",
     canonical: "https://shahababbasi.com/",
   });
 
@@ -182,14 +182,14 @@ const Index = () => {
             className="max-w-3xl"
           >
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              50+ Brands Scaled — Join the Waitlist Before Your Competitor Does
+              50+ Brands Scaled - Join the Waitlist Before Your Competitor Does
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Stop Being <span className="text-accent">Invisible Online.</span>{" "}
-              <span className="text-gradient">We Put You on Page 1</span> — Guaranteed.
+              <span className="text-gradient">We Put You on Page 1</span> - Guaranteed.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed">
-              Your competitors are stealing your customers <em>right now</em>. We flip the script with <strong>battle-tested SEO</strong>, high-ROI <Link to="/ppc" className="text-primary hover:underline font-semibold">PPC campaigns</Link>, and <Link to="/services" className="text-primary hover:underline font-semibold">growth-driven marketing</Link> that turns clicks into customers and traffic into revenue — fast.
+              Your competitors are stealing your customers <em>right now</em>. We flip the script with <strong>battle-tested SEO</strong>, high-ROI <Link to="/ppc" className="text-primary hover:underline font-semibold">PPC campaigns</Link>, and <Link to="/services" className="text-primary hover:underline font-semibold">growth-driven marketing</Link> that turns clicks into customers and traffic into revenue - fast.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link to="/free-seo-audit">
@@ -241,7 +241,7 @@ const Index = () => {
             </h2>
             <p className="text-muted-foreground">
               From <Link to="/services/technical-seo" className="text-primary hover:underline">deep technical audits</Link> to{" "}
-              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI-powered search domination</Link> — every lever your business needs to outrank, outperform, and outlast the competition.
+              <Link to="/services/geo-optimization" className="text-primary hover:underline">AI-powered search domination</Link> - every lever your business needs to outrank, outperform, and outlast the competition.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -328,7 +328,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              From Zero Visibility to <span className="text-gradient">Market Leader</span> — Here's How
+              From Zero Visibility to <span className="text-gradient">Market Leader</span> - Here's How
             </h2>
             <p className="text-muted-foreground">
               Our battle-tested 4-step framework has helped 50+ brands go from "Where is my website?" to "We can't keep up with the leads." Here's exactly what happens:
@@ -355,7 +355,7 @@ const Index = () => {
           <div className="text-center mt-10">
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">
-                Book Your Free Strategy Call — Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
+                Book Your Free Strategy Call - Limited Spots <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -368,7 +368,7 @@ const Index = () => {
           <Wrench className="h-10 w-10 mx-auto text-accent mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">85+ Free Tools Your Competitors Don't Want You to Find</h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-4">
-            Audit your SEO, spy on competitors, generate perfect meta tags, calculate ad ROI — all in one place, all free. No signup required.
+            Audit your SEO, spy on competitors, generate perfect meta tags, calculate ad ROI - all in one place, all free. No signup required.
           </p>
           <div className="flex flex-wrap justify-center gap-2 text-xs text-muted-foreground mb-8">
             <Link to="/tools/word-counter" className="glass rounded-lg px-3 py-1.5 hover:text-primary transition-colors">Word Counter</Link>
@@ -390,7 +390,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Don't Take Our Word for It — <span className="text-gradient">See the Numbers</span>
+              Don't Take Our Word for It - <span className="text-gradient">See the Numbers</span>
             </h2>
             <p className="text-muted-foreground">Real brands. Real revenue. Here's what happens when you stop guessing and start growing with a proven system.</p>
           </div>
@@ -483,7 +483,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Every Weapon in Your <span className="text-gradient">Digital Arsenal</span>
             </h2>
-            <p className="text-muted-foreground">Technical audits, killer content, authority backlinks, AI search — pick the services that move the needle, or let us build the full stack.</p>
+            <p className="text-muted-foreground">Technical audits, killer content, authority backlinks, AI search - pick the services that move the needle, or let us build the full stack.</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {servicesData.slice(0, 10).map((svc) => {
@@ -516,7 +516,7 @@ const Index = () => {
               We Speak Your <span className="text-gradient">Industry's Language</span>
             </h2>
             <p className="text-muted-foreground">
-              Cookie-cutter SEO doesn't work. We build razor-sharp strategies for your niche — because a dentist's keywords aren't a lawyer's. Explore your <Link to="/industries" className="text-primary hover:underline">industry playbook</Link>.
+              Cookie-cutter SEO doesn't work. We build razor-sharp strategies for your niche - because a dentist's keywords aren't a lawyer's. Explore your <Link to="/industries" className="text-primary hover:underline">industry playbook</Link>.
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
@@ -547,10 +547,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Rank Businesses in <span className="text-gradient">40+ Countries</span> — Is Yours Next?
+              We Rank Businesses in <span className="text-gradient">40+ Countries</span> - Is Yours Next?
             </h2>
             <p className="text-muted-foreground">
-              Whether you're in Dubai, London, New York, or Islamabad — we know how to win in your local market with hyper-targeted SEO, PPC & content strategies.
+              Whether you're in Dubai, London, New York, or Islamabad - we know how to win in your local market with hyper-targeted SEO, PPC & content strategies.
             </p>
           </div>
           <div className="space-y-8">
@@ -596,7 +596,7 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Growth Playbooks & <span className="text-gradient">SEO Secrets</span> We Actually Use
             </h2>
-            <p className="text-muted-foreground">No fluff, no filler — just the exact strategies we use to 5x client revenue. Steal them from our <Link to="/blog" className="text-primary hover:underline">blog</Link>.</p>
+            <p className="text-muted-foreground">No fluff, no filler - just the exact strategies we use to 5x client revenue. Steal them from our <Link to="/blog" className="text-primary hover:underline">blog</Link>.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {blogPosts.map((post, i) => (
@@ -682,7 +682,7 @@ const Index = () => {
               Your Competitors Already Called. <span className="text-gradient">Your Move.</span>
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              Every day you wait is another day they outrank you. Get a free audit with a crystal-clear roadmap to page 1 rankings, more leads & explosive revenue — delivered in 48 hours.
+              Every day you wait is another day they outrank you. Get a free audit with a crystal-clear roadmap to page 1 rankings, more leads & explosive revenue - delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/free-seo-audit">

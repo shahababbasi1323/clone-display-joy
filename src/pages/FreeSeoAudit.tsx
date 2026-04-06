@@ -64,7 +64,7 @@ const FreeSeoAudit = () => {
                 Free <span className="text-gradient">SEO Audit</span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8">
-                Get a comprehensive 15-20 page analysis of your website's SEO health — delivered within 24 hours. No strings attached.
+                Get a comprehensive 15-20 page analysis of your website's SEO health - delivered within 24 hours. No strings attached.
               </p>
               <div className="space-y-5 mb-8">
                 {benefits.map((b) => (

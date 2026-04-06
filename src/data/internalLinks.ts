@@ -370,7 +370,7 @@ export function getIndustryRelatedBlogs(industrySlug: string) {
     .filter(Boolean);
 }
 
-/** Get related location pages for an industry (2-3) — uses relatedLocations from data */
+/** Get related location pages for an industry (2-3) - uses relatedLocations from data */
 export function getIndustryRelatedLocations(industrySlug: string) {
   const industry = industriesData.find(i => i.slug === industrySlug);
   if (!industry) return [];
@@ -416,7 +416,7 @@ export function getLocationRelatedIndustries(countryCode: string) {
     MA: ["travel-seo", "real-estate-seo", "restaurant-seo"],
     TN: ["travel-seo", "healthcare-seo", "education-seo"],
     IL: ["saas-seo", "startup-seo", "healthcare-seo"],
-    // Europe — Western
+    // Europe - Western
     GB: ["legal-seo", "saas-seo", "ecommerce-retail-seo"],
     IE: ["saas-seo", "healthcare-seo", "ecommerce-retail-seo"],
     FR: ["fashion-seo", "travel-seo", "restaurant-seo"],
@@ -425,17 +425,17 @@ export function getLocationRelatedIndustries(countryCode: string) {
     CH: ["saas-seo", "healthcare-seo", "real-estate-seo"],
     NL: ["saas-seo", "ecommerce-retail-seo", "travel-seo"],
     BE: ["ecommerce-retail-seo", "healthcare-seo", "legal-seo"],
-    // Europe — Southern
+    // Europe - Southern
     IT: ["fashion-seo", "travel-seo", "restaurant-seo"],
     ES: ["travel-seo", "real-estate-seo", "restaurant-seo"],
     PT: ["travel-seo", "real-estate-seo", "ecommerce-retail-seo"],
     GR: ["travel-seo", "restaurant-seo", "real-estate-seo"],
-    // Europe — Northern
+    // Europe - Northern
     DK: ["saas-seo", "ecommerce-retail-seo", "healthcare-seo"],
     SE: ["saas-seo", "ecommerce-retail-seo", "healthcare-seo"],
     NO: ["saas-seo", "real-estate-seo", "healthcare-seo"],
     FI: ["saas-seo", "education-seo", "healthcare-seo"],
-    // Europe — Eastern & Central
+    // Europe - Eastern & Central
     PL: ["ecommerce-retail-seo", "saas-seo", "healthcare-seo"],
     CZ: ["saas-seo", "ecommerce-retail-seo", "travel-seo"],
     HU: ["travel-seo", "ecommerce-retail-seo", "healthcare-seo"],

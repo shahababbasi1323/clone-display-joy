@@ -92,7 +92,7 @@ const AdminBlog = () => {
             {posts.map((p) => (
               <tr key={p.id} className="border-b border-border/50 hover:bg-secondary/30">
                 <td className="p-4 font-medium">{p.title}</td>
-                <td className="p-4 text-muted-foreground">{p.category || "—"}</td>
+                <td className="p-4 text-muted-foreground">{p.category || "-"}</td>
                 <td className="p-4">
                   <span className={`px-2 py-1 rounded-full text-xs ${p.published ? "bg-accent/20 text-accent" : "bg-muted text-muted-foreground"}`}>
                     {p.published ? "Published" : "Draft"}

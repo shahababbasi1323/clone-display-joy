@@ -75,7 +75,7 @@ const plans = [
   {
     name: "Custom",
     price: null,
-    desc: "Tailored strategy for unique needs — combine SEO, PPC, content & web design.",
+    desc: "Tailored strategy for unique needs - combine SEO, PPC, content & web design.",
     popular: false,
     cta: "Get Custom Proposal",
     features: [
@@ -156,7 +156,7 @@ const Pricing = () => {
   };
 
   useSeoMeta({
-    title: "SEO Pricing & Packages — Affordable Plans from $500/mo | Custom Quotes",
+    title: "SEO Pricing & Packages - Affordable Plans from $500/mo | Custom Quotes",
     description: "Transparent SEO & digital marketing pricing starting at $500/month. Compare Starter, Growth, Enterprise & Custom packages. No hidden fees, no long-term contracts. Get a free custom quote today.",
     canonical: "https://shahababbasi.com/pricing",
   });
@@ -168,7 +168,7 @@ const Pricing = () => {
           <PageBreadcrumbs items={[{ label: "Pricing" }]} className="mb-8" />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-primary/10 text-primary border border-primary/20 mb-6">
-              Transparent Pricing — No Hidden Fees
+              Transparent Pricing - No Hidden Fees
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               SEO & Digital Marketing <span className="text-gradient">Pricing Plans</span>
@@ -278,19 +278,19 @@ const Pricing = () => {
                     ["Keyword Research", "50", "150", "500+", "Custom"],
                     ["Monthly Reporting", "✓", "✓", "✓", "✓"],
                     ["Google Business Profile", "Setup", "Optimization", "Full Mgmt", "Full Mgmt"],
-                    ["Content Strategy", "—", "✓", "✓", "✓"],
-                    ["Content Writing", "—", "—", "—", "✓"],
-                    ["Link Building", "—", "10/mo", "25/mo", "Custom"],
-                    ["Schema Markup", "—", "✓", "✓", "✓"],
-                    ["GEO / AI Optimization", "—", "—", "✓", "✓"],
-                    ["International SEO", "—", "—", "✓", "✓"],
-                    ["E-commerce SEO", "—", "—", "✓", "✓"],
-                    ["PPC Management", "—", "—", "—", "✓"],
-                    ["Social Media Ads", "—", "—", "—", "✓"],
-                    ["Web Design & Dev", "—", "—", "—", "✓"],
-                    ["Social Media Mgmt", "—", "—", "—", "✓"],
-                    ["CRO (Conversion Opt.)", "—", "—", "—", "✓"],
-                    ["Dedicated Manager", "—", "—", "✓", "✓"],
+                    ["Content Strategy", "-", "✓", "✓", "✓"],
+                    ["Content Writing", "-", "-", "-", "✓"],
+                    ["Link Building", "-", "10/mo", "25/mo", "Custom"],
+                    ["Schema Markup", "-", "✓", "✓", "✓"],
+                    ["GEO / AI Optimization", "-", "-", "✓", "✓"],
+                    ["International SEO", "-", "-", "✓", "✓"],
+                    ["E-commerce SEO", "-", "-", "✓", "✓"],
+                    ["PPC Management", "-", "-", "-", "✓"],
+                    ["Social Media Ads", "-", "-", "-", "✓"],
+                    ["Web Design & Dev", "-", "-", "-", "✓"],
+                    ["Social Media Mgmt", "-", "-", "-", "✓"],
+                    ["CRO (Conversion Opt.)", "-", "-", "-", "✓"],
+                    ["Dedicated Manager", "-", "-", "✓", "✓"],
                     ["Strategy Calls", "Monthly", "Bi-weekly", "Weekly", "Custom"],
                     ["Support", "Email", "Email + Chat", "Priority", "Dedicated Slack"],
                   ].map(([feature, s, g, e, c], i) => (
@@ -341,7 +341,7 @@ const Pricing = () => {
               <MessageSquare className="h-8 w-8 text-primary mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Need a Custom Growth Package?</h2>
               <p className="text-muted-foreground mb-6">
-                Every business is unique. Tell us about your goals, budget & challenges — we'll craft a tailored SEO & digital marketing strategy with transparent pricing and no surprises.
+                Every business is unique. Tell us about your goals, budget & challenges - we'll craft a tailored SEO & digital marketing strategy with transparent pricing and no surprises.
               </p>
               {!showQuoteForm ? (
                 <Button size="lg" onClick={() => setShowQuoteForm(true)} className="glow-primary">

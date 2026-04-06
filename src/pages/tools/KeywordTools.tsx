@@ -211,7 +211,7 @@ export const BulkKeywordChecker = () => {
       setOpenProgress(i + 1);
 
       if (!win || win.closed) {
-        // Popup was blocked — pause and wait for user to allow & click Continue
+        // Popup was blocked - pause and wait for user to allow & click Continue
         setPaused(true);
         pausedRef.current = true;
         return; // stop here, user will click Continue after allowing popups
@@ -324,7 +324,7 @@ export const BulkKeywordChecker = () => {
         {paused && (
           <div className="mb-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
             <p className="font-medium text-yellow-600 dark:text-yellow-400">Popup blocked!</p>
-            <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle browser mein popups allow karo, phir <strong>"Continue"</strong> button dabao — yeh wahi se shuru hoga jahan ruka tha ({openProgress}/{results.length}).</p>
+            <p className="text-muted-foreground mt-1">Browser ne popup block kar diya. Pehle browser mein popups allow karo, phir <strong>"Continue"</strong> button dabao - yeh wahi se shuru hoga jahan ruka tha ({openProgress}/{results.length}).</p>
           </div>
         )}
 
@@ -337,7 +337,7 @@ export const BulkKeywordChecker = () => {
           <div className="space-y-2 max-h-[600px] overflow-auto">
             {results.map((r, i) => (
               <div key={i} className={`glass rounded-lg p-3 space-y-1 ${i < openProgress ? "opacity-50" : ""}`}>
-                <p className="text-sm font-medium">{r.keyword}{location ? ` — ${location}` : ""}</p>
+                <p className="text-sm font-medium">{r.keyword}{location ? ` - ${location}` : ""}</p>
                 <div className="flex flex-wrap gap-3">
                   <a href={r.searchUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">Google Search →</a>
                   {domain && <a href={r.siteUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">site: Check →</a>}

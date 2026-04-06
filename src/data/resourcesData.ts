@@ -38,7 +38,7 @@ export const resources: Resource[] = [
   },
   {
     id: 3, slug: "geo-aeo-guide", title: "GEO & AEO Optimization Guide", category: "AI Prompts",
-    description: "Complete guide to getting your business recommended by ChatGPT, Perplexity, Gemini & Claude. The future of search is AI — get visible now.",
+    description: "Complete guide to getting your business recommended by ChatGPT, Perplexity, Gemini & Claude. The future of search is AI - get visible now.",
     highlights: ["AI search ready", "10-step process", "Future-proof"],
     statsBadge: "AI Search Ready | 10-Step Process | Future-Proof", emailTag: "geo-guide",
     downloadUrl: "https://drive.google.com/file/d/13xL7x3yYw1r4xdKiVpNYxlV5JbNE7HHF/view",
@@ -92,7 +92,7 @@ export const resources: Resource[] = [
   },
   {
     id: 9, slug: "free-seo-tools", title: "$0 SEO Tool Stack", category: "Strategy Guides",
-    description: "Complete SEO toolkit using ONLY free tools. Covers keyword research, technical audits, rank tracking, backlink analysis, content optimization — all at $0/month.",
+    description: "Complete SEO toolkit using ONLY free tools. Covers keyword research, technical audits, rank tracking, backlink analysis, content optimization - all at $0/month.",
     highlights: ["30+ tools", "$0/month", "Full stack"],
     statsBadge: "30+ Tools | $0/Month | Full Stack", emailTag: "tool-stack",
     downloadUrl: "https://drive.google.com/file/d/1EFLQo0kK0ClfkcOk0KliUaJ6UsEviEfC/view",
@@ -101,7 +101,7 @@ export const resources: Resource[] = [
   },
   {
     id: 10, slug: "shopify-seo-guide", title: "Shopify SEO Complete Guide", category: "Strategy Guides",
-    description: "Fix every Shopify SEO issue — duplicate content, URL structure, page speed, product schema, collection pages, and Shopify-specific technical problems.",
+    description: "Fix every Shopify SEO issue - duplicate content, URL structure, page speed, product schema, collection pages, and Shopify-specific technical problems.",
     highlights: ["Shopify specific", "Fix all issues", "Product SEO"],
     statsBadge: "Shopify Specific | Fix All Issues | Product SEO", emailTag: "shopify-guide",
     downloadUrl: "https://drive.google.com/file/d/1S1rlE6og8wbREA64Q2Ed02Ebc3yhgD_G/view",

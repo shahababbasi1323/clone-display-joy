@@ -190,7 +190,7 @@ export const BulkUrlIssueChecker = () => {
                       r.severity === "warning" ? "text-yellow-600 dark:text-yellow-400" :
                       "text-destructive"
                     }`}>
-                      {r.status} — {r.issue}
+                      {r.status} - {r.issue}
                     </p>
                   )}
                   {r.redirectUrl && (

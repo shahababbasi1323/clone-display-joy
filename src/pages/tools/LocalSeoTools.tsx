@@ -123,7 +123,7 @@ export const ReviewResponseGenerator = () => {
   const negative = review ? [
     `Thank you for sharing your feedback. We sincerely apologize for the experience you described. This is not the standard we strive for, and we take your concerns very seriously. Please reach out to us directly at [email/phone] so we can make this right. We value your business and want to ensure a better experience next time.`,
     `We appreciate you bringing this to our attention, and we're sorry to hear about your experience. We understand your frustration and would like the opportunity to address your concerns directly. Please contact us at [email/phone], and we'll work to resolve this promptly.`,
-    `Thank you for your honest feedback. We apologize for falling short of your expectations. We've already taken steps to address the issues you mentioned. We'd love the chance to make it up to you — please reach out to us directly so we can discuss a resolution.`,
+    `Thank you for your honest feedback. We apologize for falling short of your expectations. We've already taken steps to address the issues you mentioned. We'd love the chance to make it up to you - please reach out to us directly so we can discuss a resolution.`,
   ] : [];
   const responses = type === "positive" ? positive : negative;
 

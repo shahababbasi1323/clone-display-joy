@@ -274,7 +274,7 @@ const CountryHubPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-muted-foreground">
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Full-Stack Digital Expertise</h4>
-                <p>From SEO and PPC to custom web development, content writing, and social media — we offer every digital marketing service under one roof.</p>
+                <p>From SEO and PPC to custom web development, content writing, and social media - we offer every digital marketing service under one roof.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Local Market Intelligence</h4>
@@ -282,7 +282,7 @@ const CountryHubPage = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Data-Driven Results</h4>
-                <p>Every campaign is backed by analytics — organic traffic, conversion rates, engagement, and performance — we track, report, and optimize for measurable ROI.</p>
+                <p>Every campaign is backed by analytics - organic traffic, conversion rates, engagement, and performance - we track, report, and optimize for measurable ROI.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">Proven Track Record</h4>
@@ -321,7 +321,7 @@ const CountryHubPage = () => {
           <div className="glass rounded-2xl p-10 md:p-16 glow-primary max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Grow Your {hub.name} Business?</h2>
             <p className="text-muted-foreground mb-6">
-              Get a free digital marketing audit — covering SEO, PPC, web design, content, and social media — customized for your city and industry in {hub.name}.
+              Get a free digital marketing audit - covering SEO, PPC, web design, content, and social media - customized for your city and industry in {hub.name}.
             </p>
             <Link to="/free-seo-audit">
               <Button size="lg" className="glow-primary">

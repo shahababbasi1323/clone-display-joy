@@ -40,7 +40,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "HARO Pitch Writer", detail: "Craft expert pitches for journalist queries. Landed backlinks from DA 80+ sites." },
       ], proTip: "Found 47 toxic backlinks for one client. Rankings recovered in 3 weeks." },
       { heading: "E-commerce & Local Prompts", items: [
-        { label: "Product Page Optimizer", detail: "Title, meta, description, FAQ, product schema, alt text — complete product SEO." },
+        { label: "Product Page Optimizer", detail: "Title, meta, description, FAQ, product schema, alt text - complete product SEO." },
         { label: "Local Citation Builder", detail: "Top 50 directories for your industry + location with NAP format and tracking template." },
       ] },
       { heading: "Advanced Strategy Prompts", items: [
@@ -95,12 +95,12 @@ export const resourceWebContent: ResourceWebContent[] = [
     slug: "geo-aeo-guide",
     sections: [
       { heading: "Understanding GEO, AEO & LLMO", text: "Search has changed forever. In 2026, millions of people use AI tools like ChatGPT, Perplexity, and Gemini instead of traditional Google search.", items: [
-        { label: "SEO — Search Engine Optimization", detail: "Ranking your website on Google search results (blue links)" },
-        { label: "GEO — Generative Engine Optimization", detail: "Getting your brand cited in AI-generated answers" },
-        { label: "AEO — Answer Engine Optimization", detail: "Optimizing for direct answers (Featured Snippets, Voice Search)" },
-        { label: "LLMO — Large Language Model Optimization", detail: "Making content readable by AI models like GPT, Claude, Gemini" },
+        { label: "SEO - Search Engine Optimization", detail: "Ranking your website on Google search results (blue links)" },
+        { label: "GEO - Generative Engine Optimization", detail: "Getting your brand cited in AI-generated answers" },
+        { label: "AEO - Answer Engine Optimization", detail: "Optimizing for direct answers (Featured Snippets, Voice Search)" },
+        { label: "LLMO - Large Language Model Optimization", detail: "Making content readable by AI models like GPT, Claude, Gemini" },
       ] },
-      { heading: "Why This Matters — The Numbers", items: [
+      { heading: "Why This Matters - The Numbers", items: [
         { label: "70% of Google searches now end without a click", detail: "Zero-click searches are the new normal" },
         { label: "AI search traffic converts 4-6x better", detail: "Higher quality leads from AI recommendations" },
         { label: "58% of consumers use AI for product recommendations" },
@@ -115,7 +115,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Step 5: Optimize Content Structure for AI", detail: "Q&A format, clear H2/H3 headings, FAQ sections." },
         { label: "Step 6: Build Third-Party Mentions", detail: "85% of AI citations come from third-party sources." },
         { label: "Step 7: Optimize for Reddit", detail: "Reddit posts are heavily cited by AI search engines." },
-        { label: "Step 8: Build Your Review Ecosystem", detail: "Google, Yelp, G2, Trustpilot — AI uses reviews to recommend." },
+        { label: "Step 8: Build Your Review Ecosystem", detail: "Google, Yelp, G2, Trustpilot - AI uses reviews to recommend." },
         { label: "Step 9: Publish 'Best Of' and Comparison Content", detail: "AI systems love pulling from comparison posts." },
         { label: "Step 10: Monitor and Track AI Visibility", detail: "Regularly check your brand in AI answers and adjust strategy." },
       ], proTip: "Businesses showing up in AI answers are getting the highest quality leads." },
@@ -254,7 +254,7 @@ export const resourceWebContent: ResourceWebContent[] = [
       ] },
       { heading: "HARO / Digital PR", items: [
         { label: "Sign up for HARO/Connectively", detail: "Get daily journalist queries in your inbox" },
-        { label: "Respond within 2 hours of query", detail: "Speed matters — first responses get picked" },
+        { label: "Respond within 2 hours of query", detail: "Speed matters - first responses get picked" },
         { label: "Include credentials and unique data", detail: "Landed backlinks from DA 80+ sites using this approach" },
       ] },
       { heading: "Resource Page Link Building", items: [
@@ -262,7 +262,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Create a linkable asset (guide, tool, template)" },
         { label: "Pitch for inclusion with value proposition" },
       ] },
-      { heading: "50+ Free Directories", text: "The PDF includes a curated list of 50+ free directories organized by tier (1/2/3) with DA scores, submission URLs, and expected listing times.", proTip: "Build authority without spending a dollar — start with Tier 1 directories first." },
+      { heading: "50+ Free Directories", text: "The PDF includes a curated list of 50+ free directories organized by tier (1/2/3) with DA scores, submission URLs, and expected listing times.", proTip: "Build authority without spending a dollar - start with Tier 1 directories first." },
     ],
   },
   {
@@ -303,20 +303,20 @@ export const resourceWebContent: ResourceWebContent[] = [
       { heading: "Technical SEO (Free)", items: [
         { label: "Google Search Console", detail: "The most important free SEO tool. Performance, indexing, errors." },
         { label: "PageSpeed Insights", detail: "Core Web Vitals and performance scores" },
-        { label: "Screaming Frog (500 URLs free)", detail: "Technical crawl — find broken links, duplicates, missing tags" },
+        { label: "Screaming Frog (500 URLs free)", detail: "Technical crawl - find broken links, duplicates, missing tags" },
         { label: "Schema Markup Validator", detail: "Test your structured data implementation" },
       ] },
       { heading: "Backlink Analysis (Free)", items: [
         { label: "Ahrefs Webmaster Tools", detail: "Free backlink data for your own site" },
-        { label: "Google Search Console Links Report", detail: "See who links to you — straight from Google" },
+        { label: "Google Search Console Links Report", detail: "See who links to you - straight from Google" },
         { label: "Moz Link Explorer (10 queries/month)", detail: "Domain Authority and backlink overview" },
       ] },
       { heading: "Content & Rank Tracking (Free)", items: [
-        { label: "Google Analytics 4", detail: "Traffic, behavior, conversions — completely free" },
+        { label: "Google Analytics 4", detail: "Traffic, behavior, conversions - completely free" },
         { label: "Grammarly (Free Tier)", detail: "Writing quality and readability checks" },
-        { label: "Hemingway Editor", detail: "Readability scoring — aim for Grade 6-8" },
+        { label: "Hemingway Editor", detail: "Readability scoring - aim for Grade 6-8" },
         { label: "Google Search Console Performance", detail: "Track keyword positions and CTR" },
-      ], proTip: "Complete SEO toolkit using ONLY free tools — $0/month." },
+      ], proTip: "Complete SEO toolkit using ONLY free tools - $0/month." },
     ],
   },
   {
@@ -380,7 +380,7 @@ export const resourceWebContent: ResourceWebContent[] = [
   {
     slug: "seo-proposal-template",
     sections: [
-      { heading: "Cover Page", text: "Professional cover with your logo, client name, date, and proposal title. First impressions matter — make it clean and branded." },
+      { heading: "Cover Page", text: "Professional cover with your logo, client name, date, and proposal title. First impressions matter - make it clean and branded." },
       { heading: "Executive Summary", items: [
         { label: "Current situation overview (1 paragraph)" },
         { label: "Key problems identified" },
@@ -388,9 +388,9 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Expected outcomes" },
       ] },
       { heading: "3-Tier Pricing Packages", items: [
-        { label: "Starter Package", detail: "Basic SEO essentials — technical audit, on-page, reporting" },
+        { label: "Starter Package", detail: "Basic SEO essentials - technical audit, on-page, reporting" },
         { label: "Growth Package", detail: "Full SEO + content strategy + link building" },
-        { label: "Enterprise Package", detail: "Complete digital presence — SEO, PPC, content, dedicated team" },
+        { label: "Enterprise Package", detail: "Complete digital presence - SEO, PPC, content, dedicated team" },
       ] },
       { heading: "Timeline & Deliverables", items: [
         { label: "Month 1: Audit & Foundation" },
@@ -422,7 +422,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Their strongest backlinks by DA" },
         { label: "Link building strategies they're using" },
       ] },
-      { heading: "3-Month Action Plan", text: "Fill-in-the-blank action plan to close the gaps identified in the analysis. Prioritized by impact and effort.", proTip: "Spy on competitors systematically — then do it better." },
+      { heading: "3-Month Action Plan", text: "Fill-in-the-blank action plan to close the gaps identified in the analysis. Prioritized by impact and effort.", proTip: "Spy on competitors systematically - then do it better." },
     ],
   },
   {
@@ -505,7 +505,7 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "International SEO and hreflang" },
         { label: "E-commerce SEO" },
         { label: "Advanced link building and digital PR" },
-        { label: "GEO / AEO — AI search optimization" },
+        { label: "GEO / AEO - AI search optimization" },
         { label: "Learn PPC basics (Google Ads, Facebook Ads)" },
       ] },
       { heading: "Month 10-12: Specialization & Career", items: [
@@ -526,7 +526,7 @@ export const resourceWebContent: ResourceWebContent[] = [
   {
     slug: "keyword-clustering-guide",
     sections: [
-      { heading: "The AI Prompt", text: "A single, comprehensive ChatGPT prompt that clusters any keyword list into actionable groups based on three criteria: search intent, semantic relevance, and funnel stage.", proTip: "Paste your full keyword list directly into the prompt — it handles hundreds of keywords at once." },
+      { heading: "The AI Prompt", text: "A single, comprehensive ChatGPT prompt that clusters any keyword list into actionable groups based on three criteria: search intent, semantic relevance, and funnel stage.", proTip: "Paste your full keyword list directly into the prompt - it handles hundreds of keywords at once." },
       { heading: "3 Clustering Criteria", items: [
         { label: "Search Intent", detail: "Classify keywords as informational, navigational, commercial, or transactional to match content type." },
         { label: "Semantic Relevance", detail: "Group topically related keywords together to build content clusters and topical authority." },
@@ -540,11 +540,11 @@ export const resourceWebContent: ResourceWebContent[] = [
         { label: "Funnel stage assignment" },
       ] },
       { heading: "5 Keyword Categories Reference Table", items: [
-        { label: "Informational Keywords", detail: "How-to, what-is, guide — top-of-funnel awareness content." },
-        { label: "Navigational Keywords", detail: "Brand + product searches — ensure your pages rank for your own brand." },
-        { label: "Commercial Keywords", detail: "Best, top, review, comparison — middle-of-funnel consideration content." },
-        { label: "Transactional Keywords", detail: "Buy, price, discount, near me — bottom-of-funnel conversion content." },
-        { label: "Local Keywords", detail: "City + service, near me — geo-targeted content for local SEO." },
+        { label: "Informational Keywords", detail: "How-to, what-is, guide - top-of-funnel awareness content." },
+        { label: "Navigational Keywords", detail: "Brand + product searches - ensure your pages rank for your own brand." },
+        { label: "Commercial Keywords", detail: "Best, top, review, comparison - middle-of-funnel consideration content." },
+        { label: "Transactional Keywords", detail: "Buy, price, discount, near me - bottom-of-funnel conversion content." },
+        { label: "Local Keywords", detail: "City + service, near me - geo-targeted content for local SEO." },
       ], proTip: "Map each cluster to one of these 5 categories for a complete content strategy in one prompt." },
     ],
   },

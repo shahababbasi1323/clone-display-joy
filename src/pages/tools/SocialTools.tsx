@@ -114,7 +114,7 @@ export const LinkedInPostFormatter = () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {/* Left Panel — Editor */}
+      {/* Left Panel - Editor */}
       <div className="space-y-5">
         <h3 className="text-lg font-bold flex items-center gap-2">
           <span className="text-accent">in</span> Write here...
@@ -155,7 +155,7 @@ export const LinkedInPostFormatter = () => {
             className="glass rounded-lg p-2.5 text-sm w-full mb-3"
           >
             {WRITING_STYLES.map((s, i) => (
-              <option key={i} value={i}>{s.name} — {s.desc}</option>
+              <option key={i} value={i}>{s.name} - {s.desc}</option>
             ))}
           </select>
           <div className="flex gap-2">
@@ -165,7 +165,7 @@ export const LinkedInPostFormatter = () => {
         </div>
       </div>
 
-      {/* Right Panel — Preview */}
+      {/* Right Panel - Preview */}
       <div>
         <h3 className="text-lg font-bold flex items-center gap-2 mb-4">
           <Hash className="h-5 w-5 text-accent" /> Post Preview

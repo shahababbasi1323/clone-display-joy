@@ -44,7 +44,7 @@ const enContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Discovery & Audit", desc: `We begin with a comprehensive audit of your website's SEO, web design, content quality, and competitive analysis of the ${city} market. We identify technical issues, content gaps, and digital marketing opportunities specific to your industry.` },
     { title: "Strategy Development", desc: `Based on our audit findings, we create a custom digital strategy tailored to the ${city} market. This includes SEO, PPC campaign planning, content writing strategy, social media management, and web development improvements.` },
-    { title: "Web Design & Technical Optimization", desc: `We fix all technical SEO issues and enhance your web design — including site speed, Core Web Vitals, mobile-first web development, schema markup, and user experience optimization to convert more visitors into customers.` },
+    { title: "Web Design & Technical Optimization", desc: `We fix all technical SEO issues and enhance your web design - including site speed, Core Web Vitals, mobile-first web development, schema markup, and user experience optimization to convert more visitors into customers.` },
     { title: "Content Writing & On-Page SEO", desc: `Our content writing team creates and optimizes high-value content for the ${city} market. Every page is crafted with professional copywriting, proper meta tags, headings, and internal linking for both users and search engines.` },
     { title: "PPC, Social Media & Link Building", desc: `We complement organic SEO with targeted PPC advertising and social media management to drive immediate traffic. Our link building uses white-hat outreach and quality content creation to build domain authority in ${country}.` },
     { title: "Monitoring & Reporting", desc: `You receive detailed monthly reports covering SEO rankings, PPC performance, social media engagement, and content metrics. We continuously refine every channel based on performance data specific to the ${city} market.` },
@@ -64,8 +64,8 @@ const enContent: ContentGenerator = (city, country) => ({
     { q: `How long does it take to see SEO results in ${city}?`, a: `Most ${city} businesses see initial improvements within 2-3 months, with significant results in 4-6 months. For faster results, we recommend combining SEO with PPC advertising and social media marketing to drive immediate traffic while organic rankings build.` },
     { q: `Do you offer web design and development in ${city}?`, a: `Yes! We provide professional web design and custom web development services for businesses in ${city}. From responsive WordPress and Shopify websites to custom web applications, our team builds high-converting sites optimized for SEO and user experience.` },
     { q: `What digital marketing services do you offer in ${city}?`, a: `We offer comprehensive digital marketing for ${city} businesses including SEO, PPC management (Google Ads & social ads), professional content writing, web design, web development, and social media management across all major platforms.` },
-    { q: `Do you manage social media and content writing?`, a: `Absolutely. Our content writing team creates SEO-optimized blog posts, website copy, and marketing content. Our social media management services cover LinkedIn, Instagram, Facebook, X, and more — with content calendars, community management, and performance reporting for ${city} businesses.` },
-    { q: `Can you run PPC campaigns alongside SEO in ${city}?`, a: `Yes! We manage Google Ads, Bing Ads, and social media PPC campaigns for ${city} businesses. Combining PPC with SEO delivers both immediate visibility and long-term organic growth — maximizing your digital marketing ROI.` },
+    { q: `Do you manage social media and content writing?`, a: `Absolutely. Our content writing team creates SEO-optimized blog posts, website copy, and marketing content. Our social media management services cover LinkedIn, Instagram, Facebook, X, and more - with content calendars, community management, and performance reporting for ${city} businesses.` },
+    { q: `Can you run PPC campaigns alongside SEO in ${city}?`, a: `Yes! We manage Google Ads, Bing Ads, and social media PPC campaigns for ${city} businesses. Combining PPC with SEO delivers both immediate visibility and long-term organic growth - maximizing your digital marketing ROI.` },
     { q: `Do you work with businesses outside of ${city}?`, a: `Yes! While we specialize in ${city} digital marketing, we serve clients across ${country} and internationally. Our team offers SEO, PPC, web design, web development, content writing, and social media management for businesses targeting multiple locations.` },
   ],
   ctaTitle: `Ready to Grow Your ${city} Business?`,
@@ -76,16 +76,16 @@ const enContent: ContentGenerator = (city, country) => ({
   lsiTitle: `Why ${city} Businesses Need Expert SEO in ${new Date().getFullYear()}`,
   lsiParagraphs: [
     `Digital marketing in ${city} has evolved far beyond traditional SEO. Today, growing your online presence requires a holistic approach that combines search engine optimization, professional web design, custom web development, strategic content writing, PPC advertising, and social media management. Businesses in ${city}, ${country} need an integrated digital strategy across Google, Bing, AI-powered search engines like ChatGPT and Perplexity, social media platforms, and paid search channels to stay ahead of the competition.`,
-    `Our approach to digital growth in ${city} integrates SEO with high-converting web design, mobile-first web development, and expert content writing that targets Latent Semantic Indexing (LSI) keywords and natural language processing (NLP) optimization. We ensure your website answers user intent comprehensively — from informational queries about your industry to transactional searches where customers in ${city} are ready to convert. Our PPC management and social media marketing amplify your organic reach for faster results.`,
-    `Local visibility is particularly crucial for ${city} businesses. We combine local SEO — including Google Business Profile optimization, NAP citations, and review management — with targeted PPC campaigns, social media advertising, and localized content writing. Paired with professional web development featuring Core Web Vitals optimization, mobile-first design, and structured data markup (JSON-LD schema), your ${city} business gains a comprehensive competitive advantage across all digital channels.`,
+    `Our approach to digital growth in ${city} integrates SEO with high-converting web design, mobile-first web development, and expert content writing that targets Latent Semantic Indexing (LSI) keywords and natural language processing (NLP) optimization. We ensure your website answers user intent comprehensively - from informational queries about your industry to transactional searches where customers in ${city} are ready to convert. Our PPC management and social media marketing amplify your organic reach for faster results.`,
+    `Local visibility is particularly crucial for ${city} businesses. We combine local SEO - including Google Business Profile optimization, NAP citations, and review management - with targeted PPC campaigns, social media advertising, and localized content writing. Paired with professional web development featuring Core Web Vitals optimization, mobile-first design, and structured data markup (JSON-LD schema), your ${city} business gains a comprehensive competitive advantage across all digital channels.`,
   ],
   landmarksTitle: `Serving Businesses Near Key Areas in ${city}`,
   landmarks: [],
   whyChooseTitle: `Why Choose Us as Your ${city} SEO Partner`,
   whyChoosePoints: [
-    { title: "Full-Service Digital Agency", desc: `We're more than just an SEO company in ${city}. We offer comprehensive digital services including web design, web development, content writing, PPC management, and social media marketing — everything your ${city} business needs under one roof.` },
+    { title: "Full-Service Digital Agency", desc: `We're more than just an SEO company in ${city}. We offer comprehensive digital services including web design, web development, content writing, PPC management, and social media marketing - everything your ${city} business needs under one roof.` },
     { title: "AI & Generative Search Ready", desc: `We optimize your ${city} business for Google, Bing, and AI search engines including ChatGPT, Perplexity, and Google Gemini. Our GEO strategies ensure your brand appears in AI-generated answers alongside strong PPC and social media visibility.` },
-    { title: "Data-Driven Strategies", desc: `Every decision — from SEO and PPC campaigns to content writing and web design — is backed by data. We use advanced analytics and competitor analysis to maximize ROI across all digital channels for your ${city} business.` },
+    { title: "Data-Driven Strategies", desc: `Every decision - from SEO and PPC campaigns to content writing and web design - is backed by data. We use advanced analytics and competitor analysis to maximize ROI across all digital channels for your ${city} business.` },
     { title: "Custom Web Design & Development", desc: `Our in-house web design and web development team builds high-converting, mobile-first websites for ${city} businesses. From custom WordPress and Shopify development to bespoke web applications, we create digital experiences that rank and convert.` },
     { title: "Content Writing & Social Media", desc: `Our expert content writers and social media managers create engaging, SEO-optimized content that builds authority and drives engagement for your ${city} business across all platforms including LinkedIn, Instagram, Facebook, and X.` },
     { title: "Multi-Language & International Reach", desc: `For businesses in ${city} targeting international markets, we provide multilingual SEO, PPC, content writing, and social media management with culturally adapted strategies across multiple regions and languages.` },
@@ -93,7 +93,7 @@ const enContent: ContentGenerator = (city, country) => ({
   aeoTitle: `Answer Engine Optimization (AEO) for ${city}`,
   aeoParagraphs: [
     `As AI-powered search engines reshape how users in ${city} find information, Answer Engine Optimization (AEO) has become essential. Google AI Overviews, ChatGPT, Perplexity AI, and Microsoft Copilot are increasingly providing direct answers instead of traditional blue links. Your ${city} business needs a combination of AEO, expert content writing, and strong social media presence to be the source these AI systems cite.`,
-    `Our AEO strategy for ${city} businesses includes structured data optimization, FAQ schema implementation, entity markup, and professional content writing that AI systems prefer to reference. Combined with social media management, PPC advertising for brand visibility, and a well-designed website built by our web development team, we build your brand's complete digital footprint — ensuring AI models recognize your ${city} business as a trusted authority in your industry.`,
+    `Our AEO strategy for ${city} businesses includes structured data optimization, FAQ schema implementation, entity markup, and professional content writing that AI systems prefer to reference. Combined with social media management, PPC advertising for brand visibility, and a well-designed website built by our web development team, we build your brand's complete digital footprint - ensuring AI models recognize your ${city} business as a trusted authority in your industry.`,
   ],
   servicesInterlinkTitle: `Our SEO Services Available in ${city}`,
   industriesInterlinkTitle: `Industries We Specialize in Across ${city}`,
@@ -114,7 +114,7 @@ const arContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "الاكتشاف والتدقيق", desc: `نبدأ بتدقيق شامل لموقعك يشمل السيو، تصميم المواقع، جودة المحتوى، وتحليل تنافسي لسوق ${city}. نحدد المشاكل التقنية وفرص التسويق الرقمي.` },
     { title: "تطوير الاستراتيجية", desc: `بناءً على التدقيق، نضع استراتيجية رقمية شاملة لسوق ${city} تشمل السيو، تخطيط حملات PPC، استراتيجية كتابة المحتوى، إدارة وسائل التواصل الاجتماعي، وتطوير المواقع.` },
-    { title: "تصميم وتطوير المواقع", desc: `نصلح مشاكل السيو التقنية ونحسّن تصميم المواقع — سرعة الموقع، Core Web Vitals، تطوير مواقع متجاوبة للجوال، Schema Markup، وتحسين تجربة المستخدم لتحويل الزوار إلى عملاء.` },
+    { title: "تصميم وتطوير المواقع", desc: `نصلح مشاكل السيو التقنية ونحسّن تصميم المواقع - سرعة الموقع، Core Web Vitals، تطوير مواقع متجاوبة للجوال، Schema Markup، وتحسين تجربة المستخدم لتحويل الزوار إلى عملاء.` },
     { title: "كتابة المحتوى والسيو الداخلي", desc: `فريق كتابة المحتوى لدينا ينشئ محتوى عالي القيمة لسوق ${city}. كل صفحة مصممة بكتابة احترافية، علامات وصفية محسّنة، وربط داخلي استراتيجي.` },
     { title: "إعلانات PPC وإدارة التواصل", desc: `نكمّل السيو العضوي بإعلانات الدفع بالنقرة (PPC) المستهدفة وإدارة وسائل التواصل الاجتماعي لتحقيق زيارات فورية. نبني روابط خلفية عالية الجودة لزيادة سلطة النطاق في ${country}.` },
     { title: "المراقبة والتقارير", desc: `تتلقى تقارير شهرية مفصلة تغطي ترتيب السيو، أداء إعلانات PPC، تفاعل وسائل التواصل الاجتماعي، ومقاييس المحتوى لسوق ${city}.` },
@@ -134,7 +134,7 @@ const arContent: ContentGenerator = (city, country) => ({
     { q: `كم يستغرق ظهور نتائج السيو في ${city}؟`, a: `تظهر تحسينات أولية خلال ٢-٣ أشهر، مع نتائج كبيرة خلال ٤-٦ أشهر. للحصول على نتائج أسرع، ننصح بالجمع بين السيو وإعلانات PPC وتسويق وسائل التواصل الاجتماعي.` },
     { q: `هل تقدمون خدمات تصميم وتطوير المواقع في ${city}؟`, a: `نعم! نقدم خدمات تصميم مواقع احترافية وتطوير مواقع مخصصة لشركات ${city}. من مواقع ووردبريس وشوبيفاي المتجاوبة إلى تطبيقات ويب مخصصة، نبني مواقع محسّنة للسيو وتجربة المستخدم.` },
     { q: `ما خدمات التسويق الرقمي التي تقدمونها في ${city}؟`, a: `نقدم تسويقًا رقميًا شاملاً لشركات ${city} يشمل: السيو، إدارة إعلانات PPC (Google Ads والإعلانات الاجتماعية)، كتابة المحتوى الاحترافية، تصميم المواقع، تطوير المواقع، وإدارة وسائل التواصل الاجتماعي.` },
-    { q: `هل تديرون وسائل التواصل الاجتماعي وكتابة المحتوى؟`, a: `بالتأكيد. فريق كتابة المحتوى لدينا ينشئ مقالات ومحتوى تسويقي محسّن للسيو. خدمات إدارة وسائل التواصل الاجتماعي تشمل لينكد إن، إنستغرام، فيسبوك، وإكس — مع تقويم محتوى وتقارير أداء لشركات ${city}.` },
+    { q: `هل تديرون وسائل التواصل الاجتماعي وكتابة المحتوى؟`, a: `بالتأكيد. فريق كتابة المحتوى لدينا ينشئ مقالات ومحتوى تسويقي محسّن للسيو. خدمات إدارة وسائل التواصل الاجتماعي تشمل لينكد إن، إنستغرام، فيسبوك، وإكس - مع تقويم محتوى وتقارير أداء لشركات ${city}.` },
     { q: `هل يمكنكم تشغيل حملات PPC مع السيو في ${city}؟`, a: `نعم! ندير حملات إعلانات Google Ads وBing Ads وإعلانات وسائل التواصل الاجتماعي لشركات ${city}. الجمع بين إعلانات PPC والسيو يحقق ظهورًا فوريًا ونموًا عضويًا طويل الأمد.` },
     { q: `هل تعملون مع شركات خارج ${city}؟`, a: `نعم! نخدم عملاء في ${country} ودوليًا. نقدم السيو، إعلانات PPC، تصميم المواقع، تطوير المواقع، كتابة المحتوى، وإدارة وسائل التواصل الاجتماعي للشركات التي تستهدف مواقع متعددة.` },
   ],
@@ -146,15 +146,15 @@ const arContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `التسويق الرقمي في ${city} تطور كثيرًا ليتجاوز السيو التقليدي. اليوم، تنمية حضورك الرقمي تتطلب نهجًا شاملاً يجمع بين تحسين محركات البحث، تصميم المواقع الاحترافي، تطوير المواقع المخصصة، كتابة المحتوى الاستراتيجية، إعلانات الدفع بالنقرة (PPC)، وإدارة وسائل التواصل الاجتماعي. شركات ${city} تحتاج استراتيجية رقمية متكاملة عبر جوجل، بينج، محركات البحث الذكية مثل ChatGPT وPerplexity، ومنصات التواصل الاجتماعي.`,
     `نهجنا في النمو الرقمي لشركات ${city} يدمج السيو مع تصميم مواقع عالي التحويل، تطوير مواقع متوافقة مع الجوال، وكتابة محتوى خبيرة تستهدف كلمات LSI المفتاحية وتحسين NLP. إعلانات PPC المستهدفة وتسويق وسائل التواصل الاجتماعي تضخّم وصولك العضوي لنتائج أسرع في سوق ${city}.`,
-    `الظهور المحلي حاسم لشركات ${city}. نجمع بين السيو المحلي — تحسين ملف جوجل التجاري، استشهادات NAP، وإدارة المراجعات — مع حملات PPC مستهدفة، إعلانات وسائل التواصل الاجتماعي، وكتابة محتوى محلي. مع تطوير مواقع يتضمن Core Web Vitals وتصميم متجاوب وJSON-LD Schema، يحصل عملك في ${city} على ميزة تنافسية شاملة.`,
+    `الظهور المحلي حاسم لشركات ${city}. نجمع بين السيو المحلي - تحسين ملف جوجل التجاري، استشهادات NAP، وإدارة المراجعات - مع حملات PPC مستهدفة، إعلانات وسائل التواصل الاجتماعي، وكتابة محتوى محلي. مع تطوير مواقع يتضمن Core Web Vitals وتصميم متجاوب وJSON-LD Schema، يحصل عملك في ${city} على ميزة تنافسية شاملة.`,
   ],
   landmarksTitle: `نخدم الشركات بالقرب من المناطق الرئيسية في ${city}`,
   landmarks: [],
   whyChooseTitle: `لماذا تختارنا كوكالة تسويق رقمي في ${city}`,
   whyChoosePoints: [
-    { title: "وكالة تسويق رقمي متكاملة", desc: `لسنا مجرد شركة سيو في ${city}. نقدم خدمات رقمية شاملة تشمل تصميم المواقع، تطوير المواقع، كتابة المحتوى، إدارة إعلانات PPC، وإدارة وسائل التواصل الاجتماعي — كل ما يحتاجه عملك تحت سقف واحد.` },
+    { title: "وكالة تسويق رقمي متكاملة", desc: `لسنا مجرد شركة سيو في ${city}. نقدم خدمات رقمية شاملة تشمل تصميم المواقع، تطوير المواقع، كتابة المحتوى، إدارة إعلانات PPC، وإدارة وسائل التواصل الاجتماعي - كل ما يحتاجه عملك تحت سقف واحد.` },
     { title: "جاهزون للبحث الذكي والتوليدي", desc: `نحسّن عملك في ${city} لجوجل، بينج، ومحركات البحث الذكية مثل ChatGPT وPerplexity وGoogle Gemini. استراتيجيات GEO مع إعلانات PPC قوية وحضور على وسائل التواصل الاجتماعي.` },
-    { title: "استراتيجيات مبنية على البيانات", desc: `كل قرار — من السيو وحملات PPC إلى كتابة المحتوى وتصميم المواقع — مدعوم بالبيانات. نستخدم تحليلات متقدمة لتعظيم العائد عبر جميع القنوات الرقمية لعملك في ${city}.` },
+    { title: "استراتيجيات مبنية على البيانات", desc: `كل قرار - من السيو وحملات PPC إلى كتابة المحتوى وتصميم المواقع - مدعوم بالبيانات. نستخدم تحليلات متقدمة لتعظيم العائد عبر جميع القنوات الرقمية لعملك في ${city}.` },
     { title: "تصميم وتطوير مواقع مخصصة", desc: `فريق تصميم المواقع وتطوير المواقع لدينا يبني مواقع عالية التحويل ومتوافقة مع الجوال لشركات ${city}. من تطوير ووردبريس وشوبيفاي إلى تطبيقات ويب مخصصة.` },
     { title: "كتابة المحتوى وإدارة التواصل", desc: `كتّاب المحتوى ومديرو وسائل التواصل الاجتماعي لدينا ينشئون محتوى جذابًا ومحسّنًا للسيو يبني السلطة ويزيد التفاعل لعملك في ${city} عبر لينكد إن، إنستغرام، فيسبوك، وإكس.` },
     { title: "وصول متعدد اللغات ودولي", desc: `للشركات في ${city} التي تستهدف أسواقًا دولية، نقدم سيو متعدد اللغات، إعلانات PPC، كتابة محتوى، وإدارة وسائل التواصل الاجتماعي مع استراتيجيات مكيّفة ثقافيًا.` },
@@ -162,7 +162,7 @@ const arContent: ContentGenerator = (city, country) => ({
   aeoTitle: `تحسين محركات الإجابة (AEO) في ${city}`,
   aeoParagraphs: [
     `مع تغيير محركات البحث الذكية لطريقة بحث المستخدمين في ${city}، أصبح تحسين محركات الإجابة (AEO) ضروريًا. Google AI Overviews وChatGPT وPerplexity يقدمون إجابات مباشرة. يحتاج عملك في ${city} إلى AEO مع كتابة محتوى خبيرة وحضور قوي على وسائل التواصل الاجتماعي ليكون المصدر الذي تستشهد به هذه الأنظمة.`,
-    `استراتيجيتنا AEO لشركات ${city} تشمل تحسين البيانات المنظمة، FAQ schema، وكتابة محتوى احترافية يفضلها الذكاء الاصطناعي. مع إدارة وسائل التواصل الاجتماعي، إعلانات PPC لبناء الوعي، وتصميم مواقع وتطوير مواقع من فريقنا المتخصص — نبني البصمة الرقمية الكاملة لعملك في ${city}.`,
+    `استراتيجيتنا AEO لشركات ${city} تشمل تحسين البيانات المنظمة، FAQ schema، وكتابة محتوى احترافية يفضلها الذكاء الاصطناعي. مع إدارة وسائل التواصل الاجتماعي، إعلانات PPC لبناء الوعي، وتصميم مواقع وتطوير مواقع من فريقنا المتخصص - نبني البصمة الرقمية الكاملة لعملك في ${city}.`,
   ],
   servicesInterlinkTitle: `خدمات التسويق الرقمي المتاحة في ${city}`,
   industriesInterlinkTitle: `القطاعات التي نتخصص فيها في ${city}`,
@@ -212,7 +212,7 @@ const frContent: ContentGenerator = (city, country) => ({
   lsiTitle: `Pourquoi les Entreprises de ${city} Ont Besoin d'un Expert SEO en ${new Date().getFullYear()}`,
   lsiParagraphs: [
     `Le référencement naturel à ${city} a considérablement évolué. Aujourd'hui, se positionner sur Google, Bing et les moteurs de recherche IA comme ChatGPT, Google AI Overviews et Perplexity nécessite une approche holistique intégrant le SEO technique, l'optimisation sémantique, le SEO basé sur les entités, et les signaux E-E-A-T. Les entreprises de ${city}, ${country} doivent s'adapter à ces changements.`,
-    `Notre approche du SEO à ${city} intègre les mots-clés LSI (Latent Semantic Indexing), l'optimisation NLP (traitement du langage naturel) et la construction d'autorité thématique. Nous veillons à ce que votre site réponde à l'intention de recherche de manière exhaustive — des requêtes informationnelles aux recherches transactionnelles.`,
+    `Notre approche du SEO à ${city} intègre les mots-clés LSI (Latent Semantic Indexing), l'optimisation NLP (traitement du langage naturel) et la construction d'autorité thématique. Nous veillons à ce que votre site réponde à l'intention de recherche de manière exhaustive - des requêtes informationnelles aux recherches transactionnelles.`,
     `Les facteurs de SEO local sont particulièrement cruciaux pour les entreprises de ${city}. Nous optimisons votre fiche Google Business Profile avec des citations NAP précises, des images géolocalisées, du contenu localisé et des stratégies de gestion des avis.`,
   ],
   landmarksTitle: `Au Service des Entreprises Près des Zones Clés de ${city}`,
@@ -221,7 +221,7 @@ const frContent: ContentGenerator = (city, country) => ({
   whyChoosePoints: [
     { title: "Prêt pour la Recherche IA", desc: `Nous optimisons votre entreprise de ${city} pour Google, Bing, mais aussi pour ChatGPT, Perplexity et Google Gemini. Nos stratégies GEO assurent la visibilité de votre marque dans les réponses générées par l'IA.` },
     { title: "Stratégies Basées sur les Données", desc: `Chaque décision SEO pour votre entreprise à ${city} est soutenue par des données. Nous utilisons des analyses avancées et des recherches de marché.` },
-    { title: "Rapports Mensuels Transparents", desc: `Vous recevez des rapports détaillés montrant les performances de votre campagne — classements, trafic organique et taux de conversion.` },
+    { title: "Rapports Mensuels Transparents", desc: `Vous recevez des rapports détaillés montrant les performances de votre campagne - classements, trafic organique et taux de conversion.` },
     { title: "SEO Multilingue & International", desc: `Pour les entreprises de ${city} ciblant des marchés internationaux, nous fournissons des services SEO multilingues avec une implémentation hreflang correcte.` },
   ],
   aeoTitle: `Optimisation pour les Moteurs de Réponse (AEO) à ${city}`,
@@ -314,7 +314,7 @@ const nlContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Ontdekking & Audit", desc: `We beginnen met een uitgebreide audit van uw website's SEO, webdesign, contentkwaliteit en concurrentieanalyse van de ${city} markt.` },
     { title: "Strategieontwikkeling", desc: `Op basis van onze audit creëren we een digitale strategie op maat voor ${city}, inclusief SEO, PPC-planning, contentstrategie, social media management en webontwikkeling.` },
-    { title: "Webdesign & Technische Optimalisatie", desc: `We lossen alle technische SEO-problemen op en verbeteren uw webdesign — sitesnelheid, Core Web Vitals, mobile-first webontwikkeling, schema markup en UX-optimalisatie.` },
+    { title: "Webdesign & Technische Optimalisatie", desc: `We lossen alle technische SEO-problemen op en verbeteren uw webdesign - sitesnelheid, Core Web Vitals, mobile-first webontwikkeling, schema markup en UX-optimalisatie.` },
     { title: "Contentcreatie & On-Page SEO", desc: `Ons contentteam creëert en optimaliseert hoogwaardige content voor de ${city} markt met professionele copywriting, meta tags en interne linkstructuur.` },
     { title: "PPC, Social Media & Linkbuilding", desc: `We combineren organische SEO met gerichte PPC-advertenties en social media management voor directe traffic. Onze linkbuilding gebruikt white-hat outreach in ${country}.` },
     { title: "Monitoring & Rapportage", desc: `U ontvangt gedetailleerde maandelijkse rapporten over SEO-rankings, PPC-prestaties, social media engagement en contentmetrics voor de ${city} markt.` },
@@ -346,15 +346,15 @@ const nlContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `Digitale marketing in ${city} is veel verder geëvolueerd dan traditionele SEO. Vandaag vereist online groeien een holistische aanpak die zoekmachineoptimalisatie, professioneel webdesign, webontwikkeling, strategische contentcreatie, PPC-advertenties en social media management combineert. Bedrijven in ${city}, ${country} hebben een geïntegreerde digitale strategie nodig voor Google, Bing, AI-zoekmachines zoals ChatGPT en Perplexity, social media en betaalde zoekkanalen.`,
     `Onze aanpak voor digitale groei in ${city} integreert SEO met converterend webdesign, mobile-first webontwikkeling en expert contentcreatie die LSI-zoekwoorden en NLP-optimalisatie target. Gecombineerd met PPC-management en social media marketing versterken we uw organisch bereik voor snellere resultaten.`,
-    `Lokale zichtbaarheid is bijzonder belangrijk voor ${city} bedrijven. We combineren lokale SEO — inclusief Google Bedrijfsprofiel optimalisatie en review management — met gerichte PPC-campagnes, social media advertenties en gelokaliseerde contentcreatie. Samen met professionele webontwikkeling met Core Web Vitals optimalisatie krijgt uw ${city} bedrijf een uitgebreid concurrentievoordeel.`,
+    `Lokale zichtbaarheid is bijzonder belangrijk voor ${city} bedrijven. We combineren lokale SEO - inclusief Google Bedrijfsprofiel optimalisatie en review management - met gerichte PPC-campagnes, social media advertenties en gelokaliseerde contentcreatie. Samen met professionele webontwikkeling met Core Web Vitals optimalisatie krijgt uw ${city} bedrijf een uitgebreid concurrentievoordeel.`,
   ],
   landmarksTitle: `Bedrijven Bedienen in Belangrijke Gebieden van ${city}`,
   landmarks: [],
   whyChooseTitle: `Waarom Ons Kiezen als uw ${city} Digitale Partner`,
   whyChoosePoints: [
-    { title: "Full-Service Digitaal Bureau", desc: `We zijn meer dan een SEO-bedrijf in ${city}. We bieden webdesign, webontwikkeling, contentcreatie, PPC-management en social media marketing — alles wat uw ${city} bedrijf nodig heeft onder één dak.` },
+    { title: "Full-Service Digitaal Bureau", desc: `We zijn meer dan een SEO-bedrijf in ${city}. We bieden webdesign, webontwikkeling, contentcreatie, PPC-management en social media marketing - alles wat uw ${city} bedrijf nodig heeft onder één dak.` },
     { title: "AI & Generatieve Zoekoptimalisatie", desc: `We optimaliseren uw ${city} bedrijf voor Google, Bing en AI-zoekmachines inclusief ChatGPT, Perplexity en Google Gemini. Onze GEO-strategieën zorgen ervoor dat uw merk verschijnt in AI-antwoorden.` },
-    { title: "Datagedreven Strategieën", desc: `Elke beslissing — van SEO en PPC tot contentcreatie en webdesign — wordt ondersteund door data. We maximaliseren ROI over alle digitale kanalen voor uw ${city} bedrijf.` },
+    { title: "Datagedreven Strategieën", desc: `Elke beslissing - van SEO en PPC tot contentcreatie en webdesign - wordt ondersteund door data. We maximaliseren ROI over alle digitale kanalen voor uw ${city} bedrijf.` },
     { title: "Expert Webdesign & Ontwikkeling", desc: `Ons webdesign en webontwikkelingsteam bouwt converterende, mobile-first websites voor ${city} bedrijven. Van WordPress en Shopify tot maatwerkoplossingen die ranken en converteren.` },
     { title: "Contentcreatie & Social Media", desc: `Onze contentschrijvers en social media managers creëren boeiende, SEO-geoptimaliseerde content voor uw ${city} bedrijf op LinkedIn, Instagram, Facebook en X.` },
     { title: "Meertalig & Internationaal Bereik", desc: `Voor bedrijven in ${city} die internationale markten targeten, bieden we meertalige SEO, PPC, contentcreatie en social media management met cultureel aangepaste strategieën.` },
@@ -383,7 +383,7 @@ const esContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Descubrimiento y Auditoría", desc: `Comenzamos con una auditoría integral del SEO, diseño web, calidad de contenidos y análisis competitivo del mercado de ${city}.` },
     { title: "Desarrollo de Estrategia", desc: `Creamos una estrategia digital personalizada para ${city}: SEO, planificación de campañas PPC, estrategia de contenidos, gestión de redes sociales y mejoras de desarrollo web.` },
-    { title: "Diseño Web y Optimización Técnica", desc: `Solucionamos problemas técnicos SEO y mejoramos tu diseño web — velocidad, Core Web Vitals, desarrollo web mobile-first, schema markup y optimización UX.` },
+    { title: "Diseño Web y Optimización Técnica", desc: `Solucionamos problemas técnicos SEO y mejoramos tu diseño web - velocidad, Core Web Vitals, desarrollo web mobile-first, schema markup y optimización UX.` },
     { title: "Redacción de Contenidos y SEO On-Page", desc: `Nuestro equipo de redacción crea y optimiza contenido de alto valor para el mercado de ${city} con copywriting profesional, meta tags y enlaces internos.` },
     { title: "PPC, Redes Sociales y Link Building", desc: `Complementamos el SEO orgánico con publicidad PPC y gestión de redes sociales para tráfico inmediato. Nuestro link building usa outreach white-hat en ${country}.` },
     { title: "Monitorización e Informes", desc: `Recibes informes mensuales detallados sobre rankings SEO, rendimiento PPC, engagement en redes sociales y métricas de contenido para el mercado de ${city}.` },
@@ -415,15 +415,15 @@ const esContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `El marketing digital en ${city} ha evolucionado mucho más allá del SEO tradicional. Hoy, crecer online requiere un enfoque holístico que combine posicionamiento web, diseño web profesional, desarrollo web, redacción de contenidos estratégica, publicidad PPC y gestión de redes sociales. Las empresas en ${city}, ${country} necesitan una estrategia digital integrada para Google, Bing, buscadores IA como ChatGPT y Perplexity, redes sociales y canales de pago.`,
     `Nuestro enfoque para el crecimiento digital en ${city} integra SEO con diseño web de alta conversión, desarrollo web mobile-first y redacción de contenidos experta que apunta a palabras clave LSI y optimización NLP. Combinado con gestión de PPC y marketing en redes sociales, amplificamos tu alcance orgánico.`,
-    `La visibilidad local es crucial para negocios en ${city}. Combinamos SEO local — incluyendo optimización de Google Business Profile y gestión de reseñas — con campañas PPC dirigidas, publicidad en redes sociales y redacción de contenidos localizados. Junto con desarrollo web profesional con Core Web Vitals y datos estructurados, tu negocio en ${city} gana una ventaja competitiva integral.`,
+    `La visibilidad local es crucial para negocios en ${city}. Combinamos SEO local - incluyendo optimización de Google Business Profile y gestión de reseñas - con campañas PPC dirigidas, publicidad en redes sociales y redacción de contenidos localizados. Junto con desarrollo web profesional con Core Web Vitals y datos estructurados, tu negocio en ${city} gana una ventaja competitiva integral.`,
   ],
   landmarksTitle: `Sirviendo Empresas en Áreas Clave de ${city}`,
   landmarks: [],
   whyChooseTitle: `Por Qué Elegirnos como tu Socio Digital en ${city}`,
   whyChoosePoints: [
-    { title: "Agencia Digital Full-Service", desc: `Somos más que una empresa SEO en ${city}. Ofrecemos diseño web, desarrollo web, redacción de contenidos, gestión de PPC y marketing en redes sociales — todo bajo un mismo techo.` },
+    { title: "Agencia Digital Full-Service", desc: `Somos más que una empresa SEO en ${city}. Ofrecemos diseño web, desarrollo web, redacción de contenidos, gestión de PPC y marketing en redes sociales - todo bajo un mismo techo.` },
     { title: "Preparados para Búsqueda IA", desc: `Optimizamos tu negocio en ${city} para Google, Bing y buscadores IA como ChatGPT, Perplexity y Google Gemini con estrategias GEO.` },
-    { title: "Estrategias Basadas en Datos", desc: `Cada decisión — de SEO y PPC a redacción de contenidos y diseño web — está respaldada por datos para maximizar el ROI de tu negocio en ${city}.` },
+    { title: "Estrategias Basadas en Datos", desc: `Cada decisión - de SEO y PPC a redacción de contenidos y diseño web - está respaldada por datos para maximizar el ROI de tu negocio en ${city}.` },
     { title: "Diseño y Desarrollo Web Experto", desc: `Nuestro equipo de diseño web y desarrollo web construye sitios mobile-first de alta conversión para empresas de ${city}, desde WordPress y Shopify hasta soluciones a medida.` },
     { title: "Redacción de Contenidos y Redes Sociales", desc: `Nuestros redactores y gestores de redes sociales crean contenido SEO-optimizado que genera autoridad y engagement para tu negocio en ${city}.` },
     { title: "Alcance Multilingüe e Internacional", desc: `Para empresas en ${city} con mercados internacionales, ofrecemos SEO multilingüe, PPC, redacción de contenidos y gestión de redes sociales con estrategias culturalmente adaptadas.` },
@@ -452,7 +452,7 @@ const itContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Scoperta e Audit", desc: `Iniziamo con un audit completo del SEO, web design, qualità dei contenuti e analisi competitiva del mercato di ${city}.` },
     { title: "Sviluppo Strategia", desc: `Creiamo una strategia digitale personalizzata per ${city}: SEO, pianificazione PPC, strategia contenuti, gestione social media e miglioramenti di sviluppo web.` },
-    { title: "Web Design e Ottimizzazione Tecnica", desc: `Risolviamo tutti i problemi tecnici SEO e miglioriamo il web design — velocità, Core Web Vitals, sviluppo web mobile-first, schema markup e ottimizzazione UX.` },
+    { title: "Web Design e Ottimizzazione Tecnica", desc: `Risolviamo tutti i problemi tecnici SEO e miglioriamo il web design - velocità, Core Web Vitals, sviluppo web mobile-first, schema markup e ottimizzazione UX.` },
     { title: "Creazione Contenuti e SEO On-Page", desc: `Il nostro team crea e ottimizza contenuti di alto valore per il mercato di ${city} con copywriting professionale, meta tag e linking interno.` },
     { title: "PPC, Social Media e Link Building", desc: `Integriamo il SEO organico con pubblicità PPC mirata e gestione social media per traffico immediato. Il nostro link building usa outreach white-hat in ${country}.` },
     { title: "Monitoraggio e Report", desc: `Ricevi report mensili dettagliati su ranking SEO, prestazioni PPC, engagement social media e metriche dei contenuti per il mercato di ${city}.` },
@@ -483,15 +483,15 @@ const itContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `Il marketing digitale a ${city} si è evoluto ben oltre il SEO tradizionale. Oggi, crescere online richiede un approccio olistico che combina ottimizzazione SEO, web design professionale, sviluppo web, creazione contenuti strategica, pubblicità PPC e gestione social media. Le aziende a ${city}, ${country} hanno bisogno di una strategia digitale integrata per Google, Bing, motori IA come ChatGPT e Perplexity, social media e canali a pagamento.`,
     `Il nostro approccio alla crescita digitale a ${city} integra SEO con web design ad alta conversione, sviluppo web mobile-first e creazione contenuti esperta con keyword LSI e ottimizzazione NLP. Combinato con gestione PPC e social media marketing, amplifichiamo la portata organica.`,
-    `La visibilità locale è cruciale per le aziende a ${city}. Combiniamo SEO locale — Google Business Profile, gestione recensioni — con campagne PPC mirate, pubblicità social e creazione contenuti localizzati. Con sviluppo web professionale e Core Web Vitals, la tua azienda a ${city} ottiene un vantaggio competitivo completo.`,
+    `La visibilità locale è cruciale per le aziende a ${city}. Combiniamo SEO locale - Google Business Profile, gestione recensioni - con campagne PPC mirate, pubblicità social e creazione contenuti localizzati. Con sviluppo web professionale e Core Web Vitals, la tua azienda a ${city} ottiene un vantaggio competitivo completo.`,
   ],
   landmarksTitle: `Al Servizio delle Aziende nelle Aree Chiave di ${city}`,
   landmarks: [],
   whyChooseTitle: `Perché Sceglierci come Partner Digitale a ${city}`,
   whyChoosePoints: [
-    { title: "Agenzia Digitale Full-Service", desc: `Non siamo solo un'azienda SEO a ${city}. Offriamo web design, sviluppo web, creazione contenuti, gestione PPC e social media marketing — tutto sotto un unico tetto.` },
+    { title: "Agenzia Digitale Full-Service", desc: `Non siamo solo un'azienda SEO a ${city}. Offriamo web design, sviluppo web, creazione contenuti, gestione PPC e social media marketing - tutto sotto un unico tetto.` },
     { title: "Pronti per la Ricerca IA", desc: `Ottimizziamo la tua azienda a ${city} per Google, Bing e motori IA come ChatGPT, Perplexity e Google Gemini con strategie GEO.` },
-    { title: "Strategie Basate sui Dati", desc: `Ogni decisione — da SEO e PPC a creazione contenuti e web design — è supportata dai dati per massimizzare il ROI della tua azienda a ${city}.` },
+    { title: "Strategie Basate sui Dati", desc: `Ogni decisione - da SEO e PPC a creazione contenuti e web design - è supportata dai dati per massimizzare il ROI della tua azienda a ${city}.` },
     { title: "Web Design e Sviluppo Esperto", desc: `Il nostro team costruisce siti mobile-first ad alta conversione per aziende di ${city}, da WordPress e Shopify a soluzioni personalizzate.` },
     { title: "Contenuti e Social Media", desc: `I nostri copywriter e social media manager creano contenuti SEO-ottimizzati che generano autorità e engagement per la tua azienda a ${city}.` },
     { title: "Portata Multilingue e Internazionale", desc: `Per aziende a ${city} con mercati internazionali, offriamo SEO multilingue, PPC, creazione contenuti e gestione social media con strategie culturalmente adattate.` },
@@ -520,7 +520,7 @@ const ptContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Descoberta e Auditoria", desc: `Começamos com uma auditoria completa do SEO, web design, qualidade de conteúdo e análise competitiva do mercado de ${city}.` },
     { title: "Desenvolvimento de Estratégia", desc: `Criamos uma estratégia digital personalizada para ${city}: SEO, planejamento PPC, estratégia de conteúdo, gestão de redes sociais e melhorias de desenvolvimento web.` },
-    { title: "Web Design e Otimização Técnica", desc: `Resolvemos todos os problemas técnicos de SEO e melhoramos seu web design — velocidade, Core Web Vitals, desenvolvimento web mobile-first, schema markup e otimização UX.` },
+    { title: "Web Design e Otimização Técnica", desc: `Resolvemos todos os problemas técnicos de SEO e melhoramos seu web design - velocidade, Core Web Vitals, desenvolvimento web mobile-first, schema markup e otimização UX.` },
     { title: "Criação de Conteúdo e SEO On-Page", desc: `Nossa equipe cria e otimiza conteúdo de alto valor para o mercado de ${city} com copywriting profissional, meta tags e linkagem interna.` },
     { title: "PPC, Redes Sociais e Link Building", desc: `Complementamos o SEO orgânico com publicidade PPC e gestão de redes sociais para tráfego imediato. Nosso link building usa outreach white-hat em ${country}.` },
     { title: "Monitoramento e Relatórios", desc: `Você recebe relatórios mensais detalhados sobre rankings SEO, performance PPC, engajamento em redes sociais e métricas de conteúdo para o mercado de ${city}.` },
@@ -551,15 +551,15 @@ const ptContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `O marketing digital em ${city} evoluiu muito além do SEO tradicional. Hoje, crescer online requer uma abordagem holística que combina otimização SEO, web design profissional, desenvolvimento web, criação de conteúdo estratégica, publicidade PPC e gestão de redes sociais. Empresas em ${city}, ${country} precisam de uma estratégia digital integrada para Google, Bing, buscadores IA como ChatGPT e Perplexity, redes sociais e canais pagos.`,
     `Nossa abordagem para crescimento digital em ${city} integra SEO com web design de alta conversão, desenvolvimento web mobile-first e criação de conteúdo especializada em palavras-chave LSI e otimização NLP. Combinado com gestão de PPC e marketing em redes sociais, amplificamos seu alcance orgânico.`,
-    `Visibilidade local é crucial para negócios em ${city}. Combinamos SEO local — Google Perfil de Empresa, gestão de avaliações — com campanhas PPC direcionadas, publicidade em redes sociais e criação de conteúdo localizado. Com desenvolvimento web profissional e Core Web Vitals, seu negócio em ${city} ganha vantagem competitiva completa.`,
+    `Visibilidade local é crucial para negócios em ${city}. Combinamos SEO local - Google Perfil de Empresa, gestão de avaliações - com campanhas PPC direcionadas, publicidade em redes sociais e criação de conteúdo localizado. Com desenvolvimento web profissional e Core Web Vitals, seu negócio em ${city} ganha vantagem competitiva completa.`,
   ],
   landmarksTitle: `Atendendo Empresas em Áreas-Chave de ${city}`,
   landmarks: [],
   whyChooseTitle: `Por Que Nos Escolher como Parceiro Digital em ${city}`,
   whyChoosePoints: [
-    { title: "Agência Digital Full-Service", desc: `Somos mais que uma empresa SEO em ${city}. Oferecemos web design, desenvolvimento web, criação de conteúdo, gestão de PPC e marketing em redes sociais — tudo sob o mesmo teto.` },
+    { title: "Agência Digital Full-Service", desc: `Somos mais que uma empresa SEO em ${city}. Oferecemos web design, desenvolvimento web, criação de conteúdo, gestão de PPC e marketing em redes sociais - tudo sob o mesmo teto.` },
     { title: "Preparados para Busca IA", desc: `Otimizamos seu negócio em ${city} para Google, Bing e buscadores IA como ChatGPT, Perplexity e Google Gemini com estratégias GEO.` },
-    { title: "Estratégias Baseadas em Dados", desc: `Cada decisão — de SEO e PPC a criação de conteúdo e web design — é apoiada por dados para maximizar o ROI do seu negócio em ${city}.` },
+    { title: "Estratégias Baseadas em Dados", desc: `Cada decisão - de SEO e PPC a criação de conteúdo e web design - é apoiada por dados para maximizar o ROI do seu negócio em ${city}.` },
     { title: "Web Design e Desenvolvimento Especializado", desc: `Nossa equipe constrói sites mobile-first de alta conversão para empresas de ${city}, de WordPress e Shopify a soluções personalizadas.` },
     { title: "Conteúdo e Redes Sociais", desc: `Nossos redatores e gestores de redes sociais criam conteúdo SEO-otimizado que gera autoridade e engajamento para seu negócio em ${city}.` },
     { title: "Alcance Multilíngue e Internacional", desc: `Para empresas em ${city} com mercados internacionais, oferecemos SEO multilíngue, PPC, criação de conteúdo e gestão de redes sociais com estratégias culturalmente adaptadas.` },
@@ -588,8 +588,8 @@ const trContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "Keşif ve Denetim", desc: `SEO, web tasarım, içerik kalitesi ve ${city} pazar rekabet analizi ile kapsamlı bir denetim ile başlıyoruz.` },
     { title: "Strateji Geliştirme", desc: `${city} pazarı için özel bir dijital strateji oluşturuyoruz: SEO, PPC kampanya planlaması, içerik stratejisi, sosyal medya yönetimi ve web geliştirme iyileştirmeleri.` },
-    { title: "Web Tasarım ve Teknik Optimizasyon", desc: `Tüm teknik SEO sorunlarını çözüyor ve web tasarımınızı iyileştiriyoruz — site hızı, Core Web Vitals, mobile-first web geliştirme, schema markup ve UX optimizasyonu.` },
-    { title: "İçerik Yazarlığı ve On-Page SEO", desc: `İçerik ekibimiz ${city} pazarı için yüksek değerli içerik oluşturuyor — profesyonel metin yazarlığı, meta etiketler ve iç bağlantı yapısı.` },
+    { title: "Web Tasarım ve Teknik Optimizasyon", desc: `Tüm teknik SEO sorunlarını çözüyor ve web tasarımınızı iyileştiriyoruz - site hızı, Core Web Vitals, mobile-first web geliştirme, schema markup ve UX optimizasyonu.` },
+    { title: "İçerik Yazarlığı ve On-Page SEO", desc: `İçerik ekibimiz ${city} pazarı için yüksek değerli içerik oluşturuyor - profesyonel metin yazarlığı, meta etiketler ve iç bağlantı yapısı.` },
     { title: "PPC, Sosyal Medya ve Link Building", desc: `Organik SEO'yu hedefli PPC reklamcılığı ve sosyal medya yönetimi ile tamamlıyoruz. Link building'de ${country}'deki white-hat outreach kullanıyoruz.` },
     { title: "İzleme ve Raporlama", desc: `SEO sıralamaları, PPC performansı, sosyal medya etkileşimi ve ${city} pazarı için içerik metrikleri hakkında detaylı aylık raporlar alırsınız.` },
   ],
@@ -619,16 +619,16 @@ const trContent: ContentGenerator = (city, country) => ({
   lsiParagraphs: [
     `${city}'de dijital pazarlama geleneksel SEO'nun çok ötesine geçti. Bugün online büyüme; arama motoru optimizasyonu, profesyonel web tasarım, web geliştirme, stratejik içerik yazarlığı, PPC reklamcılığı ve sosyal medya yönetimini birleştiren bütünsel bir yaklaşım gerektiriyor. ${city}, ${country}'deki işletmelerin Google, Bing, ChatGPT ve Perplexity gibi yapay zeka arama motorları, sosyal medya ve ücretli arama kanalları için entegre bir dijital stratejiye ihtiyacı var.`,
     `${city}'deki dijital büyüme yaklaşımımız SEO'yu yüksek dönüşümlü web tasarım, mobile-first web geliştirme ve LSI anahtar kelimeleri ve NLP optimizasyonunu hedefleyen uzman içerik yazarlığı ile entegre ediyor. PPC yönetimi ve sosyal medya pazarlaması ile organik erişiminizi güçlendiriyoruz.`,
-    `Yerel görünürlük ${city} işletmeleri için özellikle önemli. Yerel SEO'yu — Google İşletme Profili optimizasyonu ve yorum yönetimi dahil — hedefli PPC kampanyaları, sosyal medya reklamları ve yerelleştirilmiş içerik yazarlığı ile birleştiriyoruz. Core Web Vitals optimizasyonlu profesyonel web geliştirme ile ${city} işletmeniz kapsamlı rekabet avantajı kazanıyor.`,
+    `Yerel görünürlük ${city} işletmeleri için özellikle önemli. Yerel SEO'yu - Google İşletme Profili optimizasyonu ve yorum yönetimi dahil - hedefli PPC kampanyaları, sosyal medya reklamları ve yerelleştirilmiş içerik yazarlığı ile birleştiriyoruz. Core Web Vitals optimizasyonlu profesyonel web geliştirme ile ${city} işletmeniz kapsamlı rekabet avantajı kazanıyor.`,
   ],
   landmarksTitle: `${city}'deki Önemli Bölgelerdeki İşletmelere Hizmet Veriyoruz`,
   landmarks: [],
   whyChooseTitle: `${city}'de Neden Bizi Dijital Partneriniz Olarak Seçmelisiniz`,
   whyChoosePoints: [
-    { title: "Full-Service Dijital Ajans", desc: `${city}'de sadece bir SEO şirketi değiliz. Web tasarım, web geliştirme, içerik yazarlığı, PPC yönetimi ve sosyal medya pazarlaması — ${city} işletmenizin ihtiyacı olan her şeyi tek çatı altında sunuyoruz.` },
+    { title: "Full-Service Dijital Ajans", desc: `${city}'de sadece bir SEO şirketi değiliz. Web tasarım, web geliştirme, içerik yazarlığı, PPC yönetimi ve sosyal medya pazarlaması - ${city} işletmenizin ihtiyacı olan her şeyi tek çatı altında sunuyoruz.` },
     { title: "Yapay Zeka Arama Hazırlığı", desc: `${city} işletmenizi Google, Bing ve ChatGPT, Perplexity, Google Gemini gibi yapay zeka arama motorları için GEO stratejileri ile optimize ediyoruz.` },
     { title: "Veri Odaklı Stratejiler", desc: `SEO ve PPC'den içerik yazarlığı ve web tasarıma kadar her karar, ${city} işletmenizin ROI'sini maksimize etmek için verilerle desteklenir.` },
-    { title: "Uzman Web Tasarım ve Geliştirme", desc: `Web tasarım ve web geliştirme ekibimiz ${city} işletmeleri için yüksek dönüşümlü, mobile-first siteler inşa eder — WordPress ve Shopify'dan özel çözümlere kadar.` },
+    { title: "Uzman Web Tasarım ve Geliştirme", desc: `Web tasarım ve web geliştirme ekibimiz ${city} işletmeleri için yüksek dönüşümlü, mobile-first siteler inşa eder - WordPress ve Shopify'dan özel çözümlere kadar.` },
     { title: "İçerik Yazarlığı ve Sosyal Medya", desc: `Uzman içerik yazarlarımız ve sosyal medya yöneticilerimiz ${city} işletmeniz için LinkedIn, Instagram, Facebook ve X'te otorite ve etkileşim oluşturan SEO-optimize içerikler üretir.` },
     { title: "Çok Dilli ve Uluslararası Erişim", desc: `Uluslararası pazarları hedefleyen ${city} işletmeleri için çok dilli SEO, PPC, içerik yazarlığı ve sosyal medya yönetimi hizmetleri sunuyoruz.` },
   ],
@@ -657,7 +657,7 @@ const jaContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "発見と監査", desc: `SEO、Webデザイン、コンテンツ品質、${city}市場の競合分析を含む包括的な監査から始めます。` },
     { title: "戦略開発", desc: `${city}市場向けのカスタムデジタル戦略を作成：SEO、PPC計画、コンテンツ戦略、SNS運用、Web開発改善。` },
-    { title: "Webデザインと技術最適化", desc: `技術的SEO問題をすべて解決しWebデザインを改善—サイト速度、Core Web Vitals、モバイルファーストWeb開発、スキーママークアップ。` },
+    { title: "Webデザインと技術最適化", desc: `技術的SEO問題をすべて解決しWebデザインを改善-サイト速度、Core Web Vitals、モバイルファーストWeb開発、スキーママークアップ。` },
     { title: "コンテンツ制作とオンページSEO", desc: `コンテンツチームが${city}市場向けの高価値コンテンツを作成・最適化。プロのコピーライティング、メタタグ、内部リンク構造。` },
     { title: "PPC・SNS・リンクビルディング", desc: `オーガニックSEOをターゲットPPC広告とSNS運用で補完し即座のトラフィックを実現。${country}でのホワイトハットリンクビルディング。` },
     { title: "モニタリングとレポート", desc: `SEOランキング、PPCパフォーマンス、SNSエンゲージメント、コンテンツ指標の詳細な月次レポートを提供。` },
@@ -719,7 +719,7 @@ const koContent: ContentGenerator = (city, country) => ({
   processSteps: [
     { title: "발견 및 감사", desc: `SEO, 웹 디자인, 콘텐츠 품질, ${city} 시장 경쟁 분석을 포함한 종합 감사로 시작합니다.` },
     { title: "전략 개발", desc: `${city} 시장을 위한 맞춤 디지털 전략 수립: SEO, PPC 기획, 콘텐츠 전략, 소셜 미디어 관리, 웹 개발 개선.` },
-    { title: "웹 디자인 및 기술 최적화", desc: `모든 기술적 SEO 문제를 해결하고 웹 디자인 개선 — 사이트 속도, Core Web Vitals, 모바일 퍼스트 웹 개발, 스키마 마크업.` },
+    { title: "웹 디자인 및 기술 최적화", desc: `모든 기술적 SEO 문제를 해결하고 웹 디자인 개선 - 사이트 속도, Core Web Vitals, 모바일 퍼스트 웹 개발, 스키마 마크업.` },
     { title: "콘텐츠 제작 및 온페이지 SEO", desc: `콘텐츠 팀이 ${city} 시장을 위한 고가치 콘텐츠를 제작 및 최적화합니다. 전문 카피라이팅, 메타 태그, 내부 링크 구조.` },
     { title: "PPC, 소셜 미디어 및 링크 빌딩", desc: `유기적 SEO를 타겟 PPC 광고와 소셜 미디어 관리로 보완하여 즉각적인 트래픽을 유도합니다.` },
     { title: "모니터링 및 보고", desc: `SEO 순위, PPC 성과, 소셜 미디어 참여, 콘텐츠 메트릭에 대한 상세 월간 보고서를 제공합니다.` },
@@ -1171,7 +1171,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Gangnam & Teheran-ro", desc: "강남 테헤란로 IT 기업 및 스타트업을 위한 SEO 서비스." },
     { name: "Myeongdong & Jung-gu", desc: "명동 및 중구 상업지구 비즈니스를 위한 검색 최적화." },
   ],
-  // Pakistan — remaining
+  // Pakistan - remaining
   peshawar: [
     { name: "Saddar & University Road", desc: "SEO services for businesses along University Road, Saddar Bazaar, and the historic walled city area." },
     { name: "Hayatabad", desc: "Helping businesses in Hayatabad's commercial phases and the nearby industrial estate." },
@@ -1192,7 +1192,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Sialkot Industrial Estate", desc: "Supporting sporting goods manufacturers and leather exporters in the Sialkot Industrial Estate." },
     { name: "Iqbal Shaheed Road", desc: "Helping retail and service businesses along the main Iqbal Shaheed Road corridor." },
   ],
-  // UAE — remaining
+  // UAE - remaining
   sharjah: [
     { name: "Al Majaz & Buhaira Corniche", desc: "SEO for businesses along the Buhaira Corniche waterfront and Al Majaz commercial district." },
     { name: "Sharjah Industrial Area (SAIF Zone)", desc: "Helping manufacturing, logistics, and trade businesses in SAIF Zone and Sharjah Airport Free Zone." },
@@ -1217,7 +1217,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Jebel Hafeet & Al Ain Zoo", desc: "Helping hospitality and tourism businesses near Jebel Hafeet and the Al Ain Zoo area." },
     { name: "Al Ain Industrial Area", desc: "Digital optimization for manufacturing and B2B businesses in Al Ain's industrial zone." },
   ],
-  // Saudi Arabia — remaining
+  // Saudi Arabia - remaining
   dammam: [
     { name: "Corniche & King Fahd Causeway", desc: "SEO for businesses along Dammam Corniche and near the Saudi-Bahrain causeway corridor." },
     { name: "Al Shatea & Al Faisaliyah", desc: "Helping retail and service businesses in the Al Shatea and Al Faisaliyah commercial districts." },
@@ -1243,7 +1243,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Al Saad & City Centre", desc: "SEO for hospitality and tourism businesses in Abha city centre and Al Saad district." },
     { name: "Asir National Park Area", desc: "Helping eco-tourism and hospitality businesses near Asir National Park and Green Mountain." },
   ],
-  // Qatar — remaining
+  // Qatar - remaining
   "al-wakrah": [
     { name: "Al Wakrah Souq & Corniche", desc: "SEO for businesses near the renovated Al Wakrah Souq and waterfront corniche area." },
     { name: "Al Wakrah Main Road", desc: "Helping retail and service businesses along the main commercial road in Al Wakrah." },
@@ -1310,7 +1310,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "El Mina & Al Tal", desc: "SEO for businesses in Tripoli's historic centre, El Mina port area, and Al Tal commercial district." },
     { name: "Rachid Karami Fairground", desc: "Helping businesses near the iconic Rachid Karami International Fair complex." },
   ],
-  // Egypt — remaining
+  // Egypt - remaining
   alexandria: [
     { name: "Corniche & Stanley Bridge", desc: "SEO for hospitality and tourism businesses along Alexandria's famous Corniche waterfront." },
     { name: "Smouha & Sidi Gaber", desc: "Helping retail and service businesses in the Smouha and Sidi Gaber commercial areas." },
@@ -1338,7 +1338,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Medina & Avenue Habib Bourguiba", desc: "SEO for businesses along Avenue Habib Bourguiba and the historic Tunis Medina." },
     { name: "Les Berges du Lac", desc: "Helping corporate and tech businesses in the modern Les Berges du Lac business district." },
   ],
-  // UK — remaining
+  // UK - remaining
   birmingham: [
     { name: "Bullring & City Centre", desc: "SEO for retail and hospitality businesses in Birmingham's Bullring and city centre area." },
     { name: "Jewellery Quarter", desc: "Helping creative, artisan, and professional businesses in the historic Jewellery Quarter." },
@@ -1380,7 +1380,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Old Market Square & Lace Market", desc: "SEO for retail and hospitality businesses around Old Market Square and the Lace Market." },
     { name: "Creative Quarter", desc: "Helping creative and tech startups in Nottingham's Creative Quarter." },
   ],
-  // USA — remaining
+  // USA - remaining
   chicago: [
     { name: "The Loop & Magnificent Mile", desc: "SEO for businesses in Chicago's Loop financial district and the Magnificent Mile shopping strip." },
     { name: "River North & West Loop", desc: "Helping creative agencies, restaurants, and tech companies in River North and the West Loop." },
@@ -1456,7 +1456,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Downtown & North Loop", desc: "SEO for corporate and tech businesses in downtown Minneapolis and the North Loop neighborhood." },
     { name: "Uptown & Lake Street", desc: "Helping retail and lifestyle businesses in Uptown Minneapolis and along Lake Street." },
   ],
-  // Canada — remaining
+  // Canada - remaining
   vancouver: [
     { name: "Gastown & Downtown", desc: "SEO for tech, creative, and hospitality businesses in Gastown and downtown Vancouver." },
     { name: "Mount Pleasant & Main Street", desc: "Helping independent businesses and startups on Main Street and in Mount Pleasant." },
@@ -1485,7 +1485,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Downtown & Waterfront", desc: "SEO for tourism, hospitality, and maritime businesses on Halifax's downtown waterfront." },
     { name: "Spring Garden Road", desc: "Helping retail and service businesses along Spring Garden Road." },
   ],
-  // Germany — remaining
+  // Germany - remaining
   munich: [
     { name: "Marienplatz & Altstadt", desc: "SEO für Unternehmen in der Altstadt, Marienplatz und dem Viktualienmarkt." },
     { name: "Schwabing & Maxvorstadt", desc: "SEO für Startups und kreative Unternehmen in Schwabing und Maxvorstadt." },
@@ -1549,7 +1549,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Flon & Centre-Ville", desc: "SEO pour les entreprises du quartier du Flon et du centre-ville de Lausanne." },
     { name: "EPFL & Innovation Park", desc: "SEO pour les startups et entreprises tech à l'EPFL Innovation Park." },
   ],
-  // France — remaining
+  // France - remaining
   lyon: [
     { name: "Presqu'île & Part-Dieu", desc: "SEO pour les entreprises de la Presqu'île et du quartier d'affaires de la Part-Dieu." },
     { name: "Vieux Lyon & Confluence", desc: "SEO pour les commerces du Vieux Lyon et le quartier de la Confluence." },
@@ -1593,7 +1593,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Meir & Groenplaats", desc: "SEO voor winkels en bedrijven op de Meir en rond de Groenplaats." },
     { name: "Diamond District & Centraal Station", desc: "SEO voor diamanthandelaren en bedrijven bij het Centraal Station." },
   ],
-  // Netherlands — remaining
+  // Netherlands - remaining
   rotterdam: [
     { name: "Kop van Zuid & Erasmusbrug", desc: "SEO voor bedrijven op de Kop van Zuid en rond de Erasmusbrug." },
     { name: "Rotterdam Centraal & Markthal", desc: "SEO voor horeca en winkels bij Rotterdam Centraal en de Markthal." },
@@ -1753,7 +1753,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   antalya: [
     { name: "Kaleiçi & Lara Beach", desc: "SEO for tourism and hospitality businesses in Kaleiçi Old Town and Lara Beach." },
   ],
-  // Australia — remaining
+  // Australia - remaining
   brisbane: [
     { name: "CBD & South Bank", desc: "SEO for businesses in Brisbane CBD and the South Bank cultural precinct." },
     { name: "Fortitude Valley", desc: "Helping creative, entertainment, and tech businesses in Fortitude Valley." },
@@ -1815,12 +1815,12 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
     { name: "Cebu IT Park & Lahug", desc: "SEO for BPO and tech businesses in Cebu IT Park and Lahug area." },
     { name: "Mactan & Mandaue", desc: "Helping export and manufacturing businesses in Mactan Economic Zone and Mandaue." },
   ],
-  // Japan — remaining
+  // Japan - remaining
   osaka: [
     { name: "Umeda & Kita", desc: "大阪梅田・北区エリアのビジネス向けSEOサービス。" },
     { name: "Namba & Shinsaibashi", desc: "難波・心斎橋の商業施設・飲食店向けSEO対策。" },
   ],
-  // Korea — remaining
+  // Korea - remaining
   busan: [
     { name: "Haeundae & Centum City", desc: "해운대 센텀시티 지역 비즈니스를 위한 SEO 서비스." },
     { name: "Nampo-dong & Gwangalli", desc: "남포동 및 광안리 상업지구 비즈니스를 위한 검색 최적화." },
@@ -1926,7 +1926,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   // Sweden
   stockholm: [
     { name: "Norrmalm & Östermalm", desc: "SEO för företag inom finans, mode och lyxvarumärken i Norrmalm CBD och det eleganta Östermalm." },
-    { name: "Kista Science City", desc: "Hjälper teknikföretag och startups i Kista Science City — Skandinaviens ledande tech-kluster." },
+    { name: "Kista Science City", desc: "Hjälper teknikföretag och startups i Kista Science City - Skandinaviens ledande tech-kluster." },
     { name: "Södermalm & Gamla Stan", desc: "SEO för kreativa byråer, restauranger och turistföretag i Södermalm och det historiska Gamla Stan." },
     { name: "Solna & Sundbyberg", desc: "Hjälper företag i Solna Strand, Friends Arena-området och Sundbybergs snabbväxande affärsdistrikt." },
   ],
@@ -1958,7 +1958,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   // Finland
   helsinki: [
     { name: "Kamppi & Töölö", desc: "SEO yrityksille Kampin kauppakeskuksen ja Töölön vilkkailla kaupallisilla alueilla." },
-    { name: "Keilaniemi & Espoo Tech Hub", desc: "Autamme teknologiayrityksiä ja startupeja Keilaniemessä — Pohjoismaiden johtavassa teknologiakeskuksessa, jossa toimivat Nokia, Kone ja monet muut suuryritykset." },
+    { name: "Keilaniemi & Espoo Tech Hub", desc: "Autamme teknologiayrityksiä ja startupeja Keilaniemessä - Pohjoismaiden johtavassa teknologiakeskuksessa, jossa toimivat Nokia, Kone ja monet muut suuryritykset." },
     { name: "Kalasatama & Sörnäinen", desc: "SEO innovatiivisille yrityksille ja startup-ekosysteemille Helsingin uudessa Kalasatama-kehitysalueella." },
     { name: "Pasila & Tripla", desc: "Autamme yrityksiä Pasilassa ja modernissa Tripla-kauppakeskus- ja toimistokompleksissa." },
   ],
@@ -1983,7 +1983,7 @@ export const cityLandmarks: Record<string, { name: string; desc: string }[]> = {
   // Sweden
   uppsala: [
     { name: "Uppsala Centrum & Stora Torget", desc: "SEO för handels- och restaurangföretag i Uppsala stadskärna och runt det historiska Stora Torget." },
-    { name: "Uppsala Universitet & Bioteknik", desc: "Hjälper life science-företag, startups och forskningsinstitut nära Uppsala Universitets campus — ett av Nordeuropas ledande." },
+    { name: "Uppsala Universitet & Bioteknik", desc: "Hjälper life science-företag, startups och forskningsinstitut nära Uppsala Universitets campus - ett av Nordeuropas ledande." },
     { name: "Fyrislund & Uppsala Logistikpark", desc: "SEO för logistik-, tillverknings- och distributionsföretag i Fyrislund och Uppsalas växande logistikpark." },
   ],
 };

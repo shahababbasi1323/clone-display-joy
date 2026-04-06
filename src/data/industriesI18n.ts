@@ -275,7 +275,7 @@ const toIndustryData = (e: MiniEntry, heroTitle: string, caseStudy: { metric: st
 });
 
 /* ═══════════════════════════════════════════════════════
-   ARABIC INDUSTRIES — Top 35 high-demand in MENA/Gulf
+   ARABIC INDUSTRIES - Top 35 high-demand in MENA/Gulf
    ═══════════════════════════════════════════════════════ */
 
 const arIndustries: MiniEntry[] = [
@@ -964,7 +964,7 @@ const arIndustries: MiniEntry[] = [
 ];
 
 /* ═══════════════════════════════════════════════════════
-   FRENCH INDUSTRIES — Top 35 high-demand in France/Africa
+   FRENCH INDUSTRIES - Top 35 high-demand in France/Africa
    ═══════════════════════════════════════════════════════ */
 
 const frChallenges = (s: string) => [
@@ -1054,7 +1054,7 @@ const frIndustries: MiniEntry[] = [
 ];
 
 /* ═════════════════════════════════════════════════════════════
-   GERMAN INDUSTRIES — Top 30 high-demand in DACH region
+   GERMAN INDUSTRIES - Top 30 high-demand in DACH region
    ═════════════════════════════════════════════════════════════ */
 
 const deChallenges = (s: string) => [
@@ -1179,7 +1179,7 @@ const deIndustries: MiniEntry[] = [
 ];
 
 /* ═══════════════════════════════════════════════════════
-   SPANISH INDUSTRIES — Top 30 high-demand in Spain/LATAM
+   SPANISH INDUSTRIES - Top 30 high-demand in Spain/LATAM
    ═══════════════════════════════════════════════════════ */
 
 const esChallenges = (s: string) => [
@@ -1298,7 +1298,7 @@ const esIndustries: MiniEntry[] = [
 ];
 
 /* ═══════════════════════════════════════════════════════
-   DUTCH INDUSTRIES — Top 25 high-demand in NL/BE
+   DUTCH INDUSTRIES - Top 25 high-demand in NL/BE
    ═══════════════════════════════════════════════════════ */
 
 const nlChallenges = (s: string) => [
