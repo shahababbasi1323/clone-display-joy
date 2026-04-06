@@ -49,6 +49,13 @@ const en = (
   hreflangAlternates: alt, region,
 });
 
+const arDescTemplates = [
+  (c: string, co: string) => `وكالة سيو متخصصة في ${c}، ${co}. نقدم تحسين محركات البحث التقني، بناء الروابط، واستراتيجية المحتوى لزيادة ظهورك الرقمي. احصل على تدقيق مجاني.`,
+  (c: string, co: string) => `خدمات تحسين محركات البحث في ${c} - نتائج مثبتة في ${co}. تحسين تقني، محتوى احترافي، وبناء روابط قوية. استشارة مجانية لأعمالك.`,
+  (c: string, co: string) => `ارتقِ بموقعك في نتائج البحث في ${c}، ${co}. فريق سيو متخصص يقدم حلول شاملة من التحسين التقني إلى تحسين البحث بالذكاء الاصطناعي. تدقيق مجاني.`,
+  (c: string, co: string) => `أفضل خدمات سيو في ${c} - خبراء تحسين محركات البحث في ${co}. استراتيجيات مبنية على البيانات لزيادة حركة المرور العضوية والعائد على الاستثمار.`,
+];
+
 const ar = (
   city: string, localCity: string, slugCity: string, country: string, localCountry: string, cc: string,
   nearby: string[], alt: { lang: string; href: string }[] = [], region?: string
@@ -56,10 +63,17 @@ const ar = (
   slug: `seo-services-${slugCity}`,
   city, localCity, country, localCountry, countryCode: cc, lang: "ar", langPrefix: "ar",
   metaTitle: `خدمات سيو في ${localCity} - خبير تحسين محركات البحث ${localCountry}`,
-  metaDescription: `خدمات تحسين محركات البحث الاحترافية في ${localCity}، ${localCountry}. تحسين تقني، بناء روابط، واستراتيجية محتوى. احصل على تدقيق سيو مجاني لأعمالك.`,
+  metaDescription: arDescTemplates[hashStr(slugCity) % arDescTemplates.length](localCity, localCountry),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region, isRTL: true,
 });
+
+const frDescTemplates = [
+  (c: string, co: string) => `Agence SEO experte à ${c}, ${co}. Référencement technique, stratégie de contenu, et netlinking pour dominer les résultats de recherche. Audit SEO gratuit.`,
+  (c: string, co: string) => `Boostez votre visibilité en ligne à ${c}. Services de référencement professionnel en ${co} : audit technique, optimisation on-page et link building. Consultation gratuite.`,
+  (c: string, co: string) => `Services SEO performants à ${c}, ${co}. Notre expertise en référencement naturel, contenu optimisé et backlinks de qualité propulse votre site en première page.`,
+  (c: string, co: string) => `Expert SEO à ${c} - résultats mesurables en ${co}. Optimisation technique, stratégie de mots-clés et création de liens pour une croissance organique durable. Audit gratuit.`,
+];
 
 const fr = (
   city: string, slugCity: string, country: string, cc: string,
@@ -68,7 +82,7 @@ const fr = (
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "fr", langPrefix: "fr",
   metaTitle: `Services SEO à ${city} - Expert Référencement ${country}`,
-  metaDescription: `Services de référencement professionnel à ${city}, ${country}. SEO technique, création de liens, stratégie de contenu. Audit SEO gratuit pour votre entreprise.`,
+  metaDescription: frDescTemplates[hashStr(slugCity) % frDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
