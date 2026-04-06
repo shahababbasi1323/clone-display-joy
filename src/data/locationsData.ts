@@ -92,12 +92,30 @@ const de = (
   nearby: string[], alt: { lang: string; href: string }[] = [], region?: string
 ): LocationData => ({
   slug: `seo-services-${slugCity}`,
+const deDescTemplates = [
+  (c: string, co: string) => `SEO-Agentur in ${c}, ${co}. Technisches SEO, strategischer Linkaufbau und datengetriebene Content-Optimierung für nachhaltiges Wachstum. Kostenloses SEO-Audit.`,
+  (c: string, co: string) => `Professionelle Suchmaschinenoptimierung in ${c}. Wir steigern Ihre Sichtbarkeit in ${co} durch technische Audits, Content-Strategie und qualitatives Linkbuilding. Gratis Analyse.`,
+  (c: string, co: string) => `Top SEO-Dienstleistungen für ${c}, ${co}. Von Core Web Vitals bis KI-Suchoptimierung — wir bringen Ihr Unternehmen auf Seite 1. Jetzt kostenlose Beratung sichern.`,
+  (c: string, co: string) => `Ihr SEO-Partner in ${c}. Maßgeschneiderte Strategien für ${co}: technisches SEO, lokale Optimierung, Backlink-Aufbau und messbare Ergebnisse. Kostenloses Audit.`,
+];
+
+const de = (
+  city: string, slugCity: string, country: string, cc: string,
+  nearby: string[], alt: { lang: string; href: string }[] = [], region?: string
+): LocationData => ({
+  slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "de", langPrefix: "de",
   metaTitle: `SEO Agentur ${city} - Suchmaschinenoptimierung ${country}`,
-  metaDescription: `Professionelle SEO-Dienstleistungen in ${city}, ${country}. Technisches SEO, Linkaufbau, Content-Strategie. Kostenloses SEO-Audit für Ihr Unternehmen.`,
+  metaDescription: deDescTemplates[hashStr(slugCity) % deDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
+
+const nlDescTemplates = [
+  (c: string, co: string) => `SEO-bureau in ${c}, ${co}. Technische optimalisatie, linkbuilding en contentstrategie voor duurzame groei in zoekmachines. Gratis SEO-audit.`,
+  (c: string, co: string) => `Professionele zoekmachineoptimalisatie in ${c}. Wij helpen bedrijven in ${co} hoger scoren met datagedreven SEO, content en backlinks. Gratis analyse.`,
+  (c: string, co: string) => `Verbeter uw online zichtbaarheid in ${c}, ${co}. Van technische SEO tot lokale optimalisatie en AI-zoekmachines. Vraag een gratis SEO-audit aan.`,
+];
 
 const nl = (
   city: string, slugCity: string, country: string, cc: string,
@@ -106,10 +124,16 @@ const nl = (
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "nl", langPrefix: "nl",
   metaTitle: `SEO Diensten ${city} - SEO Expert ${country}`,
-  metaDescription: `Professionele SEO-diensten in ${city}, ${country}. Technische SEO, linkbuilding, contentstrategie. Gratis SEO-audit voor uw bedrijf.`,
+  metaDescription: nlDescTemplates[hashStr(slugCity) % nlDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
+
+const itDescTemplates = [
+  (c: string, co: string) => `Agenzia SEO a ${c}, ${co}. Ottimizzazione tecnica, link building e strategia di contenuti per scalare le classifiche di Google. Audit SEO gratuito.`,
+  (c: string, co: string) => `Servizi SEO professionali a ${c}. Aumenta la visibilità della tua azienda in ${co} con audit tecnici, contenuti ottimizzati e backlink di qualità. Consulenza gratuita.`,
+  (c: string, co: string) => `Esperti SEO a ${c}, ${co}. Dalla SEO tecnica all'ottimizzazione per i motori AI, portiamo il tuo sito in prima pagina. Richiedi un audit gratuito.`,
+];
 
 const it = (
   city: string, slugCity: string, country: string, cc: string,
@@ -118,10 +142,16 @@ const it = (
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "it", langPrefix: "it",
   metaTitle: `Servizi SEO a ${city} - Esperto SEO ${country}`,
-  metaDescription: `Servizi SEO professionali a ${city}, ${country}. SEO tecnico, link building, strategia dei contenuti. Audit SEO gratuito per la tua azienda.`,
+  metaDescription: itDescTemplates[hashStr(slugCity) % itDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
+
+const esDescTemplates = [
+  (c: string, co: string) => `Agencia SEO en ${c}, ${co}. Posicionamiento web, SEO técnico, link building y estrategia de contenidos para dominar Google. Auditoría SEO gratuita.`,
+  (c: string, co: string) => `Servicios de posicionamiento web en ${c}. Aumenta tu tráfico orgánico en ${co} con auditorías técnicas, contenido optimizado y enlaces de calidad. Consulta gratis.`,
+  (c: string, co: string) => `Expertos en SEO en ${c}, ${co}. Estrategias basadas en datos para mejorar rankings, tráfico y conversiones. Solicita tu auditoría SEO gratuita.`,
+];
 
 const es = (
   city: string, slugCity: string, country: string, cc: string,
@@ -130,10 +160,16 @@ const es = (
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "es", langPrefix: "es",
   metaTitle: `Servicios SEO en ${city} - Experto Posicionamiento ${country}`,
-  metaDescription: `Servicios profesionales de SEO en ${city}, ${country}. SEO técnico, link building, estrategia de contenidos. Auditoría SEO gratuita para tu negocio.`,
+  metaDescription: esDescTemplates[hashStr(slugCity) % esDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
+
+const ptDescTemplates = [
+  (c: string, co: string) => `Agência SEO em ${c}, ${co}. Otimização técnica, link building e estratégia de conteúdo para dominar os resultados de pesquisa. Auditoria SEO gratuita.`,
+  (c: string, co: string) => `Serviços de SEO profissionais em ${c}. Aumente a visibilidade do seu negócio em ${co} com auditorias técnicas e backlinks de qualidade. Consulta gratuita.`,
+  (c: string, co: string) => `Especialistas em SEO em ${c}, ${co}. Estratégias orientadas por dados para mais tráfego orgânico e melhor posicionamento no Google. Auditoria grátis.`,
+];
 
 const pt = (
   city: string, slugCity: string, country: string, cc: string,
@@ -142,7 +178,7 @@ const pt = (
   slug: `seo-services-${slugCity}`,
   city, country, countryCode: cc, lang: "pt", langPrefix: "pt",
   metaTitle: `Serviços SEO em ${city} - Especialista SEO ${country}`,
-  metaDescription: `Serviços profissionais de SEO em ${city}, ${country}. SEO técnico, link building, estratégia de conteúdo. Auditoria SEO gratuita para o seu negócio.`,
+  metaDescription: ptDescTemplates[hashStr(slugCity) % ptDescTemplates.length](city, country),
   nearbyCities: nearby.map(n => `seo-services-${n}`),
   hreflangAlternates: alt, region,
 });
