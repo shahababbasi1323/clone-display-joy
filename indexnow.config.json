@@ -1,0 +1,16 @@
+{
+  "site_url": "https://shahababbasi.com/",
+  "indexnow_key_file_public_path": "/indexnow-key.txt",
+  "sitemaps": [
+    "https://shahababbasi.com/sitemap.xml"
+  ],
+  "indexnow_api": "https://api.indexnow.org/indexnow",
+  "state_file": ".indexnow-state.json",
+  "max_urls_per_run": 100,
+  "request_timeout_seconds": 20,
+  "cooldown_hours": 24,
+  "batch_size": 20,
+  "delay_between_batches_seconds": 3,
+  "max_retries_on_429": 3,
+  "retry_backoff_seconds": 30
+}
