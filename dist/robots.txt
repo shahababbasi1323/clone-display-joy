@@ -1,0 +1,261 @@
+# ============================================
+# ROBOTS.TXT FOR SHAHABABBASI.COM
+# Coding & Technical Content Website
+# Optimized for: Search Engines + AI Overview + LLM Training
+# ============================================
+
+# ALLOW: Major Search Engines (Full Access)
+# ----------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+
+# ALLOW: AI & LLM Crawlers (Critical for AI Overview Ranking)
+# ----------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Magpie-crawler
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: Omgili
+Allow: /
+
+User-agent: PanguBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: VelenPublicWebCrawler
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+
+# ============================================
+# URL PARAMETERS & DYNAMIC CONTENT
+# Block tracking, session, and filter parameters
+# ============================================
+
+# Block tracking and session parameters
+Disallow: /*utm_
+Disallow: /*ref=
+Disallow: /*session=
+Disallow: /*fbclid=
+Disallow: /*gclid=
+Disallow: /*utm_source=
+Disallow: /*utm_medium=
+Disallow: /*utm_campaign=
+Disallow: /*utm_term=
+Disallow: /*utm_content=
+Disallow: /*utm_id=
+Disallow: /*utm_source_platform=
+Disallow: /*utm_creative_format=
+Disallow: /*utm_marketing_tactic=
+Disallow: /*mc_cid=
+Disallow: /*mc_eid=
+Disallow: /*pk_campaign=
+Disallow: /*pk_kwd=
+Disallow: /*pk_keyword=
+Disallow: /*pk_source=
+Disallow: /*pk_medium=
+Disallow: /*pk_content=
+Disallow: /*pk_cid=
+Disallow: /*piwik_campaign=
+Disallow: /*piwik_kwd=
+Disallow: /*mtm_source=
+Disallow: /*mtm_medium=
+Disallow: /*mtm_campaign=
+Disallow: /*mtm_keyword=
+Disallow: /*mtm_content=
+Disallow: /*mtm_cid=
+Disallow: /*mtm_group=
+Disallow: /*mtm_placement=
+Disallow: /*yclid=
+Disallow: /*_openstat=
+Disallow: /*wickedid=
+Disallow: /*gb_source=
+Disallow: /*gb_medium=
+Disallow: /*gb_campaign=
+Disallow: /*gb_keyword=
+Disallow: /*gb_content=
+Disallow: /*msclkid=
+Disallow: /*ttclid=
+Disallow: /*twclid=
+Disallow: /*li_fat_id=
+Disallow: /*igshid=
+Disallow: /*si=
+
+# Block search and filter parameters
+Disallow: /search/
+Disallow: /*?s=
+Disallow: /*?search=
+Disallow: /*?q=
+Disallow: /*filter=
+Disallow: /*sort=
+Disallow: /*orderby=
+Disallow: /*order=
+Disallow: /*dir=
+Disallow: /*page=
+Disallow: /*p=
+Disallow: /*offset=
+Disallow: /*limit=
+Disallow: /*per_page=
+Disallow: /*view=
+Disallow: /*mode=
+Disallow: /*layout=
+Disallow: /*format=
+Disallow: /*type=
+Disallow: /*category=
+Disallow: /*cat=
+Disallow: /*tag=
+Disallow: /*author=
+Disallow: /*year=
+Disallow: /*month=
+Disallow: /*day=
+Disallow: /*date=
+Disallow: /*from=
+Disallow: /*to=
+Disallow: /*min=
+Disallow: /*max=
+Disallow: /*price=
+Disallow: /*rating=
+
+# Block admin, auth, and sensitive areas
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/uploads/
+Disallow: /admin/
+Disallow: /administrator/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /register/
+Disallow: /signup/
+Disallow: /reset-password/
+Disallow: /forgot-password/
+Disallow: /account/
+Disallow: /user/
+Disallow: /profile/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /graphql/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /trackback/
+Disallow: /cgi-bin/
+
+# Block utility and temp files
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /backups/
+Disallow: /old/
+Disallow: /test/
+Disallow: /testing/
+Disallow: /dev/
+Disallow: /development/
+Disallow: /staging/
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.zip$
+Disallow: /*.tar.gz$
+Disallow: /*.bak$
+Disallow: /*.swp$
+Disallow: /*.env$
+Disallow: /*.config$
+Disallow: /*.ini$
+Disallow: /*.json?*
+Disallow: /*?rest_route=
+Disallow: /*?replytocom=
+
+# ============================================
+# CRAWL RATE LIMITING
+# ============================================
+Crawl-delay: 1
+
+# ============================================
+# SITEMAP
+# Critical for AI Overview and LLM discovery
+# ============================================
+Sitemap: https://shahababbasi.com/sitemap.xml

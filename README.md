@@ -1,75 +1,75 @@
-# Lovable IndexNow Pro Bundle
+# Shahab Abbasi - Static Pre-Rendered Site
 
-This is the upgraded version for Lovable, React, Vercel, Netlify, and other custom/static sites.
+This is a Vite + React + shadcn-ui app that ships as **fully pre-rendered static HTML**.
+Every route in the sitemap (currently 634 URLs) has a real `index.html` file in `dist/`
+with the full page content baked in, so search engines (Google, Bing, DuckDuckGo) and
+AI engines (ChatGPT, Perplexity, Claude, Gemini) can read it instantly without running
+any JavaScript.
 
-## What is upgraded
-- Runs on every push to `main`
-- Also runs every hour
-- Supports multiple sitemaps
-- Supports `sitemap.xml` and `sitemap_index.xml`
-- Sends only URLs outside the cooldown window
-- Uses batch sending
-- Retries automatically after 429
-- Stores sent history in `.indexnow-state.json`
+The React bundle is still loaded after the static HTML so client navigation between
+pages stays fast (no full reload).
 
-## Files included
-- `indexnow.config.json`
-- `public/indexnow-key.txt`
-- `scripts/indexnow.py`
-- `.github/workflows/indexnow.yml`
-- `README.md`
+## Build
 
-## What you must edit
-### 1) Update `indexnow.config.json`
-Change:
-- `site_url`
-- `sitemaps`
-
-Example:
-```json
-{
-  "site_url": "https://sidingcontractorsusa.com",
-  "sitemaps": [
-    "https://sidingcontractorsusa.com/sitemap.xml"
-  ]
-}
+```bash
+npm install
+npm run build
 ```
 
-### 2) Update `public/indexnow-key.txt`
-Paste your real IndexNow key inside the file.
+`npm run build` runs two steps:
 
-## Repo structure
-```text
-your-project/
-  public/
-    indexnow-key.txt
-  scripts/
-    indexnow.py
-  .github/
-    workflows/
-      indexnow.yml
-  indexnow.config.json
+1. `vite build` -> produces the SPA shell in `dist/` (one `index.html`, the JS/CSS bundle,
+   and a fresh `sitemap.xml` listing every public route).
+2. `node prerender.mjs` -> starts `vite preview` on `127.0.0.1:4173`, launches a
+   headless Chromium, navigates to every URL in `dist/sitemap.xml`, waits for React
+   to finish rendering, and writes the full rendered HTML to `dist/<route>/index.html`.
+
+The pre-render step needs a Chromium binary. If your build server doesn't already
+have one, install Chrome for Testing with:
+
+```bash
+npx puppeteer browsers install chrome
 ```
 
-## How to check it works
-1. Open:
-   `https://yourdomain.com/indexnow-key.txt`
+Then re-run `npm run build`. The script auto-discovers Chrome at
+`$PUPPETEER_EXECUTABLE_PATH`, `$CHROME_BIN`,
+`~/.cache/puppeteer/chrome/*/chrome-linux64/chrome`,
+`/usr/bin/google-chrome*`, or `/usr/bin/chromium*` (whichever it finds first).
 
-2. Open your sitemap URL in browser.
+## Deployment
 
-3. Go to GitHub → Actions → `Lovable IndexNow Pro`
+`dist/` is committed to the repo so Cloudflare Pages / Netlify / GitHub Pages can
+serve it without running a build. Recommended Cloudflare Pages settings:
 
-4. Check for:
-- `Found URLs total: ...`
-- `URLs selected for this run: ...`
-- `Batch size ... => status 200`
+| Setting | Value |
+|---|---|
+| Build command | *(empty)* |
+| Build output directory | `dist` |
+| Production branch | `main` |
 
-## Recommended settings
-In `indexnow.config.json`:
-- `batch_size`: 10 to 20
-- `cooldown_hours`: 24
-- `max_urls_per_run`: 100
+If you'd rather have the host rebuild on every push, set the build command to
+`npm run build`. The host will need `npx puppeteer browsers install chrome` to run
+during the build, which adds a few minutes.
 
-## Important
-This helps IndexNow-participating search engines.
-It does not directly force Google to index normal pages.
+## SPA-only routes
+
+A handful of routes (e.g. `/wah/login`, `/wah/dashboard`) are admin-only and are
+intentionally NOT pre-rendered. They still work via the SPA fallback in `_redirects`:
+unknown URLs are rewritten to `/index.html`, React Router takes over, and the right
+component renders.
+
+## IndexNow
+
+The IndexNow Pro bundle is still wired in. After deployment:
+
+- `indexnow.config.json` -> set `site_url` and `sitemaps` to the production domain
+- `public/indexnow-key.txt` -> set the real IndexNow key
+- `.github/workflows/indexnow.yml` -> runs every push + every hour, pings Bing /
+  Yandex / IndexNow participants whenever the sitemap changes
+
+## Files added for pre-rendering
+
+- `prerender.mjs` - the pre-render script. Idempotent; safe to re-run.
+- Updated `package.json` build script and added `puppeteer-core` devDependency.
+- `dist/llms.txt` - AI-engine discovery hints.
+- Pre-rendered HTML for every URL in `dist/sitemap.xml` (634 pages currently).

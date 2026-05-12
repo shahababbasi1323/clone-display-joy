@@ -8,7 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# Note: dist/ IS committed because it contains the pre-rendered static HTML
+# served by Cloudflare Pages / Netlify. Regenerate via `npm run build`.
 dist-ssr
 *.local
 
