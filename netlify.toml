@@ -11,10 +11,17 @@
   command = ""
   publish = "dist"
 
-# SPA fallback: routes that aren't pre-rendered (e.g. /wah/* admin pages)
-# fall through to the React shell which then hydrates and routes client-side.
-# This matches the existing /dist/_redirects rule.
+# SPA fallback for admin routes that aren't pre-rendered. The React shell
+# hydrates and the client-side router handles /wah/login, /wah/dashboard, etc.
 [[redirects]]
-  from = "/*"
+  from = "/wah/*"
   to = "/index.html"
   status = 200
+
+# Any other URL that doesn't match a pre-rendered file in dist/ returns a real
+# 404 (good for SEO - signals removed/invalid pages instead of soft-404).
+# Pre-rendered files always take precedence over redirect rules by default.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
