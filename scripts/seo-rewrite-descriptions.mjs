@@ -553,9 +553,23 @@ function processFile(file) {
     for (const c of file) hash = (hash * 31 + c.charCodeAt(0)) >>> 0;
     const remaining = DESC_MAX - base.length - 2;
     let closer = null;
-    const sorted = [...closers].sort((a, b) => b.length - a.length);
-    for (const c of sorted) {
-      if (c.length <= remaining) { closer = closers[(hash + sorted.indexOf(c)) % closers.length]; break; }
+    // Sort by length desc, breaking ties via hash so we vary the choice across
+    // pages with the same base length. Then pick the first that fits within
+    // `remaining`. IMPORTANT: use `c` from the sorted entry directly - do NOT
+    // index back into the unsorted `closers` array, since that would return a
+    // different (possibly oversized) closer than the one we just verified.
+    const sorted = [...closers]
+      .map((c, i) => ({ c, i, len: c.length }))
+      .sort(
+        (a, b) =>
+          b.len - a.len ||
+          ((a.i + hash) % closers.length) - ((b.i + hash) % closers.length)
+      );
+    for (const { c } of sorted) {
+      if (c.length <= remaining) {
+        closer = c;
+        break;
+      }
     }
     if (closer && (base + ". " + closer).length <= DESC_MAX) {
       newDesc = `${base}. ${closer}`;
