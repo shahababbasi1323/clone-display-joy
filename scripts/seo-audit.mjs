@@ -69,15 +69,23 @@ function getTag(html, re) {
 }
 
 function attr(html, name) {
-  const re = new RegExp(`<meta[^>]+name=["']${name}["'][^>]*content=["']([^"']*)["']`, "i");
-  const re2 = new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]*name=["']${name}["']`, "i");
-  return getTag(html, re) ?? getTag(html, re2);
+  // Match wrapping quote precisely so apostrophes inside content (e.g.
+  // "Shahab Abbasi's") don't terminate the capture early.
+  const re = new RegExp(`<meta[^>]+name=["']${name}["'][^>]*content=("([^"]*)"|'([^']*)')`, "i");
+  const re2 = new RegExp(`<meta[^>]+content=("([^"]*)"|'([^']*)')[^>]*name=["']${name}["']`, "i");
+  const m1 = html.match(re);
+  const m2 = html.match(re2);
+  const grab = (m) => (m ? (m[2] !== undefined ? m[2] : m[3]) : null);
+  return grab(m1) ?? grab(m2);
 }
 
 function prop(html, propertyName) {
-  const re = new RegExp(`<meta[^>]+property=["']${propertyName}["'][^>]*content=["']([^"']*)["']`, "i");
-  const re2 = new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]*property=["']${propertyName}["']`, "i");
-  return getTag(html, re) ?? getTag(html, re2);
+  const re = new RegExp(`<meta[^>]+property=["']${propertyName}["'][^>]*content=("([^"]*)"|'([^']*)')`, "i");
+  const re2 = new RegExp(`<meta[^>]+content=("([^"]*)"|'([^']*)')[^>]*property=["']${propertyName}["']`, "i");
+  const m1 = html.match(re);
+  const m2 = html.match(re2);
+  const grab = (m) => (m ? (m[2] !== undefined ? m[2] : m[3]) : null);
+  return grab(m1) ?? grab(m2);
 }
 
 function linkAttr(html, rel) {
@@ -246,9 +254,23 @@ function auditAndFix(file) {
   // ----- DESCRIPTION -----
   let description = attr(html, "description");
   if (description) description = description.replace(/&amp;/g, "&").trim();
+  // Detect script: CJK/Thai are character-dense, so a 70-char native sentence
+  // carries the same info as a 130-char English one. Adjust thresholds.
+  const _sample = (description || "").slice(0, 200);
+  const _cjk = (_sample.match(/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uac00-\ud7af]/g) || []).length;
+  const _thai = (_sample.match(/[\u0e00-\u0e7f]/g) || []).length;
+  const _arabic = (_sample.match(/[\u0600-\u06ff\u0750-\u077f]/g) || []).length;
+  const _hebrew = (_sample.match(/[\u0590-\u05ff]/g) || []).length;
+  // Localized non-English pages get a slightly shorter minimum since the
+  // rewriter intentionally avoids mixing an English closer into them.
+  const _isLocalized = language && language !== "en";
+  let descMin = 120;
+  if ((_cjk + _thai) / Math.max(1, _sample.length) > 0.3) descMin = 50;
+  else if ((_arabic + _hebrew) / Math.max(1, _sample.length) > 0.3) descMin = 100;
+  else if (_isLocalized) descMin = 100;
   if (!description) {
     issues.push("missing-description");
-  } else if (description.length < 120) {
+  } else if (description.length < descMin) {
     issues.push(`description-too-short(${description.length})`);
   } else if (description.length > 175) {
     issues.push(`description-too-long(${description.length})`);

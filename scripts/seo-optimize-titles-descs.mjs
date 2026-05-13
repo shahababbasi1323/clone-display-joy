@@ -19,7 +19,6 @@ import { join, relative } from "node:path";
 const DIST = "dist";
 
 const BRAND_TITLE_SUFFIX = " | Shahab Abbasi";
-const BRAND_DESC_TAIL = " Get a free SEO audit and grow your traffic with proven strategies from Shahab Abbasi.";
 const TITLE_MAX = 60;
 const TITLE_MIN = 32;
 const DESC_MAX = 170;
@@ -175,44 +174,11 @@ function fixFile(file) {
         desc = optimized;
         changes.push(`desc→${optimized.length}`);
       }
-    } else if (desc.length < DESC_MIN) {
-      // Pad in passes (ordered: long, medium, short) until in range, capped to DESC_MAX.
-      let optimized = desc.trim();
-      if (!optimized.endsWith(".")) optimized += ".";
-      const PAD_LIBRARY = [
-        " Get a free SEO audit and grow your organic traffic with proven strategies from Shahab Abbasi.",
-        " Contact us for tailored SEO services that drive measurable growth and revenue.",
-        " Trusted by businesses worldwide for SEO, PPC, content, and conversion optimization.",
-        " Rank higher on Google and outrank competitors with data-driven SEO.",
-        " Boost search visibility and improve Core Web Vitals fast.",
-        " Backed by proven case studies and transparent reporting.",
-        " Free consultation - reach out today.",
-        " Contact Shahab Abbasi for a custom plan.",
-      ];
-      for (const piece of PAD_LIBRARY) {
-        if (optimized.length >= DESC_MIN) break;
-        const keyMarker = piece.slice(1, 18).toLowerCase();
-        if (optimized.toLowerCase().includes(keyMarker)) continue;
-        if (optimized.length + piece.length <= DESC_MAX) {
-          optimized += piece;
-        }
-      }
-      // As a last resort, append a generic tail trimmed to exactly fit DESC_MIN..DESC_MAX
-      if (optimized.length < DESC_MIN) {
-        const generic = " Reach out today to discuss your SEO goals with Shahab Abbasi.";
-        const room = DESC_MAX - optimized.length;
-        if (room > 25) {
-          const need = Math.min(DESC_MIN - optimized.length + 10, generic.length, room);
-          optimized += generic.slice(0, need);
-          optimized = truncateAtWord(optimized, DESC_MAX);
-        }
-      }
-      if (optimized.length > DESC_MAX) optimized = truncateAtSentence(optimized, DESC_MAX);
-      if (optimized.length > desc.length) {
-        desc = optimized;
-        changes.push(`desc+tail→${optimized.length}`);
-      }
     }
+    // NOTE: Description padding with formulaic brand tails was removed.
+    // For pages whose description is too short, run scripts/seo-rewrite-
+    // descriptions.mjs after this script: it extracts a unique description
+    // from each page's body content (script-aware for non-English pages).
     html = replaceMetaContent(html, "name=description", desc);
     html = replaceMetaContent(html, "property=og:description", desc);
     html = replaceMetaContent(html, "name=twitter:description", desc);
