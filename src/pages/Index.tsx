@@ -154,8 +154,8 @@ const Index = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
 
   useSeoMeta({
-    title: "Shahab Abbasi - #1 SEO Expert & Digital Marketing Strategist | Grow Online Fast",
-    description: "Grow your business online with proven SEO, PPC & digital marketing strategies. Rank #1 on Google, drive organic traffic, generate more leads & 5x your revenue. Free SEO audit - 50+ businesses scaled worldwide.",
+    title: "Shahab Abbasi - SEO & AI Search Expert | Rank Higher, Faster",
+    description: "Shahab Abbasi ranks brands on Google and AI search. SEO, technical audits, link building, paid ads. ROI in 90 days or we work free.",
     canonical: "https://shahababbasi.com/",
   });
 
