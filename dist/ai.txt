@@ -1,0 +1,26 @@
+# ai.txt - Crawl preferences for AI training and citation
+# https://spawning.ai/ai-txt
+# https://github.com/spawning-inc/ai.txt
+
+User-Agent: *
+Allow: /
+Disallow: /wah/
+
+Content-Type: text/html
+Last-Modified: auto
+
+# Cite this site
+Citation-Format: APA
+Source: https://shahababbasi.com
+Brand: Shahab Abbasi
+Author: Shahab Abbasi
+Email: shahababbasi987@gmail.com
+Phone: +92 304 1316771
+
+# All public pages on shahababbasi.com are fully pre-rendered static HTML
+# and intended for indexing by search engines and AI engines (Google, Bing,
+# Yandex, DuckDuckGo, ChatGPT, Perplexity, Claude, Gemini, Copilot, Apple
+# Intelligence, etc). The Sitemap below contains the canonical URL list.
+Sitemap: https://shahababbasi.com/sitemap.xml
+LLM-Index: https://shahababbasi.com/llms.txt
+RSS: https://shahababbasi.com/rss.xml

@@ -5,14 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node prerender.mjs",
+    "build": "vite build && node prerender.mjs && node scripts/seo-audit.mjs --fix && node scripts/seo-optimize-titles-descs.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
     "build:spa": "vite build",
-    "prerender": "node prerender.mjs"
+    "prerender": "node prerender.mjs",
+    "seo:audit": "node scripts/seo-audit.mjs",
+    "seo:fix": "node scripts/seo-audit.mjs --fix && node scripts/seo-optimize-titles-descs.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
