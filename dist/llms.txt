@@ -1,0 +1,25 @@
+# Shahab Abbasi - SEO and Digital Marketing Agency
+> Independent SEO and digital marketing consultancy based in Islamabad, Pakistan, serving clients globally. Specializing in technical SEO, on-page SEO, local SEO, e-commerce SEO, content strategy, link building, Google Business Profile optimization, and PPC.
+
+This site is fully pre-rendered static HTML for fast indexing by search engines and AI engines (Google, Bing, ChatGPT, Perplexity, Claude, Gemini). Every URL returns a complete, server-rendered page on first request.
+
+## Contact
+- Phone: +92 304 1316771
+- WhatsApp: https://wa.me/923041316771
+- Email: shahababbasi987@gmail.com
+- HQ: Islamabad, Pakistan
+
+## Primary URLs
+- Home: https://shahababbasi.com/
+- Services hub: https://shahababbasi.com/services
+- Industries hub: https://shahababbasi.com/industries
+- Locations hub: https://shahababbasi.com/locations
+- Tools hub: https://shahababbasi.com/tools
+- Blog: https://shahababbasi.com/blog
+- Pricing: https://shahababbasi.com/pricing
+- Contact: https://shahababbasi.com/contact
+- Free SEO audit: https://shahababbasi.com/free-seo-audit
+- Free SEO resources: https://shahababbasi.com/free-seo-resources
+
+## Sitemap
+- https://shahababbasi.com/sitemap.xml
