@@ -255,11 +255,7 @@ Disallow: /*?replytocom=
 Crawl-delay: 1
 
 # ============================================
-# SITEMAP & AI DISCOVERY FILES
+# SITEMAP
 # Critical for AI Overview and LLM discovery
 # ============================================
 Sitemap: https://shahababbasi.com/sitemap.xml
-# Curated index for AI/LLM crawlers (ChatGPT, Claude, Perplexity, Gemini)
-# https://shahababbasi.com/llms.txt
-# Crawl preferences for AI training and citation:
-# https://shahababbasi.com/ai.txt
