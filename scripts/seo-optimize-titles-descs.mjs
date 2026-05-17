@@ -88,13 +88,23 @@ function escapeHtmlAttr(s) {
 }
 
 function replaceMetaContent(html, selector, newContent) {
-  // selector looks like "name=description" or "property=og:title"
+  // selector looks like "name=description" or "property=og:title".
+  // IMPORTANT: match the wrapping quote precisely (only " inside "..." or '
+  // inside '...'). Using the broader [^"']* breaks on apostrophes inside
+  // double-quoted content like "Shahab Abbasi's", terminating the match
+  // early and corrupting the file on the next run.
   const [k, v] = selector.split("=");
   const safe = escapeHtmlAttr(newContent);
-  const re1 = new RegExp(`(<meta[^>]+${k}=["']${v}["'][^>]*content=["'])([^"']*)(["'][^>]*>)`, "i");
-  const re2 = new RegExp(`(<meta[^>]+content=["'])([^"']*)(["'][^>]*${k}=["']${v}["'][^>]*>)`, "i");
-  if (re1.test(html)) return html.replace(re1, (_, a, _b, c) => a + safe + c);
-  if (re2.test(html)) return html.replace(re2, (_, a, _b, c) => a + safe + c);
+  const re1 = new RegExp(
+    `(<meta[^>]+${k}=["']${v}["'][^>]*content=)("([^"]*)"|'([^']*)')([^>]*>)`,
+    "i"
+  );
+  const re2 = new RegExp(
+    `(<meta[^>]+content=)("([^"]*)"|'([^']*)')([^>]*${k}=["']${v}["'][^>]*>)`,
+    "i"
+  );
+  if (re1.test(html)) return html.replace(re1, (_, a, _b, _c, _d, e) => `${a}"${safe}"${e}`);
+  if (re2.test(html)) return html.replace(re2, (_, a, _b, _c, _d, e) => `${a}"${safe}"${e}`);
   return html;
 }
 
@@ -108,12 +118,21 @@ function getTitle(html) {
 }
 
 function getMeta(html, selector) {
+  // Match wrapping quote precisely so apostrophes inside double-quoted
+  // content (e.g., "Shahab Abbasi's") don't terminate the capture early.
   const [k, v] = selector.split("=");
-  const re1 = new RegExp(`<meta[^>]+${k}=["']${v}["'][^>]*content=["']([^"']*)["']`, "i");
-  const re2 = new RegExp(`<meta[^>]+content=["']([^"']*)["'][^>]*${k}=["']${v}["']`, "i");
+  const re1 = new RegExp(
+    `<meta[^>]+${k}=["']${v}["'][^>]*content=("([^"]*)"|'([^']*)')`,
+    "i"
+  );
+  const re2 = new RegExp(
+    `<meta[^>]+content=("([^"]*)"|'([^']*)')[^>]*${k}=["']${v}["']`,
+    "i"
+  );
   const m1 = html.match(re1);
   const m2 = html.match(re2);
-  const raw = m1 ? m1[1] : m2 ? m2[1] : null;
+  const grab = (m) => (m ? (m[2] !== undefined ? m[2] : m[3]) : null);
+  const raw = grab(m1) ?? grab(m2);
   return raw === null ? null : decodeEntities(raw);
 }
 
