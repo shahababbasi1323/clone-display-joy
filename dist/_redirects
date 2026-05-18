@@ -1,1 +1,8 @@
-/*    /index.html   200
+# Admin SPA fallback: /wah/* routes are not pre-rendered but get a clean SPA
+# shell written by scripts/build-admin-shells.mjs as a guaranteed-on-disk file.
+# This rule is a defensive backup in case the SPA shell file is missing.
+/wah/*    /index.html   200
+
+# Everything else that does not match a file in dist/ returns a real 404 -
+# good for SEO (no soft-404s).
+/*        /404.html     404
