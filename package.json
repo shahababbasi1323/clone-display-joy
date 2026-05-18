@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node prerender.mjs && node scripts/seo-audit.mjs --fix && node scripts/seo-optimize-titles-descs.mjs && node scripts/seo-rewrite-descriptions.mjs",
+    "build": "vite build && node prerender.mjs && node scripts/seo-audit.mjs --fix && node scripts/seo-optimize-titles-descs.mjs && node scripts/seo-rewrite-descriptions.mjs && node scripts/build-admin-shells.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
