@@ -31,7 +31,7 @@ const Footer = () => {
                   className="p-2 rounded-lg bg-secondary hover:bg-primary/20 transition-colors"
                   aria-label={s.label}
                 >
-                  <s.icon className="h-5 w-5" />
+                  <s.icon aria-hidden="true" className="h-5 w-5" />
                 </a>
               ))}
               <a
@@ -41,7 +41,7 @@ const Footer = () => {
                 className="p-2 rounded-lg bg-secondary hover:bg-accent/20 transition-colors"
                 aria-label="WhatsApp"
               >
-                <Phone className="h-5 w-5" />
+                <Phone aria-hidden="true" className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <li key={s.href}>
                   <Link to={s.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {s.label}
-                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowUpRight aria-hidden="true" className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
               ))}
@@ -83,7 +83,7 @@ const Footer = () => {
                 <li key={s.href}>
                   <Link to={s.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {s.label}
-                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowUpRight aria-hidden="true" className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
               ))}
@@ -105,7 +105,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {link.label}
-                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowUpRight aria-hidden="true" className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
               ))}
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <Link to={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors flex items-center gap-1 group">
                     {link.label}
-                    <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowUpRight aria-hidden="true" className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </Link>
                 </li>
               ))}
@@ -141,18 +141,18 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
+                <MapPin aria-hidden="true" className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                 Islamabad, Pakistan
               </li>
               <li>
                 <a href="tel:+923041316771" className="flex items-start gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  <Phone className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
+                  <Phone aria-hidden="true" className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                   Call Us
                 </a>
               </li>
               <li>
                 <a href="mailto:contact@shahababbasi.com" className="flex items-start gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  <Mail className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
+                  <Mail aria-hidden="true" className="h-4 w-4 mt-0.5 shrink-0 text-primary" />
                   contact@shahababbasi.com
                 </a>
               </li>

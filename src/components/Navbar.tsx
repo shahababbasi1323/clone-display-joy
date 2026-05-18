@@ -331,20 +331,28 @@ const Navbar = () => {
           <span className="text-foreground"> Abbasi</span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav aria-label="Primary" className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) =>
             link.mega ? (
               // Mega menu for Locations
               <div key={link.label} className="relative static">
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                  aria-expanded={openDropdown === link.label}
+                  aria-haspopup="menu"
+                  aria-controls={`mega-menu-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                   className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
                 >
                   {link.label}
-                  <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
+                  <ChevronDown aria-hidden="true" className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
                 </button>
                 {openDropdown === link.label && (
-                  <div className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto">
+                  <div
+                    id={`mega-menu-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    role="menu"
+                    aria-label={`${link.label} menu`}
+                    className="fixed left-1/2 -translate-x-1/2 top-16 md:top-20 mt-1 rounded-xl p-6 shadow-2xl z-50 bg-card border border-border w-[95vw] max-w-5xl max-h-[75vh] overflow-y-auto"
+                  >
                     {/* Top link */}
                     <div className="mb-4 pb-3 border-b border-border">
                       <Link to={link.href} className="text-sm font-semibold text-primary hover:underline">
@@ -379,13 +387,21 @@ const Navbar = () => {
               <div key={link.label} className="relative">
                 <button
                   onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                  aria-expanded={openDropdown === link.label}
+                  aria-haspopup="menu"
+                  aria-controls={`dropdown-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                   className="px-4 py-2 text-sm font-medium rounded-lg transition-colors text-muted-foreground hover:text-foreground flex items-center gap-1"
                 >
                   {link.label}
-                  <ChevronDown className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
+                  <ChevronDown aria-hidden="true" className={`h-3 w-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
                 </button>
                 {openDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-1 rounded-lg py-2 min-w-[200px] shadow-xl z-50 bg-card border border-border backdrop-blur-none max-h-[70vh] overflow-y-auto">
+                  <div
+                    id={`dropdown-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
+                    role="menu"
+                    aria-label={`${link.label} menu`}
+                    className="absolute top-full left-0 mt-1 rounded-lg py-2 min-w-[200px] shadow-xl z-50 bg-card border border-border backdrop-blur-none max-h-[70vh] overflow-y-auto"
+                  >
                     {link.children.map((child, idx) =>
                       'group' in child && child.group ? (
                         <div key={idx} className="px-4 pt-3 pb-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground/70 border-t border-border first:border-t-0 first:pt-2">
@@ -432,27 +448,31 @@ const Navbar = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden p-2 text-foreground"
-          aria-label="Toggle menu"
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-nav"
         >
-          {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isOpen ? <X aria-hidden="true" className="h-6 w-6" /> : <Menu aria-hidden="true" className="h-6 w-6" />}
         </button>
       </div>
 
       {isOpen && (
-        <div className="lg:hidden glass border-t border-border">
-          <nav className="container mx-auto py-4 flex flex-col gap-1">
+        <div id="mobile-nav" className="lg:hidden glass border-t border-border">
+          <nav aria-label="Mobile" className="container mx-auto py-4 flex flex-col gap-1">
             {navLinks.map((link) =>
               link.mega ? (
                 <div key={link.label}>
                   <button
                     onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
+                    aria-expanded={mobileSubmenu === link.label}
+                    aria-controls={`mobile-mega-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                     className="w-full px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary flex items-center justify-between"
                   >
                     {link.label}
-                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
+                    <ChevronDown aria-hidden="true" className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
                   </button>
                   {mobileSubmenu === link.label && (
-                    <div className="ml-2 border-l border-border max-h-[50vh] overflow-y-auto">
+                    <div id={`mobile-mega-${link.label.toLowerCase().replace(/\s+/g, "-")}`} className="ml-2 border-l border-border max-h-[50vh] overflow-y-auto">
                       <Link to={link.href} className="px-6 py-3 rounded-lg text-sm font-semibold text-primary hover:bg-secondary block">
                         {link.label === "Locations" ? "All Locations" : link.label === "Industries" ? "All Industries" : link.label === "Tools" ? "All Tools" : "All Services"}
                       </Link>
@@ -479,13 +499,15 @@ const Navbar = () => {
                 <div key={link.label}>
                   <button
                     onClick={() => setMobileSubmenu(mobileSubmenu === link.label ? null : link.label)}
+                    aria-expanded={mobileSubmenu === link.label}
+                    aria-controls={`mobile-dd-${link.label.toLowerCase().replace(/\s+/g, "-")}`}
                     className="w-full px-4 py-3 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary flex items-center justify-between"
                   >
                     {link.label}
-                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
+                    <ChevronDown aria-hidden="true" className={`h-4 w-4 transition-transform ${mobileSubmenu === link.label ? "rotate-180" : ""}`} />
                   </button>
                   {mobileSubmenu === link.label && (
-                    <div className="ml-2 border-l border-border">
+                    <div id={`mobile-dd-${link.label.toLowerCase().replace(/\s+/g, "-")}`} className="ml-2 border-l border-border">
                       {link.children.filter(c => !('group' in c && c.group)).map((child) => (
                         <Link
                           key={child.href}
