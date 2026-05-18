@@ -71,5 +71,9 @@ The IndexNow Pro bundle is still wired in. After deployment:
 
 - `prerender.mjs` - the pre-render script. Idempotent; safe to re-run.
 - Updated `package.json` build script and added `puppeteer-core` devDependency.
-- `dist/llms.txt` - AI-engine discovery hints.
 - Pre-rendered HTML for every URL in `dist/sitemap.xml` (634 pages currently).
+
+Note: `llms.txt` and `ai.txt` are intentionally **not** generated. Per Google's
+[generative AI search guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide),
+these files have no effect on Google Search or its AI features. Other AI engines
+read the regular pre-rendered HTML directly.
